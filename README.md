@@ -1,6 +1,6 @@
 ## Loic Konan
 
-#### Repo: Java - Python Repo
+#### Repo: Java Repo & Python Repo
 
 #### Email: Loickonan.lk@gmail.com
 

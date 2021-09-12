@@ -2,7 +2,7 @@
 
 ### Loic Konan
 
-#### Description
+### Description
 
 This assignment is more about breaking the ice with **Java**, and learning how to Print a simple **Hello World and some basics Array.**
 

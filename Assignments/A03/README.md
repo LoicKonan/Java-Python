@@ -2,7 +2,7 @@
 
 ### Loic Konan
 
-#### Description
+### Description
 
 **Employee Class**
 

@@ -15,7 +15,6 @@ Once complete, it traverses the rightmost column top to bottom. Again, once this
 - Lastly, the algorithm traverses the leftmost column, incrementing the left corner index once it’s done.<br>
 This continues until the left index is **greater** than the right index, and the top index is **greater** than the bottom index.
 
-
 ### Files
 
 |   #   | File                                   | Description  |

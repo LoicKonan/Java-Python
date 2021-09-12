@@ -1,4 +1,4 @@
-## Program 01 - Array Problems (Spiral Matrix)
+## Assignment 02 - Array Problems (Spiral Matrix)
 
 ### Loic Konan
 

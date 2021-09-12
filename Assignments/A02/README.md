@@ -16,3 +16,9 @@ Once complete, it traverses the rightmost column top to bottom. Again, once this
 This continues until the left index is **greater** than the right index, and the top index is **greater** than the bottom index.
 
 <img src ="pic.png">
+
+### Files
+
+|   #   | File                                   | Description |
+| :---: | -------------------------------------- | ----------- |
+|   1   | [SpiralMatrix.java](SpiralMatrix.java) | Solution    |

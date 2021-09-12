@@ -6,6 +6,8 @@
 
 This assignment is more about breaking the ice with Java, and learning how to Print a simple Hello World and see how print some basics Array.
 
+### Files
+
 |   #   | File                               | Description                        |
 | :---: | ---------------------------------- | ---------------------------------- |
 |   1   | [HelloWorld.java](HelloWorld.java) | Printing Hello World to the screen |
@@ -13,8 +15,8 @@ This assignment is more about breaking the ice with Java, and learning how to Pr
 
 ### Instructions
 
-- None for now.
+- None.
 
 ### Example Command
 
-- None for now.
+- None.

@@ -2,11 +2,9 @@
 
 ### Loic Konan
 
-<img src ="pic.png">
-
 #### Description
 
-Spiral Matrix Problem
+**Spiral Matrix Problem**
 
 ### Instructions
 
@@ -16,3 +14,5 @@ Once complete, it traverses the rightmost column top to bottom. Again, once this
 - Next, the algorithm traverses the bottommost row and decrements the bottom corner index afterward.<br>
 - Lastly, the algorithm traverses the leftmost column, incrementing the left corner index once it’s done.<br>
 This continues until the left index is **greater** than the right index, and the top index is **greater** than the bottom index.
+
+<img src ="pic.png">

@@ -1,6 +1,15 @@
-package A01;
+/**
+ * This is a first day program
+ * @version SE9
+ * @author Loic Konan
+ */
 
-public class HelloWorld 
+class HelloWorld
 {
-    
+    public static void main(String[] args)
+    {
+
+        System.out.println("HelloWorld");
+
+    }
 }

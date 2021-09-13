@@ -72,47 +72,47 @@ import java.util.*;
         }
         average = (average / n);
 
-        System.out.print("\n\nThe average value of the elements is: " + average);
+        System.out.print("\nThe average value of the elements is: " + average);
         
 
         int[] newArray= Arrays.copyOf(Array_Y, Array_Y.length + 1);
 
         newArray[newArray.length - 1] = average;
        
-        int[] newArray = ArrayUtils.add(Array_Y, average);
+        // // newArray = ArrayUtils.add(Array_Y, average);
+        // newArray = Arrays.Utils.add(newArray, average);
 
-        System.out.print("\n\nInsertin the average into array Y on it’s correct position: ");
+        // System.out.print("\n\nInsertin the average into array Y on it’s correct position: ");
        
-        // print the updated array
-        System.out.println("\nArray with " + average
-                           + " inserted at position "
-                           + n/5 + ":\n"
-                           + Arrays.toString(Array_Y)
-                           );
-
+        // // print the updated array
+        // System.out.println("\nArray with " + average
+        //                    + " inserted at position "
+        //                    + n/5 + ":\n"
+        //                    + Arrays.toString(Array_Y)
+        //                    );
         
-         System.out.print("\n\nPerforming a comparison between Y and X: ");
-         boolean areEqual = Arrays.equals(Array_X, Array_Y);
+        //  System.out.print("\n\nPerforming a comparison between Y and X: ");
+        //  boolean areEqual = Arrays.equals(Array_X, Array_Y);
          
-         if(areEqual) System.out.print("They are Equal");
-         else 
-         {
-            System.out.print("They are not Equal");
-            System.out.print("\n\nPerforming a delete operation to make it same: ");
-            for (int i = 0, k = 0; i < arr.length; i++) 
-            {
+        //  if(areEqual) System.out.print("They are Equal");
+        //  else 
+        //  {
+        //     System.out.print("They are not Equal");
+        //     System.out.print("\n\nPerforming a delete operation to make it same: ");
+        //     for (int i = 0, k = 0; i < arr.length; i++) 
+        //     {
   
-                // if the index is
-                // the removal element index
-                if (i == index) 
-                {
-                    continue;
-                }
+        //         // if the index is
+        //         // the removal element index
+        //         if (i == index) 
+        //         {
+        //             continue;
+        //         }
       
-                // if the index is not
-                // the removal element index
-                anotherArray[k++] = arr[i];
-            }
-         }
+        //         // if the index is not
+        //         // the removal element index
+        //         anotherArray[k++] = arr[i];
+        //     }
+        // }
     }
 }

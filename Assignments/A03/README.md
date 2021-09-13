@@ -8,17 +8,17 @@
 
 ### Instructions
 
-- **Employee Class:**
-  - ***name***
-  - ***age***
-  - ***designation***
-  - ***salary***
-  
-- **EmployeeTestClass:**
-   1. **Create 2 objects ( ***2 employees***).**
-        **1.Constructors.**
-   2. **Set and get all attributes for** ***2 objects.***
-   3. ***Print the attributes after setting the value.***
+> - **Employee Class:**
+> - ***name***
+> - ***age***
+> - ***designation***
+> - ***salary***
+>  
+>- **EmployeeTestClass:**
+>   1. **Create 2 objects ( ***2 employees***).**
+>        **1.Constructors.**
+>   2. **Set and get all attributes for** ***2 objects.***
+>   3. ***Print the attributes after setting the value.***
 
 ### Files
 

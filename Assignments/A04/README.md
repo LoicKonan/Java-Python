@@ -12,7 +12,9 @@
     **c.** Calculate the AVG value of the elements and insert it to array Y on it’s correct position, print it.<br>
     **d.** Perform comparison between Y and X. If not same, perform delete operation to make it same.<br>
 
-**3.** You are given a string S = “ Before trying to do any of the steps below, you should read the <br> article through at least once for basic understanding. Then go back and review, following these steps.<br>
+**3.** You are given a string
+
+- S = “ Before trying to do any of the steps below, you should read the <br> article through at least once for basic understanding. Then go back and review, following these steps.<br>
 He ran his machine up to the stone porch and ascending the steps rang the door bell.<br>
 They directed their steps toward the sea, which was lit up by the rising moon. <br>
 She breathed a sigh of relief, and her light steps fell gradually into the measure of his.<br>

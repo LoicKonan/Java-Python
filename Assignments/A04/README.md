@@ -4,7 +4,6 @@
 
 ### Description
 
-***4 Problems to solve:***<br>
 **1.** Given an array with 20 elements, **find the largest and smallest number.**<br>
 **2.** Given an array **X = { 10, 100, 40, 28, 98, 37, 12, 63 }.**
     **a.** Copy the array in a different variable Y.

@@ -7,6 +7,7 @@
 **1.** Given an array with 20 elements, **find the largest and smallest number.**<br>
 
 **2.** Given an array **X = { 10, 100, 40, 28, 98, 37, 12, 63 }.**<br>
+
     - Copy the array in a different variable Y.<br>
     - Sort the array in descending order and print the array.<br>
     - Calculate the AVG value of the elements and insert it to array Y on it’s correct position, print it.<br>

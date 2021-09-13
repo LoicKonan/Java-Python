@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Driver",
+      "request": "launch",
+      "mainClass": "Driver",
+      "projectName": "A05_c3c511a3"
+    },
+    {
+      "type": "java",
+      "name": "Launch Hierarchical",
+      "request": "launch",
+      "mainClass": "Hierarchical",
+      "projectName": "A05_c3c511a3"
+    },
+    {
+      "type": "java",
+      "name": "Launch MultiLevel",
+      "request": "launch",
+      "mainClass": "MultiLevel",
+      "projectName": "A05_c3c511a3"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A05",
+      "environment": [],
+      "program": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A05\\build\\Debug\\outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

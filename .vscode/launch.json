@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Driver",
+      "request": "launch",
+      "mainClass": "Driver",
+      "projectName": "Java - Python_ebc6d015"
+    },
+    {
+      "type": "java",
       "name": "Launch Inheritance",
       "request": "launch",
       "mainClass": "Inheritance",

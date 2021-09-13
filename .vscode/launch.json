@@ -2,6 +2,34 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch Question_4",
+      "request": "launch",
+      "mainClass": "Question_4",
+      "projectName": "Java - Python_ebc6d015"
+    },
+    {
+      "type": "java",
+      "name": "Launch Question_3",
+      "request": "launch",
+      "mainClass": "Question_3",
+      "projectName": "Java - Python_ebc6d015"
+    },
+    {
+      "type": "java",
+      "name": "Launch Question_2",
+      "request": "launch",
+      "mainClass": "Question_2",
+      "projectName": "Java - Python_ebc6d015"
+    },
+    {
+      "type": "java",
+      "name": "Launch Question_1",
+      "request": "launch",
+      "mainClass": "Question_1",
+      "projectName": "Java - Python_ebc6d015"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

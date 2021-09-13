@@ -18,6 +18,7 @@
   "C_Cpp_Runner.warningsAsError": false,
   "java.project.sourcePaths": [
     "Assignments/A05",
-    "Assignments/A01"
+    "Assignments/A01",
+    "Assignments/A04"
   ]
 }

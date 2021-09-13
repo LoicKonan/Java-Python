@@ -23,25 +23,24 @@
 
     {
         int DescendingArray = 0;
-        int [] Array_X = { 10, 100, 40, 28, 98, 37, 12, 63 };
+        int [] Array_X = { 10, 20, 30, 40, 50, 60, 80, 70, 90, 100 };
 
         int [] Array_Y = new int[Array_X.length];
+
         Array_Y = Array_X;
-        Array_Y[0]++;
+        int n = Array_X.length;
 
-        System.out.println("The Contents of The First Array: ");
-
-        for (int i = 0; i < Array_X.length; i++)
+        System.out.println("\nThe Contents of The First Array: ");
+        for (int i = 0; i < n; i++)
             {
                 System.out.print(Array_X[i] + " ");
             }
-        System.out.println("\n\nThe Contents of Array Y: ");
 
-        for (int i = 0; i < Array_Y.length; i++)
+        System.out.println("\n\nThe Contents of Array Y: ");
+        for (int i = 0; i < n; i++)
             {
                 System.out.print(Array_Y[i] + " ");
             }
-        int n = Array_X.length;
 
         for (int i = 0; i < n; i++) 
         {
@@ -55,13 +54,25 @@
                 }
             }
         }
-        System.out.print("\n\nIn Descending Order:\n");
 
+        System.out.print("\n\nIn Descending Order: ");
         for (int i = 0; i < n - 1; i++) 
         {
             System.out.print(Array_X[i] + " ");
         }
-        System.out.print(Array_X[n - 1] + "\n\n");
+        System.out.print(Array_X[n - 1] + "\n");
 
+
+        double average = 0;
+        for(int i = 0; i < n; i++)
+        {
+            average += Array_X[i];
+        }
+        average = (average / n);
+
+        System.out.print("\n\nThe average value of the elements is: " + average);
+        
+
+        System.out.print("\n\nInsertin the average into array Y on it’s correct position:");
     }
 }

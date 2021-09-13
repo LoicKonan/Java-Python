@@ -19,7 +19,7 @@
 
 **Find 5 high frequency words using several array operations.**
 
-**4.** You are given a string S = “ **this is my first programming assignment**”.<br>
+**4.** You are given a string S = “**this is my first programming assignment**”.<br>
 
 - Print the words in a reverse order like **“assignment programming first my is this” using array.**
 

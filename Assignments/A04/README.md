@@ -7,10 +7,10 @@
 **1.** Given an array with 20 elements, **find the largest and smallest number.**<br>
 
 **2.** Given an array **X = { 10, 100, 40, 28, 98, 37, 12, 63 }.**<br>
-    **a.** Copy the array in a different variable Y.<br>
-    **b.** Sort the array in descending order and print the array.<br>
-    **c.** Calculate the AVG value of the elements and insert it to array Y on it’s correct position, print it.<br>
-    **d.** Perform comparison between Y and X. If not same, perform delete operation to make it same.<br>
+    - a. Copy the array in a different variable Y.<br>
+    - b. Sort the array in descending order and print the array.<br>
+    - c. Calculate the AVG value of the elements and insert it to array Y on it’s correct position, print it.<br>
+    - d. Perform comparison between Y and X. If not same, perform delete operation to make it same.<br>
 
 **3.** You are given a string S = “ Before trying to do any of the steps below, you should read the <br> article through at least once for basic understanding. Then go back and review, following these steps.<br>
 He ran his machine up to the stone porch and ascending the steps rang the door bell.<br>

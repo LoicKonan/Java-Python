@@ -54,11 +54,11 @@ public class Question_3                                              // Start of
                 {                                                    
                     frequency[j] += 1;                               //
                     valid = true;                                    //
-                }                                                    //
-            }                                                        
+                }                                                    
+            }                                                        // End of this for loop.
 
             if (!valid)                                             //
-            {                                                       //
+            {                                                       
                 Frequenttext[Count] = text[i].replaceAll("[.,;]", "");
                 frequency[Count] = 1;
                 Count += 1;
@@ -77,9 +77,9 @@ public class Question_3                                              // Start of
                     String temp_S = Frequenttext[j];
                     Frequenttext[j] = Frequenttext[j + 1];
                     Frequenttext[j + 1] = temp_S;
-                }                                                    //
-            }                                                        //
-        }                                                            //
+                }                                                    
+            }                                                        // End of this for loop.
+        }                                                            // End of this for loop.
 
         System.out.println("The Top 5 Most Frequent words: ");
         for (int i = 0; i < 5; i++)                                  //

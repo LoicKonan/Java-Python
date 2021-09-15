@@ -15,10 +15,11 @@
  *   
  *****************************************************************************/
 
-public class Question_3                                              //
-{                                                                    //
+public class Question_3                                              // Start of our Java Program.
+{                                                                    
     public static void main(String[] args)
-    {                                                                //
+    {                                                                // Start of our Driver Program.
+        // Our given string 'S' below.
         String S = "Before trying to do any of the steps below, you should read the article "
                 + "through at least once for basic understanding. Then go back and review, following these steps. "
                 + "He ran his machine up to the stone porch and ascending the steps rang the door bell. They "
@@ -26,30 +27,38 @@ public class Question_3                                              //
                 + "relief, and her light steps fell gradually into the measure of his. This was fully four feet under "
                 + "water and the lower story of the place was two steps lower down.";
 
-        System.out.println(S);                                       //
+       
+        System.out.println("\n");                                    // Adding few new line to make it loop nice.
+        System.out.println(S);                                       // Displaying the given text on the console.
 
-        String[] text = S.split("\\s");                              //
+        String[] text = S.split("\\s");                              // This splits a given string around matches
+                                                                     // of the given regular expression.
 
-        String[] Frequenttext = new String[text.length];             //
-        int[] frequency = new int[text.length];                      //
+        String[] Frequenttext = new String[text.length];             // Create an array of string and make it the length of our given text.
+        int[] frequency = new int[text.length];                      // Create an array of integers and make it the length of our given text.
 
-        int Count = 0;                                               //
+        int Count = 0;                                               // Declare and initialize a variable call Count to keep count.
 
-        for (int i = 0; i < text.length; i++)                        //
-        {                                                            //
-            boolean exists = false;                                  //
+        for (int i = 0; i < text.length; i++)                        // Iterate through our for loop as long as i is less than our text length.
+        {                                                            
+            boolean valid = false;                                   // Created a boolean and set it to false.
 
-            for (int j = 0; j < Count; j++)                          //
-            {                                                        
+            for (int j = 0; j < Count; j++)                          // Iterate through our for loop as long as i is less than the variable count.
+            {         
+                /**
+                 * 
+                 * 
+                 *  
+                 */
                 if (text[i].replaceAll("[.,;]", "").equalsIgnoreCase(Frequenttext[j])) 
                 {                                                    
                     frequency[j] += 1;                               //
-                    exists = true;                                   //
+                    valid = true;                                    //
                 }                                                    //
             }                                                        
 
-            if (!exists)                                             //
-            {                                                        //
+            if (!valid)                                             //
+            {                                                       //
                 Frequenttext[Count] = text[i].replaceAll("[.,;]", "");
                 frequency[Count] = 1;
                 Count += 1;
@@ -77,5 +86,5 @@ public class Question_3                                              //
         {
             System.out.println(i + 1 + ". " + Frequenttext[i] + " (appeared " + frequency[i] + " times.)");
         }       
-    }                                                                //
-}                                                                    //
+    }                                                                // End of our Driver program.
+}                                                                    // End of our Java Program.

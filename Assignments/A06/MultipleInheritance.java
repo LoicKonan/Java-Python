@@ -1,3 +1,13 @@
+/**
+ * This is program about Multiple Inheritance.
+ * 
+ * @version SE9
+ * @author Loic Konan
+ * Semester: Fall 2021
+ * Date: 9/15/2021
+ * 
+ */
+
 interface ONE
 {
     public void print_one();
@@ -34,5 +44,11 @@ public class MultipleInheritance implements THREE
     }
 
 
-    public static void main
+    public static void main(String[] args)
+    {
+        MultipleInheritance obj1 = new MultipleInheritance();
+        obj1.print_one();
+        obj1.print_two();
+        obj1.print_three();
+    }
 }

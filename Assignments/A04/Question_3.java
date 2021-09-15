@@ -33,13 +33,13 @@ public class Question_3                                              //
         String[] Frequenttext = new String[text.length];             //
         int[] frequency = new int[text.length];                      //
 
-        int OccuranceCount = 0;                                      //
+        int Count = 0;                                               //
 
         for (int i = 0; i < text.length; i++)                        //
         {                                                            //
             boolean exists = false;                                  //
 
-            for (int j = 0; j < OccuranceCount; j++)                 //
+            for (int j = 0; j < Count; j++)                          //
             {                                                        
                 if (text[i].replaceAll("[.,;]", "").equalsIgnoreCase(Frequenttext[j])) 
                 {                                                    
@@ -50,24 +50,24 @@ public class Question_3                                              //
 
             if (!exists)                                             //
             {                                                        //
-                Frequenttext[OccuranceCount] = text[i].replaceAll("[.,;]", "");
-                frequency[OccuranceCount] = 1;
-                OccuranceCount += 1;
+                Frequenttext[Count] = text[i].replaceAll("[.,;]", "");
+                frequency[Count] = 1;
+                Count += 1;
             }
         }                                                            // End of our for loop.
 
-        for (int i = 0; i < OccuranceCount; i++)                     //
+        for (int i = 0; i < Count; i++)                              //
         {                                                            // 
-            for (int j = 0; j < OccuranceCount - i - 1; j++)         //
+            for (int j = 0; j < Count - i - 1; j++)                  //
             {                                                        //
                 if (frequency[j] < frequency[j + 1])                 //
                 {
                     int temp = frequency[j];
                     frequency[j] = frequency[j + 1];
                     frequency[j + 1] = temp;
-                    String tempS = Frequenttext[j];
+                    String temp_S = Frequenttext[j];
                     Frequenttext[j] = Frequenttext[j + 1];
-                    Frequenttext[j + 1] = tempS;
+                    Frequenttext[j + 1] = temp_S;
                 }                                                    //
             }                                                        //
         }                                                            //

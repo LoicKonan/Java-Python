@@ -52,23 +52,26 @@ public class Question_4
     }                                                                // End of function reverse.
 
     /**
+     * We will use this function to to perfrom the swap.
+     * By using a for loop to check if we at the end of 
+     * the string.
      * 
      * @param s
      * @return static char
      */
     static char[] swap(char []s)
     {
-    int Beginning = 0;                                               //
-    for (int Ending = 0; Ending < s.length; Ending++)                //
-    {                                                                //
-        if (s[Ending] == ' ')                                        //
-        {
-            reverse(s, Beginning, Ending);                           //
-            Beginning = Ending + 1;                                  //
-        }                                                            //
-    }                                                                //
-    reverse(s, Beginning, s.length - 1);                             //
-    reverse(s, 0, s.length - 1);                                     //
-    return s;                                                        //
-    }                                                                // 
-}
+        int start = 0;                                               // Initializing and declaring an integer call start.
+        for (int i = 0; i < s.length; i++)                           // For loop saying as long as 'i' is less than the string 'S'.
+        {                                                            // Begining of the for loop.
+            if (s[i] == ' ')                                         // if statement checking if that element 'i' is empty string.
+            {
+                reverse(s, start, i);                                // Calling our previous function to perform the reverse.
+                start = i + 1;                                       // Incrementing our variable.
+            }                                                        
+        }                                                            // End of our for loop.
+        reverse(s, start, s.length - 1);                             // Calling our function reverse and passing in the parameters.
+        reverse(s, 0, s.length - 1);                                 // Calling our function reverse and passing in the parameters.
+        return s;                                                    // Returning our character 'S' string that is flipped
+    }                                                                // End of our function.
+}                                                                    // End of our whole java program.

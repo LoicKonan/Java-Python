@@ -118,7 +118,8 @@ public class Question_2
         {
             System.out.print("Yes, the Array are equals.\n");
         }
-        else
+
+        else                                                         //
         {
             System.out.print("No, they are not equals. Display below\n");
            

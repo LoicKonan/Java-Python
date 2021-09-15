@@ -148,7 +148,7 @@ public class Question_2
     }                                                                // End of our Driver Program.
 
             /**
-             * In this function we will search for the number that 
+             * In this function "find" we will search for the number that 
              * is specified in order to call this function in the 
              * delete function in the bottom of our program.
              * 
@@ -167,7 +167,7 @@ public class Question_2
             }                                                        // End of our function find.
             
             /**
-             * In this function we will use the find function 
+             * In this function "delete" we will use the find function 
              * on top, then we will delete the average element.
              *
              * @param arr
@@ -177,17 +177,17 @@ public class Question_2
              */
             static int delete(int [] arr, int n, int number)
             {
-                int pos = find(arr, n, number);                      //
+                int pos = find(arr, n, number);                      // Assigning the number to be deleted to this variable.
             
-                if (pos == -1)                                      //
+                if (pos == -1)                                       // If the element is not in our array print "Element not found".
                 {
                     System.out.println("Element not found");
                     return n;
                 }
             
-                for (int i = pos; i < n - 1; i++)                    //
+                for (int i = pos; i < n - 1; i++)                    // Using this for loop to iterate through and to delete.
                     arr[i] = arr[i + 1];
             
-                return n - 1;                                        //
+                return n - 1;                                        // return our arrays minus one element.
             }                                                        // End of our function delete.
 }                                                                    // End of our Java Class.

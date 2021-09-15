@@ -141,7 +141,7 @@ public class Question_2
                     return n;
                 }
             
-                for (int i = pos; i< n - 1; i++)
+                for (int i = pos; i < n - 1; i++)
                     arr[i] = arr[i + 1];
             
                 return n - 1;

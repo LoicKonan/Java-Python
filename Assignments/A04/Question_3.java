@@ -59,11 +59,11 @@ public class Question_3                                              // Start of
                 }                                                    
             }                                                        // End of this for loop.
 
-            if (!valid)                                             // In the case where our word is not valid.
+            if (!valid)                                              // In the case where our word is not valid.
             {                                                       
                 Frequenttext[Count] = text[i].replaceAll("[.,;]", "");
                 frequency[Count] = 1;
-                Count += 1;
+                Count += 1;                                          // Incrementing our count variable.
             }
         }                                                            // End of our for loop.
 

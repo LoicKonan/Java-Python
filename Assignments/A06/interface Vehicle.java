@@ -87,5 +87,11 @@ class Bike implements Vehicle
         b1.changeGear(32);
         c1.speedUp(45);
         bk1.applyBrakes(5);
+
+
+        // System.out.println(b1);
+        // System.out.println(c1);
+        // System.out.println(bk1);
+
     }
 }

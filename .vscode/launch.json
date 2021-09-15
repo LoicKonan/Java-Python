@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Bike",
+      "request": "launch",
+      "mainClass": "Bike",
+      "projectName": "Java - Python_ebc6d015"
+    },
+    {
+      "type": "java",
       "name": "Launch Driver",
       "request": "launch",
       "mainClass": "Driver",

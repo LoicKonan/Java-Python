@@ -1,20 +1,18 @@
 /******************************************************************************
  * Author:      Loic Konan 
  * Email:       loickonan.lk@gmail.com 
- * Label: 
- * Title: 
- * Course:
+ * Label:       Question 1
+ * Title:       Programing Assignment 01
+ * Course:      CMPS 4143 
  * Semester:    Fall 2021 
+ * 
  * Description:
- *
- *              This Project is about
+ *              This Project is about taking an array with 20 elements, 
+ *              and finding the largest and smallest number in that array.
  *
  * Files:   
  *              Question_1.java
- * 
- *
- * Usage: -
- * 
+ *  * 
  *****************************************************************************/
 
 public class Question_1 

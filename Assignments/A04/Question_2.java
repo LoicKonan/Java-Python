@@ -122,35 +122,39 @@ public class Question_2
         {
             System.out.print("No, they are not equals. Display below\n");
            
-            Arrays.sort(Array_Y);
+            Arrays.sort(Array_Y);                                    //
             System.out.print("\nArray_Y: " + Arrays.toString(Array_Y));
            
-            Arrays.sort(Array_X);
+            Arrays.sort(Array_X);                                    //
             System.out.print("\nArray_X: " + Arrays.toString(Array_X) + "\n\n");
-          
-            int number = average;
-            int n = Array_Y.length;
-            n = delete(Array_Y, n, number);
-          
 
+          
+            int number = average;                                    //
+            int n = Array_Y.length;                                  //
+            n = delete(Array_Y, n, number);                          //
+          
+                                                                     //
             System.out.print("\nPerformed a delete operation. Display below\n\nArray_Y: [ ");
             for (int i = 0; i < n; i++) System.out.print(Array_Y[i] + " ");
             System.out.print( "]");
 
-
+                                                                     // 
             System.out.print("\nArray_X: [ ");
             for (int i = 0; i < n; i++) System.out.print(Array_X[i] + " ");
             System.out.print( "]\n\n");
         }
     
-    }                                                                //
+    }                                                                // End of our Driver Program.
 
             /**
+             * In this function we will search for the number that 
+             * is specified in order to call this function in the 
+             * delete function in the bottom of our program.
              * 
              * @param arr
              * @param n
              * @param number
-             * @return
+             * @return static int
              */
             static int find(int [] arr, int n, int number)
             {
@@ -162,11 +166,13 @@ public class Question_2
             }                                                        // End of our function find.
             
             /**
-             * 
+             * In this function we will use the find function 
+             * on top, then we will delete the average element.
+             *
              * @param arr
              * @param n
              * @param number
-             * @return
+             * @return static int
              */
             static int delete(int [] arr, int n, int number)
             {

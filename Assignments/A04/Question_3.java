@@ -67,9 +67,9 @@ public class Question_3                                              // Start of
             }
         }                                                            // End of our for loop.
 
-        for (int i = 0; i < Count; i++)                              // Iterating throung this first for loop.
+        for (int i = 0; i < Count; i++)                              // Iterating throung through the occurance count.
         {                                                            
-            for (int j = 0; j < Count - i - 1; j++)                  // Start this second for loop.
+            for (int j = 0; j < Count - i - 1; j++)                  // Iterating throung through the occurance count - 1.
             {                                        
                 /**
                  * 

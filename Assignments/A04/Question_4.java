@@ -32,7 +32,7 @@ public class Question_4
         }
     }
 
-    static char[] StringSwap(char []s)
+    static char[] swap(char []s)
     {
     int Beginning = 0;
     for (int Ending = 0; Ending < s.length; Ending++)
@@ -52,7 +52,7 @@ public class Question_4
     {
         String s = "This is my first programming  assignment ";
         System.out.print("Original Text is :    " + s +"\n");
-        char []p = StringSwap(s.toCharArray());
+        char []p = swap(s.toCharArray());
         System.out.print("Converted Text is:    ");
         System.out.print(p);
         System.out.print("\n\n");

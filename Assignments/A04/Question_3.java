@@ -7,21 +7,18 @@
  * Semester:    Fall 2021
  * 
  * Description:
- *
- *              This Project is about
+ *              This Project is about Find 5 high frequency words using
+ *              several array operations.
  *
  * Files:   
  *              Question_3.java
- * 
- *
- * Usage: -
- * 
+ *   
  *****************************************************************************/
 
-public class Question_3 
-{
+public class Question_3                                              //
+{                                                                    //
     public static void main(String[] args)
-    {
+    {                                                                //
         String S = "Before trying to do any of the steps below, you should read the article "
                 + "through at least once for basic understanding. Then go back and review, following these steps. "
                 + "He ran his machine up to the stone porch and ascending the steps rang the door bell. They "
@@ -29,54 +26,56 @@ public class Question_3
                 + "relief, and her light steps fell gradually into the measure of his. This was fully four feet under "
                 + "water and the lower story of the place was two steps lower down.";
 
-        System.out.println(S);
+        System.out.println(S);                                       //
 
-        String[] words = S.split("\\s");
+        String[] text = S.split("\\s");                              //
 
-        String[] FrequentWords = new String[words.length];
-        int[] frequency = new int[words.length];
+        String[] Frequenttext = new String[text.length];             //
+        int[] frequency = new int[text.length];                      //
 
-        int OccuranceCount = 0;
+        int OccuranceCount = 0;                                      //
 
-        for (int i = 0; i < words.length; i++) 
-        {
-            boolean exists = false;
+        for (int i = 0; i < text.length; i++)                        //
+        {                                                            //
+            boolean exists = false;                                  //
 
-            for (int j = 0; j < OccuranceCount; j++) 
-            {
-                if (words[i].replaceAll("[.,;]", "").equalsIgnoreCase(FrequentWords[j])) 
-                {
-                    frequency[j] += 1;
-                    exists = true;
-                }
-            }
-            if (!exists)
-            {
-                FrequentWords[OccuranceCount] = words[i].replaceAll("[.,;]", "");
+            for (int j = 0; j < OccuranceCount; j++)                 //
+            {                                                        
+                if (text[i].replaceAll("[.,;]", "").equalsIgnoreCase(Frequenttext[j])) 
+                {                                                    
+                    frequency[j] += 1;                               //
+                    exists = true;                                   //
+                }                                                    //
+            }                                                        
+
+            if (!exists)                                             //
+            {                                                        //
+                Frequenttext[OccuranceCount] = text[i].replaceAll("[.,;]", "");
                 frequency[OccuranceCount] = 1;
                 OccuranceCount += 1;
             }
-        }
+        }                                                            // End of our for loop.
 
-        for (int i = 0; i < OccuranceCount; i++) 
-        {
-            for (int j = 0; j < OccuranceCount - i - 1; j++) 
-            {
-                if (frequency[j] < frequency[j + 1]) 
+        for (int i = 0; i < OccuranceCount; i++)                     //
+        {                                                            // 
+            for (int j = 0; j < OccuranceCount - i - 1; j++)         //
+            {                                                        //
+                if (frequency[j] < frequency[j + 1])                 //
                 {
                     int temp = frequency[j];
                     frequency[j] = frequency[j + 1];
                     frequency[j + 1] = temp;
-                    String tempS = FrequentWords[j];
-                    FrequentWords[j] = FrequentWords[j + 1];
-                    FrequentWords[j + 1] = tempS;
-                }
-            }
-        }
-        System.out.println("The Top 5 Most Frequent Words: ");
-        for (int i = 0; i < 5; i++) 
+                    String tempS = Frequenttext[j];
+                    Frequenttext[j] = Frequenttext[j + 1];
+                    Frequenttext[j + 1] = tempS;
+                }                                                    //
+            }                                                        //
+        }                                                            //
+
+        System.out.println("The Top 5 Most Frequent words: ");
+        for (int i = 0; i < 5; i++)                                  //
         {
-            System.out.println(i + 1 + ". " + FrequentWords[i] + " (appeared " + frequency[i] + " times.)");
-        }
-    }
-}
+            System.out.println(i + 1 + ". " + Frequenttext[i] + " (appeared " + frequency[i] + " times.)");
+        }       
+    }                                                                //
+}                                                                    //

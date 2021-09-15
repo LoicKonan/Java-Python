@@ -15,11 +15,11 @@
  *  * 
  *****************************************************************************/
 
-public class Question_1 
+public class Question_1                          // Start of our Java Program.
 {
     // The Driver program.
     public static void main(String[] args) 
-    {
+    {                                            // Start of our Driver Program.
         // An Array of 20 integers element.
         int [] myArray = new int[] { 
                                     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
@@ -60,4 +60,4 @@ public class Question_1
         System.out.println("\n\nThe small number of this array is: " + small);
         System.out.println("The large number of this array is: " + large + "\n");
     }                                            // End of the drive program.
-}
+}                                                // End of our Java program.

@@ -21,11 +21,11 @@
 *              Question_2.java
 *  
 *****************************************************************************/
-import java.util.Arrays;
+import java.util.Arrays;                                             // To be able to use some built in functions.
 
 public class Question_2 
-{                                                                    //
-    public static void main(String[] args)                           //
+{                                                                    // Start of our Java class Program.
+    public static void main(String[] args)                           // Start of our Driver Program.
     {
         int[] Array_X = { 10, 100, 40, 28, 98, 37, 12, 63 };         //
         int[] Array_Y = new int[Array_X.length];                     //
@@ -154,12 +154,12 @@ public class Question_2
              */
             static int find(int [] arr, int n, int number)
             {
-                for (int i = 0; i < n; i++)                          //
-                    if (arr[i] == number)
-                        return i;
+                for (int i = 0; i < n; i++)                          // As long as our for loop is less than 'n'.
+                    if (arr[i] == number)                            // Comparing the element arr[i] to our variable number.
+                        return i;                                    // return i if it equal to the variable number.
             
-                return -1;
-            }
+                return -1;                                           // retrun -1 if we didn't find the number.
+            }                                                        // End of our function find.
             
             /**
              * 
@@ -182,5 +182,5 @@ public class Question_2
                     arr[i] = arr[i + 1];
             
                 return n - 1;                                        //
-            }                                                        //
-}                                                                    //
+            }                                                        // End of our function delete.
+}                                                                    // End of our Java Class.

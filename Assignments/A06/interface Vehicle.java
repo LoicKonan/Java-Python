@@ -78,6 +78,5 @@ class Bike implements Vehicle
         b1.changeGear(32);
         c1.speedUp(45);
         bk1.applyBrakes(5);
-
     }
 }

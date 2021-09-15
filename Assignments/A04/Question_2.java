@@ -9,14 +9,17 @@
 *  
 * Description:
 *
-*              This Project is about
+*              This Program is about Copying an array  X in a different 
+*              array Y. Then Sort the array in descending order and print the 
+*              array.We will then Calculate the average value of the elements
+*              and insert it to array Y in it’s correct position, then we will
+*              print it. Finally, we will Perform a comparison between Y and X. 
+*              If not same, we will perform a delete operation to make it same
+*              then Print both of our arrays.
 *
 * Files:   
 *              Question_2.java
-* 
-*
-* Usage: -
-* 
+*  
 *****************************************************************************/
 import java.util.Arrays;
 

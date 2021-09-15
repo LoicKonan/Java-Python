@@ -1,24 +1,23 @@
 /******************************************************************************
  * Author:      Loic Konan 
  * Email:       loickonan.lk@gmail.com 
- * Label: 
- * Title: 
- * Course:
+ * Label:       Question 4
+ * Title:       Programing Assignment 01
+ * Course:      CMPS 4143 
  * Semester:    Fall 2021 
+ * 
  * Description:
- *
- *              This Project is about
+ *              This Program is about taking a string or a sentence(s) then 
+ *              printing the words in a reverse order using an array.
  *
  * Files:   
  *              Question_4.java
- * 
- *
- * Usage: -
  * 
  *****************************************************************************/
 
 public class Question_4 
 {
+    // Driver program.
     public static void main(String[] args)
     {
         String s = "This is my first programming  assignment ";
@@ -29,6 +28,13 @@ public class Question_4
         System.out.print("\n\n");
     }
 
+    /**
+     * 
+     * @param str
+     * @param Beginning
+     * @param Ending
+     * @return void
+     */
     static void reverse(char [] str,int Beginning,int Ending) 
     {
         char StringLINE;  
@@ -40,8 +46,13 @@ public class Question_4
             Beginning++;
             Ending--;
         }
-    }
+    } // End of the Driver Program.
 
+    /**
+     * 
+     * @param s
+     * @return static char
+     */
     static char[] swap(char []s)
     {
     int Beginning = 0;

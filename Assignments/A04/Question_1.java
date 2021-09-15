@@ -7,7 +7,7 @@
  * Semester:    Fall 2021 
  * 
  * Description:
- *              This Project is about taking an array with 20 elements, 
+ *              This Program is about taking an array with 20 elements, 
  *              and finding the large and small number in that array.
  *
  * Files:   

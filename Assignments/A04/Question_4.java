@@ -29,6 +29,9 @@ public class Question_4
     }                                                                // End of the Driver Program.
 
     /**
+     * We will use this function to perform the reverse on our given string S.
+     * We will pass in 3  parameters. One array of characters and two integer 
+     * variable to indicate the start and end of our string.
      * 
      * @param str
      * @param Beginning
@@ -36,17 +39,17 @@ public class Question_4
      * @return void
      */
     static void reverse(char [] str,int Beginning,int Ending) 
-    {
-        char StringLINE;  
-        while (Beginning <= Ending)
-        {
-            StringLINE = str[Beginning];
-            str[Beginning] = str[Ending];
-            str[Ending] = StringLINE;
-            Beginning++;
-            Ending--;
-        }
-    } 
+    {                                                                // Start of our function.
+        char StringText;                                             // Declaring a variable call StringText.
+        while (Beginning <= Ending)                                  // As long as the end is less or equal to the start.
+        {                                                            // Start of our while loop.
+            StringText = str[Beginning];                             // Initialize StringText to the begining of our text.
+            str[Beginning] = str[Ending];                            // Then re-initialize it to the end of our text.
+            str[Ending] = StringText;                                // Here we pretty much reversing the order of our text.
+            Beginning++;                                             // Encrementing the Begining variable.
+            Ending--;                                                // Decrementing the ending variable.
+        }                                                            // End of the while loop.
+    }                                                                // End of function reverse.
 
     /**
      * 
@@ -55,17 +58,17 @@ public class Question_4
      */
     static char[] swap(char []s)
     {
-    int Beginning = 0;
-    for (int Ending = 0; Ending < s.length; Ending++)
-    {
-        if (s[Ending] == ' ')
+    int Beginning = 0;                                               //
+    for (int Ending = 0; Ending < s.length; Ending++)                //
+    {                                                                //
+        if (s[Ending] == ' ')                                        //
         {
-            reverse(s, Beginning, Ending);
-            Beginning = Ending + 1;
-        }
-    }
-    reverse(s, Beginning, s.length - 1);
-    reverse(s, 0, s.length - 1);
-    return s;
-    }
+            reverse(s, Beginning, Ending);                           //
+            Beginning = Ending + 1;                                  //
+        }                                                            //
+    }                                                                //
+    reverse(s, Beginning, s.length - 1);                             //
+    reverse(s, 0, s.length - 1);                                     //
+    return s;                                                        //
+    }                                                                // 
 }

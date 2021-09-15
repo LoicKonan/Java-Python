@@ -67,11 +67,15 @@ public class Question_3                                              // Start of
             }
         }                                                            // End of our for loop.
 
-        for (int i = 0; i < Count; i++)                              //
-        {                                                            // 
-            for (int j = 0; j < Count - i - 1; j++)                  //
-            {                                                        //
-                if (frequency[j] < frequency[j + 1])                 //
+        for (int i = 0; i < Count; i++)                              // Iterating throung this first for loop.
+        {                                                            
+            for (int j = 0; j < Count - i - 1; j++)                  // Start this second for loop.
+            {                                        
+                /**
+                 * 
+                 * 
+                */                
+                if (frequency[j] < frequency[j + 1])                  
                 {
                     int temp = frequency[j];
                     frequency[j] = frequency[j + 1];

@@ -20,13 +20,13 @@ public class Question_1
     // The Driver program.
     public static void main(String[] args) 
     {
-        // give array of 20 values
+        // An Array of 20 integers element.
         int [] myArray = new int[] { 
                                     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
                                     10, 10, 12, 13, 14, 15, 16, 17, 18, 19 
                                    };
         
-        int small = myArray[0];                   // smallest element as the first index.  
+        int small = myArray[0];                  // smallest element as the first index.  
         int large = myArray[0];                  // largeest element as the first index. 
        
 
@@ -37,16 +37,16 @@ public class Question_1
          */
         for (int i = 1; i < myArray.length; i++) 
         {
-            if (myArray[i] > large)             // Using this if statement to find the 
-                {                               // Largest element then assign it to the variable large.
+            if (myArray[i] > large)              // Using this if statement to find the 
+                {                                // Largest element then assign it to the variable large.
                     large = myArray[i];
                 }
 
-            else if (myArray[i] < small)        // Using this else if statement to find the 
-               {                                // smallest element then assign it to the variable small.
+            else if (myArray[i] < small)         // Using this else if statement to find the 
+               {                                 // smallest element then assign it to the variable small.
                     small = myArray[i];
                }
-        }                                       // End of for loop
+        }                                        // End of for loop
 
         /**
          * Printing out our array using a for loop, then

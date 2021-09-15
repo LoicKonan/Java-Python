@@ -1,5 +1,3 @@
-import org.graalvm.compiler.hotspot.replacements.PluginFactory_NewObjectSnippets;
-
 interface Vehicle 
 {
     // common functionalities

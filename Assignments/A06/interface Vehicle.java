@@ -1,3 +1,12 @@
+/**
+ * This is program about Inheritance.
+ * 
+ * @version SE9
+ * @author Loic Konan
+ * Semester: Fall 2021
+ * Date: 9/15/2021
+ * 
+ */
 interface Vehicle 
 {
     // common functionalities

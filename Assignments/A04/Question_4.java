@@ -20,13 +20,13 @@ public class Question_4
     // Driver program.
     public static void main(String[] args)
     {
-        String s = "This is my first programming  assignment ";
-        System.out.print("Original Text is :    " + s +"\n");
-        char []p = swap(s.toCharArray());
-        System.out.print("Converted Text is:    ");
-        System.out.print(p);
-        System.out.print("\n\n");
-    }
+        String s = "This is my first programming  assignment ";      // Original text.
+        System.out.print("Original Text is :    " + s +"\n");        // Displaying the Original sentence.
+        char []p = swap(s.toCharArray());                            // Calling our function Swap to reverse the text.
+        System.out.print("Converted Text is:    ");                  // Displaying the converted text.
+        System.out.print(p);                                         //
+        System.out.print("\n\n");                                    // Adding some new lines.
+    }                                                                // End of the Driver Program.
 
     /**
      * 
@@ -46,7 +46,7 @@ public class Question_4
             Beginning++;
             Ending--;
         }
-    } // End of the Driver Program.
+    } 
 
     /**
      * 

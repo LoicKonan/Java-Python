@@ -7,7 +7,7 @@
  * Semester:    Fall 2021
  * 
  * Description:
- *              This Project is about Find 5 high frequency words using
+ *              This Project is about Finding the 5 highest frequency words using
  *              several array operations.
  *
  * Files:   

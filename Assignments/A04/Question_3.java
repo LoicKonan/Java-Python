@@ -46,18 +46,20 @@ public class Question_3                                              // Start of
             for (int j = 0; j < Count; j++)                          // Iterate through our for loop as long as i is less than the variable count.
             {         
                 /**
-                 * 
-                 * 
-                 *  
+                 * In this if statement below we will use the built in 
+                 * Functions to ignore all the dot the commas and semicolons
+                 * and all ignore if they capitalize and focus on finding 
+                 * the High frequency word and add it to our variable frequency
+                 * and keep incrementing it.
                  */
                 if (text[i].replaceAll("[.,;]", "").equalsIgnoreCase(Frequenttext[j])) 
                 {                                                    
-                    frequency[j] += 1;                               //
-                    valid = true;                                    //
+                    frequency[j] += 1;                               // Increment the frequency variable.
+                    valid = true;                                    // Set our boolean to true since if it valid.
                 }                                                    
             }                                                        // End of this for loop.
 
-            if (!valid)                                             //
+            if (!valid)                                             // In the case where our word is not valid.
             {                                                       
                 Frequenttext[Count] = text[i].replaceAll("[.,;]", "");
                 frequency[Count] = 1;
@@ -82,7 +84,7 @@ public class Question_3                                              // Start of
         }                                                            // End of this for loop.
 
         System.out.println("The Top 5 Most Frequent words: ");
-        for (int i = 0; i < 5; i++)                                  //
+        for (int i = 0; i < 5; i++)                                  // Using this for loop to display our result.
         {
             System.out.println(i + 1 + ". " + Frequenttext[i] + " (appeared " + frequency[i] + " times.)");
         }       

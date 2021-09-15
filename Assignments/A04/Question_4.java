@@ -19,7 +19,17 @@
 
 public class Question_4 
 {
-    static void reverse(char str[],int Beginning,int Ending) 
+    public static void main(String[] args)
+    {
+        String s = "This is my first programming  assignment ";
+        System.out.print("Original Text is :    " + s +"\n");
+        char []p = swap(s.toCharArray());
+        System.out.print("Converted Text is:    ");
+        System.out.print(p);
+        System.out.print("\n\n");
+    }
+
+    static void reverse(char [] str,int Beginning,int Ending) 
     {
         char StringLINE;  
         while (Beginning <= Ending)
@@ -46,15 +56,5 @@ public class Question_4
     reverse(s, Beginning, s.length - 1);
     reverse(s, 0, s.length - 1);
     return s;
-    }
-
-    public static void main(String[] args)
-    {
-        String s = "This is my first programming  assignment ";
-        System.out.print("Original Text is :    " + s +"\n");
-        char []p = swap(s.toCharArray());
-        System.out.print("Converted Text is:    ");
-        System.out.print(p);
-        System.out.print("\n\n");
     }
 }

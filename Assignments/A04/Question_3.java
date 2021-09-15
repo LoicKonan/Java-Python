@@ -74,22 +74,22 @@ public class Question_3                                              // Start of
                 /**
                  * Comparing the element of frequency j to j+1.
                  * Created a temporay variable then initialize it to frequency j.
-                 * Then swap them and initialize it to the string temp 'S'.
+                 * Then swap string temp 'S' to the frequent text.
                  * 
                 */                
-                if (frequency[j] < frequency[j + 1])                 //    
+                if (frequency[j] < frequency[j + 1])                 
                 {                                   
-                    int temp = frequency[j];                         //
-                    frequency[j] = frequency[j + 1];                 //
-                    frequency[j + 1] = temp;                         //
-                    String temp_S = Frequenttext[j];                 // Assign the 
-                    Frequenttext[j] = Frequenttext[j + 1];           //
-                    Frequenttext[j + 1] = temp_S;                    // 
+                    int temp = frequency[j];                         // Initialize the temp to the frenquency [j].
+                    frequency[j] = frequency[j + 1];                 // Assign frequency[j+1] to frequency[j].
+                    frequency[j + 1] = temp;                         // now move the value of temp to frenquency [j+1].
+                    String temp_S = Frequenttext[j];                 // Now declare and initialize string temp 'S' to Frequent text[j] .
+                    Frequenttext[j] = Frequenttext[j + 1];           // Moving Frequencytext[j+1] to Frequencytext[j].
+                    Frequenttext[j + 1] = temp_S;                    // Moving the string in temp S to Frequencytext[j+1].
                 }                                                    
             }                                                        // End of this for loop.
         }                                                            // End of this for loop.
 
-        System.out.println("The Top 5 Most Frequent words: ");
+        System.out.println("\n\nThe Top 5 Most Frequent words: ");
         for (int i = 0; i < 5; i++)                                  // Using this for loop to display our result.
         {
             System.out.println(i + 1 + ". " + Frequenttext[i] + " (appeared " + frequency[i] + " times.)");

@@ -72,17 +72,19 @@ public class Question_3                                              // Start of
             for (int j = 0; j < Count - i - 1; j++)                  // Iterating throung through the occurance count - 1.
             {                                        
                 /**
-                 * 
+                 * Comparing the element of frequency j to j+1.
+                 * Created a temporay variable then initialize it to frequency j.
+                 * Then swap them and initialize it to the string temp 'S'.
                  * 
                 */                
-                if (frequency[j] < frequency[j + 1])                  
-                {
-                    int temp = frequency[j];
-                    frequency[j] = frequency[j + 1];
-                    frequency[j + 1] = temp;
-                    String temp_S = Frequenttext[j];
-                    Frequenttext[j] = Frequenttext[j + 1];
-                    Frequenttext[j + 1] = temp_S;
+                if (frequency[j] < frequency[j + 1])                 //    
+                {                                   
+                    int temp = frequency[j];                         //
+                    frequency[j] = frequency[j + 1];                 //
+                    frequency[j + 1] = temp;                         //
+                    String temp_S = Frequenttext[j];                 // Assign the 
+                    Frequenttext[j] = Frequenttext[j + 1];           //
+                    Frequenttext[j + 1] = temp_S;                    // 
                 }                                                    
             }                                                        // End of this for loop.
         }                                                            // End of this for loop.

@@ -14,14 +14,14 @@
  * Solution:
  *              Created an array of integers and inserted 20 random elements in it.
  *              Created 2 variables one call smallest and the other call largest.
- *	            Initialize both to the first element of my array.
- *	            Then use a for loop to iterate through my whole array.
- *	            Made an if statement that will compare each element, and when 
+ *              Initialize both to the first element of my array.
+ *              Then use a for loop to iterate through my whole array.
+ *              Made an if statement that will compare each element, and when 
  *              the largest number was found I stored it in the variable call largest.
  *              Used an else if statement to compare each element in the array to find
  *              the smallest number and when the smallest number was found 
  *              I stored it in the variable call smallest.
- *	            I finally, use a built-in function to print my whole array and use 
+ *              I finally, use a built-in function to print my whole array and use 
  *              print line to print the largest number and the smallest number of the array.
  *
  * Files:   

@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Question_4",
+      "request": "launch",
+      "mainClass": "Question_4",
+      "projectName": "A04_c3c511a2"
+    },
+    {
+      "type": "java",
+      "name": "Launch Question_3",
+      "request": "launch",
+      "mainClass": "Question_3",
+      "projectName": "A04_c3c511a2"
+    },
+    {
+      "type": "java",
       "name": "Launch Question_1",
       "request": "launch",
       "mainClass": "Question_1",

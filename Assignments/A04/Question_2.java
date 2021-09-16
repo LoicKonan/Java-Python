@@ -17,6 +17,14 @@
 *              If not same, we will perform a delete operation to make it same
 *              then Print both of our arrays.
 *
+*
+* Solution: 
+*             I used few build in function to copy the contents of array X into array Y
+*             and to print the arrays as a string, also by including the import java.util.arrays,
+*             I use 2 function to perform the search and delete on the part ‘c’ of the question. 
+*             One function call find that found the number to be deleted and the other function
+*             call delete to delete the number found which was the average value 48.
+*
 * Files:   
 *              Question_2.java
 *  

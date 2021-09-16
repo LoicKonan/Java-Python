@@ -9,6 +9,12 @@
  * Description:
  *              This Program is about taking a string or a sentence(s) then 
  *              printing the words in a reverse order using an array.
+ * 
+ * Solution:   
+ *              I took the given string and build a reverse() and swap() function 
+ *              that would reverse  the given string and swap it, 
+ *              then stored it in an array of characters. And called both function 
+ *              in my driver function and then print it to the console.
  *
  * Files:   
  *              Question_4.java
@@ -21,9 +27,9 @@ public class Question_4
     public static void main(String[] args)
     {
         String s = "This is my first programming  assignment ";      // Original text.
-        System.out.print("Original Text is :    " + s +"\n");        // Displaying the Original sentence.
+        System.out.print("\n\nOriginal Text:     " + s +"\n");       // Displaying the Original sentence.
         char []p = swap(s.toCharArray());                            // Calling our function Swap to reverse the text.
-        System.out.print("Converted Text is:    ");                  // Displaying the converted text.
+        System.out.print("\nConverted Text:    ");                   // Displaying the converted text.
         System.out.print(p);                                         //
         System.out.print("\n\n");                                    // Adding some new lines.
     }                                                                // End of the Driver Program.

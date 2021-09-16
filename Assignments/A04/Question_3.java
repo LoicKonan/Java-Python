@@ -9,6 +9,13 @@
  * Description:
  *              This Project is about Finding the 5 highest frequency words using
  *              several array operations.
+ * 
+ * Solution: 
+ *             I used some built-in function then took my given string and inserted
+ *             it in an array, then use a for loop to iterate through it and remove
+ *             anything that wasn’t a text, then use another for loop and if statement
+ *             to compare each element to see which one appeared more 
+ *             and then printed it to the console.  
  *
  * Files:   
  *              Question_3.java

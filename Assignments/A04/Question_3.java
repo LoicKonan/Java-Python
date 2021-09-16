@@ -7,7 +7,7 @@
  * Semester:    Fall 2021
  * 
  * Description:
- *              This Project is about Finding the 5 highest frequency words using
+ *              This Project is about Finding the 5 highest recurrence words using
  *              several array operations.
  * 
  * Solution: 
@@ -42,56 +42,56 @@ public class Question_3                                              // Start of
                                                                      // of the given regular expression.
 
         String[] Frequenttext = new String[text.length];             // Create an array of string and make it the length of our given text.
-        int[] frequency = new int[text.length];                      // Create an array of integers and make it the length of our given text.
+        int[] recurrence = new int[text.length];                     // Create an array of integers and make it the length of our given text.
 
-        int Count = 0;                                               // Declare and initialize a variable call Count to keep count.
+        int counter = 0;                                             // Declare and initialize a variable call counter to keep counter.
 
         for (int i = 0; i < text.length; i++)                        // Iterate through our for loop as long as i is less than our text length.
         {                                                            
             boolean valid = false;                                   // Created a boolean and set it to false.
 
-            for (int j = 0; j < Count; j++)                          // Iterate through our for loop as long as i is less than the variable count.
+            for (int j = 0; j < counter; j++)                        // Iterate through our for loop as long as i is less than the variable counter.
             {         
                 /**
                  * In this if statement below we will use the built in 
                  * Functions to ignore all the dot the commas and semicolons
                  * and all ignore if they capitalize and focus on finding 
-                 * the High frequency word and add it to our variable frequency
+                 * the High recurrence word and add it to our variable recurrence
                  * and keep incrementing it.
                  */
                 if (text[i].replaceAll("[.,;]", "").equalsIgnoreCase(Frequenttext[j])) 
                 {                                                    
-                    frequency[j] += 1;                               // Increment the frequency variable.
+                    recurrence[j] += 1;                              // Increment the recurrence variable.
                     valid = true;                                    // Set our boolean to true since if it valid.
                 }                                                    
             }                                                        // End of this for loop.
 
             if (!valid)                                              // In the case where our word is not valid.
             {                                                       
-                Frequenttext[Count] = text[i].replaceAll("[.,;]", "");
-                frequency[Count] = 1;
-                Count += 1;                                          // Incrementing our count variable.
+                Frequenttext[counter] = text[i].replaceAll("[.,;]", "");
+                recurrence[counter] = 1;
+                counter += 1;                                        // Incrementing our counter variable.
             }
         }                                                            // End of our for loop.
 
-        for (int i = 0; i < Count; i++)                              // Iterating throung through the occurance count.
+        for (int i = 0; i < counter; i++)                            // Iterating throung through the occurance counter.
         {                                                            
-            for (int j = 0; j < Count - i - 1; j++)                  // Iterating throung through the occurance count - 1.
+            for (int j = 0; j < counter - i - 1; j++)                // Iterating throung through the occurance counter - 1.
             {                                        
                 /**
-                 * Comparing the element of frequency j to j+1.
-                 * Created a temporay variable then initialize it to frequency j.
+                 * Comparing the element of recurrence j to j+1.
+                 * Created a temporay variable then initialize it to recurrence j.
                  * Then swap string temp 'S' to the frequent text.
                  * 
                 */                
-                if (frequency[j] < frequency[j + 1])                 
+                if (recurrence[j] < recurrence[j + 1])                 
                 {                                   
-                    int temp = frequency[j];                         // Initialize the temp to the frenquency [j].
-                    frequency[j] = frequency[j + 1];                 // Assign frequency[j+1] to frequency[j].
-                    frequency[j + 1] = temp;                         // now move the value of temp to frenquency [j+1].
+                    int temp = recurrence[j];                        // Initialize the temp to the frenquency [j].
+                    recurrence[j] = recurrence[j + 1];               // Assign recurrence[j+1] to recurrence[j].
+                    recurrence[j + 1] = temp;                        // now move the value of temp to frenquency [j+1].
                     String temp_S = Frequenttext[j];                 // Now declare and initialize string temp 'S' to Frequent text[j] .
-                    Frequenttext[j] = Frequenttext[j + 1];           // Moving Frequencytext[j+1] to Frequencytext[j].
-                    Frequenttext[j + 1] = temp_S;                    // Moving the string in temp S to Frequencytext[j+1].
+                    Frequenttext[j] = Frequenttext[j + 1];           // Moving recurrencetext[j+1] to recurrencetext[j].
+                    Frequenttext[j + 1] = temp_S;                    // Moving the string in temp S to recurrencetext[j+1].
                 }                                                    
             }                                                        // End of this for loop.
         }                                                            // End of this for loop.
@@ -99,7 +99,7 @@ public class Question_3                                              // Start of
         System.out.println("\n\nThe Top 5 Most Frequent words: ");
         for (int i = 0; i < 5; i++)                                  // Using this for loop to display our result.
         {
-            System.out.println(i + 1 + ". " + Frequenttext[i] + " (appeared " + frequency[i] + " times.)");
+            System.out.println(i + 1 + ". " + Frequenttext[i] + " (appeared " + recurrence[i] + " times.)");
         }       
     }                                                                // End of our Driver program.
 }                                                                    // End of our Java Program.

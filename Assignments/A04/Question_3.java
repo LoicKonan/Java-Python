@@ -5,7 +5,8 @@
  * Title:       Programing Assignment 01
  * Course:      CMPS 4143 
  * Semester:    Fall 2021
- * 
+ * Date:        09/15/2021
+ *
  * Description:
  *              This Project is about Finding the 5 highest recurrence words using
  *              several array operations.

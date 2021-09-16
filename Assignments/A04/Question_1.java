@@ -5,6 +5,7 @@
  * Title:       Programing Assignment 01
  * Course:      CMPS 4143 
  * Semester:    Fall 2021 
+ * Date:        09/15/2021
  * 
  * Description:
  *              This Program is about taking an array of 20 elements, 

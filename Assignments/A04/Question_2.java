@@ -1,4 +1,3 @@
-
 /******************************************************************************
 * Author:      Loic Konan 
 * Email:       loickonan.lk@gmail.com 
@@ -6,6 +5,7 @@
 * Title:       Programing Assignment 01
 * Course:      CMPS 4143 
 * Semester:    Fall 2021
+* Date:        09/15/2021
 *  
 * Description:
 *

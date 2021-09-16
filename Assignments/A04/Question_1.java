@@ -7,8 +7,9 @@
  * Semester:    Fall 2021 
  * 
  * Description:
- *              This Program is about taking an array with 20 elements, 
- *              and finding the large and small number in that array.
+ *              This Program is about taking an array of 20 elements, 
+ *              and finding the largest and smallest number in that array.
+ *              Then printing them to the console.
  *
  * Files:   
  *              Question_1.java

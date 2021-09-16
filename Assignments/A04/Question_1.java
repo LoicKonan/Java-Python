@@ -47,8 +47,8 @@ public class Question_1
        
 
         /**
-         * In this for loop we will determine the smallest and the largest element in our
-         * array. We will compare each element to the first element, if we find the largest and the smallest, 
+         * In this for loop we will determine the smallest and the largest element in our array.
+         * We will compare each element to the first element, if we find the largest and the smallest, 
          * we will then assign the largest one to the variable large and the smallest to the variable small. 
          */
         for (int i = 1; i < myArray.length; i++) 

@@ -49,7 +49,7 @@ public class Question_3                                              // Start of
 
         for (int i = 0; i < text.length; i++)                        // Iterate through our for loop as long as i is less than our text length.
         {                                                            
-            boolean valid = false;                                   // Created a boolean and set it to false.
+            boolean valid = false;                                   // Created a boolean name valid and set it to false.
 
             for (int j = 0; j < counter; j++)                        // Iterate through our for loop as long as i is less than the variable counter.
             {         

@@ -47,12 +47,12 @@ public class Question_4
      */
     static void reverse(char [] str,int Beginning,int Ending) 
     {                                                                // Start of our function.
-        char StringText;                                             // Declaring a variable call StringText.
+        char message;                                                // Declaring a variable call message.
         while (Beginning <= Ending)                                  // As long as the end is less or equal to the start.
         {                                                            // Start of our while loop.
-            StringText = str[Beginning];                             // Initialize StringText to the begining of our text.
+            message = str[Beginning];                                // Initialize message to the begining of our text.
             str[Beginning] = str[Ending];                            // Then re-initialize it to the end of our text.
-            str[Ending] = StringText;                                // Here we pretty much reversing the order of our text.
+            str[Ending] = message;                                   // Here we pretty much reversing the order of our text.
             Beginning++;                                             // Encrementing the Begining variable.
             Ending--;                                                // Decrementing the ending variable.
         }                                                            // End of the while loop.

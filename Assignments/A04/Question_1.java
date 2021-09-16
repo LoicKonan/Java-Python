@@ -15,11 +15,13 @@
  *  * 
  *****************************************************************************/
 
-public class Question_1                          // Start of our Java Program.
+import java.util.Arrays;                         // To be able to use some built in functions.
+
+public class Question_1                          
 {
     // The Driver program.
     public static void main(String[] args) 
-    {                                            // Start of our Driver Program.
+    {                                            
         // An Array of 20 integers element.
         int [] myArray = new int[] { 
                                     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
@@ -48,16 +50,9 @@ public class Question_1                          // Start of our Java Program.
                }
         }                                        // End of for loop
 
-        /**
-         * Printing out our array using a for loop, then
-         * displaying the large and the small number from the array.
-         */
-        System.out.println("These are the 20 elements of this Array: ");
-        for (int i = 0; i < myArray.length ; i++)           
-        {
-            System.out.print(myArray[i] + " ");
-        }        
-        System.out.println("\n\nThe small number of this array is: " + small);
-        System.out.println("The large number of this array is: " + large + "\n");
-    }                                            // End of the drive program.
+        // Printing out our array using the build in function.
+        System.out.println("\n\nThe Contents of the Array: " + Arrays.toString(myArray) + "\n");
+        System.out.println("The smallest number of this array is: " + small);
+        System.out.println("The largest number of this array is:  " + large + "\n");
+    }                                           
 }                                                // End of our Java program.

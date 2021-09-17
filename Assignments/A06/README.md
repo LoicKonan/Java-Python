@@ -1,4 +1,4 @@
-## Assignment 01 - Print Hello World & Array in Java
+## Assignment 06 - 
 
 ### Loic Konan
 

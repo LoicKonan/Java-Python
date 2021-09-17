@@ -25,7 +25,3 @@
 |   #   | File                           | Description  |
 | :---: | ------------------------------ | ------------ |
 |   1   | [Employee.java](Employee.java) | **Solution** |
-
-### Example Command
-
-- None.

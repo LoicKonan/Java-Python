@@ -1,5 +1,5 @@
 /**
- * This is program about Inheritance
+ * This is a program about Inheritance
  * 
  * @version SE9
  * @author Loic Konan

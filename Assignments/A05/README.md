@@ -20,8 +20,3 @@
 |   3   | [Hierarchical.java](Hierarchical.java) | Hierachical class  |
 |   4   | [Mountainbike.java](Mountainbike.java) | Mountainbike class |
 |   5   | [MultiLevel.java](MultiLevel.java)     | Multi-Level class  |
-
-### Instructions
-
-- None.
-

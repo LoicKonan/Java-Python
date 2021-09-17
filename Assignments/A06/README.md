@@ -13,5 +13,5 @@
 
 |   #   | File                                                 | Description |
 | :---: | ---------------------------------------------------- | ----------- |
-|   1   | [interfaceVehicle.java](interfaceVehicle.java)       |             |
-|   2   | [MultipleInheritance.java](MultipleInheritance.java) |             |
+|   1   | [interfaceVehicle.java](interfaceVehicle.java)       |Vehicle class             |
+|   2   | [MultipleInheritance.java](MultipleInheritance.java) |Muiltple classes            |

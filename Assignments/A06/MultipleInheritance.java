@@ -1,5 +1,5 @@
 /**
- * This is program about Multiple Inheritance.
+ * This is program about Multiple Interface.
  * 
  * @version SE9
  * @author Loic Konan

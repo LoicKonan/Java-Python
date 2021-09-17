@@ -1,5 +1,5 @@
 /**
- * This is program about Inheritance.
+ * This is program about Interface.
  * 
  * @version SE9
  * @author Loic Konan

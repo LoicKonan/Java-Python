@@ -10,11 +10,3 @@
 | :---: | ---- | ----------- |
 |   1   |      |             |
 |   2   |      |             |
-
-### Instructions
-
-- None.
-
-### Example Command
-
-- None.

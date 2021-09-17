@@ -7,7 +7,7 @@
 | [03](./A03) | [A03](./A03) | [Employee Class in Java](./A03)                      | :heavy_check_mark: |
 | [04](./A04) | [A04](./A04) | [Problem Solving in Java](./A04)                     | :heavy_check_mark: |
 | [05](./A05) | [A05](./A05) | [Inheritance in Java](./A05)                         | :heavy_check_mark: |
-| [06](./A06) | [A06](./A06) | [a Interface in Java](./A06)                         | :heavy_check_mark: |
+| [06](./A06) | [A06](./A06) | [Interface in Java](./A06)                         | :heavy_check_mark: |
 | [07](./A07) | [A07](./A07) | [Java Streams, Files, Exception Handling](./A07)     | :soon: 🔴           |
 | [08](./A08) | [A08](./A08) | [Java Collections](./A08)                            | :soon: 🔴           |
 | [09](./A09) | [A09](./A09) | [Java - Hashtable](./A09)                            | :soon: 🔴           |

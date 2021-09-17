@@ -6,8 +6,8 @@
 | [02](./A02) | [A02](./A02) | [Spiral Mattrix](./A02)      | :heavy_check_mark: |
 | [03](./A03) | [A03](./A03) | [Employee Class](./A03)      | :heavy_check_mark: |
 | [04](./A04) | [A04](./A04) | [Problem Solving](./A04)     | :heavy_check_mark: |
-| [05](./A05) | [A05](./A05) | [loading...](./A05)          | :soon: 🔴           |
-| [06](./A06) | [A06](./A06) | [loading...](./A06)          | :soon: 🔴           |
+| [05](./A05) | [A05](./A05) | [loading...](./A05)          | :heavy_check_mark: |
+| [06](./A06) | [A06](./A06) | [loading...](./A06)          | :heavy_check_mark: |
 | [07](./A07) | [A07](./A07) | [loading...](./A07)          | :soon: 🔴           |
 | [08](./A08) | [A08](./A08) | [loading...](./A08)          | :soon: 🔴           |
 | [09](./A09) | [A09](./A09) | [loading...](./A09)          | :soon: 🔴           |

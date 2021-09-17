@@ -4,7 +4,7 @@
 
 ### Description
 
-- Inheritance is an important pillar of **OOP(Object-Oriented Programming)**.<br> 
+- **Inheritance** is an important pillar of **OOP(Object-Oriented Programming)**.<br> 
 - It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class.
   - The keyword used for inheritance is **extends**.
   

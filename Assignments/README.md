@@ -8,11 +8,11 @@
 | [04](./A04) | [A04](./A04) | [Problem Solving in Java](./A04)                                | :heavy_check_mark: |
 | [05](./A05) | [A05](./A05) | [Inheritance in Java](./A05)                                    | :heavy_check_mark: |
 | [06](./A06) | [A06](./A06) | [a Interface in Java](./A06)                                    | :heavy_check_mark: |
-| [07](./A07) | [A07](./A07) | [loading... Java Streams, Files, Exception Handling](./A07)     | :soon: 🔴           |
-| [08](./A08) | [A08](./A08) | [loading... Java Collections](./A08)                            | :soon: 🔴           |
-| [09](./A09) | [A09](./A09) | [loading... Java - Hashtable](./A09)                            | :soon: 🔴           |
-| [10](./A10) | [A10](./A10) | [loading... Java - Set](./A10)                                  | :soon: 🔴           |
-| [11](./A11) | [A11](./A11) | [loading... Java Swing, Graphics, Dynamic Grphx, Events](./A11) | :soon: 🔴           |
+| [07](./A07) | [A07](./A07) | [Java Streams, Files, Exception Handling](./A07)     | :soon: 🔴           |
+| [08](./A08) | [A08](./A08) | [Java Collections](./A08)                            | :soon: 🔴           |
+| [09](./A09) | [A09](./A09) | [Java - Hashtable](./A09)                            | :soon: 🔴           |
+| [10](./A10) | [A10](./A10) | [Java - Set](./A10)                                  | :soon: 🔴           |
+| [11](./A11) | [A11](./A11) | [Java Swing, Graphics, Dynamic Grphx, Events](./A11) | :soon: 🔴           |
 | [12](./A12) | [A12](./A12) | [loading...](./A12)                                             | :soon: 🔴           |
 | [13](./A13) | [A13](./A13) | [loading...](./A13)                                             | :soon: 🔴           |
 | [14](./A14) | [A14](./A14) | [loading...](./A14)                                             | :soon: 🔴           |

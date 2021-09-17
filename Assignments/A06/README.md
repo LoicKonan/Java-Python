@@ -8,10 +8,10 @@ This assignment is more about breaking the ice with **Java**, and learning how t
 
 ### Files
 
-|   #   | File                               | Description                        |
-| :---: | ---------------------------------- | ---------------------------------- |
-|   1   | [HelloWorld.java](HelloWorld.java) | Printing Hello World to the screen |
-|   2   | [array.java](array.java)           | Printing some Array                |
+|   #   | File                                                 | Description |
+| :---: | ---------------------------------------------------- | ----------- |
+|   1   | [interfaceVehicle.java](interfaceVehicle.java)       |             |
+|   2   | [MultipleInheritance.java](MultipleInheritance.java) |             |
 
 ### Instructions
 

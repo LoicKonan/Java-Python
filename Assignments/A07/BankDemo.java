@@ -1,5 +1,5 @@
 /**
- * This is program about CheckingAccount class.
+ * This is program about Bank Demo class.
  * 
  * @version SE9
  * @author Loic Konan

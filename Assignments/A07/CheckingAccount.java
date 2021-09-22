@@ -7,4 +7,15 @@ public class CheckingAccount
     {
         accNumber = myAccNumber;
     }
+
+    public double getBalance() 
+    {
+        return balance;
+    }
+
+    public  void setBalance( double myBalance)
+    {
+        balance = myBalance;
+    }
+    
 }

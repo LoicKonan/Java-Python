@@ -1,9 +1,7 @@
 import java.io.*;
 
-
 public class CharacterCount
 {
-
     public static void main(String[] args) throws FileNotFoundException, IOException 
     {
         FileInputStream in;

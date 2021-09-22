@@ -26,7 +26,7 @@ public class BankDemo
         }
         catch (Except e)
         {
-            System.out.println("Sorry! You are shourt of " + e.getAmount());
+            System.out.println("Sorry! You are short of " + e.getAmount());
             e.printStackTrace();
         }
         finally

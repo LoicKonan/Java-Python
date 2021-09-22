@@ -21,7 +21,7 @@ public class BankDemo
             obj1.withdraw(100);
 
 
-            System.out.println("Withdrawing ........$1000000");
+            System.out.println("Withdrawing ...$1000000");
             obj1.withdraw(1000000);
         }
         catch (Except e)

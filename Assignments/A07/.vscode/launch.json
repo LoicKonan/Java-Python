@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch BankDemo",
+      "request": "launch",
+      "mainClass": "BankDemo",
+      "projectName": "A07_c3c511a5"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

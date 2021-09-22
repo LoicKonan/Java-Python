@@ -35,7 +35,7 @@ public class CharacterCount
 
         finally
         {
-           // in.close();
+            // in.close();
             System.out.println("Good Bye");
         }
     }

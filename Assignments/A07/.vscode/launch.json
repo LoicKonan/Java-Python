@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch CharacterCount",
+      "request": "launch",
+      "mainClass": "CharacterCount",
+      "projectName": "A07_c3c511a5"
+    },
+    {
+      "type": "java",
       "name": "Launch BankDemo",
       "request": "launch",
       "mainClass": "BankDemo",

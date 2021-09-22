@@ -8,7 +8,7 @@
  * 
  */
 
-public class Except  extends Exception
+public class Except extends Exception
 {
     double needs;
 

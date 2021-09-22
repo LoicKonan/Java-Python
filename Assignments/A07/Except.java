@@ -10,15 +10,15 @@
 
 public class Except  extends Exception
 {
-    double amount;
+    double needs;
 
     public Except(double myAmount)
     {
-        amount = myAmount;
+        needs = myAmount;
     } 
     
     public double getAmount()
     {
-        return amount;
+        return needs;
     }
 }

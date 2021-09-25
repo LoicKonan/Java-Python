@@ -12,3 +12,4 @@
 |   2   | [CharacterCount.java](CharacterCount.java)   |             |
 |   3   | [CheckingAccount.java](CheckingAccount.java) |             |
 |   4   | [Except.java](Except.java)                   |             |
+|   5   | [sample.txt](sample.txt)                     |             |

@@ -1,4 +1,4 @@
-## Assignment 09 - Java - Hashtable
+## Assignment 09 - Java - Hashtable.
 
 ### Loic Konan
 

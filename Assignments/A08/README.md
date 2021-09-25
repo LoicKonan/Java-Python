@@ -1,4 +1,4 @@
-## Assignment 08 - Java Collections
+## Assignment 08 - Java Collections.
 
 ### Loic Konan
 

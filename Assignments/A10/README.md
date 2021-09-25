@@ -1,4 +1,4 @@
-## Assignment 10 - Java - Set
+## Assignment 10 - Java - Set.
 
 ### Loic Konan
 

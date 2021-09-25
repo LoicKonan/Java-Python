@@ -1,4 +1,4 @@
-## Assignment 10 - 
+## Assignment 10 - Java Swing, Graphics, Dynamic Grphx, Events.
 
 ### Loic Konan
 

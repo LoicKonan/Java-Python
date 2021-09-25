@@ -1,4 +1,4 @@
-## Assignment 07 - Java Streams, Files, Exception Handling 
+## Assignment 07 - Java Streams, Files, Exception Handling.
 
 ### Loic Konan
 

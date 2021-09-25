@@ -6,10 +6,10 @@
 
 ### Files
 
-|   #   | File                                         | Description |
-| :---: | -------------------------------------------- | ----------- |
-|   1   | [BankDemo.java](BankDemo.java)               |             |
-|   2   | [CharacterCount.java](CharacterCount.java)   |             |
-|   3   | [CheckingAccount.java](CheckingAccount.java) |             |
-|   4   | [Except.java](Except.java)                   |             |
-|   5   | [sample.txt](sample.txt)                     |             |
+|   #   | File                                         | Description                     |
+| :---: | -------------------------------------------- | ------------------------------- |
+|   1   | [BankDemo.java](BankDemo.java)               | Bank account class              |
+|   2   | [CharacterCount.java](CharacterCount.java)   | A character count class         |
+|   3   | [CheckingAccount.java](CheckingAccount.java) | Checking account class          |
+|   4   | [Except.java](Except.java)                   | Except class to cath the errors |
+|   5   | [sample.txt](sample.txt)                     | sample text                     |

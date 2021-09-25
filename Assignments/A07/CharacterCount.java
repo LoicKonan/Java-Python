@@ -16,7 +16,7 @@ public class CharacterCount
             {
                 count ++;
             }
-            System.out.println("Total Characters are " + count);
+            System.out.println("Total Characters are: " + count);
             in.close();
         }
         catch(FileNotFoundException e1)

@@ -12,11 +12,3 @@
 |   2   | [CharacterCount.java](CharacterCount.java)   |             |
 |   3   | [CheckingAccount.java](CheckingAccount.java) |             |
 |   4   | [Except.java](Except.java)                   |             |
-
-### Instructions
-
-- None.
-
-### Example Command
-
-- None.

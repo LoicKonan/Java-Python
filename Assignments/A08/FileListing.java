@@ -1,5 +1,5 @@
 /**
- * This is program about  class.
+ * This is program about File and directory class.
  * 
  * @version SE9
  * @author Loic Konan
@@ -19,7 +19,7 @@
 
          try
          {
-            file = new File("C:/Users/loick/Documents/");
+            file = new File("C:/Users/loick/OneDrive/Desktop/");
             paths = file.list();
             for(String path:paths)
             {

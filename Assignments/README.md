@@ -6,22 +6,22 @@
 | [02](./A02) | [A02](./A02) | [Spiral Mattrix in Java](./A02)                      | :heavy_check_mark: |
 | [03](./A03) | [A03](./A03) | [Employee Class in Java](./A03)                      | :heavy_check_mark: |
 | [04](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                     | :heavy_check_mark: |
-| [05](./A04) | [A05](./A05) | [Inheritance in Java](./A05)                         | :heavy_check_mark: |
-| [06](./A05) | [A06](./A06) | [Interface in Java](./A06)                           | :heavy_check_mark: |
-| [07](./A06) | [A07](./A07) | [Java Streams, Files, Exception Handling](./A07)     | :heavy_check_mark: |
-| [08](./A07) | [A08](./A08) | [Java Collections](./A08)                            | :soon: 🔴           |
-| [09](./A08) | [A09](./A09) | [Java - Hashtable](./A09)                            | :soon: 🔴           |
-| [10](./A09) | [A10](./A10) | [Java - Set](./A10)                                  | :soon: 🔴           |
-| [11](./A10) | [A11](./A11) | [Java Swing, Graphics, Dynamic Grphx, Events](./A11) | :soon: 🔴           |
+| [05](./A04) | [A04](./A05) | [Inheritance in Java](./A04)                         | :heavy_check_mark: |
+| [06](./A05) | [A05](./A06) | [Interface in Java](./A05)                           | :heavy_check_mark: |
+| [07](./A06) | [A06](./A07) | [Java Streams, Files, Exception Handling](./A06)     | :heavy_check_mark: |
+| [08](./A07) | [A07](./A08) | [Java Collections](./A07)                            | :soon: 🔴           |
+| [09](./A08) | [A08](./A09) | [Java - Hashtable](./A08)                            | :soon: 🔴           |
+| [10](./A09) | [A09](./A10) | [Java - Set](./A09)                                  | :soon: 🔴           |
+| [11](./A10) | [A10](./A11) | [Java Swing, Graphics, Dynamic Grphx, Events](./A10) | :soon: 🔴           |
 | [12](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                     | :soon: 🔴           |
-| [13](./A11) | [A13](./A13) | [loading...](./A11)                                  | :soon: 🔴           |
-| [14](./A12) | [A14](./A14) | [loading...](./A12)                                  | :soon: 🔴           |
-| [15](./A13) | [A15](./A15) | [loading...](./A13)                                  | :soon: 🔴           |
-| [16](./A14) | [A16](./A16) | [loading...](./A14)                                  | :soon: 🔴           |
-| [17](./A15) | [A17](./A17) | [loading...](./A15)                                  | :soon: 🔴           |
-| [18](./A16) | [A18](./A18) | [loading...](./A16)                                  | :soon: 🔴           |
-| [19](./A17) | [A19](./A19) | [loading...](./A17)                                  | :soon: 🔴           |
-| [20](./A18) | [A20](./A20) | [loading...](./A18)                                  | :soon: 🔴           |
+| [13](./A11) | [A11](./A13) | [loading...](./A11)                                  | :soon: 🔴           |
+| [14](./A12) | [A12](./A14) | [loading...](./A12)                                  | :soon: 🔴           |
+| [15](./A13) | [A13](./A15) | [loading...](./A13)                                  | :soon: 🔴           |
+| [16](./A14) | [A14](./A16) | [loading...](./A14)                                  | :soon: 🔴           |
+| [17](./A15) | [A15](./A17) | [loading...](./A15)                                  | :soon: 🔴           |
+| [18](./A16) | [A16](./A18) | [loading...](./A16)                                  | :soon: 🔴           |
+| [19](./A17) | [A17](./A19) | [loading...](./A17)                                  | :soon: 🔴           |
+| [20](./A18) | [A18](./A20) | [loading...](./A18)                                  | :soon: 🔴           |
 | [21](./P03) | [P03](./P03) | [loading...](./P03)                                  | :soon: 🔴           |
 | [22](./A19) | [A19](./A22) | [loading...](./A19)                                  | :soon: 🔴           |
 | [23](./A20) | [A20](./A23) | [loading...](./A20)                                  | :soon: 🔴           |

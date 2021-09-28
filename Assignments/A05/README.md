@@ -1,22 +1,20 @@
-## Assignment 05 - Inheritance in Java
+## Assignment 06 - Interface in Java 
 
 ### Loic Konan
 
 ### Description
 
-- **Inheritance** is an important pillar of **OOP(Object-Oriented Programming)**.<br> 
-- It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class.
-  - The keyword used for inheritance is **extends**.
+- Like a class, an **interface** can have methods and variables, but the methods declared in an interface are by default **abstract (only method signature, no body)**.
+- **Interfaces** specify what a class must do and not how. It is the blueprint of the class.
+- If a class implements an interface and does not provide method bodies for all functions specified in the interface, then the class must be declared **abstract**.
   
-> **Example:** In the below example of inheritance, class Bicycle is a base class,
-> class MountainBike is a derived class that extends Bicycle class and class Test is a driver class to run program.
-
+    > - Example of vehicles like bicycle, car, bike………, they have common functionalities.
+    > - So we make an interface and put all these common functionalities. And lets Bicycle,
+    > - Bike, car ….etc implement all these functionalities in their own class in their own way.
+  
 ### Files
 
-|   #   | File                                   | Description        |
-| :---: | -------------------------------------- | ------------------ |
-|   1   | [Bicycle.java](Bicycle.java)           | Bicycle class      |
-|   2   | [Driver.java](Driver.java)             | The main class     |
-|   3   | [Hierarchical.java](Hierarchical.java) | Hierachical class  |
-|   4   | [Mountainbike.java](Mountainbike.java) | Mountainbike class |
-|   5   | [MultiLevel.java](MultiLevel.java)     | Multi-Level class  |
+|   #   | File                                                 | Description      |
+| :---: | ---------------------------------------------------- | ---------------- |
+|   1   | [interfaceVehicle.java](interfaceVehicle.java)       | Vehicle class    |
+|   2   | [MultipleInheritance.java](MultipleInheritance.java) | Muiltple classes |

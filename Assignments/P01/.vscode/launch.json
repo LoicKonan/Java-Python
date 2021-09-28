@@ -3,24 +3,31 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch Driver",
+      "name": "Launch Question_4",
       "request": "launch",
-      "mainClass": "Driver",
-      "projectName": "A05_c3c511a3"
+      "mainClass": "Question_4",
+      "projectName": "A04_c3c511a2"
     },
     {
       "type": "java",
-      "name": "Launch Hierarchical",
+      "name": "Launch Question_3",
       "request": "launch",
-      "mainClass": "Hierarchical",
-      "projectName": "A05_c3c511a3"
+      "mainClass": "Question_3",
+      "projectName": "A04_c3c511a2"
     },
     {
       "type": "java",
-      "name": "Launch MultiLevel",
+      "name": "Launch Question_1",
       "request": "launch",
-      "mainClass": "MultiLevel",
-      "projectName": "A05_c3c511a3"
+      "mainClass": "Question_1",
+      "projectName": "A04_c3c511a2"
+    },
+    {
+      "type": "java",
+      "name": "Launch Question_2",
+      "request": "launch",
+      "mainClass": "Question_2",
+      "projectName": "A04_c3c511a2"
     },
     {
       "name": "C/C++ Runner: Debug Session",
@@ -28,9 +35,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A05",
+      "cwd": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A04",
       "environment": [],
-      "program": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A05\\build\\Debug\\outDebug",
+      "program": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A04\\build\\Debug\\outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",

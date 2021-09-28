@@ -3,10 +3,17 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch Bike",
+      "name": "Launch CharacterCount",
       "request": "launch",
-      "mainClass": "Bike",
-      "projectName": "A06_c3c511a4"
+      "mainClass": "CharacterCount",
+      "projectName": "A07_c3c511a5"
+    },
+    {
+      "type": "java",
+      "name": "Launch BankDemo",
+      "request": "launch",
+      "mainClass": "BankDemo",
+      "projectName": "A07_c3c511a5"
     },
     {
       "name": "C/C++ Runner: Debug Session",
@@ -14,9 +21,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A06",
+      "cwd": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A07",
       "environment": [],
-      "program": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A06\\build\\Debug\\outDebug",
+      "program": "c:\\Users\\loick\\OneDrive\\Cont Prog-Java-Python\\Java - Python\\Assignments\\A07\\build\\Debug\\outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",

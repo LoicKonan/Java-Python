@@ -1,4 +1,4 @@
-## Assignment 08 - Java Collections.
+## Assignment 09 - Java - Hashtable.
 
 ### Loic Konan
 

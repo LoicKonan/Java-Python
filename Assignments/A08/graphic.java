@@ -71,7 +71,7 @@ class FontComponent extends JComponent
 
         g2.drawString(message, (int) x, (int) baseY);
 
-        g2.setPaint(Color.LIGHT_GRAY);
+        g2.setPaint(Color.RED);
 
         // draw the baseline
 

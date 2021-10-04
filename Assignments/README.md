@@ -9,7 +9,7 @@
 | [05](./A05) | [A05](./A05) | [Interface in Java](./A05)                       | :heavy_check_mark: |
 | [06](./A06) | [A06](./A06) | [Java Streams, Files, Exception Handling](./A06) | :heavy_check_mark: |
 | [07](./A07) | [A07](./A07) | [Java File Listing Directory](./A07)             | :heavy_check_mark: |
-| [08](./A08) | [A08](./A08) | [loading...](./A08)                              | :soon: 🔴           |
+| [08](./A08) | [A08](./A08) | [Gaphic GUI in java.](./A08)                     | :heavy_check_mark: |
 | [09](./A09) | [A09](./A09) | [loading...](./A09)                              | :soon: 🔴           |
 | [10](./A10) | [A10](./A10) | [loading...](./A10)                              | :soon: 🔴           |
 | [11](./A11) | [A11](./A11) | [loading...](./A11)                              | :soon: 🔴           |
@@ -27,7 +27,7 @@
 | [23](./A23) | [A23](./A23) | [loading...](./A23)                              | :soon: 🔴           |
 | [24](./A24) | [A24](./A24) | [loading...](./A24)                              | :soon: 🔴           |
 | [25](./A25) | [A25](./A25) | [loading...](./A25)                              | :soon: 🔴           |
-| [26](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark:   |
-| [27](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                 | :heavy_check_mark:   |
+| [26](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark: |
+| [27](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                 | :heavy_check_mark: |
 | [28](./P03) | [P03](./P03) | [loading...](./P03)                              | :soon: 🔴           |
 | [29](./P04) | [P04](./P04) | [loading...](./P04)                              | :soon: 🔴           |

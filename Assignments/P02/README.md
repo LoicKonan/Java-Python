@@ -11,7 +11,7 @@
 > - **abstraction.**
 > - **encapsulation.**
 >
-> **2.** Consider the following organigram (can be found: <https://en.wikipedia.org/wiki/Mammal>) of **Mammalia family**.(a: 5, b: 5, c: 10, d: 20, e:10)
+> **2.** Consider the following organigram (<https://en.wikipedia.org/wiki/Mammal>) of **Mammalia family**.(a: 5, b: 5, c: 10, d: 20, e:10)
 > <img src="pic.png">
 >
 > - **a.** Each of members:

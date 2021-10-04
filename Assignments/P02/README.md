@@ -4,12 +4,12 @@
 
 ### Description
 
-**1.** Write an OOP code (A case study: Should be unique) that has the following OOP features:
+**1.** Write an **OOP code** (A case study: Should be unique) that has the following OOP features:
 
-- inheritance(any).
-- polymorphism (runtime and compile time).
-- abstraction.
-- encapsulation.
+- **inheritance(any).**
+- **polymorphism (runtime and compile time).**
+- **abstraction.**
+- **encapsulation.**
 
 ### Files
 

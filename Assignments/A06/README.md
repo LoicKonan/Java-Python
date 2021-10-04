@@ -18,7 +18,7 @@
 >
 > - **InputStream:** is used to read data from a source.
 > - **OutputStream:** is used for writing data to a destination.
-> <img src="pic1.png">
+> <img src="pic1.jpg">
 
 ### Files
 

@@ -27,7 +27,7 @@
 | [23](./A23) | [A23](./A23) | [loading...](./A23)                              | :soon: 🔴           |
 | [24](./A24) | [A24](./A24) | [loading...](./A24)                              | :soon: 🔴           |
 | [25](./A25) | [A25](./A25) | [loading...](./A25)                              | :soon: 🔴           |
-| [26](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark: |
-| [27](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                 | :soon: 🔴           |
+| [26](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark:   |
+| [27](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                 | :heavy_check_mark:   |
 | [28](./P03) | [P03](./P03) | [loading...](./P03)                              | :soon: 🔴           |
 | [29](./P04) | [P04](./P04) | [loading...](./P04)                              | :soon: 🔴           |

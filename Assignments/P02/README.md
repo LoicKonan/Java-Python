@@ -17,13 +17,13 @@
 > - a. Each of members:
 >   - i. has:
 >
->   - 1. **Legs (count)**
->   - 2. **Tails (yes/no)**
->   - 3. **Brain (yes/no)**
->   - 4. **Neurons (count)**
->   - 5. **Precision to understand (0.00 to 100.00%)**
->   - 6. **Birth date**
->   - 7. **Favorite foods**
+>       1. **Legs (count)**
+>       2. **Tails (yes/no)**
+>       3. **Brain (yes/no)**
+>       4. **Neurons (count)**
+>       5. **Precision to understand (0.00 to 100.00%)**
+>       6. **Birth date**
+>       7. **Favorite foods**
 >
 > ii. can
 > 1. Eat

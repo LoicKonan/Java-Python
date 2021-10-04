@@ -14,16 +14,17 @@
 > **2.** Consider the following organigram (can be found: <https://en.wikipedia.org/wiki/Mammal> ) of **Mammalia family**. (a: 5, b: 5, c: 10, d: 20, e:10)
 > <img src="pic.png">
 >
-> a. Each of members:
-> i. has
+> - a. Each of members:
+>   - i. has
 >
-> 1. Legs (count)
-> 2. Tails (yes/no)
-> 3. Brain (yes/no)
-> 4. Neurons (count)
-> 5. Precision to understand (0.00 to 100.00%)
-> 6. Birth date
-> 7. Favorite foods
+>   - 1. Legs (count)
+>   - 2. Tails (yes/no)
+>   - 3. Brain (yes/no)
+>   - 4. Neurons (count)
+>   - 5. Precision to understand (0.00 to 100.00%)
+>   - 6. Birth date
+>   - 7. Favorite foods
+> 
 > ii. can
 > 1. Eat
 > 2. Walk

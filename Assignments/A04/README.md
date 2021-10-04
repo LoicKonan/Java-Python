@@ -1,4 +1,4 @@
-## Assignment 05 - Inheritance in Java
+## Assignment 04 - Inheritance in Java
 
 ### Loic Konan
 

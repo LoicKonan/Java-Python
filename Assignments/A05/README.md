@@ -1,4 +1,4 @@
-## Assignment 06 - Interface in Java 
+## Assignment 05 - Interface in Java 
 
 ### Loic Konan
 

@@ -11,7 +11,7 @@
 >
 > - **Error:** An Error indicates serious problem that a reasonable application should not try to catch.
 > - **Exception:** Exception indicates conditions that a reasonable application might try to catch.
-> <img src="pic.png" width="200" height= "200">
+> <img src="pic.png">
 >
 >
 >

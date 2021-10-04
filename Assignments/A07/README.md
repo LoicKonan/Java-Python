@@ -6,6 +6,6 @@
 
 ### Files
 
-|   #   | File                                 | Description                                          |
-| :---: | ------------------------------------ | ---------------------------------------------------- |
-|   1   | [FileListing.java](FileListing.java) | Main Driver|
+|   #   | File                                 | Description |
+| :---: | ------------------------------------ | ----------- |
+|   1   | [FileListing.java](FileListing.java) | Main Driver |

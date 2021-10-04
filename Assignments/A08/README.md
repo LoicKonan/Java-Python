@@ -1,4 +1,4 @@
-## Assignment 09 - Java - Gaphic GUI.
+## Assignment 08 - Java - Gaphic GUI.
 
 ### Loic Konan
 

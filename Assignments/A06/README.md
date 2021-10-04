@@ -14,7 +14,11 @@
 > <img src="pic.png">
 >
 >
+> **InputStream vs OutputStream**
 >
+> - **InputStream:** is used to read data from a source.
+> - **OutputStream:** is used for writing data to a destination.
+> <img src="pic1.png">
 
 ### Files
 

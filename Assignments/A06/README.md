@@ -29,3 +29,8 @@
 |   3   | [CheckingAccount.java](CheckingAccount.java) | Checking account class          |
 |   4   | [Except.java](Except.java)                   | Except class to cath the errors |
 |   5   | [sample.txt](sample.txt)                     | sample text                     |
+
+### Sources
+
+- Geeksforgeeks: <https://www.geeksforgeeks.org/c-stream-classes-structure/>
+- Geeksforgeeks: <https://www.geeksforgeeks.org/exceptions-in-java/>

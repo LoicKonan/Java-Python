@@ -6,6 +6,11 @@ public class Test
     double salary;
 
 
+    Test(String name)
+    {
+        this.name = name;
+    }
+
     public void setDesignation(String designation)
     {
         this.designation = designation;
@@ -48,11 +53,10 @@ public class Test
 
     public static void main(String[] args)
     {
-        Test N = new Test();
-        Test N1 = new Test();
+        Test N1 = new Test("AKE");
+        Test N = new Test("Jae");
 
 
-        N.setname("Loic");
         N1.setname("Kobe");
 
         N.setAge(20);

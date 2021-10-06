@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch MultiLevel",
+      "request": "launch",
+      "mainClass": "MultiLevel",
+      "projectName": "A04_c3c511a2"
+    },
+    {
+      "type": "java",
       "name": "Launch Driver",
       "request": "launch",
       "mainClass": "Driver",

@@ -10,7 +10,7 @@
 
 public class Mountainbike extends Bicycle 
 {
-  public int seatHeight;
+  public int seatHeight = 0;
 
 public Mountainbike(int gear, int speed, int myseatHeight)
   {

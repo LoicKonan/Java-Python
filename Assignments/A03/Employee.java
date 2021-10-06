@@ -1,4 +1,3 @@
-package A03;
 /**
  * This is an Employee class program in Java
  * 

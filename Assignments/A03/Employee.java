@@ -74,7 +74,7 @@ public class Employee
     public static void main(String args[]) 
     {
 
-        Employee Employee1 = new Employee("LOIC KONAN", "Software Engineer", "African", 28, 500000);
+        Employee Employee1 = new Employee("TEK JAI", "Software Engineer", "African", 28, 500000);
         Employee Employee2 = new Employee("LEBRON JAMES", "BASKETBALL PLAYER ", "American", 38, 1000000);
 
         System.out.println(Employee1.getName() + "'s occupation is: " + Employee1.getdesignation()

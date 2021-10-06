@@ -66,7 +66,7 @@ public class Test
 
         System.out.println("My name is: " + N.getname() + ", I am : " + N.getAge() + " years old and my job is to be a : " + N.getDesignation() + " and my salary is: " + N.getsalary());
 
-        System.out.println("My name is: " + N1.getname() + ", I am : " + N1.getAge() + " my job is to be a : " + N1.getDesignation() + " and my salary is: " + N1.getsalary());
+        System.out.println("My name is: " + N1.getname() + ", I am : " + N1.getAge() + "years old and my job is to be a : " + N1.getDesignation() + " and my salary is: " + N1.getsalary());
 
     }
     

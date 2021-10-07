@@ -1,4 +1,4 @@
-## Assignment 19 - 
+## Assignment 19 -
 
 ### Loic Konan
 

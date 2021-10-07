@@ -1,4 +1,4 @@
-## Assignment 15 - 
+## Assignment 15 -
 
 ### Loic Konan
 

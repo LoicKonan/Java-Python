@@ -52,7 +52,7 @@ public class Question_1
          * We will compare each element to the first element, if we find the largest and the smallest, 
          * we will then assign the largest one to the variable large and the smallest to the variable small. 
          */
-        for (int i = 1; i < myArray.length; i++) 
+        for (int i : myArray) 
         {
             if (myArray[i] > large)              // Using this if statement to find the 
                 {                                // Largest element then assign it to the variable large.

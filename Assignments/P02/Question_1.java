@@ -53,7 +53,6 @@ class Rectangle extends Shape
  */
 class Employee 
 {
-    // Abstraction
     private int age;
 
     /**

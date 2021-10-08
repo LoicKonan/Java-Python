@@ -45,7 +45,32 @@ class Rectangle extends Shape
     void draw()
     {
         System.out.println("Child class called: rectangle.");
-    }  
+    }
+    
+    /**
+     * 1st method with name add
+     * Demonstration of the Compile time Polymorphism
+     * @param a
+     * @param b
+     * @return int 
+     */
+    public int add(int a, int b)
+    { 
+        return a + b;
+    }
+    
+    /**
+     * 2nd method with name add
+     * Demonstration of the Compile time Polymorphism
+     * @param a
+     * @param b
+     * @param c
+     * @return int
+     */
+    public int add(int a, int b, int c)
+    {
+        return a + b + c;
+    }
 }  
 
 /**

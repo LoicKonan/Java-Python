@@ -75,11 +75,14 @@ class Rectangle extends Shape
 
 
 
-// Abstract class
+/**
+ * Abstract class to demonstrate Abstration. 
+ */
 abstract class Animal 
 {
     // Abstract method (does not have a body)
     public abstract void animalSound();
+    
     // Regular method
     public void sleep() 
     {

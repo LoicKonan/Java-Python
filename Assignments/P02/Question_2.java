@@ -10,14 +10,14 @@
  * Description:
  *              Creating multiples class about this Mammalia family 
  *              (can be found in https://en.wikipedia.org/wiki/Mammal ).
- *              
+ *              Storing all the outcomes in a file. 
  * 
  * Solution:
  *               
  *
  * Files:   
  *              Question_2.java
- *  * 
+ *   
  *****************************************************************************/
 
 

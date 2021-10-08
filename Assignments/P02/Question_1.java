@@ -32,6 +32,9 @@
 
 class Rectangle extends Shape
 {  
+    /**
+     * Runtime Polymorphism.
+     */
     @Override
     void draw()
     {
@@ -43,6 +46,9 @@ class Rectangle extends Shape
 
 class Circle extends Shape
 {  
+    /**
+     * Runtime Polymorphism.
+     */
     @Override
     void draw()
     {
@@ -56,7 +62,9 @@ public class Question_1
 {
     public static void main(String[] args) 
     {
-        Shape s;  
+        Shape s = new Shape();  
+
+        s.draw();
 
         s = new Rectangle();  
         s.draw();  

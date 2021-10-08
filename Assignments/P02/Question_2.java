@@ -8,7 +8,9 @@
  * Date:        10/10/2021
  * 
  * Description:
- *              Creating multiples class about ammalia family (can be found in https://en.wikipedia.org/wiki/Mammal ).
+ *              Creating multiples class about this Mammalia family 
+ *              (can be found in https://en.wikipedia.org/wiki/Mammal ).
+ *              
  * 
  * Solution:
  *               

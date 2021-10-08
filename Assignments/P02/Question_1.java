@@ -48,7 +48,31 @@ class Rectangle extends Shape
     }  
 }  
 
+public class Employee 
+{
+    String Name, designation, race;
+    int age;
+    double salary;
 
+    public Employee(String Name, String designation, String race, int age, double salary) 
+    {
+        this.Name = Name;
+        this.designation = designation;
+        this.race = race;
+        this.age = age;
+        this.salary = salary;
+    }
+
+    public void setage(int age) 
+    {
+        this.age = age;
+    }
+
+    public int getage() 
+    {
+        return age;
+    }
+}
 public class Question_1 
 {
     public static void main(String[] args) 

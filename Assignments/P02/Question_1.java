@@ -82,7 +82,7 @@ abstract class Animal
 {
     // Abstract method (does not have a body)
     public abstract void animalSound();
-    
+
     // Regular method
     public void sleep() 
     {
@@ -101,7 +101,7 @@ abstract class Animal
   }
 
 /**
- * 
+ *  Using this class to demonstrate Encapsulation.
  */
 class Employee 
 {

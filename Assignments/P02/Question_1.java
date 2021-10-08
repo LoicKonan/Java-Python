@@ -48,19 +48,13 @@ class Rectangle extends Shape
     }  
 }  
 
-public class Employee 
+class Employee 
 {
-    String Name, designation, race;
     int age;
-    double salary;
 
-    public Employee(String Name, String designation, String race, int age, double salary) 
+    public Employee(int age) 
     {
-        this.Name = Name;
-        this.designation = designation;
-        this.race = race;
         this.age = age;
-        this.salary = salary;
     }
 
     public void setage(int age) 
@@ -73,11 +67,15 @@ public class Employee
         return age;
     }
 }
+
 public class Question_1 
 {
     public static void main(String[] args) 
     {
         Shape s = new Shape();  
+        Employee N = new Employee(32);
+
+        System.out.println("Age is " + N.getage());
 
         s.draw();
 

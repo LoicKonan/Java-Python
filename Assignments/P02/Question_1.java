@@ -31,7 +31,6 @@
     }  
 }  
 
-
 /**
  * Single Inheritance.
  * Child class.

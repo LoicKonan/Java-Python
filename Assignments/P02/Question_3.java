@@ -8,8 +8,12 @@
  * Date:        10/10/2021
  * 
  * Description:
- *             
+ *              Creating a calculator class which can perform certain operations:
+ *              addition, subtraction, multiplication, division, and modulo. 
+ *              Now, add Java exception handling to your code by defining
+ *              two exception classes SyntaxError and RuntimeError
  *              
+ * Solution:
  *
  * Files:   
  *              Question_3.java

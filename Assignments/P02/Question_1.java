@@ -62,7 +62,8 @@ class Employee
     }
 
     /**
-     * 
+     * Encapsulation.
+     * Mutator Function.
      * @param age
      */
     public void setage(int age) 
@@ -71,7 +72,8 @@ class Employee
     }
 
     /**
-     * 
+     * Encapsulation.
+     * Accessor Function.
      * @return void
      */
     public int getage() 

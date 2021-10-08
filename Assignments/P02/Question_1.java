@@ -48,8 +48,12 @@ class Rectangle extends Shape
     }  
 }  
 
+/**
+ * 
+ */
 class Employee 
 {
+    // Abstraction
     int age;
 
     public Employee(int age) 
@@ -57,11 +61,19 @@ class Employee
         this.age = age;
     }
 
+    /**
+     * 
+     * @param age
+     */
     public void setage(int age) 
     {
         this.age = age;
     }
 
+    /**
+     * 
+     * @return void
+     */
     public int getage() 
     {
         return age;

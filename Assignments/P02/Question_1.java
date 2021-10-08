@@ -54,7 +54,7 @@ class Rectangle extends Shape
 class Employee 
 {
     // Abstraction
-    int age;
+    private int age;
 
     public Employee(int age) 
     {

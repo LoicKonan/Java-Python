@@ -56,6 +56,10 @@ class Employee
     // Abstraction
     private int age;
 
+    /**
+     * Constructor.
+     * @param age
+     */
     public Employee(int age) 
     {
         this.age = age;

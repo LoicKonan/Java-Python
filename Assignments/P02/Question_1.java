@@ -27,7 +27,7 @@
 {  
     void draw() 
     {
-        System.out.println("drawing...");
+        System.out.println("Parent class called: Shape.");
     }  
 }  
 
@@ -44,7 +44,7 @@ class Rectangle extends Shape
     @Override
     void draw()
     {
-        System.out.println("drawing rectangle...");
+        System.out.println("Child class called: rectangle.");
     }  
 }  
 

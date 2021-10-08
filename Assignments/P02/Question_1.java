@@ -20,6 +20,9 @@
  * 
  *****************************************************************************/
 
+/**
+ *  Parent class.
+ */
  class Shape
 {  
     void draw() 
@@ -30,7 +33,8 @@
 
 
 /**
- * 
+ * Single Inheritance.
+ * Child class.
  */
 class Rectangle extends Shape
 {  

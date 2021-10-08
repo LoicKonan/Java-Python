@@ -8,7 +8,9 @@
  * Date:        10/10/2021
  * 
  * Description:
- *              
+ *              Designing an OOP code that have the following features:  
+ *              inheritance(any), polymorphism (runtime and compile time), 
+ *              abstraction and encapsulation.
  * 
  * Solution:
  *              

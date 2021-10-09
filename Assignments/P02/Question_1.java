@@ -14,9 +14,9 @@
  * 
  * Solution:
  *                  Designed a Multi - Level Inheritance program.
- *                  Class State inherit from the Country class, and Country class
- *                  inherit from the Continent class. 
- *                  Used multiple methods to demonstrate the concepts of 
+ *                  The Class State inherit from the Country class, and 
+ *                  the Country class inherit from the Continent class. 
+ *                  Also used multiple methods to demonstrate the concepts of 
  *                  polymorphism (runtime and compile time), abstraction and encapsulation. 
  *                                           ____________
  *                                          | Continent |

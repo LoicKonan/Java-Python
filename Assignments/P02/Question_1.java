@@ -139,15 +139,14 @@ abstract class Animal
     }
   }
 
-  
+
 public class Question_1 
 {
     public static void main(String[] args) 
     {
-        Country s = new Country();  
-        Employee N = new Employee(32);
+        State s = new State("Texas");  
 
-        System.out.println("Age is " + N.getage());
+        System.out.println("Capital is " + s.get_capital());
 
         s.info();
 

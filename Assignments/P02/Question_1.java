@@ -39,8 +39,6 @@
 class State extends Country
 {  
     private String capital;
-    private int cities;
-
 
     /**
      * Constructor.
@@ -76,8 +74,8 @@ class State extends Country
     @Override
     void info()
     {
-        System.out.print("I'm a Child class called: State");
-        System.out.println(" and Texas and the capital of this state is: " + capital);
+        System.out.print("I'm a Child class called: State" +
+                         "and the capital of this state is: " + capital);
     }
     
     /**

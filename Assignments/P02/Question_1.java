@@ -53,7 +53,7 @@
     public void seasons() 
     {
       // The body of seasons() is provided here
-      System.out.println("There is 4 Seasons in this Country.");
+      System.out.println("There is 4 Seasons in this Country, well supposedly...");
     } 
 }  
 

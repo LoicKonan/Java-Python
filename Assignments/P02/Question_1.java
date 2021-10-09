@@ -95,14 +95,13 @@ class State extends Country
     @Override
     void info()
     {
-        System.out.print("I'm a Child class called: State" +
-                         "and the capital of this state is: " + capital);
+        System.out.print("I'm a Child class called: State");
     }
     
     /**
-     * Demonstration of the Compile time Polymorphism.
-     * 1st method with name population.
-     * Using this method to compute the number of people
+     * Demonstration of Compile time Polymorphism.
+     * 1st method with the name population.
+     * This method to calculate the number of people
      * in a State, by adding the number of males and females.
      * 
      * @param males
@@ -115,9 +114,9 @@ class State extends Country
     }
     
     /**
-     * Demonstration of the Compile time Polymorphism.
-     * 2nd method with name population.
-     * Using this method to compute the number of 
+     * Demonstration of Compile time Polymorphism.
+     * 2nd method with the name population.
+     * This method calculate the number of 
      * students in a University, by adding the 
      * number of sophomore, freshmen, juniors and seniors.
      * 

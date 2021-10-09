@@ -69,7 +69,7 @@ class Monotremata implements Mammalia
     @Override
     public void print_me() 
     {
-        System.out.println("bubble");
+        System.out.println("NEW PRINT");
     }
 }
 

@@ -36,7 +36,9 @@ abstract class Earth
     }
   }
   
-  // Subclass (inherit from Earth)
+  /**
+   * Subclass (inherit from Earth)
+   */
   class Continent extends Earth 
   {
     public void seasons() 
@@ -48,7 +50,7 @@ abstract class Earth
 
 
 /**
- *  Parent class.
+ * Subclass (inherit from Continent)
  */
  class Country extends Continent
 {  

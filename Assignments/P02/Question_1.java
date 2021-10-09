@@ -13,7 +13,7 @@
  *                  abstraction and encapsulation.
  * 
  * Solution:
- * 
+ *                  Designed a Multi - Level Inheritance 
  * 
  *
  * Files:           Question_1.java
@@ -88,7 +88,8 @@ class State extends Country
     }
 
     /**
-     * Encapsulation. Mutator Function.
+     * Demonstration of Encapsulation. 
+     * Mutator(setter) Function.
      * 
      * @param capital
      */

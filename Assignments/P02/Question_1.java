@@ -20,32 +20,19 @@
  * 
  *****************************************************************************/
 
-
 /**
  * Abstract class to demonstrate Abstration. 
  */
-abstract class Earth 
-{
-    // Abstract method (does not have a body)
-    public abstract void seasons();
-
-    // Regular method
-    public void weather() 
-    {
-      System.out.println("Beautiful weather on this earth!!!");
-    }
-  }
-  
-  /**
-   * Subclass (inherit from Earth)
-   */
-  class Continent extends Earth 
+  abstract class Continent  
   {
-    public void seasons() 
-    {
-      // The body of seasons() is provided here
-      System.out.println("There is 4 Seasons on this Continent.");
-    }
+   // Abstract method (does not have a body)
+   public abstract void seasons();
+
+   // Regular method
+   public void weather() 
+   {
+     System.out.println("Beautiful weather on this Continent!!!");
+   }
   }
 
 
@@ -54,6 +41,12 @@ abstract class Earth
  */
  class Country extends Continent
 {  
+    public void seasons() 
+    {
+      // The body of seasons() is provided here
+      System.out.println("There is 4 Seasons in this Country.");
+    }
+
     void info() 
     {
         System.out.println("I'm the Parent class called: Country aka USA.");

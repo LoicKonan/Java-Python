@@ -47,7 +47,7 @@
      */
     void info() 
     {
-        System.out.println("I'm a Subclass (inherit from Continent) called: Country.");
+        System.out.println("I'm a Subclass called: Country (inherit from Continent).");
     } 
 
     public void seasons() 
@@ -80,7 +80,7 @@ class State extends Country
     @Override
     void info()
     {
-        System.out.println("I'm a Subclass (inherit from Country) called: State.");
+        System.out.println("I'm a Subclass called: State (inherit from Country).");
     }
 
     /**

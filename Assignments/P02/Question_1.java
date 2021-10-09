@@ -76,7 +76,8 @@ class State extends Country
     @Override
     void info()
     {
-        System.out.println("I'm a Child class called: State aka Texas.");
+        System.out.print("I'm a Child class called: State");
+        System.out.println(" and Texas and the capital of this state is: " + capital);
     }
     
     /**
@@ -188,7 +189,7 @@ public class Question_1
 
         s.info();
 
-        s = new State();  
+        //s = new State();  
         s.info();   
     }
 }

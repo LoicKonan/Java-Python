@@ -21,14 +21,13 @@
  *****************************************************************************/
 
 
- 
 /**
  * Abstract class to demonstrate Abstration. 
  */
-abstract class Animal 
+abstract class Earth 
 {
     // Abstract method (does not have a body)
-    public abstract void animalSound();
+    public abstract void weather();
 
     // Regular method
     public void sleep() 
@@ -37,13 +36,13 @@ abstract class Animal
     }
   }
   
-  // Subclass (inherit from Animal)
-  class Pig extends Animal 
+  // Subclass (inherit from Earth)
+  class Continent extends Earth 
   {
-    public void animalSound() 
+    public void weather() 
     {
-      // The body of animalSound() is provided here
-      System.out.println("The pig says: wee wee");
+      // The body of weather() is provided here
+      System.out.println("The Continent says: wee wee");
     }
   }
 

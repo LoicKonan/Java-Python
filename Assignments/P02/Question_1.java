@@ -110,7 +110,8 @@ class State extends Country
      * @param females
      * @return int
      */
-    public int population(int males, int females) {
+    public int population(int males, int females) 
+    {
         return males + females;
     }
 
@@ -125,13 +126,16 @@ class State extends Country
      * @param seniors
      * @return int
      */
-    public int population(int sophomore, int freshmen, int juniors, int seniors) {
+    public int population(int sophomore, int freshmen, int juniors, int seniors) 
+    {
         return sophomore + freshmen + juniors + seniors;
     }
 }
 
-public class Question_1 {
-    public static void main(String[] args) {
+public class Question_1 
+{
+    public static void main(String[] args) 
+    {
         State s = new State("Texas");
 
         System.out.println("Capital is " + s.get_capital());

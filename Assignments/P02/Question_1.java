@@ -13,8 +13,8 @@
  *                  abstraction and encapsulation.
  * 
  * Solution:
- *                  Designed a Multi - Level Inheritance program in which class
- *                  State inherit from the Country class, and Country class
+ *                  Designed a Multi - Level Inheritance program in which the
+ *                  class State inherit from the Country class, and Country class
  *                  inherit from the Continent class. 
  *                                           ____________
  *                                          | Continent |

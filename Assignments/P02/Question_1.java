@@ -149,8 +149,6 @@ public class Question_1
         System.out.println("Capital is " + s.get_capital());
 
         s.info();
-
-        //s = new State();  
         s.info();   
     }
 }

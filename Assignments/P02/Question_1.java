@@ -23,11 +23,11 @@
 /**
  *  Parent class.
  */
- class Shape
+ class Country
 {  
-    void draw() 
+    void display() 
     {
-        System.out.println("Parent class called: Shape.");
+        System.out.println("Parent class called: Country.");
     }  
 }  
 
@@ -35,15 +35,15 @@
  * Single Inheritance.
  * Child class.
  */
-class Rectangle extends Shape
+class City extends Country
 {  
     /**
      * Runtime Polymorphism.
      */
     @Override
-    void draw()
+    void display()
     {
-        System.out.println("Child class called: rectangle.");
+        System.out.println("Child class called: City.");
     }
     
     /**
@@ -140,14 +140,14 @@ public class Question_1
 {
     public static void main(String[] args) 
     {
-        Shape s = new Shape();  
+        Country s = new Country();  
         Employee N = new Employee(32);
 
         System.out.println("Age is " + N.getage());
 
-        s.draw();
+        s.display();
 
-        s = new Rectangle();  
-        s.draw();   
+        s = new City();  
+        s.display();   
     }
 }

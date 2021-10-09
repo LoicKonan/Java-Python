@@ -62,6 +62,8 @@ class Country extends Continent
 
 /**
  * Subclass (inherit from Country)
+ * This class contain Encapsulation, the setters and getters methods, 
+ * and the compile time polymorphism.
  */
 class State extends Country 
 {

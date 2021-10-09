@@ -38,8 +38,18 @@
  */
 class State extends Country
 {  
-    private String city;
-    private int
+    private String capital;
+    private int cities;
+
+
+    /**
+     * Constructor.
+     */
+    State(String caapital)
+    {
+        this capital = capital;
+    }
+
     /**
      * Runtime Polymorphism.
      */

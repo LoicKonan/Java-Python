@@ -28,7 +28,7 @@
 {  
     void display() 
     {
-        System.out.println("I'm the Parent class called: Country aka the USA.");
+        System.out.println("I'm the Parent class called: Country aka USA.");
     }  
 }  
 

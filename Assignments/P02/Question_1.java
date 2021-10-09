@@ -50,11 +50,14 @@ class Country extends Continent
         System.out.println("I'm a Subclass called: Country (inherit from Continent).");
     }
 
-    // public void seasons() 
-    // {
-    //     // The body of seasons() is provided here
-    //     System.out.println("There is 4 Seasons in this Country, well supposedly...");
-    // }
+    /**
+     * Implementing the inherited abstract method from the abstract class Continent.
+     */
+    public void seasons() 
+    {
+        // The body of seasons() is provided here
+        System.out.println("There is 4 Seasons in this Country, well supposedly...");
+    }
 }
 
 /**

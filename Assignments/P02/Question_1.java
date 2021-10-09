@@ -38,6 +38,8 @@
  */
 class State extends Country
 {  
+    private String city;
+    private int
     /**
      * Runtime Polymorphism.
      */

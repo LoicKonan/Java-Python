@@ -50,7 +50,7 @@ abstract class Earth
 /**
  *  Parent class.
  */
- class Country
+ class Country extends Continent
 {  
     void info() 
     {

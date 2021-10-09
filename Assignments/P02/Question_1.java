@@ -27,7 +27,7 @@
 {  
     void display() 
     {
-        System.out.println("Parent class called: Country.");
+        System.out.println("I'm the Parent class called: Country.");
     }  
 }  
 
@@ -43,7 +43,7 @@ class City extends Country
     @Override
     void display()
     {
-        System.out.println("Child class called: City.");
+        System.out.println("i'm a Child class called: City.");
     }
     
     /**

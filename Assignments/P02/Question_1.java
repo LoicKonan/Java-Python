@@ -26,7 +26,7 @@
  */
  class Country
 {  
-    void display() 
+    void info() 
     {
         System.out.println("I'm the Parent class called: Country aka USA.");
     }  
@@ -74,9 +74,9 @@ class State extends Country
      * Runtime Polymorphism.
      */
     @Override
-    void display()
+    void info()
     {
-        System.out.println("i'm a Child class called: State aka Texas.");
+        System.out.println("I'm a Child class called: State aka Texas.");
     }
     
     /**
@@ -186,9 +186,9 @@ public class Question_1
 
         System.out.println("Age is " + N.getage());
 
-        s.display();
+        s.info();
 
         s = new State();  
-        s.display();   
+        s.info();   
     }
 }

@@ -39,11 +39,12 @@ abstract class Continent
 
 /**
  * Subclass (inherit from Continent)
+ * Using this to demonstrate runtime polymorphism.
  */
 class Country extends Continent 
 {
     /**
-     * Runtime Polymorphism. This method display the information of the class.
+     * Runtime Polymorphism. This method display the information of this class.
      */
     void info() 
     {
@@ -62,8 +63,8 @@ class Country extends Continent
 
 /**
  * Subclass (inherit from Country)
- * This class contain Encapsulation, the setters and getters methods, 
- * and the compile time polymorphism.
+ * This class contain Encapsulation, the Accessor and Mutator methods, 
+ * and the compile time and run time polymorphism.
  */
 class State extends Country 
 {
@@ -78,7 +79,7 @@ class State extends Country
     }
 
     /**
-     * Runtime Polymorphism. This method display the information of the class.
+     * Runtime Polymorphism. This method display the information of this class.
      */
     @Override
     void info() 
@@ -97,7 +98,8 @@ class State extends Country
     }
 
     /**
-     * Encapsulation. Accessor Function.
+     * Demonstration of Encapsulation. 
+     * Accessor (getter) Function.
      * 
      * @return void
      */
@@ -107,9 +109,10 @@ class State extends Country
     }
 
     /**
-     * Demonstration of Compile time Polymorphism. 1st method with the name
-     * population. This method to calculate the number of people in a State, by
-     * adding the number of males and females.
+     * Demonstration of Compile time Polymorphism. 
+     * 1st method with the name population. 
+     * This method to calculate the number of people in a State, 
+     * by adding the number of males and females.
      * 
      * @param males
      * @param females
@@ -121,9 +124,10 @@ class State extends Country
     }
 
     /**
-     * Demonstration of Compile time Polymorphism. 2nd method with the name
-     * population. This method calculate the number of students in a University, by
-     * adding the number of sophomore, freshmen, juniors and seniors.
+     * Demonstration of Compile time Polymorphism. 
+     * 2nd method with the name population. 
+     * This method calculate the number of students in a University, 
+     * by adding the number of sophomore, freshmen, juniors and seniors.
      * 
      * @param sophomore
      * @param freshmen

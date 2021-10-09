@@ -22,65 +22,76 @@
  * 
  *****************************************************************************/
 
-public class Question_3 {
-
-}
-
-abstract interface Mammalia {
+abstract interface Mammalia 
+{
     public void print_me();
 }
 
-abstract interface Theria extends Mammalia {
+abstract interface Theria extends Mammalia 
+{
     public void print_other();
 }
 
-abstract interface Placentalla extends Theria {
+abstract interface Placentalla extends Theria 
+{
     public void print_me();
 }
 
-abstract interface Atlantogenata extends Placentalla {
+abstract interface Atlantogenata extends Placentalla 
+{
 
 }
 
-abstract interface Boreoeutheria extends Placentalla {
+abstract interface Boreoeutheria extends Placentalla 
+{
     public void print_me();
 }
 
-abstract interface Laurasiaheria extends Boreoeutheria {
+abstract interface Laurasiaheria extends Boreoeutheria 
+{
     public void print_me();
 }
 
-abstract interface Scrotifera extends Laurasiaheria {
+abstract interface Scrotifera extends Laurasiaheria 
+{
     public void print_me();
 }
 
-abstract interface Ferae extends Scrotifera {
+abstract interface Ferae extends Scrotifera 
+{
     public void print_me();
 }
-// now that we have the intefaces, we need to create the animal associated with
-// them
 
-class Monotremata implements Mammalia {
+// now that we have the intefaces, we need to create the animal associated with them
+
+class Monotremata implements Mammalia 
+{
     @Override
-    public void print_me() {
+    public void print_me() 
+    {
         System.out.println("bubble");
     }
 }
 
-class Marsupialia implements Theria {
+class Marsupialia implements Theria 
+{
     @Override
-    public void print_me() {
+    public void print_me() 
+    {
         System.out.println(" i am a marsupialia\n");
     }
 
     @Override
-    public void print_other() {
+    public void print_other() 
+    {
         System.out.println("two legs ");
     }
 }
 
-public class Main {
-    public static void main(String[] args) {
+public class Question_3 
+{
+    public static void main(String[] args) 
+    {
 
         Marsupialia B = new Marsupialia();
         B.print_me();

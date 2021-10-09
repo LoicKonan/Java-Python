@@ -41,16 +41,20 @@
  */
  class Country extends Continent
 {  
+    /**
+     * Runtime Polymorphism.
+     * This method display the information of the class.
+     */
+    void info() 
+    {
+        System.out.println("I'm a Subclass (inherit from Continent) called: Country.");
+    } 
+
     public void seasons() 
     {
       // The body of seasons() is provided here
       System.out.println("There is 4 Seasons in this Country.");
-    }
-
-    void info() 
-    {
-        System.out.println("I'm the Parent class called: Country aka USA.");
-    }  
+    } 
 }  
 
 
@@ -67,6 +71,16 @@ class State extends Country
     State(String capital)
     {
         this.capital = capital;
+    }
+
+     /**
+     * Runtime Polymorphism.
+     * This method display the information of the class.
+     */
+    @Override
+    void info()
+    {
+        System.out.println("I'm a Subclass (inherit from Country) called: State.");
     }
 
     /**
@@ -87,15 +101,6 @@ class State extends Country
     public String get_capital() 
     {
         return capital;
-    }
-
-    /**
-     * Runtime Polymorphism.
-     */
-    @Override
-    void info()
-    {
-        System.out.print("I'm a Child class called: State");
     }
     
     /**

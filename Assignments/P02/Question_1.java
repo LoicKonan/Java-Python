@@ -13,9 +13,11 @@
  *                  abstraction and encapsulation.
  * 
  * Solution:
- *                  Designed a Multi - Level Inheritance program in which the
- *                  class State inherit from the Country class, and Country class
+ *                  Designed a Multi - Level Inheritance program.
+ *                  Class State inherit from the Country class, and Country class
  *                  inherit from the Continent class. 
+ *                  Used multiple methods to demonstrate the concepts of 
+ *                  polymorphism (runtime and compile time), abstraction and encapsulation. 
  *                                           ____________
  *                                          | Continent |
  *                                         |___________|
@@ -33,7 +35,7 @@
  *****************************************************************************/
 
 /**
- * Abstract class to demonstrate Abstration.
+ * Abstract class to demonstrate Abstraction.
  */
 abstract class Continent 
 {

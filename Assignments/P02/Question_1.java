@@ -45,9 +45,29 @@ class State extends Country
     /**
      * Constructor.
      */
-    State(String caapital)
+    State(String capital)
     {
-        this capital = capital;
+        this.capital = capital;
+    }
+
+    /**
+     * Encapsulation.
+     * Mutator Function.
+     * @param capital
+     */
+    public void set_capital(String capital) 
+    {
+        this.capital = capital;
+    }
+
+    /**
+     * Encapsulation.
+     * Accessor Function.
+     * @return void
+     */
+    public String get_capital() 
+    {
+        return capital;
     }
 
     /**

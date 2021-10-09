@@ -27,7 +27,7 @@
 {  
     void display() 
     {
-        System.out.println("I'm the Parent class called: Country.");
+        System.out.println("I'm the Parent class called: Country aka the USA.");
     }  
 }  
 
@@ -43,32 +43,40 @@ class City extends Country
     @Override
     void display()
     {
-        System.out.println("i'm a Child class called: City.");
+        System.out.println("i'm a Child class called: City aka Wichita Falls.");
     }
     
     /**
-     * 1st method with name add
-     * Demonstration of the Compile time Polymorphism
-     * @param a
-     * @param b
+     * Demonstration of the Compile time Polymorphism.
+     * 1st method with name population.
+     * Using this method to compute the number of people
+     * in a city, by adding the number of males and females.
+     * 
+     * @param males
+     * @param females
      * @return int 
      */
-    public int add(int a, int b)
+    public int population(int males, int females)
     { 
-        return a + b;
+        return males + females;
     }
     
     /**
-     * 2nd method with name add
-     * Demonstration of the Compile time Polymorphism
-     * @param a
-     * @param b
-     * @param c
+     * Demonstration of the Compile time Polymorphism.
+     * 2nd method with name population.
+     * Using this method to compute the number of 
+     * students in a University, by adding the 
+     * number of sophomore, freshmen, juniors and seniors.
+     * 
+     * @param sophomore
+     * @param freshmen
+     * @param juniors
+     * @param seniors
      * @return int
      */
-    public int add(int a, int b, int c)
+    public int population(int sophomore, int freshmen, int juniors, int seniors)
     {
-        return a + b + c;
+        return sophomore + freshmen + juniors + seniors;
     }
 }  
 

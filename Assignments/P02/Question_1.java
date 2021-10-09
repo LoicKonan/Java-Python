@@ -20,7 +20,7 @@
  * 
  *****************************************************************************/
 
- 
+
 /**
  *  Parent class.
  */
@@ -36,7 +36,7 @@
  * Single Inheritance.
  * Child class.
  */
-class City extends Country
+class State extends Country
 {  
     /**
      * Runtime Polymorphism.
@@ -44,14 +44,14 @@ class City extends Country
     @Override
     void display()
     {
-        System.out.println("i'm a Child class called: City aka Wichita Falls.");
+        System.out.println("i'm a Child class called: State aka Texas.");
     }
     
     /**
      * Demonstration of the Compile time Polymorphism.
      * 1st method with name population.
      * Using this method to compute the number of people
-     * in a city, by adding the number of males and females.
+     * in a State, by adding the number of males and females.
      * 
      * @param males
      * @param females
@@ -156,7 +156,7 @@ public class Question_1
 
         s.display();
 
-        s = new City();  
+        s = new State();  
         s.display();   
     }
 }

@@ -55,7 +55,6 @@
 
 
 /**
- * Single Inheritance.
  * Subclass (inherit from Country)
  */
 class State extends Country

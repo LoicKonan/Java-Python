@@ -48,7 +48,7 @@ abstract class Continent
     // Regular method
     public void display() 
     {
-        System.out.println("I'm an Abstract class call: Continent!!!");
+        System.out.println("I'm a Method in the Abstract class Continent!!!");
     }
 }
 
@@ -63,7 +63,8 @@ class Country extends Continent
      */
     void info() 
     {
-        System.out.println("I'm a Subclass called: Country (inherit from Continent).");
+        System.out.println("I'm the Subclass called: Country (inherit from Continent)." +
+                            "=> Run time Polymorphism.");
     }
 
     /**
@@ -72,7 +73,9 @@ class Country extends Continent
     public void seasons() 
     {
         // The body of seasons() is provided here
-        System.out.println("There is 4 Seasons in this Country, well supposedly...");
+        System.out.println("The body of the asbract method from the abstract class." + 
+                            "There is 4 Seasons in this Country." +
+                            " => Abstraction.");
     }
 }
 
@@ -99,7 +102,8 @@ class State extends Country
     @Override
     void info() 
     {
-        System.out.println("I'm a Subclass called: State (inherit from Country).");
+        System.out.println("I'm a Subclass called: State (inherit from Country)." + 
+                            " => Runtime Polymorphism.");
     }
 
     /**
@@ -161,11 +165,17 @@ public class Question_1
 {
     public static void main(String[] args) 
     {
-        State s = new State("Texas");
+        Country America = new Country();
 
-        System.out.println("Capital is " + s.get_capital());
+        America.display();
+        America.info();
 
-        s.info();
-        s.info();
+        State Texas = new State("Austin");
+        
+        Texas.population(3000, 2000);
+
+        System.out.println("The capital of this  state is: " + Texas.get_capital());
+        System.out.println("The number of students in this University is: " + Texas.population(3000, 2000,4000,6000));
+        System.out.println("The number of people in this State is: " + Texas.population(3000, 2000));
     }
 }

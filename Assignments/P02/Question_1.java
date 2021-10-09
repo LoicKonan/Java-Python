@@ -139,43 +139,7 @@ abstract class Animal
     }
   }
 
-/**
- *  Using this class to demonstrate Encapsulation.
- */
-class Employee 
-{
-    private int age;
-
-    /**
-     * Constructor.
-     * @param age
-     */
-    public Employee(int age) 
-    {
-        this.age = age;
-    }
-
-    /**
-     * Encapsulation.
-     * Mutator Function.
-     * @param age
-     */
-    public void setage(int age) 
-    {
-        this.age = age;
-    }
-
-    /**
-     * Encapsulation.
-     * Accessor Function.
-     * @return void
-     */
-    public int getage() 
-    {
-        return age;
-    }
-}
-
+  
 public class Question_1 
 {
     public static void main(String[] args) 

@@ -13,8 +13,20 @@
  *                  abstraction and encapsulation.
  * 
  * Solution:
- *                  Designed a Multi - Level Inheritance 
- * 
+ *                  Designed a Multi - Level Inheritance program in which class
+ *                  State inherit from the Country class, and Country class
+ *                  inherit from the Continent class. 
+ *                                           ____________
+ *                                          | Continent |
+ *                                         |___________|
+ *                                              ||
+ *                                         ____________
+ *                                        | Country   |
+ *                                       |___________|
+ *                                             ||
+ *                                        ____________
+ *                                       |   State   |
+ *                                      |___________|
  *
  * Files:           Question_1.java
  * 

@@ -27,7 +27,7 @@
 abstract class Earth 
 {
     // Abstract method (does not have a body)
-    public abstract int seasons();
+    public abstract void seasons();
 
     // Regular method
     public void weather() 
@@ -39,10 +39,10 @@ abstract class Earth
   // Subclass (inherit from Earth)
   class Continent extends Earth 
   {
-    public int seasons() 
+    public void seasons() 
     {
       // The body of seasons() is provided here
-      System.out.println("The Continent says: wee wee");
+      System.out.println("There is 4 Seasons on this Continent.");
     }
   }
 

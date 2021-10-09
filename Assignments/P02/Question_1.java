@@ -63,7 +63,7 @@ abstract class Earth
 
 /**
  * Single Inheritance.
- * Child class.
+ * Subclass (inherit from Country)
  */
 class State extends Country
 {  

@@ -97,5 +97,3 @@ public class Question_2
         B.print_other();
     }
 }
-
-

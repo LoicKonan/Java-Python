@@ -31,9 +31,9 @@ abstract class Continent
     public abstract void seasons();
 
     // Regular method
-    public void weather() 
+    public void display() 
     {
-        System.out.println("Beautiful weather on this Continent!!!");
+        System.out.println("I'm an Abstract class call: Continent!!!");
     }
 }
 
@@ -50,11 +50,11 @@ class Country extends Continent
         System.out.println("I'm a Subclass called: Country (inherit from Continent).");
     }
 
-    public void seasons() 
-    {
-        // The body of seasons() is provided here
-        System.out.println("There is 4 Seasons in this Country, well supposedly...");
-    }
+    // public void seasons() 
+    // {
+    //     // The body of seasons() is provided here
+    //     System.out.println("There is 4 Seasons in this Country, well supposedly...");
+    // }
 }
 
 /**

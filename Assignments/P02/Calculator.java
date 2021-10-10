@@ -25,39 +25,18 @@
  import javax.swing.*;
  import java.awt.event.*;
  import java.io.*;
+ import java.util.*;
 
 
 class SyntaxError extends Exception 
 {
-    private String ErrorMessage;
 
-    public SyntaxError(String ErrorMessage) 
-    {
-        this.ErrorMessage = ErrorMessage;
-    }
-
-    @Override
-    public String getLocalizedMessage() 
-    {
-        return this.ErrorMessage;
-    }
 }
 
 
 class RuntimeError extends Exception 
 {
-    private String ErrorMessage;
-
-    public RuntimeError(String ErrorMessage) 
-    {
-        this.ErrorMessage = ErrorMessage;
-    }
-
-    @Override
-    public String getLocalizedMessage() 
-    {
-        return this.ErrorMessage + "\n";
-    }
+   
 }
 
 
@@ -90,14 +69,6 @@ public class Calculator
 
     public static void main(String[] args)  throws SyntaxError, RuntimeError 
     {
-        File file = new File("input.txt");
-        Scanner scanner = new Scanner(file);
-
-        while (scanner.hasNextLine())
-        {
-            for (int i : temp) System.out.println(temp.charAt(i));
-
-            System.out.println((temp));
-        }
+       
     }
 }

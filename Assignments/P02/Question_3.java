@@ -98,7 +98,9 @@ public class Question_3
 
         while (scanner.hasNextLine())
         {
-            System.out.println(scanner.nextLine());
+            for (int i : temp) System.out.println(temp.charAt(i));
+
+            System.out.println((temp));
         }
     }
 }

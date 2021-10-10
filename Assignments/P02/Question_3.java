@@ -21,7 +21,7 @@
  * 
  *****************************************************************************/
 
-public class Question_3 
+public class Calculator 
 {
     class SyntaxError extends Exception 
     {

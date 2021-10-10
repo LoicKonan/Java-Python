@@ -90,7 +90,7 @@ class RuntimeError extends Exception
 
 public class Question_3 
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)  throws FileNotFoundException, IOException 
     {
         File file = new File("input.txt");
         Scanner scanner = new Scanner(file);

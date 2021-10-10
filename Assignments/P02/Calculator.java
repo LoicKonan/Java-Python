@@ -30,24 +30,19 @@
 
  class SyntaxError extends Exception 
  {
-         private String ErrorMessage;
+    private String ErrorMessage;
 
-         // when running through the exceptions, we use pointer type to error to point 
-         // to the current TestingCase and ErrorMessage
-         public SyntaxError(String ErrorMessage) 
-         {
-                 //point as this specific error message from the expression
-                 this.ErrorMessage = ErrorMessage;
-         }
-
-         //create an overrriding function that grabes the stnatax error and the
-         //corresponding error associated with it
-         @Override
-         public String getLocalizedMessage() 
-         {
-                 //returning the throw exception user define for the type of error
-                 return this.ErrorMessage;
-         }
+    
+    public SyntaxError(String ErrorMessage) 
+    {
+        this.ErrorMessage = ErrorMessage;
+    }
+    
+    @Override
+    public String getLocalizedMessage() 
+    {
+        return this.ErrorMessage;
+    }
  }
 
 

@@ -32,12 +32,11 @@
  {
     private String ErrorMessage;
 
-    
     public SyntaxError(String ErrorMessage) 
     {
         this.ErrorMessage = ErrorMessage;
     }
-    
+
     @Override
     public String getLocalizedMessage() 
     {
@@ -48,7 +47,18 @@
 
 class RuntimeError extends Exception 
 {
-   
+    private String ErrorMessage;
+
+    public RuntimeError(String ErrorMessage) 
+    {
+        this.ErrorMessage = ErrorMessage;
+    }
+    
+    @Override
+    public String getLocalizedMessage() 
+    {
+        return  this.ErrorMessage+"\n";
+    }
 }
 
 

@@ -26,35 +26,6 @@
  import java.awt.event.*;
  import java.io.*;
 
- 
-public class calculator
-{
-    public double Add(double a, double b)
-    {
-        return a + b;
-    }
-    
-    public double Subtraction(double a, double b)
-    {
-        return a - b;
-    }
-
-    public double Multiplication(double a, double b)
-    {
-        return a * b;
-    }
-
-    public double Divide(double a, double b)
-    {
-        return a / b;
-    }
-    
-    public double Modulo(double a, double b)
-    {
-        return a % b;
-    }
-}
-
 
 class SyntaxError extends Exception 
 {
@@ -89,8 +60,35 @@ class RuntimeError extends Exception
 }
 
 
-public class Question_3 
+
+
+public class Calculator
 {
+    public double Add(double a, double b)
+    {
+        return a + b;
+    }
+    
+    public double Subtraction(double a, double b)
+    {
+        return a - b;
+    }
+
+    public double Multiplication(double a, double b)
+    {
+        return a * b;
+    }
+
+    public double Divide(double a, double b)
+    {
+        return a / b;
+    }
+    
+    public double Modulo(double a, double b)
+    {
+        return a % b;
+    }
+
     public static void main(String[] args)  throws SyntaxError, RuntimeError 
     {
         File file = new File("input.txt");

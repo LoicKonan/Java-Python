@@ -9,7 +9,7 @@
  * Date:            10/10/2021
  * 
  * Description: 
- *                  Creating a calculator class that can perform these operations:
+ *                  Creating a calculator class to perform these operations:
  *                  Addition, Subtraction, Multiplication, Division, and Modulo. 
  *                  With these two exception handling classes: 
  *                  SyntaxError and RuntimeError.

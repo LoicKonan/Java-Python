@@ -20,213 +20,38 @@
  * Files:           Question_3.java
  * 
  *****************************************************************************/
-
-public class Calculator 
+public class calculator
 {
-    class SyntaxError extends Exception 
+    public double Add(double a, double b)
     {
-        private String ErrorMessage;
-
-        public SyntaxError(String ErrorMessage) 
-        {
-            this.ErrorMessage = ErrorMessage;
-        }
-
-        @Override
-        public String getLocalizedMessage() 
-        {
-            return "Syntax Error: " + this.ErrorMessage;
-        }
+        return a + b;
+    }
+    
+    public double Subtraction(double a, double b)
+    {
+        return a - b;
     }
 
-    class RuntimeError extends Exception 
+    public double Multiplication(double a, double b)
     {
-        private String ErrorMessage;
-
-        public RuntimeError(String ErrorMessage) 
-        {
-            this.ErrorMessage = ErrorMessage;
-        }
-
-        @Override
-        public String getLocalizedMessage() 
-        {
-            return "Syntax Error   : " + this.ErrorMessage + "\n";
-        }
+        return a * b;
     }
 
-    public int TestCaseSolution(String equation) 
+    public double Divide(double a, double b)
     {
-        int result;
-        result = 7 * 6 / 2;
-        System.out.println("No Errors      : " + equation + "          " + "Result: " + result);
-        return 0;
+        return a / b;
     }
-
-    public int getSolution(String TestingCase) throws RuntimeError, SyntaxError 
+    
+    public double Modulo(double a, double b)
     {
-        int Solution = 0;
-
-        int rightBrace = 0, leftBrace = 0, EqualsSigns = 0;
-
-        for (int i = 1; i < TestingCase.length(); i++) 
-        {
-            if (TestingCase.charAt(i) == '(') 
-            {
-                rightBrace++;
-            }
-            if (TestingCase.charAt(i) == ')') 
-            {
-                rightBrace++;
-            }
-            if (TestingCase.charAt(i) == '=') 
-            {
-                EqualsSigns++;
-            }
-            if (TestingCase.charAt(i) == '/') 
-            {
-                if (TestingCase.charAt(i + 1) == '0') 
-                {
-                    throw new RuntimeError(TestingCase + "          Divide by 0 occured");
-                }
-            }
-            if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".contains("" + TestingCase.charAt(i))) 
-            {
-                throw new SyntaxError(TestingCase + "             more than one variable");
-            }
-
-        }
-
-        if (leftBrace < rightBrace) 
-        {
-            throw new SyntaxError(TestingCase + "            ')' expected. \n");
-        } 
-        else if (rightBrace > leftBrace) 
-        {
-            throw new SyntaxError(TestingCase + "            '(' expected.");
-        }
-
-        if (EqualsSigns < 1) 
-        {
-            throw new SyntaxError(TestingCase + "          '=' expected  \n");
-        }
-        else if (EqualsSigns > 1) 
-        {
-            throw new SyntaxError(TestingCase + "           Unexpected '='\n");
-        }
-
-        Solution = TestCaseSolution(TestingCase);
-        return Solution;
+        return a % b;
     }
+}
 
+
+public class Question_3 
+{
     public static void main(String[] args) 
     {
-
-        System.out.println("=======================================================\n"
-                + " Question 3                                             \n"
-                + "========================================================\n\n"
-                + "    Test Expression                 Correct Response    \n"
-                + "=========================       ========================\n");
-
-        Question_3 CalcTestCase = new  Question_3();
-
-        String TestCase = "X = 1+2+(3"; 
-        try 
-        {
-            CalcTestCase.getSolution(TestCase);
-        }
-
-        catch (RuntimeError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        } 
-        catch (SyntaxError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        }
-
-        System.out.println("-----------------------------------------------------------");
-
-        TestCase = "Y = 2+5 = 3";
-        try 
-        {
-            CalcTestCase.getSolution(TestCase);
-        } 
-        catch (RuntimeError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        } 
-        catch (SyntaxError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        }
-
-        System.out.println("-----------------------------------------------------------");
-
-        TestCase = "Y = 6*Z+5";
-        try 
-        {
-            CalcTestCase.getSolution(TestCase);
-        } 
-        catch (RuntimeError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        } 
-        catch (SyntaxError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        }
-
-        System.out.println("-----------------------------------------------------------");
-
-        TestCase = "Y 3+5+(1+6)";
-        try 
-        {
-            CalcTestCase.getSolution(TestCase);
-        }
-        catch (RuntimeError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        } 
-        catch (SyntaxError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        }
-        System.out.println("-----------------------------------------------------------");
-
-        TestCase = "Z=(3+5)/0";
-        try 
-        {
-            CalcTestCase.getSolution(TestCase);
-        }
-        
-        catch (RuntimeError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        } 
-        catch (SyntaxError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        }
-        System.out.println("-----------------------------------------------------------");
-        TestCase = "A = 7*6/2";
-        try 
-        {
-            CalcTestCase.getSolution(TestCase);
-        }
-        catch (RuntimeError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        } 
-        catch (SyntaxError e) 
-        {
-            System.err.println(e.getLocalizedMessage());
-        }
-
-        finally 
-        {
-            System.out.println("-----------------------------------------------------------");
-            System.out.println("we Are Exiting our Test Cases and into the Final Block");
-        }
     }
 }

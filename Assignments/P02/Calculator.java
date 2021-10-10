@@ -43,6 +43,7 @@ class SyntaxError extends Exception
     }
 }
 
+
 class RuntimeError extends Exception 
 {
     private String ErrorMessage;
@@ -58,8 +59,6 @@ class RuntimeError extends Exception
         return this.ErrorMessage + "\n";
     }
 }
-
-
 
 
 public class Calculator

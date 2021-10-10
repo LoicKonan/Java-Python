@@ -21,6 +21,11 @@
  * Files:           Question_3.java
  * 
  *****************************************************************************/
+
+ import javax.swing.*;
+ import java.awt.event.*;
+
+ 
 public class calculator
 {
     public double Add(double a, double b)

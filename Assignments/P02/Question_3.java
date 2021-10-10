@@ -199,8 +199,7 @@ public class Question_3
         {
             CalcTestCase.getSolution(TestCase);
         }
-        // if any errors pass, then print out erros fro both syntax
-        // and runtime
+        
         catch (RuntimeError e) 
         {
             System.err.println(e.getLocalizedMessage());

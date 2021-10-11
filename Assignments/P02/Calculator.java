@@ -22,7 +22,7 @@
  * 
  *****************************************************************************/
 
- import java.util.*;
+import java.util.*;
 
 class SyntaxError extends Exception 
 {

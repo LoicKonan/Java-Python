@@ -54,6 +54,8 @@ print(var1 + ' ' + var2)
 
 
 
-print('Enter your name: ')
-var5 = input()
-print("your name is: ", var5)
+print('Enter your name and last name:')
+fname = input()
+lname = input()
+
+print("your name is: ", fname, lname)

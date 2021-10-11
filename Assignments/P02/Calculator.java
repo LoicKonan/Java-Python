@@ -108,13 +108,16 @@ static void checkString(String input_user) throws SyntaxError, RuntimeError
                 throw new SyntaxError();
             }
         }
-        // If the amount of parentheses doesn't match each other throw theS
-        // proper syntax error.
-        // Throw an error for more ')' than '('
+        
+        /**
+         * If the amount of parentheses doesn't match  
+         * Throw an error for more ')' than '('.
+         * else Throw an error for more '(' than ')'
+         */
         if (pareLeft < pareRight) 
         {
             throw new SyntaxError();
-        } // Throw an error for more '(' than ')'
+        } 
         else if (pareRight < pareLeft) 
         {
             throw new SyntaxError();
@@ -130,6 +133,7 @@ private static void symbolCheck(String input_user, int i)
 {
     
 }
+
 
 public static class Calculator
 {

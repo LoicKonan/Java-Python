@@ -102,6 +102,7 @@ public class Calculator
         ("The Randomly generated integer is : " + nxt);
 
         int day = 4;
+        
         switch (day) 
         {
             case 6:
@@ -115,7 +116,7 @@ public class Calculator
         }
 
         Scanner input = new Scanner(System.in);
-        
+
         
     }
 }

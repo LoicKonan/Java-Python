@@ -1,4 +1,10 @@
-# 3 types of vars, int float, str;
+#/**
+# This is program about Python
+# @author Loic Konan
+# Semester: Fall 2021
+# Date: 10/11/2021 
+# 
+
 # built in funtion
 # str()
 # float()
@@ -13,6 +19,34 @@ var = '3'
 print(type(var))
 var = int(var)
 print(type(var))
+
+var = float(var)
+print(type(var))
+
+var =  31
+var1 = var//2
+var2 = var/2
+var3 = var % 5
+d, m = divmod(var, 5)
+print(d,m)
+print(var1, var2, var3)
+
+
+var1 = 'Hello'
+var2 = 'word'
+
+print(var1 + ' ' + var2)
+
+print(len(var1))
+
+
+print('Enter your name and last name:')
+fname = input()
+lname = input()
+
+print("your name is: ", fname, lname)
+
+
 
 var1 = '3'
 var2 = var * 3

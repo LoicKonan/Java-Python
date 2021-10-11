@@ -42,32 +42,32 @@ class RuntimeError extends Exception
 
 public class Calculator
 {
-    public static double Add(double a, double b)
+    public static double Add(double a, double b) throws SyntaxError
     {
         return a + b;
     }
     
-    public static double Subtraction(double a, double b)
+    public static double Subtraction(double a, double b) throws SyntaxError
     {
         return a - b;
     }
 
-    public static double Multiplication(double a, double b)
+    public static double Multiplication(double a, double b) throws SyntaxError
     {
         return a * b;
     }
 
-    public static double Divide(double a, double b)
+    public static double Divide(double a, double b) throws SyntaxError, RuntimeError
     {
         return a / b;
     }
     
-    public static double Modulo(double a, double b)
+    public static double Modulo(double a, double b)  throws SyntaxError, RuntimeError
     {
         return a % b;
     }
 
-    public static void main(String[] args)  throws SyntaxError, RuntimeError 
+    public static void main(String[] args) 
     {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your Equation: ");

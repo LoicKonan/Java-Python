@@ -20,33 +20,61 @@
  *              input.txt
  *   
  *****************************************************************************/
+class Mammalia
+{
+    int legs;
+    boolean tails;
+    boolean brain;
+    int neurons;
+    double precision;
+    int birthDate;
+    String fav_Foods;
+    
+    public void eat(){}
+    public void walk(){}
+    public void sleep(){}
+    public void give_birth(){}
+}
 
-abstract interface Mammalia {}
+class Monotremata extends Mammalia{}
+class Theria extends Mammalia{}
 
-abstract interface Theria extends Mammalia {}
+class Marsupialia extends Theria{}
+class Placentalia extends Theria{}
 
-abstract interface Placentalla extends Theria {}
+class Atlantogenata extends Placentalia{}
+class Boreoeutheria extends Placentalia{}
 
-abstract interface Atlantogenata extends Placentalla {}
+class Afrotheria extends Atlantogenata{}
+class Xenarthra extends Atlantogenata{}
 
-abstract interface Boreoeutheria extends Placentalla {}
+class Euarchontoglires extends Boreoeutheria{}
+class Laurasiatheria extends Boreoeutheria{}
 
-abstract interface Laurasiaheria extends Boreoeutheria {}
+class Euarchonta extends Euarchontoglires{}
+class Glires extends Euarchontoglires{}
 
-abstract interface Scrotifera extends Laurasiaheria {}
+class Scrotifera extends Laurasiatheria{}
+class Eulipotyphia extends Laurasiatheria{}
 
-abstract interface Ferae extends Scrotifera {}
+class Chirpotera extends Scrotifera{}
+class Euungulata extends Scrotifera{}
+class Ferae extends Scrotifera{}
 
+class Cetartiodactyla extends Euungulata{}
+class Perissodactyla extends Euungulata{}
 
-class Monotremata implements Mammalia {}
-
-class Marsupialia implements Theria {}
-
+class Pholidota extends Ferae{}
+class Carnivora extends Ferae{}
 
 public class Question_2 
 {
     public static void main(String[] args) 
     {
-
+        Theria Theria1 = new Theria();
+        Theria Boreoeutheria1 = new Boreoeutheria();
+        Theria Xenarthra1 = new Xenarthra();
+        Theria Glires1 = new Glires();
+        Theria Ferae1 = new Ferae();
     }
 }

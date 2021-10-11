@@ -38,39 +38,43 @@ class RuntimeError extends Exception
 
 public class Calculator
 {
-    public static double Add(double a, double b) throws SyntaxError
+    public static long Add(long a, long b)
     {
         return a + b;
     }
     
-    public static double Subtraction(double a, double b) throws SyntaxError
+    public static long Subtraction(long a, long b)
     {
         return a - b;
     }
 
-    public static double Multiplication(double a, double b) throws SyntaxError
+    public static long Multiplication(long a, long b) 
     {
         return a * b;
     }
 
-    public static double Divide(double a, double b) throws SyntaxError, RuntimeError
+    public static long Divide(long a, long b) 
     {
         return a / b;
     }
     
-    public static double Modulo(double a, double b)  throws SyntaxError, RuntimeError
+    public static long Modulo(long a, long b) 
     {
         return a % b;
     }
 
     public static void main(String[] args) 
     {
+        System.out.println("Enter your Equation: ");
+        
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter your Equation: ");
-
         String Equation = input.nextLine();
-        Equation = Equation.replaceAll("\\s", "");
-        System.out.print("Expression Entered: " + Equation + "\n");
+
+        //Equation = Equation; //.replaceAll("\\s", "");
+
+        System.out.prlong("X = " + Equation + " = ");
+        
+        System.out.prlong(Calculator.Divide(25, 23));
 
 
         

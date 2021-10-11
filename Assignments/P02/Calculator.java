@@ -186,20 +186,13 @@ public static class Calculator
 
     public static void main(String[] args) 
     {
-        String[] some = new String[20]; 
         System.out.println("Enter your Equation: ");
         
        
         Scanner input = new Scanner(System.in);
         String Equation = input.nextLine();
 
-
-        //Equation = Equation; //.replaceAll("\\s", "");
-
-       // System.out.println("X = " + Equation + " = ");
         
-        System.out.println(Calculator.Add(25, 23));
-
 
         
     }

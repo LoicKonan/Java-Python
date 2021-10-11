@@ -35,30 +35,125 @@ class RuntimeError extends Exception
     
 }
 
+static void checkString(String input_user) throws SyntaxError, RuntimeError 
+{
+    boolean equalSign = false;                                              // Number of equal sign.
+    int pareLeft = 0;                                                       // Number of '(' symbols.
+    int pareRight = 0;                                                      // Number of ')' symbols.
+    int addCount = 0;                                                       // Number of '+' symbols.
+    int subCount = 0;                                                       // Number of '-' symbols.
+    int mulCount = 0;                                                       // Number of '*' symbols.
+    int divCount = 0;                                                       // Number of '/' symbols.
+    int modCount = 0;                                                       // Number of '%' symbols.
 
-public class Calculator
+                                                                            // Throw a Syntax error if an equal sign is not in the correct position
+    if (input_user.charAt(1) == '=') 
+    {
+        equalSign = true;
+        
+        
+        /**
+         * Loop through the string and check for the amount of operations needed
+         */
+        for (int i = 0; i < input_user.length(); i++) 
+        {
+            System.out.println(input_user.charAt(i));
+
+            if (input_user.charAt(i) == '+') 
+            {
+                addCount++;
+                symbolCheck(input_user, i);
+            } 
+            else if (input_user.charAt(i) == '-') 
+            {
+                subCount++;
+                symbolCheck(input_user, i);
+            } 
+            else if (input_user.charAt(i) == '*') 
+            {
+                mulCount++;
+                symbolCheck(input_user, i);
+            } 
+            else if (input_user.charAt(i) == '/') 
+            {
+                divCount++;
+                symbolCheck(input_user, i);
+               
+                if (input_user.charAt(i + 1) == '0')                              // if Divide by 0 throw a Runtime error.
+                {
+                    throw new RuntimeError();
+                }
+            } 
+            else if (input_user.charAt(i) == '%') 
+            {
+                modCount++;
+                symbolCheck(input_user, i);
+                    
+                if (input_user.charAt(i + 1) == '0')                              // if Mod by 0 throw a Runtime Error.
+                {
+                    throw new RuntimeError();
+                }
+            } 
+            else if (input_user.charAt(i) == '(') 
+            {
+                pareLeft++;
+            } 
+            else if (input_user.charAt(i) == ')') 
+            {
+                pareRight++;
+            } 
+            else if (input_user.charAt(i) == '=' && i != 1) 
+            {
+                equalSign = false;
+                throw new SyntaxError();
+            }
+        }
+        // If the amount of parentheses doesn't match each other throw theS
+        // proper syntax error.
+        // Throw an error for more ')' than '('
+        if (pareLeft < pareRight) 
+        {
+            throw new SyntaxError();
+        } // Throw an error for more '(' than ')'
+        else if (pareRight < pareLeft) 
+        {
+            throw new SyntaxError();
+        }
+    } 
+    else 
+    {
+        throw new SyntaxError();
+    }
+}
+
+private static void symbolCheck(String input_user, int i) 
+{
+    
+}
+
+public static class Calculator
 {
     public static long Add(long a, long b)
     {
         return a + b;
     }
     
-    public static long Subtraction(long a, long b)
+    public long Subtraction(long a, long b)
     {
         return a - b;
     }
 
-    public static long Multiplication(long a, long b) 
+    public long Multiplication(long a, long b) 
     {
         return a * b;
     }
 
-    public static long Divide(long a, long b) 
+    public long Divide(long a, long b) 
     {
         return a / b;
     }
     
-    public static long Modulo(long a, long b) 
+    public long Modulo(long a, long b) 
     {
         return a % b;
     }

@@ -214,7 +214,6 @@ class Carnivora extends Ferae
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
 }
-
 // Class Perivora extends perissodactyla, carnivora {}
 
 

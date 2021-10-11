@@ -47,6 +47,12 @@ lname = input()
 print("your name is: ", fname, lname)
 
 
+var4 = 2 ** 3
+print(var4)
+
+print(float('inf'))
+
+
 
 var1 = '3'
 var2 = var * 3
@@ -67,16 +73,3 @@ else:
     
 print('End')
 
-
-var =  31
-var1 = var//2
-var2 = var/2
-var3 = var % 5
-d, m = divmod(var, 5)
-print(d,m)
-print(var1, var2, var3)
-
-var4 = 2 ** 3
-print(var4)
-
-print(float('inf'))

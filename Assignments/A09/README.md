@@ -4,7 +4,7 @@
 
 ### Description
 
-> Built few of the Python built in functions such as:
+> Python built in functions:
 >
 > - str()
 > - float()

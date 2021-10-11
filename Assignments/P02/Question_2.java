@@ -67,7 +67,7 @@ class Perissodactyla extends Euungulata{}
 class Pholidota extends Ferae{}
 class Carnivora extends Ferae{}
 
-class Perivora extends perissodactyla, carnivora {}
+//class Perivora extends perissodactyla, carnivora {}
 
 
 public class Question_2 

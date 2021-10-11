@@ -24,15 +24,37 @@
 
  import java.util.*;
 
- class SyntaxError extends Exception 
- {
-   
- }
+class SyntaxError extends Exception 
+{
+    private String ErrorMessage;
+
+    public SyntaxError(String ErrorMessage) 
+    {
+        this.ErrorMessage = ErrorMessage;
+    }
+
+    @Override
+    public String getLocalizedMessage() 
+    {
+        return this.ErrorMessage;
+    }
+}
 
 
 class RuntimeError extends Exception 
 {
-    
+    private String ErrorMessage;
+
+    public RuntimeError(String ErrorMessage) 
+    {
+        this.ErrorMessage = ErrorMessage;
+    }
+
+    @Override
+    public String getLocalizedMessage() 
+    {
+        return  this.ErrorMessage+"\n";
+    }
 }
 
 static void checkString(String input_user) throws SyntaxError, RuntimeError 
@@ -81,7 +103,7 @@ static void checkString(String input_user) throws SyntaxError, RuntimeError
                
                 if (input_user.charAt(i + 1) == '0')                              // if Divide by 0 throw a Runtime error.
                 {
-                    throw new RuntimeError();
+                    throw new RuntimeError(input_user);
                 }
             } 
             else if (input_user.charAt(i) == '%') 
@@ -91,7 +113,7 @@ static void checkString(String input_user) throws SyntaxError, RuntimeError
                     
                 if (input_user.charAt(i + 1) == '0')                              // if Mod by 0 throw a Runtime Error.
                 {
-                    throw new RuntimeError();
+                    throw new RuntimeError(input_user);
                 }
             } 
             else if (input_user.charAt(i) == '(') 
@@ -105,7 +127,7 @@ static void checkString(String input_user) throws SyntaxError, RuntimeError
             else if (input_user.charAt(i) == '=' && i != 1) 
             {
                 equalSign = false;
-                throw new SyntaxError();
+                throw new SyntaxError(input_user);
             }
         }
         
@@ -116,16 +138,16 @@ static void checkString(String input_user) throws SyntaxError, RuntimeError
          */
         if (pareLeft < pareRight) 
         {
-            throw new SyntaxError();
+            throw new SyntaxError(input_user);
         } 
         else if (pareRight < pareLeft) 
         {
-            throw new SyntaxError();
+            throw new SyntaxError(input_user);
         }
     } 
     else 
     {
-        throw new SyntaxError();
+        throw new SyntaxError(input_user);
     }
 }
 

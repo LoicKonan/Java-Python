@@ -30,31 +30,40 @@
 
  class SyntaxError extends Exception 
  {
-    
+    private String ErrorMessage;
+
+    public SyntaxError(String ErrorMessage) 
+    {
+        this.ErrorMessage = ErrorMessage;
+    }
+
+    @Override
+    public String getLocalizedMessage() 
+    {
+        return this.ErrorMessage;
+    }
  }
 
 
 class RuntimeError extends Exception 
 {
-   
+    private String ErrorMessage;
+
+    public RuntimeError(String ErrorMessage) 
+    {
+        this.ErrorMessage = ErrorMessage;
+    }
+    
+    @Override
+    public String getLocalizedMessage() 
+    {
+        return  this.ErrorMessage+"\n";
+    }
 }
 
 
 public class Calculator
 {
-    public static void main(String[] args)  throws SyntaxError, RuntimeError 
-    {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter your Equation: ");
-
-        String Equation = input.nextLine();
-        Equation = Equation.replaceAll("\\s", "");
-        System.out.print("Expression Entered: " + Equation + "\n");
-
-
-        
-    }
-
     public static double Add(double a, double b)
     {
         return a + b;
@@ -78,5 +87,18 @@ public class Calculator
     public static double Modulo(double a, double b)
     {
         return a % b;
+    }
+
+    public static void main(String[] args)  throws SyntaxError, RuntimeError 
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your Equation: ");
+
+        String Equation = input.nextLine();
+        Equation = Equation.replaceAll("\\s", "");
+        System.out.print("Expression Entered: " + Equation + "\n");
+
+
+        
     }
 }

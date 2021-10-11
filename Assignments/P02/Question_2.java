@@ -67,6 +67,9 @@ class Perissodactyla extends Euungulata{}
 class Pholidota extends Ferae{}
 class Carnivora extends Ferae{}
 
+class Perivora extends perissodactyla, carnivora {}
+
+
 public class Question_2 
 {
     public static void main(String[] args) 

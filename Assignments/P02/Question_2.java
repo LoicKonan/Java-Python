@@ -267,10 +267,14 @@ public class Question_2
 {
     public static void main(String[] args) 
     {
-        Theria Theria1 = new Theria();
-        Theria Boreoeutheria1 = new Boreoeutheria();
-        Theria Xenarthra1 = new Xenarthra();
-        Theria Glires1 = new Glires();
-        Theria Ferae1 = new Ferae();
+        Theria Theria1 = new Theria(0, false, false, 0, 0, 0, null);
+        
+        Theria Boreoeutheria1 = new Boreoeutheria(0, false, false, 0, 0, 0, null);
+        
+        Theria Xenarthra1 = new Xenarthra(0, false, false, 0, 0, 0, null);
+        
+        Theria Glires1 = new Glires(0, false, false, 0, 0, 0, null);
+        
+        Theria Ferae1 = new Ferae(0, false, false, 0, 0, 0, null);
     }
 }

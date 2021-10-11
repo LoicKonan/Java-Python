@@ -5,7 +5,7 @@
 # int()
 # len()
 # type()
-# dimod()
+# divmod()
 #
 
 var = '3'

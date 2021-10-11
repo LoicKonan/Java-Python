@@ -31,7 +31,7 @@ class Mammalia
     String fav_Foods;
     
     public void eat(){}
-    public void walk(){}
+    public void walk(){} 
     public void sleep(){}
     public void give_birth(){}
 

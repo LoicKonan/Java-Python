@@ -49,214 +49,169 @@ class Mammalia
 
 class Monotremata extends Mammalia
 {
-
     Monotremata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
+
 class Theria extends Mammalia
 {
-
     Theria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Marsupialia extends Theria
 {
-
     Marsupialia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Placentalia extends Theria
 {
-
     Placentalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Atlantogenata extends Placentalia
 {
-
     Atlantogenata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Boreoeutheria extends Placentalia
 {
-
     Boreoeutheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Afrotheria extends Atlantogenata
 {
-
     Afrotheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Xenarthra extends Atlantogenata
 {
-
     Xenarthra(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Euarchontoglires extends Boreoeutheria
 {
-
-    Euarchontoglires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_id) 
-            {
+    Euarchontoglires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Laurasiatheria extends Boreoeutheria
 {
-
-    Laurasiatheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_id) 
-            {
+    Laurasiatheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Euarchonta extends Euarchontoglires
 {
-
     Euarchonta(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Glires extends Euarchontoglires
 {
-
     Glires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Scrotifera extends Laurasiatheria
 {
-
     Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Eulipotyphia extends Laurasiatheria
 {
-
     Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Chirpotera extends Scrotifera
 {
-
     Chirpotera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Euungulata extends Scrotifera
 {
-
     Euungulata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Ferae extends Scrotifera
 {
-
     Ferae(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Cetartiodactyla extends Euungulata
 {
-
-    Cetartiodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_id) 
-            {
+    Cetartiodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Perissodactyla extends Euungulata
 {
-
-    Perissodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_id) 
-            {
+    Perissodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Pholidota extends Ferae
 {
-
     Pholidota(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 
 class Carnivora extends Ferae
 {
-
     Carnivora(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
-        //TODO Auto-generated constructor stub
     }
 }
 

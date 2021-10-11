@@ -64,49 +64,58 @@ class RuntimeError extends Exception
 
 public class Calculator
 {
-    public double Add(double a, double b)
+    public static double Add(double a, double b)
     {
         return a + b;
     }
     
-    public double Subtraction(double a, double b)
+    public static double Subtraction(double a, double b)
     {
         return a - b;
     }
 
-    public double Multiplication(double a, double b)
+    public static double Multiplication(double a, double b)
     {
         return a * b;
     }
 
-    public double Divide(double a, double b)
+    public static double Divide(double a, double b)
     {
         return a / b;
     }
     
-    public double Modulo(double a, double b)
+    public static double Modulo(double a, double b)
     {
         return a % b;
     }
 
     public static void main(String[] args)  throws SyntaxError, RuntimeError 
     {
-        Scanner input = new Scanner(System.in);
-        while(true){
-            try {
-                System.out.println("Enter the first item: ");
-                int first_input = input.nextInt();
-                System.out.println("Enter the second item: ");
-                int second_input = input.nextInt();
-                if(second_input == 0){
-                    throw new RuntimeError();
-                }
-								System.out.println(Divide(first_input,second_input));
-            }
-            catch (RuntimeError e) {
-                System.out.println(e.getMessage());
-            }
+        // create random object
+        Random ran = new Random();
+  
+        // generating integer
+        int nxt = ran.nextInt();
+    
+        // Printing the random Number.
+        System.out.println
+        ("The Randomly generated integer is : " + nxt);
+
+        int day = 4;
+        switch (day) 
+        {
+            case 6:
+            System.out.println("Today is Saturday");
+            break;
+            case 7:
+            System.out.println("Today is Sunday");
+            break;
+            default:
+            System.out.println("Looking forward to the Weekend");
         }
-    }
+
+        Scanner input = new Scanner(System.in);
+        
+        
     }
 }

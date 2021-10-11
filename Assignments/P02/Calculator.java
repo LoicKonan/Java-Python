@@ -151,7 +151,7 @@ static void checkString(String input_user) throws SyntaxError, RuntimeError
     }
 }
 
-private static void symbolCheck(String input_user, int i) 
+ static void symbolCheck(String input_user, int i) 
 {
     
 }

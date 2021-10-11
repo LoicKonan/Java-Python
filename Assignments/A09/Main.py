@@ -6,7 +6,7 @@
 # len()
 # type()
 # divmod()
-#
+# string concat()
 
 var = '3'
 
@@ -51,7 +51,6 @@ var1 = 'Hello'
 var2 = 'word'
 
 print(var1 + ' ' + var2)
-
 
 
 print('Enter your name and last name:')

@@ -1,4 +1,12 @@
 # 3 types of vars, int float, str;
+# built in funtion
+# str()
+# float()
+# int()
+# len()
+# type()
+# dimod()
+#
 
 var = '3'
 
@@ -38,3 +46,14 @@ var4 = 2 ** 3
 print(var4)
 
 print(float('inf'))
+
+var1 = 'Hello'
+var2 = 'word'
+
+print(var1 + ' ' + var2)
+
+
+
+print('Enter your name: ')
+var5 = input()
+print("your name is: ", var5)

@@ -215,7 +215,7 @@ class Carnivora extends Ferae
     }
 }
 
-//class Perivora extends perissodactyla, carnivora {}
+// Class Perivora extends perissodactyla, carnivora {}
 
 
 public class Question_2 

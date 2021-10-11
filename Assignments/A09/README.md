@@ -14,7 +14,7 @@
 > - divmod()
 > - string concat()
 >
-> if statement:
+> - if statement:
 >
 
 ### Files

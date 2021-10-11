@@ -80,15 +80,3 @@ var4 = 2 ** 3
 print(var4)
 
 print(float('inf'))
-
-var1 = 'Hello'
-var2 = 'word'
-
-print(var1 + ' ' + var2)
-
-
-print('Enter your name and last name:')
-fname = input()
-lname = input()
-
-print("your name is: ", fname, lname)

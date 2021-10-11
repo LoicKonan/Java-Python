@@ -72,9 +72,9 @@ public class Calculator
 
         //Equation = Equation; //.replaceAll("\\s", "");
 
-        System.out.prlong("X = " + Equation + " = ");
+        System.out.println("X = " + Equation + " = ");
         
-        System.out.prlong(Calculator.Divide(25, 23));
+        System.out.println(Calculator.Divide(25, 23));
 
 
         

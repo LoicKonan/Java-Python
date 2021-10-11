@@ -91,6 +91,22 @@ public class Calculator
 
     public static void main(String[] args)  throws SyntaxError, RuntimeError 
     {
-       
+        Scanner input = new Scanner(System.in);
+        while(true){
+            try {
+                System.out.println("Enter the first item: ");
+                int first_input = input.nextInt();
+                System.out.println("Enter the second item: ");
+                int second_input = input.nextInt();
+                if(second_input == 0){
+                    throw new RuntimeError();
+                }
+								System.out.println(Divide(first_input,second_input));
+            }
+            catch (RuntimeError e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
     }
 }

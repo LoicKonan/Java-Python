@@ -123,36 +123,34 @@ public class Calculator
                         "                Syntax Error: Unexpected '='\n");
                 }
 
-                results = Get_Results(inputs);
-
                 return results;
         }
 
 
-        static int addition(int a, int b) 
-        {
-                return (a + b);
-        }
+        // static int addition(int a, int b) 
+        // {
+        //         return (a + b);
+        // }
         
-        static int subtraction(int a, int b) 
-        {
-                return (a - b);
-        }
+        // static int subtraction(int a, int b) 
+        // {
+        //         return (a - b);
+        // }
         
-        static int multiplication(int a, int b) 
-        {
-                return (a * b);
-        }
+        // static int multiplication(int a, int b) 
+        // {
+        //         return (a * b);
+        // }
         
-        static int division(int a, int b) 
-        {
-                return (a / b);
-        }
+        // static int division(int a, int b) 
+        // {
+        //         return (a / b);
+        // }
         
-        static int modulo(int a, int b) 
-        {
-                return (a % b);
-        } 
+        // static int modulo(int a, int b) 
+        // {
+        //         return (a % b);
+        // } 
 
         public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
         {

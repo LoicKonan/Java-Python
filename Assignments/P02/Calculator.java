@@ -128,13 +128,7 @@ public class Calculator
         public static void main(String[] args) throws RuntimeException, FileNotFoundException, RuntimeError, SyntaxError 
         {
 
-                System.out.println("=======================================================|\n"
-                                + "| Question 3                                           |\n"
-                                + "|                                                      |\n\n"
-                                + "|   Test Expression           Correct Response         |\n"
-                                + "|======================================================|\n");
-
-                Calculator CalcTestCase = new Calculator();
+                Calculator Equation = new Calculator();
 
                 File myObj = new File("calculator.txt");
                 Scanner myReader = new Scanner(myObj);
@@ -145,7 +139,7 @@ public class Calculator
 
                         try 
                         {
-                                CalcTestCase.Get_Results(data);
+                                Equation.Get_Results(data);
                         }
 
                         catch (RuntimeError e) 

@@ -60,40 +60,42 @@ class RuntimeError extends Exception
 
 public class Calculator 
 {
-        public int Get_Results(String TestingCase) throws RuntimeError, SyntaxError 
+        public int Get_Results(String inputs) throws RuntimeError, SyntaxError 
         {
                 int results = 0;
                 int L_Parenthesis  = 0;
                 int R_Parenthesis  = 0;
                 int Equal_Signs = 0;
 
-                for (int i = 1; i < TestingCase.length(); i++) 
+
+
+                for (int i = 1; i < inputs.length(); i++) 
                 {
-                        if (TestingCase.charAt(i) == '(') 
+                        if (inputs.charAt(i) == '(') 
                         {
                                 R_Parenthesis ++;
                         }
 
-                        if (TestingCase.charAt(i) == ')') 
+                        if (inputs.charAt(i) == ')') 
                         {
                                 L_Parenthesis ++;
                         }
 
-                        if (TestingCase.charAt(i) == '=') 
+                        if (inputs.charAt(i) == '=') 
                         {
                                 Equal_Signs++;
                         }
 
-                        if (TestingCase.charAt(i) == '/' && TestingCase.charAt(i + 1) == '0') 
+                        if (inputs.charAt(i) == '/' && inputs.charAt(i + 1) == '0') 
                         {
-                                throw new RuntimeError(TestingCase + 
+                                throw new RuntimeError(inputs + 
                                 "                 Syntax Error: Divide by 0 occured");
                         }
 
                         if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                        .contains("" + TestingCase.charAt(i))) 
+                                        .contains("" + inputs.charAt(i))) 
                         {
-                                                throw new SyntaxError( TestingCase +                 
+                                                throw new SyntaxError( inputs +                 
                                                 " Syntax Error: more than one variable");
                         }
 
@@ -101,23 +103,24 @@ public class Calculator
 
                 if (R_Parenthesis  < L_Parenthesis ) 
                 {
-                        throw new SyntaxError(TestingCase + "                Syntax Error: ')' expected. \n");
+                        throw new SyntaxError(inputs + "                Syntax Error: ')' expected. \n");
                 } 
                 else if (R_Parenthesis  > L_Parenthesis ) 
                 {
-                        throw new SyntaxError(TestingCase + "                Syntax Error: '(' expected.");
+                        throw new SyntaxError(inputs + "                Syntax Error: '(' expected.");
                 }
 
-                if (Equal_Signs < 1) {
-                        throw new SyntaxError(TestingCase + "               Syntax Error: '=' expected  \n");
+                if (Equal_Signs < 1) 
+                {
+                        throw new SyntaxError(inputs + "               Syntax Error: '=' expected  \n");
                 }
 
                 else if (Equal_Signs > 1) 
                 {
-                        throw new SyntaxError(TestingCase + "               Syntax Error: Unexpected '='\n");
+                        throw new SyntaxError(inputs + "               Syntax Error: Unexpected '='\n");
                 }
 
-                results = Get_Results(TestingCase);
+                results = Get_Results(inputs);
 
                 return results;
 

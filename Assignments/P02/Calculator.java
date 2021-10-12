@@ -21,9 +21,9 @@
  * 
  *****************************************************************************/
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;                               // Import the Scanner class to read text files
-
 
 
 class Syntax_Error extends Exception 
@@ -186,7 +186,7 @@ public class Calculator
                 return 0;
         }
 
-        public static void main(String[] args) throws Runtime_Error, Syntax_Error
+        public static void main(String[] args) throws FileNotFoundException,  Runtime_Error, Syntax_Error
         {
                 Calculator Equation = new Calculator();
 

@@ -144,14 +144,10 @@ public class Calculator
                                 Equation.Get_Results(data);
                         }
 
-                        catch (RuntimeError e) 
+                        catch (RuntimeError | SyntaxError e) 
                         {
                                 System.err.println(e.getLocalizedMessage());
                         } 
-                        catch (SyntaxError e) 
-                        {
-                                System.err.println(e.getLocalizedMessage());
-                        }
 
                 }
                 myReader.close();

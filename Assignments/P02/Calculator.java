@@ -98,7 +98,6 @@ public class Calculator
                                 throw new SyntaxError( inputs + 
                                 "               Syntax Error: more than one variable");
                         }
-
                 }
 
                 if (R_Parenthesis  < L_Parenthesis ) 

@@ -67,7 +67,6 @@ public class Calculator
                 int R_Parenthesis  = 0;
                 int Equal_Signs = 0;
 
-
                 for (int i = 1; i < inputs.length(); i++) 
                 {
                         if (inputs.charAt(i) == '(') 
@@ -94,8 +93,8 @@ public class Calculator
                         if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                         .contains("" + inputs.charAt(i))) 
                         {
-                                                throw new SyntaxError( inputs + 
-                                                "               Syntax Error: more than one variable");
+                                throw new SyntaxError( inputs + 
+                                "               Syntax Error: more than one variable");
                         }
 
                 }

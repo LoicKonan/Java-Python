@@ -28,7 +28,7 @@ import java.util.Scanner;                               // Import the Scanner cl
 
 class SyntaxError extends Exception 
 {
-        private final String Error_Message;
+        private String Error_Message;
 
         public SyntaxError(String Error_Message) 
         {
@@ -45,7 +45,7 @@ class SyntaxError extends Exception
 
 class RuntimeError extends Exception 
 {
-        private final String Error_Message;
+        private String Error_Message;
 
         public RuntimeError(String Error_Message) 
         {
@@ -123,37 +123,12 @@ public class Calculator
                         "                Syntax Error: Unexpected '='\n");
                 }
 
-                results = Get_Results(inputs);
+               // results = Get_Results(inputs);
 
                 return results;
         }
 
-        public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
-        {
-                Calculator Equation = new Calculator();
 
-                File file = new File("calculator.txt");
-                Scanner myReader = new Scanner(file);
-                
-                String data; 
-                while (myReader.hasNextLine()) 
-                {
-                        data = myReader.nextLine();
-
-                        try 
-                        {
-                                Equation.Get_Results(data);
-                        }
-
-                        catch (RuntimeError | SyntaxError e) 
-                        {
-                                System.err.println(e.getLocalizedMessage());
-                        } 
-                }
-                myReader.close();
-        }
-
-        
         static int addition(int a, int b) 
         {
                 return (a + b);
@@ -178,4 +153,37 @@ public class Calculator
         {
                 return (a % b);
         } 
+
+        public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
+        {
+                Calculator Equation = new Calculator();
+
+                try 
+                {
+                        File file = new File("calculator.txt");
+                        Scanner myReader = new Scanner(file);
+
+                        while (myReader.hasNextLine()) 
+                        {
+                                String data = myReader.nextLine();
+
+                                try 
+                                {
+                                        Equation.Get_Results(data);
+                                }
+
+                                catch (RuntimeError | SyntaxError e) 
+                                {
+                                        System.err.println(e.getLocalizedMessage());
+                                } 
+                        }
+
+                        myReader.close();
+                } 
+                catch (FileNotFoundException e) 
+                {
+                        System.out.println("An error occurred File not Found!!!.");
+                        e.printStackTrace();
+                }
+        }
 }

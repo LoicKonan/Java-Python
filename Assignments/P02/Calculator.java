@@ -130,8 +130,8 @@ public class Calculator
 
                 Calculator Equation = new Calculator();
 
-                File myObj = new File("calculator.txt");
-                Scanner myReader = new Scanner(myObj);
+                File file = new File("calculator.txt");
+                Scanner myReader = new Scanner(file);
                 while (myReader.hasNextLine()) 
                 {
                         String data = myReader.nextLine();

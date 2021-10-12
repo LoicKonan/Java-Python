@@ -186,29 +186,25 @@ public class Calculator
                 return 0;
         }
 
-        public static void main(String[] args)
+        public static void main(String[] args) throws Runtime_Error, Syntax_Error
         {
                 Calculator Equation = new Calculator();
 
-                Scanner myObj = new Scanner(System.in);  
-                System.out.print("Enter an inputs = ");  
-
-                while (myObj.hasNextLine()) 
+                File file = new File("calculator.txt");
+                Scanner myReader = new Scanner(file);
+                
+                while (myReader.hasNextLine()) 
                 {
-                        String Test = myObj.nextLine();  
+                        String Test = myReader.nextLine();  
 
                         try 
                         {
                                  Equation.Case_Solution(Test);
-                        } 
-                        catch (Runtime_Error | Syntax_Error e )
-                        {
-                                System.err.println(e.getLocalizedMessage());
                         }
                         finally
                         {
                                 System.out.println("--------------------------------------------------------\n");
-                                myObj.close();
+                                myReader.close();
                         }
                 }
         }

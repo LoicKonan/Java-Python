@@ -1,5 +1,6 @@
-import java.util.ArrayList;
-import java.util.Scanner; 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 
 class SyntaxError extends Exception 
@@ -36,67 +37,8 @@ class RuntimeError extends Exception
 
 public class App 
 {
-    public int TestCaseSolution(String equation) 
-    {
-        String toCalculate = equation;
-
-        int operator_count = 0;  
-
-        ArrayList<Character> operators = new ArrayList<>();
-
-        for (int i = 0; i < toCalculate.length(); i++)
-        {
-             if (toCalculate.charAt(i) == '+' || toCalculate.charAt(i) == '-' || toCalculate.charAt(i) == '%'
-             || toCalculate.charAt(i) == '*'  || toCalculate.charAt(i) == '/' ) 
-            {
-             operator_count++;  /*Calculating
-                                  number of operators in a String toCalculate
-                                */
-            operators.add(toCalculate.charAt(i)); /* Adding that operator to 
-                                                    ArrayList*/
-         }
-     }
-
-    String[] retval = toCalculate.split("\\+|\\-|\\*|\\/\\%", operator_count + 1);    
-
-    int a = Integer.parseInt(retval[0]);
-    int b = 0; int j = 0;
-
-        for (int i = 1; i < retval.length; i++) 
-        {
-            b = Integer.parseInt(retval[i]);
-            char operator = operators.get(j);
-
-            if (operator == '+') 
-            {
-                a = a + b;
-
-            }
-            else if(operator == '-')
-            {
-                a = a - b;
-            }
-            else if(operator == '/')
-            {
-                a = a / b;
-            }
-            else if(operator == '%')
-            {
-                a = a / b;
-            }
-            else
-            {
-                a = a * b;
-            }
-            j++;            
-        }
-            System.out.println(equation + "                 " + result);
-            return 0;
-    }
-
     public int getSolution(String TestingCase) throws RuntimeError, SyntaxError 
     {
-        int Solution = 0;
         int rightBrace = 0, leftBrace = 0, EqualsSigns = 0;
 
         for (int i = 1; i < TestingCase.length(); i++) 
@@ -140,32 +82,30 @@ public class App
             throw new SyntaxError(TestingCase + "               Syntax Error: Unexpected '='\n");
         }
 
-        Solution = TestCaseSolution(TestingCase);
+        int Solution = getSolution(TestingCase);
         return Solution;
     }
 
-    public static void main(String[] args) 
+    public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
         {
-                App CalcTestCase = new App();
+            Calculator Equation = new Calculator();
 
-                Scanner myObj = new Scanner(System.in); 
-                System.out.print("Enter Your Equation: ");
+            File file = new File("calculator.txt");
+            Scanner myReader = new Scanner(file);
 
-                String TestCase = myObj.nextLine();
+            while (myReader.hasNextLine()) 
+                {
+                    String data = myReader.nextLine();
                 
-                try 
-                {
-                        CalcTestCase.getSolution(TestCase);
-                } 
-                
-                catch (RuntimeError | SyntaxError e) 
-                {
-                        System.err.println(e.getLocalizedMessage());
-                } 
-                finally
-                {
+                    try 
+                    {
+                        Equation.Case_Solution(data);
+                    } 
+                    finally
+                    {
                         System.out.println("\n--------------------------------------------------------\n");
-                }   
-                myObj.close();// end of testing 
+                    }   
+                }
+                myReader.close();// end of testing 
         }
 }

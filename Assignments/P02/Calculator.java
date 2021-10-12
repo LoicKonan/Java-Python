@@ -126,7 +126,6 @@ public class Calculator
                 results = Get_Results(inputs);
 
                 return results;
-
         }
 
 

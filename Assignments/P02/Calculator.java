@@ -60,8 +60,7 @@ class Runtime_Error extends Exception
 }
 
 public class Calculator 
-{
-        
+{       
         public int Get_Results(String inputs) throws Runtime_Error, Syntax_Error 
         {
                 int results = 0;
@@ -187,7 +186,7 @@ public class Calculator
                 return 0;
         }
 
-        public static void main(String[] args) throws Runtime_Error, Syntax_Error
+        public static void main(String[] args)
         {
                 Calculator Equation = new Calculator();
 

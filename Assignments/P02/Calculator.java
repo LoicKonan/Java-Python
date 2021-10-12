@@ -57,6 +57,7 @@ class RuntimeError extends Exception
         }
 }
 
+
 public class Calculator 
 {
         public int Get_Results(String TestingCase) throws RuntimeError, SyntaxError 
@@ -125,13 +126,14 @@ public class Calculator
 
         }
 
-        public static void main(String[] args) throws RuntimeException, FileNotFoundException, RuntimeError, SyntaxError 
+        public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
         {
 
                 Calculator Equation = new Calculator();
 
                 File file = new File("calculator.txt");
                 Scanner myReader = new Scanner(file);
+                
                 while (myReader.hasNextLine()) 
                 {
                         String data = myReader.nextLine();

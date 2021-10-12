@@ -166,6 +166,7 @@ public class Calculator
                 
                 return uI;
         }
+        
         public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
         {
                 Calculator Equation = new Calculator();

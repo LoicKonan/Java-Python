@@ -175,7 +175,6 @@ public class Calculator
                         {
                                 System.err.println(e.getLocalizedMessage());
                         } 
-
                 }
                 myReader.close();
         }

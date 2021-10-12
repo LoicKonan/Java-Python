@@ -26,7 +26,8 @@ import java.io.File;                                    // Import the File class
 import java.io.FileNotFoundException;
 import java.util.Scanner;                               // Import the Scanner class to read text files
 
-public class Calculator {
+public class Calculator 
+{
         class SyntaxError extends Exception 
         {
                 private String ErrorMessage;

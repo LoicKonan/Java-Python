@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Question_3",
+      "request": "launch",
+      "mainClass": "Question_3",
+      "projectName": "P02_c3c549ef"
+    },
+    {
+      "type": "java",
       "name": "Launch ReadFile",
       "request": "launch",
       "mainClass": "ReadFile",

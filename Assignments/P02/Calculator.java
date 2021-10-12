@@ -62,23 +62,25 @@ public class Calculator
         public int Get_Results(String TestingCase) throws RuntimeError, SyntaxError 
         {
                 int results = 0;
-                int rightBrace = 0, leftBrace = 0, EqualsSigns = 0;
+                int L_Parenthesis  = 0;
+                int R_Parenthesis  = 0;
+                int Equal_Signs = 0;
 
                 for (int i = 1; i < TestingCase.length(); i++) 
                 {
                         if (TestingCase.charAt(i) == '(') 
                         {
-                                leftBrace++;
+                                R_Parenthesis ++;
                         }
 
                         if (TestingCase.charAt(i) == ')') 
                         {
-                                rightBrace++;
+                                L_Parenthesis ++;
                         }
 
                         if (TestingCase.charAt(i) == '=') 
                         {
-                                EqualsSigns++;
+                                Equal_Signs++;
                         }
 
                         if (TestingCase.charAt(i) == '/') 
@@ -99,20 +101,20 @@ public class Calculator
 
                 }
 
-                if (leftBrace < rightBrace) 
+                if (R_Parenthesis  < L_Parenthesis ) 
                 {
                         throw new SyntaxError(TestingCase + "                Syntax Error: ')' expected. \n");
                 } 
-                else if (leftBrace > rightBrace) 
+                else if (R_Parenthesis  > L_Parenthesis ) 
                 {
                         throw new SyntaxError(TestingCase + "                Syntax Error: '(' expected.");
                 }
 
-                if (EqualsSigns < 1) {
+                if (Equal_Signs < 1) {
                         throw new SyntaxError(TestingCase + "               Syntax Error: '=' expected  \n");
                 }
 
-                else if (EqualsSigns > 1) 
+                else if (Equal_Signs > 1) 
                 {
                         throw new SyntaxError(TestingCase + "               Syntax Error: Unexpected '='\n");
                 }

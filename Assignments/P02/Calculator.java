@@ -27,33 +27,33 @@ import java.util.Scanner;                               // Import the Scanner cl
 
 class SyntaxError extends Exception 
 {
-        private final String ErrorMessage;
+        private final String Error_Message;
 
-        public SyntaxError(String ErrorMessage) 
+        public SyntaxError(String Error_Message) 
         {
-                this.ErrorMessage = ErrorMessage;
+                this.Error_Message = Error_Message;
         }
 
         @Override
         public String getLocalizedMessage() 
         {
-                return this.ErrorMessage;
+                return this.Error_Message;
         }
 }
 
 class RuntimeError extends Exception 
 {
-        private final String ErrorMessage;
+        private final String Error_Message;
 
-        public RuntimeError(String ErrorMessage) 
+        public RuntimeError(String Error_Message) 
         {
-                this.ErrorMessage = ErrorMessage;
+                this.Error_Message = Error_Message;
         }
 
         @Override
         public String getLocalizedMessage() 
         {
-                return this.ErrorMessage + "\n";
+                return this.Error_Message + "\n";
         }
 }
 

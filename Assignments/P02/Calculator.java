@@ -13,7 +13,7 @@
  *                  With these two exception handling classes: 
  *                  SyntaxError and RuntimeError.
  * 
- * Solution:
+ * results:
  *
  * 
  * 
@@ -27,7 +27,7 @@ import java.util.Scanner;                               // Import the Scanner cl
 
 class SyntaxError extends Exception 
 {
-        private String ErrorMessage;
+        private final String ErrorMessage;
 
         public SyntaxError(String ErrorMessage) 
         {
@@ -43,7 +43,7 @@ class SyntaxError extends Exception
 
 class RuntimeError extends Exception 
 {
-        private String ErrorMessage;
+        private final String ErrorMessage;
 
         public RuntimeError(String ErrorMessage) 
         {
@@ -59,9 +59,9 @@ class RuntimeError extends Exception
 
 public class Calculator 
 {
-        public int getSolution(String TestingCase) throws RuntimeError, SyntaxError 
+        public int Get_Results(String TestingCase) throws RuntimeError, SyntaxError 
         {
-                int Solution = 0;
+                int results = 0;
                 int rightBrace = 0, leftBrace = 0, EqualsSigns = 0;
 
                 for (int i = 1; i < TestingCase.length(); i++) 
@@ -112,13 +112,14 @@ public class Calculator
                         throw new SyntaxError(TestingCase + "               Syntax Error: '=' expected  \n");
                 }
 
-                else if (EqualsSigns > 1) {
+                else if (EqualsSigns > 1) 
+                {
                         throw new SyntaxError(TestingCase + "               Syntax Error: Unexpected '='\n");
                 }
 
-                Solution = getSolution(TestingCase);
+                results = Get_Results(TestingCase);
 
-                return Solution;
+                return results;
 
         }
 
@@ -142,7 +143,7 @@ public class Calculator
 
                         try 
                         {
-                                CalcTestCase.getSolution(data);
+                                CalcTestCase.Get_Results(data);
                         }
 
                         catch (RuntimeError e) 

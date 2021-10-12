@@ -42,8 +42,6 @@ public class App
 
         int operator_count = 0;  
 
-        toCalculate = toCalculate.replaceAll("\\s", "");
-
         ArrayList<Character> operators = new ArrayList<>();
 
         for (int i = 0; i < toCalculate.length(); i++)
@@ -58,8 +56,6 @@ public class App
                                                     ArrayList*/
          }
      }
-
-    System.out.print("\nSolution          = " );
 
     String[] retval = toCalculate.split("\\+|\\-|\\*|\\/\\%", operator_count + 1);    
 
@@ -94,9 +90,8 @@ public class App
             }
             j++;            
         }
-            System.out.println(a);   // Prints the result value
-        System.out.println(equation + "                 " + result);
-        return 0;
+            System.out.println(equation + "                 " + result);
+            return 0;
     }
 
     public int getSolution(String TestingCase) throws RuntimeError, SyntaxError 
@@ -118,12 +113,9 @@ public class App
             {
                 EqualsSigns++;
             }
-            if (TestingCase.charAt(i) == '/') 
+            if (TestingCase.charAt(i) == '/' && (TestingCase.charAt(i + 1) == '0') ) 
             {
-                if (TestingCase.charAt(i + 1) == '0') 
-                {
                     throw new RuntimeError(TestingCase + "                 Syntax Error: Divide by 0 occured");
-                }
             }
             if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".contains("" + TestingCase.charAt(i))) 
             {
@@ -150,7 +142,6 @@ public class App
 
         Solution = TestCaseSolution(TestingCase);
         return Solution;
-
     }
 
     public static void main(String[] args) 
@@ -158,9 +149,10 @@ public class App
                 App CalcTestCase = new App();
 
                 Scanner myObj = new Scanner(System.in); 
-                System.out.println("Enter A Test Equation");
+                System.out.print("Enter Your Equation: ");
 
-                String TestCase = myObj.nextLine(); 
+                String TestCase = myObj.nextLine();
+                
                 try 
                 {
                         CalcTestCase.getSolution(TestCase);
@@ -172,9 +164,8 @@ public class App
                 } 
                 finally
                 {
-                        System.out.println("--------------------------------------------------------\n");
-                        System.out.println("we Are Exiting our Test Cases and into the Final Block\n\n");
+                        System.out.println("\n--------------------------------------------------------\n");
                 }   
                 myObj.close();// end of testing 
-            }
+        }
 }

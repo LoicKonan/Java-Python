@@ -11,7 +11,7 @@
  *                  Creating a calculator class to perform these operations:
  *                  Addition, Subtraction, Multiplication, Division, and Modulo. 
  *                  With these two exception handling classes: 
- *                  SyntaxError and RuntimeError.
+ *                  Syntax_Error and Runtime_Error.
  * 
  * results:
  *
@@ -21,16 +21,16 @@
  * 
  *****************************************************************************/
 
-import java.io.File;                                    // Import the File class
-import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;                               // Import the Scanner class to read text files
 
 
-class SyntaxError extends Exception 
-{
-        private final String Error_Message;
 
-        public SyntaxError(String Error_Message) 
+class Syntax_Error extends Exception 
+{
+        final String Error_Message;
+
+        public Syntax_Error(String Error_Message) 
         {
                 this.Error_Message = Error_Message;
         }
@@ -43,11 +43,11 @@ class SyntaxError extends Exception
 }
 
 
-class RuntimeError extends Exception 
+class Runtime_Error extends Exception 
 {
-        private final String Error_Message;
+        final String Error_Message;
 
-        public RuntimeError(String Error_Message) 
+        public Runtime_Error(String Error_Message) 
         {
                 this.Error_Message = Error_Message;
         }
@@ -59,10 +59,10 @@ class RuntimeError extends Exception
         }
 }
 
-
 public class Calculator 
 {
-        public int Get_Results(String inputs) throws RuntimeError, SyntaxError 
+        
+        public int Get_Results(String inputs) throws Runtime_Error, Syntax_Error 
         {
                 int results = 0;
                 int L_Parenthesis  = 0;
@@ -88,93 +88,129 @@ public class Calculator
 
                         if (inputs.charAt(i) == '/' && inputs.charAt(i + 1) == '0') 
                         {
-                                throw new RuntimeError(inputs + 
+                                throw new Runtime_Error(inputs + 
                                 "               Syntax Error: Divide by 0 occured");
                         }
 
                         if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                         .contains("" + inputs.charAt(i))) 
                         {
-                                throw new SyntaxError( inputs + 
+                                throw new Syntax_Error( inputs + 
                                 "               Syntax Error: more than one variable");
                         }
                 }
 
                 if (R_Parenthesis  < L_Parenthesis ) 
                 {
-                        throw new SyntaxError(inputs + 
+                        throw new Syntax_Error(inputs + 
                         "                Syntax Error: ')' expected. \n");
                 } 
                 else if (R_Parenthesis  > L_Parenthesis ) 
                 {
-                        throw new SyntaxError(inputs + 
+                        throw new Syntax_Error(inputs + 
                         "                Syntax Error: '(' expected.");
                 }
 
                 if (Equal_Signs < 1) 
                 {
-                        throw new SyntaxError(inputs + 
+                        throw new Syntax_Error(inputs + 
                         "                Syntax Error: '=' expected  \n");
                 }
 
                 else if (Equal_Signs > 1) 
                 {
-                        throw new SyntaxError(inputs + 
+                        throw new Syntax_Error(inputs + 
                         "                Syntax Error: Unexpected '='\n");
                 }
 
-                results = Get_Results(inputs);
-
+                results = Case_Solution(inputs);
                 return results;
         }
 
 
-        public int addition(int a, int b) 
+        public int Case_Solution(String inputs) 
         {
-                return (a + b);
-        }
+                String toCalculate = inputs;
         
-        public int subtraction(int a, int b) 
-        {
-                return (a - b);
-        }
-        
-        public int multiplication(int a, int b) 
-        {
-                return (a * b);
-        }
-        
-        public int division(int a, int b) 
-        {
-                return (a / b);
-        }
-        
-        public int modulo(int a, int b) 
-        {
-                return (a % b);
-        } 
+                int operator_count = 0;  
 
-        public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
+                toCalculate = toCalculate.replaceAll("\\s", "");
+
+                ArrayList<Character> operators = new ArrayList<>();
+
+                for (int i = 0; i < toCalculate.length(); i++)
+                {
+                        if (toCalculate.charAt(i) == '+' || toCalculate.charAt(i) == '-' || toCalculate.charAt(i) == '%'
+                         || toCalculate.charAt(i) == '*'  || toCalculate.charAt(i) == '/' ) 
+                        {
+                                operator_count++;  /*Calculating
+                                  number of operators in a String toCalculate
+                                */
+                                operators.add(toCalculate.charAt(i)); /* Adding that operator to 
+                                                    ArrayList*/
+                        }
+                }
+
+        String[] retval = toCalculate.split("\\+|\\-|\\*|\\/\\%", operator_count + 1);    
+
+        int a = Integer.parseInt(retval[0]);
+        int b = 0; int j = 0;
+
+        for (int i = 1; i < retval.length; i++) 
+        {
+                b = Integer.parseInt(retval[i]);
+                char operator = operators.get(j);
+
+                if (operator == '+') 
+                {
+                        a = a + b;
+                }
+                else if(operator == '-')
+                {
+                        a = a - b;
+                }
+                else if(operator == '/')
+                {
+                        a = a / b;
+                }
+                else if(operator == '%')
+                {
+                        a = a / b;
+                }
+                else
+                {
+                        a = a * b;
+                 }
+                j++;            
+        }
+                System.out.println("\n" + inputs + "                 " + a);
+                return 0;
+        }
+
+        public static void main(String[] args) throws Runtime_Error, Syntax_Error
         {
                 Calculator Equation = new Calculator();
 
-                File file = new File("calculator.txt");
-                Scanner myReader = new Scanner(file);
-                
-                while (myReader.hasNextLine()) 
+                Scanner myObj = new Scanner(System.in);  
+                System.out.print("Enter an inputs = ");  
+
+                while (myObj.hasNextLine()) 
                 {
-                        String data = myReader.nextLine();
+                        String Test = myObj.nextLine();  
 
                         try 
                         {
-                                Equation.Get_Results(data);
-                        }
-
-                        catch (RuntimeError | SyntaxError e) 
+                                 Equation.Case_Solution(Test);
+                        } 
+                        catch (Runtime_Error | Syntax_Error e )
                         {
                                 System.err.println(e.getLocalizedMessage());
                         }
+                        finally
+                        {
+                                System.out.println("--------------------------------------------------------\n");
+                                myObj.close();
+                        }
                 }
-                myReader.close();
         }
 }

@@ -25,6 +25,7 @@ import java.io.File;                                    // Import the File class
 import java.io.FileNotFoundException;
 import java.util.Scanner;                               // Import the Scanner class to read text files
 
+
 class SyntaxError extends Exception 
 {
         private final String Error_Message;
@@ -40,6 +41,7 @@ class SyntaxError extends Exception
                 return this.Error_Message;
         }
 }
+
 
 class RuntimeError extends Exception 
 {
@@ -128,7 +130,7 @@ public class Calculator
 
         }
 
-        
+
         static int addition(int a, int b) 
         {
                 return (a + b);
@@ -163,7 +165,6 @@ public class Calculator
                 Scanner myReader = new Scanner(file);
                 
                 String data; 
-
                 while (myReader.hasNextLine()) 
                 {
                         data = myReader.nextLine();

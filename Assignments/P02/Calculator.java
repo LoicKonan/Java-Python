@@ -155,30 +155,14 @@ public class Calculator
         } 
 
 
-        // static String grab_Equation(Scanner userInput)
-        // {
-        //         System.out.print("Enter your Equation: ");
-
-        //         String uI = userInput.nextLine();
-                
-        //         uI = uI.replaceAll("\\s","");
-        //         System.out.println("The Equation is: " + uI);
-                
-        //         return uI;
-        // }
-
-
-
         public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
         {
                 Calculator Equation = new Calculator();
 
                 File file = new File("calculator.txt");
                 Scanner myReader = new Scanner(file);
-                
-                // Scanner userInput = new Scanner(System.in);
-                // String temp = grab_static String grab_Equation(userInput);
 
+             
                 String data; 
                 while (myReader.hasNextLine()) 
                 {

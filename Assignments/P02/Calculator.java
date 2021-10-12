@@ -123,7 +123,7 @@ public class Calculator
                         "                Syntax Error: Unexpected '='\n");
                 }
 
-               // results = Get_Results(inputs);
+                results = Get_Results(inputs);
 
                 return results;
         }
@@ -158,32 +158,23 @@ public class Calculator
         {
                 Calculator Equation = new Calculator();
 
-                try 
+                File file = new File("calculator.txt");
+                Scanner myReader = new Scanner(file);
+                
+                while (myReader.hasNextLine()) 
                 {
-                        File file = new File("calculator.txt");
-                        Scanner myReader = new Scanner(file);
+                        String data = myReader.nextLine();
 
-                        while (myReader.hasNextLine()) 
+                        try 
                         {
-                                String data = myReader.nextLine();
-
-                                try 
-                                {
-                                        Equation.Get_Results(data);
-                                }
-
-                                catch (RuntimeError | SyntaxError e) 
-                                {
-                                        System.err.println(e.getLocalizedMessage());
-                                } 
+                                Equation.Get_Results(data);
                         }
 
-                        myReader.close();
-                } 
-                catch (FileNotFoundException e) 
-                {
-                        System.out.println("An error occurred File not Found!!!.");
-                        e.printStackTrace();
+                        catch (RuntimeError | SyntaxError e) 
+                        {
+                                System.err.println(e.getLocalizedMessage());
+                        }
                 }
+                myReader.close();
         }
 }

@@ -28,7 +28,7 @@ import java.util.Scanner;                               // Import the Scanner cl
 
 class SyntaxError extends Exception 
 {
-        private String Error_Message;
+        private final String Error_Message;
 
         public SyntaxError(String Error_Message) 
         {
@@ -45,7 +45,7 @@ class SyntaxError extends Exception
 
 class RuntimeError extends Exception 
 {
-        private String Error_Message;
+        private final String Error_Message;
 
         public RuntimeError(String Error_Message) 
         {

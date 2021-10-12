@@ -88,35 +88,39 @@ public class Calculator
                         if (inputs.charAt(i) == '/' && inputs.charAt(i + 1) == '0') 
                         {
                                 throw new RuntimeError(inputs + 
-                                "                 Syntax Error: Divide by 0 occured");
+                                "               Syntax Error: Divide by 0 occured");
                         }
 
                         if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                         .contains("" + inputs.charAt(i))) 
                         {
-                                                throw new SyntaxError( inputs +                 
-                                                " Syntax Error: more than one variable");
+                                                throw new SyntaxError( inputs + 
+                                                "               Syntax Error: more than one variable");
                         }
 
                 }
 
                 if (R_Parenthesis  < L_Parenthesis ) 
                 {
-                        throw new SyntaxError(inputs + "                Syntax Error: ')' expected. \n");
+                        throw new SyntaxError(inputs + 
+                        "                Syntax Error: ')' expected. \n");
                 } 
                 else if (R_Parenthesis  > L_Parenthesis ) 
                 {
-                        throw new SyntaxError(inputs + "                Syntax Error: '(' expected.");
+                        throw new SyntaxError(inputs + 
+                        "                Syntax Error: '(' expected.");
                 }
 
                 if (Equal_Signs < 1) 
                 {
-                        throw new SyntaxError(inputs + "               Syntax Error: '=' expected  \n");
+                        throw new SyntaxError(inputs + 
+                        "                Syntax Error: '=' expected  \n");
                 }
 
                 else if (Equal_Signs > 1) 
                 {
-                        throw new SyntaxError(inputs + "               Syntax Error: Unexpected '='\n");
+                        throw new SyntaxError(inputs + 
+                        "                Syntax Error: Unexpected '='\n");
                 }
 
                 results = Get_Results(inputs);
@@ -124,6 +128,8 @@ public class Calculator
                 return results;
 
         }
+
+
 
         public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
         {

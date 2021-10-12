@@ -84,18 +84,15 @@ public class Calculator
                                 Equal_Signs++;
                         }
 
-                        if (TestingCase.charAt(i) == '/') 
+                        if (TestingCase.charAt(i) == '/' && TestingCase.charAt(i + 1) == '0') 
                         {
-                                if (TestingCase.charAt(i + 1) == '0') 
-                                {
-                                        throw new RuntimeError(TestingCase
-                                                        + "                 Syntax Error: Divide by 0 occured");
-                                }
+                                throw new RuntimeError(TestingCase + 
+                                "                 Syntax Error: Divide by 0 occured");
                         }
 
                         if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                         .contains("" + TestingCase.charAt(i))) 
-                                        {
+                        {
                                                 throw new SyntaxError( TestingCase +                 
                                                 " Syntax Error: more than one variable");
                         }

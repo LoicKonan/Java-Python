@@ -178,7 +178,5 @@ public class Calculator
 
                 }
                 myReader.close();
-
-                System.out.println("--------------------------------------------------------\n");
         }
 }

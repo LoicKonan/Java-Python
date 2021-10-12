@@ -312,9 +312,6 @@ public class Calculator
         {
 
                 System.out.println("=======================================================|\n"+
-                                   "|                                                      |\n\n"+
-                                   "| Author = Ethan Coyle                                 |\n"+
-                                   "| Teacher= Dr.Saikat                                   |\n"+
                                    "| Question 3                                           |\n"+
                                    "|                                                      |\n\n"+
                                    "|   Test Expression           Correct Response         |\n"+

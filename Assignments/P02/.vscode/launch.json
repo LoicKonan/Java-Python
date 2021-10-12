@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ReadFile",
+      "request": "launch",
+      "mainClass": "ReadFile",
+      "projectName": "P02_c3c549ef"
+    },
+    {
+      "type": "java",
       "name": "Launch Calculator",
       "request": "launch",
       "mainClass": "Calculator",

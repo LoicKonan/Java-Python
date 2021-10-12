@@ -204,7 +204,7 @@ public class Calculator
 {
         class SyntaxError extends Exception 
         {
-                private String ErrorMessage;
+                private final String ErrorMessage;
 
                 public SyntaxError(String ErrorMessage) 
                 {
@@ -220,7 +220,7 @@ public class Calculator
 
         class RuntimeError extends Exception 
         {
-                private String ErrorMessage;
+                private final String ErrorMessage;
 
                 public RuntimeError(String ErrorMessage) 
                 {
@@ -308,7 +308,7 @@ public class Calculator
                 
         }
 
-        public static void main(String[] args) 
+        public static void main(String[] args) throws Calculator.SyntaxError 
         {
 
                 System.out.println("=======================================================|\n"+
@@ -319,6 +319,7 @@ public class Calculator
 
                 Calculator CalcTestCase = new Calculator();
 
+                
                 String TestCase = "X = 1+2+3"; 
                 try 
                 {
@@ -329,12 +330,7 @@ public class Calculator
                 {
                         System.err.println(e.getLocalizedMessage());
                 } 
-                catch (SyntaxError e) 
-                {
-                        System.err.println(e.getLocalizedMessage());
-                }
 
-                System.out.println("--------------------------------------------------------\n");
             
                 TestCase = "Y = 2+5 = 3";
                 try 
@@ -345,12 +341,7 @@ public class Calculator
                 {
                         System.err.println(e.getLocalizedMessage());
                 } 
-                catch (SyntaxError e)
-                {
-                        System.err.println(e.getLocalizedMessage());
-                }
 
-                System.out.println("--------------------------------------------------------\n");
 
                 TestCase = "Y = 6*Z+5";
                 try 
@@ -361,11 +352,7 @@ public class Calculator
                 {
                         System.err.println(e.getLocalizedMessage());
                 } 
-                catch (SyntaxError e) 
-                {
-                        System.err.println(e.getLocalizedMessage());
-                }
-                System.out.println("--------------------------------------------------------\n");
+        
                 
 
                 TestCase = "Y=3+5+(1+6)";
@@ -373,17 +360,12 @@ public class Calculator
                 {
                     CalcTestCase.getSolution(TestCase);
                 } 
-
                 catch (RuntimeError e) 
                 {
                         System.err.println(e.getLocalizedMessage());
                 } 
-                catch (SyntaxError e) 
-                {
-                        System.err.println(e.getLocalizedMessage());
-                }
-                System.out.println("--------------------------------------------------------\n");
-
+               
+               
                 TestCase = "Z=(3+5)/0";
                 try 
                 {
@@ -394,12 +376,10 @@ public class Calculator
                 {
                         System.err.println(e.getLocalizedMessage());
                 }
-                catch (SyntaxError e) 
-                {
-                        System.err.println(e.getLocalizedMessage());
-                }
+               
                 System.out.println("--------------------------------------------------------\n");
 
+                
                 TestCase = "A = 7*6/2";
                 try 
                 {
@@ -410,11 +390,7 @@ public class Calculator
                 {
                         System.err.println(e.getLocalizedMessage());
                 }
-                catch (SyntaxError e) 
-                {
-                        System.err.println(e.getLocalizedMessage());
-                }
-                
+               
                 finally
                 {
                         System.out.println("--------------------------------------------------------\n");

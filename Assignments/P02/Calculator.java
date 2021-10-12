@@ -154,6 +154,18 @@ public class Calculator
                 return (a % b);
         } 
 
+
+        static String grabInput(Scanner userInput)
+        {
+                System.out.print("Enter your Equation: ");
+
+                String uI = userInput.nextLine();
+                
+                uI = uI.replaceAll("\\s","");
+                System.out.println("The Equation is: " + uI);
+                
+                return uI;
+        }
         public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
         {
                 Calculator Equation = new Calculator();

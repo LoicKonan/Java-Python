@@ -68,7 +68,6 @@ public class Calculator
                 int Equal_Signs = 0;
 
 
-
                 for (int i = 1; i < inputs.length(); i++) 
                 {
                         if (inputs.charAt(i) == '(') 
@@ -134,10 +133,11 @@ public class Calculator
                 File file = new File("calculator.txt");
                 Scanner myReader = new Scanner(file);
                 
+                String data; 
+
                 while (myReader.hasNextLine()) 
                 {
-                        String data = myReader.nextLine();
-                        System.out.println(data);
+                        data = myReader.nextLine();
 
                         try 
                         {

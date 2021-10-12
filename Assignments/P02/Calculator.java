@@ -155,17 +155,17 @@ public class Calculator
         } 
 
 
-        static String grab_Equation(Scanner userInput)
-        {
-                System.out.print("Enter your Equation: ");
+        // static String grab_Equation(Scanner userInput)
+        // {
+        //         System.out.print("Enter your Equation: ");
 
-                String uI = userInput.nextLine();
+        //         String uI = userInput.nextLine();
                 
-                uI = uI.replaceAll("\\s","");
-                System.out.println("The Equation is: " + uI);
+        //         uI = uI.replaceAll("\\s","");
+        //         System.out.println("The Equation is: " + uI);
                 
-                return uI;
-        }
+        //         return uI;
+        // }
 
 
 

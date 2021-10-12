@@ -154,15 +154,13 @@ public class Calculator
                 return (a % b);
         } 
 
-
         public static void main(String[] args) throws FileNotFoundException, RuntimeError, SyntaxError 
         {
                 Calculator Equation = new Calculator();
 
                 File file = new File("calculator.txt");
                 Scanner myReader = new Scanner(file);
-
-             
+                
                 String data; 
                 while (myReader.hasNextLine()) 
                 {

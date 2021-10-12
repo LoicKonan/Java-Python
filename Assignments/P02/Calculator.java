@@ -1,4 +1,3 @@
-
 /******************************************************************************
  * Author:          Loic Konan 
  * Email:           loickonan.lk@gmail.com 
@@ -26,40 +25,40 @@ import java.io.File;                                    // Import the File class
 import java.io.FileNotFoundException;
 import java.util.Scanner;                               // Import the Scanner class to read text files
 
+class SyntaxError extends Exception 
+{
+        private String ErrorMessage;
+
+        public SyntaxError(String ErrorMessage) 
+        {
+                this.ErrorMessage = ErrorMessage;
+        }
+
+        @Override
+        public String getLocalizedMessage() 
+        {
+                return this.ErrorMessage;
+        }
+}
+
+class RuntimeError extends Exception 
+{
+        private String ErrorMessage;
+
+        public RuntimeError(String ErrorMessage) 
+        {
+                this.ErrorMessage = ErrorMessage;
+        }
+
+        @Override
+        public String getLocalizedMessage() 
+        {
+                return this.ErrorMessage + "\n";
+        }
+}
+
 public class Calculator 
 {
-        class SyntaxError extends Exception 
-        {
-                private String ErrorMessage;
-
-                public SyntaxError(String ErrorMessage) 
-                {
-                        this.ErrorMessage = ErrorMessage;
-                }
-
-                @Override
-                public String getLocalizedMessage() 
-                {
-                        return this.ErrorMessage;
-                }
-        }
-
-        class RuntimeError extends Exception 
-        {
-                private String ErrorMessage;
-
-                public RuntimeError(String ErrorMessage) 
-                {
-                        this.ErrorMessage = ErrorMessage;
-                }
-
-                @Override
-                public String getLocalizedMessage() 
-                {
-                        return this.ErrorMessage + "\n";
-                }
-        }
-
         public int getSolution(String TestingCase) throws RuntimeError, SyntaxError 
         {
                 int Solution = 0;
@@ -94,8 +93,8 @@ public class Calculator
                         if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                         .contains("" + TestingCase.charAt(i))) 
                                         {
-                                throw new SyntaxError(
-                                                TestingCase + "                 Syntax Error: more than one variable");
+                                                throw new SyntaxError( TestingCase +                 
+                                                " Syntax Error: more than one variable");
                         }
 
                 }
@@ -109,13 +108,11 @@ public class Calculator
                         throw new SyntaxError(TestingCase + "                Syntax Error: '(' expected.");
                 }
 
-                if (EqualsSigns < 1) 
-                {
+                if (EqualsSigns < 1) {
                         throw new SyntaxError(TestingCase + "               Syntax Error: '=' expected  \n");
                 }
 
-                else if (EqualsSigns > 1) 
-                {
+                else if (EqualsSigns > 1) {
                         throw new SyntaxError(TestingCase + "               Syntax Error: Unexpected '='\n");
                 }
 
@@ -125,8 +122,8 @@ public class Calculator
 
         }
 
-        public static void main(String[] args)
-                        throws RuntimeException, FileNotFoundException, RuntimeError, SyntaxError {
+        public static void main(String[] args) throws RuntimeException, FileNotFoundException, RuntimeError, SyntaxError 
+        {
 
                 System.out.println("=======================================================|\n"
                                 + "| Question 3                                           |\n"
@@ -138,19 +135,21 @@ public class Calculator
 
                 File myObj = new File("calculator.txt");
                 Scanner myReader = new Scanner(myObj);
-                while (myReader.hasNextLine()) {
+                while (myReader.hasNextLine()) 
+                {
                         String data = myReader.nextLine();
                         System.out.println(data);
 
-                        try {
-                                // go to getsolution block and see if anything fits the bill
+                        try 
+                        {
                                 CalcTestCase.getSolution(data);
                         }
 
-                        catch (RuntimeError e) {
-                                // catch the runtime and syntax errors
+                        catch (RuntimeError e) 
+                        {
                                 System.err.println(e.getLocalizedMessage());
-                        } catch (SyntaxError e) // catching the syntax errors
+                        } 
+                        catch (SyntaxError e) 
                         {
                                 System.err.println(e.getLocalizedMessage());
                         }

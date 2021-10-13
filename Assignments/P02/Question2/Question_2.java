@@ -29,6 +29,9 @@ import java.io.PrintStream;
 
 class Mammalia 
 {
+    /**
+     * 
+     */
     int legs;
     boolean tails;
     boolean brain;
@@ -38,6 +41,16 @@ class Mammalia
     String fav_Foods;
 
 
+    /**
+     * Constructor.
+     * @param legs
+     * @param brain
+     * @param tails
+     * @param neurons
+     * @param precision
+     * @param birthDate
+     * @param fav_Foods
+     */
     Mammalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
         this.legs = legs;
@@ -51,7 +64,8 @@ class Mammalia
 
     /**
      * 
-     * Setters Function and Getters Functions below.
+     * Setters and Getters Functions to access or to change any
+     * attributes that we want.
      * 
      */
 
@@ -130,6 +144,9 @@ class Mammalia
     }
 
 
+    /** 
+     *  Member functions Below.
+     */
     public void Eat() {}
 
     public void Walk() {}
@@ -149,7 +166,9 @@ class Mammalia
     }
 }
 
-
+/**
+ * 
+ */
 class Monotremata extends Mammalia 
 {
     Monotremata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 

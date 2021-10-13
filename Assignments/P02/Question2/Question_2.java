@@ -501,6 +501,7 @@ class Scrotifera extends Laurasiatheria
                 int Running_Speed, String Hunting_Process) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
+    }
 
     @Override
     public String Animal_Infos() 
@@ -546,9 +547,10 @@ class Eulipotyphia extends Laurasiatheria
 
 class Chirpotera extends Scrotifera 
 {
-    Chirpotera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Chirpotera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+    int Running_Speed, String Hunting_Process)  
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -570,9 +572,10 @@ class Chirpotera extends Scrotifera
 
 class Euungulata extends Scrotifera 
 {
-    Euungulata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Euungulata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+    int Running_Speed, String Hunting_Process)   
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -595,9 +598,10 @@ class Euungulata extends Scrotifera
 class Ferae extends Scrotifera 
 {
 
-    Ferae(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Ferae(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+            int Running_Speed, String Hunting_Process)   
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -619,10 +623,10 @@ class Ferae extends Scrotifera
 
 class Cetartiodactyla extends Euungulata 
 {
-    Cetartiodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_Foods) 
+    Cetartiodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+    int Running_Speed, String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -644,10 +648,10 @@ class Cetartiodactyla extends Euungulata
 
 class Perissodactyla extends Euungulata 
 {
-    Perissodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_Foods) 
+    Perissodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+    int Running_Speed, String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -669,9 +673,10 @@ class Perissodactyla extends Euungulata
 
 class Pholidota extends Ferae 
 {
-    Pholidota(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Pholidota(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+    int Running_Speed, String Hunting_Process)   
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
 
@@ -694,9 +699,10 @@ class Pholidota extends Ferae
 
 class Carnivora extends Ferae 
 {
-    Carnivora(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Carnivora(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+    int Running_Speed, String Hunting_Process)   
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
 

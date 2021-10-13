@@ -1172,16 +1172,6 @@ public class Question_2
         Pholidota Pholidota4 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
         Pholidota Pholidota5 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
 
-        /**
-         * d. Now you can do some creativity by changing the neurons, precision to understand, food
-        habits, but you can’t change the legs, brains, birth date. Change these features for at
-        least 20 animals and show how it was before and how it is now. From level 6 to
-        8(Considering Mammlia as level-1 and carnivora, cetartiodactyla are on level-8), animals
-        can run and hunt for their food. Change at least 10 animals’ running speed, hunting
-        process and hunting food type for those who are 6-8 level animals. Try changing at least
-        10 animals and show (reading from files; see next bullet) what they were and what they
-        are now.
-         */
 
         // 5 Carnivora Animals.
         Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);

@@ -1,55 +1,62 @@
-Displaying the MammaliaFamily
-
+-------------------------------------------------
+  Displaying 5 Animals from the Mammalia Family
+-------------------------------------------------
 
 I am Mammalia 1 from the Mammalia Family
----------------------------------
+----------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        18
-Precision to understand:  50.0Birth Date:               1500
+Precision to understand:  50.0
+Birth Date:               1500
 Favorite Food:            Grass
 
 I am Mammalia 2 from the Mammalia Family
----------------------------------
+----------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        20
-Precision to understand:  60.0Birth Date:               1500
+Precision to understand:  60.0
+Birth Date:               1500
 Favorite Food:            Grass
 
 I am Mammalia 3 from the Mammalia Family
----------------------------------
+----------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        28
-Precision to understand:  50.0Birth Date:               1500
+Precision to understand:  50.0
+Birth Date:               1500
 Favorite Food:            Grass
 
 I am Mammalia 4 from the Mammalia Family
----------------------------------
+----------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        85
-Precision to understand:  60.0Birth Date:               1500
+Precision to understand:  60.0
+Birth Date:               1500
 Favorite Food:            Grass
 
 I am Mammalia 5 from the Mammalia Family
----------------------------------
+----------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        58
-Precision to understand:  80.0Birth Date:               1500
+Precision to understand:  80.0
+Birth Date:               1500
 Favorite Food:            Grass
 
+----------------------------------------------
 
 
-Displaying the Monotremata Family
 
+Displaying 5 Animals from the Monotremata Family
 
 I am Monotremata 1 from the Monotremata Family
 ---------------------------------
@@ -57,7 +64,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        28
-Precision to understand:  10.0Birth Date:               1300
+Precision to understand:  10.0
+Birth Date:               1300
 Favorite Food:            milk
 
 
@@ -67,7 +75,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        38
-Precision to understand:  50.0Birth Date:               1300
+Precision to understand:  50.0
+Birth Date:               1300
 Favorite Food:            milk
 
 
@@ -77,7 +86,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        58
-Precision to understand:  60.0Birth Date:               1300
+Precision to understand:  60.0
+Birth Date:               1300
 Favorite Food:            milk
 
 
@@ -87,7 +97,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        15
-Precision to understand:  80.0Birth Date:               1300
+Precision to understand:  80.0
+Birth Date:               1300
 Favorite Food:            milk
 
 
@@ -97,14 +108,14 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1300
+Precision to understand:  60.0
+Birth Date:               1300
 Favorite Food:            milk
 
 
 
 
-Displaying the Theria Family
-
+Displaying 5 Animals from the Theria Family
 
 I am Theria 1 from the Theria Family
 ---------------------------------
@@ -112,7 +123,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1250
+Precision to understand:  60.0
+Birth Date:               1250
 Favorite Food:            Green Grass
 
 
@@ -122,7 +134,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1250
+Precision to understand:  60.0
+Birth Date:               1250
 Favorite Food:            Green Grass
 
 
@@ -132,7 +145,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1250
+Precision to understand:  60.0
+Birth Date:               1250
 Favorite Food:            Green Grass
 
 
@@ -142,7 +156,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1250
+Precision to understand:  60.0
+Birth Date:               1250
 Favorite Food:            Green Grass
 
 
@@ -152,14 +167,14 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1250
+Precision to understand:  60.0
+Birth Date:               1250
 Favorite Food:            Green Grass
 
 
 
 
-Displaying the Marsupialia Family
-
+Displaying 5 Animals from the Marsupialia Family
 
 I am Marsupialia 1 from the Marsupialia Family
 ---------------------------------
@@ -167,7 +182,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1300
+Precision to understand:  60.0
+Birth Date:               1300
 Favorite Food:            Grass
 
 
@@ -178,7 +194,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1300
+Precision to understand:  60.0
+Birth Date:               1300
 Favorite Food:            Grass
 
 
@@ -189,7 +206,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1300
+Precision to understand:  60.0
+Birth Date:               1300
 Favorite Food:            Grass
 
 
@@ -200,7 +218,8 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1300
+Precision to understand:  60.0
+Birth Date:               1300
 Favorite Food:            Grass
 
 
@@ -211,13 +230,13 @@ Number of Legs:             4
 Tail?                     true
 Brain?                    true
 Number of Neurons:        10
-Precision to understand:  60.0Birth Date:               1300
+Precision to understand:  60.0
+Birth Date:               1300
 Favorite Food:            Grass
 
 
 
 
 
-Displaying the Placentalia Family
-
+Displaying 5 Animals from the Placentalia Family
 

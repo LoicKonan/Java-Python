@@ -158,7 +158,7 @@ class Mammalia
                 + "Tail?                     " + tails + "\n" 
                 + "Brain?                    " + brain + "\n"
                 + "Number of Neurons:        " + neurons + "\n" 
-                + "Precision to understand:  " + precision
+                + "Precision to understand:  " + precision + "\n"
                 + "Birth Date:               " + birthDate + "\n"
                 + "Favorite Food:            " + fav_Foods + "\n");
     }
@@ -703,24 +703,27 @@ public class Question_2
          * Create at least 5 animals from each family.
          */
         
-        System.out.println("Displaying 5 Animals from the Mammalia Family\n");
+        System.out.println("-------------------------------------------------");
+        System.out.println("  Displaying 5 Animals from the Mammalia Family");
+        System.out.println("-------------------------------------------------\n");
 
         // 5 Mammalia Animals.
         Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass");
-        System.out.println("I am Mammalia 1 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia1.Animal_Infos());
+        System.out.println("I am Mammalia 1 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia1.Animal_Infos());
 
         Mammalia Mammalia2 = new Mammalia(4, true, true, 20, 60.0, 1500, "Grass");
-        System.out.println("I am Mammalia 2 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia2.Animal_Infos());
+        System.out.println("I am Mammalia 2 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia2.Animal_Infos());
 
         Mammalia Mammalia3 = new Mammalia(4, true, true, 28, 50.0, 1500, "Grass");
-        System.out.println("I am Mammalia 3 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia3.Animal_Infos());
+        System.out.println("I am Mammalia 3 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia3.Animal_Infos());
 
         Mammalia Mammalia4 = new Mammalia(4, true, true, 85, 60.0, 1500, "Grass");
-        System.out.println("I am Mammalia 4 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia4.Animal_Infos());
+        System.out.println("I am Mammalia 4 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia4.Animal_Infos());
 
         Mammalia Mammalia5 = new Mammalia(4, true, true, 58, 80.0, 1500, "Grass");
-        System.out.println("I am Mammalia 5 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia5.Animal_Infos());
-        
+        System.out.println("I am Mammalia 5 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia5.Animal_Infos());
+        System.out.println("----------------------------------------------\n");
+
 
         System.out.println("\n\nDisplaying 5 Animals from the Monotremata Family\n");
 

@@ -26,6 +26,8 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 class Mammalia 
 {
@@ -1187,21 +1189,8 @@ public class Question_2
         Carnivora Carnivora3 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
+   
+        System.out.println(new String(Files.readAllBytes(Paths.get("Outfile.txt"))));
 
-    
-    
-        try (FileReader reader = new FileReader("Outfile.txt")) 
-        {
-            int character;
-         
-            while ((character = reader.read()) != -1) 
-            {
-                System.out.print((char) character);
-            }
-        } 
-        catch (IOException e) 
-        {
-            e.printStackTrace();
-        }
     }
 }

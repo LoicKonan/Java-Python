@@ -1,0 +1,200 @@
+I am Mammalia 1 from the Mammalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        18
+Precision to understand:  50.0Birth Date:               1500
+Favorite Food:            Grass
+
+I am Mammalia 2 from the Mammalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  60.0Birth Date:               1500
+Favorite Food:            Grass
+
+I am Mammalia 3 from the Mammalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        28
+Precision to understand:  50.0Birth Date:               1500
+Favorite Food:            Grass
+
+I am Mammalia 4 from the Mammalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        85
+Precision to understand:  60.0Birth Date:               1500
+Favorite Food:            Grass
+
+I am Mammalia 5 from the Mammalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        58
+Precision to understand:  80.0Birth Date:               1500
+Favorite Food:            Grass
+
+I am Monotremata 1 from the Monotremata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        28
+Precision to understand:  10.0Birth Date:               1300
+Favorite Food:            milk
+
+
+I am Monotremata 2 from the Monotremata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        38
+Precision to understand:  50.0Birth Date:               1300
+Favorite Food:            milk
+
+
+I am Monotremata 3 from the Monotremata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        58
+Precision to understand:  60.0Birth Date:               1300
+Favorite Food:            milk
+
+
+I am Monotremata 4 from the Monotremata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        15
+Precision to understand:  80.0Birth Date:               1300
+Favorite Food:            milk
+
+
+I am Monotremata 5 from the Monotremata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1300
+Favorite Food:            milk
+
+
+I am Theria 1 from the Theria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1250
+Favorite Food:            Green Grass
+
+
+I am Theria 2 from the Theria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1250
+Favorite Food:            Green Grass
+
+
+I am Theria 3 from the Theria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1250
+Favorite Food:            Green Grass
+
+
+I am Theria 4 from the Theria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1250
+Favorite Food:            Green Grass
+
+
+I am Theria 5 from the Theria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1250
+Favorite Food:            Green Grass
+
+
+I am Marsupialia 1 from the Marsupialia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+I am Marsupialia 2 from the Marsupialia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+I am Marsupialia 3 from the Marsupialia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+I am Marsupialia 4 from the Marsupialia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+I am Marsupialia 5 from the Marsupialia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0Birth Date:               1300
+Favorite Food:            Grass
+
+
+

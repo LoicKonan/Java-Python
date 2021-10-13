@@ -712,6 +712,7 @@ public class Question_2
         Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass");
         System.out.println("I am Mammalia 1 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia1.Animal_Infos());
 
+        
         Mammalia Mammalia2 = new Mammalia(4, true, true, 20, 60.0, 1500, "Grass");
         System.out.println("I am Mammalia 2 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia2.Animal_Infos());
 

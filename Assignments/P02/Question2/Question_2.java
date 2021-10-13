@@ -51,6 +51,17 @@ class Mammalia
     }
 
 
+    public void set_brain(boolean brain) 
+    {
+        this.brain = brain;
+    }
+
+    public boolean get_brain() 
+    {
+        return brain;
+    }
+
+
     public void set_tails(boolean tails) 
     {
         this.tails = tails;
@@ -73,7 +84,7 @@ class Mammalia
     }
 
 
-    
+
     public void Eat() {}
 
     public void Walk() {}

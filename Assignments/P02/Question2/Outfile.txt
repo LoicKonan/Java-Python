@@ -151,6 +151,19 @@ Running Speed:            0
 Hunting Process:          null
 
 
+I now the new version of Theria 1 from the Theria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1250
+Favorite Food:            Birds
+Running Speed:            0
+Hunting Process:          null
+
+
 My name is Theria 2 from the Theria Family
 ---------------------------------
 Number of Legs:             4
@@ -217,6 +230,20 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
+
+
+
+I now the new version of Marsupialia 1 from the Marsupialia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
 Running Speed:            0
 Hunting Process:          null
 
@@ -297,6 +324,20 @@ Hunting Process:          null
 
 
 
+I now the new version of Placentalia 1 from the Placentalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            0
+Hunting Process:          null
+
+
+
 My name is Placentalia 2 from the Placentalia Family
 ---------------------------------
 Number of Legs:             4
@@ -367,6 +408,21 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
+
+
+
+
+I now the new version of Atlantogenata 1 from the Atlantogenata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
 Running Speed:            0
 Hunting Process:          null
 
@@ -453,6 +509,21 @@ Hunting Process:          null
 
 
 
+I now the new version of Boreoeutheria 1 from the Boreoeutheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            0
+Hunting Process:          null
+
+
+
+
 My name is Boreoeutheria 2 from the Boreoeutheria Family
 ---------------------------------
 Number of Legs:             4
@@ -529,6 +600,22 @@ Hunting Process:          null
 
 
 
+I now the new version of Afrotheria 1 from the Afrotheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            0
+Hunting Process:          null
+
+
+
+
+
 My name is Xenarthra 1 from the Xenarthra Family
 ---------------------------------
 Number of Legs:             4
@@ -538,6 +625,22 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
+
+
+
+
+
+I now the new version of Xenarthra 1 from the Xenarthra Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
 Running Speed:            0
 Hunting Process:          null
 
@@ -561,6 +664,22 @@ Hunting Process:          null
 
 
 
+I now the new version of Euarchontoglires 1 from the Euarchontoglires Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            0
+Hunting Process:          null
+
+
+
+
+
 My name is Laurasiatheria 1 from the Laurasiatheria Family
 ---------------------------------
 Number of Legs:             4
@@ -577,6 +696,22 @@ Hunting Process:          null
 
 
 
+I now the new version of Laurasiatheria 1 from the Laurasiatheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            0
+Hunting Process:          null
+
+
+
+
+
 My name is Euarchonta 1 from the Euarchonta Family
 ---------------------------------
 Number of Legs:             4
@@ -586,6 +721,23 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
+
+
+
+
+
+
+I now the new version of Euarchonta 1 from the Euarchonta Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
 Running Speed:            0
 Hunting Process:          null
 
@@ -611,6 +763,23 @@ Hunting Process:          null
 
 
 
+I now the new version of Glires 1 from the Glires Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
+
+
+
+
+
+
 My name is Scrotifera 1 from the Scrotifera Family
 ---------------------------------
 Number of Legs:             4
@@ -622,6 +791,23 @@ Birth Date:               1300
 Favorite Food:            milk
 Running Speed:            0
 Hunting Process:          null
+
+
+
+
+
+
+I now the new version of Scrotifera 1 from the Scrotifera Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
 
 
 
@@ -645,6 +831,23 @@ Hunting Process:          null
 
 
 
+I now the new version of Eulipotyphia 1 from the Eulipotyphia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
+
+
+
+
+
+
 My name is Chirpotera 1 from the Chirpotera Family
 ---------------------------------
 Number of Legs:             4
@@ -656,6 +859,24 @@ Birth Date:               1300
 Favorite Food:            Banana
 Running Speed:            0
 Hunting Process:          null
+
+
+
+
+
+
+
+I now the new version of Chirpotera 1 from the Chirpotera Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
 
 
 
@@ -681,6 +902,24 @@ Hunting Process:          null
 
 
 
+I now the new version of Euungulata 1 from the Euungulata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
+
+
+
+
+
+
+
 My name is Ferae 1 from the Ferae Family
 ---------------------------------
 Number of Legs:             4
@@ -699,6 +938,24 @@ Hunting Process:          null
 
 
 
+I now the new version of Ferae 1 from the Ferae Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               500
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
+
+
+
+
+
+
+
 My name is Cetartiodactyla 1 from the Cetartiodactyla Family
 ---------------------------------
 Number of Legs:             4
@@ -710,6 +967,25 @@ Birth Date:               1300
 Favorite Food:            Green Grass
 Running Speed:            0
 Hunting Process:          null
+
+
+
+
+
+
+
+
+I now the new version of Cetartiodactyla 1 from the Cetartiodactyla Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               1300
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
 
 
 
@@ -737,6 +1013,25 @@ Hunting Process:          null
 
 
 
+I now the new version of Perissodactyla 1 from the Perissodactyla Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               800
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
+
+
+
+
+
+
+
+
 My name is Pholidota1 1 from the Pholidota Family
 ---------------------------------
 Number of Legs:             4
@@ -748,6 +1043,25 @@ Birth Date:               100
 Favorite Food:            Steak
 Running Speed:            0
 Hunting Process:          null
+
+
+
+
+
+
+
+
+I now the new version of Pholidota 1 from the Pholidota Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               100
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
 
 
 

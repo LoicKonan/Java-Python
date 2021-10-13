@@ -35,6 +35,9 @@ class Mammalia
     int neurons;
     double precision;
     int birthDate;
+    
+    int Running_Speed = 0;
+    String Hunting_Process;
     String fav_Foods;
 
     Mammalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
@@ -82,22 +85,13 @@ class Monotremata extends Mammalia
     }
 
     @Override
-    public void Eat() 
-    {
-        System.out.println("I Love to Eat :" + fav_Foods + "\n");
-    }
+    public void Eat() {}
 
     @Override
-    public void Walk() 
-    {
-        System.out.println("I Have : " + legs + "Legs\n");
-    }
+    public void Walk() {}
 
     @Override
-    public void Sleep() 
-    {
-        System.out.println("I am Asleep\n");
-    }
+    public void Sleep() {}
 }
 
 
@@ -115,22 +109,13 @@ class Theria extends Mammalia
     }
 
     @Override
-    public void Eat() 
-    {
-        System.out.println("I Love to Eat :" + fav_Foods + "\n");
-    }
+    public void Eat() {}
 
     @Override
-    public void Walk() 
-    {
-        System.out.println("I Have : " + legs + "Legs\n");
-    }
+    public void Walk() {}
 
     @Override
-    public void Sleep() 
-    {
-        System.out.println("I am Asleep\n");
-    }
+    public void Sleep() {}
 }
 
 
@@ -591,7 +576,6 @@ class Carnivora extends Ferae
     @Override
     public void Sleep() {}
 }
-// Class Perivora extends perissodactyla, carnivora {}
 
 
 public class Question_2 
@@ -600,8 +584,8 @@ public class Question_2
     {
         File file = new File("Outfile.txt");
 
-        PrintStream outtputting = new PrintStream(file);
-        System.setOut(outtputting);
+        PrintStream printing = new PrintStream(file);
+        System.setOut(printing);
 
 
         System.out.println("\nFirst We are going to create Five Mammalia Derived Animals \n"+

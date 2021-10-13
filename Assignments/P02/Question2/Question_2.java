@@ -70,9 +70,9 @@ class Mammalia
 
 class Monotremata extends Mammalia 
 {
-    Monotremata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Monotremata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -103,9 +103,9 @@ class Monotremata extends Mammalia
 
 class Theria extends Mammalia 
 {
-    Theria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Theria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -136,9 +136,9 @@ class Theria extends Mammalia
 
 class Marsupialia extends Theria 
 {
-    Marsupialia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Marsupialia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -160,9 +160,9 @@ class Marsupialia extends Theria
 
 class Placentalia extends Theria 
 {
-    Placentalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Placentalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -184,9 +184,9 @@ class Placentalia extends Theria
 
 class Atlantogenata extends Placentalia 
 {
-    Atlantogenata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Atlantogenata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -208,9 +208,9 @@ class Atlantogenata extends Placentalia
 
 class Boreoeutheria extends Placentalia 
 {
-    Boreoeutheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Boreoeutheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -232,9 +232,9 @@ class Boreoeutheria extends Placentalia
 
 class Afrotheria extends Atlantogenata 
 {
-    Afrotheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Afrotheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -256,9 +256,9 @@ class Afrotheria extends Atlantogenata
 
 class Xenarthra extends Atlantogenata 
 {
-    Xenarthra(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Xenarthra(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -281,9 +281,9 @@ class Xenarthra extends Atlantogenata
 class Euarchontoglires extends Boreoeutheria 
 {
     Euarchontoglires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_id) 
+            String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -306,9 +306,9 @@ class Euarchontoglires extends Boreoeutheria
 class Laurasiatheria extends Boreoeutheria 
 {
     Laurasiatheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_id) 
+            String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -330,9 +330,9 @@ class Laurasiatheria extends Boreoeutheria
 
 class Euarchonta extends Euarchontoglires 
 {
-    Euarchonta(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Euarchonta(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -354,8 +354,8 @@ class Euarchonta extends Euarchontoglires
 
 class Glires extends Euarchontoglires 
 {
-    Glires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+    Glires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) {
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -377,9 +377,9 @@ class Glires extends Euarchontoglires
 
 class Scrotifera extends Laurasiatheria 
 {
-    Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -401,9 +401,9 @@ class Scrotifera extends Laurasiatheria
 
 class Eulipotyphia extends Laurasiatheria 
 {
-    Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -425,9 +425,9 @@ class Eulipotyphia extends Laurasiatheria
 
 class Chirpotera extends Scrotifera 
 {
-    Chirpotera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Chirpotera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -449,9 +449,9 @@ class Chirpotera extends Scrotifera
 
 class Euungulata extends Scrotifera 
 {
-    Euungulata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Euungulata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -473,9 +473,9 @@ class Euungulata extends Scrotifera
 
 class Ferae extends Scrotifera 
 {
-    Ferae(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Ferae(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -498,9 +498,9 @@ class Ferae extends Scrotifera
 class Cetartiodactyla extends Euungulata 
 {
     Cetartiodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_id) 
+            String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -523,9 +523,9 @@ class Cetartiodactyla extends Euungulata
 class Perissodactyla extends Euungulata 
 {
     Perissodactyla(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_id) 
+            String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -547,9 +547,9 @@ class Perissodactyla extends Euungulata
 
 class Pholidota extends Ferae 
 {
-    Pholidota(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Pholidota(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override
@@ -571,9 +571,9 @@ class Pholidota extends Ferae
 
 class Carnivora extends Ferae 
 {
-    Carnivora(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
+    Carnivora(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
     }
 
     @Override

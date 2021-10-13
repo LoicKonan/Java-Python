@@ -1,7 +1,8 @@
 -------------------------------------------------
-  Displaying 5 Animals from the Mammalia Family
+ Displaying 5 Animals from the Mammalia Family
 -------------------------------------------------
 
+-------------------------------------------------
 I am Mammalia 1 from the Mammalia Family
 ----------------------------------------
 Number of Legs:             4
@@ -52,12 +53,13 @@ Precision to understand:  80.0
 Birth Date:               1500
 Favorite Food:            Grass
 
-----------------------------------------------
 
 
-
+-------------------------------------------------
 Displaying 5 Animals from the Monotremata Family
+-------------------------------------------------
 
+-------------------------------------------------
 I am Monotremata 1 from the Monotremata Family
 ---------------------------------
 Number of Legs:             4
@@ -115,8 +117,10 @@ Favorite Food:            milk
 
 
 
-Displaying 5 Animals from the Theria Family
-
+-------------------------------------------------
+ Displaying 5 Animals from the Theria Family
+-------------------------------------------------
+-------------------------------------------------
 I am Theria 1 from the Theria Family
 ---------------------------------
 Number of Legs:             4
@@ -174,8 +178,10 @@ Favorite Food:            Green Grass
 
 
 
-Displaying 5 Animals from the Marsupialia Family
-
+-------------------------------------------------
+ Displaying 5 Animals from the Marsupialia Family
+-------------------------------------------------
+-------------------------------------------------
 I am Marsupialia 1 from the Marsupialia Family
 ---------------------------------
 Number of Legs:             4
@@ -238,5 +244,7 @@ Favorite Food:            Grass
 
 
 
+-------------------------------------------------
 Displaying 5 Animals from the Placentalia Family
-
+-------------------------------------------------
+-------------------------------------------------

@@ -791,6 +791,12 @@ public class Question_2
         // 5 Theria Animals.
         Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
         System.out.println("My name is Theria 1 from the Theria Family\n"+"-------------------------------------------------\n"+Theria1.Animal_Infos());;
+        
+        Theria1.set_neurons(20);
+        Theria1.set_precision(50);
+        Theria1.set_fav_Foods("Birds");
+
+        System.out.println("I now the new version of Theria 1 from the Carnivora Family\n"+"---------------------------------\n"+Theria1.Animal_Infos());
 
         
         Theria Theria2 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
@@ -815,6 +821,12 @@ public class Question_2
         Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 1 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia1.Animal_Infos());
 
+        Marsupialia1.set_neurons(20);
+        Marsupialia1.set_precision(50);
+        Marsupialia1.set_fav_Foods("Birds");
+
+        System.out.println("I now the new version of Marsupialia 1 from the Carnivora Family\n"+"---------------------------------\n"+Marsupialia1.Animal_Infos());
+
         Marsupialia Marsupialia2 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 2 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia2.Animal_Infos());
 
@@ -835,6 +847,12 @@ public class Question_2
         // 5 Placentalia Animals.
         Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 1 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia1.Animal_Infos());
+
+        Placentalia1.set_neurons(20);
+        Placentalia1.set_precision(50);
+        Placentalia1.set_fav_Foods("Birds");
+
+        System.out.println("I now the new version of Placentalia 1 from the Carnivora Family\n"+"---------------------------------\n"+Placentalia1.Animal_Infos());
 
         Placentalia Placentalia2 = new Placentalia(4, true, true, 20, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 2 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia2.Animal_Infos());
@@ -857,6 +875,12 @@ public class Question_2
         // 5 Atlantogenata Animals.
         Atlantogenata Atlantogenata1 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Atlantogenata 1 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata1.Animal_Infos());
+
+        Atlantogenata1.set_neurons(20);
+        Atlantogenata1.set_precision(50);
+        Atlantogenata1.set_fav_Foods("Birds");
+
+        System.out.println("I now the new version of Atlantogenata 1 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata1.Animal_Infos());
 
         Atlantogenata Atlantogenata2 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Atlantogenata 2 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata2.Animal_Infos());
@@ -898,6 +922,12 @@ public class Question_2
         Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
         System.out.println("My name is Afrotheria 1 from the Afrotheria Family\n"+"---------------------------------\n"+Afrotheria1.Animal_Infos());
 
+        Afrotheria1.set_neurons(20);
+        Afrotheria1.set_precision(50);
+        Afrotheria1.set_fav_Foods("Birds");
+
+        System.out.println("I now the new version of Afrotheria 1 from the Carnivora Family\n"+"---------------------------------\n"+Afrotheria.Animal_Infos());
+
         Afrotheria Afrotheria2 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
         Afrotheria Afrotheria3 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
         Afrotheria Afrotheria4 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
@@ -907,6 +937,12 @@ public class Question_2
         // 5 Xenarthra Animals.
         Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Xenarthra 1 from the Xenarthra Family\n"+"---------------------------------\n"+Xenarthra1.Animal_Infos());
+        
+        Xenarthra1.set_neurons(20);
+        Xenarthra1.set_precision(50);
+        Xenarthra1.set_fav_Foods("Birds");
+
+        System.out.println("I now the new version of Xenarthra 1 from the Carnivora Family\n"+"---------------------------------\n"+Xenarthra1.Animal_Infos());
 
         Xenarthra Xenarthra2 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         Xenarthra Xenarthra3 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
@@ -917,6 +953,12 @@ public class Question_2
         // 5 Theria Animals.
         Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Euarchontoglires 1 from the Euarchontoglires Family\n"+"---------------------------------\n"+Euarchontoglires1.Animal_Infos());
+        
+        Euarchontoglires1.set_neurons(20);
+        Euarchontoglires1.set_precision(50);
+        Euarchontoglires1.set_fav_Foods("Birds");
+
+        System.out.println("I now the new version of Euarchontoglires 1 from the Carnivora Family\n"+"---------------------------------\n"+Euarchontoglires1.Animal_Infos());
 
         Euarchontoglires Euarchontoglires2 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
         Euarchontoglires Euarchontoglires3 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);

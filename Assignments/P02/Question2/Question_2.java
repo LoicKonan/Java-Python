@@ -731,50 +731,50 @@ public class Question_2
         
         // 5 Euungulata Animals.
         Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
-        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
-        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
-        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
-        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata2 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata3 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata4 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata5 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Ferae Animals.
         Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
-        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
-        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
-        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
-        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
+        Ferae Ferae2 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
+        Ferae Ferae3 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
+        Ferae Ferae4 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
+        Ferae Ferae5 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Cetartiodactyla Animals.
         Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
-        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
-        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
-        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
-        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Cetartiodactyla Cetartiodactyla2 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Cetartiodactyla Cetartiodactyla3 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Cetartiodactyla Cetartiodactyla4 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Cetartiodactyla Cetartiodactyla5 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Perissodactyla Animals.
         Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
-        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
-        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
-        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
-        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Perissodactyla Perissodactyla2 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Perissodactyla Perissodactyla3 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Perissodactyla Perissodactyla4 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Perissodactyla Perissodactyla5 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Pholidota Animals.
         Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
-        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
-        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
-        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
-        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+        Pholidota Pholidota2 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+        Pholidota Pholidota3 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+        Pholidota Pholidota4 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+        Pholidota Pholidota5 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
 
         
         // 5 Carnivora Animals.
         Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
-        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
-        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
-        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
-        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+        Carnivora Carnivora2 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+        Carnivora Carnivora3 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+        Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+        Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
 
 
         /**
@@ -787,5 +787,8 @@ public class Question_2
          * Try changing at least 10 animals and show (reading from files; see next bullet) 
          * what they were and what they are now.
          */
+
+
+
     }
 }

@@ -37,6 +37,8 @@ class Mammalia
     int birthDate;
     String fav_Foods;
 
+
+
     Mammalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
         this.legs = legs;
@@ -48,6 +50,30 @@ class Mammalia
         this.fav_Foods = fav_Foods;
     }
 
+
+    public void set_tails(boolean tails) 
+    {
+        this.tails = tails;
+    }
+
+    public boolean get_tails() 
+    {
+        return tails;
+    }
+
+
+    public void set_legs(int legs) 
+    {
+        this.legs = legs;
+    }
+
+    public int get_legs() 
+    {
+        return legs;
+    }
+
+
+    
     public void Eat() {}
 
     public void Walk() {}

@@ -362,7 +362,6 @@ class Scrotifera extends Laurasiatheria
     
     int Running_Speed = 0;
     String Hunting_Process;
-    String fav_Foods;
 
     Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {
@@ -391,7 +390,6 @@ class Eulipotyphia extends Laurasiatheria
     
     int Running_Speed = 0;
     String Hunting_Process;
-    String fav_Foods;
 
     Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {

@@ -35,6 +35,7 @@ class Mammalia
     int neurons;
     double precision;
     int birthDate;
+    String fav_Foods;
 
     Mammalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
     {

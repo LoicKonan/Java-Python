@@ -151,7 +151,7 @@ Running Speed:            0
 Hunting Process:          null
 
 
-I now the new version of Theria 1 from the Theria Family
+I now the new version of Theria 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -235,7 +235,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Marsupialia 1 from the Marsupialia Family
+I now the new version of Marsupialia 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -324,7 +324,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Placentalia 1 from the Placentalia Family
+I now the new version of Placentalia 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -414,7 +414,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Atlantogenata 1 from the Atlantogenata Family
+I now the new version of Atlantogenata 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -509,7 +509,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Boreoeutheria 1 from the Boreoeutheria Family
+I now the new version of Boreoeutheria 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -600,7 +600,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Afrotheria 1 from the Afrotheria Family
+I now the new version of Afrotheria 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -632,7 +632,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Xenarthra 1 from the Xenarthra Family
+I am now the new version of Xenarthra 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -664,7 +664,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Euarchontoglires 1 from the Euarchontoglires Family
+I am now the new version of Euarchontoglires 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -696,7 +696,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Laurasiatheria 1 from the Laurasiatheria Family
+I am now the new version of Laurasiatheria 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -729,7 +729,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Euarchonta 1 from the Euarchonta Family
+I am now the new version of Euarchonta 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -763,7 +763,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Glires 1 from the Glires Family
+I am now the new version of Glires 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -797,7 +797,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Scrotifera 1 from the Scrotifera Family
+I am now the new version of Scrotifera 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -831,7 +831,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Eulipotyphia 1 from the Eulipotyphia Family
+I am now the new version of Eulipotyphia 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -866,7 +866,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Chirpotera 1 from the Chirpotera Family
+I am now the new version of Chirpotera 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -902,7 +902,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Euungulata 1 from the Euungulata Family
+I am now the new version of Euungulata 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -938,7 +938,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Ferae 1 from the Ferae Family
+I am now the new version of Ferae 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -975,7 +975,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Cetartiodactyla 1 from the Cetartiodactyla Family
+I am now the new version of Cetartiodactyla 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -1013,7 +1013,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Perissodactyla 1 from the Perissodactyla Family
+I am now the new version of Perissodactyla 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -1051,7 +1051,7 @@ Hunting Process:          null
 
 
 
-I now the new version of Pholidota 1 from the Pholidota Family
+I am now the new version of Pholidota 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -1082,14 +1082,7 @@ Favorite Food:            Meat
 Running Speed:            0
 Hunting Process:          null
 
-
-
-
-
-
-
-
-I now the new version of Carnivora 1 from the Carnivora Family
+I am now the new version of Carnivora 1
 ---------------------------------
 Number of Legs:             4
 Tail?                     true

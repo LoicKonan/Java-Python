@@ -25,6 +25,7 @@
 import java.io.*;
 import java.io.File;
 import java.io.PrintStream;
+import java.nio.file.Files;
 
 
 class Mammalia 
@@ -1184,16 +1185,17 @@ public class Question_2
 
         System.out.println("I am now the new version of Carnivora 1\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
 
-
         Carnivora Carnivora2 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         Carnivora Carnivora3 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
 
 
-
-
-
+        try (Stream<String> stream = Files.lines(Paths.get(String.valueOf(new File("yourFile.txt"))))) {
+            stream.forEach(System.out::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }

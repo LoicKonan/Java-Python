@@ -488,9 +488,8 @@ class Scrotifera extends Laurasiatheria
 
 class Eulipotyphia extends Laurasiatheria 
 {
-    
-    int Running_Speed = 0;
-    String Hunting_Process;
+    public int Running_Speed = 0;
+    public String Hunting_Process;
 
     Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
     int Running_Speed, String Hunting_Process) 

@@ -638,6 +638,7 @@ public class Question_2
         Placentalia Placentalia4 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
         Placentalia Placentalia5 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
 
+        
         // 5 Atlantogenata Animals.
         Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
         

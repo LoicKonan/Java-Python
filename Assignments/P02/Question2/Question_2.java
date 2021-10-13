@@ -30,7 +30,7 @@ import java.io.PrintStream;
 class Mammalia 
 {
     /**
-     * 
+     * All of the instances variables below.
      */
     int legs;
     boolean tails;
@@ -42,7 +42,7 @@ class Mammalia
 
 
     /**
-     * Constructor.
+     * Our Constructor.
      * @param legs
      * @param brain
      * @param tails

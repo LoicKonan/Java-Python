@@ -1,3 +1,6 @@
+Displaying the MammaliaFamily
+
+
 I am Mammalia 1 from the Mammalia Family
 ---------------------------------
 Number of Legs:             4
@@ -42,6 +45,11 @@ Brain?                    true
 Number of Neurons:        58
 Precision to understand:  80.0Birth Date:               1500
 Favorite Food:            Grass
+
+
+
+Displaying the Monotremata Family
+
 
 I am Monotremata 1 from the Monotremata Family
 ---------------------------------
@@ -93,6 +101,11 @@ Precision to understand:  60.0Birth Date:               1300
 Favorite Food:            milk
 
 
+
+
+Displaying the Theria Family
+
+
 I am Theria 1 from the Theria Family
 ---------------------------------
 Number of Legs:             4
@@ -141,6 +154,11 @@ Brain?                    true
 Number of Neurons:        10
 Precision to understand:  60.0Birth Date:               1250
 Favorite Food:            Green Grass
+
+
+
+
+Displaying the Marsupialia Family
 
 
 I am Marsupialia 1 from the Marsupialia Family
@@ -196,5 +214,10 @@ Number of Neurons:        10
 Precision to understand:  60.0Birth Date:               1300
 Favorite Food:            Grass
 
+
+
+
+
+Displaying the Placentalia Family
 
 

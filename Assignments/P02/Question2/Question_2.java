@@ -703,7 +703,7 @@ public class Question_2
          * Create at least 5 animals from each family.
          */
         
-        System.out.println("Displaying the MammaliaFamily\n\n");
+        System.out.println("Displaying 5 Animals from the Mammalia Family\n");
 
         // 5 Mammalia Animals.
         Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass");
@@ -722,7 +722,7 @@ public class Question_2
         System.out.println("I am Mammalia 5 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia5.Animal_Infos());
         
 
-        System.out.println("\n\nDisplaying the Monotremata Family\n\n");
+        System.out.println("\n\nDisplaying 5 Animals from the Monotremata Family\n");
 
         // 5 Monotremata Animals.
         Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk");
@@ -741,7 +741,7 @@ public class Question_2
         System.out.println("I am Monotremata 5 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata5.Animal_Infos());
 
 
-        System.out.println("\n\nDisplaying the Theria Family\n\n");
+        System.out.println("\n\nDisplaying 5 Animals from the Theria Family\n");
 
         // 5 Theria Animals.
         Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
@@ -760,7 +760,7 @@ public class Question_2
         System.out.println("I am Theria 5 from the Theria Family\n"+"---------------------------------\n"+Theria5.Animal_Infos());
 
 
-        System.out.println("\n\nDisplaying the Marsupialia Family\n\n");
+        System.out.println("\n\nDisplaying 5 Animals from the Marsupialia Family\n");
 
         // 5 Marsupialia Animals.
         Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
@@ -780,7 +780,7 @@ public class Question_2
 
 
         
-        System.out.println("\n\nDisplaying the Placentalia Family\n\n");
+        System.out.println("\n\nDisplaying 5 Animals from the Placentalia Family\n");
 
         // 5 Placentalia Animals.
         Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");

@@ -39,7 +39,7 @@ class Mammalia
     double precision;
     int birthDate;
     int Running_Speed = 0;
-    String Hunting_Process = "Lazy";
+    String Hunting_Process = "None";
     String fav_Foods;
 
     /**

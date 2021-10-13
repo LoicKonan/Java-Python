@@ -57,13 +57,13 @@ class Mammalia
     public String Animal_Infos() 
     {
 
-        return ("Number of Legs:   " + legs + "\n" 
-                + "Tail?           " + tails + "\n" 
-                + "Brain?          " + brain + "\n"
-                + "Neurons:        " + neurons + "\n" 
-                + "Precision to understanding Level: " + precision
-                + "Birth Date:     " + birthDate + "\n"
-                + "Favorite Food:  " + fav_Foods + "\n");
+        return ("Number of Legs:             " + legs + "\n" 
+                + "Tail?                     " + tails + "\n" 
+                + "Brain?                    " + brain + "\n"
+                + "Number of Neurons:        " + neurons + "\n" 
+                + "Precision to understand:  " + precision
+                + "Birth Date:               " + birthDate + "\n"
+                + "Favorite Food:            " + fav_Foods + "\n");
     }
 }
 

@@ -47,34 +47,25 @@ class Mammalia
         this.fav_Foods = fav_Foods;
     }
 
-    public void Eat() 
-    {
-        System.out.println("I like to Eat" + fav_Foods + " Wow Aint That Yummy?\n");
-    }
+    public void Eat() {}
 
-    public void Walk() 
-    {
-        System.out.println("I Walk on " + legs + "Legs\n");
-    }
+    public void Walk() {}
 
-    public void Sleep() 
-    {
-        System.out.println("I am currenlty Sleeping Away\n");
-    }
+    public void Sleep() {}
      
-     public String Attributes() 
-     {
+    public String Animal_Infos() 
+    {
          
-         //returning the set variables and values per instance of each case of derive mammalia
-         return ("I Have                    " + legs + " Leg/s\n"+ 
-          "I Have a Tail?            " + tails + "\n"+
-          "Do I have a Brain         " + brain + "\n"+
-          "I have                    " + neurons + " Neurons \n"
+        return ("Number of Legs: " + legs + "\n"+ 
+                "Tail?           " + tails + "\n"+
+                "Brain?          " + brain + "\n"+
+                "Neurons:        " + neurons +"\n"
          + "My Precision Level is     " + precision + "% (Im a little Smart) \n"+
           "I was Born in the Year    " + birthDate + "\n"+
           "And My Favorite Food is   " + fav_Foods +  " (Isnt that Yummy? )\n");
-     }
+    }
 }
+
 
 class Monotremata extends Mammalia
 {
@@ -82,7 +73,29 @@ class Monotremata extends Mammalia
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Theria extends Mammalia
 {
@@ -90,7 +103,29 @@ class Theria extends Mammalia
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Marsupialia extends Theria
 {
@@ -98,7 +133,29 @@ class Marsupialia extends Theria
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Placentalia extends Theria
 {
@@ -106,7 +163,29 @@ class Placentalia extends Theria
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Atlantogenata extends Placentalia
 {
@@ -114,7 +193,29 @@ class Atlantogenata extends Placentalia
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Boreoeutheria extends Placentalia
 {
@@ -122,7 +223,29 @@ class Boreoeutheria extends Placentalia
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Afrotheria extends Atlantogenata
 {
@@ -130,7 +253,28 @@ class Afrotheria extends Atlantogenata
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Xenarthra extends Atlantogenata
 {
@@ -138,7 +282,29 @@ class Xenarthra extends Atlantogenata
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Euarchontoglires extends Boreoeutheria
 {
@@ -146,7 +312,29 @@ class Euarchontoglires extends Boreoeutheria
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Laurasiatheria extends Boreoeutheria
 {
@@ -154,13 +342,56 @@ class Laurasiatheria extends Boreoeutheria
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Euarchonta extends Euarchontoglires
 {
     Euarchonta(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+    }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
     }
 }
 
@@ -170,7 +401,29 @@ class Glires extends Euarchontoglires
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Scrotifera extends Laurasiatheria
 {
@@ -178,7 +431,28 @@ class Scrotifera extends Laurasiatheria
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Eulipotyphia extends Laurasiatheria
 {
@@ -186,7 +460,29 @@ class Eulipotyphia extends Laurasiatheria
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Chirpotera extends Scrotifera
 {
@@ -194,7 +490,29 @@ class Chirpotera extends Scrotifera
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Euungulata extends Scrotifera
 {
@@ -202,13 +520,56 @@ class Euungulata extends Scrotifera
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Ferae extends Scrotifera
 {
     Ferae(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+    }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
     }
 }
 
@@ -218,7 +579,29 @@ class Cetartiodactyla extends Euungulata
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Perissodactyla extends Euungulata
 {
@@ -226,7 +609,29 @@ class Perissodactyla extends Euungulata
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Pholidota extends Ferae
 {
@@ -234,13 +639,56 @@ class Pholidota extends Ferae
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
     }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
+    }
 }
+
 
 class Carnivora extends Ferae
 {
     Carnivora(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_id);
+    }
+
+    @Override public String Animal_Infos() 
+    {
+        return (super.Animal_Infos() + "\n");
+    }
+
+    @Override
+    public void Eat() 
+    {
+        System.out.println("I Love to Eat :" + fav_Foods + "\n");
+    }
+    @Override
+    public void Walk() 
+    {
+        System.out.println("I Have : " + legs + "Legs\n");
+    }
+    @Override
+    public void Sleep() 
+    {
+        System.out.println("I am Asleep\n");
     }
 }
 // Class Perivora extends perissodactyla, carnivora {}

@@ -39,7 +39,7 @@ class Mammalia
     double precision;
     int birthDate;
     int Running_Speed = 0;
-    String Hunting_Process;
+    String Hunting_Process = "Smooth";
     String fav_Foods;
 
     /**
@@ -187,6 +187,8 @@ class Mammalia
                 + "Precision to understand:  " + precision + "\n"
                 + "Birth Date:               " + birthDate + "\n"
                 + "Favorite Food:            " + fav_Foods + "\n");
+                + "Running Speed:            " + Running_Speed + "\n");
+                + "Hunting Process:          " + Hunting_Process + "\n");
     }
 }
 

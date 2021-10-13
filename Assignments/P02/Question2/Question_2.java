@@ -620,71 +620,71 @@ public class Question_2
 
 
         // 5 Marsupialia Animals.
-        Marsupialia 
+        Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "milk");
 
         
         // 5 Placentalia Animals.
-        Placentalia 
+        Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "milk");
 
         // 5 Atlantogenata Animals.
-        Atlantogenata 
+        Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
         
         // 5 Boreoeutheria Animals.
-        Boreoeutheria 
+        Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "milk");
         
         // 5 Afrotheria Animals.
-        Afrotheria 
+        Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "milk");
         
         // 5 Xenarthra Animals.
-        Xenarthra 
+        Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "milk");
         
         // 5 Theria Animals.
-        Euarchontoglires 
+        Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "milk");
         
         // 5 Laurasiatheria Animals.
-        Laurasiatheria 
+        Laurasiatheria Laurasiatheria1 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Euarchonta Animals.
-        Euarchonta 
+        Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Glires Animals.
-        Glires 
+        Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "milk");
         
         // 5 Scrotifera Animals.
-        Scrotifera 
+        Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Eulipotyphia Animals.
-        Eulipotyphia 
+        Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "milk");
         
         
         
         // 5 Chirpotera Animals.
-        Chirpotera 
+        Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Euungulata Animals.
-        Euungulata 
+        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Ferae Animals.
-        Ferae 
+        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Cetartiodactyla Animals.
-        Cetartiodactyla 
+        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Perissodactyla Animals.
-        Perissodactyla 
+        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Pholidota Animals.
-        Pholidota 
+        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
         
         // 5 Carnivora Animals.
-        Carnivora 
+        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
     }
 }

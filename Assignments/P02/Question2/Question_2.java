@@ -748,19 +748,19 @@ public class Question_2
         System.out.println("-------------------------------------------------");
 
         // 5 Mammalia Animals.
-        Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass");
+        Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass", 0, null);
         System.out.println("My name is Mammalia 1 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia1.Animal_Infos());
 
-        Mammalia Mammalia2 = new Mammalia(4, true, true, 20, 60.0, 1500, "Grass");
+        Mammalia Mammalia2 = new Mammalia(4, true, true, 20, 60.0, 1500, "Grass", 0, null);
         System.out.println("My name is Mammalia 2 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia2.Animal_Infos());
 
-        Mammalia Mammalia3 = new Mammalia(4, true, true, 28, 50.0, 1500, "Grass");
+        Mammalia Mammalia3 = new Mammalia(4, true, true, 28, 50.0, 1500, "Grass", 0, null);
         System.out.println("My name is Mammalia 3 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia3.Animal_Infos());
 
-        Mammalia Mammalia4 = new Mammalia(4, true, true, 85, 60.0, 1500, "Grass");
+        Mammalia Mammalia4 = new Mammalia(4, true, true, 85, 60.0, 1500, "Grass", 0, null);
         System.out.println("My name is Mammalia 4 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia4.Animal_Infos());
 
-        Mammalia Mammalia5 = new Mammalia(4, true, true, 58, 80.0, 1500, "Grass");
+        Mammalia Mammalia5 = new Mammalia(4, true, true, 58, 80.0, 1500, "Grass", 0, null);
         System.out.println("My name is Mammalia 5 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia5.Animal_Infos());
 
 
@@ -770,19 +770,19 @@ public class Question_2
         System.out.println("-------------------------------------------------");
 
         // 5 Monotremata Animals.
-        Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk");
+        Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk", 0, null);
         System.out.println("My name is Monotremata 1 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata1.Animal_Infos());
 
-        Monotremata Monotremata2 = new Monotremata(4, true, true, 38, 50.0, 1300, "milk");
+        Monotremata Monotremata2 = new Monotremata(4, true, true, 38, 50.0, 1300, "milk", 0, null);
         System.out.println("My name is Monotremata 2 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata2.Animal_Infos());
 
-        Monotremata Monotremata3 = new Monotremata(4, true, true, 58, 60.0, 1300, "milk");
+        Monotremata Monotremata3 = new Monotremata(4, true, true, 58, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Monotremata 3 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata3.Animal_Infos());
 
-        Monotremata Monotremata4 = new Monotremata(4, true, true, 15, 80.0, 1300, "milk");
+        Monotremata Monotremata4 = new Monotremata(4, true, true, 15, 80.0, 1300, "milk", 0, null);
         System.out.println("My name is Monotremata 4 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata4.Animal_Infos());
 
-        Monotremata Monotremata5 = new Monotremata(4, true, true, 10, 60.0, 1300, "milk");
+        Monotremata Monotremata5 = new Monotremata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Monotremata 5 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata5.Animal_Infos());
 
 
@@ -792,19 +792,19 @@ public class Question_2
         System.out.println("-------------------------------------------------");
 
         // 5 Theria Animals.
-        Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
-        System.out.println("My name is Theria 1 from the Theria Family\n"+"-------------------------------------------------"\n"+Theria1.Animal_Infos());
+        Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
+        System.out.println("My name is Theria 1 from the Theria Family\n"+"-------------------------------------------------\n"+Theria1.Animal_Infos());;
 
-        Theria Theria2 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        Theria Theria2 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
         System.out.println("My name is Theria 2 from the Theria Family\n"+"---------------------------------\n"+Theria2.Animal_Infos());
 
-        Theria Theria3 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        Theria Theria3 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
         System.out.println("My name is Theria 3 from the Theria Family\n"+"---------------------------------\n"+Theria3.Animal_Infos());
 
-        Theria Theria4 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        Theria Theria4 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
         System.out.println("My name is Theria 4 from the Theria Family\n"+"---------------------------------\n"+Theria4.Animal_Infos());
 
-        Theria Theria5 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        Theria Theria5 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
         System.out.println("My name is Theria 5 from the Theria Family\n"+"---------------------------------\n"+Theria5.Animal_Infos());
 
 
@@ -815,19 +815,19 @@ public class Question_2
 
 
         // 5 Marsupialia Animals.
-        Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 1 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia1.Animal_Infos());
 
-        Marsupialia Marsupialia2 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia2 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 2 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia2.Animal_Infos());
 
-        Marsupialia Marsupialia3 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia3 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 3 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia3.Animal_Infos());
 
-        Marsupialia Marsupialia4 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia4 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 4 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia4.Animal_Infos());
 
-        Marsupialia Marsupialia5 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia5 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 5 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia5.Animal_Infos());
 
 
@@ -837,19 +837,19 @@ public class Question_2
         System.out.println("-------------------------------------------------");
 
         // 5 Placentalia Animals.
-        Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
+        Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 1 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia1.Animal_Infos());
 
-        Placentalia Placentalia2 = new Placentalia(4, true, true, 20, 60.0, 1300, "Meat");
+        Placentalia Placentalia2 = new Placentalia(4, true, true, 20, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 2 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia2.Animal_Infos());
 
-        Placentalia Placentalia3 = new Placentalia(4, true, true, 30, 60.0, 1300, "Meat");
+        Placentalia Placentalia3 = new Placentalia(4, true, true, 30, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 3 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia3.Animal_Infos());
 
-        Placentalia Placentalia4 = new Placentalia(4, true, true, 40, 60.0, 1300, "Meat");
+        Placentalia Placentalia4 = new Placentalia(4, true, true, 40, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 4 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia4.Animal_Infos());
 
-        Placentalia Placentalia5 = new Placentalia(4, true, true, 60, 60.0, 1300, "Meat");
+        Placentalia Placentalia5 = new Placentalia(4, true, true, 60, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 5 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia5.Animal_Infos());
 
 
@@ -860,19 +860,19 @@ public class Question_2
         System.out.println("-------------------------------------------------");
 
         // 5 Atlantogenata Animals.
-        Atlantogenata Atlantogenata1 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata1 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Atlantogenata 1 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata1.Animal_Infos());
 
-        Atlantogenata Atlantogenata2 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata2 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Atlantogenata 2 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata2.Animal_Infos());
 
-        Atlantogenata Atlantogenata3 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata3 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Atlantogenata 3 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata3.Animal_Infos());
 
-        Atlantogenata Atlantogenata4 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata4 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Atlantogenata 4 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata4.Animal_Infos());
 
-        Atlantogenata Atlantogenata5 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata5 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Atlantogenata 5 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata5.Animal_Infos());
 
 
@@ -883,171 +883,171 @@ public class Question_2
         System.out.println("-------------------------------------------------");
 
         // 5 Boreoeutheria Animals.
-        Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass");
+        Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Boreoeutheria 1 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria1.Animal_Infos());
 
-        Boreoeutheria Boreoeutheria2 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass");
+        Boreoeutheria Boreoeutheria2 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Boreoeutheria 2 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria2.Animal_Infos());
 
-        Boreoeutheria Boreoeutheria3 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass");
+        Boreoeutheria Boreoeutheria3 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Boreoeutheria 3 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria3.Animal_Infos());
 
-        Boreoeutheria Boreoeutheria4 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass");
+        Boreoeutheria Boreoeutheria4 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Boreoeutheria 4 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria4.Animal_Infos());
 
-        Boreoeutheria Boreoeutheria5 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass");
+        Boreoeutheria Boreoeutheria5 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Boreoeutheria 5 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria5.Animal_Infos());
 
 
         
         // 5 Afrotheria Animals.
-        Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish");
+        Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
         System.out.println("My name is Afrotheria 1 from the Afrotheria Family\n"+"---------------------------------\n"+Afrotheria1.Animal_Infos());
 
-        Afrotheria Afrotheria2 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish");
-        Afrotheria Afrotheria3 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish");
-        Afrotheria Afrotheria4 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish");
-        Afrotheria Afrotheria5 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish");
+        Afrotheria Afrotheria2 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
+        Afrotheria Afrotheria3 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
+        Afrotheria Afrotheria4 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
+        Afrotheria Afrotheria5 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
         
 
         // 5 Xenarthra Animals.
-        Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass");
+        Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Xenarthra 1 from the Xenarthra Family\n"+"---------------------------------\n"+Xenarthra1.Animal_Infos());
 
-        Xenarthra Xenarthra2 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass");
-        Xenarthra Xenarthra3 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass");
-        Xenarthra Xenarthra4 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass");
-        Xenarthra Xenarthra5 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass");
+        Xenarthra Xenarthra2 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
+        Xenarthra Xenarthra3 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
+        Xenarthra Xenarthra4 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
+        Xenarthra Xenarthra5 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
 
         
         // 5 Theria Animals.
-        Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat");
+        Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Euarchontoglires 1 from the Euarchontoglires Family\n"+"---------------------------------\n"+Euarchontoglires1.Animal_Infos());
 
-        Euarchontoglires Euarchontoglires2 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat");
-        Euarchontoglires Euarchontoglires3 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat");
-        Euarchontoglires Euarchontoglires4 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat");
-        Euarchontoglires Euarchontoglires5 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat");
+        Euarchontoglires Euarchontoglires2 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
+        Euarchontoglires Euarchontoglires3 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
+        Euarchontoglires Euarchontoglires4 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
+        Euarchontoglires Euarchontoglires5 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
 
         
         // 5 Laurasiatheria Animals.
-        Laurasiatheria Laurasiatheria1 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits");
+        Laurasiatheria Laurasiatheria1 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
         System.out.println("My name is Laurasiatheria 1 from the Laurasiatheria Family\n"+"---------------------------------\n"+Laurasiatheria1.Animal_Infos());
 
-        Laurasiatheria Laurasiatheria2 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits");
-        Laurasiatheria Laurasiatheria3 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits");
-        Laurasiatheria Laurasiatheria4 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits");
-        Laurasiatheria Laurasiatheria5 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits");
+        Laurasiatheria Laurasiatheria2 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
+        Laurasiatheria Laurasiatheria3 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
+        Laurasiatheria Laurasiatheria4 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
+        Laurasiatheria Laurasiatheria5 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
         
         
         // 5 Euarchonta Animals.
-        Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Euarchonta 1 from the Euarchonta Family\n"+"---------------------------------\n"+Euarchonta1.Animal_Infos());
 
-        Euarchonta Euarchonta2 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
-        Euarchonta Euarchonta3 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
-        Euarchonta Euarchonta4 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
-        Euarchonta Euarchonta5 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchonta Euarchonta2 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Euarchonta Euarchonta3 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Euarchonta Euarchonta4 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Euarchonta Euarchonta5 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         
         
         // 5 Glires Animals.
-        Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits");
+        Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
         System.out.println("My name is Glires 1 from the Glires Family\n"+"---------------------------------\n"+Glires1.Animal_Infos());
 
-        Glires Glires2 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits");
-        Glires Glires3 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits");
-        Glires Glires4 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits");
-        Glires Glires5 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits");
+        Glires Glires2 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
+        Glires Glires3 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
+        Glires Glires4 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
+        Glires Glires5 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
 
         
         // 5 Scrotifera Animals.
-        Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
+        Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Scrotifera 1 from the Scrotifera Family\n"+"---------------------------------\n"+Scrotifera1.Animal_Infos());
 
-        Scrotifera Scrotifera2 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
-        Scrotifera Scrotifera3 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
-        Scrotifera Scrotifera4 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
-        Scrotifera Scrotifera5 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
+        Scrotifera Scrotifera2 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Scrotifera Scrotifera3 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Scrotifera Scrotifera4 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Scrotifera Scrotifera5 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         
         
         // 5 Eulipotyphia Animals.
-        Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut");
+        Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);
         System.out.println("My name is Eulipotyphia 1 from the Eulipotyphia Family\n"+"---------------------------------\n"+Eulipotyphia1.Animal_Infos());
 
-        Eulipotyphia Eulipotyphia2 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut");
-        Eulipotyphia Eulipotyphia3 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut");
-        Eulipotyphia Eulipotyphia4 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut");
-        Eulipotyphia Eulipotyphia5 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut");        
+        Eulipotyphia Eulipotyphia2 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);
+        Eulipotyphia Eulipotyphia3 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);
+        Eulipotyphia Eulipotyphia4 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);
+        Eulipotyphia Eulipotyphia5 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);        
         
         
         // 5 Chirpotera Animals.
-        Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana");
+        Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
         System.out.println("My name is Chirpotera 1 from the Chirpotera Family\n"+"---------------------------------\n"+Chirpotera1.Animal_Infos());
 
-        Chirpotera Chirpotera2 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana");
-        Chirpotera Chirpotera3 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana");
-        Chirpotera Chirpotera4 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana");
-        Chirpotera Chirpotera5 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana");
+        Chirpotera Chirpotera2 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
+        Chirpotera Chirpotera3 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
+        Chirpotera Chirpotera4 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
+        Chirpotera Chirpotera5 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
         
         
         // 5 Euungulata Animals.
-        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Euungulata 1 from the Euungulata Family\n"+"---------------------------------\n"+Euungulata1.Animal_Infos());
 
-        Euungulata Euungulata2 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
-        Euungulata Euungulata3 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
-        Euungulata Euungulata4 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
-        Euungulata Euungulata5 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata2 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Euungulata Euungulata3 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Euungulata Euungulata4 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        Euungulata Euungulata5 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         
         
         // 5 Ferae Animals.
-        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
+        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
         System.out.println("My name is Ferae 1 from the Ferae Family\n"+"---------------------------------\n"+Ferae1.Animal_Infos());
 
-        Ferae Ferae2 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
-        Ferae Ferae3 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
-        Ferae Ferae4 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
-        Ferae Ferae5 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
+        Ferae Ferae2 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
+        Ferae Ferae3 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
+        Ferae Ferae4 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
+        Ferae Ferae5 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
         
         
         // 5 Cetartiodactyla Animals.
-        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
+        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
         System.out.println("My name is Cetartiodactyla 1 from the Cetartiodactyla Family\n"+"---------------------------------\n"+Cetartiodactyla1.Animal_Infos());
 
-        Cetartiodactyla Cetartiodactyla2 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
-        Cetartiodactyla Cetartiodactyla3 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
-        Cetartiodactyla Cetartiodactyla4 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
-        Cetartiodactyla Cetartiodactyla5 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
+        Cetartiodactyla Cetartiodactyla2 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
+        Cetartiodactyla Cetartiodactyla3 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
+        Cetartiodactyla Cetartiodactyla4 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
+        Cetartiodactyla Cetartiodactyla5 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
         
         
         // 5 Perissodactyla Animals.
-        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
+        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
         System.out.println("My name is Perissodactyla 1 from the Perissodactyla Family\n"+"---------------------------------\n"+Perissodactyla1.Animal_Infos());
 
-        Perissodactyla Perissodactyla2 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
-        Perissodactyla Perissodactyla3 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
-        Perissodactyla Perissodactyla4 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
-        Perissodactyla Perissodactyla5 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
+        Perissodactyla Perissodactyla2 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
+        Perissodactyla Perissodactyla3 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
+        Perissodactyla Perissodactyla4 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
+        Perissodactyla Perissodactyla5 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
         
         
         // 5 Pholidota Animals.
-        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
+        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
         System.out.println("My name is Pholidota1 1 from the Pholidota Family\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
 
-        Pholidota Pholidota2 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
-        Pholidota Pholidota3 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
-        Pholidota Pholidota4 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
-        Pholidota Pholidota5 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
+        Pholidota Pholidota2 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
+        Pholidota Pholidota3 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
+        Pholidota Pholidota4 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
+        Pholidota Pholidota5 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
 
         
         // 5 Carnivora Animals.
-        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
+        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         System.out.println("My name is Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
 
-        Carnivora Carnivora2 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
-        Carnivora Carnivora3 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
-        Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
-        Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
+        Carnivora Carnivora2 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
+        Carnivora Carnivora3 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
+        Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
+        Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
 
       
 

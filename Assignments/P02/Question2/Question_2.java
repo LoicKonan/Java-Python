@@ -186,10 +186,10 @@ class Mammalia
                 + "Number of Neurons:        " + neurons + "\n" 
                 + "Precision to understand:  " + precision + "\n"
                 + "Birth Date:               " + birthDate + "\n"
-                + "Favorite Food:            " + fav_Foods + "\n");
-
-                Running_Speed
-                Hunting_Process
+                + "Favorite Food:            " + fav_Foods + "\n"
+                + "Running Speed:            " + Running_Speed + "\n"
+                + "Hunting Process:          " + Hunting_Process + "\n"
+                );
     }
 }
 

@@ -50,6 +50,31 @@ class Mammalia
         this.fav_Foods = fav_Foods;
     }
 
+    /**
+     * 
+     * Setters Function and Getters Functions below.
+     * 
+     */
+
+    public void set_fav_Foods(String fav_Foods) 
+    {
+        this.fav_Foods = fav_Foods;
+    }
+
+    public String get_fav_Foods() 
+    {
+        return fav_Foods;
+    }
+
+    public void set_birthDate(int birthDate) 
+    {
+        this.birthDate = birthDate;
+    }
+
+    public int get_birthDate() 
+    {
+        return birthDate;
+    }
 
     public void set_precision(double precision) 
     {
@@ -104,7 +129,6 @@ class Mammalia
     {
         return legs;
     }
-
 
 
     public void Eat() {}

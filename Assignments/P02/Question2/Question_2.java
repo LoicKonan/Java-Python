@@ -1193,5 +1193,8 @@ public class Question_2
         Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
 
+
+
+        
     }
 }

@@ -447,9 +447,10 @@ class Laurasiatheria extends Boreoeutheria
 
 class Euarchonta extends Euarchontoglires 
 {
-    Euarchonta(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Euarchonta(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+                String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -471,8 +472,10 @@ class Euarchonta extends Euarchontoglires
 
 class Glires extends Euarchontoglires 
 {
-    Glires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+    Glires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+                String Hunting_Process)   
+    {
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -494,9 +497,6 @@ class Glires extends Euarchontoglires
 
 class Scrotifera extends Laurasiatheria 
 {
-    int Running_Speed;
-    String Hunting_Process;
-
     Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
                 int Running_Speed, String Hunting_Process) 
     {
@@ -521,10 +521,6 @@ class Scrotifera extends Laurasiatheria
 
 class Eulipotyphia extends Laurasiatheria 
 {
-    
-    public int Running_Speed;
-    public String Hunting_Process;
-
     Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
     int Running_Speed, String Hunting_Process) 
     {

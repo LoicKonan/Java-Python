@@ -461,9 +461,12 @@ class Scrotifera extends Laurasiatheria
     int Running_Speed = 0;
     String Hunting_Process;
 
-    Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+                int Running_Speed, String Hunting_Process) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        this.Running_Speed = Running_Speed;
+        this.Hunting_Process = Hunting_Process;
     }
 
     @Override
@@ -489,9 +492,12 @@ class Eulipotyphia extends Laurasiatheria
     int Running_Speed = 0;
     String Hunting_Process;
 
-    Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
+    int Running_Speed, String Hunting_Process) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        this.Running_Speed = Running_Speed;
+        this.Hunting_Process = Hunting_Process;
     }
 
     @Override
@@ -710,19 +716,19 @@ public class Question_2
 
         // 5 Mammalia Animals.
         Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass");
-        System.out.println("My name is Mammalia 1 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia1.Animal_Infos());
+        System.out.println("My name is Mammalia 1 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia1.Animal_Infos());
 
         Mammalia Mammalia2 = new Mammalia(4, true, true, 20, 60.0, 1500, "Grass");
-        System.out.println("My name is Mammalia 2 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia2.Animal_Infos());
+        System.out.println("My name is Mammalia 2 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia2.Animal_Infos());
 
         Mammalia Mammalia3 = new Mammalia(4, true, true, 28, 50.0, 1500, "Grass");
-        System.out.println("My name is Mammalia 3 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia3.Animal_Infos());
+        System.out.println("My name is Mammalia 3 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia3.Animal_Infos());
 
         Mammalia Mammalia4 = new Mammalia(4, true, true, 85, 60.0, 1500, "Grass");
-        System.out.println("My name is Mammalia 4 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia4.Animal_Infos());
+        System.out.println("My name is Mammalia 4 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia4.Animal_Infos());
 
         Mammalia Mammalia5 = new Mammalia(4, true, true, 58, 80.0, 1500, "Grass");
-        System.out.println("My name is Mammalia 5 from the Mammalia Family\n"+"----------------------------------------\n"+Mammalia5.Animal_Infos());
+        System.out.println("My name is Mammalia 5 from the Mammalia Family\n"+"-------------------------------------------------\n"+Mammalia5.Animal_Infos());
 
 
         System.out.println("\n\n-------------------------------------------------");
@@ -732,19 +738,19 @@ public class Question_2
 
         // 5 Monotremata Animals.
         Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk");
-        System.out.println("My name is Monotremata 1 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata1.Animal_Infos());
+        System.out.println("My name is Monotremata 1 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata1.Animal_Infos());
 
         Monotremata Monotremata2 = new Monotremata(4, true, true, 38, 50.0, 1300, "milk");
-        System.out.println("My name is Monotremata 2 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata2.Animal_Infos());
+        System.out.println("My name is Monotremata 2 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata2.Animal_Infos());
 
         Monotremata Monotremata3 = new Monotremata(4, true, true, 58, 60.0, 1300, "milk");
-        System.out.println("My name is Monotremata 3 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata3.Animal_Infos());
+        System.out.println("My name is Monotremata 3 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata3.Animal_Infos());
 
         Monotremata Monotremata4 = new Monotremata(4, true, true, 15, 80.0, 1300, "milk");
-        System.out.println("My name is Monotremata 4 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata4.Animal_Infos());
+        System.out.println("My name is Monotremata 4 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata4.Animal_Infos());
 
         Monotremata Monotremata5 = new Monotremata(4, true, true, 10, 60.0, 1300, "milk");
-        System.out.println("My name is Monotremata 5 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata5.Animal_Infos());
+        System.out.println("My name is Monotremata 5 from the Monotremata Family\n"+"-------------------------------------------\n"+Monotremata5.Animal_Infos());
 
 
         System.out.println("\n\n-------------------------------------------------");
@@ -754,7 +760,7 @@ public class Question_2
 
         // 5 Theria Animals.
         Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
-        System.out.println("My name is Theria 1 from the Theria Family\n"+"---------------------------------\n"+Theria1.Animal_Infos());
+        System.out.println("My name is Theria 1 from the Theria Family\n"+"-------------------------------------------------"\n"+Theria1.Animal_Infos());
 
         Theria Theria2 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
         System.out.println("My name is Theria 2 from the Theria Family\n"+"---------------------------------\n"+Theria2.Animal_Infos());

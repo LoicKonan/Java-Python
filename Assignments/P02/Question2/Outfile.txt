@@ -3,7 +3,7 @@
 -------------------------------------------------
 
 -------------------------------------------------
-I am Mammalia 1 from the Mammalia Family
+My name is Mammalia 1 from the Mammalia Family
 ----------------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -13,7 +13,7 @@ Precision to understand:  50.0
 Birth Date:               1500
 Favorite Food:            Grass
 
-I am Mammalia 2 from the Mammalia Family
+My name is Mammalia 2 from the Mammalia Family
 ----------------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -23,7 +23,7 @@ Precision to understand:  60.0
 Birth Date:               1500
 Favorite Food:            Grass
 
-I am Mammalia 3 from the Mammalia Family
+My name is Mammalia 3 from the Mammalia Family
 ----------------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -33,7 +33,7 @@ Precision to understand:  50.0
 Birth Date:               1500
 Favorite Food:            Grass
 
-I am Mammalia 4 from the Mammalia Family
+My name is Mammalia 4 from the Mammalia Family
 ----------------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -43,7 +43,7 @@ Precision to understand:  60.0
 Birth Date:               1500
 Favorite Food:            Grass
 
-I am Mammalia 5 from the Mammalia Family
+My name is Mammalia 5 from the Mammalia Family
 ----------------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -60,7 +60,7 @@ Displaying 5 Animals from the Monotremata Family
 -------------------------------------------------
 
 -------------------------------------------------
-I am Monotremata 1 from the Monotremata Family
+My name is Monotremata 1 from the Monotremata Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -71,7 +71,7 @@ Birth Date:               1300
 Favorite Food:            milk
 
 
-I am Monotremata 2 from the Monotremata Family
+My name is Monotremata 2 from the Monotremata Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -82,7 +82,7 @@ Birth Date:               1300
 Favorite Food:            milk
 
 
-I am Monotremata 3 from the Monotremata Family
+My name is Monotremata 3 from the Monotremata Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -93,7 +93,7 @@ Birth Date:               1300
 Favorite Food:            milk
 
 
-I am Monotremata 4 from the Monotremata Family
+My name is Monotremata 4 from the Monotremata Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -104,7 +104,7 @@ Birth Date:               1300
 Favorite Food:            milk
 
 
-I am Monotremata 5 from the Monotremata Family
+My name is Monotremata 5 from the Monotremata Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -121,7 +121,7 @@ Favorite Food:            milk
  Displaying 5 Animals from the Theria Family
 -------------------------------------------------
 -------------------------------------------------
-I am Theria 1 from the Theria Family
+My name is Theria 1 from the Theria Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -132,7 +132,7 @@ Birth Date:               1250
 Favorite Food:            Green Grass
 
 
-I am Theria 2 from the Theria Family
+My name is Theria 2 from the Theria Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -143,7 +143,7 @@ Birth Date:               1250
 Favorite Food:            Green Grass
 
 
-I am Theria 3 from the Theria Family
+My name is Theria 3 from the Theria Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -154,7 +154,7 @@ Birth Date:               1250
 Favorite Food:            Green Grass
 
 
-I am Theria 4 from the Theria Family
+My name is Theria 4 from the Theria Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -165,7 +165,7 @@ Birth Date:               1250
 Favorite Food:            Green Grass
 
 
-I am Theria 5 from the Theria Family
+My name is Theria 5 from the Theria Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -182,7 +182,7 @@ Favorite Food:            Green Grass
  Displaying 5 Animals from the Marsupialia Family
 -------------------------------------------------
 -------------------------------------------------
-I am Marsupialia 1 from the Marsupialia Family
+My name is Marsupialia 1 from the Marsupialia Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -194,7 +194,7 @@ Favorite Food:            Grass
 
 
 
-I am Marsupialia 2 from the Marsupialia Family
+My name is Marsupialia 2 from the Marsupialia Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -206,7 +206,7 @@ Favorite Food:            Grass
 
 
 
-I am Marsupialia 3 from the Marsupialia Family
+My name is Marsupialia 3 from the Marsupialia Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -218,7 +218,7 @@ Favorite Food:            Grass
 
 
 
-I am Marsupialia 4 from the Marsupialia Family
+My name is Marsupialia 4 from the Marsupialia Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -230,7 +230,7 @@ Favorite Food:            Grass
 
 
 
-I am Marsupialia 5 from the Marsupialia Family
+My name is Marsupialia 5 from the Marsupialia Family
 ---------------------------------
 Number of Legs:             4
 Tail?                     true
@@ -248,3 +248,437 @@ Favorite Food:            Grass
 Displaying 5 Animals from the Placentalia Family
 -------------------------------------------------
 -------------------------------------------------
+My name is Placentalia 1 from the Placentalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Meat
+
+
+
+My name is Placentalia 2 from the Placentalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Meat
+
+
+
+My name is Placentalia 3 from the Placentalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        30
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Meat
+
+
+
+My name is Placentalia 4 from the Placentalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        40
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Meat
+
+
+
+My name is Placentalia 5 from the Placentalia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        60
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Meat
+
+
+
+
+
+-------------------------------------------------
+Displaying 5 Animals from the Atlantogenata Family
+-------------------------------------------------
+-------------------------------------------------
+My name is Atlantogenata 1 from the Atlantogenata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            milk
+
+
+
+
+My name is Atlantogenata 2 from the Atlantogenata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            milk
+
+
+
+
+My name is Atlantogenata 3 from the Atlantogenata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            milk
+
+
+
+
+My name is Atlantogenata 4 from the Atlantogenata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            milk
+
+
+
+
+My name is Atlantogenata 5 from the Atlantogenata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            milk
+
+
+
+
+
+
+-------------------------------------------------
+Displaying 5 Animals from the Boreoeutheria Family
+-------------------------------------------------
+-------------------------------------------------
+My name is Boreoeutheria 1 from the Boreoeutheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+
+My name is Boreoeutheria 2 from the Boreoeutheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+
+My name is Boreoeutheria 3 from the Boreoeutheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+
+My name is Boreoeutheria 4 from the Boreoeutheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+
+My name is Boreoeutheria 5 from the Boreoeutheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+
+My name is Afrotheria 1 from the Afrotheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Fish
+
+
+
+
+
+My name is Xenarthra 1 from the Xenarthra Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Grass
+
+
+
+
+
+My name is Euarchontoglires 1 from the Euarchontoglires Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Meat
+
+
+
+
+
+My name is Laurasiatheria 1 from the Laurasiatheria Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Fruits
+
+
+
+
+
+My name is Euarchonta 1 from the Euarchonta Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            milk
+
+
+
+
+
+
+My name is Glires 1 from the Glires Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Fruits
+
+
+
+
+
+
+My name is Scrotifera 1 from the Scrotifera Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            milk
+
+
+
+
+
+
+My name is Eulipotyphia 1 from the Eulipotyphia Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Peanut
+
+
+
+
+
+
+My name is Chirpotera 1 from the Chirpotera Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Banana
+
+
+
+
+
+
+
+My name is Euungulata 1 from the Euungulata Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            milk
+
+
+
+
+
+
+
+My name is Ferae 1 from the Ferae Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               500
+Favorite Food:            Beans
+
+
+
+
+
+
+
+My name is Cetartiodactyla 1 from the Cetartiodactyla Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               1300
+Favorite Food:            Green Grass
+
+
+
+
+
+
+
+
+My name is Perissodactyla 1 from the Perissodactyla Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               800
+Favorite Food:            Green Grass
+
+
+
+
+
+
+
+
+My name is Pholidota1 1 from the Pholidota Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               100
+Favorite Food:            Steak
+
+
+
+
+
+
+
+
+My name is Carnivora 1 from the Carnivora Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        10
+Precision to understand:  60.0
+Birth Date:               2300
+Favorite Food:            Meat
+
+
+
+
+
+
+
+

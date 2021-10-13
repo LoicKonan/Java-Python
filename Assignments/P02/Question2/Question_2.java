@@ -594,5 +594,46 @@ public class Question_2
 
         PrintStream printing = new PrintStream(file);
         System.setOut(printing);
+
+        /**
+         * c. Create at least 5 animals from each family.
+         */
+        
+        // 5 Mammalia Animals.
+        Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass");
+        Mammalia Mammalia2 = new Mammalia(4, true, true, 20, 60.0, 1500, "Grass");
+        Mammalia Mammalia3 = new Mammalia(4, true, true, 28, 50.0, 1500, "Grass");
+        Mammalia Mammalia4 = new Mammalia(4, true, true, 85, 60.0, 1500, "Grass");
+        Mammalia Mammalia5 = new Mammalia(4, true, true, 58, 80.0, 1500, "Grass");
+        
+        
+        // 5 Mammalia Animals.
+        Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk");
+        Monotremata Monotremata2 = new Monotremata(4, true, true, 38, 50.0, 1300, "milk");
+        Monotremata Monotremata3 = new Monotremata(4, true, true, 58, 60.0, 1300, "milk");
+        Monotremata Monotremata4 = new Monotremata(4, true, true, 15, 80.0, 1300, "milk");
+        Monotremata Monotremata5 = new Monotremata(4, true, true, 10, 60.0, 1300, "milk");
+
+
+        Theria 
+        Marsupialia 
+        Placentalia 
+        Atlantogenata 
+        Boreoeutheria 
+        Afrotheria 
+        Xenarthra 
+        Euarchontoglires 
+        Laurasiatheria 
+        Euarchonta 
+        Glires 
+        Scrotifera 
+        Eulipotyphia 
+        Chirpotera 
+        Euungulata 
+        Ferae 
+        Cetartiodactyla 
+        Perissodactyla 
+        Pholidota 
+        Carnivora 
     }
 }

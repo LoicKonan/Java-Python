@@ -598,10 +598,10 @@ public class Question_2
 {
     public static void main(String[] args) throws FileNotFoundException 
     {
-        File output = new File("Outfile.txt");
+        File file = new File("Outfile.txt");
 
-        PrintStream outtputting = new PrintStream(output);
-        System.setOut(outtputting);// set the stream to be that of the new output file
+        PrintStream outtputting = new PrintStream(file);
+        System.setOut(outtputting);
 
 
         System.out.println("\nFirst We are going to create Five Mammalia Derived Animals \n"+

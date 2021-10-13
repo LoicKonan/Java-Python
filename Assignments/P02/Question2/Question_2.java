@@ -836,11 +836,11 @@ public class Question_2
         
         
         // 5 Ferae Animals.
-        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "Beans");
-        Ferae Ferae2 = new Ferae(4, true, true, 10, 60.0, 1300, "Beans");
-        Ferae Ferae3 = new Ferae(4, true, true, 10, 60.0, 1300, "Beans");
-        Ferae Ferae4 = new Ferae(4, true, true, 10, 60.0, 1300, "Beans");
-        Ferae Ferae5 = new Ferae(4, true, true, 10, 60.0, 1300, "Beans");
+        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
+        Ferae Ferae2 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
+        Ferae Ferae3 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
+        Ferae Ferae4 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
+        Ferae Ferae5 = new Ferae(4, true, true, 10, 60.0, 500, "Beans");
         
         
         // 5 Cetartiodactyla Animals.
@@ -852,27 +852,27 @@ public class Question_2
         
         
         // 5 Perissodactyla Animals.
-        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
-        Perissodactyla Perissodactyla2 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
-        Perissodactyla Perissodactyla3 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
-        Perissodactyla Perissodactyla4 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
-        Perissodactyla Perissodactyla5 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
+        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
+        Perissodactyla Perissodactyla2 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
+        Perissodactyla Perissodactyla3 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
+        Perissodactyla Perissodactyla4 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
+        Perissodactyla Perissodactyla5 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
         
         
         // 5 Pholidota Animals.
-        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "Steak");
-        Pholidota Pholidota2 = new Pholidota(4, true, true, 10, 60.0, 1300, "Steak");
-        Pholidota Pholidota3 = new Pholidota(4, true, true, 10, 60.0, 1300, "Steak");
-        Pholidota Pholidota4 = new Pholidota(4, true, true, 10, 60.0, 1300, "Steak");
-        Pholidota Pholidota5 = new Pholidota(4, true, true, 10, 60.0, 1300, "Steak");
+        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
+        Pholidota Pholidota2 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
+        Pholidota Pholidota3 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
+        Pholidota Pholidota4 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
+        Pholidota Pholidota5 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
 
         
         // 5 Carnivora Animals.
-        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "Meat");
-        Carnivora Carnivora2 = new Carnivora(4, true, true, 10, 60.0, 1300, "Meat");
-        Carnivora Carnivora3 = new Carnivora(4, true, true, 10, 60.0, 1300, "Meat");
-        Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 1300, "Meat");
-        Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 1300, "Meat");
+        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
+        Carnivora Carnivora2 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
+        Carnivora Carnivora3 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
+        Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
+        Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
 
 
         /**

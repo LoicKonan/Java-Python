@@ -38,11 +38,12 @@ class Mammalia
     int neurons;
     double precision;
     int birthDate;
+    int Running_Speed = 0;
+    String Hunting_Process;
     String fav_Foods;
 
-
     /**
-     * Our Constructor.
+     *  Constructor.
      * @param legs
      * @param brain
      * @param tails
@@ -50,8 +51,11 @@ class Mammalia
      * @param precision
      * @param birthDate
      * @param fav_Foods
+     * @param Running_Speed
+     * @param Hunting_Process
      */
-    Mammalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Mammalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process) 
     {
         this.legs = legs;
         this.brain = brain;
@@ -60,6 +64,8 @@ class Mammalia
         this.precision = precision;
         this.birthDate = birthDate;
         this.fav_Foods = fav_Foods;
+        this.Hunting_Process = Hunting_Process;
+        this.Running_Speed = Running_Speed;
     }
 
     /**
@@ -68,6 +74,16 @@ class Mammalia
      * attributes that we want.
      * 
      */
+
+    public void set_Hunting_Process(String Hunting_Process) 
+    {
+        this.Hunting_Process = Hunting_Process;
+    }
+
+    public String get_Hunting_Process() 
+    {
+        return Hunting_Process;
+    }
 
     public void set_fav_Foods(String fav_Foods) 
     {
@@ -457,17 +473,10 @@ class Glires extends Euarchontoglires
 
 class Scrotifera extends Laurasiatheria 
 {
-    
-    int Running_Speed = 0;
-    String Hunting_Process;
-
     Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
                 int Running_Speed, String Hunting_Process) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
-        this.Running_Speed = Running_Speed;
-        this.Hunting_Process = Hunting_Process;
-    }
 
     @Override
     public String Animal_Infos() 
@@ -488,15 +497,11 @@ class Scrotifera extends Laurasiatheria
 
 class Eulipotyphia extends Laurasiatheria 
 {
-    public int Running_Speed = 0;
-    public String Hunting_Process;
 
     Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
     int Running_Speed, String Hunting_Process) 
     {
         super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
-        this.Running_Speed = Running_Speed;
-        this.Hunting_Process = Hunting_Process;
     }
 
     @Override

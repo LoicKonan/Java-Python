@@ -596,7 +596,9 @@ public class Question_2
         System.setOut(printing);
 
         /**
-         * c. Create at least 5 animals from each family.
+         * Question c:
+         * 
+         * Create at least 5 animals from each family.
          */
         
         // 5 Mammalia Animals.
@@ -638,66 +640,152 @@ public class Question_2
         Placentalia Placentalia4 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
         Placentalia Placentalia5 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
 
-        
+
         // 5 Atlantogenata Animals.
         Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
+
         
         // 5 Boreoeutheria Animals.
         Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "milk");
+        Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "milk");
+        Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "milk");
+        Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "milk");
+        Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "milk");
+
         
         // 5 Afrotheria Animals.
         Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "milk");
+        Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "milk");
+        Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "milk");
+        Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "milk");
+        Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "milk");
         
+
         // 5 Xenarthra Animals.
         Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "milk");
+        Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "milk");
+        Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "milk");
+        Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "milk");
+        Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "milk");
+
         
         // 5 Theria Animals.
         Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "milk");
+
         
         // 5 Laurasiatheria Animals.
+        Laurasiatheria Laurasiatheria1 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "milk");
+        Laurasiatheria Laurasiatheria1 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "milk");
+        Laurasiatheria Laurasiatheria1 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "milk");
+        Laurasiatheria Laurasiatheria1 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "milk");
         Laurasiatheria Laurasiatheria1 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Euarchonta Animals.
         Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
+        Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Glires Animals.
         Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "milk");
+        Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "milk");
+        Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "milk");
+        Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "milk");
+        Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "milk");
+
         
         // 5 Scrotifera Animals.
+        Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
+        Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
+        Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
+        Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
         Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Eulipotyphia Animals.
         Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "milk");
-        
+        Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "milk");
+        Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "milk");
+        Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "milk");
+        Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "milk");        
         
         
         // 5 Chirpotera Animals.
+        Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "milk");
+        Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "milk");
+        Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "milk");
+        Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "milk");
         Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Euungulata Animals.
         Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
+        Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Ferae Animals.
+        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
+        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
+        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
+        Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
         Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Cetartiodactyla Animals.
         Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Perissodactyla Animals.
+        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
+        Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
         Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 1300, "milk");
         
         
         // 5 Pholidota Animals.
         Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+        Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 1300, "milk");
+
         
         // 5 Carnivora Animals.
         Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+        Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 1300, "milk");
+
+
+        /**
+         * d. Now you can do some creativity by changing the neurons, precision to understand, 
+         * food habits, but you can’t change the legs, brains, birth date. 
+         * Change these features for at least 20 animals and show how it was before and how it is now. 
+         * From level 6 to 8(Considering Mammlia as level-1 and carnivora, cetartiodactyla are on level-8), 
+         * animals can run and hunt for their food. Change at least 10 animals’ running speed, 
+         * hunting process and hunting food type for those who are 6-8 level animals. 
+         * Try changing at least 10 animals and show (reading from files; see next bullet) 
+         * what they were and what they are now.
+         */
     }
 }

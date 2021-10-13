@@ -973,6 +973,8 @@ public class Question_2
         
         // 5 Cetartiodactyla Animals.
         Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
+        System.out.println("My name is Cetartiodactyla 1 from the Cetartiodactyla Family\n"+"---------------------------------\n"+Cetartiodactyla1.Animal_Infos());
+
         Cetartiodactyla Cetartiodactyla2 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
         Cetartiodactyla Cetartiodactyla3 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
         Cetartiodactyla Cetartiodactyla4 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass");
@@ -981,6 +983,8 @@ public class Question_2
         
         // 5 Perissodactyla Animals.
         Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
+        System.out.println("My name is Perissodactyla 1 from the Perissodactyla Family\n"+"---------------------------------\n"+Perissodactyla1.Animal_Infos());
+
         Perissodactyla Perissodactyla2 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
         Perissodactyla Perissodactyla3 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
         Perissodactyla Perissodactyla4 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass");
@@ -989,6 +993,8 @@ public class Question_2
         
         // 5 Pholidota Animals.
         Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
+        System.out.println("My name is Pholidota1 1 from the Pholidota Family\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
+
         Pholidota Pholidota2 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
         Pholidota Pholidota3 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
         Pholidota Pholidota4 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak");
@@ -997,6 +1003,8 @@ public class Question_2
         
         // 5 Carnivora Animals.
         Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
+        System.out.println("My name is Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
+
         Carnivora Carnivora2 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
         Carnivora Carnivora3 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");
         Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat");

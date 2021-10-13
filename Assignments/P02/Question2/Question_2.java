@@ -197,9 +197,10 @@ class Mammalia
 
 class Monotremata extends Mammalia 
 {
-    Monotremata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Monotremata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -221,9 +222,10 @@ class Monotremata extends Mammalia
 
 class Theria extends Mammalia 
 {
-    Theria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Theria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -245,9 +247,10 @@ class Theria extends Mammalia
 
 class Marsupialia extends Theria 
 {
-    Marsupialia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Marsupialia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process)  
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -269,9 +272,10 @@ class Marsupialia extends Theria
 
 class Placentalia extends Theria 
 {
-    Placentalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Placentalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process)  
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -293,9 +297,10 @@ class Placentalia extends Theria
 
 class Atlantogenata extends Placentalia 
 {
-    Atlantogenata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Atlantogenata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -317,9 +322,10 @@ class Atlantogenata extends Placentalia
 
 class Boreoeutheria extends Placentalia 
 {
-    Boreoeutheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Boreoeutheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process)   
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -341,9 +347,10 @@ class Boreoeutheria extends Placentalia
 
 class Afrotheria extends Atlantogenata 
 {
-    Afrotheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Afrotheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -365,9 +372,10 @@ class Afrotheria extends Atlantogenata
 
 class Xenarthra extends Atlantogenata 
 {
-    Xenarthra(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 
+    Xenarthra(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+    String Hunting_Process)  
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -389,10 +397,10 @@ class Xenarthra extends Atlantogenata
 
 class Euarchontoglires extends Boreoeutheria 
 {
-    Euarchontoglires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_Foods) 
+    Euarchontoglires(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+                    String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override
@@ -414,10 +422,10 @@ class Euarchontoglires extends Boreoeutheria
 
 class Laurasiatheria extends Boreoeutheria 
 {
-    Laurasiatheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate,
-            String fav_Foods) 
+    Laurasiatheria(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
+                    String Hunting_Process)
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override

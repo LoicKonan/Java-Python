@@ -597,7 +597,6 @@ class Euungulata extends Scrotifera
 
 class Ferae extends Scrotifera 
 {
-
     Ferae(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
             int Running_Speed, String Hunting_Process)   
     {

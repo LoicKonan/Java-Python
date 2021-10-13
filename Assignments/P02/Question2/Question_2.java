@@ -75,6 +75,16 @@ class Mammalia
      * 
      */
 
+    public void set_Running_Speed(int Running_Speed) 
+    {
+        this.Running_Speed = Running_Speed;
+    }
+
+    public int get_Running_Speed() 
+    {
+        return Running_Speed;
+    }
+
     public void set_Hunting_Process(String Hunting_Process) 
     {
         this.Hunting_Process = Hunting_Process;

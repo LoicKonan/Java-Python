@@ -2,7 +2,6 @@
  Displaying 5 Animals from the Mammalia Family
 -------------------------------------------------
 
--------------------------------------------------
 My name is Mammalia 1 from the Mammalia Family
 -------------------------------------------------
 Number of Legs:             4
@@ -69,7 +68,6 @@ Hunting Process:          null
 Displaying 5 Animals from the Monotremata Family
 -------------------------------------------------
 
--------------------------------------------------
 My name is Monotremata 1 from the Monotremata Family
 -------------------------------------------
 Number of Legs:             4
@@ -140,7 +138,6 @@ Hunting Process:          null
 -------------------------------------------------
  Displaying 5 Animals from the Theria Family
 -------------------------------------------------
--------------------------------------------------
 My name is Theria 1 from the Theria Family
 -------------------------------------------------
 Number of Legs:             4
@@ -210,7 +207,6 @@ Hunting Process:          null
 
 -------------------------------------------------
  Displaying 5 Animals from the Marsupialia Family
--------------------------------------------------
 -------------------------------------------------
 My name is Marsupialia 1 from the Marsupialia Family
 ---------------------------------
@@ -287,7 +283,6 @@ Hunting Process:          null
 -------------------------------------------------
 Displaying 5 Animals from the Placentalia Family
 -------------------------------------------------
--------------------------------------------------
 My name is Placentalia 1 from the Placentalia Family
 ---------------------------------
 Number of Legs:             4
@@ -362,7 +357,6 @@ Hunting Process:          null
 
 -------------------------------------------------
 Displaying 5 Animals from the Atlantogenata Family
--------------------------------------------------
 -------------------------------------------------
 My name is Atlantogenata 1 from the Atlantogenata Family
 ---------------------------------
@@ -443,7 +437,6 @@ Hunting Process:          null
 
 -------------------------------------------------
 Displaying 5 Animals from the Boreoeutheria Family
--------------------------------------------------
 -------------------------------------------------
 My name is Boreoeutheria 1 from the Boreoeutheria Family
 ---------------------------------
@@ -774,6 +767,25 @@ Birth Date:               2300
 Favorite Food:            Meat
 Running Speed:            0
 Hunting Process:          null
+
+
+
+
+
+
+
+
+I now the new version of Carnivora 1 from the Carnivora Family
+---------------------------------
+Number of Legs:             4
+Tail?                     true
+Brain?                    true
+Number of Neurons:        20
+Precision to understand:  50.0
+Birth Date:               2300
+Favorite Food:            Birds
+Running Speed:            45
+Hunting Process:          Aggressive
 
 
 

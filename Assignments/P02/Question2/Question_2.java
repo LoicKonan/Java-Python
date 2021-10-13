@@ -26,6 +26,11 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
+<<<<<<< HEAD
+=======
+import java.nio.file.Files;
+import java.nio.file.Paths;
+>>>>>>> b0c59d0c7620dc8ca7ee5e4c238a8d4a61910b66
 
 class Mammalia 
 {

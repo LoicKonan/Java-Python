@@ -904,6 +904,12 @@ public class Question_2
         Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Boreoeutheria 1 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria1.Animal_Infos());
 
+        Boreoeutheria1.set_neurons(20);
+        Boreoeutheria1.set_precision(50);
+        Boreoeutheria1.set_fav_Foods("Birds");
+
+        System.out.println("I now the new version of Boreoeutheria 1 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria1.Animal_Infos());
+
         Boreoeutheria Boreoeutheria2 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Boreoeutheria 2 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria2.Animal_Infos());
 

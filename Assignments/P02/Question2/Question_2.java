@@ -607,7 +607,7 @@ public class Question_2
         Mammalia Mammalia5 = new Mammalia(4, true, true, 58, 80.0, 1500, "Grass");
         
         
-        // 5 Mammalia Animals.
+        // 5 Monotremata Animals.
         Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk");
         Monotremata Monotremata2 = new Monotremata(4, true, true, 38, 50.0, 1300, "milk");
         Monotremata Monotremata3 = new Monotremata(4, true, true, 58, 60.0, 1300, "milk");
@@ -615,25 +615,76 @@ public class Question_2
         Monotremata Monotremata5 = new Monotremata(4, true, true, 10, 60.0, 1300, "milk");
 
 
-        Theria 
+        // 5 Theria Animals.
+        Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1300, "milk");
+
+
+        // 5 Marsupialia Animals.
         Marsupialia 
+
+        
+        // 5 Placentalia Animals.
         Placentalia 
+
+        // 5 Atlantogenata Animals.
         Atlantogenata 
+        
+        // 5 Boreoeutheria Animals.
         Boreoeutheria 
+        
+        // 5 Afrotheria Animals.
         Afrotheria 
+        
+        // 5 Xenarthra Animals.
         Xenarthra 
+        
+        // 5 Theria Animals.
         Euarchontoglires 
+        
+        // 5 Laurasiatheria Animals.
         Laurasiatheria 
+        
+        
+        // 5 Euarchonta Animals.
         Euarchonta 
+        
+        
+        // 5 Glires Animals.
         Glires 
+        
+        // 5 Scrotifera Animals.
         Scrotifera 
+        
+        
+        // 5 Eulipotyphia Animals.
         Eulipotyphia 
+        
+        
+        
+        // 5 Chirpotera Animals.
         Chirpotera 
+        
+        
+        // 5 Euungulata Animals.
         Euungulata 
+        
+        
+        // 5 Ferae Animals.
         Ferae 
+        
+        
+        // 5 Cetartiodactyla Animals.
         Cetartiodactyla 
+        
+        
+        // 5 Perissodactyla Animals.
         Perissodactyla 
+        
+        
+        // 5 Pholidota Animals.
         Pholidota 
+        
+        // 5 Carnivora Animals.
         Carnivora 
     }
 }

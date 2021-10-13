@@ -616,15 +616,27 @@ public class Question_2
 
 
         // 5 Theria Animals.
-        Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1300, "milk");
+        Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        Theria Theria2 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        Theria Theria3 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        Theria Theria4 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        Theria Theria5 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
 
 
         // 5 Marsupialia Animals.
-        Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "milk");
+        Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia2 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia3 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia4 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        Marsupialia Marsupialia5 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
 
         
         // 5 Placentalia Animals.
-        Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "milk");
+        Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
+        Placentalia Placentalia2 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
+        Placentalia Placentalia3 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
+        Placentalia Placentalia4 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
+        Placentalia Placentalia5 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");
 
         // 5 Atlantogenata Animals.
         Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");

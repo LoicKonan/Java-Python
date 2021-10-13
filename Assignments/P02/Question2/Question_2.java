@@ -51,6 +51,28 @@ class Mammalia
     }
 
 
+    public void set_precision(double precision) 
+    {
+        this.precision = precision;
+    }
+
+    public double get_precision() 
+    {
+        return precision;
+    }
+
+
+    public void set_neurons(int neurons) 
+    {
+        this.neurons = neurons;
+    }
+
+    public int get_neurons() 
+    {
+        return neurons;
+    }
+
+
     public void set_brain(boolean brain) 
     {
         this.brain = brain;

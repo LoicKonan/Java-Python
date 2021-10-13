@@ -39,7 +39,7 @@ class Mammalia
     double precision;
     int birthDate;
     int Running_Speed = 0;
-    String Hunting_Process = "Smooth";
+    String Hunting_Process = "Lazy";
     String fav_Foods;
 
     /**
@@ -186,9 +186,10 @@ class Mammalia
                 + "Number of Neurons:        " + neurons + "\n" 
                 + "Precision to understand:  " + precision + "\n"
                 + "Birth Date:               " + birthDate + "\n"
-                + "Favorite Food:            " + fav_Foods + "\n"
-                + "Running Speed:            " + Running_Speed + "\n"
-                + "Hunting Process:          " + Hunting_Process + "\n");
+                + "Favorite Food:            " + fav_Foods + "\n");
+
+                Running_Speed
+                Hunting_Process
     }
 }
 
@@ -485,10 +486,13 @@ class Glires extends Euarchontoglires
 
 class Scrotifera extends Laurasiatheria 
 {
+    int Running_Speed;
+    String Hunting_Process;
+
     Scrotifera(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
                 int Running_Speed, String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
 
     @Override
     public String Animal_Infos() 
@@ -509,11 +513,14 @@ class Scrotifera extends Laurasiatheria
 
 class Eulipotyphia extends Laurasiatheria 
 {
+    
+    public int Running_Speed;
+    public String Hunting_Process;
 
     Eulipotyphia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, 
     int Running_Speed, String Hunting_Process) 
     {
-        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods);
+        super(legs, brain, tails, neurons, precision, birthDate, fav_Foods, Running_Speed, Hunting_Process);
     }
 
     @Override

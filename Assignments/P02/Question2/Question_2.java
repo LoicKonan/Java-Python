@@ -704,7 +704,7 @@ public class Question_2
          */
         
         System.out.println("-------------------------------------------------");
-        System.out.println("  Displaying 5 Animals from the Mammalia Family");
+        System.out.println(" Displaying 5 Animals from the Mammalia Family");
         System.out.println("-------------------------------------------------\n");
 
         // 5 Mammalia Animals.
@@ -725,7 +725,9 @@ public class Question_2
         System.out.println("----------------------------------------------\n");
 
 
-        System.out.println("\n\nDisplaying 5 Animals from the Monotremata Family\n");
+        System.out.println("-------------------------------------------------");
+        System.out.println("\n\nDisplaying 5 Animals from the Monotremata Family");
+        System.out.println("-------------------------------------------------\n");
 
         // 5 Monotremata Animals.
         Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk");
@@ -744,7 +746,9 @@ public class Question_2
         System.out.println("I am Monotremata 5 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata5.Animal_Infos());
 
 
-        System.out.println("\n\nDisplaying 5 Animals from the Theria Family\n");
+        System.out.println("\n\n-------------------------------------------------");
+        System.out.println(" Displaying 5 Animals from the Theria Family");
+        System.out.println("-------------------------------------------------");
 
         // 5 Theria Animals.
         Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
@@ -763,7 +767,9 @@ public class Question_2
         System.out.println("I am Theria 5 from the Theria Family\n"+"---------------------------------\n"+Theria5.Animal_Infos());
 
 
-        System.out.println("\n\nDisplaying 5 Animals from the Marsupialia Family\n");
+        System.out.println("\n\n-------------------------------------------------");
+        System.out.println(" Displaying 5 Animals from the Marsupialia Family");
+        System.out.println("-------------------------------------------------");
 
         // 5 Marsupialia Animals.
         Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
@@ -782,8 +788,9 @@ public class Question_2
         System.out.println("I am Marsupialia 5 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia5.Animal_Infos());
 
 
-        
-        System.out.println("\n\nDisplaying 5 Animals from the Placentalia Family\n");
+        System.out.println("\n\n-------------------------------------------------");
+        System.out.println("Displaying 5 Animals from the Placentalia Family\n");
+        System.out.println("-------------------------------------------------");
 
         // 5 Placentalia Animals.
         Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat");

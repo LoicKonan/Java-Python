@@ -688,7 +688,11 @@ public class Question_2
 {
     public static void main(String[] args) throws FileNotFoundException 
     {
-        File file = new File("Outfile.txt");
+        /**
+         * Printing to a file 
+         * For all the Mammalia family information.
+         */
+        File file = new File("Mammalia.txt");
 
         PrintStream printing = new PrintStream(file);
         System.setOut(printing);
@@ -701,34 +705,73 @@ public class Question_2
         
         // 5 Mammalia Animals.
         Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass");
+        System.out.println("I am Mammalia 1 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia1.Animal_Infos());
+
         Mammalia Mammalia2 = new Mammalia(4, true, true, 20, 60.0, 1500, "Grass");
+        System.out.println("I am Mammalia 2 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia2.Animal_Infos());
+
         Mammalia Mammalia3 = new Mammalia(4, true, true, 28, 50.0, 1500, "Grass");
+        System.out.println("I am Mammalia 3 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia3.Animal_Infos());
+
         Mammalia Mammalia4 = new Mammalia(4, true, true, 85, 60.0, 1500, "Grass");
+        System.out.println("I am Mammalia 4 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia4.Animal_Infos());
+
         Mammalia Mammalia5 = new Mammalia(4, true, true, 58, 80.0, 1500, "Grass");
+        System.out.println("I am Mammalia 5 from the Mammalia Family\n"+"---------------------------------\n"+Mammalia5.Animal_Infos());
         
-        
+
         // 5 Monotremata Animals.
         Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk");
+        System.out.println("I am Monotremata 1 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata1.Animal_Infos());
+
         Monotremata Monotremata2 = new Monotremata(4, true, true, 38, 50.0, 1300, "milk");
+        System.out.println("I am Monotremata 2 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata2.Animal_Infos());
+
         Monotremata Monotremata3 = new Monotremata(4, true, true, 58, 60.0, 1300, "milk");
+        System.out.println("I am Monotremata 3 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata3.Animal_Infos());
+
         Monotremata Monotremata4 = new Monotremata(4, true, true, 15, 80.0, 1300, "milk");
+        System.out.println("I am Monotremata 4 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata4.Animal_Infos());
+
         Monotremata Monotremata5 = new Monotremata(4, true, true, 10, 60.0, 1300, "milk");
+        System.out.println("I am Monotremata 5 from the Monotremata Family\n"+"---------------------------------\n"+Monotremata5.Animal_Infos());
+
 
 
         // 5 Theria Animals.
         Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        System.out.println("I am Theria 1 from the Theria Family\n"+"---------------------------------\n"+Theria1.Animal_Infos());
+
         Theria Theria2 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        System.out.println("I am Theria 2 from the Theria Family\n"+"---------------------------------\n"+Theria2.Animal_Infos());
+
         Theria Theria3 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        System.out.println("I am Theria 3 from the Theria Family\n"+"---------------------------------\n"+Theria3.Animal_Infos());
+
         Theria Theria4 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        System.out.println("I am Theria 4 from the Theria Family\n"+"---------------------------------\n"+Theria4.Animal_Infos());
+
         Theria Theria5 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass");
+        System.out.println("I am Theria 5 from the Theria Family\n"+"---------------------------------\n"+Theria5.Animal_Infos());
+
 
 
         // 5 Marsupialia Animals.
         Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        System.out.println("I am Marsupialia 1 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia1.Animal_Infos());
+
         Marsupialia Marsupialia2 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        System.out.println("I am Marsupialia 2 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia2.Animal_Infos());
+
         Marsupialia Marsupialia3 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        System.out.println("I am Marsupialia 3 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia3.Animal_Infos());
+
         Marsupialia Marsupialia4 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        System.out.println("I am Marsupialia 4 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia4.Animal_Infos());
+
         Marsupialia Marsupialia5 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass");
+        System.out.println("I am Marsupialia 5 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia5.Animal_Infos());
+
 
         
         // 5 Placentalia Animals.
@@ -740,11 +783,11 @@ public class Question_2
 
 
         // 5 Atlantogenata Animals.
-        Atlantogenata Atlantogenata1 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
-        Atlantogenata Atlantogenata2 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
-        Atlantogenata Atlantogenata3 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
-        Atlantogenata Atlantogenata4 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
-        Atlantogenata Atlantogenata5 = new Atlantogenata1(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata1 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata2 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata3 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata4 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
+        Atlantogenata Atlantogenata5 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk");
 
         
         // 5 Boreoeutheria Animals.

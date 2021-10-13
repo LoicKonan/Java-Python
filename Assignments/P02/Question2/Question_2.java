@@ -795,7 +795,7 @@ public class Question_2
         Theria1.set_precision(50);
         Theria1.set_fav_Foods("Birds");
 
-        System.out.println("I now the new version of Theria 1 from the Carnivora Family\n"+"---------------------------------\n"+Theria1.Animal_Infos());
+        System.out.println("I now the new version of Theria 1 from the Theria Family\n"+"---------------------------------\n"+Theria1.Animal_Infos());
 
         
         Theria Theria2 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
@@ -824,7 +824,7 @@ public class Question_2
         Marsupialia1.set_precision(50);
         Marsupialia1.set_fav_Foods("Birds");
 
-        System.out.println("I now the new version of Marsupialia 1 from the Carnivora Family\n"+"---------------------------------\n"+Marsupialia1.Animal_Infos());
+        System.out.println("I now the new version of Marsupialia 1 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia1.Animal_Infos());
 
         Marsupialia Marsupialia2 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 2 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia2.Animal_Infos());
@@ -851,7 +851,7 @@ public class Question_2
         Placentalia1.set_precision(50);
         Placentalia1.set_fav_Foods("Birds");
 
-        System.out.println("I now the new version of Placentalia 1 from the Carnivora Family\n"+"---------------------------------\n"+Placentalia1.Animal_Infos());
+        System.out.println("I now the new version of Placentalia 1 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia1.Animal_Infos());
 
         Placentalia Placentalia2 = new Placentalia(4, true, true, 20, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 2 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia2.Animal_Infos());
@@ -931,7 +931,7 @@ public class Question_2
         Afrotheria1.set_precision(50);
         Afrotheria1.set_fav_Foods("Birds");
 
-        System.out.println("I now the new version of Afrotheria 1 from the Carnivora Family\n"+"---------------------------------\n"+Afrotheria.Animal_Infos());
+        System.out.println("I now the new version of Afrotheria 1 from the Afrotheria Family\n"+"---------------------------------\n"+Afrotheria1.Animal_Infos());
 
         Afrotheria Afrotheria2 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
         Afrotheria Afrotheria3 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
@@ -947,7 +947,7 @@ public class Question_2
         Xenarthra1.set_precision(50);
         Xenarthra1.set_fav_Foods("Birds");
 
-        System.out.println("I now the new version of Xenarthra 1 from the Carnivora Family\n"+"---------------------------------\n"+Xenarthra1.Animal_Infos());
+        System.out.println("I now the new version of Xenarthra 1 from the Xenarthra Family\n"+"---------------------------------\n"+Xenarthra1.Animal_Infos());
 
         Xenarthra Xenarthra2 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         Xenarthra Xenarthra3 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
@@ -963,7 +963,7 @@ public class Question_2
         Euarchontoglires1.set_precision(50);
         Euarchontoglires1.set_fav_Foods("Birds");
 
-        System.out.println("I now the new version of Euarchontoglires 1 from the Carnivora Family\n"+"---------------------------------\n"+Euarchontoglires1.Animal_Infos());
+        System.out.println("I now the new version of Euarchontoglires 1 from the Euarchontoglires Family\n"+"---------------------------------\n"+Euarchontoglires1.Animal_Infos());
 
         Euarchontoglires Euarchontoglires2 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
         Euarchontoglires Euarchontoglires3 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
@@ -980,7 +980,7 @@ public class Question_2
         Laurasiatheria1.set_precision(50);
         Laurasiatheria1.set_fav_Foods("Birds");
 
-        System.out.println("I now the new version of Laurasiatheria 1 from the Carnivora Family\n"+"---------------------------------\n"+Laurasiatheria1.Animal_Infos());
+        System.out.println("I now the new version of Laurasiatheria 1 from the Laurasiatheria Family\n"+"---------------------------------\n"+Laurasiatheria1.Animal_Infos());
 
         Laurasiatheria Laurasiatheria2 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
         Laurasiatheria Laurasiatheria3 = new Laurasiatheria(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
@@ -996,7 +996,7 @@ public class Question_2
         Euarchonta1.set_precision(50);
         Euarchonta1.set_fav_Foods("Birds");
 
-        System.out.println("I now the new version of Euarchonta 1 from the Carnivora Family\n"+"---------------------------------\n"+Euarchonta1.Animal_Infos());
+        System.out.println("I now the new version of Euarchonta 1 from the Euarchonta Family\n"+"---------------------------------\n"+Euarchonta1.Animal_Infos());
 
         Euarchonta Euarchonta2 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         Euarchonta Euarchonta3 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk", 0, null);
@@ -1014,7 +1014,7 @@ public class Question_2
         Glires1.set_Running_Speed(45);
         Glires1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Glires1.Animal_Infos());
+        System.out.println("I now the new version of Glires 1 from the Glires Family\n"+"---------------------------------\n"+Glires1.Animal_Infos());
 
         Glires Glires2 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
         Glires Glires3 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
@@ -1033,7 +1033,7 @@ public class Question_2
         Scrotifera1.set_Running_Speed(45);
         Scrotifera1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Scrotifera1.Animal_Infos());
+        System.out.println("I now the new version of Scrotifera 1 from the Scrotifera Family\n"+"---------------------------------\n"+Scrotifera1.Animal_Infos());
 
         Scrotifera Scrotifera2 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         Scrotifera Scrotifera3 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
@@ -1052,7 +1052,7 @@ public class Question_2
         Eulipotyphia1.set_Running_Speed(45);
         Eulipotyphia1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Eulipotyphia1.Animal_Infos());
+        System.out.println("I now the new version of Eulipotyphia 1 from the Eulipotyphia Family\n"+"---------------------------------\n"+Eulipotyphia1.Animal_Infos());
 
         Eulipotyphia Eulipotyphia2 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);
         Eulipotyphia Eulipotyphia3 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);
@@ -1071,7 +1071,7 @@ public class Question_2
         Chirpotera1.set_Running_Speed(45);
         Chirpotera1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Chirpotera1.Animal_Infos());
+        System.out.println("I now the new version of Chirpotera 1 from the Chirpotera Family\n"+"---------------------------------\n"+Chirpotera1.Animal_Infos());
 
         Chirpotera Chirpotera2 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
         Chirpotera Chirpotera3 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
@@ -1090,7 +1090,7 @@ public class Question_2
         Euungulata1.set_Running_Speed(45);
         Euungulata1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Euungulata1.Animal_Infos());
+        System.out.println("I now the new version of Euungulata 1 from the Euungulata Family\n"+"---------------------------------\n"+Euungulata1.Animal_Infos());
 
         Euungulata Euungulata2 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         Euungulata Euungulata3 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
@@ -1109,7 +1109,7 @@ public class Question_2
         Ferae1.set_Running_Speed(45);
         Ferae1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Ferae1.Animal_Infos());
+        System.out.println("I now the new version of Ferae 1 from the Ferae Family\n"+"---------------------------------\n"+Ferae1.Animal_Infos());
 
         Ferae Ferae2 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
         Ferae Ferae3 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
@@ -1128,7 +1128,7 @@ public class Question_2
         Cetartiodactyla1.set_Running_Speed(45);
         Cetartiodactyla1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Cetartiodactyla1.Animal_Infos());
+        System.out.println("I now the new version of Cetartiodactyla 1 from the Cetartiodactyla Family\n"+"---------------------------------\n"+Cetartiodactyla1.Animal_Infos());
 
         Cetartiodactyla Cetartiodactyla2 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
         Cetartiodactyla Cetartiodactyla3 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
@@ -1146,7 +1146,7 @@ public class Question_2
         Perissodactyla1.set_Running_Speed(45);
         Perissodactyla1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Perissodactyla1.Animal_Infos());
+        System.out.println("I now the new version of Perissodactyla 1 from the Perissodactyla Family\n"+"---------------------------------\n"+Perissodactyla1.Animal_Infos());
 
         Perissodactyla Perissodactyla2 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
         Perissodactyla Perissodactyla3 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
@@ -1164,7 +1164,7 @@ public class Question_2
         Pholidota1.set_Running_Speed(45);
         Pholidota1.set_Hunting_Process("Aggressive");
 
-        System.out.println("I now the new version of Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
+        System.out.println("I now the new version of Pholidota 1 from the Pholidota Family\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
 
         Pholidota Pholidota2 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
         Pholidota Pholidota3 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);

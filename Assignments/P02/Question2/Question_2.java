@@ -99,7 +99,6 @@ class Mammalia
         return precision;
     }
 
-
     public void set_neurons(int neurons) 
     {
         this.neurons = neurons;
@@ -109,7 +108,6 @@ class Mammalia
     {
         return neurons;
     }
-
 
     public void set_brain(boolean brain) 
     {
@@ -121,7 +119,6 @@ class Mammalia
         return brain;
     }
 
-
     public void set_tails(boolean tails) 
     {
         this.tails = tails;
@@ -131,7 +128,6 @@ class Mammalia
     {
         return tails;
     }
-
 
     public void set_legs(int legs) 
     {
@@ -148,11 +144,13 @@ class Mammalia
      *  Member functions Below.
      */
     public void Eat() {}
-
     public void Walk() {}
-
     public void Sleep() {}
 
+    /**
+     *  To Display the information about that class.
+     * @return String
+     */
     public String Animal_Infos() 
     {
 
@@ -166,9 +164,8 @@ class Mammalia
     }
 }
 
-/**
- * 
- */
+
+
 class Monotremata extends Mammalia 
 {
     Monotremata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods) 

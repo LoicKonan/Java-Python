@@ -4,7 +4,7 @@
 
 -------------------------------------------------
 My name is Mammalia 1 from the Mammalia Family
-----------------------------------------
+-------------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -12,9 +12,11 @@ Number of Neurons:        18
 Precision to understand:  50.0
 Birth Date:               1500
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 My name is Mammalia 2 from the Mammalia Family
-----------------------------------------
+-------------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -22,9 +24,11 @@ Number of Neurons:        20
 Precision to understand:  60.0
 Birth Date:               1500
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 My name is Mammalia 3 from the Mammalia Family
-----------------------------------------
+-------------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -32,9 +36,11 @@ Number of Neurons:        28
 Precision to understand:  50.0
 Birth Date:               1500
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 My name is Mammalia 4 from the Mammalia Family
-----------------------------------------
+-------------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -42,9 +48,11 @@ Number of Neurons:        85
 Precision to understand:  60.0
 Birth Date:               1500
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 My name is Mammalia 5 from the Mammalia Family
-----------------------------------------
+-------------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -52,6 +60,8 @@ Number of Neurons:        58
 Precision to understand:  80.0
 Birth Date:               1500
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -61,7 +71,7 @@ Displaying 5 Animals from the Monotremata Family
 
 -------------------------------------------------
 My name is Monotremata 1 from the Monotremata Family
----------------------------------
+-------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -69,10 +79,12 @@ Number of Neurons:        28
 Precision to understand:  10.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 My name is Monotremata 2 from the Monotremata Family
----------------------------------
+-------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -80,10 +92,12 @@ Number of Neurons:        38
 Precision to understand:  50.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 My name is Monotremata 3 from the Monotremata Family
----------------------------------
+-------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -91,10 +105,12 @@ Number of Neurons:        58
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 My name is Monotremata 4 from the Monotremata Family
----------------------------------
+-------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -102,10 +118,12 @@ Number of Neurons:        15
 Precision to understand:  80.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 My name is Monotremata 5 from the Monotremata Family
----------------------------------
+-------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -113,6 +131,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -122,7 +142,7 @@ Favorite Food:            milk
 -------------------------------------------------
 -------------------------------------------------
 My name is Theria 1 from the Theria Family
----------------------------------
+-------------------------------------------------
 Number of Legs:             4
 Tail?                     true
 Brain?                    true
@@ -130,6 +150,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1250
 Favorite Food:            Green Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 My name is Theria 2 from the Theria Family
@@ -141,6 +163,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1250
 Favorite Food:            Green Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 My name is Theria 3 from the Theria Family
@@ -152,6 +176,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1250
 Favorite Food:            Green Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 My name is Theria 4 from the Theria Family
@@ -163,6 +189,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1250
 Favorite Food:            Green Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 My name is Theria 5 from the Theria Family
@@ -174,6 +202,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1250
 Favorite Food:            Green Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -191,6 +221,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -203,6 +235,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -215,6 +249,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -227,6 +263,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -239,6 +277,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -257,6 +297,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Meat
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -269,6 +311,8 @@ Number of Neurons:        20
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Meat
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -281,6 +325,8 @@ Number of Neurons:        30
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Meat
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -293,6 +339,8 @@ Number of Neurons:        40
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Meat
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -305,6 +353,8 @@ Number of Neurons:        60
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Meat
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -323,6 +373,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -336,6 +388,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -349,6 +403,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -362,6 +418,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -375,6 +433,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -394,6 +454,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -407,6 +469,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -420,6 +484,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -433,6 +499,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -446,6 +514,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -459,6 +529,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Fish
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -473,6 +545,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -487,6 +561,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Meat
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -501,6 +577,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Fruits
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -515,6 +593,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -530,6 +610,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Fruits
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -545,6 +627,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -560,6 +644,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Peanut
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -575,6 +661,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Banana
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -591,6 +679,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            milk
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -607,6 +697,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               500
 Favorite Food:            Beans
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -623,6 +715,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               1300
 Favorite Food:            Green Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -640,6 +734,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               800
 Favorite Food:            Green Grass
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -657,6 +753,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               100
 Favorite Food:            Steak
+Running Speed:            0
+Hunting Process:          null
 
 
 
@@ -674,6 +772,8 @@ Number of Neurons:        10
 Precision to understand:  60.0
 Birth Date:               2300
 Favorite Food:            Meat
+Running Speed:            0
+Hunting Process:          null
 
 
 

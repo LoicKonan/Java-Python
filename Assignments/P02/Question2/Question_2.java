@@ -745,7 +745,6 @@ public class Question_2
         System.out.println("-------------------------------------------------");
         System.out.println(" Displaying 5 Animals from the Mammalia Family");
         System.out.println("-------------------------------------------------\n");
-        System.out.println("-------------------------------------------------");
 
         // 5 Mammalia Animals.
         Mammalia Mammalia1 = new Mammalia(4, true, true, 18, 50.0, 1500, "Grass", 0, null);
@@ -767,7 +766,6 @@ public class Question_2
         System.out.println("\n\n-------------------------------------------------");
         System.out.println("Displaying 5 Animals from the Monotremata Family");
         System.out.println("-------------------------------------------------\n");
-        System.out.println("-------------------------------------------------");
 
         // 5 Monotremata Animals.
         Monotremata Monotremata1 = new Monotremata(4, true, true, 28, 10.0, 1300, "milk", 0, null);
@@ -789,7 +787,6 @@ public class Question_2
         System.out.println("\n\n-------------------------------------------------");
         System.out.println(" Displaying 5 Animals from the Theria Family");
         System.out.println("-------------------------------------------------");
-        System.out.println("-------------------------------------------------");
 
         // 5 Theria Animals.
         Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
@@ -810,7 +807,6 @@ public class Question_2
 
         System.out.println("\n\n-------------------------------------------------");
         System.out.println(" Displaying 5 Animals from the Marsupialia Family");
-        System.out.println("-------------------------------------------------");
         System.out.println("-------------------------------------------------");
 
 
@@ -834,7 +830,6 @@ public class Question_2
         System.out.println("\n\n-------------------------------------------------");
         System.out.println("Displaying 5 Animals from the Placentalia Family");
         System.out.println("-------------------------------------------------");
-        System.out.println("-------------------------------------------------");
 
         // 5 Placentalia Animals.
         Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
@@ -857,7 +852,6 @@ public class Question_2
         System.out.println("\n\n-------------------------------------------------");
         System.out.println("Displaying 5 Animals from the Atlantogenata Family");
         System.out.println("-------------------------------------------------");
-        System.out.println("-------------------------------------------------");
 
         // 5 Atlantogenata Animals.
         Atlantogenata Atlantogenata1 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
@@ -879,7 +873,6 @@ public class Question_2
         
         System.out.println("\n\n-------------------------------------------------");
         System.out.println("Displaying 5 Animals from the Boreoeutheria Family");
-        System.out.println("-------------------------------------------------");
         System.out.println("-------------------------------------------------");
 
         // 5 Boreoeutheria Animals.

@@ -598,7 +598,7 @@ public class Question_2
 {
     public static void main(String[] args) throws FileNotFoundException 
     {
-        File output = new File("Program2/Output.txt");
+        File output = new File("Outfile.txt");
 
         PrintStream outtputting = new PrintStream(output);
         System.setOut(outtputting);// set the stream to be that of the new output file
@@ -612,11 +612,11 @@ public class Question_2
         System.out.println(" I am a Perissodactyla\n"+"---------------------------------\n"+ButterBean.Animal_Infos());
                         
         // animal 2
-        Mammilia BubbleMan = new Theria(2, true, true, 11, 88.3, 1332, "Air and Little Hobbits");
+        Mammalia BubbleMan = new Theria(2, true, true, 11, 88.3, 1332, "Air and Little Hobbits");
         System.out.println(" I am a Theria\n"+"---------------------------------\n"+BubbleMan.Animal_Infos());
 
         //mammal3
-        Mammilia Boreoeutheria1 = new Boreoeutheria(19, true, true, 200, 99.9, 1283, "Celery and Potatoes");
+        Mammalia Boreoeutheria1 = new Boreoeutheria(19, true, true, 200, 99.9, 1283, "Celery and Potatoes");
         System.out.println(" I am a Boreoeutheria\n"+"---------------------------------\n" +Boreoeutheria1.Animal_Infos());
 
         //mammal 4 creating
@@ -624,7 +624,7 @@ public class Question_2
         System.out.println(" I am a Pholidota\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
 
         //mammalia 5 creating
-        Mammilia Placentalia1 = new Placentalia(5, true, true, 800, 10.0, 2030, "McDonals and Ketchup Sauce");
+        Mammalia Placentalia1 = new Placentalia(5, true, true, 800, 10.0, 2030, "McDonals and Ketchup Sauce");
         System.out.println("I am a Placentia\n"+"---------------------------------\n"+Placentalia1.Animal_Infos());
 
 
@@ -679,16 +679,16 @@ public class Question_2
         Glires Gliry5=new Glires(4, true, true, 1, 5.0, 1289, "Beans and Beans");
         System.out.println("I am a Glires\n"+"---------------------------------\n"+Gliry5.Animal_Infos());
 
-        Chiroptera Chiro1=new Chiroptera(4, true, true, 80, 90.0, 1287, "Carrotss");
-        System.out.println("I am a Chiroptera\n"+"---------------------------------\n"+Chiro1.Animal_Infos());
-        Chiroptera Chiro2=new Chiroptera(0, true, true, 0, 0.0, 1500, "Other Animals");
-        System.out.println("I am a Chiroptera\n"+"---------------------------------\n"+Chiro2.Animal_Infos());
-        Chiroptera Chiro3=new Chiroptera(1, true, true, 10, 100, 1568, "Sticks and Dirt");
-        System.out.println("I am a Chiroptera\n"+"---------------------------------\n"+Chiro3.Animal_Infos());
-        Chiroptera Chiro4=new Chiroptera(8, true, true, 78, 90.9, 1567, "Brocolli and Rocks");
-        System.out.println("I am a Chiroptera\n"+"---------------------------------\n"+Chiro4.Animal_Infos());
-        Chiroptera Chiro5=new Chiroptera(4, true, true, 1, 5.0, 1289, "Beans and Beans");
-        System.out.println("I am a Chiroptera\n"+"---------------------------------\n"+Chiro5.Animal_Infos());
+        Chirpotera Chiro1=new Chirpotera(4, true, true, 80, 90.0, 1287, "Carrotss");
+        System.out.println("I am a Chirpotera\n"+"---------------------------------\n"+Chiro1.Animal_Infos());
+        Chirpotera Chiro2=new Chirpotera(0, true, true, 0, 0.0, 1500, "Other Animals");
+        System.out.println("I am a Chirpotera\n"+"---------------------------------\n"+Chiro2.Animal_Infos());
+        Chirpotera Chiro3=new Chirpotera(1, true, true, 10, 100, 1568, "Sticks and Dirt");
+        System.out.println("I am a Chirpotera\n"+"---------------------------------\n"+Chiro3.Animal_Infos());
+        Chirpotera Chiro4=new Chirpotera(8, true, true, 78, 90.9, 1567, "Brocolli and Rocks");
+        System.out.println("I am a Chirpotera\n"+"---------------------------------\n"+Chiro4.Animal_Infos());
+        Chirpotera Chiro5=new Chirpotera(4, true, true, 1, 5.0, 1289, "Beans and Beans");
+        System.out.println("I am a Chirpotera\n"+"---------------------------------\n"+Chiro5.Animal_Infos());
 
 
         Cetartiodactyla Certa1=new Cetartiodactyla(4, true, true, 80, 90.0, 1287, "Carrotss");

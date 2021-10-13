@@ -20,6 +20,12 @@
  *              input.txt
  *   
  *****************************************************************************/
+
+import java.io.*;                               
+import java.io.File;                            
+import java.io.PrintStream;                     
+
+
 class Mammalia
 {
     int legs;
@@ -29,13 +35,8 @@ class Mammalia
     double precision;
     int birthDate;
     String fav_Foods;
-    
-    public void eat(){}
-    public void walk(){} 
-    public void sleep(){}
-    public void give_birth(){}
 
-    Mammalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_id)
+    Mammalia(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods)
     {
         this.legs = legs;
         this.brain = brain;
@@ -43,8 +44,36 @@ class Mammalia
         this.tails = tails;
         this.precision = precision;
         this.birthDate = birthDate;
-        this.fav_Foods = fav_id;
+        this.fav_Foods = fav_Foods;
     }
+
+    public void Eat() 
+    {
+        System.out.println("I like to Eat" + fav_Foods + " Wow Aint That Yummy?\n");
+    }
+
+    public void Walk() 
+    {
+        System.out.println("I Walk on " + legs + "Legs\n");
+    }
+
+    public void Sleep() 
+    {
+        System.out.println("I am currenlty Sleeping Away\n");
+    }
+     
+     public String Attributes() 
+     {
+         
+         //returning the set variables and values per instance of each case of derive mammalia
+         return ("I Have                    " + legs + " Leg/s\n"+ 
+          "I Have a Tail?            " + tails + "\n"+
+          "Do I have a Brain         " + brain + "\n"+
+          "I have                    " + neurons + " Neurons \n"
+         + "My Precision Level is     " + precision + "% (Im a little Smart) \n"+
+          "I was Born in the Year    " + birthDate + "\n"+
+          "And My Favorite Food is   " + fav_Foods +  " (Isnt that Yummy? )\n");
+     }
 }
 
 class Monotremata extends Mammalia

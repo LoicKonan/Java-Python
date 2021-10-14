@@ -2,7 +2,7 @@
 /******************************************************************************
  * Author:          Loic Konan 
  * Email:           loickonan.lk@gmail.com 
- * Label:           Question 3 
+ * Label:           Question 3 - Calculator
  * Title:           Programing Assignment 02 
  * Course:          CMPS 4143 
  * Semester:        Fall 2021 
@@ -28,8 +28,135 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
+
+/**
+*  
+* This Class Give the Syntax error messages.
+* 
+*/
+class SyntaxError extends Exception 
+{
+    String ErrorMessage;
+
+    SyntaxError(String mistake) 
+    {
+        ErrorMessage = mistake;
+    }
+
+    String getErrorMessage() 
+    {
+        return ErrorMessage;
+    }
+}
+
+/**
+ * 
+ * This Class Give the Runtime error messages.
+ * 
+ */
+class RuntimeError extends Exception 
+{
+    String ErrorMessage;
+
+    RuntimeError(String mistake) 
+    {
+        ErrorMessage = mistake;
+    }
+
+    String getErrorMessage() 
+    {
+        return ErrorMessage;
+    }
+}
+
+
 class Main 
 {
+    
+    /**
+     * In this Method we add the A+B and returns the result.
+     * @param A
+     * @param B
+     * @return double
+     */    
+    static double addition(double A, double B) 
+    {
+        return A + B;
+    }
+
+    /**
+     * In this Method we Substract the A-B and returns the result.
+     * @param A
+     * @param B
+     * @return double
+     */    
+    static double subtraction(double A, double B) 
+    {
+        return A - B;
+    }
+
+
+    /**
+     * In this Method we Multiply the A*B and returns the result.
+     * @param A
+     * @param B
+     * @return double
+     */
+    static double multiply(double A, double B) 
+    {
+        return A * B;
+    }
+
+
+    /**
+     * In this Method we divides the A/B and returns the result.
+     * @param A
+     * @param B
+     * @return double
+     */
+    static double divide(double A, double B) 
+    {
+        return A / B;
+    }
+
+    /**
+     *  In this Method we perfome a modulus and returns the result
+     * @param A
+     * @param B
+     * @return double
+     */
+    static double modulo(double A, double B) 
+    {
+        return A % B;
+    }
+
+
+    /**
+     *  This Method prompt the user's input 
+     *  and then removes all the whitespace from the equation.
+     * 
+     * @param equation
+     * @return String
+     */
+    static String input(Scanner equation) 
+    {
+        System.out.print("Enter your Equation: ");
+
+        String user_input = equation.nextLine();
+
+        user_input = user_input.replaceAll("\\s", "");                  // Remove whitespace.
+
+        System.out.println("Expression Entered: " + user_input);
+        return user_input;
+    }
+
+    /**
+     * This is the Driver(main) program.
+     * @param args
+     * @throws SyntaxError
+     * @throws RuntimeError
+     */
     public static void main(String[] args) throws SyntaxError, RuntimeError 
     {
         Scanner equation = new Scanner(System.in);                                 // Getting the user input
@@ -283,123 +410,4 @@ class Main
             throw new SyntaxError(user_input + "\t Syntax Error: Unexpected '%'");
         }
     }
-
-    /**
-     * In this Method we add the A+B and returns the result.
-     * @param A
-     * @param B
-     * @return double
-     */    
-    static double addition(double A, double B) 
-    {
-        return A + B;
-    }
-
-    /**
-     * In this Method we Substract the A-B and returns the result.
-     * @param A
-     * @param B
-     * @return double
-     */    
-    static double subtraction(double A, double B) 
-    {
-        return A - B;
-    }
-
-
-    /**
-     * In this Method we Multiply the A*B and returns the result.
-     * @param A
-     * @param B
-     * @return double
-     */
-    static double multiply(double A, double B) 
-    {
-        return A * B;
-    }
-
-
-    /**
-     * In this Method we divides the A/B and returns the result.
-     * @param A
-     * @param B
-     * @return double
-     */
-    static double divide(double A, double B) 
-    {
-        return A / B;
-    }
-
-    /**
-     *  In this Method we perfome a modulus and returns the result
-     * @param A
-     * @param B
-     * @return double
-     */
-    static double modulo(double A, double B) 
-    {
-        return A % B;
-    }
-
-
-    /**
-     *  This Method prompt the user's input 
-     *  and then removes all the whitespace from the equation.
-     * 
-     * @param equation
-     * @return String
-     */
-    static String input(Scanner equation) 
-    {
-        System.out.print("Enter your Equation: ");
-
-        String user_input = equation.nextLine();
-
-        user_input = user_input.replaceAll("\\s", "");                  // Remove whitespace.
-
-        System.out.println("Expression Entered: " + user_input);
-        return user_input;
-    }
-}
-
-/**
-*  
-* This Class Give the Syntax error messages.
-* 
-*/
-class SyntaxError extends Exception 
-{
-    String ErrorMessage;
-
-    SyntaxError(String mistake) 
-    {
-        ErrorMessage = mistake;
-    }
-
-    String getErrorMessage() 
-    {
-        return ErrorMessage;
-    }
-
-}
-
-/**
- * 
- * This Class Give the Runtime error messages.
- * 
- */
-class RuntimeError extends Exception 
-{
-    String ErrorMessage;
-
-    RuntimeError(String mistake) 
-    {
-        ErrorMessage = mistake;
-    }
-
-    String getErrorMessage() 
-    {
-        return ErrorMessage;
-    }
-
 }

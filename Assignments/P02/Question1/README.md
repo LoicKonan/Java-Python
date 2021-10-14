@@ -4,6 +4,11 @@
 
 #### Description
 
+> - An OOP code that has the following OOP features:
+> - inheritance(any)
+> - polymorphism (runtime and compile time)
+> - abstraction 
+> - encapsulation
 
 ### Files
 

@@ -192,7 +192,7 @@ class pratice
             {
                 nInput.close();
             }
-
+            
             usrInput = getInput(nInput);
         }
 

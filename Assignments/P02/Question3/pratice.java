@@ -10,13 +10,13 @@
  * 
  * Description: 
  *                  Creating a calculator class to perform these operations:
- *                  Addition, Subtraction, Multiplication, Division, and Modulo. 
- *                  With these two exception handling classes: 
+ *                  Addition, Subtraction, Multiplication, Division, 
+ *                  and Modulo. With these two exception handling classes: 
  *                  SyntaxError and Runtime_Error.
  * 
- * results:
- *
- * 
+ * results:         Write SyntaxError and RuntimeError classes to define how
+ *                  and when to throw errors. Perform the calculations and 
+ *                  throw appropriate errors if necessary or the correct output.
  * 
  * Files:           Question_3.java
  * 
@@ -30,36 +30,42 @@ class Main
 {
     public static void main(String[] args) throws SyntaxError, RuntimeError 
     {
-
-        // Get user input
-        Scanner equation = new Scanner(System.in);
-        String user_inputs = input(equation);
+        Scanner equation = new Scanner(System.in);                                 // Getting the user input
+        String user_input = input(equation);
 
         // This loop will run until a Syntax or Runtime error occurs
         while (true) 
         {
             try 
             {
+                parse_String(user_input);                                          // Calling the checks the string function.                    
 
-                checkString(user_inputs); // Run a function that checks the string
-                                       // for incorrect Syntax and Runtime
-                                       // errors
-
+                /**
+                 * Using the regex matcher and pattern 
+                 * to be able to split the equation
+                 * and to perform each operation.
+                 *  
+                 */                       
                 Pattern p = Pattern.compile("\\d+");
                 Pattern o = Pattern.compile("\\D");
-                Matcher m = p.matcher(user_inputs);
-                Matcher n = o.matcher(user_inputs);
+                Matcher m = p.matcher(user_input);
+                Matcher n = o.matcher(user_input);
 
-                Vector<Double> numbers = new Vector<Double>(1, 1);
+                Vector<Double> toCalculate = new Vector<Double>(1, 1);
                 Vector<String> operations = new Vector<String>(1, 1);
                 double results = 0;
 
                 while (m.find()) 
                 {
                     double tempVal = Double.valueOf(m.group());
-                    numbers.add(tempVal);
+                    toCalculate.add(tempVal);
                 }
 
+                /**
+                 *  Using this while loop to parse 
+                 *  through the string and split each 
+                 *  operations.
+                 */
                 while (n.find()) 
                 {
                     String tempVal2 = n.group();
@@ -69,207 +75,296 @@ class Main
                     }
                 }
 
-                while (operations.size() > 0) 
+                /**
+                 *  As long as our vector of string is not empty.
+                 */
+                while (operations.size() > 0)   
                 {
                     String tempS = operations.elementAt(0);
                     char c = tempS.charAt(0);
+                    
+                    /**
+                     *  Using this to call the addition function.
+                     */
                     if (c == '+') 
                     {
-                        results = addition(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, results);
-                        numbers.remove(1);
+                        results = addition(toCalculate.elementAt(0), toCalculate.elementAt(1));
+                        toCalculate.set(0, results);
+                        toCalculate.remove(1);
                         operations.remove(0);
                     } 
+                     /**
+                     *  Using this to call the Substraction function.
+                     */
                     else if (c == '-') 
                     {
-                        results = subtraction(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, results);
-                        numbers.remove(1);
+                        results = subtraction(toCalculate.elementAt(0), toCalculate.elementAt(1));
+                        toCalculate.set(0, results);
+                        toCalculate.remove(1);
                         operations.remove(0);
                     } 
+                     /**
+                     *  Using this to call the multiplication function.
+                     */
                     else if (c == '*') 
                     {
-                        results = multiply(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, results);
-                        numbers.remove(1);
+                        results = multiply(toCalculate.elementAt(0), toCalculate.elementAt(1));
+                        toCalculate.set(0, results);
+                        toCalculate.remove(1);
                         operations.remove(0);
                     } 
+                     /**
+                     *  Using this to call the Division function.
+                     */
                     else if (c == '/') 
                     {
-                        results = divide(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, results);
-                        numbers.remove(1);
+                        results = divide(toCalculate.elementAt(0), toCalculate.elementAt(1));
+                        toCalculate.set(0, results);
+                        toCalculate.remove(1);
                         operations.remove(0);
                     } 
+                     /**
+                     *  Using this to call the modulo function.
+                     */
                     else 
                     {
-                        results = modulo(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, results);
-                        numbers.remove(1);
+                        results = modulo(toCalculate.elementAt(0), toCalculate.elementAt(1));
+                        toCalculate.set(0, results);
+                        toCalculate.remove(1);
                         operations.remove(0);
                     }
                 }
-                System.out.println("The value is " + numbers.get(0));
+                // Display our result.
+                System.out.println("The result is: " + toCalculate.get(0));
             } 
             catch (SyntaxError e) 
             {
-                System.out.println(e.getErrorMessage());
+                System.out.println(e.getErrorMessage());                     // Catch the Syntax errors 
             } 
             catch (RuntimeError e) 
             {
-                System.out.println(e.getErrorMessage());
+                System.out.println(e.getErrorMessage());                     // Catch the runtime errors
             } 
             finally 
             {
                //equation.close();
             }
-            user_inputs = input(equation);
+            user_input = input(equation);
         }
            
     }
 
-    // Check the Expression for Syntax and Runtime Errors
-    static void checkString(String user_inputs) throws SyntaxError, RuntimeError 
+    
+    /**
+     * This function Check the Expression for Syntax and Runtime Errors:
+     * 
+     * 1. Syntax error: ‘)’ expected
+     * 2. Syntax error: unexpected ‘=’
+     * 3. Syntax error: more than one variable
+     * 4. Syntax error: ‘=’ expected
+     * 5. Runtime error: Divide by zero occurred
+     * 
+     * @param user_input
+     * @throws SyntaxError
+     * @throws RuntimeError
+     * @return void
+     */
+    static void parse_String(String user_input) throws SyntaxError, RuntimeError 
     {
-        boolean equalSign = false; // Check if only one = symbol appears
-        int pareLeft = 0; // Count the number of '(' symbols
-        int pareRight = 0; // Count the number of ')' symbols
+        boolean equalSign = false;
+        int L_Parenthesis = 0;                                  // count '(' symbols
+        int R_Parenthesis = 0;                                  // Count ')' symbols
 
-        // Check if an equal symbol is in the correct position
-        // if not throw a Syntax error
-        if (user_inputs.charAt(1) == '=') 
+                                                                // If the equal sign is there.
+        if (user_input.charAt(1) == '=') 
         {
-            equalSign = true;
-            // Loop through the string and check for unexpected symbols
-            // that are not apart of the listed symbols below
-            for (int i = 0; i < user_inputs.length(); i++) 
+            equalSign = true;                          
+           
+            /**
+             * Loop through the string and check for 
+             * which error to throw.
+             * 
+             */
+
+            for (int i = 0; i < user_input.length(); i++) 
             {
-                if (user_inputs.charAt(i) == '+') 
+                if (user_input.charAt(i) == '+') 
                 {
-                    symbolCheck(user_inputs, i);
+                    symbolCheck(user_input, i);
                 } 
-                else if (user_inputs.charAt(i) == '-') 
+                else if (user_input.charAt(i) == '-') 
                 {
-                    symbolCheck(user_inputs, i);
+                    symbolCheck(user_input, i);
                 } 
-                else if (user_inputs.charAt(i) == '*') 
+                else if (user_input.charAt(i) == '*') 
                 {
-                    symbolCheck(user_inputs, i);
+                    symbolCheck(user_input, i);
                 } 
-                else if (user_inputs.charAt(i) == '/') 
+                else if (user_input.charAt(i) == '/') 
                 {
-                    symbolCheck(user_inputs, i);
-                    // Throw an error is the next char is a zero
-                    if (user_inputs.charAt(i + 1) == '0') 
+                    symbolCheck(user_input, i);
+                    if (user_input.charAt(i + 1) == '0') 
                     {
-                        throw new RuntimeError(user_inputs + "\t Runtime Error: Divide by Zero");
+                        throw new RuntimeError(user_input + "\t Runtime Error: Divide by Zero");
                     }
                 } 
-                else if (user_inputs.charAt(i) == '%') 
+                else if (user_input.charAt(i) == '%') 
                 {
-                    symbolCheck(user_inputs, i);
-                    // Throw an error is the next char is a zero
-                    if (user_inputs.charAt(i + 1) == '0') 
+                    symbolCheck(user_input, i);
+                    if (user_input.charAt(i + 1) == '0') 
                     {
-                        throw new RuntimeError(user_inputs + "\t Runtime Error: Mod by Zero");
+                                                           
+                        throw new RuntimeError(user_input + "\t Runtime Error: Mod by Zero");
                     }
                 } 
-                else if (user_inputs.charAt(i) == '(') 
+                else if (user_input.charAt(i) == '(') 
                 {
-                    pareLeft++;
+                    L_Parenthesis++;
                 } 
-                else if (user_inputs.charAt(i) == ')') 
+                else if (user_input.charAt(i) == ')') 
                 {
-                    pareRight++;
+                    R_Parenthesis++;
                 } 
-                else if (user_inputs.charAt(i) == '=' && i != 1) 
+                else if (user_input.charAt(i) == '=' && i != 1) 
                 {
                     equalSign = false;
-                    throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '='");
+                    throw new SyntaxError(user_input + "\t Syntax Error: Unexpected '='");
                 }
 
             }
 
-            if ("Zz".contains("" + user_inputs.charAt(4))) 
+            if ("Zz".contains("" + user_input.charAt(4))) 
             {
-                                //throw error up through the exception handling
-                                throw new SyntaxError(user_inputs + "                 Syntax Error: more than one variable");
+                throw new SyntaxError(user_input + "\t\t Syntax Error: more than one variable");
             } 
-            // If the amount of parentheses doesn't match each other throw the
-            // proper syntax error.
-            // Throw an error for more ')' than '('
-            if (pareLeft < pareRight) 
+            
+            if (L_Parenthesis < R_Parenthesis) 
             {
-                throw new SyntaxError(user_inputs + "\t Syntax Error: Expected '('");
-            } // Throw an error for more '(' than ')'
-            else if (pareRight < pareLeft) 
+                throw new SyntaxError(user_input + "\t Syntax Error: Expected '('");
+            } 
+            else if (R_Parenthesis < L_Parenthesis) 
             {
-                throw new SyntaxError(user_inputs + "\t Syntax Error: Expected ')'");
+                throw new SyntaxError(user_input + "\t Syntax Error: Expected ')'");
             }
         } 
         else 
         {
-            // Throw an error if an equal sign is not present after the variable
-            throw new SyntaxError(user_inputs + "\t Syntax Error: Expected '='");
+            throw new SyntaxError(user_input + "\t Syntax Error: Expected '='");
         }
     }
 
-    // Function that make sure there are no immediate duplicates after each symbol
-    static void symbolCheck(String user_inputs, int index) throws SyntaxError 
+
+    /**
+     * This method check for duplicate operations then throw a Syntax error.
+     * 
+     * @param user_input
+     * @param index
+     * @throws SyntaxError
+     * @return void
+     */
+    static void symbolCheck(String user_input, int index) throws SyntaxError 
     {
-        if (user_inputs.charAt(index + 1) == '+') {
-            throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '+'");
-        } else if (user_inputs.charAt(index + 1) == '*') {
-            throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '*'");
-        } else if (user_inputs.charAt(index + 1) == '/') {
-            throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '/'");
-        } else if (user_inputs.charAt(index + 1) == '%') {
-            throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '%'");
+        if (user_input.charAt(index + 1) == '+') 
+        {
+            throw new SyntaxError(user_input + "\t Syntax Error: Unexpected '+'");
+        } 
+        else if (user_input.charAt(index + 1) == '*') 
+        {
+            throw new SyntaxError(user_input + "\t Syntax Error: Unexpected '*'");
+        } 
+        else if (user_input.charAt(index + 1) == '/') 
+        {
+            throw new SyntaxError(user_input + "\t Syntax Error: Unexpected '/'");
+        } 
+        else if (user_input.charAt(index + 1) == '%') 
+        {
+            throw new SyntaxError(user_input + "\t Syntax Error: Unexpected '%'");
         }
     }
 
-    // Method that adds the selected values and returns the result
-    static double addition(double numA, double numB) 
+    /**
+     * In this Method we add the A+B and returns the result.
+     * @param A
+     * @param B
+     * @return double
+     */    
+    static double addition(double A, double B) 
     {
-        return numA + numB;
+        return A + B;
     }
 
-    // Method that subtracts the selected values and returns the result
-    static double subtraction(double numA, double numB) 
+    /**
+     * In this Method we Substract the A-B and returns the result.
+     * @param A
+     * @param B
+     * @return double
+     */    
+    static double subtraction(double A, double B) 
     {
-        return numA - numB;
+        return A - B;
     }
 
-    // Method that multiples the selected values and returns the result
-    static double multiply(double numA, double numB) 
+
+    /**
+     * In this Method we Multiply the A*B and returns the result.
+     * @param A
+     * @param B
+     * @return double
+     */
+    static double multiply(double A, double B) 
     {
-        return numA * numB;
+        return A * B;
     }
 
-    // Method that divides the selected values and returns the result
-    static double divide(double numA, double numB) 
+
+    /**
+     * In this Method we divides the A/B and returns the result.
+     * @param A
+     * @param B
+     * @return double
+     */
+    static double divide(double A, double B) 
     {
-        return numA / numB;
+        return A / B;
     }
 
-    // Method that mods the first value by the second value and returns the result
-    static double modulo(double numA, double numB) 
+    /**
+     *  In this Method we perfome a modulus and returns the result
+     * @param A
+     * @param B
+     * @return double
+     */
+    static double modulo(double A, double B) 
     {
-        return numA % numB;
+        return A % B;
     }
 
-    // Method calls for the user's input and then removes all the whitespace from it
+
+    /**
+     *  This Method prompt the user's input 
+     *  and then removes all the whitespace from the equation.
+     * 
+     * @param equation
+     * @return String
+     */
     static String input(Scanner equation) 
     {
-        System.out.print("Enter your expression: ");
-        String user_inputs = equation.nextLine();
-        user_inputs = user_inputs.replaceAll("\\s", "");
-        System.out.println("Expression Entered: " + user_inputs);
-        return user_inputs;
+        System.out.print("Enter your Equation: ");
+
+        String user_input = equation.nextLine();
+
+        user_input = user_input.replaceAll("\\s", "");                  // Remove whitespace.
+
+        System.out.println("Expression Entered: " + user_input);
+        return user_input;
     }
 }
 
-// Class that pushes out Syntax error messages it receives from checkers
+/**
+*  
+* This Class Give the Syntax error messages.
+* 
+*/
 class SyntaxError extends Exception 
 {
     String ErrorMessage;
@@ -286,7 +381,11 @@ class SyntaxError extends Exception
 
 }
 
-// Class that pushes out Runtime error messages it receives from checkers
+/**
+ * 
+ * This Class Give the Runtime error messages.
+ * 
+ */
 class RuntimeError extends Exception 
 {
     String ErrorMessage;

@@ -145,7 +145,7 @@ class Main
 
         String user_input = equation.nextLine();
 
-        user_input = user_input.replaceAll("\\s", "");                  // Remove whitespace.
+        user_input = user_input.replaceAll("\\s", "");                            // Remove whitespace.
 
         System.out.println("Expression Entered: " + user_input);
         return user_input;
@@ -300,14 +300,13 @@ class Main
      */
     static void parse_String(String user_input) throws SyntaxError, RuntimeError 
     {
-        boolean equalSign = false;
         int L_Parenthesis = 0;                                  // count '(' symbols
         int R_Parenthesis = 0;                                  // Count ')' symbols
 
                                                                 // If the equal sign is there.
         if (user_input.charAt(1) == '=') 
         {
-            equalSign = true;                          
+                                      
            
             /**
              * Loop through the string and check for 
@@ -356,7 +355,6 @@ class Main
                 } 
                 else if (user_input.charAt(i) == '=' && i != 1) 
                 {
-                    equalSign = false;
                     throw new SyntaxError(user_input + "\t Syntax Error: Unexpected '='");
                 }
 

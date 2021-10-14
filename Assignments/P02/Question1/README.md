@@ -4,12 +4,13 @@
 
 #### Description
 
-> - An OOP code that has the following OOP features:
-> - Inheritance(any).
-> - Polymorphism (runtime and compile time).
-> - Abstraction.
-> - Encapsulation.
-
+> An **OOP code** (A case study: Should be unique) that has the following OOP features:
+>
+> - **inheritance(any).**
+> - **polymorphism (runtime and compile time).**
+> - **abstraction.**
+> - **encapsulation.**
+>
 ### Files
 
 |   #   | File                               | Description |

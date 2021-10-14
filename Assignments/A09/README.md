@@ -1,4 +1,4 @@
-## Assignment 09 - Python intr & java Basics
+## Assignment 09 - Python intro & java Basics
 
 ### Loic Konan
 

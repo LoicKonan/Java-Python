@@ -1,7 +1,7 @@
 #/**
 # This is program about:
 #
-# # if
+# if
 # if - else
 # if elif else
 # for

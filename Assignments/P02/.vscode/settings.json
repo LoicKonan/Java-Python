@@ -18,6 +18,7 @@
   "C_Cpp_Runner.warningsAsError": false,
   "java.project.sourcePaths": [
     "Question3",
-    "Question2"
+    "Question2",
+    "Question1"
   ]
 }

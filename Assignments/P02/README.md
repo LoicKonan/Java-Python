@@ -77,8 +77,8 @@
 
 ### Files
 
-|   #   | File                               | Description  |
-| :---: | ---------------------------------- | ------------ |
-|   1   | [Question1.java](./Question1.java) | **Solution** |
-|   2   | [Question2.java](./Question2.java) | **Solution** |
-|   3   | [Question3.java](./Question3.java) | **Solution** |
+|   #   | File                     | Description  |
+| :---: | ------------------------ | ------------ |
+|   1   | [Question1](./Question1) | **Solution** |
+|   2   | [Question2](./Question2) | **Solution** |
+|   3   | [Question3](./Question3) | **Solution** |

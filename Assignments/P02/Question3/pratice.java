@@ -331,7 +331,7 @@ class Main
                 else if (user_input.charAt(i) == '/') 
                 {
                     Check_Operand(user_input, i);
-                    if (user_input.charAt(i + 1) == '0') 
+                    if (user_input.charAt(i + 1) == '0')  // Runtime error: Divide by zero occurred
                     {
                         throw new RuntimeError(user_input + "\t Runtime Error: Divide by Zero");
                     }
@@ -340,8 +340,7 @@ class Main
                 {
                     Check_Operand(user_input, i);
                     if (user_input.charAt(i + 1) == '0') 
-                    {
-                                                           
+                    {                                      // Runtime error: Mod by zero occurred
                         throw new RuntimeError(user_input + "\t Runtime Error: Mod by Zero");
                     }
                 } 
@@ -354,7 +353,7 @@ class Main
                     R_Parenthesis++;
                 } 
                 else if (user_input.charAt(i) == '=' && i != 1) 
-                {
+                {                                           // Syntax error: unexpected "="
                     throw new SyntaxError(user_input + "\t Syntax Error: Unexpected '='");
                 }
 

@@ -198,7 +198,10 @@ class Mammalia
 }
 
 
-
+/**
+ *  Below is 21 different function that extends
+ *  from the previous function.
+ */
 class Monotremata extends Mammalia 
 {
     Monotremata(int legs, boolean brain, boolean tails, int neurons, double precision, int birthDate, String fav_Foods, int Running_Speed,
@@ -734,8 +737,6 @@ public class Question_2
          * Printing to a file 
          * For all the Mammalia family information.
          */
-        // FileOutputStream  file = new FileOutputStream ("Outfile.txt");
-        // System.setOut(new PrintStream(file));
 
         PrintStream file = new PrintStream(new File("Outfile.txt"));
         PrintStream console = System.out;
@@ -746,6 +747,7 @@ public class Question_2
          * Question c:
          * 
          * Create at least 5 animals from each family.
+         * So 5 object for each family. so a total of 110.
          */
         
         System.out.println("-------------------------------------------------");
@@ -798,6 +800,7 @@ public class Question_2
         Theria Theria1 = new Theria(4, true, true, 10, 60.0, 1250, "Green Grass", 0, null);
         System.out.println("My name is Theria 1 from the Theria Family\n"+"-------------------------------------------------\n"+Theria1.Animal_Infos());;
         
+        // CHANGING THE SOME ATTRIBUTES.
         Theria1.set_neurons(20);
         Theria1.set_precision(50);
         Theria1.set_fav_Foods("Birds");
@@ -827,6 +830,7 @@ public class Question_2
         Marsupialia Marsupialia1 = new Marsupialia(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Marsupialia 1 from the Marsupialia Family\n"+"---------------------------------\n"+Marsupialia1.Animal_Infos());
 
+        // CHANGING THE SOME ATTRIBUTES.
         Marsupialia1.set_neurons(20);
         Marsupialia1.set_precision(50);
         Marsupialia1.set_fav_Foods("Birds");
@@ -854,6 +858,7 @@ public class Question_2
         Placentalia Placentalia1 = new Placentalia(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Placentalia 1 from the Placentalia Family\n"+"---------------------------------\n"+Placentalia1.Animal_Infos());
 
+        // CHANGING THE SOME ATTRIBUTES.
         Placentalia1.set_neurons(20);
         Placentalia1.set_precision(50);
         Placentalia1.set_fav_Foods("Birds");
@@ -882,6 +887,7 @@ public class Question_2
         Atlantogenata Atlantogenata1 = new Atlantogenata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Atlantogenata 1 from the Atlantogenata Family\n"+"---------------------------------\n"+Atlantogenata1.Animal_Infos());
 
+        // CHANGING THE SOME ATTRIBUTES.
         Atlantogenata1.set_neurons(20);
         Atlantogenata1.set_precision(50);
         Atlantogenata1.set_fav_Foods("Birds");
@@ -909,7 +915,8 @@ public class Question_2
         // 5 Boreoeutheria Animals.
         Boreoeutheria Boreoeutheria1 = new Boreoeutheria(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Boreoeutheria 1 from the Boreoeutheria Family\n"+"---------------------------------\n"+Boreoeutheria1.Animal_Infos());
-
+        
+        // CHANGING THE SOME ATTRIBUTES.
         Boreoeutheria1.set_neurons(20);
         Boreoeutheria1.set_precision(50);
         Boreoeutheria1.set_fav_Foods("Birds");
@@ -934,6 +941,7 @@ public class Question_2
         Afrotheria Afrotheria1 = new Afrotheria(4, true, true, 10, 60.0, 1300, "Fish", 0, null);
         System.out.println("My name is Afrotheria 1 from the Afrotheria Family\n"+"---------------------------------\n"+Afrotheria1.Animal_Infos());
 
+        // CHANGING THE SOME ATTRIBUTES.
         Afrotheria1.set_neurons(20);
         Afrotheria1.set_precision(50);
         Afrotheria1.set_fav_Foods("Birds");
@@ -950,6 +958,7 @@ public class Question_2
         Xenarthra Xenarthra1 = new Xenarthra(4, true, true, 10, 60.0, 1300, "Grass", 0, null);
         System.out.println("My name is Xenarthra 1 from the Xenarthra Family\n"+"---------------------------------\n"+Xenarthra1.Animal_Infos());
         
+        // CHANGING THE SOME ATTRIBUTES.
         Xenarthra1.set_neurons(20);
         Xenarthra1.set_precision(50);
         Xenarthra1.set_fav_Foods("Birds");
@@ -966,6 +975,7 @@ public class Question_2
         Euarchontoglires Euarchontoglires1 = new Euarchontoglires(4, true, true, 10, 60.0, 1300, "Meat", 0, null);
         System.out.println("My name is Euarchontoglires 1 from the Euarchontoglires Family\n"+"---------------------------------\n"+Euarchontoglires1.Animal_Infos());
         
+        // CHANGING THE SOME ATTRIBUTES.
         Euarchontoglires1.set_neurons(20);
         Euarchontoglires1.set_precision(50);
         Euarchontoglires1.set_fav_Foods("Birds");
@@ -983,6 +993,7 @@ public class Question_2
         System.out.println("My name is Laurasiatheria 1 from the Laurasiatheria Family\n"+"---------------------------------\n"+Laurasiatheria1.Animal_Infos());
 
         
+        // CHANGING THE SOME ATTRIBUTES.
         Laurasiatheria1.set_neurons(20);
         Laurasiatheria1.set_precision(50);
         Laurasiatheria1.set_fav_Foods("Birds");
@@ -999,6 +1010,7 @@ public class Question_2
         Euarchonta Euarchonta1 = new Euarchonta(4, true, true, 10, 60.0, 1300, "milk", 0, null);
         System.out.println("My name is Euarchonta 1 from the Euarchonta Family\n"+"---------------------------------\n"+Euarchonta1.Animal_Infos());
 
+        // CHANGING THE SOME ATTRIBUTES.
         Euarchonta1.set_neurons(20);
         Euarchonta1.set_precision(50);
         Euarchonta1.set_fav_Foods("Birds");
@@ -1017,12 +1029,14 @@ public class Question_2
         System.setOut(console);
         System.out.println("My name is Glires 1 from the Glires Family\n"+"---------------------------------\n"+Glires1.Animal_Infos());
 
+        // CHANGING THE SOME ATTRIBUTES
         Glires1.set_neurons(20);
         Glires1.set_precision(50);
         Glires1.set_fav_Foods("Birds");
         Glires1.set_Running_Speed(45);
         Glires1.set_Hunting_Process("Aggressive");
 
+        // Printing to the console and the File.
         System.out.println("I am now the new version of Glires 1\n"+"---------------------------------\n"+Glires1.Animal_Infos());
         System.setOut(console);
         System.out.println("I am now the new version of Glires 1\n"+"---------------------------------\n"+Glires1.Animal_Infos());
@@ -1041,6 +1055,7 @@ public class Question_2
         System.setOut(console);
         System.out.println("My name is Scrotifera 1 from the Scrotifera Family\n"+"---------------------------------\n"+Scrotifera1.Animal_Infos());
 
+        // CHANGING THE SOME ATTRIBUTES.
         Scrotifera1.set_neurons(20);
         Scrotifera1.set_precision(50);
         Scrotifera1.set_fav_Foods("Birds");
@@ -1240,17 +1255,20 @@ public class Question_2
         // 5 Carnivora Animals.
         Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         
+        // Printing to the console and the File.
         System.setOut(file);
         System.out.println("My name is Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
         System.setOut(console);
         System.out.println("My name is Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
 
+        // CHANGING THE SOME ATTRIBUTES.
         Carnivora1.set_neurons(20);
         Carnivora1.set_precision(50);
         Carnivora1.set_fav_Foods("Birds");
         Carnivora1.set_Running_Speed(45);
         Carnivora1.set_Hunting_Process("Aggressive");
 
+        // Printing to the console and the File.
         System.setOut(file);
         System.out.println("I am now the new version of Carnivora 1\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
         System.setOut(console);

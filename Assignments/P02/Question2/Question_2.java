@@ -13,7 +13,12 @@
  *              (can be found in https://en.wikipedia.org/wiki/Mammal).
  *              Storing all the outcomes in a file. 
  * 
- * Solution:
+ * Solution:    Made a Parent class call Mammalia with a constructor
+ *              and the accessor and mutator functions for 
+ *              each attributes. Then made 21 classes than extends from
+ *              the mammalia class and made 5 object of each one of the 
+ *              22 classes. I then print the object to the file and made some 
+ *              changes then print it to the console to see the distinctions.
  *               
  *
  * Files:   

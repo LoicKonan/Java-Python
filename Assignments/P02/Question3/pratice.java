@@ -28,7 +28,7 @@
 //              || toCalculate.charAt(i) == '*'  || toCalculate.charAt(i) == '/' ) 
 //             {
 //              operator_count++;  /*Calculating
-//                                   number of operators in a String toCalculate
+//                                   Ber of operators in a String toCalculate
 //                                 */
 //             operators.add(toCalculate.charAt(i)); /* Adding that operator to 
 //                                                     ArrayList*/
@@ -106,14 +106,14 @@ class Main
                 Matcher m = p.matcher(usrInput);
                 Matcher n = o.matcher(usrInput);
 
-                Vector<Double> numbers = new Vector<>(1, 1);
+                Vector<Double> Bers = new Vector<>(1, 1);
                 Vector<String> operations = new Vector<>(1, 1);
                 double finalNum = 0;
 
                 while (m.find()) 
                 {
                     double tempVal = Double.valueOf(m.group());
-                    numbers.add(tempVal);
+                    Bers.add(tempVal);
                 }
 
                 while (n.find()) 
@@ -131,41 +131,41 @@ class Main
                     char c = tempS.charAt(0);
                     if (c == '+') 
                     {
-                        finalNum = addition(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
-                        numbers.remove(1);
+                        finalNum = addition(Bers.elementAt(0), Bers.elementAt(1));
+                        Bers.set(0, finalNum);
+                        Bers.remove(1);
                         operations.remove(0);
                     } 
                     else if (c == '-') 
                     {
-                        finalNum = subtraction(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
-                        numbers.remove(1);
+                        finalNum = subtraction(Bers.elementAt(0), Bers.elementAt(1));
+                        Bers.set(0, finalNum);
+                        Bers.remove(1);
                         operations.remove(0);
                     } 
                     else if (c == '*') 
                     {
-                        finalNum = multiply(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
-                        numbers.remove(1);
+                        finalNum = multiply(Bers.elementAt(0), Bers.elementAt(1));
+                        Bers.set(0, finalNum);
+                        Bers.remove(1);
                         operations.remove(0);
                     } 
                     else if (c == '/') 
                     {
-                        finalNum = divide(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
-                        numbers.remove(1);
+                        finalNum = divide(Bers.elementAt(0), Bers.elementAt(1));
+                        Bers.set(0, finalNum);
+                        Bers.remove(1);
                         operations.remove(0);
                     } 
                     else 
                     {
-                        finalNum = modulo(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
-                        numbers.remove(1);
+                        finalNum = modulo(Bers.elementAt(0), Bers.elementAt(1));
+                        Bers.set(0, finalNum);
+                        Bers.remove(1);
                         operations.remove(0);
                     }
                 }
-                System.out.println("The value is " + numbers.get(0));
+                System.out.println("The value is " + Bers.get(0));
             } 
             catch (SyntaxError |RuntimeError e) 
             {
@@ -184,8 +184,8 @@ class Main
     // Check the Expression for Syntax and Runtime Errors
     static void checkString(String usrInput) throws SyntaxError, RuntimeError 
     {
-        int pareLeft = 0; // Count the number of '(' symbols
-        int pareRight = 0; // Count the number of ')' symbols
+        int pareLeft = 0; // Count the Ber of '(' symbols
+        int pareRight = 0; // Count the Ber of ')' symbols
 
         // Check if an equal symbol is in the correct position
         // if not throw a Syntax error
@@ -279,33 +279,33 @@ class Main
     }
 
     // Method that adds the selected values and returns the result
-    static double addition(double numA, double numB) 
+    static double addition(double A, double B) 
     {
-        return numA + numB;
+        return A + B;
     }
 
     // Method that subtracts the selected values and returns the result
-    static double subtraction(double numA, double numB) 
+    static double subtraction(double A, double B) 
     {
-        return numA - numB;
+        return A - B;
     }
 
     // Method that multiples the selected values and returns the result
-    static double multiply(double numA, double numB) 
+    static double multiply(double A, double B) 
     {
-        return numA * numB;
+        return A * B;
     }
 
     // Method that divides the selected values and returns the result
-    static double divide(double numA, double numB) 
+    static double divide(double A, double B) 
     {
-        return numA / numB;
+        return A / B;
     }
 
     // Method that mods the first value by the second value and returns the result
-    static double modulo(double numA, double numB) 
+    static double modulo(double A, double B) 
     {
-        return numA % numB;
+        return A % B;
     }
 
     // Method calls for the user's input and then removes all the whitespace from it

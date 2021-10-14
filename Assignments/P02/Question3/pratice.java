@@ -14,9 +14,11 @@
  *                  and Modulo. With these two exception handling classes: 
  *                  SyntaxError and Runtime_Error.
  * 
- * results:         Write SyntaxError and RuntimeError classes to define how
- *                  and when to throw errors. Perform the calculations and 
- *                  throw appropriate errors if necessary or the correct output.
+ * results:         Made these functions Addition, Subtraction, Multiplication, 
+ *                  Division and Wrote a SyntaxError and a RuntimeError classes
+ *                  to define how and when to throw errors. Perform the 
+ *                  calculations and throw appropriate errors if necessary 
+ *                  or the correct output.
  * 
  * Files:           Question_3.java
  * 

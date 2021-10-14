@@ -81,5 +81,4 @@
 | :---: | ---------------------------------- | ------------ |
 |   1   | [Question_1.java](Question_1.java) | **Solution** |
 |   2   | [Question_2.java](Question_2.java) | **Solution** |
-|   3   | [Question_3.java](Question_3.java) | **Solution** |
-|   4   | [input.txt](input.txt)             | **infile**   |
+|   3   | [Calculator.java](Calculator.java) | **Solution** |

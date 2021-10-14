@@ -33,8 +33,7 @@ class Main
 
         // Get user input
         Scanner equation = new Scanner(System.in);
-        String usrInput = input(equation);
-        //boolean cont = true;
+        String user_inputs = input(equation);
 
         // This loop will run until a Syntax or Runtime error occurs
         while (true) 
@@ -42,14 +41,14 @@ class Main
             try 
             {
 
-                checkString(usrInput); // Run a function that checks the string
+                checkString(user_inputs); // Run a function that checks the string
                                        // for incorrect Syntax and Runtime
                                        // errors
 
                 Pattern p = Pattern.compile("\\d+");
                 Pattern o = Pattern.compile("\\D");
-                Matcher m = p.matcher(usrInput);
-                Matcher n = o.matcher(usrInput);
+                Matcher m = p.matcher(user_inputs);
+                Matcher n = o.matcher(user_inputs);
 
                 Vector<Double> numbers = new Vector<Double>(1, 1);
                 Vector<String> operations = new Vector<String>(1, 1);
@@ -124,13 +123,13 @@ class Main
             {
                //equation.close();
             }
-            usrInput = input(equation);
+            user_inputs = input(equation);
         }
            
     }
 
     // Check the Expression for Syntax and Runtime Errors
-    static void checkString(String usrInput) throws SyntaxError, RuntimeError 
+    static void checkString(String user_inputs) throws SyntaxError, RuntimeError 
     {
         boolean equalSign = false; // Check if only one = symbol appears
         int pareLeft = 0; // Count the number of '(' symbols
@@ -138,94 +137,94 @@ class Main
 
         // Check if an equal symbol is in the correct position
         // if not throw a Syntax error
-        if (usrInput.charAt(1) == '=') 
+        if (user_inputs.charAt(1) == '=') 
         {
             equalSign = true;
             // Loop through the string and check for unexpected symbols
             // that are not apart of the listed symbols below
-            for (int i = 0; i < usrInput.length(); i++) 
+            for (int i = 0; i < user_inputs.length(); i++) 
             {
-                if (usrInput.charAt(i) == '+') 
+                if (user_inputs.charAt(i) == '+') 
                 {
-                    symbolCheck(usrInput, i);
+                    symbolCheck(user_inputs, i);
                 } 
-                else if (usrInput.charAt(i) == '-') 
+                else if (user_inputs.charAt(i) == '-') 
                 {
-                    symbolCheck(usrInput, i);
+                    symbolCheck(user_inputs, i);
                 } 
-                else if (usrInput.charAt(i) == '*') 
+                else if (user_inputs.charAt(i) == '*') 
                 {
-                    symbolCheck(usrInput, i);
+                    symbolCheck(user_inputs, i);
                 } 
-                else if (usrInput.charAt(i) == '/') 
+                else if (user_inputs.charAt(i) == '/') 
                 {
-                    symbolCheck(usrInput, i);
+                    symbolCheck(user_inputs, i);
                     // Throw an error is the next char is a zero
-                    if (usrInput.charAt(i + 1) == '0') 
+                    if (user_inputs.charAt(i + 1) == '0') 
                     {
-                        throw new RuntimeError(usrInput + "\t Runtime Error: Divide by Zero");
+                        throw new RuntimeError(user_inputs + "\t Runtime Error: Divide by Zero");
                     }
                 } 
-                else if (usrInput.charAt(i) == '%') 
+                else if (user_inputs.charAt(i) == '%') 
                 {
-                    symbolCheck(usrInput, i);
+                    symbolCheck(user_inputs, i);
                     // Throw an error is the next char is a zero
-                    if (usrInput.charAt(i + 1) == '0') 
+                    if (user_inputs.charAt(i + 1) == '0') 
                     {
-                        throw new RuntimeError(usrInput + "\t Runtime Error: Mod by Zero");
+                        throw new RuntimeError(user_inputs + "\t Runtime Error: Mod by Zero");
                     }
                 } 
-                else if (usrInput.charAt(i) == '(') 
+                else if (user_inputs.charAt(i) == '(') 
                 {
                     pareLeft++;
                 } 
-                else if (usrInput.charAt(i) == ')') 
+                else if (user_inputs.charAt(i) == ')') 
                 {
                     pareRight++;
                 } 
-                else if (usrInput.charAt(i) == '=' && i != 1) 
+                else if (user_inputs.charAt(i) == '=' && i != 1) 
                 {
                     equalSign = false;
-                    throw new SyntaxError(usrInput + "\t Syntax Error: Unexpected '='");
+                    throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '='");
                 }
 
             }
 
-            if ("Zz".contains("" + usrInput.charAt(4))) 
+            if ("Zz".contains("" + user_inputs.charAt(4))) 
             {
                                 //throw error up through the exception handling
-                                throw new SyntaxError(usrInput + "                 Syntax Error: more than one variable");
+                                throw new SyntaxError(user_inputs + "                 Syntax Error: more than one variable");
             } 
             // If the amount of parentheses doesn't match each other throw the
             // proper syntax error.
             // Throw an error for more ')' than '('
             if (pareLeft < pareRight) 
             {
-                throw new SyntaxError(usrInput + "\t Syntax Error: Expected '('");
+                throw new SyntaxError(user_inputs + "\t Syntax Error: Expected '('");
             } // Throw an error for more '(' than ')'
             else if (pareRight < pareLeft) 
             {
-                throw new SyntaxError(usrInput + "\t Syntax Error: Expected ')'");
+                throw new SyntaxError(user_inputs + "\t Syntax Error: Expected ')'");
             }
         } 
         else 
         {
             // Throw an error if an equal sign is not present after the variable
-            throw new SyntaxError(usrInput + "\t Syntax Error: Expected '='");
+            throw new SyntaxError(user_inputs + "\t Syntax Error: Expected '='");
         }
     }
 
     // Function that make sure there are no immediate duplicates after each symbol
-    static void symbolCheck(String usrInput, int index) throws SyntaxError 
+    static void symbolCheck(String user_inputs, int index) throws SyntaxError 
     {
-        if (usrInput.charAt(index + 1) == '+') {
-            throw new SyntaxError(usrInput + "\t Syntax Error: Unexpected '+'");
-        } else if (usrInput.charAt(index + 1) == '*') {
-            throw new SyntaxError(usrInput + "\t Syntax Error: Unexpected '*'");
-        } else if (usrInput.charAt(index + 1) == '/') {
-            throw new SyntaxError(usrInput + "\t Syntax Error: Unexpected '/'");
-        } else if (usrInput.charAt(index + 1) == '%') {
-            throw new SyntaxError(usrInput + "\t Syntax Error: Unexpected '%'");
+        if (user_inputs.charAt(index + 1) == '+') {
+            throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '+'");
+        } else if (user_inputs.charAt(index + 1) == '*') {
+            throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '*'");
+        } else if (user_inputs.charAt(index + 1) == '/') {
+            throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '/'");
+        } else if (user_inputs.charAt(index + 1) == '%') {
+            throw new SyntaxError(user_inputs + "\t Syntax Error: Unexpected '%'");
         }
     }
 
@@ -263,10 +262,10 @@ class Main
     static String input(Scanner equation) 
     {
         System.out.print("Enter your expression: ");
-        String usrInput = equation.nextLine();
-        usrInput = usrInput.replaceAll("\\s", "");
-        System.out.println("Expression Entered: " + usrInput);
-        return usrInput;
+        String user_inputs = equation.nextLine();
+        user_inputs = user_inputs.replaceAll("\\s", "");
+        System.out.println("Expression Entered: " + user_inputs);
+        return user_inputs;
     }
 }
 

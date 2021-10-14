@@ -15,9 +15,5 @@
   "C_Cpp_Runner.cppStandard": "",
   "C_Cpp_Runner.excludeSearch": [],
   "C_Cpp_Runner.enableWarnings": true,
-  "C_Cpp_Runner.warningsAsError": false,
-  "java.project.sourcePaths": [
-    "Question3",
-    "Question2"
-  ]
+  "C_Cpp_Runner.warningsAsError": false
 }

@@ -22,15 +22,10 @@
  *   
  *****************************************************************************/
 
+import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
-<<<<<<< HEAD
-=======
-import java.nio.file.Files;
-import java.nio.file.Paths;
->>>>>>> b0c59d0c7620dc8ca7ee5e4c238a8d4a61910b66
 
 class Mammalia 
 {
@@ -735,8 +730,12 @@ public class Question_2
          * Printing to a file 
          * For all the Mammalia family information.
          */
-        FileOutputStream  file = new FileOutputStream ("Outfile.txt");
-        System.setOut(new PrintStream(file));
+        // FileOutputStream  file = new FileOutputStream ("Outfile.txt");
+        // System.setOut(new PrintStream(file));
+
+        PrintStream file = new PrintStream(new File("Outfile.txt"));
+        PrintStream console = System.out;
+        System.setOut(file);
 
 
         /**
@@ -1011,6 +1010,8 @@ public class Question_2
         // 5 Glires Animals.
         Glires Glires1 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
         System.out.println("My name is Glires 1 from the Glires Family\n"+"---------------------------------\n"+Glires1.Animal_Infos());
+        System.setOut(console);
+        System.out.println("My name is Glires 1 from the Glires Family\n"+"---------------------------------\n"+Glires1.Animal_Infos());
 
         Glires1.set_neurons(20);
         Glires1.set_precision(50);
@@ -1018,6 +1019,8 @@ public class Question_2
         Glires1.set_Running_Speed(45);
         Glires1.set_Hunting_Process("Aggressive");
 
+        System.out.println("I am now the new version of Glires 1\n"+"---------------------------------\n"+Glires1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Glires 1\n"+"---------------------------------\n"+Glires1.Animal_Infos());
 
         Glires Glires2 = new Glires(4, true, true, 10, 60.0, 1300, "Fruits", 0, null);
@@ -1028,6 +1031,10 @@ public class Question_2
         
         // 5 Scrotifera Animals.
         Scrotifera Scrotifera1 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        
+        System.setOut(file);
+        System.out.println("My name is Scrotifera 1 from the Scrotifera Family\n"+"---------------------------------\n"+Scrotifera1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Scrotifera 1 from the Scrotifera Family\n"+"---------------------------------\n"+Scrotifera1.Animal_Infos());
 
         Scrotifera1.set_neurons(20);
@@ -1037,6 +1044,9 @@ public class Question_2
         Scrotifera1.set_Running_Speed(45);
         Scrotifera1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Scrotifera 1\n"+"---------------------------------\n"+Scrotifera1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Scrotifera 1\n"+"---------------------------------\n"+Scrotifera1.Animal_Infos());
 
         Scrotifera Scrotifera2 = new Scrotifera(4, true, true, 10, 60.0, 1300, "milk", 0, null);
@@ -1047,6 +1057,9 @@ public class Question_2
         
         // 5 Eulipotyphia Animals.
         Eulipotyphia Eulipotyphia1 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);
+        System.setOut(file);
+        System.out.println("My name is Eulipotyphia 1 from the Eulipotyphia Family\n"+"---------------------------------\n"+Eulipotyphia1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Eulipotyphia 1 from the Eulipotyphia Family\n"+"---------------------------------\n"+Eulipotyphia1.Animal_Infos());
 
         Eulipotyphia1.set_neurons(20);
@@ -1056,6 +1069,9 @@ public class Question_2
         Eulipotyphia1.set_Running_Speed(45);
         Eulipotyphia1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Eulipotyphia 1\n"+"---------------------------------\n"+Eulipotyphia1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Eulipotyphia 1\n"+"---------------------------------\n"+Eulipotyphia1.Animal_Infos());
 
         Eulipotyphia Eulipotyphia2 = new Eulipotyphia(4, true, true, 10, 60.0, 1300, "Peanut", 0, null);
@@ -1066,6 +1082,9 @@ public class Question_2
         
         // 5 Chirpotera Animals.
         Chirpotera Chirpotera1 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
+        System.setOut(file);
+        System.out.println("My name is Chirpotera 1 from the Chirpotera Family\n"+"---------------------------------\n"+Chirpotera1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Chirpotera 1 from the Chirpotera Family\n"+"---------------------------------\n"+Chirpotera1.Animal_Infos());
 
         Chirpotera1.set_neurons(20);
@@ -1075,6 +1094,9 @@ public class Question_2
         Chirpotera1.set_Running_Speed(45);
         Chirpotera1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Chirpotera 1\n"+"---------------------------------\n"+Chirpotera1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Chirpotera 1\n"+"---------------------------------\n"+Chirpotera1.Animal_Infos());
 
         Chirpotera Chirpotera2 = new Chirpotera(4, true, true, 10, 60.0, 1300, "Banana", 0, null);
@@ -1085,6 +1107,10 @@ public class Question_2
         
         // 5 Euungulata Animals.
         Euungulata Euungulata1 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
+        
+        System.setOut(file);
+        System.out.println("My name is Euungulata 1 from the Euungulata Family\n"+"---------------------------------\n"+Euungulata1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Euungulata 1 from the Euungulata Family\n"+"---------------------------------\n"+Euungulata1.Animal_Infos());
 
         Euungulata1.set_neurons(20);
@@ -1094,6 +1120,9 @@ public class Question_2
         Euungulata1.set_Running_Speed(45);
         Euungulata1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Euungulata 1\n"+"---------------------------------\n"+Euungulata1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Euungulata 1\n"+"---------------------------------\n"+Euungulata1.Animal_Infos());
 
         Euungulata Euungulata2 = new Euungulata(4, true, true, 10, 60.0, 1300, "milk", 0, null);
@@ -1104,6 +1133,10 @@ public class Question_2
         
         // 5 Ferae Animals.
         Ferae Ferae1 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
+        
+        System.setOut(file);
+        System.out.println("My name is Ferae 1 from the Ferae Family\n"+"---------------------------------\n"+Ferae1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Ferae 1 from the Ferae Family\n"+"---------------------------------\n"+Ferae1.Animal_Infos());
 
         Ferae1.set_neurons(20);
@@ -1113,6 +1146,9 @@ public class Question_2
         Ferae1.set_Running_Speed(45);
         Ferae1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Ferae 1\n"+"---------------------------------\n"+Ferae1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Ferae 1\n"+"---------------------------------\n"+Ferae1.Animal_Infos());
 
         Ferae Ferae2 = new Ferae(4, true, true, 10, 60.0, 500, "Beans", 0, null);
@@ -1123,6 +1159,10 @@ public class Question_2
         
         // 5 Cetartiodactyla Animals.
         Cetartiodactyla Cetartiodactyla1 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
+        
+        System.setOut(file);
+        System.out.println("My name is Cetartiodactyla 1 from the Cetartiodactyla Family\n"+"---------------------------------\n"+Cetartiodactyla1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Cetartiodactyla 1 from the Cetartiodactyla Family\n"+"---------------------------------\n"+Cetartiodactyla1.Animal_Infos());
 
         Cetartiodactyla1.set_neurons(20);
@@ -1132,6 +1172,9 @@ public class Question_2
         Cetartiodactyla1.set_Running_Speed(45);
         Cetartiodactyla1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Cetartiodactyla 1\n"+"---------------------------------\n"+Cetartiodactyla1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Cetartiodactyla 1\n"+"---------------------------------\n"+Cetartiodactyla1.Animal_Infos());
 
         Cetartiodactyla Cetartiodactyla2 = new Cetartiodactyla(4, true, true, 10, 60.0, 1300, "Green Grass", 0, null);
@@ -1142,6 +1185,10 @@ public class Question_2
         
         // 5 Perissodactyla Animals.
         Perissodactyla Perissodactyla1 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
+       
+        System.setOut(file);
+        System.out.println("My name is Perissodactyla 1 from the Perissodactyla Family\n"+"---------------------------------\n"+Perissodactyla1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Perissodactyla 1 from the Perissodactyla Family\n"+"---------------------------------\n"+Perissodactyla1.Animal_Infos());
 
         Perissodactyla1.set_neurons(20);
@@ -1150,6 +1197,9 @@ public class Question_2
         Perissodactyla1.set_Running_Speed(45);
         Perissodactyla1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Perissodactyla 1\n"+"---------------------------------\n"+Perissodactyla1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Perissodactyla 1\n"+"---------------------------------\n"+Perissodactyla1.Animal_Infos());
 
         Perissodactyla Perissodactyla2 = new Perissodactyla(4, true, true, 10, 60.0, 800, "Green Grass", 0, null);
@@ -1160,6 +1210,10 @@ public class Question_2
         
         // 5 Pholidota Animals.
         Pholidota Pholidota1 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
+        
+        System.setOut(file);
+        System.out.println("My name is Pholidota1 1 from the Pholidota Family\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Pholidota1 1 from the Pholidota Family\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
 
         Pholidota1.set_neurons(20);
@@ -1168,6 +1222,9 @@ public class Question_2
         Pholidota1.set_Running_Speed(45);
         Pholidota1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Pholidota 1\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Pholidota 1\n"+"---------------------------------\n"+Pholidota1.Animal_Infos());
 
         Pholidota Pholidota2 = new Pholidota(4, true, true, 10, 60.0, 100, "Steak", 0, null);
@@ -1178,6 +1235,10 @@ public class Question_2
 
         // 5 Carnivora Animals.
         Carnivora Carnivora1 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
+        
+        System.setOut(file);
+        System.out.println("My name is Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
+        System.setOut(console);
         System.out.println("My name is Carnivora 1 from the Carnivora Family\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
 
         Carnivora1.set_neurons(20);
@@ -1186,6 +1247,9 @@ public class Question_2
         Carnivora1.set_Running_Speed(45);
         Carnivora1.set_Hunting_Process("Aggressive");
 
+        System.setOut(file);
+        System.out.println("I am now the new version of Carnivora 1\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
+        System.setOut(console);
         System.out.println("I am now the new version of Carnivora 1\n"+"---------------------------------\n"+Carnivora1.Animal_Infos());
 
         Carnivora Carnivora2 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
@@ -1193,8 +1257,5 @@ public class Question_2
         Carnivora Carnivora4 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
         Carnivora Carnivora5 = new Carnivora(4, true, true, 10, 60.0, 2300, "Meat", 0, null);
 
-
-
-        
     }
 }

@@ -180,14 +180,14 @@ class Main
                 Matcher m = p.matcher(user_input);
                 Matcher n = o.matcher(user_input);
 
-                Vector<Double> toCalculate = new Vector<Double>(1, 1);
+                Vector<Double> to_Calculate = new Vector<Double>(1, 1);
                 Vector<String> operations = new Vector<String>(1, 1);
                 double results = 0;
 
                 while (m.find()) 
                 {
                     double tempVal = Double.valueOf(m.group());
-                    toCalculate.add(tempVal);
+                    to_Calculate.add(tempVal);
                 }
 
                 /**
@@ -217,9 +217,9 @@ class Main
                      */
                     if (c == '+') 
                     {
-                        results = addition(toCalculate.elementAt(0), toCalculate.elementAt(1));
-                        toCalculate.set(0, results);
-                        toCalculate.remove(1);
+                        results = addition(to_Calculate.elementAt(0), to_Calculate.elementAt(1));
+                        to_Calculate.set(0, results);
+                        to_Calculate.remove(1);
                         operations.remove(0);
                     } 
                      /**
@@ -227,9 +227,9 @@ class Main
                      */
                     else if (c == '-') 
                     {
-                        results = subtraction(toCalculate.elementAt(0), toCalculate.elementAt(1));
-                        toCalculate.set(0, results);
-                        toCalculate.remove(1);
+                        results = subtraction(to_Calculate.elementAt(0), to_Calculate.elementAt(1));
+                        to_Calculate.set(0, results);
+                        to_Calculate.remove(1);
                         operations.remove(0);
                     } 
                      /**
@@ -237,9 +237,9 @@ class Main
                      */
                     else if (c == '*') 
                     {
-                        results = multiply(toCalculate.elementAt(0), toCalculate.elementAt(1));
-                        toCalculate.set(0, results);
-                        toCalculate.remove(1);
+                        results = multiply(to_Calculate.elementAt(0), to_Calculate.elementAt(1));
+                        to_Calculate.set(0, results);
+                        to_Calculate.remove(1);
                         operations.remove(0);
                     } 
                      /**
@@ -247,9 +247,9 @@ class Main
                      */
                     else if (c == '/') 
                     {
-                        results = divide(toCalculate.elementAt(0), toCalculate.elementAt(1));
-                        toCalculate.set(0, results);
-                        toCalculate.remove(1);
+                        results = divide(to_Calculate.elementAt(0), to_Calculate.elementAt(1));
+                        to_Calculate.set(0, results);
+                        to_Calculate.remove(1);
                         operations.remove(0);
                     } 
                      /**
@@ -257,14 +257,14 @@ class Main
                      */
                     else 
                     {
-                        results = modulo(toCalculate.elementAt(0), toCalculate.elementAt(1));
-                        toCalculate.set(0, results);
-                        toCalculate.remove(1);
+                        results = modulo(to_Calculate.elementAt(0), to_Calculate.elementAt(1));
+                        to_Calculate.set(0, results);
+                        to_Calculate.remove(1);
                         operations.remove(0);
                     }
                 }
                 // Display our result.
-                System.out.println("The result is: " + toCalculate.get(0));
+                System.out.println("The result is: " + to_Calculate.get(0));
             } 
             catch (SyntaxError e) 
             {
@@ -318,19 +318,19 @@ class Main
             {
                 if (user_input.charAt(i) == '+') 
                 {
-                    symbolCheck(user_input, i);
+                    Check_Operand(user_input, i);
                 } 
                 else if (user_input.charAt(i) == '-') 
                 {
-                    symbolCheck(user_input, i);
+                    Check_Operand(user_input, i);
                 } 
                 else if (user_input.charAt(i) == '*') 
                 {
-                    symbolCheck(user_input, i);
+                    Check_Operand(user_input, i);
                 } 
                 else if (user_input.charAt(i) == '/') 
                 {
-                    symbolCheck(user_input, i);
+                    Check_Operand(user_input, i);
                     if (user_input.charAt(i + 1) == '0') 
                     {
                         throw new RuntimeError(user_input + "\t Runtime Error: Divide by Zero");
@@ -338,7 +338,7 @@ class Main
                 } 
                 else if (user_input.charAt(i) == '%') 
                 {
-                    symbolCheck(user_input, i);
+                    Check_Operand(user_input, i);
                     if (user_input.charAt(i + 1) == '0') 
                     {
                                                            
@@ -389,7 +389,7 @@ class Main
      * @throws SyntaxError
      * @return void
      */
-    static void symbolCheck(String user_input, int index) throws SyntaxError 
+    static void Check_Operand(String user_input, int index) throws SyntaxError 
     {
         if (user_input.charAt(index + 1) == '+') 
         {

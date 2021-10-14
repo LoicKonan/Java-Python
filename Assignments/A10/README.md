@@ -13,6 +13,6 @@
 
 ### Files
 
-|   #   | File    | Description |
-| :---: | ------- | ----------- |
-|   1   | main.py | Solution    |
+|   #   | File               | Description |
+| :---: | ------------------ | ----------- |
+|   1   | [main.py](main.py) | Solution    |

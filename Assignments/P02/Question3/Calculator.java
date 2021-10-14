@@ -22,13 +22,14 @@
  *****************************************************************************/
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;                               // Import the Scanner class to read text files
 
 
 class Syntax_Error extends Exception 
 {
-        final String Error_Message;
+        String Error_Message;
 
         public Syntax_Error(String Error_Message) 
         {
@@ -45,7 +46,7 @@ class Syntax_Error extends Exception
 
 class Runtime_Error extends Exception 
 {
-        final String Error_Message;
+        String Error_Message;
 
         public Runtime_Error(String Error_Message) 
         {

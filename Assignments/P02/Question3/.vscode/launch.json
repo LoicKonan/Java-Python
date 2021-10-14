@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch pratice",
+      "request": "launch",
+      "mainClass": "pratice",
+      "projectName": "Question3_b0b410cd"
+    },
+    {
+      "type": "java",
       "name": "Launch Calculator",
       "request": "launch",
       "mainClass": "Calculator",

@@ -48,7 +48,8 @@ abstract class Continent
     // Regular method
     public void display() 
     {
-        System.out.println("I'm a Method in the Abstract class Continent!!!");
+        System.out.println("\n----------------------------------------------------------------------------------------");
+        System.out.println("I'm a Method in the Abstract class Continent!!!\n");
     }
 }
 
@@ -63,8 +64,8 @@ class Country extends Continent
      */
     void info() 
     {
-        System.out.println("I'm the Subclass called: Country (inherit from Continent)." +
-                            "=> Run time Polymorphism.");
+        System.out.println("\nI'm the Subclass called: Country (inherit from Continent)." +
+                            "=> Run time Polymorphism.\n");
     }
 
     /**
@@ -73,9 +74,9 @@ class Country extends Continent
     public void seasons() 
     {
         // The body of seasons() is provided here
-        System.out.println("The body of the asbract method from the abstract class." + 
+        System.out.println("\nThe body of the asbract method from the abstract class." + 
                             "There is 4 Seasons in this Country." +
-                            " => Abstraction.");
+                            " => Abstraction.\n");
     }
 }
 
@@ -103,7 +104,7 @@ class State extends Country
     void info() 
     {
         System.out.println("I'm a Subclass called: State (inherit from Country)." + 
-                            " => Runtime Polymorphism.");
+                            " => Runtime Polymorphism.\n");
     }
 
     /**
@@ -165,10 +166,13 @@ public class Question_1
 {
     public static void main(String[] args) 
     {
+        // Build an object call America.
         Country America = new Country();
 
+        // Display the information.
         America.display();
         America.info();
+        America.seasons();
 
         State Texas = new State("Austin");
         
@@ -177,5 +181,7 @@ public class Question_1
         System.out.println("The capital of this  state is: " + Texas.get_capital());
         System.out.println("The number of students in this University is: " + Texas.population(3000, 2000,4000,6000));
         System.out.println("The number of people in this State is: " + Texas.population(3000, 2000));
+        System.out.println("----------------------------------------------------------------------------------------");
+
     }
 }

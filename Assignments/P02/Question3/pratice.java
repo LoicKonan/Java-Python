@@ -22,7 +22,6 @@
  * 
  *****************************************************************************/
 
- // Remove the package above to run the program
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -33,8 +32,8 @@ class Main
     {
 
         // Get user input
-        Scanner nInput = new Scanner(System.in);
-        String usrInput = getInput(nInput);
+        Scanner equation = new Scanner(System.in);
+        String usrInput = input(equation);
         //boolean cont = true;
 
         // This loop will run until a Syntax or Runtime error occurs
@@ -54,7 +53,7 @@ class Main
 
                 Vector<Double> numbers = new Vector<Double>(1, 1);
                 Vector<String> operations = new Vector<String>(1, 1);
-                double finalNum = 0;
+                double results = 0;
 
                 while (m.find()) 
                 {
@@ -77,36 +76,36 @@ class Main
                     char c = tempS.charAt(0);
                     if (c == '+') 
                     {
-                        finalNum = addition(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
+                        results = addition(numbers.elementAt(0), numbers.elementAt(1));
+                        numbers.set(0, results);
                         numbers.remove(1);
                         operations.remove(0);
                     } 
                     else if (c == '-') 
                     {
-                        finalNum = subtraction(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
+                        results = subtraction(numbers.elementAt(0), numbers.elementAt(1));
+                        numbers.set(0, results);
                         numbers.remove(1);
                         operations.remove(0);
                     } 
                     else if (c == '*') 
                     {
-                        finalNum = multiply(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
+                        results = multiply(numbers.elementAt(0), numbers.elementAt(1));
+                        numbers.set(0, results);
                         numbers.remove(1);
                         operations.remove(0);
                     } 
                     else if (c == '/') 
                     {
-                        finalNum = divide(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
+                        results = divide(numbers.elementAt(0), numbers.elementAt(1));
+                        numbers.set(0, results);
                         numbers.remove(1);
                         operations.remove(0);
                     } 
                     else 
                     {
-                        finalNum = modulo(numbers.elementAt(0), numbers.elementAt(1));
-                        numbers.set(0, finalNum);
+                        results = modulo(numbers.elementAt(0), numbers.elementAt(1));
+                        numbers.set(0, results);
                         numbers.remove(1);
                         operations.remove(0);
                     }
@@ -123,9 +122,9 @@ class Main
             } 
             finally 
             {
-               //nInput.close();
+               //equation.close();
             }
-            usrInput = getInput(nInput);
+            usrInput = input(equation);
         }
            
     }
@@ -261,10 +260,10 @@ class Main
     }
 
     // Method calls for the user's input and then removes all the whitespace from it
-    static String getInput(Scanner nInput) 
+    static String input(Scanner equation) 
     {
         System.out.print("Enter your expression: ");
-        String usrInput = nInput.nextLine();
+        String usrInput = equation.nextLine();
         usrInput = usrInput.replaceAll("\\s", "");
         System.out.println("Expression Entered: " + usrInput);
         return usrInput;
@@ -276,13 +275,11 @@ class SyntaxError extends Exception
 {
     String ErrorMessage;
 
-    // Set the Error message
-    SyntaxError(String s) 
+    SyntaxError(String mistake) 
     {
-        ErrorMessage = s;
+        ErrorMessage = mistake;
     }
 
-    // Return the Error message
     String getErrorMessage() 
     {
         return ErrorMessage;
@@ -295,13 +292,11 @@ class RuntimeError extends Exception
 {
     String ErrorMessage;
 
-    // Set the Error message
-    RuntimeError(String s) 
+    RuntimeError(String mistake) 
     {
-        ErrorMessage = s;
+        ErrorMessage = mistake;
     }
 
-    // Return the Error message
     String getErrorMessage() 
     {
         return ErrorMessage;

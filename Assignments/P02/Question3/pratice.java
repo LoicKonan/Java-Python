@@ -12,7 +12,7 @@
  *                  Creating a calculator class to perform these operations:
  *                  Addition, Subtraction, Multiplication, Division, and Modulo. 
  *                  With these two exception handling classes: 
- *                  Syntax_Error and Runtime_Error.
+ *                  SyntaxError and Runtime_Error.
  * 
  * results:
  *
@@ -34,9 +34,9 @@ class SyntaxError extends Exception
     String ErrorMessage;
 
     // Set the Error message
-    SyntaxError(String Error_Message) 
+    SyntaxError(String mistake) 
     {
-        ErrorMessage = Error_Message;
+        ErrorMessage = mistake;
     }
 
     // Return the Error message
@@ -53,9 +53,9 @@ class RuntimeError extends Exception
     String ErrorMessage;
 
     // Set the Error message
-    RuntimeError(String Error_Message) 
+    RuntimeError(String mistake) 
     {
-        ErrorMessage = Error_Message;
+        ErrorMessage = mistake;
     }
 
     // Return the Error message
@@ -69,39 +69,7 @@ class RuntimeError extends Exception
 
 class pratice 
 {
-    private static void symbolCheck(int i) {}
-
-     // Method that adds the selected values and returns the result
-     static double addition(double numA, double numB) 
-     {
-         return numA + numB;
-     }
- 
-     // Method that subtracts the selected values and returns the result
-     static double subtraction(double numA, double numB) 
-     {
-         return numA - numB;
-     }
- 
-     // Method that multiples the selected values and returns the result
-     static double multiply(double numA, double numB) 
-     {
-         return numA * numB;
-     }
- 
-     // Method that divides the selected values and returns the result
-     static double divide(double numA, double numB) 
-     {
-         return numA / numB;
-     }
- 
-     // Method that mods the first value by the second value and returns the result
-     static double modulo(double numA, double numB) 
-     {
-         return numA % numB;
-     }
- 
-    public static void main(String[] args) throws Syntax_Error, Runtime_Error 
+    public static void main(String[] args) throws SyntaxError, Runtime_Error 
     {
 
         // Get user input
@@ -184,7 +152,7 @@ class pratice
                 }
                 System.out.println("The value is " + numbers.get(0));
 
-            } catch (Syntax_Error | Runtime_Error e) 
+            } catch (SyntaxError | Runtime_Error e) 
             {
                 System.out.println(e.getLocalizedMessage());
             } 
@@ -192,14 +160,14 @@ class pratice
             {
                 nInput.close();
             }
-            
+
             usrInput = getInput(nInput);
         }
 
     }
 
     // Check the Expression for Syntax and Runtime Errors
-    static void checkString(String usrInput) throws Syntax_Error, Runtime_Error 
+    static void checkString(String usrInput) throws SyntaxError, Runtime_Error 
     {
         int L_Parenthesis = 0;                      // Number of '(' symbols
         int R_Parenthesis = 0;                      // Number of ')' symbols
@@ -240,7 +208,7 @@ class pratice
                 } 
                 else if (usrInput.charAt(i) == '=' && i != 1) 
                 {
-                    throw new Syntax_Error(usrInput + "\t\t Syntax Error: Unexpected '='");
+                    throw new SyntaxError(usrInput + "\t\t Syntax Error: Unexpected '='");
                 }
             }
             // If the amount of parentheses doesn't match each other throw the
@@ -248,20 +216,52 @@ class pratice
             // Throw an error for more ')' than '('
             if (L_Parenthesis < R_Parenthesis) 
             {
-                throw new Syntax_Error(usrInput + "\t\t Syntax Error: Expected '('");
+                throw new SyntaxError(usrInput + "\t\t Syntax Error: Expected '('");
             } // Throw an error for more '(' than ')'
             else if (R_Parenthesis < L_Parenthesis) 
             {
-                throw new Syntax_Error(usrInput + "\t\t Syntax Error: Expected ')'");
+                throw new SyntaxError(usrInput + "\t\t Syntax Error: Expected ')'");
             }
         } 
         else 
         {
             // Throw an error if an equal sign is not present after the variable
-            throw new Syntax_Error(usrInput + "\t\t Syntax Error: Expected '='");
+            throw new SyntaxError(usrInput + "\t\t Syntax Error: Expected '='");
         }
     }
-   
+
+    private static void symbolCheck(int i) {}
+
+    // Method that adds the selected values and returns the result
+    static double addition(double numA, double numB) 
+    {
+        return numA + numB;
+    }
+
+    // Method that subtracts the selected values and returns the result
+    static double subtraction(double numA, double numB) 
+    {
+        return numA - numB;
+    }
+
+    // Method that multiples the selected values and returns the result
+    static double multiply(double numA, double numB) 
+    {
+        return numA * numB;
+    }
+
+    // Method that divides the selected values and returns the result
+    static double divide(double numA, double numB) 
+    {
+        return numA / numB;
+    }
+
+    // Method that mods the first value by the second value and returns the result
+    static double modulo(double numA, double numB) 
+    {
+        return numA % numB;
+    }
+
     // Method calls for the user's input and then removes all the whitespace from it
     static String getInput(Scanner nInput) 
     {

@@ -51,7 +51,9 @@ for val in l1:
 #     print('you have not entered a numberic value')
     
 
-
+for i in range(intval):
+    print(i)
+    
 l2 = [3,78,125,34,-45,-43]
 
 largest_so_far = 0 #float('-inf')

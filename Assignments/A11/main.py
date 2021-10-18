@@ -9,6 +9,7 @@
 # 3. List
 # 4. continue
 # 5. break
+# 6. min()
 
 
 l1 = [1,2,3,4,5]
@@ -52,13 +53,20 @@ for val in l1:
 
 l2 = [3,78,125,34,-45,-43]
 
-largest_so_far = float('-inf')
+largest_so_far = 0 #float('-inf')
+
+# for val in l2:
+#     if val > largest_so_far:
+#         largest_so_far = val
+    
+# print(largest_so_far)
 
 for val in l2:
-    if val > largest_so_far:
+    if val < largest_so_far:
         largest_so_far = val
-    
 print(largest_so_far)
 
+print(sum(l2))
+acc = 0
 for val in l2:
-    print(max(val, largest_so_far))
+    acc 

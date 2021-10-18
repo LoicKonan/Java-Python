@@ -51,6 +51,10 @@ for val in l1:
 #     print('you have not entered a numberic value')
     
 
+for i in reversed(range(0, 10,1)):
+    print(i)
+    
+    
 for i in range(10):
     print('the range is: ', i)
     

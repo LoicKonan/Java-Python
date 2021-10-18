@@ -24,7 +24,6 @@ public Mountainbike(int gear, int speed, int myseatHeight)
   }
 
   @Override
-  
   public String showStatus()
   {
       return("I am using the gear of " + gear + "\nand my speed is "+ speed 

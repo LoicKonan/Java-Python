@@ -20,6 +20,9 @@ class Bicycle implements Vehicle
     public int gear;
     public int speed;
 
+    public Bicycle(int gear2, int speed2) {
+    }
+
     public void changeGear(int myGear)
     {
         gear = myGear;

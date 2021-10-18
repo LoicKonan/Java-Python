@@ -89,5 +89,5 @@ def generateNumbers(n):
     l3 =[]
     for i in range(n):  
         ranVal = random.randint(100,200)
-        l2.add(ranVal)
+        l2.append(ranVal)
     return l2

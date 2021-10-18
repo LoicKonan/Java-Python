@@ -11,6 +11,7 @@
 # 5. break
 # 6. min()
 
+import random
 
 l1 = [1,2,3,4,5]
 print('length: ' , len(l1))
@@ -80,3 +81,6 @@ for i in l2:
     elif i > largest:  
         largest = i   
 print('The largest number is: ', largest)
+
+for i in range(5):
+    print(random.randint(1,10))

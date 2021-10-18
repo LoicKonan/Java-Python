@@ -11,7 +11,19 @@
 
 
 l1 = [1,2,3,4,5]
+print('length: ' , len(l1))
 
+#here we printing the value of i.
+for i in range(len(l1)):
+    print(i)
+    
+
+for i in range(len(l1)):
+    print(l1[i])
+    
+# here i is the value.
+for i in l1:
+    print(i)
 
 # range (starting, stopping, stepping)
 # for i in range(0,10,2):

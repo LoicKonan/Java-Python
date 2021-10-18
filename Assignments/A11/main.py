@@ -71,3 +71,12 @@ acc = 0
 for val in l2:
     acc += val
 print(acc)
+
+largest = None
+
+for i in l2: 
+    if largest is None:
+        largest = i
+    elif i > largest:  
+        largest = i   
+print('The largest number is: ', largest)

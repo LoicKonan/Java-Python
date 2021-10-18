@@ -51,8 +51,8 @@ for val in l1:
 #     print('you have not entered a numberic value')
     
 
-for i in range(intval):
-    print(i)
+for i in range(10):
+    print('the range is: ', i)
     
 l2 = [3,78,125,34,-45,-43]
 

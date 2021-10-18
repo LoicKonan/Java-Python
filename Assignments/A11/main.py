@@ -48,3 +48,17 @@ for val in l1:
 # except:
 #     print('you have not entered a numberic value')
     
+
+
+l2 = [3,78,125,34,-45,-43]
+
+largest_so_far = float('-inf')
+
+for val in l2:
+    if val > largest_so_far:
+        largest_so_far = val
+    
+print(largest_so_far)
+
+for val in l2:
+    print(max(val, largest_so_far))

@@ -69,4 +69,5 @@ print(largest_so_far)
 print(sum(l2))
 acc = 0
 for val in l2:
-    acc 
+    acc += val
+print(acc)

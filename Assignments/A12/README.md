@@ -1,4 +1,4 @@
-## Assignment 12 -
+## Assignment 12 - Python Lists, Dictionaries, Strings.
 
 ### Loic Konan
 
@@ -6,7 +6,6 @@
 
 ### Files
 
-|   #   | File | Description |
-| :---: | ---- | ----------- |
-|   1   |      |             |
-|   2   |      |             |
+|   #   | File               | Description |
+| :---: | ------------------ | ----------- |
+|   1   | [main.py](main.py) | Solution    |

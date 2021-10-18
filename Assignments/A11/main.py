@@ -5,5 +5,17 @@
 # 
 
 # range (starting, stopping, stepping)
-for i in range(0,10,2):
-    print(i)
+# for i in range(0,10,2):
+#     print(i)
+    
+print('Enter some value')
+x = input(print(''))
+
+try:
+    intval = int(x)
+    for i in range(intval):
+        print(i)
+    # for i in reversed(range(0, intval,1)):
+    #     print(i)
+except:
+    print('you have not entered a numberic value')

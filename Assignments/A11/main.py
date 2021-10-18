@@ -10,6 +10,9 @@
 # 4. break
 
 
+l1 = [1,2,3,4,5]
+
+
 # range (starting, stopping, stepping)
 # for i in range(0,10,2):
 #     print(i)

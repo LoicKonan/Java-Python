@@ -12,7 +12,7 @@
 | [08](./A08) | [A08](./A08) | [Gaphic GUI in java.](./A08)                     | :heavy_check_mark: |
 | [09](./A09) | [A09](./A09) | [Python Intro & Basics](./A09)                   | :heavy_check_mark: |
 | [10](./A10) | [A10](./A10) | [Python Flow Control](./A10)                     | :heavy_check_mark: |
-| [11](./A11) | [A11](./A11) | [Python Functions, Loops, Recursion.](./A11)     | :soon: 🔴           |
+| [11](./A11) | [A11](./A11) | [Python Functions, Loops, Recursion.](./A11)     | :heavy_check_mark: |
 | [12](./A12) | [A12](./A12) | [Python Lists, Dictionaries, Strings.](./A12)    | :soon: 🔴           |
 | [13](./A13) | [A13](./A13) | [Python Tuples; Regular Expressioons.](./A13)    | :soon: 🔴           |
 | [14](./A14) | [A14](./A14) | [Python File.](./A14)                            | :soon: 🔴           |

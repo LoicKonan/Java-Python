@@ -4,6 +4,12 @@
 # Date: 10/18/2021 
 # 
 
+# 1. range()
+# 2. reversed()
+# 3. continue
+# 4. break
+
+
 # range (starting, stopping, stepping)
 # for i in range(0,10,2):
 #     print(i)
@@ -19,3 +25,4 @@ try:
     #     print(i)
 except:
     print('you have not entered a numberic value')
+    

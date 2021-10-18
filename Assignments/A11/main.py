@@ -6,38 +6,45 @@
 
 # 1. range()
 # 2. reversed()
-# 3. continue
-# 4. break
+# 3. List
+# 4. continue
+# 5. break
 
 
 l1 = [1,2,3,4,5]
 print('length: ' , len(l1))
 
-#here we printing the value of i.
-for i in range(len(l1)):
-    print(i)
+# #here we printing the value of i.
+# for i in range(len(l1)):
+#     print(i)
     
 
-for i in range(len(l1)):
-    print(l1[i])
+# for i in range(len(l1)):
+#     print(l1[i])
     
+counter = 0
 # here i is the value.
-for i in l1:
-    print(i)
+for val in l1:
+    counter +=1
+    if val == 3:
+        print('I found 3')
+        continue
+        print( counter, '3 is not found')
+
 
 # range (starting, stopping, stepping)
 # for i in range(0,10,2):
 #     print(i)
     
-print('Enter some value')
-x = input(print(''))
+# print('Enter some value')
+# x = input(print(''))
 
-try:
-    intval = int(x)
-    for i in range(intval):
-        print(i)
-    # for i in reversed(range(0, intval,1)):
-    #     print(i)
-except:
-    print('you have not entered a numberic value')
+# try:
+#     intval = int(x)
+#     for i in range(intval):
+#         print(i)
+#     # for i in reversed(range(0, intval,1)):
+#     #     print(i)
+# except:
+#     print('you have not entered a numberic value')
     

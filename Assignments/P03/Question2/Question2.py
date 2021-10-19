@@ -4,10 +4,10 @@ age_array = list()
 Occupation_array = list()
 Address_array = list()
 
-number = input(int(print("How many people do you need to enter: ")))
+number = int(input(print("How many people do you need to enter: ")))
 
-while(number):
-
+for i in range number:    
+    
     #Get nane and input
     LName = input("Enter your Last Name: ")
     FName = input("Enter your First Name: ")

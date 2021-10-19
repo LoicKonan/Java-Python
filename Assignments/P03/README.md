@@ -15,12 +15,11 @@
 >
 > - Write a program where it asks to enter the **number of people**, then based on this number
 > - _iterate that amount of time_ where each time get _single person’s information_:
->
->   **- First Name**
->   **- Last Name**
->   **- Age**
->   **- Occupation**
->   **- Address.**
+>   - **First Name**
+>   - **Last Name**
+>   - **Age**
+>   - **Occupation**
+>   - **Address.**
 >
 > - Make sure you **validate all users’ input**.
 > - Included but not limited to like age cannot be a non-numeric value should be between 0-150,

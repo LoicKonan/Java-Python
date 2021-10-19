@@ -55,7 +55,7 @@
 >
 > - **Example:**
 >
->   <img src="pic3.png">
+>       - <img src="pic3.png">
 >
 >
 ### Files

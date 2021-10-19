@@ -25,11 +25,5 @@ for x in range(0,int(number)):
     Occupation_array.append(Occupation)
     Address_array.append(address)
     
-# print (Lname_array)
-# print (Fname_array)
-# print (age_array)
-# print (Occupation_array)
-# print (Address_array)
-
 for Lname, Fname, age, job, addy in zip(Lname_array, Fname_array, age_array, Occupation_array, Address_array):
     print(Lname, '\t', Fname,'\t', age, '\t', job, '\t', addy)

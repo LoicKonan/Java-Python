@@ -1,4 +1,4 @@
-## Program 01 - Problem Solving.
+## Program 01 - Problem Solving in Java.
 
 ### Loic Konan
 

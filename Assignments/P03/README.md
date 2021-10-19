@@ -54,7 +54,7 @@
 >   - **Do not ignore** any characters other than the leading whitespace or the rest of the string after the digits.
 >
 > - **Example:**
-> 
+>
 >   <img src="pic3.png">
 >
 >

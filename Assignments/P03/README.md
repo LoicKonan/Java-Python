@@ -5,7 +5,8 @@
 ### Description
 
 > - 1. Write a Python program to draw a three-stage rocket.
->   - Example:  <img src="pic.png">
+>   - Example:  
+>       <img src="pic.png">
 >
 >
 >

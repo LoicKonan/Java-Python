@@ -16,34 +16,46 @@
  # 
  #****************************************************************************/
 
-name_age = []
-
 Fname_array = list()
 Lname_array = list()
 age_array = list()
 Occupation_array = list()
 Address_array = list()
 
-number = input("How many people do you need to enter: ")
-
+while True:
+        number = input("How many people do you need to enter: ")
+        if number.isdigit(): 
+            break
+        else: print("Please Enter a valid Number: ")
+        
 for x in range(0,int(number)):    
     
     #Get nane and input
     LName = input("Enter your Last Name: ")
+    
     FName = input("Enter your First Name: ")
-    ageRecord = int(input("Age: "))
+    
+    while True:
+        Age = input("Please Your age: ")
+        if Age.isdigit() and (0 <int(Age)< 130): 
+            break
+        else: print("Please Enter a valid age")
+            
+    # Age = int(input("Age: "))
     Occupation = input("Enter your occupation: ")
+    
+    
     address = input("Enter your address: ")
     
     
     #Update name and age array
     Lname_array.append(LName)
     Fname_array.append(FName)
-    age_array.append(ageRecord)
+    age_array.append(Age)
     Occupation_array.append(Occupation)
     Address_array.append(address)
     
-for x in range(len(number)):
+for x in range(0,int(number)):    
     print(Lname_array[x], Fname_array[x], " aged", age_array[x]," years, worked as a ",Occupation_array[x],
              " and currently lives at ",Address_array[x],".\n")
  

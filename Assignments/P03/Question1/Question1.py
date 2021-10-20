@@ -15,11 +15,13 @@
  # Files:           Question1.py
  # 
  #****************************************************************************/
+import colorama
+from colorama import Fore
 
 
-print("     * ")
+print(Fore.RED + "     * ")
 print("    * * ")
-print("   *   * ")
+print("   * * * ")
 print("  *******")
 print("  *  N  *")
 print("  *     *")

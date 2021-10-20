@@ -15,9 +15,9 @@
  # Files:           Question1.py
  # 
  #****************************************************************************/
+ 
 import colorama
 from colorama import Fore
-
 
 print(Fore.WHITE + "     * ")
 print("    * * ")

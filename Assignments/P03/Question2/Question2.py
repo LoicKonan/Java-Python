@@ -80,7 +80,7 @@ while i<entry:
     
     while True:
         Age = input("Please Your age: ")
-        if Age.isdigit() and (0 <int(Age)< 130): 
+        if Age.isdigit() and (0 < int(Age) < 150): 
             break
         else: print("Please Enter a valid age")
                     

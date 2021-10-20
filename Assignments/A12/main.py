@@ -43,8 +43,14 @@
 
 
 str1 = 'apple'
+print(type(str1))
+print(dir(str1))
+
+
 str2 = ''
 str2 = str1[3:]
+str2.lstrip()
+
 
 print(str1[-3:])
 print(str1[1:])

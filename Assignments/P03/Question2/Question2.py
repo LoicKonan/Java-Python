@@ -37,15 +37,15 @@ for x in range(0,int(number)):
     
     while True:
         Age = input("Enter age of " + x  + " person: ")
+        
         if Age.isdigit() and (0 <int(Age)< 130): 
             break
-        else: print("Please Enter a valid age")
+        else: print("Please Enter a valid age for the " + x + "person: ")
             
-    # Age = int(input("Age: "))
-    Occupation = input("Enter your occupation: ")
+    Occupation = input("Enter the occupation for the " + x + "person:")
     
     
-    address = input("Enter your address: ")
+    address = input("Enter the address for the " + x + "person:")
     
     
     #Update name and age array

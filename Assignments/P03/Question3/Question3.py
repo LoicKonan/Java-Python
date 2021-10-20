@@ -117,8 +117,11 @@ def myAtoi(s):
         return max(-1*int(InputValueString), -2**31)
  
 try:
-    s = str(input("Please enter a string of values\n"))
+    s = str(input("Please enter a string of values: "))
     myAtoi(s)
 except:
     print("invalid data unable to process")
-print('Input:    "',s,'"',"\t\t",'OutPut:    "',myAtoi(s),'"\n') 
+print("==========================================")
+print(" Input \t\t\t\t OutPut") 
+print("==========================================\n")
+print(" ", s, "\t\t\t\t", myAtoi(s),"\n")

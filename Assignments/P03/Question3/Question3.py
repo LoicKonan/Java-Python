@@ -126,14 +126,6 @@ def myAtoi(s):
 # string in and then display the corresponding output 
 # with the print(myAtoi(s))
 
-print("#========================================================#\n",
-       "# Author - Ethan Coyle                                  #\n",
-       "# Instructor- Dr. Saikat                                #\n",
-       "# Class     - Contemp. Prog Java/Python                 #\n",
-       "# Course    - CMPS 4143                                 #\n",
-       "# Assignment- Problem 3                                 #\n",
-       "#=======================================================#\n")
-
 try:
     s="42"
     myAtoi(s)

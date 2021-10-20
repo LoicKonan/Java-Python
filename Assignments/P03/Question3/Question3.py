@@ -121,7 +121,4 @@ try:
     myAtoi(s)
 except:
     print("invalid data unable to process")
-print("==========================================")
-print(" Input \t\t\t\t OutPut") 
-print("==========================================\n")
-print(" ", s, "\t\t\t\t", myAtoi(s),"\n")
+print('Input:    "',s,'"',"\t\t",'OutPut:    ',myAtoi(s),'\n') 

@@ -79,14 +79,10 @@ while i<entry:
     # start try catch block that will catch invalid data  whcih consists of nums between 0 and 150
     
     while True:
-        try:
-            Age = int(input("Enter the person Age(must be less than 150: "))
-            while Age > 150 or Age < 0:
-                print('Please print a valid age')
-                Age = int(input())
-        except ValueError:
-            Age = int(input("Please Enter a valid age: "))
+        Age = input("Please Your age: ")
+        if Age.isdigit() and (0 <int(Age)< 130): 
             break
+        else: print("Please Enter a valid age")
                     
     # try catch to read in valid non numeric occupation
     while(True):

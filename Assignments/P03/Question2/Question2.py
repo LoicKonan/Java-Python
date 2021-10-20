@@ -55,7 +55,7 @@ for x in range(0, int(number)):
 print("Output: \n")
  
 for x in range(0,int(number)):    
-    print(Lname_array[x], Fname_array[x], " aged", age_array[x]," years, worked as a ",Occupation_array[x],
+    print(Lname_array[x], Fname_array[x], ", aged", age_array[x]," years, worked as a ",Occupation_array[x],
              " and currently lives at ",Address_array[x],".\n")
  
  

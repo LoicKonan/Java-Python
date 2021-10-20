@@ -7,7 +7,12 @@
 
 
 def addition(param1,param2):
-    return param1 * param2
+    
+    if(param1 <= 40):
+        return param1 * param2
+    elif (param1 > 40): 
+        A = param1 - 40
+        return 40 * param2 + A * 15 
 
 
 print('Enter your hours and your your rate: ')

@@ -31,7 +31,7 @@ while True:
 for x in range(0,int(number)):    
     
     #Get nane and input
-    LName = input("Enter the Last Name of the " + x + "person: ")
+    LName = input("Enter the Last Name of the " + x+1 + "person: ")
     
     FName = input("Enter the First Name of the " + x + "person: ")
     

@@ -28,7 +28,7 @@ while True:
             break
         else: print("Please Enter a valid Number: ")
         
-for x in range(0,int(number)):    
+for x in range(0, int(number)):    
     
     LName = input("Enter the Last Name of the " + x+1 + "person: ")
     
@@ -37,7 +37,7 @@ for x in range(0,int(number)):
     while True:
         Age = input("Enter age of " + x  + " person: ")
         
-        if Age.isdigit() and (0 <int(Age)< 130): 
+        if Age.isdigit() and (0 < int(Age) < 130): 
             break
         else: print("Please Enter a valid age for the " + x + "person: ")
             

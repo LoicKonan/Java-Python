@@ -30,30 +30,30 @@ while True:
         
 for x in range(0, int(number)):    
     
-    LName = input("Enter the Last Name of the " + x+1 + "person: ")
+    LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
     
-    FName = input("Enter the First Name of the " + x + "person: ")
+    FName = input("Enter the First Name of person number " + str(x+1) + ": ")
     
     while True:
-        Age = input("Enter age of " + x  + " person: ")
+        Age = input("Enter the age of person number " +  str(x+1)  + " : ")
         
         if Age.isdigit() and (0 < int(Age) < 130): 
             break
-        else: print("Please Enter a valid age for the " + x + "person: ")
+        else: print("Please Enter a valid age person number " + str(x+1) + " : ")
             
-    Occupation = input("Enter the occupation for the " + x + "person:")
+    Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
     
     
-    address = input("Enter the address for the " + x + "person:")
+    address = input("Enter the address for person number " + str(x+1) + " :")
     
-    
-    #Update name and age array
     Lname_array.append(LName)
     Fname_array.append(FName)
     age_array.append(Age)
     Occupation_array.append(Occupation)
     Address_array.append(address)
     
+print("Output: \n")
+ 
 for x in range(0,int(number)):    
     print(Lname_array[x], Fname_array[x], " aged", age_array[x]," years, worked as a ",Occupation_array[x],
              " and currently lives at ",Address_array[x],".\n")

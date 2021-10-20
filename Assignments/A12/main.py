@@ -1,4 +1,8 @@
-
+# Python
+# @author Loic Konan
+# Semester: Fall 2021
+# Date: 10/20/2021 
+# 
 
 def addition(param1,param2):
     return param1 + param2
@@ -36,3 +40,9 @@ print("Give me nth fib number")
 x = int(input())
 fibn = fib(x)
 print(fibn)
+
+
+str1 = 'apple'
+
+print(str1[-3:])
+print(str1[1:])

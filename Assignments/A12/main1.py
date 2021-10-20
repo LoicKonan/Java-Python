@@ -13,7 +13,7 @@ def addition(param1,param2):
 print('Enter your hours and your your rate: ')
 x = int(input())
 y = int(input()) 
-print('You have entered: ', x, y)
+print('You have entered: ', x,' hours and: ' y, ' rate.')
 
 res = addition(x,y)
     

@@ -31,12 +31,12 @@ while True:
 for x in range(0,int(number)):    
     
     #Get nane and input
-    LName = input("Enter your Last Name: ")
+    LName = input("Enter the Last Name of the " + x + "person: ")
     
-    FName = input("Enter your First Name: ")
+    FName = input("Enter the First Name of the " + x + "person: ")
     
     while True:
-        Age = input("Please Your age: ")
+        Age = input("Enter age of " + x  + " person: ")
         if Age.isdigit() and (0 <int(Age)< 130): 
             break
         else: print("Please Enter a valid age")

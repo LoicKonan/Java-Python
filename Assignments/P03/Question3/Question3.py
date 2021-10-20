@@ -121,6 +121,6 @@ try:
     myAtoi(s)
 except:
     print("invalid data unable to process")
-print('Input8:    "',s,'"',"\t\t\t\t\t",'OutPut8:    "',myAtoi(s),'"\n') # print out the result of the string read
+print('Input:    "',s,'"',"\t\t\t\t\t",'OutPut:    "',myAtoi(s),'"\n') # print out the result of the string read
 
 # end of the program

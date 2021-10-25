@@ -23,7 +23,7 @@ elif(s2 > s3):
 elif (s2 < s3):
     print('s2 Less than s3')
     
-print(dir(s1))          # print the directory name.
+print(dir(s1))                  # print the directory name.
 
 print(s1.upper())
 print(s2.lower())
@@ -31,7 +31,10 @@ print(s2.lower())
 if(s2.islower()):
     print('s2 is lower case')
     
-print(s1.find('am'))
+print(s1.find('am'))            # return the index
 
-if 'am' in s1:
+if 'am' in s1:                  # will look if the word is there.
     print('I found it')
+    
+s1.replace('good', 'bad')
+print(s1)

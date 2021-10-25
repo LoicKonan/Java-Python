@@ -40,7 +40,7 @@ s1.replace('good', 'bad')       # string is immutable
 s4 = s1
 print(s4)
 
-l1 = [10,20,30,40,50]           # this is mutable
+l1 = [10,20,30,40,50]           # this is mutable because it is not a string.
 
 l1[2] = 50 
 print(l1)

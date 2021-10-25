@@ -36,5 +36,11 @@ print(s1.find('am'))            # return the index
 if 'am' in s1:                  # will look if the word is there.
     print('I found it')
     
-s1.replace('good', 'bad')
-print(s1)
+s1.replace('good', 'bad')       # string is immutable
+s4 = s1
+print(s4)
+
+l1 = [10,20,30,40,50]           # this is mutable
+
+l1[2] = 50 
+print(l1)

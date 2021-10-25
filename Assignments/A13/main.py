@@ -30,3 +30,8 @@ print(s2.lower())
 
 if(s2.islower()):
     print('s2 is lower case')
+    
+print(s1.find('am'))
+
+if 'am' in s1:
+    print('I found it')

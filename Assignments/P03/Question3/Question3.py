@@ -16,49 +16,6 @@
  # 
  #****************************************************************************/
 
-# import sys
- 
-# def myAtoi(Str):
- 
-#     sign, base, i = 1, 0, 0
-     
-#     # If whitespaces then ignore.
-#     while (Str[i] == ' '):
-#         i += 1
-     
-#     # Sign of number
-#     if (Str[i] == '-' or Str[i] == '+'):
-#         sign = 1 - 2 * (Str[i] == '-')
-#         i += 1
- 
-#     # Checking for valid input
-#     while (i < len(Str) and
-#           Str[i] >= '0' and Str[i] <= '9'):
-               
-#         # Handling overflow test case
-#         if (base > (sys.maxsize // 10) or
-#            (base == (sys.maxsize // 10) and
-#            (Str[i] - '0') > 7)):
-#             if (sign == 1):
-#                 return sys.maxsize
-#             else:
-#                 return -(sys.maxsize)
-         
-#         base = 10 * base + (ord(Str[i]) - ord('0'))
-#         i += 1
-     
-#     return base * sign
- 
-# # Driver Code
-# Str = list("-91283472332")
- 
-# # Functional Code
-# val = myAtoi(Str)
- 
-# print(val)
- 
-# # This code is contributed by divyeshrabadiya07
-
 
 # creating the definition for myAtoi(passing in the string s inside)
 def myAtoi(s):
@@ -73,17 +30,17 @@ def myAtoi(s):
     i=0
     
     # any white space, we ignore
-    while i<len(s):
+    while i < len(s):
         if s[i]!=" ":
             break
-        i+=1
+        i += 1
 
     # if the first character after whitespaces:
     # if first char after whitespace is a digit, add to string input
     # if is a + sign dont do anythin if there is a negative sign
     # positive value is changed to false. all other cases, return
-    if i<len(s):
-        if ord('0')<=ord(s[i])<=ord('9'):
+    if i < len(s):
+        if ord('0')<= ord(s[i])<= ord('9'):
             InputValueString += s[i]
         elif s[i]=="-": # else if as elif
             PositiveNumber = False # if negative then positive number set to false
@@ -96,7 +53,7 @@ def myAtoi(s):
     i+=1
 
     # now run a loop till the end of the string
-    while i<len(s):
+    while i < len(s):
         # if char is a number add to string input
         if ord('0')<=ord(s[i])<=ord('9'):
             InputValueString += s[i]

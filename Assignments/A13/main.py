@@ -75,9 +75,15 @@
 #     print(val,idx)
 
 l3 = []
+
+
 l1 = [10,20,30,40,50,60]
 l2 = [50,60,70,80,30,80]
 
+
+# give you a list of zero and as many as the length of l1
+l3 = [0 for _ in range(len(l1))]            # the underscore mean you not using that variable later.
+print(l3)
 l3 = l1 + l2 
 print(l3)
 
@@ -86,3 +92,10 @@ for idx in range(len(l1)):
     print(l3)
     l3.append(newval)
     print(newval)
+
+#  calculate the length and length minus 1 you get the last element. and use array[0] to find first element.
+
+l3 = [100,20,350]
+l3.sort()
+
+print(l3)

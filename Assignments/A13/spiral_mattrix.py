@@ -1,41 +1,35 @@
-def spiralOrder(matrix):
-    ans = []
- 
-    if (len(matrix) == 0):
-        return ans
- 
-    R = len(matrix)
-    C = len(matrix[0])
-    seen = [[0 for i in range(C)] for j in range(R)]
-    dr = [0, 1, 0, -1]
-    dc = [1, 0, -1, 0]
-    r = 0
-    c = 0
-    di = 0
- 
-    # Iterate from 0 to R * C - 1
-    for i in range(R * C):
-        ans.append(matrix[r])
-        seen[r] = True
-        cr = r + dr[di]
-        cc = c + dc[di]
- 
-        if (0 <= cr and cr < R and 0 <= cc and cc < C and not(seen[cr][cc])):
-            r = cr
-            c = cc
-        else:
-            di = (di + 1) % 4
-            r += dr[di]
-            c += dc[di]
-    return ans
- 
- 
-# Driver code
-a = [[1, 2, 3, 4],
-     [5, 6, 7, 8],
-     [9, 10, 11, 12],
-     [13, 14, 15, 16]]
- 
-for x in spiralOrder(a):
-    print(x, end=" ")
-print()
+class Solution(object):
+       def generateMatrix(self, n):
+      row1 = 0
+      col1 = 0
+      row2 = n
+      col2 = n
+      result = [ [0 for i in range(n)] for j in range(n)]
+      num = 1
+      while num<= n2:
+         for i in range(col1,col2):
+            result[row1][i] = num
+            num+=1
+         if num > n2:
+            break
+         for i in range(row1+1,row2):
+            result[i][col2-1] = num
+            num+=1
+         if num > n2:
+            break
+         for i in range(col2-2,col1-1,-1):
+            result[row2-1][i] = num
+            num+=1
+         if num > n2:
+            break
+         for i in range(row2-2,row1,-1):
+            result[i][col1] = num
+            num+=1
+            row1+=1
+            row2-=1
+            col1+=1
+            col2-=1
+            #print(result)
+      return result
+ob1 = Solution()
+print(ob1.generateMatrix(4))

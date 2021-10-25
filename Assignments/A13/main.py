@@ -95,7 +95,12 @@ for idx in range(len(l1)):
 
 #  calculate the length and length minus 1 you get the last element. and use array[0] to find first element.
 
-l3 = [100,20,350]
+l3 = [100,20,350, 'saidka', 'msu']
 l3.sort()
 
 print(l3)
+
+l4 = ['z', 'c', 'a', 1]
+l4.sort()
+
+print(l4)

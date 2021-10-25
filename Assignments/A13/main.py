@@ -46,11 +46,11 @@ l1[2] = 50
 print(l1)
 
 s5 = '10'
-print(s5.isnumeric())
+print(s5.isnumeric())           # check if it is numeric
 
 s6 = '10 with words'
 for ch in s6:
-    print(s6.isnumeric()) 
+    print(s6.isnumeric())       # check if it is numeric
     
-print(s6.startswith('10'))
-print(s6.endswith('words'))
+print(s6.startswith('10'))      # check if it is numericstart with ?
+print(s6.endswith('words'))     # end with

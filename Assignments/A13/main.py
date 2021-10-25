@@ -61,15 +61,28 @@
 # friends = ['Loic', 'John', 'Ethan']
 # print(len(friends))
 
-L1 = [10, 20, 30, 40, 50]       # REMEMBER A LIST IS HETEROGEONEOUS
-print(L1 == 40)
+# L1 = [10, 20, 30, 40, 50]       # REMEMBER A LIST IS HETEROGEONEOUS
+# print(L1 == 40)
 
-for idx in range(len(L1)):      # 3 ways to access a list
-    print(L1(idx))
+# for idx in range(len(L1)):      # 3 ways to access a list
+#     print(L1(idx))
     
-l3 = [10, 20, 30, 'das', 'You']
-for val in l3:  
-    print(val)                  # print a multiple dimensial list.
+# l3 = [10, 20, 30, 'das', 'You']
+# for val in l3:  
+#     print(val)                  # print a multiple dimensial list.
     
-for idx, val in enumerate(l3): 
-    print(val,idx)
+# for idx, val in enumerate(l3): 
+#     print(val,idx)
+
+l3 = []
+l1 = [10,20,30,40,50,60]
+l2 = [50,60,70,80,30,80]
+
+l3 = l1 + l2 
+print(l3)
+
+for idx in range(len(l1)): 
+    newval = l1[idx] + l2[idx]
+    print(l3)
+    l3.append(newval)
+    print(newval)

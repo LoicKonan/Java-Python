@@ -1,35 +1,50 @@
-class Solution(object):
-       def generateMatrix(self, n):
-      row1 = 0
-      col1 = 0
-      row2 = n
-      col2 = n
-      result = [ [0 for i in range(n)] for j in range(n)]
-      num = 1
-      while num<= n2:
-         for i in range(col1,col2):
-            result[row1][i] = num
-            num+=1
-         if num > n2:
-            break
-         for i in range(row1+1,row2):
-            result[i][col2-1] = num
-            num+=1
-         if num > n2:
-            break
-         for i in range(col2-2,col1-1,-1):
-            result[row2-1][i] = num
-            num+=1
-         if num > n2:
-            break
-         for i in range(row2-2,row1,-1):
-            result[i][col1] = num
-            num+=1
-            row1+=1
-            row2-=1
-            col1+=1
-            col2-=1
-            #print(result)
-      return result
-ob1 = Solution()
-print(ob1.generateMatrix(4))
+def spiralPrint(m, n, a) : 
+    k = 0; l = 0
+
+    ''' k - starting row index 
+        m - ending row index 
+        l - starting column index 
+        n - ending column index 
+        i - iterator '''
+
+
+    while (k < m and l < n) : 
+
+        # Print the first row from 
+        # the remaining rows
+        for i in range(l, n) : 
+            print(a[k][i], end = " ") 
+
+        k += 1
+
+        # Print the last column from 
+        # the remaining columns
+        for i in range(k, m) : 
+            print(a[i][n - 1], end = " ") 
+
+        n -= 1
+
+        # Print the last row from 
+        # the remaining rows
+        if ( k < m) : 
+
+            for i in range(n - 1, (l - 1), -1) : 
+                print(a[m - 1][i], end = " ") 
+
+            m -= 1
+
+        # Print the first column from 
+        # the remaining columns
+        if (l < n) : 
+            for i in range(m - 1, k - 1, -1) : 
+                print(a[i][l], end = " ") 
+
+            l += 1
+
+# Driver Code 
+a = [ [1, 2, 3, 4, 5, 6], 
+      [7, 8, 9, 10, 11, 12], 
+      [13, 14, 15, 16, 17, 18] ] 
+
+R = 3; C = 6
+spiralPrint(R, C, a)

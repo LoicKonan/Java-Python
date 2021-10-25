@@ -95,12 +95,18 @@ for idx in range(len(l1)):
 
 #  calculate the length and length minus 1 you get the last element. and use array[0] to find first element.
 
-l3 = [100,20,350, 'saidka', 'msu']
+l3 = [100,20,350]
 l3.sort()
 
 print(l3)
 
-l4 = ['z', 'c', 'a', 1]
-l4.sort()
+# l4 = ['z', 'c', 'a', 1]
+# l4.sort()
 
-print(l4)
+# print(l4)                 you can't do that because it is hereterousgen
+
+abc = 'with three words'
+
+stuff = abc.split()
+
+print(stuff)

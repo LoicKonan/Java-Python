@@ -44,3 +44,13 @@ l1 = [10,20,30,40,50]           # this is mutable because it is not a string.
 
 l1[2] = 50 
 print(l1)
+
+s5 = '10'
+print(s5.isnumeric())
+
+s6 = '10 with words'
+for ch in s6:
+    print(s6.isnumeric()) 
+    
+print(s6.startswith('10'))
+print(s6.endswith('words'))

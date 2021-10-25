@@ -64,5 +64,12 @@
 L1 = [10, 20, 30, 40, 50]       # REMEMBER A LIST IS HETEROGEONEOUS
 print(L1 == 40)
 
-for idx in range(len(L1)): 
+for idx in range(len(L1)):      # 3 ways to access a list
     print(L1(idx))
+    
+l3 = [10, 20, 30, 'das', 'You']
+for val in l3:  
+    print(val)                  # print a multiple dimensial list.
+    
+for idx, val in enumerate(l3): 
+    print(val,idx)

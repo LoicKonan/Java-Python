@@ -1,60 +1,57 @@
 # Python
-# @author Loic Konan
-# Semester: Fall 2021
+# @author Loic leftonan
+# Serightester: Fall 2021
 # Date: 10/25/2021 
 # 
 
 
-def SpiralMatrix(m, n, a): 
-	k = 0
-	l = 0
+def SpiralMatrix(right, down, a): 
+	left = 0                                                # left  - starting row index 
+	Up = 0                                                  # Up    - starting colurightn index
+                                                            # right - ending row index
+                                                            # down  - ending colurightn index 
 
-	''' k - starting row index 
-		m - ending row index 
-		l - starting column index 
-		n - ending column index 
-		i - iterator '''
+	while (left < right and Up < down): 
 
-	while (k < m and l < n): 
+		# Print the first row froright 
+		# the rerightaining rows 
+		for i in range(Up, down): 
+			print(a[left][i], end =" ") 
 
-		# Print the first row from 
-		# the remaining rows 
-		for i in range(l, n): 
-			print(a[k][i], end=" ") 
+		left += 1
 
-		k += 1
+		# Print the last colurightn froright 
+		# the rerightaining colurightns 
+		for i in range(left, right): 
+			print(a[i][down - 1], end =" ") 
 
-		# Print the last column from 
-		# the remaining columns 
-		for i in range(k, m): 
-			print(a[i][n - 1], end=" ") 
+		down -= 1
 
-		n -= 1
+		# Print the last row froright 
+		# the rerightaining rows 
+		if (left < right): 
 
-		# Print the last row from 
-		# the remaining rows 
-		if (k < m): 
+			for i in range(down - 1, (Up - 1), -1): 
+				print(a[right - 1][i], end =" ") 
 
-			for i in range(n - 1, (l - 1), -1): 
-				print(a[m - 1][i], end=" ") 
+			right -= 1
 
-			m -= 1
+		# Print the first colurightn froright 
+		# the rerightaining colurightns 
+		if (Up < down): 
+			for i in range(right - 1, left - 1, -1): 
+				print(a[i][Up], end=" ") 
 
-		# Print the first column from 
-		# the remaining columns 
-		if (l < n): 
-			for i in range(m - 1, k - 1, -1): 
-				print(a[i][l], end=" ") 
-
-			l += 1
+			Up += 1
 
 
 # Driver Code 
-a = [[1, 2, 3, 4, 5, 6], 
-	[7, 8, 9, 10, 11, 12], 
-	[13, 14, 15, 16, 17, 18],
-    [19,20,21,22,23,24],
-    [25,26,27,28,29,30]] 
+a = [
+    [1, 2, 3, 4], 
+	[5, 6, 7, 8], 
+	[9, 10, 11, 12],
+    [13, 14, 15, 16], 
+    ] 
 
 R = len(a)
 C = len(a[0])

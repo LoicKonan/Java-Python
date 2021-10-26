@@ -19,11 +19,11 @@
  # 
  #****************************************************************************/
 
-Fname_array = list()
-Lname_array = list()
-age_array = list()
-Occupation_array = list()
-Address_array = list()
+Fname_array = list()                                        #
+Lname_array = list()                                        #
+age_array = list()                                          #
+Occupation_array = list()                                   #
+Address_array = list()                                      #
 
 while True:
         number = input("How many people do you need to enter: ")
@@ -57,6 +57,8 @@ for x in range(0, int(number)):
     
 print("Output: \n")
  
+ # Using this for loop iterate through my different list
+ # then display the each store values to the console. 
 for x in range(0,int(number)):    
     print(Lname_array[x], Fname_array[x], ", aged", age_array[x]," years, worked as a ",Occupation_array[x],
              " and currently lives at ",Address_array[x],".\n")

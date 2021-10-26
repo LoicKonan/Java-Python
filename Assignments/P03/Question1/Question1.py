@@ -7,10 +7,10 @@
  # Semester:        Fall 2021 
  # Date:            10/20/2021
  # 
- # Description:     
+ # Description:     Designed a Python program to draw a three-stage rocket.
  #                  
  # 
- # Solution:
+ # Solution:        
  #
  # Files:           Question1.py
  # 
@@ -18,23 +18,37 @@
 
 
 
-from colorama import Fore, Back, Style
-
-print(Fore.WHITE + "     * ")
-print("    * * ")
-print("   * * * ")
-print("  =======")
-print(Fore.RED + "  *  N  *")
-print("  *     *")
-print(Fore.WHITE + "  *  A  *")
-print("  *     *")
-print( Fore.BLUE + "  *  S  *")
-print("  *     *")
-print( Fore.WHITE + "  *  A  *")
-print("  *     *")
-print(Fore.WHITE + "  =======")
-print("  *      *")
-print(" *        *")
-print("============")
-print(Fore.RED + "  ||   ||")
-print("  ||   ||")
+print("\n             * ")
+print("            * * ")
+print("           * * * ")
+print("         * * * * * ")
+print("       * * * * * * * ")
+print("       =============")
+print("       *     N     *")
+print("       *           *")
+print("       *     A     *")
+print("       *           *")
+print("       *     S     *")
+print("       *           *")
+print("       *     A     *")
+print("       *           *")
+print("       =============")
+print("       *           *")
+print("       *           *")
+print("       *           *")
+print("       *   O   O   *")
+print("       *   -|--|-  *")
+print("       *   /\  /\  *")
+print("       *           *")
+print("       *           *")
+print("       *   O   O   *")
+print("       *   -|--|-  *")
+print("       *   /\  /\  *")
+print("       *           *")
+print("      /*           *\\")
+print("     / ============= \\")
+print("    /  * * * * * * *  \\")
+print("   /   =============   \\")
+print("  /    |   |   |   |    \\")
+print(" /     |   |   |   |     \\")
+print("/      |   |   |   |      \\")

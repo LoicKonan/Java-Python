@@ -11,7 +11,6 @@ def SpiralMatrix(right, down, array):
                                                             # Up    - start column index
                                                             # down  - end column index 
 
-    # 
     # While the pointer that point to the left index is less than the right index
     # and the pointer that point to the Up index is less than the bottom index
     # Perform those for loops.
@@ -26,14 +25,14 @@ def SpiralMatrix(right, down, array):
 		for i in range(left, right): 
 			print(array[i][down - 1], end =" ") 
 
-		down -= 1
+		down -= 1                                           # Here we decrement the down variable by 1.
 
 		if (left < right): 
 
 			for i in range(down - 1, (Up - 1), -1): 
 				print(array[right - 1][i], end =" ") 
 
-			right -= 1                                      # Here we decrement the left variable by 1.
+			right -= 1                                      # Here we decrement the right variable by 1.
  
 		if (Up < down): 
 			for i in range(right - 1, left - 1, -1): 

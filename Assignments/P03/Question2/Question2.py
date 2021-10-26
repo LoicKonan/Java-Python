@@ -21,18 +21,16 @@
  # 
  #****************************************************************************/
 
-Fname_array = list()                                                #
-Lname_array = list()                                                #
-age_array = list()                                                  #
-Occupation_array = list()                                           #
-Address_array = list()                                              #
+Fname_array = list()                                                # This is a list for the First name.
+Lname_array = list()                                                # This is a list for the Last Name.
+age_array = list()                                                  # This is a list for the the age.
+Occupation_array = list()                                           # This is a list for the occupation.
+Address_array = list()                                              # This is a list for the address.
 
-
-#
 #
 #
 while True:
-        number = input("How many people do you need to enter: ")
+        number = input("How many people do you need store their information? ")
         if number.isdigit(): 
             break
         else: print("Please Enter a valid Number: ")

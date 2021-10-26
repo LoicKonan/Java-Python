@@ -67,7 +67,7 @@ for x in range(0, int(number)):
     while True:
         Age = input("Enter the age of person number " +  str(x+1)  + " : ")
         
-        if Age.isdigit() and (0 < int(Age) < 130): 
+        if Age.isdigit() and (0 < int(Age) < 150): 
             break
         else: print("Please Enter a valid age person number " + str(x+1) + " : ")
             

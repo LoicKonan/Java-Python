@@ -13,7 +13,7 @@
 | [09](./A09) | [A09](./A09) | [Python Intro & Basics](./A09)                   | :heavy_check_mark: |
 | [10](./A10) | [A10](./A10) | [Python Flow Control](./A10)                     | :heavy_check_mark: |
 | [11](./A11) | [A11](./A11) | [Python Functions, Loops.](./A11)                | :heavy_check_mark: |
-| [12](./A12) | [A12](./A12) | [Python Recursion Lists, Dictionaries, Strings.](./A12)| :heavy_check_mark: |
+| [12](./A12) | [A12](./A12) | [Python  Strings.](./A12)                        | :heavy_check_mark: |
 | [13](./A13) | [A13](./A13) | [Python Tuples; Regular Expressioons.](./A13)    | :heavy_check_mark: |
 | [14](./A14) | [A14](./A14) | [Python File.](./A14)                            | :soon: 🔴           |
 | [15](./A15) | [A15](./A15) | [Data Structures in Python- Stack.](./A16)       | :soon: 🔴           |

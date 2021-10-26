@@ -98,15 +98,15 @@ for x in range(0, int(number)):
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:
-        address = input("Enter the address for person number " + str(x+1) + " :")
+        addy = input("Enter the address for person number " + str(x+1) + " :")
        
-        #txt = ...
-        regexp = "[0-9]{1,3} .+, .+, [A-Z]{2} [0-9]{5}"
-        address = re.findall(regexp, address)
-        
-        if address.isdigit():                                          # if the input enter is numberic print that message.
-            print("Please Enter a valid address for the person number " + str(x+1) + " : ")
-        else: break
+        regex = r"^[0-9]+\s[a-zA-Z]+\s[a-zA-Z]+,\s[a-zA-Z]+\s[a-zA-Z]+,\s[a-zA-Z]+, [0-9]+$"
+        address = re.findall(regex, addy)
+        if address:
+            address = addy
+            break
+        else:                                                          # if the input enter is numberic print that message. 
+            print("Please Enter a valid address for the person number " + str(x+1) + " : ") 
         
     
     Lname_array.append(LName)                                          # Adding the Last name to our List of Last Name.

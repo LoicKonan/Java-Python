@@ -25,9 +25,9 @@ def myAtoi(s):
     # storing the string into in string
     InputValueString = ""
     # first condition, if there is nothing in the string return
-    if len(s)==0:
+    if len(s) == 0:
         return 0
-    i=0
+    i = 0
     
     # any white space, we ignore
     while i < len(s):
@@ -55,7 +55,7 @@ def myAtoi(s):
     # now run a loop till the end of the string
     while i < len(s):
         # if char is a number add to string input
-        if ord('0')<=ord(s[i])<=ord('9'):
+        if ord('0')<= ord(s[i])<= ord('9'):
             InputValueString += s[i]
         # else, break the loop
         else:
@@ -63,7 +63,7 @@ def myAtoi(s):
         i+=1
     
     # if the resulting string is empty, return 0
-    if len(InputValueString)==0:
+    if len(InputValueString) == 0:
         return 0
     # else check InputValueString
     else:

@@ -27,21 +27,39 @@ age_array = list()                                                  # This is a 
 Occupation_array = list()                                           # This is a list for the occupation.
 Address_array = list()                                              # This is a list for the address.
 
-#
-#
+
+# If this while loop is true, we then ask the user
+# to enter a number and we make sure that it is a number
+# if not we print an error message.
 while True:
         number = input("How many people do you need store their information? ")
         if number.isdigit(): 
             break
         else: print("Please Enter a valid Number: ")
         
-# Using
-#        
+# Using for loop to loop as many time that as
+# that previous number entered by the user.        
 for x in range(0, int(number)):    
     
-    LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
+    # Using
+    #
+    #
+    while True:
+        LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
+       
+        if LName.isdigit(): 
+            print("Please Enter a valid age person number " + str(x+1) + " : ")
+        else: break
     
-    FName = input("Enter the First Name of person number " + str(x+1) + ": ")
+    # Using
+    #
+    #
+    while True:
+        FName = input("Enter the First Name of person number " + str(x+1) + ": ")
+        
+        if FName.isdigit(): 
+            print("Please Enter a valid Last Name person number " + str(x+1) + " : ")
+        else: break
     
     # Using
     #
@@ -53,7 +71,12 @@ for x in range(0, int(number)):
             break
         else: print("Please Enter a valid age person number " + str(x+1) + " : ")
             
-    Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
+    while True:        
+        Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
+        
+        if Occupation.isdigit(): 
+            print("Please Enter a valid Occupation person number " + str(x+1) + " : ")
+        else: break
     
     
     address = input("Enter the address for person number " + str(x+1) + " :")

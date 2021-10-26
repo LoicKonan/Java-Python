@@ -37,6 +37,7 @@ while True:
             break
         else: print("Please Enter a valid Number: ")                # if the input enter is not a number print that message.
         
+        
 # Using this for loop to iterate as many time as
 # that number entered by the user.        
 for x in range(0, int(number)):    
@@ -50,6 +51,7 @@ for x in range(0, int(number)):
             print("Please Enter a valid age person number " + str(x+1) + " : ")
         else: break
     
+    
     # Using this while loop to prompt the user for his First name.
     # Then check if the name is valid or not.
     while True:
@@ -58,6 +60,7 @@ for x in range(0, int(number)):
         if FName.isdigit():                                          # if the input enter is numberic print that message.
             print("Please Enter a valid Last Name person number " + str(x+1) + " : ")
         else: break
+    
     
     # Using this while loop to prompt the user for his Age.
     # Then check if the Age is valid or not.
@@ -69,6 +72,7 @@ for x in range(0, int(number)):
                                                                       # if the input enter is not a number then print that message.
         else: print("Please Enter a valid age person number " + str(x+1) + " : ")
             
+            
     # Using this while loop to prompt the user for his Occupation.
     # Then check if the Occupation is valid or not.      
     while True:        
@@ -77,6 +81,7 @@ for x in range(0, int(number)):
         if Occupation.isdigit():                                       # if the input enter is numberic print that message.
             print("Please Enter a valid Occupation person number " + str(x+1) + " : ")
         else: break
+    
     
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 

@@ -71,6 +71,9 @@ for x in range(0, int(number)):
             break
         else: print("Please Enter a valid age person number " + str(x+1) + " : ")
             
+    # Using
+    #
+    #        
     while True:        
         Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
         
@@ -78,9 +81,16 @@ for x in range(0, int(number)):
             print("Please Enter a valid Occupation person number " + str(x+1) + " : ")
         else: break
     
-    
-    address = input("Enter the address for person number " + str(x+1) + " :")
-    
+    # Using
+    #
+    #
+    while True:
+        address = input("Enter the address for person number " + str(x+1) + " :")
+       
+        if address.isdigit(): 
+            print("Please Enter a valid address person number " + str(x+1) + " : ")
+        else: break
+        
     
     Lname_array.append(LName)                                                       #
     Fname_array.append(FName)                                                       #

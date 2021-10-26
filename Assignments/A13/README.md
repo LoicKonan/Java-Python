@@ -5,7 +5,7 @@
 ### Description
 
 **Spiral Matrix Problem in Python** <br>
-***List**
+**List**
 ### Instructions
 
 > - First, 4 variables containing the indices for the corner points of the array are initialized.<br>

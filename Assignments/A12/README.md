@@ -1,4 +1,4 @@
-## Assignment 12 - Python Lists, Dictionaries, Strings.
+## Assignment 12 - Python Strings.
 
 ### Loic Konan
 

@@ -15,8 +15,10 @@
  #                  Then finally it will Display the user details one by one.
  # 
  # Solution:        
- #                             
- #
+ #                  Used Lists to preserve the sequence of my data and for my iteration.           
+ #                  Made a List for each information that the user entered.         
+ #                  I then use if statement to to validate the information entered.
+ #    
  # Files:           Question2.py
  # 
  #****************************************************************************/

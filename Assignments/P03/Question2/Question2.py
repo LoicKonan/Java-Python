@@ -34,7 +34,7 @@ Address_array = list()                                              # This is a 
 # to enter a number and we make sure that it is a number
 # if not we print an error message.
 while True:
-        number = input("How many people to enter: ")
+        number = input("\nHow many people to enter: ")
         if number.isdigit():                                        # if the input enter is a number break out of the loop.
             break
         else: print("Please Enter a valid Number: ")                # if the input enter is not a number print that message.

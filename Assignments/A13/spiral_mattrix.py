@@ -27,7 +27,7 @@ def SpiralMatrix(right, down, array):
 
 		down -= 1                                           # Here we decrement the down variable by 1.
 
-        # when the left pointer become 
+        # whenever the left pointer become 
         # greater than the right pointer
 		if (left < right): 
 
@@ -36,6 +36,8 @@ def SpiralMatrix(right, down, array):
 
 			right -= 1                                      # Here we decrement the right variable by 1.
  
+        # whenever the Up pointer become 
+        # greater than the down pointer
 		if (Up < down): 
 			for i in range(right - 1, left - 1, -1):        # Display the first column from the remaining rows
 				print(array[i][Up], end=" ") 

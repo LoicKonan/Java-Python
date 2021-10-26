@@ -33,9 +33,9 @@ Address_array = list()                                              # This is a 
 # if not we print an error message.
 while True:
         number = input("How many people do you need store their information? ")
-        if number.isdigit(): 
+        if number.isdigit():                                        # if the input enter is a number break out of the loop.
             break
-        else: print("Please Enter a valid Number: ")
+        else: print("Please Enter a valid Number: ")                # if input enter is not a number print that message.
         
 # Using for loop to loop as many time that as
 # that previous number entered by the user.        

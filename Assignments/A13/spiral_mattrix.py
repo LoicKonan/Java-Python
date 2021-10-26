@@ -11,7 +11,7 @@ def SpiralMatrix(right, down, array):
                                                             # Up    - start column index
                                                             # down  - end column index 
 
-    # While the pointer that point to the left index is less than the right index
+    # While the pointer the left is less than the right index
     # and the pointer that point to the Up index is less than the bottom index
     # Perform those for loops.
 	while (left < right and Up < down): 

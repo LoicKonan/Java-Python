@@ -10,7 +10,8 @@
  # Description:     Designed a Python program to draw a three-stage rocket.
  #                  
  # 
- # Solution:        
+ # Solution:        Use the simple print in Python to design my three-stage 
+ #                  rocket, added few Astronauts. 
  #
  # Files:           Question1.py
  # 
@@ -54,6 +55,6 @@ print("     / ============= \\")
 print("    /  * * * * * * *  \\")
 print("   /  /=============\  \\")
 print("  /  / (    ) (    ) \  \\")
-print(" /  /  (    ) (    )  \  \\                           O")
-print("/  /   (    ) (    )   \  \\                         -()-")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/\  \n\n") 
+print(" /  /  (    ) (    )  \  \\                            O  I am Elon Musk and We going to Mars")
+print("/  /   (    ) (    )   \  \\                          -()-")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/\~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  \n\n") 

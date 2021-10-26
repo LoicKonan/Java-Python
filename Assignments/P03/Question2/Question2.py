@@ -23,6 +23,9 @@
  # 
  #****************************************************************************/
 
+import re
+
+
 Fname_array = list()                                                # This is a list for the First name.
 Lname_array = list()                                                # This is a list for the Last Name.
 age_array = list()                                                  # This is a list for the the age.
@@ -85,9 +88,11 @@ for x in range(0, int(number)):
     while True:        
         Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
         
-        if Occupation.strip().isalpha():                              # if the input enter is numberic print that message.
+        if Occupation.strip().isalpha():                             
+            break
+        
+        else:                                                         # if the input enter is numberic print that message.
             print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ")
-        else: break
     
     
     # Using this while loop to prompt the user for his address.
@@ -95,6 +100,10 @@ for x in range(0, int(number)):
     while True:
         address = input("Enter the address for person number " + str(x+1) + " :")
        
+        #txt = ...
+        regexp = "[0-9]{1,3} .+, .+, [A-Z]{2} [0-9]{5}"
+        address = re.findall(regexp, address)
+        
         if address.isdigit():                                          # if the input enter is numberic print that message.
             print("Please Enter a valid address for the person number " + str(x+1) + " : ")
         else: break
@@ -116,3 +125,23 @@ for x in range(0,int(number)):
     print(Lname_array[x], Fname_array[x], ", aged", age_array[x]," years, worked as a ",Occupation_array[x],
              " and currently lives at ",Address_array[x],".\n")
  
+ 
+#  Explanation:
+
+# [0-9]{1,3}: 1 to 3 digits, the address number
+
+# (space): a space between the number and the street name
+
+# .+: street name, any character for any number of occurrences
+
+# ,: a comma and a space before the city
+
+# .+: city, any character for any number of occurrences
+
+# ,: a comma and a space before the state
+
+# [A-Z]{2}: exactly 2 uppercase chars from A to Z
+
+# [0-9]{5}: 5 digits
+
+# re.findall(expr, string) will return an array with all the occurrences found.

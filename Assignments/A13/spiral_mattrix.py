@@ -50,8 +50,8 @@ array = [                                                   # My input list that
             [13, 14, 15, 16], 
         ] 
 
-Rows = len(array)                                            # Assign the length of the row to the variable Rows
-Columns = len(array[0])                                      # Assign the length of the columns to the variable Columns
+Rows = len(array)                                           # Assign the length of the row to the variable Rows
+Columns = len(array[0])                                     # Assign the length of the columns to the variable Columns
 
 # Function Call 
 SpiralMatrix(Rows, Columns, array)

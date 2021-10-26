@@ -4,8 +4,8 @@
 
 ### Description
 
-***Spiral Matrix Problem in Python***
-
+**Spiral Matrix Problem in Python**
+***List**
 ### Instructions
 
 > - First, 4 variables containing the indices for the corner points of the array are initialized.<br>
@@ -16,8 +16,12 @@
 > - Lastly, the algorithm traverses the leftmost column, incrementing the left corner index once it’s done.<br>
 > This continues until the left index is **greater** than the right index, and the top 
 > index is **greater** than the bottom index.
-
-
+> 
+> - **Lists** are just like dynamic sized arrays, declared in other languages (vector in C++ and ArrayList in Java).
+> - **Lists** need not be homogeneous always which makes it a most powerful tool in Python.
+> - **A single list may contain DataTypes like Integers, Strings, as well as Objects.**
+> - **Lists are mutable, and hence, they can be altered even after their creation.**
+>
 ### Files
 
 |   #   | File                                   | Description |

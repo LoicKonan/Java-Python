@@ -93,11 +93,11 @@ for x in range(0, int(number)):
         else: break
         
     
-    Lname_array.append(LName)                                          #
-    Fname_array.append(FName)                                          #
-    age_array.append(Age)                                              #
-    Occupation_array.append(Occupation)                                #
-    Address_array.append(address)                                      #
+    Lname_array.append(LName)                                          # Adding the Last name to our List of Last Name.
+    Fname_array.append(FName)                                          # Adding the First name to our List of First names.
+    age_array.append(Age)                                              # Adding the Age name to our List of Age.
+    Occupation_array.append(Occupation)                                # Adding the Occupation name to our List of Occupation.
+    Address_array.append(address)                                      # Adding the Address to our List of Address.
     
 print("\n\nOutput: \n")
  

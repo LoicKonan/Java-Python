@@ -33,9 +33,10 @@ Address_array = list()                                              # This is a 
 # If this while loop is true, we then ask the user
 # to enter a number and we make sure that it is a number
 # if not we print an error message.
+# Using the strip to remove spaces. 
 while True:
         number = input("\nHow many people to enter: ")
-        if number.isdigit():                                        # if the input enter is a number break out of the loop.
+        if number.strip().isdigit():                                # if the input enter is a number break out of the loop.
             break
         else: print("Please Enter a valid Number: ")                # if the input enter is not a number print that message.
         

@@ -1,6 +1,6 @@
 # Python
-# @author Loic leftonan
-# Serightester: Fall 2021
+# @author Loic Konan
+# Semester: Fall 2021
 # Date: 10/25/2021 
 # 
 

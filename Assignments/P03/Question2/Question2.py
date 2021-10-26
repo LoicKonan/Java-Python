@@ -101,6 +101,7 @@ for x in range(0, int(number)):
     Occupation_array.append(Occupation)                                # Adding the Occupation name to our List of Occupation.
     Address_array.append(address)                                      # Adding the Address to our List of Address.
     
+    
 print("\n\nOutput: \n")
  
  

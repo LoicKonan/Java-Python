@@ -102,8 +102,8 @@ for x in range(0, int(number)):
 print("\n\nOutput: \n")
  
  
- # Using this for loop iterate through my different list
- # then display the each store values to the console. 
+ # Using this for loop iterate through each one of our different List
+ # then display the each store values to the console in the right order. 
 for x in range(0,int(number)):    
     print(Lname_array[x], Fname_array[x], ", aged", age_array[x]," years, worked as a ",Occupation_array[x],
              " and currently lives at ",Address_array[x],".\n")

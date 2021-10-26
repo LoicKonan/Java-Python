@@ -24,5 +24,5 @@
 | [21](./A21) | [A21](./A21) | [Python- DFS.](./A21)                            | :soon: 🔴           |
 | [22](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark: |
 | [23](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                 | :heavy_check_mark: |
-| [24](./P03) | [P03](./P03) | [loading...](./P03)                              | :heavy_check_mark: |
-| [25](./P04) | [P04](./P04) | [loading...](./P04)                              | :soon: 🔴           |
+| [24](./P03) | [P03](./P03) | [Problem Solving in Python.](./P03)              | :heavy_check_mark: |
+| [25](./P04) | [P04](./P04) | [Problem Solving in Python.](./P04)              | :soon: 🔴           |

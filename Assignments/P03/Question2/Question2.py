@@ -49,7 +49,7 @@ for x in range(0, int(number)):
     while True:
         LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
        
-        if LName.isdigit():                                         # if the input enter is numberic print that message.
+        if LName.isnumeric():                                         # if the input enter is numberic print that message.
             print("Please Enter a valid age person number " + str(x+1) + " : ")
         else: break
     
@@ -59,7 +59,7 @@ for x in range(0, int(number)):
     while True:
         FName = input("Enter the First Name of person number " + str(x+1) + ": ")
         
-        if FName.isdigit():                                          # if the input enter is numberic print that message.
+        if FName.isnumeric():                                          # if the input enter is numberic print that message.
             print("Please Enter a valid Last Name person number " + str(x+1) + " : ")
         else: break
     
@@ -80,7 +80,7 @@ for x in range(0, int(number)):
     while True:        
         Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
         
-        if Occupation.isdigit():                                       # if the input enter is numberic print that message.
+        if Occupation.isnumeric():                                       # if the input enter is numberic print that message.
             print("Please Enter a valid Occupation person number " + str(x+1) + " : ")
         else: break
     

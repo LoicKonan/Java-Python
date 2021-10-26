@@ -19,24 +19,33 @@
  # 
  #****************************************************************************/
 
-Fname_array = list()                                        #
-Lname_array = list()                                        #
-age_array = list()                                          #
-Occupation_array = list()                                   #
-Address_array = list()                                      #
+Fname_array = list()                                                #
+Lname_array = list()                                                #
+age_array = list()                                                  #
+Occupation_array = list()                                           #
+Address_array = list()                                              #
 
+
+#
+#
+#
 while True:
         number = input("How many people do you need to enter: ")
         if number.isdigit(): 
             break
         else: print("Please Enter a valid Number: ")
         
+# Using
+#        
 for x in range(0, int(number)):    
     
     LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
     
     FName = input("Enter the First Name of person number " + str(x+1) + ": ")
     
+    # Using
+    #
+    #
     while True:
         Age = input("Enter the age of person number " +  str(x+1)  + " : ")
         
@@ -49,13 +58,15 @@ for x in range(0, int(number)):
     
     address = input("Enter the address for person number " + str(x+1) + " :")
     
-    Lname_array.append(LName)
-    Fname_array.append(FName)
-    age_array.append(Age)
-    Occupation_array.append(Occupation)
-    Address_array.append(address)
     
-print("Output: \n")
+    Lname_array.append(LName)                                                       #
+    Fname_array.append(FName)                                                       #
+    age_array.append(Age)                                                           #
+    Occupation_array.append(Occupation)                                             #
+    Address_array.append(address)                                                   #
+    
+print("\n\nOutput: \n")
+ 
  
  # Using this for loop iterate through my different list
  # then display the each store values to the console. 

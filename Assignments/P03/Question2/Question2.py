@@ -35,68 +35,64 @@ while True:
         number = input("How many people do you need store their information? ")
         if number.isdigit():                                        # if the input enter is a number break out of the loop.
             break
-        else: print("Please Enter a valid Number: ")                # if input enter is not a number print that message.
+        else: print("Please Enter a valid Number: ")                # if the input enter is not a number print that message.
         
-# Using for loop to loop as many time that as
-# that previous number entered by the user.        
+# Using this for loop to iterate as many time as
+# that number entered by the user.        
 for x in range(0, int(number)):    
     
-    # Using
-    #
-    #
+    # Using this while loop to prompt the user for his Last name.
+    # Then check if the name is valid or not.
     while True:
         LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
        
-        if LName.isdigit(): 
+        if LName.isdigit():                                         # if the input enter is numberic print that message.
             print("Please Enter a valid age person number " + str(x+1) + " : ")
         else: break
     
-    # Using
-    #
-    #
+    # Using this while loop to prompt the user for his First name.
+    # Then check if the name is valid or not.
     while True:
         FName = input("Enter the First Name of person number " + str(x+1) + ": ")
         
-        if FName.isdigit(): 
+        if FName.isdigit():                                          # if the input enter is numberic print that message.
             print("Please Enter a valid Last Name person number " + str(x+1) + " : ")
         else: break
     
-    # Using
-    #
-    #
+    # Using this while loop to prompt the user for his Age.
+    # Then check if the Age is valid or not.
     while True:
         Age = input("Enter the age of person number " +  str(x+1)  + " : ")
         
-        if Age.isdigit() and (0 < int(Age) < 150): 
+        if Age.isdigit() and (0 < int(Age) < 150):                    # if the input enter is a number break out of the loop.
             break
+                                                                      # if the input enter is not a number then print that message.
         else: print("Please Enter a valid age person number " + str(x+1) + " : ")
             
-    # Using
-    #
-    #        
+    # Using this while loop to prompt the user for his Occupation.
+    # Then check if the Occupation is valid or not.      
     while True:        
         Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
         
-        if Occupation.isdigit(): 
+        if Occupation.isdigit():                                       # if the input enter is numberic print that message.
             print("Please Enter a valid Occupation person number " + str(x+1) + " : ")
         else: break
     
-    # Using
-    #
-    #
+    # Using this while loop to prompt the user for his address.
+    # Then check if the address is valid or not. 
     while True:
         address = input("Enter the address for person number " + str(x+1) + " :")
        
-        if address.isdigit(): 
+        if address.isdigit():                                          # if the input enter is numberic print that message.
             print("Please Enter a valid address person number " + str(x+1) + " : ")
         else: break
         
     
-    Lname_array.append(LName)                                                       #
-    Fname_array.append(FName)                                                       #
-    age_array.append(Age)                                                           #
-    Occupation_array.append(Occupation)                                             #
-    Address_array.append(address)                                                   #
+    Lname_array.append(LName)                                          #
+    Fname_array.append(FName)                                          #
+    age_array.append(Age)                                              #
+    Occupation_array.append(Occupation)                                #
+    Address_array.append(address)                                      #
     
 print("\n\nOutput: \n")
  

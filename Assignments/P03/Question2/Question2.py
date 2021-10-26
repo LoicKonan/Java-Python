@@ -50,11 +50,11 @@ for x in range(0, int(number)):
     while True:
         LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
        
-        if LName.isalpha():  
+        if LName.strip().isalpha():  
             break                                       
                                                                     
-        else:                                                       # if the input enter has some numbers in it print that message.
-            print("Please Enter a valid age person number " + str(x+1) + " : ")
+        else:                                                         # if the input enter has some numbers in it print that message.
+            print("Please Enter a valid Last Name for the person number " + str(x+1) + " : ")
     
     
     # Using this while loop to prompt the user for his First name.
@@ -62,11 +62,11 @@ for x in range(0, int(number)):
     while True:
         FName = input("Enter the First Name of person number " + str(x+1) + ": ")
         
-        if FName.isalpha():                                          
+        if FName.strip().isalpha():                                          
             break 
         
-        else:                                                       # if the input enter has some numbers in it print that message.
-            print("Please Enter a valid Last Name person number " + str(x+1) + " : ")
+        else:                                                         # if the input enter has some numbers in it print that message.
+            print("Please Enter a valid First Name for the person number " + str(x+1) + " : ")
     
     
     # Using this while loop to prompt the user for his Age.
@@ -74,7 +74,7 @@ for x in range(0, int(number)):
     while True:
         Age = input("Enter the age of person number " +  str(x+1)  + " : ")
         
-        if Age.isdigit() and (0 < int(Age) < 150):                    # if the input enter is a number break out of the loop.
+        if Age.strip().isdigit() and (0 < int(Age) < 150):            # if the input enter is a number break out of the loop.
             break
                                                                       # if the input enter is not a number then print that message.
         else: print("Please Enter a valid age person number " + str(x+1) + " : ")
@@ -85,8 +85,8 @@ for x in range(0, int(number)):
     while True:        
         Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
         
-        if Occupation.isdigit():                                       # if the input enter is numberic print that message.
-            print("Please Enter a valid Occupation person number " + str(x+1) + " : ")
+        if Occupation.strip().isalpha():                              # if the input enter is numberic print that message.
+            print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ")
         else: break
     
     
@@ -96,7 +96,7 @@ for x in range(0, int(number)):
         address = input("Enter the address for person number " + str(x+1) + " :")
        
         if address.isdigit():                                          # if the input enter is numberic print that message.
-            print("Please Enter a valid address person number " + str(x+1) + " : ")
+            print("Please Enter a valid address for the person number " + str(x+1) + " : ")
         else: break
         
     

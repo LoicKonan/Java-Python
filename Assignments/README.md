@@ -25,4 +25,4 @@
 | [22](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark: |
 | [23](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                 | :heavy_check_mark: |
 | [24](./P03) | [P03](./P03) | [Problem Solving in Python.](./P03)              | :heavy_check_mark: |
-| [25](./P04) | [P04](./P04) | [Problem Solving in Python.](./P04)              | :soon: 🔴           |
+| [25](./P04) | [P04](./P04) | [Problem Solving in Python.](./P04)              | :soon: 🔴          |

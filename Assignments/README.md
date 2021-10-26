@@ -12,9 +12,9 @@
 | [08](./A08) | [A08](./A08) | [Gaphic GUI in java.](./A08)                     | :heavy_check_mark: |
 | [09](./A09) | [A09](./A09) | [Python Intro & Basics](./A09)                   | :heavy_check_mark: |
 | [10](./A10) | [A10](./A10) | [Python Flow Control](./A10)                     | :heavy_check_mark: |
-| [11](./A11) | [A11](./A11) | [Python Functions, Loops, Recursion.](./A11)     | :heavy_check_mark: |
-| [12](./A12) | [A12](./A12) | [Python Lists, Dictionaries, Strings.](./A12)    | :soon: 🔴           |
-| [13](./A13) | [A13](./A13) | [Python Tuples; Regular Expressioons.](./A13)    | :soon: 🔴           |
+| [11](./A11) | [A11](./A11) | [Python Functions, Loops.](./A11)                | :heavy_check_mark: |
+| [12](./A12) | [A12](./A12) | [Python Recursion Lists, Dictionaries, Strings.](./A12)| :heavy_check_mark: |
+| [13](./A13) | [A13](./A13) | [Python Tuples; Regular Expressioons.](./A13)    | :heavy_check_mark: |
 | [14](./A14) | [A14](./A14) | [Python File.](./A14)                            | :soon: 🔴           |
 | [15](./A15) | [A15](./A15) | [Data Structures in Python- Stack.](./A16)       | :soon: 🔴           |
 | [17](./A17) | [A17](./A17) | [Python - Queue.](./A17)                         | :soon: 🔴           |
@@ -24,5 +24,5 @@
 | [21](./A21) | [A21](./A21) | [Python- DFS.](./A21)                            | :soon: 🔴           |
 | [22](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark: |
 | [23](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                 | :heavy_check_mark: |
-| [24](./P03) | [P03](./P03) | [loading...](./P03)                              | :soon: 🔴           |
+| [24](./P03) | [P03](./P03) | [loading...](./P03)                              | :heavy_check_mark: |
 | [25](./P04) | [P04](./P04) | [loading...](./P04)                              | :soon: 🔴           |

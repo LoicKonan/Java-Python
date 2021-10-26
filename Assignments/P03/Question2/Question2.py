@@ -34,7 +34,7 @@ Address_array = list()                                              # This is a 
 # to enter a number and we make sure that it is a number
 # if not we print an error message.
 while True:
-        number = input("How many people do you need store their information? ")
+        number = input("How many people to enter: ")
         if number.isdigit():                                        # if the input enter is a number break out of the loop.
             break
         else: print("Please Enter a valid Number: ")                # if the input enter is not a number print that message.
@@ -49,7 +49,7 @@ for x in range(0, int(number)):
     while True:
         LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
        
-        if LName.isnumeric():                                         # if the input enter is numberic print that message.
+        if LName.isdigit():                                         # if the input enter is numberic print that message.
             print("Please Enter a valid age person number " + str(x+1) + " : ")
         else: break
     
@@ -59,7 +59,7 @@ for x in range(0, int(number)):
     while True:
         FName = input("Enter the First Name of person number " + str(x+1) + ": ")
         
-        if FName.isnumeric():                                          # if the input enter is numberic print that message.
+        if FName.isdigit():                                          # if the input enter is numberic print that message.
             print("Please Enter a valid Last Name person number " + str(x+1) + " : ")
         else: break
     
@@ -80,7 +80,7 @@ for x in range(0, int(number)):
     while True:        
         Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
         
-        if Occupation.isnumeric():                                       # if the input enter is numberic print that message.
+        if Occupation.isdigit():                                       # if the input enter is numberic print that message.
             print("Please Enter a valid Occupation person number " + str(x+1) + " : ")
         else: break
     

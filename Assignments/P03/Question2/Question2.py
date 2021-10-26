@@ -7,8 +7,11 @@
  # Semester:        Fall 2021 
  # Date:            10/20/2021
  # 
- # Description:     
- #                  
+ # Description:     This program will asks the user to enter the number of people, 
+ #                  then based on this number it will iterate that amount of time  
+ #                  where each time it will get a single person’s information 
+ #                  like First Name, then Last Name, Age, Occupation and Address.
+ #                  Then finally it will Display the user details one by one.
  # 
  # Solution:
  #

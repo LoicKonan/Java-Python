@@ -95,7 +95,9 @@ for x in range(0, int(number)):
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:
-        address = input("Enter the address for person number " + str(x+1) + " :")
+        addy = input("Enter the address for person number " + str(x+1) + " :")
+        
+        address = addy
         if address:
             break
         else:                                                          # if the input enter is numberic print that message. 

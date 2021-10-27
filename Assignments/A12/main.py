@@ -54,5 +54,26 @@
 # str1 = str2
 # print(str1)
 
-str2 = str(input("Please enter a string of values: "))
-print(str2.lstrip())
+# str2 = str(input("Please enter a string of values: "))
+# print(str2.lstrip())
+
+
+word = '3410 Taft Blvd, Wichita Falls, TX, 84112'
+      
+var1,var2,var3,var4 = [str(i) for i in word.split(",")]
+
+if type(var1) and type(var1) == str:
+    pass
+else:
+    print("1 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
+
+if type(var3) == str and len(var3) == 2:
+    pass
+else:
+    print("2 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
+
+if var4.isdigit() and len(var3) == 5:
+    pass
+else:
+    print("3 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
+ 

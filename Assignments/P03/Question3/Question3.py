@@ -46,7 +46,6 @@ def myAtoi(s):                                                                # 
         if s[i].isdigit():                                                    # if our input is a digit add it to our input string variable.
             Input_String += s[i]
         
-        
         # The 2 elif statements below will only 
         # be apply for element 0 of the input string,
         # to check for the sign of our number.

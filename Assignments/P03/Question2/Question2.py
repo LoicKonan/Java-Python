@@ -15,16 +15,13 @@
  #                  Then finally it will Display the user details one by one.
  # 
  # Solution:        
- #                  Used Lists to preserve the sequence of my data and for my iteration.           
- #                  Made a List for each information that the user entered.         
+ #                  Used Lists to preserve the sequence of my data and for my           
+ #                  iteration. Made a List for each information that the user entered.         
  #                  I then use if statement to to validate the information entered.
- #                  I use the regex to validate the addres.
  #    
  # Files:           Question2.py
  # 
  #****************************************************************************/
-
-import re
 
 Fname_array = list()                                                # This is a list for the First name.
 Lname_array = list()                                                # This is a list for the Last Name.

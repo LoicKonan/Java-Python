@@ -102,24 +102,13 @@ for x in range(0, int(number)):
         var4 = var4.lstrip()
         var3 = var3.lstrip()
 
-        if type(var1) and type(var2) == str:
-            pass
+        if type(var1) and type(var2) == str and type(var3) == str and \
+            len(var3) == 2 and var4.isdigit() and len(var4) == 5:
+            address = addy
+            
         else:
             print("1 Please Enter a valid address for the person number " + str(x+1) + " : ") 
 
-        if type(var3) == str and len(var3) == 2:
-            pass
-        else:
-            print("var 3 Please Enter a valid address for the person number " + str(x+1) + " : ") 
-
-        if var4.isdigit() and len(var4) == 5:
-            pass
-        else:
-            print("var 4 Please Enter a valid address for the person number " + str(x+1) + " : ") 
- 
-        if (var1 and var2 and var3 and var4):
-            address = addy
-    
     Lname_array.append(LName)                                          # Adding the Last name to our List of Last Name.
     Fname_array.append(FName)                                          # Adding the First name to our List of First names.
     age_array.append(Age)                                              # Adding the Age name to our List of Age.
@@ -136,20 +125,3 @@ for x in range(0,int(number)):
     print(Lname_array[x], Fname_array[x], ", aged", age_array[x]," years, worked as a ",Occupation_array[x],
              " and currently lives at ",Address_array[x],".\n")
  
-
-
-
-# word = '3410 Taft Blvd, Wichita Falls, TX, 84112'
-      
-# var1,var2,var3,var4 = [str(i) for i in word.split(",")]
-
-# var4 = var4.lstrip()
-# var3 = var3.lstrip()
-
-# if type(var1) and type(var2) == str and type(var3) == str and \
-#     len(var3) == 2 and var4.isdigit() and len(var4) == 5:
-#     address = word
-#     print(address)
-    
-# else:
-#     print("1 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 

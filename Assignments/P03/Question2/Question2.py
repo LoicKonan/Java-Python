@@ -127,18 +127,23 @@ word = '3410 Taft Blvd, Wichita Falls, TX, 84112'
       
 var1,var2,var3,var4 = [str(i) for i in word.split(",")]
 
-if type(var1) and type(var1) == str:
+var4 = int(var4)
+
+print(type(var4))
+
+
+if type(var1) and type(var2) == str:
     pass
 else:
     print("1 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
 
-if type(var3) == str and len(var3) == 2:
+if type(var3) == str and len(var3) == 3:
     pass
 else:
-    print("2 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
+    print("var 3 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
 
-if var4.isdigit() and len(var3) == 5:
+if var4.isdigit() and len(var3) <= 6:
     pass
 else:
-    print("3 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
+    print("var 4 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
  

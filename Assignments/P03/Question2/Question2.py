@@ -17,8 +17,14 @@
  # Solution:        
  #                  Used Lists to preserve the sequence of my data and for my           
  #                  iteration. Made a List for each information that the user entered.         
- #                  I then use if statement to to validate the information entered.
- #    
+ #                  I then use if statement to validate: 
+ #
+ #                  - Last Name
+ #                  - First Name
+ #                  - Age 
+ #                  - Occupation
+ #                  - Address
+ #                  
  # Files:           Question2.py
  # 
  #****************************************************************************/
@@ -96,12 +102,20 @@ for x in range(0, int(number)):
     # Then check if the address is valid or not. 
     while True:
         addy = input("Enter the address for person number " + str(x+1) + " :")
-              
+         
+        # Split the address into 4 pieces because of the commas,
+        # then assign each pieces to a variable using a for loop.      
         var1,var2,var3,var4 = [str(i) for i in addy.split(",")]
 
-        var4 = var4.lstrip()
+        # Removing any leading commas.
+        var4 = var4.lstrip()                                        
         var3 = var3.lstrip()
 
+        # Using this if  and else statement below to check: 
+        #       - Street and City name are STRING.
+        #       - State name equal to 2 CHARACTER.
+        #       - Zip Code is 5 digit number.
+        
         if type(var1) and type(var2) == str and type(var3) == str and \
             len(var3) == 2 and var4.isdigit() and len(var4) == 5:
             address = addy

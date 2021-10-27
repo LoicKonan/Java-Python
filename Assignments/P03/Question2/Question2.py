@@ -131,6 +131,7 @@ var4 = int(var4)
 
 print(type(var4))
 
+
 if type(var1) and type(var2) == str:
     pass
 else:
@@ -141,7 +142,7 @@ if type(var3) == str and len(var3) == 3:
 else:
     print("var 3 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
 
-if var4.isdigit() and len(var3) <= 6:
+if var4.isdigit() and len(var4) <= 6:
     pass
 else:
     print("var 4 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 

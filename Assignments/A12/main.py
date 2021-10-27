@@ -42,22 +42,17 @@
 # print(fibn)
 
 
-str1 = 'apple'
-print(type(str1))
-print(dir(str1))
+# str1 = 'apple'
+# print(type(str1))
+# print(dir(str1))
 
 
-str2 = ''
-str2 = str1[3:]
+# str2 = ''
+# str2 = str1[3:]
 
-str2.lstrip()
-str1 = str2
-print(str1)
+# str2.lstrip()
+# str1 = str2
+# print(str1)
 
-
-str2.strip()
-print(str2)
-
-
-print(str1[-3:])
-print(str1[1:])
+str2 = str(input("Please enter a string of values: "))
+print(str2.lstrip())

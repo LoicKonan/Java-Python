@@ -51,3 +51,14 @@ else:
 
 val = d1.get('anaconda', 0)     # if key not found, it will return 0 or whatever number.
 print(val)
+
+slist = dict()
+slist = {
+    'eggs': 12,
+    'pizza' : 2,
+    'potato' : 2,
+    'anaconda' : 24    
+}
+
+val = slist.get("anaconda", 0)
+print(val)

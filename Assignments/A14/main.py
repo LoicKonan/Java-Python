@@ -62,3 +62,19 @@ slist = {
 
 val = slist.get("anaconda", 0)
 print(val)
+
+student = dict()
+stu_list = ['I am happy today hello what up ff']
+
+word = stu_list.split('')
+
+for i in stu_list:
+    if i in slist:   
+        slist[i] += 1
+    else:   
+        slist[i] = 1
+        
+print(slist)
+
+for i in slist:   
+    

@@ -96,13 +96,29 @@
 #     # Then check if the address is valid or not. 
 #     while True:
 #         addy = input("Enter the address for person number " + str(x+1) + " :")
-        
-#         address = addy
-#         if address:
-#             break
-#         else:                                                          # if the input enter is numberic print that message. 
-#             print("Please Enter a valid address for the person number " + str(x+1) + " : ") 
-        
+              
+#         var1,var2,var3,var4 = [str(i) for i in addy.split(",")]
+
+#         var4 = var4.lstrip()
+#         var3 = var3.lstrip()
+
+#         if type(var1) and type(var2) == str:
+#             pass
+#         else:
+#             print("1 Please Enter a valid address for the person number " + str(x+1) + " : ") 
+
+#         if type(var3) == str and len(var3) == 2:
+#             pass
+#         else:
+#             print("var 3 Please Enter a valid address for the person number " + str(x+1) + " : ") 
+
+#         if var4.isdigit() and len(var4) == 5:
+#             pass
+#         else:
+#             print("var 4 Please Enter a valid address for the person number " + str(x+1) + " : ") 
+ 
+#         if (var1 and var2 and var3 and var4):
+#             address = addy
     
 #     Lname_array.append(LName)                                          # Adding the Last name to our List of Last Name.
 #     Fname_array.append(FName)                                          # Adding the First name to our List of First names.
@@ -120,30 +136,35 @@
 #     print(Lname_array[x], Fname_array[x], ", aged", age_array[x]," years, worked as a ",Occupation_array[x],
 #              " and currently lives at ",Address_array[x],".\n")
  
- 
- 
 
-word = '3410 Taft Blvd, Wichita Falls, TX, 84112'
+word = '3410 Taft Blvd, Wichita Falls, 0TX, 84112'
       
 var1,var2,var3,var4 = [str(i) for i in word.split(",")]
 
-var4 = int(var4)
+var4 = var4.lstrip()
+var3 = var3.lstrip()
 
-print(type(var4))
+print(type(var3))
+print(len(var3)
 
+# if type(var1) and type(var2) == str:
+#     pass
+# else:
+#     print("1 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
 
-if type(var1) and type(var2) == str:
-    pass
-else:
-    print("1 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
+# if type(var3) == str and len(var3) == 2:
+#     pass
+# else:
+#     print("var 3 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
 
-if type(var3) == str and len(var3) == 3:
-    pass
-else:
-    print("var 3 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
-
-if var4.isdigit() and len(var4) <= 6:
-    pass
-else:
-    print("var 4 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
+# if var4.isdigit() and len(var4) == 5:
+#     pass
+# else:
+#     print("var 4 Please Enter a valid address for the person number ") # + str(x+1) + " : ") 
  
+# T = True
+
+# if (var1 and var2 and var3 and var4):
+#     address = word
+#     print(address)
+#

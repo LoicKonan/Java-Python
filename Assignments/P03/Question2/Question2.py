@@ -131,7 +131,6 @@ var4 = int(var4)
 
 print(type(var4))
 
-
 if type(var1) and type(var2) == str:
     pass
 else:

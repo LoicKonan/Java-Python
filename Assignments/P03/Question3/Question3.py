@@ -61,22 +61,3 @@ def myAtoi(s):                                                                # 
         i += 1                                                                # Here we increment the i variable by 1.
     
     
-    if len(Input_String) == 0:                                                # if the length of the resulting string is empty, return 0
-        return 0
-    
-    else:
-        if pos_Num:    
-            return min(int(Input_String),2**31-1)                             # return the minimum of int(Input_String) and 2**31-1
-        
-        return max(-1*int(Input_String), -2**31)                              # return max of -1*int(Input_String) and -2**31-1
- 
- 
-try:
-    s = str(input("\nEnter some input: "))                                    # Prompt the user to enter some input.
-    myAtoi(s)                                                                 # Pass the input string to the function myAtoi()
-
-except:
-    print("Error, invalid data unable to process")                            # Display the error message if the input is invalid.
-
-
-print('Input:    "',s,'"',"\t\t",'OutPut:    ',myAtoi(s.lstrip()),'\n')       # Display the final output to the screen.

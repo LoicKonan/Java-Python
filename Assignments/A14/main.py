@@ -48,3 +48,6 @@ if  'python' in d1:
     print('found it', val)
 else:
     print('not found it')
+
+val = d1.get('anaconda', 0)     # if key not found, it will return 0 or whatever number.
+print(val)

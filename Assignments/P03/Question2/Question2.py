@@ -98,23 +98,8 @@ for x in range(0, int(number)):
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:
-        addy = input("Enter the address for person number " + str(x+1) + " :")
-       
-                
-                                                                       #  Explanation:
-                                                                       # [0-9]{1,3}: 1 to 3 digits, the address number
-                                                                       # (space): a space between the number and the street name
-                                                                       # .+: street name, any character for any number of occurrences
-                                                                       # ,: a comma and a space before the city
-                                                                       # .+: city, any character for any number of occurrences
-                                                                       # ,: a comma and a space before the state
-                                                                       # [A-Z]{2}: exactly 2 uppercase chars from A to Z
-                                                                       # [0-9]{5}: 5 digits
-                                                                       # re.findall(expr, string) will return an array with all the occurrences found.
-        regex = r"^[0-9]+\s[a-zA-Z]+\s[a-zA-Z]+,\s[a-zA-Z]+\s[a-zA-Z]+,\s[a-zA-Z]+, [0-9]+$"
-        address = re.findall(regex, addy)
+        address = input("Enter the address for person number " + str(x+1) + " :")
         if address:
-            address = addy
             break
         else:                                                          # if the input enter is numberic print that message. 
             print("Please Enter a valid address for the person number " + str(x+1) + " : ") 

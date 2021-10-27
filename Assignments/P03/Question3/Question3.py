@@ -66,9 +66,9 @@ def myAtoi(s):
     # else check InputValueString
     else:
         # return minimum of int(InputValueString) and 2**31-1
-        if PositiveNumber:
-            
+        if PositiveNumber:    
             return min(int(InputValueString),2**31-1)
+        
         # return max of -1*int(InputValueString) and -2**31-1
         return max(-1*int(InputValueString), -2**31)
  

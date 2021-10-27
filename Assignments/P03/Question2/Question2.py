@@ -36,7 +36,7 @@ Occupation_array = list()                                           # This is a 
 Address_array = list()                                              # This is a list for the address.
 
 
-# If this while loop is true, we then ask the user
+# While this loop is true, we ask the user
 # to enter a number and we make sure that it is a number
 # if not we print an error message.
 # Using the strip to remove spaces. 

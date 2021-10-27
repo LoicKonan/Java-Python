@@ -89,9 +89,12 @@ for x in range(0, int(number)):
     # Using this while loop to prompt the user for his Occupation.
     # Then check if the Occupation is valid or not.      
     while True:        
-        Occupation = input("Enter the occupation for person number " + str(x+1) + " :")
+        Job = input("Enter the occupation for person number " + str(x+1) + " :")
         
-        if Occupation.strip().isalpha():                             
+        Occupation = Job.replace(" ", "")                             # Removing any whitespace if the Occupation is 2 word long.
+
+        if Occupation.isalpha():  
+            Occupation = Job
             break
         
         else:                                                         # if the input enter is numberic print that message.
@@ -119,6 +122,7 @@ for x in range(0, int(number)):
         if type(var1) and type(var2) == str and type(var3) == str and \
             len(var3) == 2 and var4.isdigit() and len(var4) == 5:
             address = addy
+            break
             
         else:
             print("1 Please Enter a valid address for the person number " + str(x+1) + " : ") 

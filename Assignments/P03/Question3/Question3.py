@@ -72,7 +72,7 @@ def myAtoi(s):                                                                # 
  
  
 try:
-    s = str(input("Please enter a string of values: "))                       # Prompt the user to enter some input.
+    s = str(input("\nEnter some input: "))                                    # Prompt the user to enter some input.
     myAtoi(s)                                                                 # Pass the input string to the function myAtoi()
 
 except:

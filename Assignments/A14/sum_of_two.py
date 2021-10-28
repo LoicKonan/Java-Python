@@ -7,14 +7,17 @@
 l1 = [1, 3, 4, 7, 8, 5, 2]
 target = 13
 
-def sumoftwo(l1,target):         
+def sumoftwo(l1,target): 
+    print(target)        
     d1 = dict()
     for i in l1:
-        remaining = target - i   
+        print('i =', i)
+        remaining = target - i  
+        print('remaining = ', remaining) 
         if remaining in d1:
             return [remaining - i]
         else:
+            remaining = 0
             d1[i] = None
-            
             
 print(sumoftwo(l1,target))

@@ -9,8 +9,6 @@ target = 13
 
 def sumoftwo(l1,target):         
     d1 = dict()
-    
-    
     for i in l1:
         remaining = target - i   
         if remaining in d1:

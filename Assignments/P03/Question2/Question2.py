@@ -1,3 +1,5 @@
+#question2
+
  #****************************************************************************
  # Author:          Loic Konan 
  # Email:           loickonan.lk@gmail.com 
@@ -94,45 +96,44 @@ for x in range(0, int(number)):
         Occupation = Job.replace(" ", "")                             # Removing any whitespace if the Occupation is 2 word long.
 
         if Occupation.isnumeric():                                    # if the input enter is numberic print that message.
-            print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ")
+            print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ") 
+           
         
-        else:                                                         # if the input enter is not numberic get out of the loop.
-            Occupation = Job
-            break
+        else:                                                         
+            Occupation = Job                                          # Else break out the loop.
+            break    
     
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:
         addy = input("Enter the address for person number " + str(x+1) + " :")
-        
-        # addy = input("Enter the address for person number " + str(x+1) + " :")
+         
         # Split the address into 4 pieces because of the commas,
         # then assign each pieces to a variable using a for loop.      
-       
-        address = addy.split(",")
+        var1,var2,var3,var4 = [str(i) for i in addy.split(",")]
 
         # Removing any leading commas.
-        City    = addy[-3].strip()                                       
-        State   = addy[-2].strip()
-        Zipcode = addy[-1].strip()
+        var4 = var4.lstrip()                                        
+        var3 = var3.lstrip()
 
         # Using this if  and else statement below to check: 
         #       - Street and City name are STRING.
         #       - State name equal to 2 CHARACTER.
         #       - Zip Code is 5 digit number.
         
-        if  (type(City) == str) and (type(State) == str and len(State) == 2) and (Zipcode.isdigit() and len(Zipcode) == 5):
-            addy = address
+        if type(var1) and type(var2) == str and type(var3) == str and \
+            len(var3) == 2 and var4.isdigit() and len(var4) == 5:
+            address = addy
             break
             
-        else:                                                          # if the input enter for address is wrong print this.
-            print("Please Enter a valid address for the person number " + str(x+1) + " : ") 
+        else:
+            print("1 Please Enter a valid address for the person number " + str(x+1) + " : ") 
 
     Lname_array.append(LName)                                          # Adding the Last name to our List of Last Name.
     Fname_array.append(FName)                                          # Adding the First name to our List of First names.
     age_array.append(Age)                                              # Adding the Age name to our List of Age.
     Occupation_array.append(Occupation)                                # Adding the Occupation name to our List of Occupation.
-    Address_array.append(addy)                                         # Adding the Address to our List of Address.
+    Address_array.append(address)                                      # Adding the Address to our List of Address.
     
     
 print("\n\nOutput: \n")

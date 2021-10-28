@@ -1,5 +1,3 @@
-#question2
-
  #****************************************************************************
  # Author:          Loic Konan 
  # Email:           loickonan.lk@gmail.com 

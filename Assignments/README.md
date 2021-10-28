@@ -15,7 +15,7 @@
 | [11](./A11) | [A11](./A11) | [Python Functions, Loops.](./A11)                | :heavy_check_mark: |
 | [12](./A12) | [A12](./A12) | [Python Strings.](./A12)                         | :heavy_check_mark: |
 | [13](./A13) | [A13](./A13) | [Python Strings, List.](./A13)                   | :heavy_check_mark: |
-| [14](./A14) | [A14](./A14) | [Python Tuples, Regular Expressioons File](./A14)| :soon: 🔴           |
+| [14](./A14) | [A14](./A14) | [List,Dictionaries](./A14)                       | :heavy_check_mark: |
 | [15](./A15) | [A15](./A15) | [Data Structures in Python- Stack.](./A16)       | :soon: 🔴           |
 | [17](./A17) | [A17](./A17) | [Python - Queue.](./A17)                         | :soon: 🔴           |
 | [18](./A18) | [A18](./A18) | [Python- Linked List.](./A18)                    | :soon: 🔴           |

@@ -4,7 +4,7 @@
 
 ### Description
 
-> -To-Do List:
+> - To-Do List:
 >
 > - Output: Most Frequent word  
 > - Input: Sentence String

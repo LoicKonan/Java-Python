@@ -50,5 +50,9 @@ newlst = sorted(lst, reverse = True)
 
 grade, student = newlst[0]
 
+for grade, student in newlst[:3]: 
+    print(student, ': ', grade)
+    
+
 print(newlst)
 print(student)

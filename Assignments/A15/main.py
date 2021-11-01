@@ -39,10 +39,8 @@ for key, val in d.items():
 
 
 d = {'abc': 10, 'def': 30, 'qwe': 100, 'wed': 45, 'th': 67}
-
 print(d)
 lst = []
-
 for key, val in d.items(): 
     lst.append((val, key))
 print(lst)

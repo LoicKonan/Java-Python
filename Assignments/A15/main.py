@@ -37,6 +37,10 @@ d = {'age': 1, 'classroll': 3, 'grade': 100, 'gpa': 4}
 for key, val in d.items(): 
     print(key, val)
 
+counts = {}
+
+for word in words:
+    counts[word] = counts.get(word, 0) + 1
 
 d = {'abc': 10, 'def': 30, 'qwe': 100, 'wed': 45, 'th': 67}
 print(d)
@@ -46,6 +50,9 @@ for key, val in d.items():
 print(lst)
 newlst = sorted(lst, reverse = True)
 
+# fast version of the above line.
+print(sorted([(v,k) for k, v in counts.items()]))
+
 grade, student = newlst[0]
 
 for grade, student in newlst[:3]: 
@@ -54,3 +61,5 @@ for grade, student in newlst[:3]:
 
 print(newlst)
 print(student)
+
+

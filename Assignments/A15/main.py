@@ -36,3 +36,19 @@ d = {'age': 1, 'classroll': 3, 'grade': 100, 'gpa': 4}
 
 for key, val in d.items(): 
     print(key, val)
+
+
+d = {'abc': 10, 'def': 30, 'qwe': 100, 'wed': 45, 'th': 67}
+
+print(d)
+lst = []
+
+for key, val in d.items(): 
+    lst.append((val, key))
+print(lst)
+newlst = sorted(lst, reverse = True)
+
+grade, student = newlst[0]
+
+print(newlst)
+print(student)

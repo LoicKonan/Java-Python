@@ -5,6 +5,8 @@
     
 '''
 
+# to sort a dictionary use a tuple.     
+
 # lst = ['glenn', 'loic', 'ethan']
 # lst[1] = 'saikat'
 
@@ -63,3 +65,8 @@ print(newlst)
 print(student)
 
 
+tp = ('saikat', 'asst', 78)
+
+name, aff, age = tp
+
+print(name, aff, age)

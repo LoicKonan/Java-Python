@@ -78,3 +78,5 @@ print(chr(65))
 ls = ['00100000010001000000100100']  # a list of 26 elements
 
 word = 'close'
+
+text = 'from: saikat.das@msutexas.edu\n Here it is'

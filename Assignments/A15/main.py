@@ -75,6 +75,6 @@ print(ord('A'))  # GET THE ASCII VALUES
 
 print(chr(65))
 
-ls = [00100000010001000000100100]  # a list of 26 elements
+ls = ['00100000010001000000100100']  # a list of 26 elements
 
 word = 'close'

@@ -70,3 +70,11 @@ tp = ('saikat', 'asst', 78)
 name, aff, age = tp
 
 print(name, aff, age)
+
+print(ord('A'))  # GET THE ASCII VALUES  
+
+print(chr(65))
+
+ls = [00100000010001000000100100]  # a list of 26 elements
+
+word = 'close'

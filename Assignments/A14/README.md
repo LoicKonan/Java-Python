@@ -10,10 +10,10 @@
 > - Input: Sentence String
 > -
 > - Algorithm:
-> -         1.) convert string to list
-> -         2.) list to counter dictionary
-> -         3.) Iterate the dictionary to maximum frequency
-> -         4.) Max Frequency find the word
+> - 1.) convert string to list
+> - 2.) list to counter dictionary
+> - 3.) Iterate the dictionary to maximum frequency
+> - 4.) Max Frequency find the word
 >
 
 ### Files

@@ -1,4 +1,4 @@
-## Assignment 16 - Python - Queue
+## Assignment 16 - 
 
 ### Loic Konan
 

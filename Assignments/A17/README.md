@@ -1,4 +1,4 @@
-## Assignment 17 - Python- Linked List
+## Assignment 17 - 
 
 ### Loic Konan
 
@@ -9,3 +9,4 @@
 |   #   | File               | Description |
 | :---: | ------------------ | ----------- |
 |   1   | [main.py](main.py) | Solution    |
+

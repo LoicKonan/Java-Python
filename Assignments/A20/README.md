@@ -1,4 +1,4 @@
-## Assignment 20 - Python- DFS
+## Assignment 20 -
 
 ### Loic Konan
 

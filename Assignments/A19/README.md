@@ -1,4 +1,4 @@
-## Assignment 19 - Python- BFS
+## Assignment 19 - 
 
 ### Loic Konan
 

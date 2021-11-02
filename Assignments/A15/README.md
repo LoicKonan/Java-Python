@@ -1,4 +1,4 @@
-## Assignment 15 - Tuples
+## Assignment 15 - Tuples & Regex
 
 ### Loic Konan
 
@@ -15,6 +15,8 @@
 
 ### Files
 
-|   #   | File               | Description |
-| :---: | ------------------ | ----------- |
-|   1   | [main.py](main.py) | Solution    |
+|   #   | File                 | Description |
+| :---: | -------------------- | ----------- |
+|   1   | [main.py](main.py)   | Solution    |
+|   1   | [main1.py](main1.py) | Solution    |
+|   1   | [main2.py](main2.py) | Solution    |

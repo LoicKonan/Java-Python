@@ -1,4 +1,4 @@
-## Assignment 15 - Tuple
+## Assignment 15 - Tuples
 
 ### Loic Konan
 

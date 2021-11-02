@@ -8,10 +8,9 @@
 > - In someways a **tuple** is similar to a **list** in terms of indexing, nested objects and <br>
 > - repetition but a **tuple** is immutable unlike lists which are mutable.
 >
-> - .items()
-> - .keys()
-> - .values()
->
+>   - .items()
+>   - .keys()
+>   - .values()
 >
 
 ### Files

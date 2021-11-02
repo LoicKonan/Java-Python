@@ -9,10 +9,10 @@
 >
 > - **Most Frequent word**:
 >
-> - Output: Most Frequent word  
-> - Input: Sentence String
+> - _Output:_ Most Frequent word  
+> - _Input:_ Sentence String
 >
-> - Algorithm:
+> - _Algorithm:_
 >   - 1 convert string to list
 >   - 2 list to counter dictionary
 >   - 3 Iterate the dictionary to maximum frequency
@@ -20,10 +20,10 @@
 >
 > - **Sum of two integers**:
 >
-> - Output: Target number  
-> - Input: List of integers
+> - _Output:_ Target number  
+> - _Input:_ List of integers
 >
-> - Algorithm:
+> - _Algorithm:_
 >   - 1 empty dictionary
 >   - 2 use a for loop to iterate the list given by the user.
 >   - 3 make a variable called remain to hold the result of the target minus the element that we on.

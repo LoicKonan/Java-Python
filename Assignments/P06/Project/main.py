@@ -42,7 +42,7 @@ class Vigenere:
         if not output is None:
             self.Output = output
 
-        self.alphabet = [chr(x+97) for x in range(26)]
+        self.alphabet = [chr(x+65) for x in range(26)]
         self.Words = "Dictionary_Words.txt"
         self.Plaintext = None
         self.CipherText = None
@@ -52,8 +52,8 @@ class Vigenere:
         self.Encrypt = False
         self.Decrypt = False
 
-        ## Dictionary to keep track of the different keys to test
-        self.KeyOrder = {}
+        ## List to keep track of the different keys to test
+        self.KeyOrder = []
 
     
     
@@ -120,9 +120,13 @@ class Vigenere:
         print("In CryptoMath")
         print(Slices)
 
+        ## Need a dictionary or parallel lists to count letter frequency
+
         Final_IOC = float()
-        Sigma_Big_N = float()
+        Sigma_Big_N = len(self.Encrypted)       ## Length of our Cipher Text
         Sigma_Small_n = float()
+        Numerator = float()
+        Denominator = float()
 
 
 
@@ -134,55 +138,8 @@ class Vigenere:
         print()
 
 
-    # def Dictionary_Attack_IOC(self, **params):
-    #     print()
-    #     List = Dictionary()
-    #     j = 0
-    #     while j < List.Words.size():
-    #         if List.Words[j].length() == Key_Length:
-    #             Narrowed.push_back(List.Words[j])
-    #         j += 1
-
-    #     k = 0
-    #     while k < Narrowed.size():
-    #         D = Dictionary_Attack()
-
-    #         D.Key = Narrowed[k]
-
-    #         j = 0
-
-    #         l = 0
-    #         while l < CipherText.length():
-
-    #             if j == D.Key.length():
-    #                 j = 0
-
-    #             if int(CipherText[l]) != 32:
-    #                 Temp = CipherText[l] - D.Key[j]
-
-    #                 if Temp < 0:
-    #                     Temp += 26
-
-    #                 else:
-    #                     Temp %= 26
-
-    #                 Temp += 65
-
-    #                 D.Decrypted += Temp
-    #                 j += 1
-
-    #             else:
-    #                 D.Decrypted += CipherText[l]
-
-    #             l += 1
-
-    #     Calculate_IOC(D.Decrypted)
-
-    #     D = None
-    #     k += 1
-
-    # List = None
-
+    def Dictionary_Attack_IOC(self, **params):
+        print()
 
 """
 
@@ -254,15 +211,21 @@ if __name__=='__main__':
     """
     V1 = Vigenere()
 
-    argv = sys.argv[1:] # strip file name (main.py) out of args
-
+    argv = sys.argv[1:]                     # strip file name (main.py) out of args
 
     args,program_params = mykwargs(argv)
 
-    print(args)
+    try:
 
-    print(program_params)
+        V1.setIn_N_Out(**program_params)
+        V1.setOperation(**program_params)
 
-    V1.setIn_N_Out(**program_params)
-    V1.setOperation(**program_params)
+
+    except:
+
+        print("Looks like you're missing some parameters, here's what you need.\n")
+        print("Example run: python3 filename.py input_file=[inputfile name] output_file=[outputfile name] operation=[Encrypt or Decrypt] encryption_key=[key]\n")
+        print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
+        print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
+        sys.exit()
 

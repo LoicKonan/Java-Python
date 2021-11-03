@@ -134,8 +134,17 @@ class Vigenere:
     ## Loic Start implementing the encrypt function
     # 
     ## After that, the dictionary attack
-    def Encrypt(self, **params):
+    def Encrypt(self,message, key,**params):
         print()
+        encrypted = ''
+        for chars in message:
+            if chars in LETTERS:
+                num = LETTERS.find(chars)
+                num += key
+                encrypted +=  LETTERS[num]
+        
+        return encrypted
+
 
 
     def Dictionary_Attack_IOC(self, **params):
@@ -185,7 +194,7 @@ class Vigenere:
         D = None
         k += 1
 
-    List = None
+        List = None
 
 """
 

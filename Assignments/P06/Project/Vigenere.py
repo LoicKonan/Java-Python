@@ -129,10 +129,17 @@ class Vigenere:
         Denominator = float()
 
 
-
-
+    '''
+        - cip := a new list
+        - start := ASCII of 'a'
+        - for each l from text and k from key, do
+            - shift := (ASCII of k) - start
+            - pos := start +((ASCII of l) - start + shift) mod 26
+            - insert character of pos at the end of cip
+        - join strings of cip and return
+    '''
     ## Loic Start implementing the encrypt function
-    # 
+    # str[0] = (str[0] + int(key[i]) % 26)
     ## After that, the dictionary attack
     def Encrypt(self,message, key,**params):
         print()

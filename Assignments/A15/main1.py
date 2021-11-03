@@ -9,11 +9,6 @@ for s in slist:
     # print(re.seach('^here', s))
     print(s, '\n')
 
-# hand = open('sample.txt')   
-# for line in hand:    
-#     if re.search('^From:', line): 
-#         # print(line)
-
 
 l1 = [11,11,11,11,11,11,11,11,11,11,11]
 print(set(l1))        
@@ -37,3 +32,15 @@ a = set()
 a.add(l1)
 print(set(a))
 
+
+# try:  
+#     hand = open('sample.txt')   
+#     for line in hand:    
+#         if re.search('^From:', line): 
+#             # print(line)
+#     hand.close()
+# except:   
+#     print('File not found')
+
+with open('sample.txt', 'r') as f:  
+    f.write()

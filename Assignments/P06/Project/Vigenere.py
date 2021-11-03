@@ -136,14 +136,13 @@ class Vigenere:
     ## After that, the dictionary attack
     def Encrypt(self,message, key,**params):
         print()
-        encrypted = ''
-        for chars in message:
-            if chars in LETTERS:
-                num = LETTERS.find(chars)
-                num += key
-                encrypted +=  LETTERS[num]
-        
-        return encrypted
+        cip = []
+        start = ord('a')
+        for l, k in zip(message, key):
+            shift = ord(k) - start
+            pos = start + (ord(l) - start + shift) % 26
+            cip.append(chr(pos))
+        return ''.join([l for l in cip])
 
 
 

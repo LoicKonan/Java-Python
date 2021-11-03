@@ -140,6 +140,52 @@ class Vigenere:
 
     def Dictionary_Attack_IOC(self, **params):
         print()
+        List = Dictionary()
+        j = 0
+        while j < List.Words.size():
+            if List.Words[j].length() == Key_Length:
+                Narrowed.push_back(List.Words[j])
+            j += 1
+
+        k = 0
+        while k < Narrowed.size():
+            D = Dictionary_Attack()
+
+            D.Key = Narrowed[k]
+
+            j = 0
+
+            l = 0
+            while l < CipherText.length():
+
+                if j == D.Key.length():
+                    j = 0
+
+                if int(CipherText[l]) != 32:
+                    Temp = CipherText[l] - D.Key[j]
+
+                    if Temp < 0:
+                        Temp += 26
+
+                    else:
+                        Temp %= 26
+
+                    Temp += 65
+
+                    D.Decrypted += Temp
+                    j += 1
+
+                else:
+                    D.Decrypted += CipherText[l]
+
+                l += 1
+
+        Calculate_IOC(D.Decrypted)
+
+        D = None
+        k += 1
+
+    List = None
 
 """
 

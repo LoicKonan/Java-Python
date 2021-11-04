@@ -122,24 +122,12 @@ for x in range(0, int(number)):
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:
-        addy = input("Enter the address for person number " + str(x+1) + " :")
-         
-        # Split the address into 4 pieces because of the commas,
-        # then assign each pieces to a variable using a for loop.      
-        var1,var2,var3,var4 = [str(i) for i in addy.split(",")]
-
-        # Removing any leading commas.
-        var4 = var4.lstrip()                                        
-        var3 = var3.lstrip()
-
-        # Using this if  and else statement below to check: 
-        #       - Street and City name are STRING.
-        #       - State name equal to 2 CHARACTER.
-        #       - Zip Code is 5 digit number.
+        address = input("Enter the address for person number " + str(x+1) + " :")
         
-        if re.match("^[A-Za-z]*$", var2) and re.match("^[A-Za-z]*$", var3) and \
-            re.match('^[0-9]*$', var4):
-            address = addy
+        regex = "\d{1,3}.?\d{0,3}\s[a-zA-Z]{2,30}\s[a-zA-Z]{2,15}"
+        regex = re.compile(regex)
+        match = regex.match(address)
+        if match:   
             break
         else:
             print("Please Enter a valid address for the person number " + str(x+1) + " : ") 

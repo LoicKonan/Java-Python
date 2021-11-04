@@ -46,7 +46,8 @@ Address_array = list()                                              # This is a 
 # Using the strip to remove spaces. 
 while True:
         number = input("\nHow many people to enter: ")
-        if number.strip().isdigit():                                # if the input enter is a number break out of the loop.
+        #if number.strip().isdigit():                                # if the input enter is a number break out of the loop.
+        if re.match('^[0-9]*$', number):
             break
         else: print("Please Enter a valid Number: ")                # if the input enter is not a number print that message.
         

@@ -114,40 +114,23 @@ for x in range(0, int(number)):
     # Using this while loop to prompt the user for his or her email address.
     # Then check if the email is valid or not.      
     while True:        
-        Email = input("Enter the occupation for person number " + str(x+1) + " :")
+        Email = str(input("Whats the  email address of the person?   " + str(x+1) + " :"))
         
         #if Occupation.isnumeric():                                    # if the input enter is numberic print that message.
-        if re.match("^[A-Za-z]*$", Email):
-            print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ") 
-           
+        if re.match("(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)", Email):
+            break
         
         else:                                                          # Else break out the loop.
-            break   
+            print("Please Enter a valid Email address for the person number " + str(x+1) + " : ")    
         
          
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:
         addy = input("Enter the address for person number " + str(x+1) + " :")
-         
-        # Split the address into 4 pieces because of the commas,
-        # then assign each pieces to a variable using a for loop.      
-        var1,var2,var3,var4 = [str(i) for i in addy.split(",")]
-
-        # Removing any leading commas.
-        var4 = var4.lstrip()                                        
-        var3 = var3.lstrip()
-
-        # Using this if  and else statement below to check: 
-        #       - Street and City name are STRING.
-        #       - State name equal to 2 CHARACTER.
-        #       - Zip Code is 5 digit number.
         
-        if type(var1) and type(var2) == str and type(var3) == str and \
-            len(var3) == 2 and var4.isdigit() and len(var4) == 5:
-            address = addy
+        if re.match("\d{1,3}.?\d{0,3}\s[a-zA-Z]{2,30}\s[a-zA-Z]{2,15}"): 
             break
-            
         else:
             print("1 Please Enter a valid address for the person number " + str(x+1) + " : ") 
 
@@ -155,6 +138,7 @@ for x in range(0, int(number)):
     Fname_array.append(FName)                                          # Adding the First name to our List of First names.
     age_array.append(Age)                                              # Adding the Age name to our List of Age.
     Occupation_array.append(Occupation)                                # Adding the Occupation name to our List of Occupation.
+    Email_array.append(Email)                                          # Adding the Email name to our List of Email
     Address_array.append(address)                                      # Adding the Address to our List of Address.
     
     

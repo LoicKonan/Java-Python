@@ -60,7 +60,8 @@ for x in range(0, int(number)):
     while True:
         LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
        
-        if LName.strip().isalpha():  
+        # if LName.strip().isalpha():  
+        if re.match("^[A-Za-z]*$", LName):
             break                                       
                                                                     
         else:                                                         # if the input enter has some numbers in it print that message.

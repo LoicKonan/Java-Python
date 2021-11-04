@@ -33,27 +33,27 @@ print(f'\nFrequent word => "{most_frequent}" Frequency => "{counter}".') # Displ
 
 
 
-'''
-Finding 10 frequent words
+# '''
+# Finding 10 frequent words
 
-'''
+# '''
 
-text = 'Writing programs is a very creative and rewarding activity You can write programs for many reasons ranging from making your living to solving a difficult data analysis problem to having fun to helping someone else solve a problem This book assumes that everyone needs to know how to program and that once you know how to program you will figure out what you want to do with your newfound skills'
+# text = 'Writing programs is a very creative and rewarding activity You can write programs for many reasons ranging from making your living to solving a difficult data analysis problem to having fun to helping someone else solve a problem This book assumes that everyone needs to know how to program and that once you know how to program you will figure out what you want to do with your newfound skills'
 
-words = text.split()
-counts = {}
+# words = text.split()
+# counts = {}
 
-for word in words:
-    counts[word] = counts.get(word, 0) + 1
+# for word in words:
+#     counts[word] = counts.get(word, 0) + 1
 
-lst = []
-for key, val in counts.items():
-     lst.append((val, key))
-#print(lst)
+# lst = []
+# for key, val in counts.items():
+#      lst.append((val, key))
+# #print(lst)
 
-nList = sorted(lst, reverse=True)
-#Pythonic style
-#print(sorted([ (v, k) for k, v in counts.items ()]))
+# nList = sorted(lst, reverse=True)
+# #Pythonic style
+# #print(sorted([ (v, k) for k, v in counts.items ()]))
 
-for val, key in nList[:10]:
-    print(key, val)
+# for val, key in nList[:10]:
+#     print(key, val)

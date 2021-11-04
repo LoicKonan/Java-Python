@@ -137,8 +137,8 @@ for x in range(0, int(number)):
         #       - State name equal to 2 CHARACTER.
         #       - Zip Code is 5 digit number.
         
-        if  type(var3) == str and \
-            len(var3) == 2 and var4.isdigit() and len(var4) == 5:
+        if re.match("^[A-Za-z]*$", var2) and re.match("^[A-Za-z]*$", var3) and \
+             re.match('^[0-9]*$', var4):
             address = addy
             break
         else:

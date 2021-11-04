@@ -5,7 +5,7 @@
  # Title:           Programing Assignment 03 
  # Course:          CMPS 4143 
  # Semester:        Fall 2021 
- # Date:            10/20/2021
+ # Date:            11/3/2021
  # 
  # Description:     
  #                  This program will asks the user to enter the number of people, 

@@ -29,8 +29,6 @@
  # 
  #****************************************************************************/
 
-
-# to use regex, we need to import re
 import re
 
 Fname_array = list()                                                # This is a list for the First name.

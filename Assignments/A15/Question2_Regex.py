@@ -126,7 +126,7 @@ for x in range(0, int(number)):
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:
-        addy = input("Enter the address for person number " + str(x+1) + " :")
+        address = input("Enter the address for person number " + str(x+1) + " :")
         
         if re.match("\d{1,3}.?\d{0,3}\s[a-zA-Z]{2,30}\s[a-zA-Z]{2,15}"): 
             break
@@ -148,4 +148,4 @@ print("\n\nOutput: \n")
  # then display the each store values to the console in the right order. 
 for x in range(0,int(number)):    
     print(Lname_array[x], Fname_array[x], ", aged", age_array[x]," years, worked as a ",Occupation_array[x],
-                    "Email Address is : ",Email_array[x]," and currently lives at ",Address_array[x],".\n")
+                    "Email Address is : ", Email_array[x]," and currently lives at ",Address_array[x],".\n")

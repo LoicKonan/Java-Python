@@ -137,7 +137,7 @@ for x in range(0, int(number)):
         #       - State name equal to 2 CHARACTER.
         #       - Zip Code is 5 digit number.
         
-        if type(var1) and type(var2) == str and type(var3) == str and \
+        if  type(var3) == str and \
             len(var3) == 2 and var4.isdigit() and len(var4) == 5:
             address = addy
             break

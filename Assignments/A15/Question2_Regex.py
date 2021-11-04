@@ -138,7 +138,7 @@ for x in range(0, int(number)):
         #       - Zip Code is 5 digit number.
         
         if re.match("^[A-Za-z]*$", var2) and re.match("^[A-Za-z]*$", var3) and \
-             re.match('^[0-9]*$', var4):
+            re.match('^[0-9]*$', var4):
             address = addy
             break
         else:

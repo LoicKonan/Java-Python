@@ -73,7 +73,8 @@ for x in range(0, int(number)):
     while True:
         FName = input("Enter the First Name of person number " + str(x+1) + ": ")
         
-        if FName.strip().isalpha():                                          
+        # if FName.strip().isalpha(): 
+        if re.match("^[A-Za-z]*$", LName):                           
             break 
         
         else:                                                         # if the input enter has some numbers in it print that message.
@@ -85,7 +86,8 @@ for x in range(0, int(number)):
     while True:
         Age = input("Enter the age of person number " +  str(x+1)  + " : ")
         
-        if Age.strip().isdigit() and (0 < int(Age) < 150):            # if the input enter is a number break out of the loop.
+        #if Age.strip().isdigit() and (0 < int(Age) < 150):            # if the input enter is a number break out of the loop.
+        if re.match('^[0-9]*$', Age) and (0 < int(Age) < 150):    
             break
                                                                       # if the input enter is not a number then print that message.
         else: print("Please Enter a valid age person number " + str(x+1) + " : ")

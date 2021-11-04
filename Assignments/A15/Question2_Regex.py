@@ -91,7 +91,7 @@ for x in range(0, int(number)):
         #if Age.strip().isdigit() and (0 < int(Age) < 150):            # if the input enter is a number break out of the loop.
         if re.match('^[0-9]*$', Age) and (0 < int(Age) < 150):    
             break
-                                                                      # if the input enter is not a number then print that message.
+                                                                       # if the input enter is not a number then print that message.
         else: print("Please Enter a valid age person number " + str(x+1) + " : ")
             
             
@@ -100,16 +100,15 @@ for x in range(0, int(number)):
     while True:        
         Job = input("Enter the occupation for person number " + str(x+1) + " :")
         
-        Occupation = Job.replace(" ", "")                             # Removing any whitespace if the Occupation is 2 word long.
+        Occupation = Job.replace(" ", "")                              # Removing any whitespace if the Occupation is 2 word long.
 
         #if Occupation.isnumeric():                                    # if the input enter is numberic print that message.
-        if re.match("^[A-Za-z]*$", Occupation):
-            print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ") 
-           
-        
+        if re.match("^[A-Za-z]*$", Occupation):  
+            Occupation = Job                                          # Else break out the loop.         
+            break
         else:                                                         
-            Occupation = Job                                          # Else break out the loop.
-            break    
+            print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ") 
+    
     
     # Using this while loop to prompt the user for his or her email address.
     # Then check if the email is valid or not.      
@@ -132,7 +131,7 @@ for x in range(0, int(number)):
         if re.match("\d{1,3}.?\d{0,3}\s[a-zA-Z]{2,30}\s[a-zA-Z]{2,15}"): 
             break
         else:
-            print("1 Please Enter a valid address for the person number " + str(x+1) + " : ") 
+            print("Please Enter a valid address for the person number " + str(x+1) + " : ") 
 
     Lname_array.append(LName)                                          # Adding the Last name to our List of Last Name.
     Fname_array.append(FName)                                          # Adding the First name to our List of First names.
@@ -149,4 +148,4 @@ print("\n\nOutput: \n")
  # then display the each store values to the console in the right order. 
 for x in range(0,int(number)):    
     print(Lname_array[x], Fname_array[x], ", aged", age_array[x]," years, worked as a ",Occupation_array[x],
-             " and currently lives at ",Address_array[x],".\n")
+                    "Email Address is : ",Email_array[x]," and currently lives at ",Address_array[x],".\n")

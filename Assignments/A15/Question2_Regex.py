@@ -37,7 +37,7 @@ Fname_array = list()                                                # This is a 
 Lname_array = list()                                                # This is a list for the Last Name.
 age_array = list()                                                  # This is a list for the the age.
 Occupation_array = list()                                           # This is a list for the occupation.
-Email_array = list()                                                      # This is a list for the email address.
+Email_array = list()                                                # This is a list for the email address.
 Address_array = list()                                              # This is a list for the address.
 
 
@@ -47,7 +47,6 @@ Address_array = list()                                              # This is a 
 # Using the strip to remove spaces. 
 while True:
         number = input("\nHow many people to enter: ")
-        #if number.strip().isdigit():                                # if the input enter is a number break out of the loop.
         if re.match('^[0-9]*$', number):
             break
         else: print("Please Enter a valid Number: ")                # if the input enter is not a number print that message.
@@ -62,7 +61,6 @@ for x in range(0, int(number)):
     while True:
         LName = input("\nEnter the Last Name of person number " + str(x+1) + " : ")
        
-        # if LName.strip().isalpha():  
         if re.match("^[A-Za-z]*$", LName):
             break                                       
                                                                     
@@ -75,8 +73,7 @@ for x in range(0, int(number)):
     while True:
         FName = input("Enter the First Name of person number " + str(x+1) + ": ")
         
-        # if FName.strip().isalpha(): 
-        if re.match("^[A-Za-z]*$", LName):                           
+        if re.match("^[A-Za-z]*$", FName):                           
             break 
         
         else:                                                         # if the input enter has some numbers in it print that message.
@@ -102,7 +99,6 @@ for x in range(0, int(number)):
         
         Occupation = Job.replace(" ", "")                              # Removing any whitespace if the Occupation is 2 word long.
 
-        #if Occupation.isnumeric():                                    # if the input enter is numberic print that message.
         if re.match("^[A-Za-z]*$", Occupation):  
             Occupation = Job                                          # Else break out the loop.         
             break
@@ -126,9 +122,24 @@ for x in range(0, int(number)):
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:
-        address = input("Enter the address for person number " + str(x+1) + " :")
+        addy = input("Enter the address for person number " + str(x+1) + " :")
+         
+        # Split the address into 4 pieces because of the commas,
+        # then assign each pieces to a variable using a for loop.      
+        var1,var2,var3,var4 = [str(i) for i in addy.split(",")]
+
+        # Removing any leading commas.
+        var4 = var4.lstrip()                                        
+        var3 = var3.lstrip()
+
+        # Using this if  and else statement below to check: 
+        #       - Street and City name are STRING.
+        #       - State name equal to 2 CHARACTER.
+        #       - Zip Code is 5 digit number.
         
-        if re.match("\d{1,3}.?\d{0,3}\s[a-zA-Z]{2,30}\s[a-zA-Z]{2,15}"): 
+        if type(var1) and type(var2) == str and type(var3) == str and \
+            len(var3) == 2 and var4.isdigit() and len(var4) == 5:
+            address = addy
             break
         else:
             print("Please Enter a valid address for the person number " + str(x+1) + " : ") 

@@ -37,6 +37,7 @@ Fname_array = list()                                                # This is a 
 Lname_array = list()                                                # This is a list for the Last Name.
 age_array = list()                                                  # This is a list for the the age.
 Occupation_array = list()                                           # This is a list for the occupation.
+Email_array = list()                                                      # This is a list for the email address.
 Address_array = list()                                              # This is a list for the address.
 
 
@@ -101,7 +102,8 @@ for x in range(0, int(number)):
         
         Occupation = Job.replace(" ", "")                             # Removing any whitespace if the Occupation is 2 word long.
 
-        if Occupation.isnumeric():                                    # if the input enter is numberic print that message.
+        #if Occupation.isnumeric():                                    # if the input enter is numberic print that message.
+        if re.match("^[A-Za-z]*$", Occupation):
             print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ") 
            
         
@@ -109,6 +111,20 @@ for x in range(0, int(number)):
             Occupation = Job                                          # Else break out the loop.
             break    
     
+    # Using this while loop to prompt the user for his or her email address.
+    # Then check if the email is valid or not.      
+    while True:        
+        Email = input("Enter the occupation for person number " + str(x+1) + " :")
+        
+        #if Occupation.isnumeric():                                    # if the input enter is numberic print that message.
+        if re.match("^[A-Za-z]*$", Email):
+            print("Please Enter a valid Occupation for the person number " + str(x+1) + " : ") 
+           
+        
+        else:                                                          # Else break out the loop.
+            break   
+        
+         
     # Using this while loop to prompt the user for his address.
     # Then check if the address is valid or not. 
     while True:

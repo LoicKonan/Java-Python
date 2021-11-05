@@ -45,7 +45,7 @@ phrase, typically using all the original letters exactly once.
 > to solve this problem. Follow the instructions that I have mentioned during the class.
 > - **Example:**
 >
->   <img src = "kic.png">
+>   <img src = "pic.png">
 >
 >
 > **3.**

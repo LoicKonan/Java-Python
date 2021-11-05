@@ -100,7 +100,6 @@
 # # average rounded to one decimal place %.1f
 # OutFile.write('\rThe Class Average Was             :  %.1f'%(GradeTotal/NumLines))
 
-
 # # after we have this printed out, we display the count off all the class 
 # # members from freshmen to sophmore and then display the name and then the total for 
 # # each class 
@@ -114,3 +113,4 @@
 # # we are done with both the input and output so we can close out
 # OutFile.close()
 # InFile.close()
+

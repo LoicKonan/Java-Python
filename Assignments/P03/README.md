@@ -29,7 +29,7 @@
 >
 >   - **Example:**
 >
->       <img src="pic1.png">
+>       <img src="pic.png">
 >
 >
 > **3.**

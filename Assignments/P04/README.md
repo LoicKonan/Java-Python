@@ -1,4 +1,4 @@
-## Program 04 - 
+## Program 04 - Problem solving in Python
 
 ### Loic Konan
 

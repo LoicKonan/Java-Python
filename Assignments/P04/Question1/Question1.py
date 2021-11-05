@@ -70,6 +70,7 @@ with InFile:
                 # assign the values of the person with highest grade change the name
                 FirstNamePerson=Name
                 LastNamePerson=LName
+                
         #find the total grades to be used in average below
         GradeTotal = GradeTotal + grade 
         NumLines+=1 #increment the line number till no more 

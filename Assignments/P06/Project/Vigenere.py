@@ -141,7 +141,7 @@ class Vigenere:
     ## Loic Start implementing the encrypt function
     # str[0] = (str[0] + int(key[i]) % 26)
     
-    def Encrypt(self,message, key,**params):
+    def Encrypt(self, message, key,**params):
         print()
         cip = []
         start = ord('a')

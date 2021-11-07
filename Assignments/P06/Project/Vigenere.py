@@ -138,13 +138,14 @@ class Vigenere:
             - insert character of pos at the end of cip
         - join strings of cip and return
     '''
-    ## Loic Start implementing the encrypt function
+    # Loic Start implementing the encrypt function
     # str[0] = (str[0] + int(key[i]) % 26)
+    # The ord() function returns an integer representing the Unicode character.
     
     def Encrypt(self, message, key,**params):
         print()
         cip = []
-        start = ord('a')
+        start = ord('a')                
         for l, k in zip(message, key):
             shift = ord(k) - start
             pos = start + (ord(l) - start + shift) % 26

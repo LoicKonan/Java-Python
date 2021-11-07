@@ -54,7 +54,7 @@
 >
 > **3.**
 >
-> Write the OOP program in python using class. Assuming you have **four classes**:
+> Write the **OOP program in python using class**. Assuming you have **four classes**:
 >
 > - **Bank account** which is the parent class and it has two child classes Saving
 > - **Account class** and Checking account class. Customer is another class who has a bank

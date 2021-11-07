@@ -36,7 +36,7 @@ import sys
 
 class Vigenere:
 
-    def __init__(self, input=None, output=None):
+    def __init__(self, input = None, output = None):
         if not input is None:
             self.Input = input
         if not output is None:

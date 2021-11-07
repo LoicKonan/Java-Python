@@ -48,7 +48,7 @@
 > **Note:** **You cannot use any built-in functions**.
 >
 > - You can have only **string, tuples, dictionaries to solve this problem**.
->   **Example:**
+>   - **Example:**
 >
 >   <img src = "pic.png">
 >

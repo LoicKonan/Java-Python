@@ -6,6 +6,6 @@
 
 ### Files
 
-|   #   | File                       | Description |
-| :---: | -------------------------- | ----------- |
-|   1   | [Vigenere.py](Vigenere.py) | Solution    |
+|   #   | File                 | Description |
+| :---: | -------------------- | ----------- |
+|   1   | [Project](./Project) | Solution    |

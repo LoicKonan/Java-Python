@@ -140,7 +140,7 @@ class Vigenere:
     '''
     ## Loic Start implementing the encrypt function
     # str[0] = (str[0] + int(key[i]) % 26)
-    ## After that, the dictionary attack
+    
     def Encrypt(self,message, key,**params):
         print()
         cip = []
@@ -152,7 +152,7 @@ class Vigenere:
         return ''.join([l for l in cip])
 
 
-
+    ## Loic start implementing the dictionary attack
     def Dictionary_Attack_IOC(self, **params):
         print()
         List = Dictionary()

@@ -1,4 +1,4 @@
-## Assignment Question 03 - 
+## Assignment Question 03 - Implement the myAtoi(string s) function in python 3
 
 ### Loic Konan
 

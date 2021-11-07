@@ -28,4 +28,4 @@
 | [24](./P03) | [P03](./P03) | [Problem Solving in Python.](./P03)              | :heavy_check_mark: |
 | [25](./P04) | [P04](./P04) | [Problem Solving in Python.](./P04)              | :heavy_check_mark: |
 | [26](./P05) | [P05](./P05) | [Problem Solving in Python.](./P04)              | :soon: 🔴           |
-| [26](./P06) | [P06](./P06) | [Group Project.](./P04)                          | :soon: 🔴           |
+| [26](./P06) | [P06](./P06) | [Group Project.](./P06)                          | :soon: 🔴           |

@@ -1,14 +1,12 @@
-## Assignment Question 01 - 
+## Assignment Question 01 - Write a Python program using file operation in Python
 
 ### Loic Konan
 
 #### Description
+>
+>
 
-> **1.**
->
-> 
->
->
+
 ### Files
 
 |   #   | File                         | Description |

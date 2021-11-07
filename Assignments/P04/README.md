@@ -8,7 +8,7 @@
 >
 > - Write a Python program using file operation.
 > You will open an input file “students.dat” that will contain a list of student names, classification, and grade in the class.
-> You should read through the entire input file. 
+> You should read through the entire input file.
 > After reading in all information, do operations (No built-in functions like Average, min, max, count, etc.), close the input file and write that following information with labels to an output file "student_statistics.txt"
 > Highest grade in the class
 > - Lowest grade in the class
@@ -41,11 +41,10 @@
 >
 > **2.**
 >
-> - Given an array of strings strs, group the anagrams together. You can return the
-answer in any order.
-An Anagram is a word or phrase formed by rearranging the letters of a different word or
-phrase, typically using all the original letters exactly once.
-
+> - Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+> - An Anagram is a word or phrase formed by rearranging the letters of a different word or
+> - phrase, typically using all the original letters exactly once.
+>
 > - Note: You cannot use any built-in functions. You can have only string, tuples, dictionaries
 > to solve this problem. Follow the instructions that I have mentioned during the class.
 > - **Example:**
@@ -55,12 +54,13 @@ phrase, typically using all the original letters exactly once.
 >
 > **3.**
 >
-> Write the OOP program in python using class. Assuming you have four
-classes: Bank account which is the parent class and it has two child classes Saving
-Account class and Checking account class. Customer is another class who has a bank
-account; either saving or checking or both. Implement the scenario using python OOP
-and make sure you have covered those OOP concepts on your code: inheritance(any),
-polymorphism (runtime and compile time), abstraction and encapsulation.
+> Write the OOP program in python using class. Assuming you have four classes:
+>
+> - Bank account which is the parent class and it has two child classes Saving
+> - Account class and Checking account class. Customer is another class who has a bank
+> - account; either saving or checking or both. Implement the scenario using python OOP
+> - and make sure you have covered those OOP concepts on your code: inheritance(any),
+> - polymorphism (runtime and compile time), abstraction and encapsulation.
 >
 >
 ### Files

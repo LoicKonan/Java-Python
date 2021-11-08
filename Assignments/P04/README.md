@@ -23,25 +23,26 @@
 >   **- Number of junior students**
 >   **- Number of senior students**
 >
-> Sample contents inside the input file "Students.dat"; each of the following refers to a single line, i.e.; 6 lines in our input file:
+> Sample contents inside the input file "Students.dat" input file:
 >
-> - Holly Berry freshman 88
-> - Red Johnson sophomore 74
-> - Jeff Bozo freshman 91
-> - Pebble Johnston senior 82
-> - Thomas BradyBunch freshman 63
-> - Eddy Sheen junior 97
+>**- Holly Berry freshman 88**
 >
-> Sample content inside the output file “student_statistics.txt”:
+> **- Red Johnson sophomore 74**
+> **- Jeff Bozo freshman 91**
+> **- Pebble Johnston senior 82**
+> **- Thomas BradyBunch freshman 63**
+> **- Eddy Sheen junior 97**
 >
-> - Eddy Sheen
-> - Highest grade: 97
-> - Lowest grade: 63
-> - Class average: 82.5
-> - Freshmen: 3
-> - Sophomores: 1
-> - Juniors: 1
-> - Seniors: 1
+> Sample content inside the output file "student_statistics.txt":
+>
+>**- Eddy Sheen**
+> **- Highest grade: 97**
+> **- Lowest grade: 63**
+> **- Class average: 82.5**
+> **- Freshmen: 3**
+> **- Sophomores: 1**
+> **- Juniors: 1**
+> **- Seniors: 1**
 >
 >
 > **2.**

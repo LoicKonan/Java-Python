@@ -14,14 +14,14 @@
 >   - Grade
 >
 > - You should read through the entire input file.
-> - After reading in all **information, do operations**, close the input file and write that following information with labels to an output file "student_statistics.txt"
-> - Highest grade in the class
-> - Lowest grade in the class
-> - Class average grade (rounded to one decimal place)
-> - Number of freshmen students
-> - Number of sophomore students
-> - Number of junior students
-> - Number of senior students
+> - After reading in all **information, do operations**, **close the input file and write that following information with labels to an output file _"student_statistics.txt"_**
+>   - Highest grade in the class
+>   - Lowest grade in the class
+>   - Class average grade (rounded to one decimal place)
+>   - Number of freshmen students
+>   - Number of sophomore students
+>   - Number of junior students
+>   - Number of senior students
 >
 > Sample contents inside the input file “Students.dat”; each of the following refers to a single line, i.e.; 6 lines in our input file:
 >

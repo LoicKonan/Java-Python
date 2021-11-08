@@ -14,8 +14,7 @@
 >   - Grade
 >
 > - You should read through the entire input file.
-> After reading in all information, do operations (No built-in functions like Average, min, max, count, etc.),
-> close the input file and write that following information with labels to an output file "student_statistics.txt"
+> - After reading in all **information, do operations**, close the input file and write that following information with labels to an output file "student_statistics.txt"
 > - Highest grade in the class
 > - Lowest grade in the class
 > - Class average grade (rounded to one decimal place)

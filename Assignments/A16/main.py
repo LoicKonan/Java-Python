@@ -16,9 +16,9 @@ class Dummy:
     
     #instance methods
     def greeting(self, g):         # every method in the class need self.
-        print(self.pi)
+        print(g, self.name)
         self.close()
-    pass                # if you not doing anything in the class.
+    #pass                          # if you not doing anything in the class.
 
 
 obj1 = Dummy(23, 'saikat')

@@ -9,9 +9,9 @@
 > Write a Python program using file operation.
 >
 > - You will open an input file "students.dat" that will contain a list of student:
->   - Names
->   - Classification
->   - Grade
+>   **- Names**
+>   **- Classification**
+>   **- Grade**
 >
 > - You should read through the entire input file.
 > - After reading in all **information, do operations**, **close the input file and write that following information with labels to an output file _"student_statistics.txt"_**

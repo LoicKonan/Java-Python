@@ -9,30 +9,29 @@
 > Write a Python program using file operation.
 >
 > - You will open an input file "students.dat" that will contain a list of student:
->   **- Names**
->   **- Classification**
->   **- Grade**
+>   - **Names**
+>   - **Classification**
+>   - **Grade**
 >
 > - You should read through the entire input file.
 > - After reading in all **information, do operations**, **close the input file and write that following information with labels to an output file _"student_statistics.txt"_**
 >
->   - Highest grade in the class
->   **- Lowest grade in the class**
->   **- Class average grade (rounded to one decimal place)**
->   **- Number of freshmen students**
->   **- Number of sophomore students**
->   **- Number of junior students**
->   **- Number of senior students**
+>   - **Highest grade in the class**
+>   - **Lowest grade in the class**
+>   - **Class average grade (rounded to one decimal place)**
+>   - **Number of freshmen students**
+>   - **Number of sophomore students**
+>   - **Number of junior students**
+>   - **Number of senior students**
 >
 > Sample contents inside the input file "Students.dat" input file:
 >
->**- Holly Berry freshman 88**
->
-> **- Red Johnson sophomore 74**
-> **- Jeff Bozo freshman 91**
-> **- Pebble Johnston senior 82**
-> **- Thomas BradyBunch freshman 63**
-> **- Eddy Sheen junior 97**
+> - **Holly Berry freshman 88**
+> - **Red Johnson sophomore 74**
+> - **Jeff Bozo freshman 91**
+> - **Pebble Johnston senior 82**
+> - **Thomas BradyBunch freshman 63**
+> - **Eddy Sheen junior 97**
 >
 > Sample content inside the output file "student_statistics.txt":
 >

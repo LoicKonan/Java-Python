@@ -1,55 +1,61 @@
-class Dummy:
-    # instance variables
-    print("Hello world!")
-    pi = 3.14
-    grade = 0
-    name = ""
-    
-    # Constructor
-    def __init__(self, a=0, b=""):   
-        self.grade = a 
-        self.name = b
-    
-    # mutator and accessor
-    def set_grade(self, newGrade):   
-        self.grade = newGrade
-        
-        
-    def get_grade(self):  
-        return self.grade
-        
-    #instance method
-    def close(self):  
-        print("Close!")
-    
-    #instance methods
-    def greeting(self, g):         # every method in the class need self.
-        self.set_grade(0)
-        
-        print("I decrement your grade to zero")
-        print(g, self.name)
-        self.close()
-    #pass                          # if you not doing anything in the class.
+class Person:
+      # instance variable
+  grade = 0
+  name = ""
+
+  #constructor
+  def __init__(self, a=0, b=""):
+    self.grade = a
+    self.name = b
+
+  #mutator and accessor
+  def set_grade(self, newGrade):
+    self.grade = newGrade
+  
+  def get_grade(self):
+    return self.grade
 
 
-obj1 = Dummy(23, 'saikat')
-obj1 = Dummy()
-g = "hello world"
+  # instance method
+  def close(self):
+    print('I am closing')
 
-obj1.greeting(g)
-obj1.close()
+  # instance method
+  def greeting(self, g):
+    # print('Your grade was: ', self.get_grade())
+    # self.set_grade(0)
+    # print('I assigned your garde to: ', self.grade)
+    print(g, self.name)
+    #self.close()
 
-oldGrade = obj1.get_grade()
-obj1.setGrade(oldGrade + 10)
-print("your current grade is: ", obj1.grade)
+class Student(Person):
+  gradYear = 0
+  def __init__(self, grade, name, graduationYear):
+    #super.__init__()
+    Person.__init__(self, grade, name)
+    self.gradYear = graduationYear
 
 
-obj2 = Dummy(100, 'LKA')
+
+stu1 = Student(100, 'Saikat', 2021)
+print(stu1.grade, stu1.name)
+# stu1.greeting('Hello')
 
 
-print(obj1)
-print(obj2)
 
+# obj1 = Person(23, 'Saikat')
+# obj2 = Person(100, 'Das')
+# oldGrade = obj1.get_grade()
+# print('Your grade was: ', oldGrade)
+# obj1.set_grade(oldGrade+10)
+# print('Your current grade is: ', obj1.grade)
+# g = "Hello "
+# # print(obj1.name, obj1.grade)
+# # print(obj2.name, obj2.grade)
+# obj1.greeting(g)
+# # obj1.close()
 
-class Student(Dummy): 
-    pass 
+#print('Hello World')
+
+# def greet():
+#   pass

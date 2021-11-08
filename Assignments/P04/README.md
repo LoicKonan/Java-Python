@@ -35,14 +35,14 @@
 >
 > Sample content inside the output file "student_statistics.txt":
 >
->**- Eddy Sheen**
-> **- Highest grade: 97**
-> **- Lowest grade: 63**
-> **- Class average: 82.5**
-> **- Freshmen: 3**
-> **- Sophomores: 1**
-> **- Juniors: 1**
-> **- Seniors: 1**
+> - **Eddy Sheen**
+> - **Highest grade: 97**
+> - **Lowest grade: 63**
+> - **Class average: 82.5**
+> - **Freshmen: 3**
+> - **Sophomores: 1**
+> - **Juniors: 1**
+> - **Seniors: 1**
 >
 >
 > **2.**

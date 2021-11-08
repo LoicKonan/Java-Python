@@ -15,6 +15,7 @@
 >
 > - You should read through the entire input file.
 > - After reading in all **information, do operations**, **close the input file and write that following information with labels to an output file _"student_statistics.txt"_**
+>
 >   **- Highest grade in the class**
 >   **- Lowest grade in the class**
 >   **- Class average grade (rounded to one decimal place)**

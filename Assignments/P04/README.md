@@ -23,7 +23,7 @@
 >   **- Number of junior students**
 >   **- Number of senior students**
 >
-> Sample contents inside the input file “Students.dat”; each of the following refers to a single line, i.e.; 6 lines in our input file:
+> Sample contents inside the input file "Students.dat"; each of the following refers to a single line, i.e.; 6 lines in our input file:
 >
 > - Holly Berry freshman 88
 > - Red Johnson sophomore 74

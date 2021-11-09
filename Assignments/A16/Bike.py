@@ -23,8 +23,8 @@ class Bicycle:
 
 # Mountain Bike inh. from Bicycle
 class mountainBike(Bicycle):
-    seatHeight=int()
-    def __init__(self, g=None, s=None, sh=None):
+    seatHeight = int()
+    def __init__(self, g = None, s = None, sh = None):
         super().__init__(g,s)
         self.seatHeight = sh
     def status(self):

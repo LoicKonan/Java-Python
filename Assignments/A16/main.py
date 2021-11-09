@@ -1,3 +1,8 @@
+# Python
+# @author Loic Konan
+# Semester: Fall 2021
+# Date: 11/08/2021 
+
 class Person:
       # instance variable
   grade = 0

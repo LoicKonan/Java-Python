@@ -1,13 +1,23 @@
+# Python
+# @author Loic Konan
+# Semester: Fall 2021
+# Date: 11/08/2021 
+
+
 class Bicycle:
-    gear=int()
-    speed=int()
-    def __init__(self, g=None, s=None):
+    gear = int()
+    speed = int()
+    
+    def __init__(self, g = None, s = None):
         self.gear = g
         self.speed = s
-    def brake(self, decrement=None):
-        self.speed-=decrement
+    
+    def brake(self, decrement = None):
+        self.speed-= decrement
+    
     def speedUp(self, increment=None):
         self.speed+=increment
+    
     def status(self):
         print(f'Speed is {self.speed}\n Gear is {self.gear}')
 
@@ -23,6 +33,7 @@ class mountainBike(Bicycle):
 # Make an objects for Bike and Mountain Bike
 mb1 = mountainBike(2,26,3)
 bik1 = Bicycle(5,66)
+
 
 # Get the status before
 print('the Status before changing speed')

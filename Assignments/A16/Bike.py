@@ -5,9 +5,10 @@
 
 # The Bicycle class which is the Parent class
 class Bicycle:
-    gear = int()
-    speed = int()
+    gear = int()        # instance variable for gear
+    speed = int()       # instance variable for speed
     
+    # Default constructor.
     def __init__(self, gear = None, speed = None):
         self.gear = gear
         self.speed = speed
@@ -21,6 +22,18 @@ class Bicycle:
     def status(self):
         print(f'Speed is {self.speed}\n Gear is {self.gear}')
 
+    def set_brake(self, brake):        
+        self.brake = brake
+        
+    def get_brake(self):
+        return self.brake
+    
+    def set_gear(self, gear):        
+        self.brake = gear
+        
+    def get_gear(self):
+            return self.gear
+     
 # Mountain Bike Class(or Child class) which inherit from Bicycle
 class mountainBike(Bicycle):
     seatHeight = int()
@@ -32,27 +45,29 @@ class mountainBike(Bicycle):
     def status(self):
         print(f'Speed is {self.speed}\n Gear is {self.gear} \n seat Height {self.seatHeight}')
 
+
+
 # Make an objects for Bike and Mountain Bike
-mBike = mountainBike(2,26,3)
-Bike1 = Bicycle(5,66)
+mBike = mountainBike(3,25,7)
+Bike1 = Bicycle(25,81)
 
 
 # Get the status before
-print('the Status before changing speed')
+print('This is the Status before changing speed')
 print('Mountain status is: ')
-mBike =.status()
+mBike.status()
 print('Bicycle Bike status is: ')
 Bike1.status()
 
-# Speed Up my mountain bike by 4 mph
-mBike =.speedUp(4)
+# Speed Up 
+mBike.speedUp(110)
 
-# Brake up my car by 6 mph
-Bike1.brake(6)
+# Brake 
+Bike1.brake(45)
 
 # Get the status after
-print('the Status after changed the speed')
+print('\nThis is the Status after changed the speed')
 print('Mountain status is: ')
-mBike =.status()
+mBike.status()
 print('Bicycle Bike status is: ')
 Bike1.status()

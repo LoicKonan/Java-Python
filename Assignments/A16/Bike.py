@@ -43,19 +43,24 @@ class mountainBike(Bicycle):
         self.seatHeight = seatHeight
     
     def status(self):                               # Display on the screen.
-        print(f'Speed is {self.speed}\n Gear is {self.gear} \n seat Height {self.seatHeight}')
+        print(f'Speed is = {self.speed}\n Gear is = {self.gear} \n seat Height = {self.seatHeight}')
 
 
-
+print("""
+author Loic Konan
+Semester: Fall 2021
+Date: 11/08/2021          
+    """
+    )
 # Make an objects for Bike and Mountain Bike
 mBike = mountainBike(3,25,7)
 Bike1 = Bicycle(25,81)
 
 # Get the status before
 print('This is the Status before changing speed')
-print('Mountain status is: ')
+print('Mountain status is = ')
 mBike.status()
-print('Bicycle Bike status is: ')
+print('Bicycle Bike status is = ')
 Bike1.status()
 
 # Speed Up 
@@ -66,7 +71,7 @@ Bike1.brake(45)
 
 # Get the status after
 print('\nThis is the Status after changed the speed')
-print('Mountain status is: ')
+print('Mountain status is = ')
 mBike.status()
-print('Bicycle Bike status is: ')
+print('Bicycle Bike status is = ')
 Bike1.status()

@@ -36,13 +36,13 @@ class Bicycle:
      
 # Mountain Bike Class(or Child class) which inherit from Bicycle
 class mountainBike(Bicycle):
-    seatHeight = int()
+    seatHeight = int()      # instance variable for seatHeight
     
-    def __init__(self, gear = None, speed = None, seatHeight = None):
-        super().__init__(gear, speed)
+    def __init__(self, gear = None, speed = None, seatHeight = None): # constructor for montainBike
+        super().__init__(gear, speed)               # Calling the Constructor for the Bicycle class
         self.seatHeight = seatHeight
     
-    def status(self):
+    def status(self):                               # Display on the screen.
         print(f'Speed is {self.speed}\n Gear is {self.gear} \n seat Height {self.seatHeight}')
 
 
@@ -50,7 +50,6 @@ class mountainBike(Bicycle):
 # Make an objects for Bike and Mountain Bike
 mBike = mountainBike(3,25,7)
 Bike1 = Bicycle(25,81)
-
 
 # Get the status before
 print('This is the Status before changing speed')

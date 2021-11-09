@@ -8,12 +8,12 @@ class Person:
   grade = 0
   name = ""
 
-  #constructor
-  def __init__(self, a=0, b=""):
+  # constructor
+  def __init__(self, a = 0, b = ""):
     self.grade = a
     self.name = b
 
-  #mutator and accessor
+  # mutator and accessor
   def set_grade(self, newGrade):
     self.grade = newGrade
   

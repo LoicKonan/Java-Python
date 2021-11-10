@@ -33,30 +33,12 @@
  # Files:           Question1.py
  # 
  #****************************************************************************/
-                                               #
-# About-                                                                 #
-#. (35 points) Write a Python program using file operation.              #
-#  You will open an input file “students.dat” that will contain a list of#
-#  student names, classification, and grade in the class. (All student   #
-# info is completely made up) You should read through the entire input   #
-# file.  After reading in all information, do operations (No built-in    #
-# functions like Average, min, max, count, etc.), close the input file   #
-#  and write that following information with labels to an output file    #
-#  “student_statistics.txt”                                              #
-# •	Highest grade in the class                                           #
-# •	Lowest grade in the class                                            #
-# •	Class average grade (rounded to one decimal place)                   #
-# •	Number of freshmen students                                          #
-# •	Number of sophomore students                                         #
-# •	Number of junior students                                            #
-# •	Number of senior students                                            #
-#========================================================================#
 
 
 # try opening up the input file specified by the user
 # if acception occured, then print warning and close program
 try:
-    InFile = open('Program4\Students.dat', 'r')
+    InFile = open('students.dat', 'r')
 except:
     raise OSError("Could not open or read file Exiting Now")
     
@@ -64,7 +46,7 @@ except:
 # try opening up the output file, if exception occured then
 # display to viewer
 try:
-    OutFile = open('Program4\student_statistics.txt', 'w')
+    OutFile = open('student_statistics.txt', 'w')
 except:
     raise OSError("Could not open or write to file Exiting Now")
 

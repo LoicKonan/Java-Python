@@ -57,9 +57,15 @@ def anagram_counter(words):
     Dictionary = {}
     for word in words:
         key = alphabet_map(word)
+        
+        # if the Dictionary is empty return it []
         if key not in Dictionary:
             Dictionary[key] = []
+        
+        # else add the word to the list.
         Dictionary[key].append(word)
+    
+    # Then return a list of lits with grouping the anagrams together.
     return [words for key,words in Dictionary.items()]
 
 

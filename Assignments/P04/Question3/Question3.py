@@ -17,24 +17,23 @@
  #                  
  # Solution:
  #                  Used  Inheritance:                                                
- #                      - within the saving and checking account        
+ #                      - Shown within the saving and checking account.        
  #                  
  #                  Used polymorphism:                                               
- #                       - is shown when the AccountInformation(0 is overriden inside of the 
- #                  # saving and checking account with multiple variables)   
+ #                       - Shown by overriden the:
+ #                              - saving account
+ #                              - checking account  
  #                                                             
  #                  abstraction:                                                
- #                      # is shown in here where the member variable inside of   
- #                      # each class are hidden from the user because of the fact
- #                      #  that they are prive memeber variables                 
+ #                      - member variable of each class.                 
  #                                                             
  #                  encapsulation:                                               
- #                      # is shown inside of here where the member variables of  
- #                      # each class can be accesses by using the get and set    
- #                      # methods defined within each class saving,checking and  
- #                      # bank account class                   
+ #                      - The Mutators: 
+ #                          - set methods
+ #                          - getter methods                 
  #
- # Files:           Question3.py
+ # Files:           
+ #                  Question3.py
  # 
  #****************************************************************************/
  

@@ -34,7 +34,6 @@
  # 
  #****************************************************************************/
 
-# try opening up the input file specified by the user then print warning and close program
 try:
     infile = open('students.dat', 'r')
     
@@ -110,19 +109,23 @@ with infile:
         NumLines   += 1 
 
 
-        # iterate over the second element to sum up the class member count for each grade
+        # Here we grabbing the second element of the input to determine 
+        # which classification is the student. 
+        # Then incrementing that classification by one.
         if input[-2].lower() == 'sophomore':
            Numb_Sophmores += 1
+           
         elif input[-2].lower() == 'freshman':
            Numb_FreshMen += 1
+           
         elif input[-2].lower() == 'senior':
            Numb_Seniors += 1
+           
         elif input[-2].lower() == 'junior':
            Numb_Juniors += 1
  
  
- 
-# try opening up the output file, if exception occured then display to viewer
+# 
 try:
     OutFile = open('student_statistics.txt', 'w')
       

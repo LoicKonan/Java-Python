@@ -47,20 +47,17 @@ def anagram_counter(words):
 
 words = ['eat','tea','tan','ate','nat','bat']
 
-print('Input: strs = ')
-print('Output: ')
-print (anagram_counter(words))
+print("\nInput: strs = ['eat','tea','tan','ate','nat','bat']")
+print('Output: ', anagram_counter(words))
 
 # reading the second sample string
 StringList = ['']
 # go to function definition to determine the output
 
-print('Input: strs = ')
-print('Output: ')
-print(anagram_counter(StringList))
+print("\nInput: strs = ['']")
+print('Output: ', anagram_counter(StringList))
 
 # reading the thir string 
 StringList = ['a']
-print('Input: strs = ')
-print('Output: ')
-print(anagram_counter(StringList))
+print("\nInput: strs = ['a']")
+print('Output: ', anagram_counter(StringList))

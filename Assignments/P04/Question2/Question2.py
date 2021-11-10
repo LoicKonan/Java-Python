@@ -15,8 +15,9 @@
  #                    - Output: list of lists with grouping the anagrams together
  #                  
  # Solution:        
- #                  Used
- #                  
+ #                  Used two functions, one to map my alphabet and one to  
+ #                  check to see the different anagram and group them together
+ #                  in a list of lists. Then diplay the result to the screen.  
  #
  #
  # Files:           Question2.py

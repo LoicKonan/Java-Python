@@ -19,7 +19,7 @@ class LinkedList:
                 self.head = new_node
 
         # Add contents of two linked lists and return the head
-        # node of resultant list
+        # node of resultultant list
         def addTwoLists(self, first, second):
                 prev = None
                 temp = None
@@ -29,7 +29,7 @@ class LinkedList:
                 while(first is not None or second is not None):
 
                         # Calculate the value of next digit in
-                        # resultant list
+                        # resultultant list
                         # The next digit is sum of following things
                         # (i) Carry
                         # (ii) Next digit of first list (if ther is a
@@ -50,7 +50,7 @@ class LinkedList:
                         temp = Node(Sum)
 
                         # if this is the first node then set it as head
-                        # of resultant list
+                        # of resultultant list
                         if self.head is None:
                                 self.head = temp
                         else:
@@ -94,8 +94,8 @@ second.push(5)
 print( "\nSecond List is ")
 second.printList()
 
-# Add the two lists and see result
-res = LinkedList()
-res.addTwoLists(first.head, second.head)
-print("\nResultant list is ")
-res.printList()
+# Add the two lists and see resultult
+result = LinkedList()
+result.addTwoLists(first.head, second.head)
+print("\nresultultant list is ")
+result.printList()

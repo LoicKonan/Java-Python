@@ -23,6 +23,10 @@
  # 
  #****************************************************************************/
  
+ # Any solution that works only for the letters a-z is a bad solution
+ # because it is not sufficiently generic at all. 
+ # There are many other characters that exist besides a-z
+ 
 # define the function definition and it processes
 # will be calle whenever the function is being mention inside of the main
 # portion of our program
@@ -60,3 +64,4 @@ userlist = []
 userlist = [item for item in input("Lets test yours : ").split()]
 # see if any matches found
 print(anagrams(userlist))
+

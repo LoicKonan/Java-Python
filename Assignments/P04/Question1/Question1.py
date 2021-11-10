@@ -111,15 +111,13 @@ with infile:
 
 
         # iterate over the second element to sum up the class member count for each grade
-        # if occurance occurs, increment the counter  for each
-        # on the element 2, this is the name of the class
-        if input[2].lower() == 'sophomore':
+        if input[-2].lower() == 'sophomore':
            Numb_Sophmores += 1
-        elif input[2].lower() == 'freshman':
+        elif input[-2].lower() == 'freshman':
            Numb_FreshMen += 1
-        elif input[2].lower() == 'senior':
+        elif input[-2].lower() == 'senior':
            Numb_Seniors += 1
-        elif input[2].lower() == 'junior':
+        elif input[-2].lower() == 'junior':
            Numb_Juniors += 1
  
  

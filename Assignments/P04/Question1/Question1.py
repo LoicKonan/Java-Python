@@ -17,20 +17,23 @@
  #                  functions like Average, min, max, count, etc.)
  #                  
  #
- # Solution:
+ # Solution:         
+ #                   Used the try and except to open the input file and output file.
+ #                   Use mostly some if and elif statement to Display those below: 
  #
- #
- #                   •  Highest grade in the class                                          
- #                   •	Lowest grade in the class                                            
- #                   •	Class average grade                   
- #                   •	Number of freshmen students                                          
- #                   •	Number of sophomore students                                         
- #                   •	Number of junior students                                            
- #                   •	Number of senior students      
+ #                      •  Highest grade in the class                                          
+ #                      •	Lowest grade in the class                                            
+ #                      •	Class average grade                   
+ #                      •	Number of freshmen students                                          
+ #                      •	Number of sophomore students                                         
+ #                      •	Number of junior students                                            
+ #                      •	Number of senior students      
  #                  
  #
  #
- # Files:           Question1.py
+ # Files:           - Question1.py
+ #                  - student_statistics.txt
+ #                  - students.dat
  # 
  #****************************************************************************/
 

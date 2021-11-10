@@ -1,5 +1,3 @@
-===================================================
-Person With the Highest Grade Was :  Eddy SheenThe Highest Grade Was             :  97The Lowest Grade Was              :  63The Class Average Was             :  82.5
-The total # of People in Each Class is Displayed Below
-=================================================
-Total # of Freshman   : 3Total # of Sophomores : 1Total # of Juniors    : 1Total # of Seniors    : 1
+#********************** STATISTICS ************************# Student with the Highest grade in the class:  Eddy Sheen# Highest grade in the class                 :  97# The Lowest Grade in the class              :  63# The Class Average Was                      :  82.5#**********************************************************
+
+#********************** CLASSIFICATION **********************# Number of freshmen students                 : 3# Number of Sophomores students               : 1# Number of Juniors students                  : 1# Number of Seniors students                  : 1#**********************************************************

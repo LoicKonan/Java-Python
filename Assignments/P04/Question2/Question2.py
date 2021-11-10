@@ -8,10 +8,14 @@
  # Date:            11/10/2021
  # 
  # Description:     
+ #                  Given an array of strings strs, group the anagrams together. 
+ #                  You can return the answer in any order.
+ #  
+ #                    - Input type: A list with words 
+ #                    - Output type: A list of lists with grouping the anagrams together
  #                  
- #                  
- # 
- # Solution:
+ # Solution:        
+ #                  Used
  #                  
  #
  #

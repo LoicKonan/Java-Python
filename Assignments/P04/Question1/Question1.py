@@ -69,9 +69,13 @@ with infile:
         # Removing the whitespace and splitting by the whitespace.
         input = line.strip().split(' ') 
         
-        # assign default value to start at the first index to hold first and last name
-        Name  = str(input[0])# first in the line is first name index 0
-        LName = str(input[1])# second in the line is the last name index 1
+        # since we splitted the input like an array, 
+        # the first index of our input[0] is First name 
+        FName  = str(input[0])
+        
+        # since we splitted the input like an array, 
+        # the second index of our input[1] is Last name
+        LName = str(input[1])
         
         grade = int(input[3])# grade is the last element
         if flag:
@@ -85,8 +89,8 @@ with infile:
                 Highest_Grade = grade
                 
                 # assign the values of the person with highest grade change the name
-                FirstNamePerson = Name
-                LastNamePerson = LName
+                First_Name = FName
+                Last_Name = LName
                 
         #find the total grades to be used in average below
         Average_Grade += grade 
@@ -119,12 +123,12 @@ OutFile.write("\r===================================================\n")
 # then we print out the highest grade
 # the display the lowest grade 
 # then the class average  
-OutFile.write('\rPerson With the Highest Grade Was :  '+ FirstNamePerson +" "+LastNamePerson)
+OutFile.write('\rPerson With the Highest Grade Was :  '+ First_Name + " "+ Last_Name)
 OutFile.write('\rThe Highest Grade Was             :  ' + str(Highest_Grade))
 OutFile.write('\rThe Lowest Grade Was              :  ' + str(Lowest_Grade))
 
 # average rounded to one decimal place %.1f
-OutFile.write('\rThe Class Average Was             :  %.1f'%(Average_Grade /NumLines))
+OutFile.write('\rThe Class Average Was             :  %.1f'%(Average_Grade / NumLines))
 
 
 # after we have this printed out, we display the count off all the class 

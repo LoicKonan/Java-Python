@@ -23,11 +23,7 @@
  # 
  #****************************************************************************/
  
- # Any solution that works only for the letters a-z is a bad solution
- # because it is not sufficiently generic at all. 
- # There are many other characters that exist besides a-z
  
- #
  # In this fucntion, we first pass in our string then we 
  # use a dictionary to list of 26 characters and inialized each one 
  # with a counter of 0, then increment if the same
@@ -35,18 +31,18 @@
  # for loop and if and else statement.
  # 
 def alphabet_map(word):
-        alpha_count_dict = dict(zip('abcdefghijklmnopqrstuvwxyz',[0]*26))
-        for alpha in word:
-            # if the we find this alphabet in the string add one.
-            if alpha in alpha_count_dict.keys():
-                alpha_count_dict[alpha] += 1
+        alphabet = dict(zip('abcdefghijklmnopqrstuvwxyz',[0]*26))
+        for character in word:
+            # if the we find this alphabet or character in the string add one.
+            if character in alphabet.keys():
+                alphabet[character] += 1
             
             # else we don't find it let equal to zero.
             else:
-                alpha_count_dict.update(dict(alpha = 0))
+                alphabet.update(dict(alpha = 0))
                 
         # return our alphabet map as a Tuple.
-        return tuple(alpha_count_dict.values())
+        return tuple(alphabet.values())
 
  #
  # In this fucntion, we pass in our string then
@@ -73,16 +69,16 @@ def anagram_counter(words):
 words = ['eat','tea','tan','ate','nat','bat']
 
 print("\n#***************************************************************")
-print("#    Input: strs = ['eat','tea','tan','ate','nat','bat']")
+print("#    Input:   ['eat','tea','tan','ate','nat','bat']")
 print('#    Output: ', anagram_counter(words))
 
 # Now we Display the Second sample result to the screen.
 words = ['']
-print("#\n#    Input: strs = ['']")
+print("#\n#    Input:   ['']")
 print('#    Output: ', anagram_counter(words))
 
 # Now we Display the Third sample result to the screen.
 words = ['a']
-print("#\n#    Input: strs = ['a']")
+print("#\n#    Input:   ['a']")
 print('#    Output: ', anagram_counter(words))
 print("\r#***************************************************************")

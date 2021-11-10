@@ -37,14 +37,14 @@
 
 # try opening up the input file specified by the user then print warning and close program
 try:
-    InFile = open('students.dat', 'r')
+    infile = open('students.dat', 'r')
     
 except FileNotFoundError:
     print("Could not open the file for reading")
 
 
 # While the file are open continue.
-with InFile:
+with infile:
    
     # initialize variables for all the different categories of grades.
     Lowest_Grade  = 0
@@ -64,15 +64,16 @@ with InFile:
     flag = True 
     
     # reading each line of the infile
-    for line in InFile: #read line 
+    for line in infile: 
         
-        LineElement = line.strip().split(' ') # extract the elements on whitespace
-           # after reading each line, the last element is the grade
+        # Removing the whitespace and splitting by the whitespace.
+        input = line.strip().split(' ') 
+        
         # assign default value to start at the first index to hold first and last name
-        Name  = str(LineElement[0])# first in the line is first name index 0
-        LName = str(LineElement[1])# second in the line is the last name index 1
+        Name  = str(input[0])# first in the line is first name index 0
+        LName = str(input[1])# second in the line is the last name index 1
         
-        grade = int(LineElement[3])# grade is the last element
+        grade = int(input[3])# grade is the last element
         if flag:
            Lowest_Grade = grade
            Highest_Grade = grade
@@ -88,19 +89,19 @@ with InFile:
                 LastNamePerson = LName
                 
         #find the total grades to be used in average below
-        Average_Grade = 0 += grade 
+        Average_Grade += grade 
         NumLines   += 1 #increment the line number till no more 
 
         # iterate over the second index to sum up the class member count for each grade
         # if occurance occurs, increment the counter  for each
         # on the index 2, this is the name of the class
-        if LineElement[2].lower() == 'sophomore':
+        if input[2].lower() == 'sophomore':
            Numb_Sophmores += 1
-        elif LineElement[2].lower() == 'freshman':
+        elif input[2].lower() == 'freshman':
            Numb_FreshMen += 1
-        elif LineElement[2].lower() == 'senior':
+        elif input[2].lower() == 'senior':
            Numb_Seniors += 1
-        elif LineElement[2].lower() == 'junior':
+        elif input[2].lower() == 'junior':
            Numb_Juniors += 1
  
  
@@ -123,7 +124,7 @@ OutFile.write('\rThe Highest Grade Was             :  ' + str(Highest_Grade))
 OutFile.write('\rThe Lowest Grade Was              :  ' + str(Lowest_Grade))
 
 # average rounded to one decimal place %.1f
-OutFile.write('\rThe Class Average Was             :  %.1f'%(Average_Grade = 0/NumLines))
+OutFile.write('\rThe Class Average Was             :  %.1f'%(Average_Grade /NumLines))
 
 
 # after we have this printed out, we display the count off all the class 
@@ -138,4 +139,4 @@ OutFile.write('\rTotal # of Seniors    : ' + str(Numb_Seniors) + '\r\n')
 
 # we are done with both the input and output so we can close out
 OutFile.close()
-InFile.close()
+infile.close()

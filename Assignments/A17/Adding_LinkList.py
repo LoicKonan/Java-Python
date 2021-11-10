@@ -1,3 +1,9 @@
+# Python
+# @author Loic Konan
+# Semester: Fall 2021
+# Date: 11/10/2021 
+
+
 class Node:
 
         # Constructor to initialize the node object

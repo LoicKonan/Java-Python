@@ -34,6 +34,8 @@
  # 
  #****************************************************************************/
 
+# Using this to open the file for reading, but if the file can't be opened, 
+# a File not found exception will be thrown.
 try:
     infile = open('students.dat', 'r')
     
@@ -125,33 +127,36 @@ with infile:
            Numb_Juniors += 1
  
  
-# 
+
+# Using this to open the file for writting, but if the file can't be opened, 
+# a File not found exception will be thrown.
 try:
     OutFile = open('student_statistics.txt', 'w')
       
 except FileNotFoundError:
     print("Could not open the file for writing")
     
+# Displaying the result to the student statistics file.
 OutFile.write("\r===================================================\n")
 
-OutFile.write('\rPerson With the Highest Grade Was :  '+ First_Name + " "+ Last_Name)
-OutFile.write('\rThe Highest Grade Was             :  ' + str(Highest_Grade))
-OutFile.write('\rThe Lowest Grade Was              :  ' + str(Lowest_Grade))
+OutFile.write('\rStudent with the Highest grade in the class:  '+ First_Name + " "+ Last_Name)
+OutFile.write('\rHighest grade in the class                 :  ' + str(Highest_Grade))
+OutFile.write('\rThe Lowest Grade in the class              :  ' + str(Lowest_Grade))
 
-# average rounded to one decimal place %.1f
+# Using the variable call average Grade then 
+# dividing it by the number of line( which really is the number of student).
+# Then we proceed to rounded to 1 decimal place.
 OutFile.write('\rThe Class Average Was             :  %.1f'%(Average_Grade / NumLines))
 
 
-# after we have this printed out, we display the count off all the class 
-# members from freshmen to sophmore and then display the name and then the total for 
-# each class 
-OutFile.write('\r\nThe total # of People in Each Class is Displayed Below\n')
+# Now we print to the file the total number of each classification.
+OutFile.write('\r\nThe total number of each classification:\n')
 OutFile.write('=================================================\n')
-OutFile.write('\rTotal # of Freshman   : ' + str(Numb_FreshMen))
-OutFile.write('\rTotal # of Sophomores : ' + str(Numb_Sophmores))
-OutFile.write('\rTotal # of Juniors    : ' + str(Numb_Juniors))
-OutFile.write('\rTotal # of Seniors    : ' + str(Numb_Seniors) + '\r\n')
+OutFile.write('\rNumber of freshmen students   : ' + str(Numb_FreshMen))
+OutFile.write('\rNumber of Sophomores students : ' + str(Numb_Sophmores))
+OutFile.write('\rNumber of Juniors students    : ' + str(Numb_Juniors))
+OutFile.write('\rNumber of Seniors students    : ' + str(Numb_Seniors) + '\r\n')
 
-# we are done with both the input and output so we can close out
+# Closing the input and output file.
 OutFile.close()
 infile.close()

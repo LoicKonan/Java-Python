@@ -133,11 +133,7 @@ except FileNotFoundError:
     print("Could not open the file for writing")
     
 OutFile.write("\r===================================================\n")
-# writing to the output file
-# first we print the person first and last name that had highest grade
-# then we print out the highest grade
-# the display the lowest grade 
-# then the class average  
+
 OutFile.write('\rPerson With the Highest Grade Was :  '+ First_Name + " "+ Last_Name)
 OutFile.write('\rThe Highest Grade Was             :  ' + str(Highest_Grade))
 OutFile.write('\rThe Lowest Grade Was              :  ' + str(Lowest_Grade))

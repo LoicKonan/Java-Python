@@ -1,5 +1,5 @@
 ===================================================
-Person With the Highest Grade Was :  Jeff BozoThe Highest Grade Was             :  99The Lowest Grade Was              :  63The Class Average Was             :  83.2
+Person With the Highest Grade Was :  Eddy SheenThe Highest Grade Was             :  97The Lowest Grade Was              :  63The Class Average Was             :  82.5
 The total # of People in Each Class is Displayed Below
 =================================================
 Total # of Freshman   : 3Total # of Sophomores : 1Total # of Juniors    : 1Total # of Seniors    : 1

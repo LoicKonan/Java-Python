@@ -49,7 +49,9 @@ def alphabet_map(word):
         return tuple(alpha_count_dict.values())
 
  #
- # In this fucntion, we will use 
+ # In this fucntion, we pass in our string then
+ # check to see the different anagram and group them
+ # together in a list of lists.
  # 
 def anagram_counter(words):
     Dictionary = {}

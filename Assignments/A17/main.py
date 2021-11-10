@@ -24,12 +24,12 @@ def __repr__(self):
         node = Node.next
     
     nodes.append("None")
-    return "->".join(nodes)    
-    
-print(LL1)
-            
+    return "->".join(nodes)                
         
-        
+      
+l1 = ['3', '1', '1']  
+l2 = ['4', '5', '6']  
+
 l1 = ['B', 'C', 'D', 'E']
 LL1 = LinkedList(l1)
         

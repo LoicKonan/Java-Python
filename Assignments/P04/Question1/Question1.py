@@ -34,7 +34,6 @@
  # 
  #****************************************************************************/
 
-
 # try opening up the input file specified by the user then print warning and close program
 try:
     infile = open('students.dat', 'r')
@@ -70,14 +69,16 @@ with infile:
         input = line.strip().split(' ') 
         
         # since we splitted the input like an array, 
-        # the first index of our input[0] is First name 
+        # the first element of our input[0] is First name 
         FName  = str(input[0])
         
         # since we splitted the input like an array, 
-        # the second index of our input[1] is Last name
+        # the second element of our input[1] is Last name
         LName = str(input[1])
         
-        grade = int(input[3])# grade is the last element
+        # The last element in our input is the grade.
+        grade = int(input[-1])
+        
         if flag:
            Lowest_Grade = grade
            Highest_Grade = grade
@@ -96,9 +97,9 @@ with infile:
         Average_Grade += grade 
         NumLines   += 1 #increment the line number till no more 
 
-        # iterate over the second index to sum up the class member count for each grade
+        # iterate over the second element to sum up the class member count for each grade
         # if occurance occurs, increment the counter  for each
-        # on the index 2, this is the name of the class
+        # on the element 2, this is the name of the class
         if input[2].lower() == 'sophomore':
            Numb_Sophmores += 1
         elif input[2].lower() == 'freshman':

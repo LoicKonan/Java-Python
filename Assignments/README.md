@@ -17,9 +17,9 @@
 | [13](./A13) | [A13](./A13) | [Python Strings, List.](./A13)                   | :heavy_check_mark: |
 | [14](./A14) | [A14](./A14) | [List,Dictionaries](./A14)                       | :heavy_check_mark: |
 | [15](./A15) | [A15](./A15) | [Tuples, Regexes.](./A15)                        | :heavy_check_mark: |
-| [16](./A16) | [A16](./A16) | [Python - Queue.](./A16)                         | :soon: 🔴           |
-| [17](./A17) | [A17](./A17) | [Python - Queue.](./A17)                         | :soon: 🔴           |
-| [18](./A18) | [A18](./A18) | [Python- Linked List.](./A18)                    | :soon: 🔴           |
+| [16](./A16) | [A16](./A16) | [Python- OOP](./A16)                             | :heavy_check_mark: |
+| [17](./A17) | [A17](./A17) | [Python- Linked List.](./A17)                    | :heavy_check_mark: |
+| [18](./A18) | [A18](./A18) | [Python - Queue.](./A18)                         | :soon: 🔴           |
 | [19](./A19) | [A19](./A19) | [Python- Heap.](./A19)                           | :soon: 🔴           |
 | [20](./A20) | [A20](./A20) | [Python- BFS.](./A20)                            | :soon: 🔴           |
 | [21](./A21) | [A21](./A21) | [Python- DFS.](./A21)                            | :soon: 🔴           |

@@ -81,9 +81,9 @@ class BankAccount:
 
         self.print_balance()
 
-        def get_balance(self):
+    def get_balance(self):
 
-            return self._balance
+        return self._balance
         
 
     def print_balance(self):
@@ -213,21 +213,21 @@ class Customer(SavingAccount, CheckingAccount):
 
             SavingAccount.__init__(self, name, age, balance, interest_rate)
 
-    if(type == "c"):
+        if(type == "c"):
 
-        cheques_issued = int(input("Enter number of cheques: "))
+            cheques_issued = int(input("Enter number of cheques: "))
 
-        CheckingAccount.__init__(self, name, age, balance, cheques_issued)
+            CheckingAccount.__init__(self, name, age, balance, cheques_issued)
 
-    if(type == "s+c" or type == "c+s"):
+        if(type == "s+c" or type == "c+s"):
 
-        rate = int(input("Enter interest rate: "))
+            rate = int(input("Enter interest rate: "))
 
-        cheques_issued = int(input("Enter number of cheques: "))
+            cheques_issued = int(input("Enter number of cheques: "))
 
-        SavingAccount.__init__(self, name, age, balance, rate)
+            SavingAccount.__init__(self, name, age, balance, rate)
 
-        CheckingAccount.__init__(self, name, age, balance, cheques_issued)
+            CheckingAccount.__init__(self, name, age, balance, cheques_issued)
 
 
     def get_info(self):

@@ -46,10 +46,22 @@ except FileNotFoundError:
 # While the file are open continue.
 with InFile:
    
-    # initialize variables to starting values
-    LowestGrade = HighestGrade = GradeTotal = NumLines = 0
-    TotFreshMen = TotSophmores = TotSeniors = TotJuniors = 0
-    flag = True #flag is true 
+    # initialize variables for all the different categories of grades.
+    Lowest_Grade  = 0
+    Highest_Grade = 0
+    Average_Grade = 0   
+        
+    #initializing the classification of each student   
+    Numb_FreshMen  = 0
+    Numb_Sophmores = 0
+    Numb_Juniors   = 0
+    Numb_Seniors   = 0
+    
+    # Number of lines in our input file.
+    NumLines     = 0
+    
+    # Setting our flag to true for the comparison of the grades.
+    flag = True 
     
     # reading each line of the infile
     for line in InFile: #read line 
@@ -62,34 +74,34 @@ with InFile:
         
         grade = int(LineElement[3])# grade is the last element
         if flag:
-           LowestGrade = grade
-           HighestGrade = grade
+           Lowest_Grade = grade
+           Highest_Grade = grade
            flag = False
         else:
-           if grade < LowestGrade: #if comparison grade is less  than current, update 
-                LowestGrade = grade
-           if grade > HighestGrade: #if comparison grade is higher than current, update
-                HighestGrade = grade
+           if grade < Lowest_Grade: #if comparison grade is less  than current, update 
+                Lowest_Grade = grade
+           if grade > Highest_Grade: #if comparison grade is higher than current, update
+                Highest_Grade = grade
                 
                 # assign the values of the person with highest grade change the name
                 FirstNamePerson = Name
                 LastNamePerson = LName
                 
         #find the total grades to be used in average below
-        GradeTotal += grade 
+        Average_Grade = 0 += grade 
         NumLines   += 1 #increment the line number till no more 
 
         # iterate over the second index to sum up the class member count for each grade
         # if occurance occurs, increment the counter  for each
         # on the index 2, this is the name of the class
         if LineElement[2].lower() == 'sophomore':
-           TotSophmores += 1
+           Numb_Sophmores += 1
         elif LineElement[2].lower() == 'freshman':
-           TotFreshMen += 1
+           Numb_FreshMen += 1
         elif LineElement[2].lower() == 'senior':
-           TotSeniors += 1
+           Numb_Seniors += 1
         elif LineElement[2].lower() == 'junior':
-           TotJuniors += 1
+           Numb_Juniors += 1
  
  
  
@@ -107,11 +119,11 @@ OutFile.write("\r===================================================\n")
 # the display the lowest grade 
 # then the class average  
 OutFile.write('\rPerson With the Highest Grade Was :  '+ FirstNamePerson +" "+LastNamePerson)
-OutFile.write('\rThe Highest Grade Was             :  ' + str(HighestGrade))
-OutFile.write('\rThe Lowest Grade Was              :  ' + str(LowestGrade))
+OutFile.write('\rThe Highest Grade Was             :  ' + str(Highest_Grade))
+OutFile.write('\rThe Lowest Grade Was              :  ' + str(Lowest_Grade))
 
 # average rounded to one decimal place %.1f
-OutFile.write('\rThe Class Average Was             :  %.1f'%(GradeTotal/NumLines))
+OutFile.write('\rThe Class Average Was             :  %.1f'%(Average_Grade = 0/NumLines))
 
 
 # after we have this printed out, we display the count off all the class 
@@ -119,10 +131,10 @@ OutFile.write('\rThe Class Average Was             :  %.1f'%(GradeTotal/NumLines
 # each class 
 OutFile.write('\r\nThe total # of People in Each Class is Displayed Below\n')
 OutFile.write('=================================================\n')
-OutFile.write('\rTotal # of Freshman   : ' + str(TotFreshMen))
-OutFile.write('\rTotal # of Sophomores : ' + str(TotSophmores))
-OutFile.write('\rTotal # of Juniors    : ' + str(TotJuniors))
-OutFile.write('\rTotal # of Seniors    : ' + str(TotSeniors) + '\r\n')
+OutFile.write('\rTotal # of Freshman   : ' + str(Numb_FreshMen))
+OutFile.write('\rTotal # of Sophomores : ' + str(Numb_Sophmores))
+OutFile.write('\rTotal # of Juniors    : ' + str(Numb_Juniors))
+OutFile.write('\rTotal # of Seniors    : ' + str(Numb_Seniors) + '\r\n')
 
 # we are done with both the input and output so we can close out
 OutFile.close()

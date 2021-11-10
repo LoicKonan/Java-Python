@@ -79,23 +79,36 @@ with infile:
         # The last element in our input is the grade.
         grade = int(input[-1])
         
+        # if our flag is true, then update the lowest and highest
+        # grade to the current grade, then immediately set our flag back to false.
         if flag:
            Lowest_Grade = grade
            Highest_Grade = grade
            flag = False
+           
+           
+        # In this else statement we will compare the current 
+        # grade then update it to the right variable.
         else:
-           if grade < Lowest_Grade: #if comparison grade is less  than current, update 
+         
+           # if the current grade is less than Lowest_Grade then update.
+           if grade < Lowest_Grade: 
                 Lowest_Grade = grade
-           if grade > Highest_Grade: #if comparison grade is higher than current, update
+            
+           # if current grade is greater than highest_Grade then update. 
+           if grade > Highest_Grade: 
                 Highest_Grade = grade
                 
-                # assign the values of the person with highest grade change the name
+                # Here we assign the highest grade to the right person.
                 First_Name = FName
                 Last_Name = LName
                 
-        #find the total grades to be used in average below
+        # Here we just add the total grades in order to perfom the math later.
         Average_Grade += grade 
-        NumLines   += 1 #increment the line number till no more 
+        
+        # incrementing the line number. (Which is also the number of student per line.)
+        NumLines   += 1 
+
 
         # iterate over the second element to sum up the class member count for each grade
         # if occurance occurs, increment the counter  for each

@@ -35,26 +35,28 @@
  #****************************************************************************/
 
 
-# try opening up the input file specified by the user
-# if acception occured, then print warning and close program
+# try opening up the input file specified by the user then print warning and close program
 try:
     InFile = open('students.dat', 'r')
-except:
-    raise OSError("Could not open or read file Exiting Now")
+    
+except FileNotFoundError:
+    print("Could not open the file for reading")
     
 
-# try opening up the output file, if exception occured then
-# display to viewer
+# try opening up the output file, if exception occured then display to viewer
 try:
     OutFile = open('student_statistics.txt', 'w')
-except:
-    raise OSError("Could not open or write to file Exiting Now")
+      
+except FileNotFoundError:
+    print("Could not open the file for writing")
 
-# if no exceptions occured, continue on with the program
+
+# While the file are open continue.
 with InFile:
+   
     # initialize variables to starting values
-    LowestGrade=HighestGrade = GradeTotal = NumLines = 0
-    TotFreshMen= TotSophmores =TotSeniors = TotJuniors = 0
+    LowestGrade = HighestGrade = GradeTotal = NumLines = 0
+    TotFreshMen = TotSophmores = TotSeniors = TotJuniors = 0
     flag = True #flag is true 
     
     # reading each line of the infile
@@ -63,8 +65,8 @@ with InFile:
         LineElement = line.strip().split(' ') # extract the elements on whitespace
            # after reading each line, the last element is the grade
         # assign default value to start at the first index to hold first and last name
-        Name=str(LineElement[0])# first in the line is first name index 0
-        LName=str(LineElement[1])# second in the line is the last name index 1
+        Name  = str(LineElement[0])# first in the line is first name index 0
+        LName = str(LineElement[1])# second in the line is the last name index 1
         
         grade = int(LineElement[3])# grade is the last element
         if flag:
@@ -76,12 +78,14 @@ with InFile:
                 LowestGrade = grade
            if grade > HighestGrade: #if comparison grade is higher than current, update
                 HighestGrade = grade
+                
                 # assign the values of the person with highest grade change the name
-                FirstNamePerson=Name
-                LastNamePerson=LName
+                FirstNamePerson = Name
+                LastNamePerson = LName
+                
         #find the total grades to be used in average below
-        GradeTotal = GradeTotal + grade 
-        NumLines+=1 #increment the line number till no more 
+        GradeTotal += grade 
+        NumLines   += 1 #increment the line number till no more 
 
         # iterate over the second index to sum up the class member count for each grade
         # if occurance occurs, increment the counter  for each
@@ -95,7 +99,6 @@ with InFile:
         elif LineElement[2].lower() == 'junior':
            TotJuniors += 1
  
-OutFile.write("After Iterating Through our Infile, We determined that")
 OutFile.write("\r===================================================\n")
 # writing to the output file
 # first we print the person first and last name that had highest grade

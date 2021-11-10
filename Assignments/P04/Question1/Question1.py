@@ -150,7 +150,7 @@ OutFile.write("\r#**********************************************************")
 
 
 # Now we print to the file the total number of each classification.
-OutFile.write("\r\n\n#********************** CLASSIFICATION **********************")
+OutFile.write("\r\n#********************** CLASSIFICATION ********************")
 OutFile.write('\r# Number of freshmen students                 : ' + str(Numb_FreshMen))
 OutFile.write('\r# Number of Sophomores students               : ' + str(Numb_Sophmores))
 OutFile.write('\r# Number of Juniors students                  : ' + str(Numb_Juniors))

@@ -141,23 +141,23 @@ except FileNotFoundError:
     
 # Displaying the result to the student statistics file.
 OutFile.write("\r#********************** STATISTICS ************************")
-OutFile.write('\r# Student with the Highest grade in the class:  '+ First_Name + " "+ Last_Name)
-OutFile.write('\r# Highest grade in the class                 :  ' + str(Highest_Grade))
-OutFile.write('\r# The Lowest Grade in the class              :  ' + str(Lowest_Grade))
+OutFile.write('\r# \tStudent with the Highest grade in the class:  '+ First_Name + " "+ Last_Name)
+OutFile.write('\r# \tHighest grade in the class                 :  ' + str(Highest_Grade))
+OutFile.write('\r# \tThe Lowest Grade in the class              :  ' + str(Lowest_Grade))
 
 # Using the variable call average Grade then 
 # dividing it by the number of line( which really is the number of student).
 # Then we proceed to rounded to 1 decimal place.
-OutFile.write('\r# The Class Average grade                    :  %.1f'%(Average_Grade / NumLines))
+OutFile.write('\r# \tThe Class Average grade                    :  %.1f'%(Average_Grade / NumLines))
 OutFile.write("\r#**********************************************************")
 
 
 # Now we print to the file the total number of each classification.
 OutFile.write("\r\n#********************** CLASSIFICATION ********************")
-OutFile.write('\r# Number of freshmen students                 : ' + str(Numb_FreshMen))
-OutFile.write('\r# Number of Sophomores students               : ' + str(Numb_Sophmores))
-OutFile.write('\r# Number of Juniors students                  : ' + str(Numb_Juniors))
-OutFile.write('\r# Number of Seniors students                  : ' + str(Numb_Seniors))
+OutFile.write('\r# \tNumber of freshmen students                 : ' + str(Numb_FreshMen))
+OutFile.write('\r# \tNumber of Sophomores students               : ' + str(Numb_Sophmores))
+OutFile.write('\r# \tNumber of Juniors students                  : ' + str(Numb_Juniors))
+OutFile.write('\r# \tNumber of Seniors students                  : ' + str(Numb_Seniors))
 OutFile.write("\r#**********************************************************")
 
 # Closing the input and output file.

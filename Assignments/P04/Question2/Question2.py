@@ -28,19 +28,24 @@
  # There are many other characters that exist besides a-z
  
  #
- # In this fucntion, we will use a dictionary 
- # to list of 26 characters and inialized each one 
- # with a counter of 0 then increment if the same
- # alphabet is found or character is found using a basic
- # for loop and some if and else statement.
+ # In this fucntion, we first pass in our string then we 
+ # use a dictionary to list of 26 characters and inialized each one 
+ # with a counter of 0, then increment if the same
+ # alphabet or character is found, while using some basic
+ # for loop and if and else statement.
  # 
 def alphabet_map(word):
         alpha_count_dict = dict(zip('abcdefghijklmnopqrstuvwxyz',[0]*26))
         for alpha in word:
+            # if the we find this alphabet in the string add one.
             if alpha in alpha_count_dict.keys():
                 alpha_count_dict[alpha] += 1
+            
+            # else we don't find it let equal to zero.
             else:
                 alpha_count_dict.update(dict(alpha = 0))
+                
+        # return our alphabet map as a Tuple.
         return tuple(alpha_count_dict.values())
 
  #

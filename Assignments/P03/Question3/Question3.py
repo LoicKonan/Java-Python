@@ -125,5 +125,5 @@ def myAtoi(str):
 			
         return val*(-1) if negFlag else val		#returning the negative value if negFlag is on, otherwise return the extact value
 		
-str1= '-42'
+str1 = '-42'
 print(myAtoi(str1))

@@ -41,14 +41,6 @@ try:
     
 except FileNotFoundError:
     print("Could not open the file for reading")
-    
-
-# try opening up the output file, if exception occured then display to viewer
-try:
-    OutFile = open('student_statistics.txt', 'w')
-      
-except FileNotFoundError:
-    print("Could not open the file for writing")
 
 
 # While the file are open continue.
@@ -99,6 +91,15 @@ with InFile:
         elif LineElement[2].lower() == 'junior':
            TotJuniors += 1
  
+ 
+ 
+# try opening up the output file, if exception occured then display to viewer
+try:
+    OutFile = open('student_statistics.txt', 'w')
+      
+except FileNotFoundError:
+    print("Could not open the file for writing")
+    
 OutFile.write("\r===================================================\n")
 # writing to the output file
 # first we print the person first and last name that had highest grade

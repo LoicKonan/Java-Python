@@ -1,4 +1,4 @@
-After Iterating Through our Infile, We determined that===================================================
+===================================================
 Person With the Highest Grade Was :  Jeff BozoThe Highest Grade Was             :  99The Lowest Grade Was              :  63The Class Average Was             :  83.2
 The total # of People in Each Class is Displayed Below
 =================================================

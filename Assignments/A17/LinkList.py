@@ -1,11 +1,11 @@
 class Node:
-      def init(self, data=None):
+      def __init__(self, data=None):
         self.data = data
         self.next = None
 
 
 class LinkedList:
-  def init(self, nodes=None):
+  def __init__(self, nodes=None):
     self.head = None
     if nodes is not None:
       node = Node(nodes.pop(0))
@@ -14,7 +14,7 @@ class LinkedList:
         node.next = Node(element)
         node = node.next
 
-  def repr(self):
+  def __repr__(self):
     node = self.head
     nodes = []
     while node is not None:
@@ -22,7 +22,7 @@ class LinkedList:
       node = node.next
     nodes.append('None')
     return "->".join(nodes)
-
+    
 
 l1 = ['3', '2', '1']
 l2 = ['6', '5', '4']

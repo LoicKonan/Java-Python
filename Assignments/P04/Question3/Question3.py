@@ -178,7 +178,7 @@ class Customer:
         for account in self.__accounts:
             account_str += str(account) 
                 
-        return "CustomerName: {}\nCustomer Age: {}\nAccounts: {}"\
+        return "CustomerName: {}\nCustomer Age: {}\nAccount ID: {}"\
             .format(self.__CustomerName, self.__age, account_str)
 
 
@@ -186,28 +186,26 @@ class Customer:
 
 print('\n***********************************************')
 print(" Welcome to the First Crypto Currency Bank")
-print('***********************************************\n')
+print('***********************************************\n')    
 
 First_Customer = Customer('Lebron James', 20)
-First_Customer.CreateAccount(1235)
-print(First_Customer.AccountInformation())      
+First_Customer.CreateAccount(1)
+print(First_Customer.AccountInformation()) 
 
-
-First_Customer = CheckingAccount(25, 5000, 0.05)
+First_Customer = CheckingAccount(85, 5000, 0.05)
 First_Customer.deposit(522)
 
 print(First_Customer.AccountInformation()) 
 
-First_Customer.deposit(522)
-print(First_Customer.AccountInformation()) 
 
-      
 print('\n***********************************************')
 Second_Customer = Customer('Satoshi Nakamoto', 35)
-Second_Customer.CreateAccount(124566)
-
-First_Customer = CheckingAccount(654, 5000, 0.05)
-
+Second_Customer.CreateAccount(2)
 print(Second_Customer.AccountInformation())      
 
-  
+First_Customer = CheckingAccount(30, 5000, 0.05)
+First_Customer.deposit(800)
+
+print(First_Customer.AccountInformation())  
+
+print('\n***********************************************')

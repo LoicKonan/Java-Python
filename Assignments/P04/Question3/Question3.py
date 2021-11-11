@@ -155,7 +155,6 @@ class Customer:
         self.__age = age
 
 
-    # method to ad an account for the customer
     def Create_Account(self, account):
         self.__accounts.append(account)
 
@@ -176,7 +175,6 @@ class Customer:
 
 
 # Driver code
-
 print('\n***********************************************')
 print(" Welcome to the First Crypto Currency Bank")
 print('***********************************************')    

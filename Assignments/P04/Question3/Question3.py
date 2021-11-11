@@ -130,14 +130,6 @@ class CheckingAccount(BankAccount):
     def AccountInformation(self):
         return "Checking Acct: \n" + super().AccountInformation() + \
             "\nBanking Fee  : {}".format(self.__BankingFee)
-            
-    def withdraw(self, amount):
-        if self.__balance >= amount:
-            self.__balance -= amount
-            print("Your Withdrawl of  {}  $ was successful".format(amount))
-        else:
-            print("Not enough Money!!!!")
-
 
 
 class Customer:
@@ -186,26 +178,27 @@ class Customer:
 
 print('\n***********************************************')
 print(" Welcome to the First Crypto Currency Bank")
-print('***********************************************\n')    
+print('***********************************************')    
 
 First_Customer = Customer('Lebron James', 20)
 First_Customer.CreateAccount(1)
 print(First_Customer.AccountInformation()) 
 
+print('\n')
 First_Customer = CheckingAccount(85, 5000, 0.05)
-First_Customer.deposit(522)
-
 print(First_Customer.AccountInformation()) 
 
+print('\n')
+First_Customer.deposit(300)
+print(First_Customer.AccountInformation()) 
+
+print('\n')
+First_Customer.withdraw(10)
+print(First_Customer.AccountInformation()) 
 
 print('\n***********************************************')
 Second_Customer = Customer('Satoshi Nakamoto', 35)
 Second_Customer.CreateAccount(2)
-print(Second_Customer.AccountInformation())      
 
-First_Customer = CheckingAccount(30, 5000, 0.05)
-First_Customer.deposit(800)
-
-print(First_Customer.AccountInformation())  
 
 print('\n***********************************************')

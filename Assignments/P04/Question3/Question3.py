@@ -39,22 +39,22 @@
  
 from abc import abstractmethod, ABC
 
-class BankAccount(ABC):
+class B_Account(ABC):
     
     def __init__(self, account_number, balance):
         self.__account_number = account_number
         self.__balance = balance
 
-    def get_account_number(self):
+    def get_Account(self):
         return self.__account_number
     
-    def get_balance(self):
+    def get_Balance(self):
         return self.__balance
 
-    def set_account_number(self, account_number):
+    def set_Account(self, account_number):
         self.__account_number = account_number
         
-    def set_balance(self, balance):
+    def set_Balance(self, balance):
         self.__balance = balance
 
 
@@ -70,34 +70,35 @@ class BankAccount(ABC):
         else:
             print("Not enough Money!!!!")
 
-    def show_balance(self):
+    def Diplay_Balance(self):
         print("Balance : {}".format(self.__balance))
 
  
-    def AccountInformation(self):
+    def Account_Information(self):
         return "Acct #       : {}\nAcct Balance : {}".\
             format(self.__account_number, self.__balance)
 
 
 
-class SavingsAccount(BankAccount):
+class SavingsAccount(B_Account):
     
     def __init__(self, account_number, balance, BankingRate = 0.15):
         super().__init__(account_number, balance)
         self.__BankingRate = BankingRate
 
-    def get_BankRate(self):
+    def get_CryptoRate(self):
         return self.__BankingRate
-    def set_BankRate(self, BankingRate):
+    
+    def set_CryptoRate(self, BankingRate):
         self.__BankingRate = BankingRate
 
-    def BalancePlusRate(self):
-        AddedRate = self.get_balance() * self.__BankingRate
-        print("The Bank Rate is : {}".format(AddedRate))
+    def Crypto_BalanceRate(self):
+        AddedRate = self.get_Balance() * self.__BankingRate
+        print("The Crypto Rate is : {}".format(AddedRate))
 
-    def AccountInformation(self):
-        return "Savings Acct :\n" + super().AccountInformation() + \
-        "\nBank Rate    : {}".format(self.__BankingRate)
+    def Account_Information(self):
+        return "Savings Acct :\n" + super().Account_Information() + \
+        "\nCrypto Rate    : {}".format(self.__BankingRate)
         
     def withdraw(self, amount):
         if self.__balance >= amount:
@@ -108,28 +109,28 @@ class SavingsAccount(BankAccount):
 
 
 
-class CheckingAccount(BankAccount):
+class CheckingAccount(B_Account):
     # create constructor
     def __init__(self, account_number, balance, BankingFee):
         super().__init__(account_number, balance)
         self.__BankingFee = BankingFee
    
    
-    def get_fee(self):
+    def get_Fee(self):
         return self.__BankingFee
     
-    def set_fee(self, BankingFee):
+    def set_Fee(self, BankingFee):
         self.__BankingFee = BankingFee
 
 
     def withdraw(self, amount):
         super().withdraw(amount)
-        self.set_balance(self.get_balance() - self.__BankingFee)
+        self.set_Balance(self.get_Balance() - self.__BankingFee)
 
     
-    def AccountInformation(self):
-        return "Checking Acct: \n" + super().AccountInformation() + \
-            "\nBanking Fee  : {}".format(self.__BankingFee)
+    def Account_Information(self):
+        return "Checking Acct: \n" + super().Account_Information() + \
+            "\nCrypto Fee  : {}".format(self.__BankingFee)
 
 
 class Customer:
@@ -140,32 +141,32 @@ class Customer:
         self.__accounts = []
 
     
-    def get_name(self):
+    def get_Name(self):
         return self.__CustomerName
    
-    def get_age(self):
+    def get_Age(self):
         return self.__age
 
  
-    def set_name(self, CustomerName):
+    def set_Name(self, CustomerName):
         self.__CustomerName = CustomerName
     
-    def set_age(self, age):
+    def set_Age(self, age):
         self.__age = age
 
 
     # method to ad an account for the customer
-    def CreateAccount(self, account):
+    def Create_Account(self, account):
         self.__accounts.append(account)
 
 
     def get_Account(self, account_number):
         for account in self.__accounts:
-            if account.get_account_number()== account_number:
+            if account.get_Account()== account_number:
                 return account
         return None
 
-    def AccountInformation(self):
+    def Account_Information(self):
         account_str = "\n"
         for account in self.__accounts:
             account_str += str(account) 
@@ -181,24 +182,36 @@ print(" Welcome to the First Crypto Currency Bank")
 print('***********************************************')    
 
 First_Customer = Customer('Lebron James', 20)
-First_Customer.CreateAccount(1)
-print(First_Customer.AccountInformation()) 
+First_Customer.Create_Account(1)
+print(First_Customer.Account_Information()) 
 
 print('\n')
-First_Customer = CheckingAccount(85, 5000, 0.05)
-print(First_Customer.AccountInformation()) 
+First_Customer = CheckingAccount(85, 5000, 3)
+print(First_Customer.Account_Information()) 
 
 print('\n')
 First_Customer.deposit(300)
-print(First_Customer.AccountInformation()) 
+print(First_Customer.Account_Information()) 
 
 print('\n')
 First_Customer.withdraw(10)
-print(First_Customer.AccountInformation()) 
+print(First_Customer.Account_Information()) 
 
 print('\n***********************************************')
 Second_Customer = Customer('Satoshi Nakamoto', 35)
-Second_Customer.CreateAccount(2)
+Second_Customer.Create_Account(2)
 
+
+print('\n')
+Second_Customer = CheckingAccount(1000, 5000, 1)
+print(Second_Customer.Account_Information()) 
+
+print('\n')
+Second_Customer.deposit(3000)
+print(Second_Customer.Account_Information()) 
+
+print('\n')
+Second_Customer.withdraw(100)
+print(Second_Customer.Account_Information()) 
 
 print('\n***********************************************')

@@ -111,22 +111,24 @@ def listSum(l1, l2):
 	return reverse(head)
 	
 # Driver code
+print('\n---------- LinkedList Calculator ------------')					
+
 linkedList1 = LinkedList()
 linkedList1.insert(3)
 linkedList1.insert(2)
 linkedList1.insert(1)
-print('\n  ', linkedList1.traverse())
+print('\n            ', linkedList1.traverse())
 
 linkedList2 = LinkedList()
 linkedList2.insert(6)
 linkedList2.insert(5)
 linkedList2.insert(4)
-print('\n  ', linkedList2.traverse())
+print('\n            ', linkedList2.traverse())
 
 linkedList3 = LinkedList()
 linkedList3.head = listSum(linkedList1.head,
 						linkedList2.head)
-print('----------------------')					
-print('= ', linkedList3.traverse())
+print('          -----------------------')					
+print('          = ', linkedList3.traverse())
 
 # This code is contributed by Debidutta Rath

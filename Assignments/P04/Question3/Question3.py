@@ -37,7 +37,9 @@
  # 
  #****************************************************************************/
  
- 
+from abc import abstractmethod, ABC
+
+
 def main():
     
     print("Open a bank account")
@@ -62,6 +64,11 @@ def main():
 
 
 
+class BankAccount(ABC):
+       @ abstractmethod
+       def Withdraw(): 
+           pass
+       
 class BankAccount:
 
     def __init__(self, name, age, _balance):

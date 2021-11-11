@@ -60,15 +60,15 @@ class BankAccount(ABC):
 
     def deposit(self, amount):
         self.__balance += amount
-        print("Your Depoist of  {} was successful".format(amount))
+        print("Your Depoist of  {} $ was successful".format(amount))
 
     @ abstractmethod
     def withdraw(self, amount):
         if self.__balance >= amount:
             self.__balance -= amount
-            print("Your Withdrawl of  {}  was successful".format(amount))
+            print("Your Withdrawl of  {}  $ was successful".format(amount))
         else:
-            print("Not enough Money to Withdraw that much!!!!")
+            print("Not enough Money!!!!")
 
     def show_balance(self):
         print("Balance : {}".format(self.__balance))
@@ -102,9 +102,9 @@ class SavingsAccount(BankAccount):
     def withdraw(self, amount):
         if self.__balance >= amount:
             self.__balance -= amount
-            print("Your Withdrawl of  {}  was successful".format(amount))
+            print("Your Withdrawl of  {}  $ was successful".format(amount))
         else:
-            print("Not enough Money to Withdraw that much!!!!")
+            print("Not enough Money!!!!")
 
 
 
@@ -134,9 +134,9 @@ class CheckingAccount(BankAccount):
     def withdraw(self, amount):
         if self.__balance >= amount:
             self.__balance -= amount
-            print("Your Withdrawl of  {}  was successful".format(amount))
+            print("Your Withdrawl of  {}  $ was successful".format(amount))
         else:
-            print("Not enough Money to Withdraw that much!!!!")
+            print("Not enough Money!!!!")
 
 
 
@@ -176,16 +176,25 @@ class Customer:
     def AccountInformation(self):
         account_str = "\n"
         for account in self.__accounts:
-            account_str += "\n----------------\n" + str(account) + "\n----------------\n"
+            account_str += str(account) 
+                
         return "CustomerName: {}\nCustomer Age: {}\nAccounts: {}"\
             .format(self.__CustomerName, self.__age, account_str)
 
     
 
 First_Customer = Customer('Loic', 20)
+First_Customer.CreateAccount(1235)
+
+
+
+Second_Customer = Customer('koffi', 20)
+Second_Customer.CreateAccount(126)
 
 print(First_Customer.AccountInformation())      
 
+
+print(Second_Customer.AccountInformation())      
 
        
        

@@ -151,14 +151,14 @@ class Customer:
     def get_name(self):
         return self.__CustomerName
    
-    def get_customer_id(self):
+    def get_age(self):
         return self.__age
 
  
     def set_name(self, CustomerName):
         self.__CustomerName = CustomerName
     
-    def set_customer_id(self, age):
+    def set_age(self, age):
         self.__age = age
 
 
@@ -186,23 +186,25 @@ print('\n***********************************************')
 print(" Welcome to the First Crypto Currency Bank")
 print('***********************************************\n')
 
-First_Customer = Customer('Loic', 20)
+First_Customer = Customer('Lebron James', 20)
 First_Customer.CreateAccount(1235)
 print(First_Customer.AccountInformation())      
 
-
+print('\nNow changing the Account user name and age and Account Number')
 First_Customer.set_name('BOSS')
 First_Customer.get_name()
+
+First_Customer.set_age(55)
+First_Customer.get_age()
 print(First_Customer.AccountInformation())
       
       
 print('\n***********************************************')
-Second_Customer = Customer('koffi', 20)
-Second_Customer.CreateAccount(126)
+Second_Customer = Customer('Satoshi Nakamoto', 35)
+Second_Customer.CreateAccount(124566)
 
 print(Second_Customer.AccountInformation())      
 
-       
        
        
        
@@ -555,7 +557,7 @@ print(Second_Customer.AccountInformation())
 # #     def get_address(self):
 # #         return self.__CustomerAddress
     
-# #     def get_customer_id(self):
+# #     def get_age(self):
 # #         return self.__age
 
 # #     def set_name(self, CustomerName):
@@ -564,7 +566,7 @@ print(Second_Customer.AccountInformation())
 # #     def set_address(self, CustomerAddress):
 # #         self.__CustomerAddress = CustomerAddress
         
-# #     def set_customer_id(self, age):
+# #     def set_age(self, age):
 # #         self.__age = age
 
 # #     def CreateAccount(self, account):

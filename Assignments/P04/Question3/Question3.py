@@ -191,6 +191,11 @@ First_Customer.CreateAccount(1235)
 print(First_Customer.AccountInformation())      
 
 
+First_Customer.set_name('BOSS')
+First_Customer.get_name()
+print(First_Customer.AccountInformation())
+      
+      
 print('\n***********************************************')
 Second_Customer = Customer('koffi', 20)
 Second_Customer.CreateAccount(126)

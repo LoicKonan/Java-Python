@@ -1,8 +1,12 @@
-# Python3 implementation of the approach
+# Python
+# @author Loic Konan
+# Semester: Fall 2021
+# Date: 11/10/2021 
 
 # Linked List Node
 class Node:
 	
+ # Constructor to initialize the node object
 	def __init__(self, data):
 		
 		self.data = data
@@ -11,6 +15,7 @@ class Node:
 # Handle list operations
 class LinkedList:
 	
+ # Constructor to initialize the node object
 	def __init__(self):
 		
 		self.head = None
@@ -110,16 +115,18 @@ linkedList1 = LinkedList()
 linkedList1.insert(3)
 linkedList1.insert(2)
 linkedList1.insert(1)
+print('\n  ', linkedList1.traverse())
 
 linkedList2 = LinkedList()
 linkedList2.insert(6)
 linkedList2.insert(5)
 linkedList2.insert(4)
+print('\n  ', linkedList2.traverse())
 
 linkedList3 = LinkedList()
 linkedList3.head = listSum(linkedList1.head,
 						linkedList2.head)
-							
-print(linkedList3.traverse())
+print('----------------------')					
+print('= ', linkedList3.traverse())
 
 # This code is contributed by Debidutta Rath

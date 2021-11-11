@@ -130,5 +130,3 @@ linkedList3.head = listSum(linkedList1.head,
 						linkedList2.head)
 print('          -----------------------')					
 print('          = ', linkedList3.traverse())
-
-# This code is contributed by Debidutta Rath

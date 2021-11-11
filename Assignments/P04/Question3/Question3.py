@@ -142,11 +142,10 @@ class SavingAccount(BankAccount):
 
 class CheckingAccount(BankAccount):
 
-    def __init__(self, name, age, balance, cheques_issued):
+    def __init__(self, name, age, balance):
 
         BankAccount.__init__(self, name, age, balance)
 
-        self._cheques_issued = cheques_issued
 
 
     def get_info(self):
@@ -160,29 +159,6 @@ class CheckingAccount(BankAccount):
         self.print_balance()
 
         self.print_cheques()
-
-
-    def print_cheques(self):
-
-        print(
-
-        f"Total number of cheques issued: {self.get_number_of_cheques_issued()}")
-
-
-    def get_number_of_cheques_issued(self):
-
-        return self._cheques_issued
-
-
-    def issue_cheques(self, n):
-
-        if(type(n) == int and n > 0):
-
-            self._cheques_issued += n
-
-        else:
-
-            print("enter valid data for number of cheques")
 
 
 

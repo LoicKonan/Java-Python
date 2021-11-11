@@ -188,14 +188,12 @@ print('***********************************************\n')
 
 First_Customer = Customer('Loic', 20)
 First_Customer.CreateAccount(1235)
-
-
-
-Second_Customer = Customer('koffi', 20)
-Second_Customer.CreateAccount(126)
-
 print(First_Customer.AccountInformation())      
 
+
+print('\n***********************************************')
+Second_Customer = Customer('koffi', 20)
+Second_Customer.CreateAccount(126)
 
 print(Second_Customer.AccountInformation())      
 

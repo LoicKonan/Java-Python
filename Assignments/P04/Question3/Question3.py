@@ -38,9 +38,6 @@
  #****************************************************************************/
  
 from abc import abstractmethod, ABC
-       
-import re
-# First we create our parent class called bank account
 
 class BankAccount(ABC):
     
@@ -63,16 +60,13 @@ class BankAccount(ABC):
 
     def deposit(self, amount):
         self.__balance += amount
-        # print out the depoist transcation
         print("Your Depoist of  {} was successful".format(amount))
 
     @ abstractmethod
     def withdraw(self, amount):
-        # check if amount is greater than or equal to balance
         if self.__balance >= amount:
             self.__balance -= amount
             print("Your Withdrawl of  {}  was successful".format(amount))
-        # otherwise, print error message
         else:
             print("Not enough Money to Withdraw that much!!!!")
 
@@ -88,7 +82,7 @@ class BankAccount(ABC):
 
 class SavingsAccount(BankAccount):
     
-    def __init__(self, account_number, balance, BankingRate=0.5):
+    def __init__(self, account_number, balance, BankingRate = 0.15):
         super().__init__(account_number, balance)
         self.__BankingRate = BankingRate
 
@@ -104,6 +98,14 @@ class SavingsAccount(BankAccount):
     def AccountInformation(self):
         return "Savings Acct :\n" + super().AccountInformation() + \
         "\nBank Rate    : {}".format(self.__BankingRate)
+        
+    def withdraw(self, amount):
+        if self.__balance >= amount:
+            self.__balance -= amount
+            print("Your Withdrawl of  {}  was successful".format(amount))
+        else:
+            print("Not enough Money to Withdraw that much!!!!")
+
 
 
 class CheckingAccount(BankAccount):
@@ -115,19 +117,27 @@ class CheckingAccount(BankAccount):
    
     def get_fee(self):
         return self.__BankingFee
+    
     def set_fee(self, BankingFee):
         self.__BankingFee = BankingFee
 
 
     def withdraw(self, amount):
         super().withdraw(amount)
-        # subtract BankingFee from the balance 
         self.set_balance(self.get_balance() - self.__BankingFee)
 
     
     def AccountInformation(self):
         return "Checking Acct: \n" + super().AccountInformation() + \
             "\nBanking Fee  : {}".format(self.__BankingFee)
+            
+    def withdraw(self, amount):
+        if self.__balance >= amount:
+            self.__balance -= amount
+            print("Your Withdrawl of  {}  was successful".format(amount))
+        else:
+            print("Not enough Money to Withdraw that much!!!!")
+
 
 
 class Customer:
@@ -161,10 +171,8 @@ class Customer:
         for account in self.__accounts:
             if account.get_account_number()== account_number:
                 return account
-        # if nothing found return none
         return None
 
-    # method to return the data for the accounts in the cutomer data classs
     def AccountInformation(self):
         account_str = "\n"
         for account in self.__accounts:
@@ -173,35 +181,12 @@ class Customer:
             .format(self.__CustomerName, self.__age, account_str)
 
     
-    
-# create a new customer with everything overriden
-customer2 = Customer("Biblo Baggins", "111th NoAdventures Street", "2")
 
-# creating a checking and savings account for customer 2
-savings_account = SavingsAccount("00001", 5000, 0.05)
-checking_account = CheckingAccount("00002", 60000, 20)
-# customer 2 now has a checking and savings account
-customer2.CreateAccount(savings_account)
-customer2.CreateAccount(checking_account)
-# for sanity sake print out the customer to see their info
-print(customer2)
+First_Customer = Customer('Loic', 20)
 
-# deposit 1000 and withdraw 10000 from savings
-customer2.get_Account("00001").deposit(1000)
-customer2.get_Account("00001").withdraw(10000)
+print(First_Customer.AccountInformation())      
 
-# now from checking depoist and withraw utilizes get and set
-customer2.get_Account("00002").deposit(10000)
-customer2.get_Account("00002").withdraw(5000)
-print()
 
-# print out the details of the second customer
-print(customer2)       
-       
-       
-       
-       
-       
        
        
        
@@ -583,24 +568,24 @@ print(customer2)
 # #         return "CustomerName: {}\nAddress: {}\nCustomer ID: {}\nAccounts: {}".format(self.__CustomerName, self.__CustomerAddress, self.__age, account_str)
 
 # # # create a new customer with everything overriden
-# # customer2 = Customer("Biblo Baggins", "111th NoAdventures Street", "2")
+# # First_Customer = Customer("Biblo Baggins", "111th NoAdventures Street", "2")
 # # # creating a checking and savings account for customer 2
 # # savings_account = SavingsAccount("00001", 5000, 0.05)
 # # checking_account = CheckingAccount("00002", 60000, 20)
 # # # customer 2 now has a checking and savings account
-# # customer2.CreateAccount(savings_account)
-# # customer2.CreateAccount(checking_account)
+# # First_Customer.CreateAccount(savings_account)
+# # First_Customer.CreateAccount(checking_account)
 # # # for sanity sake print out the customer to see their info
-# # #print(customer2)
+# # #print(First_Customer)
 
 # # # deposit 1000 and withdraw 10000 from savings
-# # customer2.get_Account("00001").deposit(1000)
-# # customer2.get_Account("00001").withdraw(10000)
+# # First_Customer.get_Account("00001").deposit(1000)
+# # First_Customer.get_Account("00001").withdraw(10000)
 
 # # # now from checking depoist and withraw utilizes get and set
-# # customer2.get_Account("00002").deposit(10000)
-# # customer2.get_Account("00002").withdraw(5000)
+# # First_Customer.get_Account("00002").deposit(10000)
+# # First_Customer.get_Account("00002").withdraw(5000)
 # # print()
 
 # # # print out the details of the second customer
-# # #print(customer2)
+# # #print(First_Customer)

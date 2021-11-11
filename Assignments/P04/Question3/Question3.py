@@ -38,39 +38,9 @@
  #****************************************************************************/
  
 from abc import abstractmethod, ABC
-
-
-def main():
-    
-    print("Open a bank account")
-
-    print("choose account type:")
-
-    print("s: savings account")
-
-    print("c: checking account")
-
-    print("s+c or c+s : savings + checking account")
-
-    c = input("Enter your choice:")
-
-    name = input("Enter your name:")
-
-    age = int(input("Enter your age:"))
-
-    balance = int(input("Enter your opening amount:"))
-
-    customer = Customer(name, age, balance, c)
-
-
-
-class BankAccount(ABC):
-       @ abstractmethod
-       def Withdraw(): 
-           pass
        
-class BankAccount:
-
+class BankAccount(ABC):
+    
     def __init__(self, name, age, _balance):
 
         self.name = name
@@ -109,6 +79,16 @@ class BankAccount:
         else:
 
             print("Please enter valid data for amount")
+            
+    @ abstractmethod
+    def withdraw(self, amount):
+                
+        if self.balance >= amount and (type(amount)):
+            
+            self.balance -= amount
+            print("\n You Withdrew:", amount)
+        else:
+            print("\n Please don't try to seal from us!!!")
 
 
 
@@ -120,7 +100,6 @@ class SavingAccount(BankAccount):
 
         self._interest_rate = interest_rate
         
-
     def get_info(self):
 
         print("Account Type: Savings")
@@ -261,6 +240,28 @@ class Customer(SavingAccount, CheckingAccount):
 
             self.print_cheques()
 
+
+def main():
+    
+    print("Open a bank account")
+
+    print("choose account type:")
+
+    print("s: savings account")
+
+    print("c: checking account")
+
+    print("s+c or c+s : savings + checking account")
+
+    c = input("Enter your choice:")
+
+    name = input("Enter your name:")
+
+    age = int(input("Enter your age:"))
+
+    balance = int(input("Enter your opening amount:"))
+
+    customer = Customer(name, age, balance, c)
 
 
 if __name__ == '__main__':

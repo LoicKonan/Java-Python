@@ -78,19 +78,20 @@ class LinkedList:
         def printList(self):
                 temp = self.head
                 while(temp):
-                        print(temp.data)
+                        print(temp.data, " -> ")
                         temp = temp.next
 
 
 # Driver code
+
 first = LinkedList()
 second = LinkedList()
 
 # Create first list
+first.push(1)
 first.push(2)
-first.push(4)
 first.push(3)
-print("First List is ")
+print("First List:  ")
 first.printList()
 
 # Create second list

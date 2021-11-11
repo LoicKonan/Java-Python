@@ -182,6 +182,9 @@ class Customer:
             .format(self.__CustomerName, self.__age, account_str)
 
     
+print('\n***********************************************')
+print(" Welcome to the First Crypto Currency Bank")
+print('***********************************************\n')
 
 First_Customer = Customer('Loic', 20)
 First_Customer.CreateAccount(1235)

@@ -17,7 +17,10 @@
  #                  
  # Solution:
  #                  Used  Inheritance:                                                
- #                      - Shown within the saving and checking account.        
+ #                      - Shown in: 
+ #                          - bank account 
+ #                          - saving account
+ #                          - checking account.        
  #                  
  #                  Used polymorphism:                                               
  #                       - Shown by overriden the:
@@ -57,7 +60,6 @@ from abc import abstractmethod, ABC
 # In this class we will set up the basic information 
 # need it to for a normal bank account. such as the account
 # the deposit and how to withdraw, with the muttator methods.
-# 
 ##
 class B_Account(ABC):
     # Constructor

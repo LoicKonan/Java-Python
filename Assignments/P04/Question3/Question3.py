@@ -228,38 +228,46 @@ class Customer:
 # Driver code
 print('\n***********************************************')
 print(" Welcome to the Best Crypto Currency Bank")
-print('***********************************************')    
+print('***********************************************\n')    
 
+# Here we display the first customer name and age and accunt ID
 First_Customer = Customer('Lebron James', 20)
 First_Customer.Create_Account(1)
 print(First_Customer.Account_Information()) 
 
 print('\n')
+# Here we display the Second customer full account information
 First_Customer = Checking_Account(85, 5000, 3)
 print(First_Customer.Account_Information()) 
 
 print('\n')
+# Here we deposit some money in the account and display the result.
 First_Customer.deposit(300)
 print(First_Customer.Account_Information()) 
 
 print('\n')
+# Here we Withdraw some money in the account and display the result.
 First_Customer.withdraw(10)
 print(First_Customer.Account_Information()) 
 
 print('\n***********************************************')
+# Here we display the Second customer name and age and accunt ID
 Second_Customer = Customer('Satoshi Nakamoto', 35)
 Second_Customer.Create_Account(2)
-
+print(Second_Customer.Account_Information()) 
 
 print('\n')
+# Here we display the Second customer full account information
 Second_Customer = Checking_Account(1000, 5000, 1)
 print(Second_Customer.Account_Information()) 
 
 print('\n')
+# Here we deposit some money in the account and display the result.
 Second_Customer.deposit(3000)
 print(Second_Customer.Account_Information()) 
 
 print('\n')
+# Here we Withdraw some money in the account and display the result.
 Second_Customer.withdraw(100)
 print(Second_Customer.Account_Information()) 
 

@@ -174,6 +174,7 @@ class Vigenere:
         if params["operation"] == 'Encrypt':
             self.Encrypt = True
             print("We are Encrypting")
+            self.Encrypt (**params)
         
         else:
             self.Decrypt = True
@@ -249,7 +250,7 @@ class Vigenere:
     # str[0] = (str[0] + int(key[i]) % 26)
     # The ord() function returns an integer representing the Unicode character.
     
-    def Encrypt(message, key):
+    def Encrypt(self, message, key):
         print()
         cip = []
         start = ord('a')                

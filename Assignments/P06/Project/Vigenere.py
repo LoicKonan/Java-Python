@@ -31,8 +31,8 @@ f1.pack(side = LEFT)
 localtime = time.asctime(time.localtime(time.time()))
 
 lblInfo = Label(Tops, font = ('helvetica', 50, 'bold'),
-		text = "SECRET MESSAGING \n Vigenère cipher",
-					fg = "Black", bd = 10, anchor='w')
+		text = "Byron Dowling & Loic Konan \n Vigenère cipher",
+					fg = "Black", bd = 10, anchor ='w')
 					
 lblInfo.grid(row = 0, column = 0)
 
@@ -60,18 +60,6 @@ def Reset():
 	mode.set("")
 	Result.set("")
 
-
-# reference
-lblReference = Label(f1, font = ('arial', 16, 'bold'),
-				text = "Name:", bd = 16, anchor = "w")
-				
-lblReference.grid(row = 0, column = 0)
-
-txtReference = Entry(f1, font = ('arial', 16, 'bold'),
-			textvariable = rand, bd = 10, insertwidth = 4,
-						bg = "powder blue", justify = 'right')
-						
-txtReference.grid(row = 0, column = 1)
 
 # labels
 lblMsg = Label(f1, font = ('arial', 16, 'bold'),
@@ -417,10 +405,6 @@ btnExit = Button(f1, padx = 16, pady = 8, bd = 16,
 					width = 10, text = "Exit", bg = "red",
 				command = qExit).grid(row = 7, column = 3)
 
-# keeps window alive
-root.mainloop()
-
-
 
 if __name__=='__main__':
     """
@@ -436,7 +420,9 @@ if __name__=='__main__':
 
         V1.setIn_N_Out(**program_params)
         V1.setOperation(**program_params)
-
+        
+        # keeps window alive
+        root.mainloop()
 
     except:
 

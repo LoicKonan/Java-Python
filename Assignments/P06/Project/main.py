@@ -1,9 +1,3 @@
-## 
-# 
-# The original version
-# 
-# #
-
 import sys
 
 # import tkinter module
@@ -118,22 +112,14 @@ txtService.grid(row = 2, column = 3)
         
         run = "python3 CipherCracking.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none"
         run = "python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial"
-
     *** Encryption Example***
-
         Operation: Encrypt
         Plaintext Message: a group of crows is called a murder
         Key: Vixen
-
         Repeated Key:      V IXENV IX ENVIX EN VIXENV I XENVIX
         Encrypted Message: V OOSJK WC GEKEP MF XIIPRY I JCEYMO
-
-
     ## Possible code snippet
     str[0] = (str[0] + int(key[i]) % 26)
-
-
-
      $$\    $$\ $$\                                                             
      $$ |   $$ |\__|                                                            
      $$ |   $$ |$$\  $$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\  
@@ -308,7 +294,6 @@ class Vigenere:
         List = None
 
 """
-
     $$\                                                             
     $$ |                                                            
     $$ |  $$\ $$\  $$\  $$\  $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$\ 
@@ -320,10 +305,8 @@ class Vigenere:
                                                 $$\   $$ |          
                                                 \$$$$$$  |          
                                                 \______/      
-
     Helper Function to strip out key arguments that are passed in 
     when running the program            
-
     Processes argv list into plain args (list) and kwargs (dict).
     Just easier than using a library like argparse for small things.
     Example:
@@ -331,7 +314,6 @@ class Vigenere:
         Would create:
             args[arg1, arg2, -arg5, -arg6, --arg7]
             kargs{arg3 : val1, arg4 : val2}
-
         Params with dashes (flags) can now be processed seperately
     Shortfalls:
         spaces between k=v would result in bad params
@@ -454,4 +436,8 @@ if __name__=='__main__':
         print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
         print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
         sys.exit()
-
+        
+        
+        
+        
+     

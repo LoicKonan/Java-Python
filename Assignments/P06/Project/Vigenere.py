@@ -163,24 +163,21 @@ class Vigenere:
         self.KeyOrder = []
 
     
-    
-    def setIn_N_Out(self,**params):
-        self.Input = params.get("input_file",None)
-        self.Output = params.get("output_file",None)
+    # def setIn_N_Out(self,**params):
+    #     self.Input = params.get("input_file",None)
+    #     self.Output = params.get("output_file",None)
 
     
-
-    def setOperation(self, **params):
-        if params["operation"] == 'Encrypt':
-            self.Encrypt = True
-            print("We are Encrypting")
-            self.Encrypt (**params)
+    # def setOperation(self, **params):
+    #     if params["operation"] == 'Encrypt':
+    #         self.Encrypt = True
+    #         print("We are Encrypting")
+    #         self.Encrypt (**params)
         
-        else:
-            self.Decrypt = True
-            print("We are Decrypting")
-            self.Index_Of_Coincidence(**params)
-
+    #     else:
+    #         self.Decrypt = True
+    #         print("We are Decrypting")
+    #         self.Index_Of_Coincidence(**params)
 
 
     def Index_Of_Coincidence(self, **params):
@@ -223,7 +220,6 @@ class Vigenere:
         group_of.append(sequences)
 
 
-
     def CryptoMath(self, Slices):
         print("In CryptoMath")
         print(Slices)
@@ -236,22 +232,12 @@ class Vigenere:
         Numerator = float()
         Denominator = float()
 
-
-    '''
-        - cip := a new list
-        - start := ASCII of 'a'
-        - for each l from text and k from key, do
-            - shift := (ASCII of k) - start
-            - pos := start +((ASCII of l) - start + shift) mod 26
-            - insert character of pos at the end of cip
-        - join strings of cip and return
-    '''
     # Loic Start implementing the encrypt function
     # str[0] = (str[0] + int(key[i]) % 26)
     # The ord() function returns an integer representing the Unicode character.
     
     def Encrypt(self, **params):
-
+        
         with open(self.Input,'r') as f:
             self.Encrypted = f.read()
             print("Reduced Message\n")
@@ -264,7 +250,6 @@ class Vigenere:
         #     cip.append(chr(pos))
         # return ''.join([l for l in cip])
     
-
 
     ## Loic start implementing the dictionary attack
     def Dictionary_Attack_IOC(self, **params):
@@ -349,19 +334,19 @@ class Vigenere:
     Returns:
         tuple  (args,kargs)          
                     
-"""
+# """
 
-def mykwargs(argv):
-    args = []
-    kargs = {}
+# def mykwargs(argv):
+#     args = []
+#     kargs = {}
 
-    for arg in argv:
-        if '=' in arg:
-            key,val = arg.split('=')
-            kargs[key] = val
-        else:
-            args.append(arg)
-    return args,kargs
+#     for arg in argv:
+#         if '=' in arg:
+#             key,val = arg.split('=')
+#             kargs[key] = val
+#         else:
+#             args.append(arg)
+#     return args,kargs
 
 
 
@@ -411,10 +396,37 @@ btnExit = Button(f1, padx = 16, pady = 8, bd = 16,
 				command = qExit).grid(row = 7, column = 3)
 
 
+
+def main():
+    
+    print("""\t    Welcome to Ethans Bank
+               Pick From My Menu\n\n
+            [1] -- Create Account
+            [2] -- Make Deposit
+            [3] -- Quit Bank Simulation
+    
+            """)
+    keep_going = True
+    while keep_going:
+
+        # prompt the user what they would like to do
+        userInput = str(input(''))
+    
+        if userInput == '1':
+            NameOfCustomer=str(input(""))
+           
+        if userInput == '2':
+            userInput = str(input(''))
+        
+        else:
+            keep_going = False # close out of the program
+    
 if __name__=='__main__':
     """
     Main block
     """
+    main()
+        
     V1 = Vigenere()
 
     argv = sys.argv[1:]                     # strip file name (main.py) out of args

@@ -249,7 +249,7 @@ class Vigenere:
     # str[0] = (str[0] + int(key[i]) % 26)
     # The ord() function returns an integer representing the Unicode character.
     
-    def Encrypt(self, message, key,**params):
+    def Encrypt(message, key):
         print()
         cip = []
         start = ord('a')                
@@ -258,6 +258,7 @@ class Vigenere:
             pos = start + (ord(l) - start + shift) % 26
             cip.append(chr(pos))
         return ''.join([l for l in cip])
+    
 
 
     ## Loic start implementing the dictionary attack

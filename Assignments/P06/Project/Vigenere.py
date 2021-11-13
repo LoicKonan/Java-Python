@@ -1,133 +1,18 @@
 import sys
 
-# import tkinter module
-from tkinter import *
-
-# import other necessary modules
-import random
-import time
-import datetime
-
-# creating root object
-root = Tk()
-
-# defining size of window
-root.geometry("1200x6000")
-
-# setting up the title of window
-root.title("Vigenère Cipher")
-
-Tops = Frame(root, width = 1600, relief = SUNKEN)
-Tops.pack(side = TOP)
-
-f1 = Frame(root, width = 800, height = 700, relief = SUNKEN)
-f1.pack(side = LEFT)
-
-# ==============================================
-#				 TIME
-# ==============================================
-
-localtime = time.asctime(time.localtime(time.time()))
-
-lblInfo = Label(Tops, font = ('helvetica', 50, 'bold'),
-		text = "Byron Dowling & Loic Konan \n Vigenère Cipher",
-					fg = "Black", bd = 10, anchor ='w')
-					
-lblInfo.grid(row = 0, column = 0)
-
-lblInfo = Label(Tops, font=('arial', 20, 'bold'),
-			text = localtime, fg = "Steel Blue",
-						bd = 10, anchor = 'w')
-						
-lblInfo.grid(row = 1, column = 0)
-
-rand = StringVar()
-Msg = StringVar()
-key = StringVar()
-mode = StringVar()
-Result = StringVar()
-
-# exit function
-def qExit():
-	root.destroy()
-
-# Function to reset the window
-def Reset():
-	rand.set("")
-	Msg.set("")
-	key.set("")
-	mode.set("")
-	Result.set("")
-
-
-# labels
-lblMsg = Label(f1, font = ('arial', 16, 'bold'),
-		text = "MESSAGE", bd = 16, anchor = "w")
-		
-lblMsg.grid(row = 1, column = 0)
-
-txtMsg = Entry(f1, font = ('arial', 16, 'bold'),
-		textvariable = Msg, bd = 10, insertwidth = 4,
-				bg = "powder blue", justify = 'right')
-				
-txtMsg.grid(row = 1, column = 1)
-
-lblkey = Label(f1, font = ('arial', 16, 'bold'),
-			text = "KEY", bd = 16, anchor = "w")
-			
-lblkey.grid(row = 2, column = 0)
-
-txtkey = Entry(f1, font = ('arial', 16, 'bold'),
-		textvariable = key, bd = 10, insertwidth = 4,
-				bg = "powder blue", justify = 'right')
-				
-txtkey.grid(row = 2, column = 1)
-
-lblmode = Label(f1, font = ('arial', 16, 'bold'),
-		text = "MODE(e for encrypt, d for decrypt)",
-								bd = 16, anchor = "w")
-								
-lblmode.grid(row = 3, column = 0)
-
-txtmode = Entry(f1, font = ('arial', 16, 'bold'),
-		textvariable = mode, bd = 10, insertwidth = 4,
-				bg = "powder blue", justify = 'right')
-				
-txtmode.grid(row = 3, column = 1)
-
-lblService = Label(f1, font = ('arial', 16, 'bold'),
-			text = "The Result-", bd = 16, anchor = "w")
-			
-lblService.grid(row = 2, column = 2)
-
-txtService = Entry(f1, font = ('arial', 16, 'bold'),
-			textvariable = Result, bd = 10, insertwidth = 4,
-					bg = "powder blue", justify = 'right')
-
-txtService.grid(row = 2, column = 3)
-
-
 """
     ***Examples terminal commands to run the program***
         
         run = "python3 CipherCracking.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none"
         run = "python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial"
-
     *** Encryption Example***
-
         Operation: Encrypt
         Plaintext Message: a group of crows is called a murder
         Key: Vixen
-
         Repeated Key:      V IXENV IX ENVIX EN VIXENV I XENVIX
         Encrypted Message: V OOSJK WC GEKEP MF XIIPRY I JCEYMO
-
-
     ## Possible code snippet
     str[0] = (str[0] + int(key[i]) % 26)
-
-
-
      $$\    $$\ $$\                                                             
      $$ |   $$ |\__|                                                            
      $$ |   $$ |$$\  $$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\  
@@ -141,6 +26,7 @@ txtService.grid(row = 2, column = 3)
                      \______/                                                   
 """
 
+
 class Vigenere:
 
     def __init__(self, input = None, output = None):
@@ -153,7 +39,7 @@ class Vigenere:
         self.Words = "Dictionary_Words.txt"
         self.Plaintext = None
         self.CipherText = None
-        self.Encrypted = None
+        self.Encrypted = ""
         self.Decrypted = None
         self.EncryptionKey = None
         self.Encrypt = False
@@ -163,21 +49,21 @@ class Vigenere:
         self.KeyOrder = []
 
     
-    # def setIn_N_Out(self,**params):
-    #     self.Input = params.get("input_file",None)
-    #     self.Output = params.get("output_file",None)
+    def setIn_N_Out(self,**params):
+        self.Input = params.get("input_file",None)
+        self.Output = params.get("output_file",None)
 
     
-    # def setOperation(self, **params):
-    #     if params["operation"] == 'Encrypt':
-    #         self.Encrypt = True
-    #         print("We are Encrypting")
-    #         self.Encrypt (**params)
+    def setOperation(self, **params):
+        if params["operation"] == 'Encrypt':
+            self.Encrypt = True
+            print("We are Encrypting")
+            self.Encrypt (**params)
         
-    #     else:
-    #         self.Decrypt = True
-    #         print("We are Decrypting")
-    #         self.Index_Of_Coincidence(**params)
+        else:
+            self.Decrypt = True
+            print("We are Decrypting")
+            self.Index_Of_Coincidence(**params)
 
 
     def Index_Of_Coincidence(self, **params):
@@ -236,73 +122,66 @@ class Vigenere:
     # str[0] = (str[0] + int(key[i]) % 26)
     # The ord() function returns an integer representing the Unicode character.
     
-    def Encrypt(self, **params):
-        
-        with open(self.Input,'r') as f:
-            self.Encrypted = f.read()
-            print("Reduced Message\n")
+    def Encrypt(self,**kwargs):
+    
+        key = kwargs.get('key',None)
 
-        # cip = []
-        # start = ord('a')                
-        # for l, k in zip(message, key):
-        #     shift = ord(k) - start
-        #     pos = start + (ord(l) - start + shift) % 26
-        #     cip.append(chr(pos))
-        # return ''.join([l for l in cip])
+        # should test if file exists
+        with open(self.Input, 'r') as f:
+            plaintext = f.read()
+
+        plaintext = plaintext.lower()
+        self.encrypted.txt = ""
+
+        i = 0
+        for letter in plaintext:
+            if letter in self.alphabet:
+
+                a = ord(letter)-65
+                b = ord(key[i])-65
+                self.encrypted.txt += chr(((a+b)%26)+65)
+
+                i = (i + 1) % len(key)
+            else:
+                self.encrypted.txt += letter
+
+        with open(self.Output, 'w') as f:
+            f.write(self.encrypted.txt)
+        return self.encrypted.txt
     
 
     ## Loic start implementing the dictionary attack
-    def Dictionary_Attack_IOC(self, **params):
-        print()
-        List = Dictionary()
-        j = 0
-        while j < List.Words.size():
-            if List.Words[j].length() == Key_Length:
-                Narrowed.push_back(List.Words[j])
-            j += 1
+    def Decrypt(self,**kwargs):# was self,cipheredtext,key
 
-        k = 0
-        while k < Narrowed.size():
-            D = Dictionary_Attack()
+        # input_file = kwargs.get('input',None)
+        # output_file = kwargs.get('output',None)
+        key = kwargs.get('key',None)
 
-            D.Key = Narrowed[k]
+        #cipheredtext = cipheredtext.lower()
 
-            j = 0
+        # should test if file exists
+        with open(self.Input, 'r') as f:
+            ciphertext = f.read()
+        ciphertext = ciphertext.lower()
+        self.plain_text = ""
 
-            l = 0
-            while l < CipherText.length():
+        i = 0
+        for letter in ciphertext:
+            if letter in self.alphabet:
+    
+                a = ord(letter)-97
+                b = ord(key[i])-97
+                self.plain_text += chr(((a-b)%26)+97)
 
-                if j == D.Key.length():
-                    j = 0
-
-                if int(CipherText[l]) != 32:
-                    Temp = CipherText[l] - D.Key[j]
-
-                    if Temp < 0:
-                        Temp += 26
-
-                    else:
-                        Temp %= 26
-
-                    Temp += 65
-
-                    D.Decrypted += Temp
-                    j += 1
-
-                else:
-                    D.Decrypted += CipherText[l]
-
-                l += 1
-
-        Calculate_IOC(D.Decrypted)
-
-        D = None
-        k += 1
-
-        List = None
+                i = (i + 1) % len(key)
+            else:
+                self.plain_text += letter
+        
+        #return self.plain_text
+        with open(output_file,'w') as f:
+            f.write(self.plain_text)
 
 """
-
     $$\                                                             
     $$ |                                                            
     $$ |  $$\ $$\  $$\  $$\  $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$\ 
@@ -314,10 +193,8 @@ class Vigenere:
                                                 $$\   $$ |          
                                                 \$$$$$$  |          
                                                 \______/      
-
     Helper Function to strip out key arguments that are passed in 
     when running the program            
-
     Processes argv list into plain args (list) and kwargs (dict).
     Just easier than using a library like argparse for small things.
     Example:
@@ -325,7 +202,6 @@ class Vigenere:
         Would create:
             args[arg1, arg2, -arg5, -arg6, --arg7]
             kargs{arg3 : val1, arg4 : val2}
-
         Params with dashes (flags) can now be processed seperately
     Shortfalls:
         spaces between k=v would result in bad params
@@ -336,17 +212,17 @@ class Vigenere:
                     
 # """
 
-# def mykwargs(argv):
-#     args = []
-#     kargs = {}
+def mykwargs(argv):
+    args = []
+    kargs = {}
 
-#     for arg in argv:
-#         if '=' in arg:
-#             key,val = arg.split('=')
-#             kargs[key] = val
-#         else:
-#             args.append(arg)
-#     return args,kargs
+    for arg in argv:
+        if '=' in arg:
+            key,val = arg.split('=')
+            kargs[key] = val
+        else:
+            args.append(arg)
+    return args,kargs
 
 
 
@@ -363,69 +239,8 @@ class Vigenere:
                                                                                                                                                                                                                                                    
 """
 
-
-
-def Ref():
-	print("Message= ", (Msg.get()))
-
-	clear = Msg.get()
-	k = key.get()
-	m = mode.get()
-
-	if (m == 'e'):
-		Result.set(encode(k, clear))
-	else:
-		Result.set(decode(k, clear))
-
-# Show message button
-btnTotal = Button(f1, padx = 16, pady = 8, bd = 16, fg = "black",
-						font = ('arial', 16, 'bold'), width = 10,
-					text = "Show Message", bg = "powder blue",
-						command = Ref).grid(row = 7, column = 1)
-
-# Reset button
-btnReset = Button(f1, padx = 16, pady = 8, bd = 16,
-				fg = "black", font = ('arial', 16, 'bold'),
-					width = 10, text = "Reset", bg = "green",
-				command = Reset).grid(row = 7, column = 2)
-
-# Exit button
-btnExit = Button(f1, padx = 16, pady = 8, bd = 16,
-				fg = "black", font = ('arial', 16, 'bold'),
-					width = 10, text = "Exit", bg = "red",
-				command = qExit).grid(row = 7, column = 3)
-
-
-
-def main():
-    
-    print("""\t    Welcome to Ethans Bank
-               Pick From My Menu\n\n
-            [1] -- Create Account
-            [2] -- Make Deposit
-            [3] -- Quit Bank Simulation
-    
-            """)
-    keep_going = True
-    while keep_going:
-
-        # prompt the user what they would like to do
-        userInput = str(input(''))
-    
-        if userInput == '1':
-            NameOfCustomer=str(input(""))
-           
-        if userInput == '2':
-            userInput = str(input(''))
-        
-        else:
-            keep_going = False # close out of the program
     
 if __name__=='__main__':
-    """
-    Main block
-    """
-    main()
         
     V1 = Vigenere()
 
@@ -439,7 +254,6 @@ if __name__=='__main__':
         V1.setOperation(**program_params)
         
         # keeps window alive
-        root.mainloop()
 
     except:
 
@@ -448,4 +262,3 @@ if __name__=='__main__':
         print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
         print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
         sys.exit()
-

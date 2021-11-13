@@ -270,7 +270,7 @@ print(Second_Customer.Account_Information())
 
 print('\n')
 # Here we Withdraw some money in the account and display the result.
-Second_Customer.withdraw(100)
+Second_Customer.withdraw(500000)
 print(Second_Customer.Account_Information()) 
 
 print('\n***********************************************')

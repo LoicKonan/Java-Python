@@ -250,7 +250,7 @@ class Vigenere:
     # str[0] = (str[0] + int(key[i]) % 26)
     # The ord() function returns an integer representing the Unicode character.
     
-    def Encrypt(self, message, key):
+    def Encrypt(self, **params):
         print()
         cip = []
         start = ord('a')                

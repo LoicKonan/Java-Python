@@ -15,7 +15,7 @@ root = Tk()
 root.geometry("1200x6000")
 
 # setting up the title of window
-root.title("Message Encryption and Decryption")
+root.title("Vigenère Cipher")
 
 Tops = Frame(root, width = 1600, relief = SUNKEN)
 Tops.pack(side = TOP)
@@ -31,7 +31,7 @@ f1.pack(side = LEFT)
 localtime = time.asctime(time.localtime(time.time()))
 
 lblInfo = Label(Tops, font = ('helvetica', 50, 'bold'),
-		text = "Byron Dowling & Loic Konan \n Vigenère cipher",
+		text = "Byron Dowling & Loic Konan \n Vigenère Cipher",
 					fg = "Black", bd = 10, anchor ='w')
 					
 lblInfo.grid(row = 0, column = 0)

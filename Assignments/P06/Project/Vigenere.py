@@ -20,8 +20,7 @@ root.title("Vigenère Cipher")
 Tops = Frame(root, width = 1600, relief = SUNKEN)
 Tops.pack(side = TOP)
 
-f1 = Frame(root, width = 800, height = 700,
-							relief = SUNKEN)
+f1 = Frame(root, width = 800, height = 700, relief = SUNKEN)
 f1.pack(side = LEFT)
 
 # ==============================================
@@ -104,8 +103,9 @@ lblService.grid(row = 2, column = 2)
 txtService = Entry(f1, font = ('arial', 16, 'bold'),
 			textvariable = Result, bd = 10, insertwidth = 4,
 					bg = "powder blue", justify = 'right')
-						
+
 txtService.grid(row = 2, column = 3)
+
 
 """
     ***Examples terminal commands to run the program***
@@ -251,14 +251,18 @@ class Vigenere:
     # The ord() function returns an integer representing the Unicode character.
     
     def Encrypt(self, **params):
-        print()
-        cip = []
-        start = ord('a')                
-        for l, k in zip(message, key):
-            shift = ord(k) - start
-            pos = start + (ord(l) - start + shift) % 26
-            cip.append(chr(pos))
-        return ''.join([l for l in cip])
+
+        with open(self.Input,'r') as f:
+            self.Encrypted = f.read()
+            print("Reduced Message\n")
+
+        # cip = []
+        # start = ord('a')                
+        # for l, k in zip(message, key):
+        #     shift = ord(k) - start
+        #     pos = start + (ord(l) - start + shift) % 26
+        #     cip.append(chr(pos))
+        # return ''.join([l for l in cip])
     
 
 
@@ -346,7 +350,6 @@ class Vigenere:
         tuple  (args,kargs)          
                     
 """
-
 
 def mykwargs(argv):
     args = []

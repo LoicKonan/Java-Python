@@ -65,7 +65,6 @@ def anagram_counter(words):
     # Then return a list of lits with grouping the anagrams together.
     return [words for key,words in Dictionary.items()]
 
-
  # Now we Display the first sample result to the screen.
 words = ['eat','tea','tan','ate','nat','bat']
 

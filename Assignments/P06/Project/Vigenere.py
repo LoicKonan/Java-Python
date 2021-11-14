@@ -122,40 +122,40 @@ class Vigenere:
     # str[0] = (str[0] + int(key[i]) % 26)
     # The ord() function returns an integer representing the Unicode character.
     
-    def Encrypt(self,**kwargs):
+    def Encrypt(self,**params):
     
-        key = kwargs.get('key',None)
+        key = params.get('key',None)
 
         # should test if file exists
         with open(self.Input, 'r') as f:
-            plaintext = f.read()
+            self.Plaintext = f.read()
 
-        plaintext = plaintext.lower()
-        self.encrypted.txt = ""
-
+        Plaintext = self.Plaintext.lower()
+        self.CipherText = " "
+        
+        print(self.Plaintext)
+        
         i = 0
-        for letter in plaintext:
+        for letter in Plaintext:
             if letter in self.alphabet:
 
                 a = ord(letter)-65
                 b = ord(key[i])-65
-                self.encrypted.txt += chr(((a+b)%26)+65)
+                self.CipherText.txt += chr(((a+b)%26)+65)
 
                 i = (i + 1) % len(key)
             else:
-                self.encrypted.txt += letter
+                self.CipherText.txt += letter
 
         with open(self.Output, 'w') as f:
-            f.write(self.encrypted.txt)
-        return self.encrypted.txt
+            f.write(self.CipherText.txt)
+        return self.CipherText.txt
     
 
     ## Loic start implementing the dictionary attack
-    def Decrypt(self,**kwargs):# was self,cipheredtext,key
+    def Decrypt(self,**params):# was self,cipheredtext,key
 
-        # input_file = kwargs.get('input',None)
-        # output_file = kwargs.get('output',None)
-        key = kwargs.get('key',None)
+        key = params.get('key',None)
 
         #cipheredtext = cipheredtext.lower()
 
@@ -168,7 +168,7 @@ class Vigenere:
         i = 0
         for letter in ciphertext:
             if letter in self.alphabet:
-    
+
                 a = ord(letter)-97
                 b = ord(key[i])-97
                 self.plain_text += chr(((a-b)%26)+97)
@@ -178,7 +178,7 @@ class Vigenere:
                 self.plain_text += letter
         
         #return self.plain_text
-        with open(output_file,'w') as f:
+        with open(self.Output,'w') as f:
             f.write(self.plain_text)
 
 """
@@ -247,7 +247,7 @@ if __name__=='__main__':
     argv = sys.argv[1:]                     # strip file name (main.py) out of args
 
     args,program_params = mykwargs(argv)
-
+        
     try:
 
         V1.setIn_N_Out(**program_params)

@@ -2,9 +2,6 @@ import sys
 import os
 import pprint
 
-# from mymodule.CmdParams import cmd_params
-# from mymodule.Usage import usage
-
 ALPHABET = [chr(x+97) for x in range(26)]
 
 def vigenere_cipher_encrypt(**kwargs):

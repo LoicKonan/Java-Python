@@ -49,24 +49,24 @@ class Vigenere:
         self.KeyOrder = []
 
     
-    def setIn_N_Out(self,**params):
-        self.Input = params.get("input_file",None)
-        self.Output = params.get("output_file",None)
+    def setIn_N_Out(self,**kargs):
+        self.Input = kargs.get("input_file",None)
+        self.Output = kargs.get("output_file",None)
 
     
-    def setOperation(self, **params):
-        if params["operation"] == 'Encrypt':
+    def setOperation(self, **kargs):
+        if kargs["operation"] == 'Encrypt':
             self.Encrypt = True
             print("We are Encrypting")
-            self.Encrypt (**params)
+            self.Encrypt (**kargs)
         
         else:
             self.Decrypt = True
             print("We are Decrypting")
-            self.Index_Of_Coincidence(**params)
+            self.Index_Of_Coincidence(**kargs)
 
 
-    def Index_Of_Coincidence(self, **params):
+    def Index_Of_Coincidence(self, **kargs):
         print("IOC Method")
 
         with open(self.Input,'r') as f:
@@ -122,18 +122,18 @@ class Vigenere:
     # str[0] = (str[0] + int(key[i]) % 26)
     # The ord() function returns an integer representing the Unicode character.
     
-    def Encrypt(self,**params):
+    def Encrypt(self,**kargs):
     
-        key = params.get('key',None)
+        key = kargs.get('key',None)
 
         # should test if file exists
         with open(self.Input, 'r') as f:
             self.Plaintext = f.read()
 
-        Plaintext = self.Plaintext.lower()
-        self.CipherText = " "
-        
+        Plaintext = self.Plaintext.upper()        
         print(self.Plaintext)
+        
+        self.CipherText = " "
         
         i = 0
         for letter in Plaintext:
@@ -153,9 +153,9 @@ class Vigenere:
     
 
     ## Loic start implementing the dictionary attack
-    def Decrypt(self,**params):# was self,cipheredtext,key
+    def Decrypt(self,**kargs):# was self,cipheredtext,key
 
-        key = params.get('key',None)
+        key = kargs.get('key',None)
 
         #cipheredtext = cipheredtext.lower()
 
@@ -202,9 +202,9 @@ class Vigenere:
         Would create:
             args[arg1, arg2, -arg5, -arg6, --arg7]
             kargs{arg3 : val1, arg4 : val2}
-        Params with dashes (flags) can now be processed seperately
+        kargs with dashes (flags) can now be processed seperately
     Shortfalls:
-        spaces between k=v would result in bad params
+        spaces between k=v would result in bad kargs
         Flags aren't handled at all. Maybe in the future but this function
             is meant to be simple.
     Returns:
@@ -246,12 +246,12 @@ if __name__=='__main__':
 
     argv = sys.argv[1:]                     # strip file name (main.py) out of args
 
-    args,program_params = mykwargs(argv)
+    args,program_kargs = mykwargs(argv)
         
     try:
 
-        V1.setIn_N_Out(**program_params)
-        V1.setOperation(**program_params)
+        V1.setIn_N_Out(**program_kargs)
+        V1.setOperation(**program_kargs)
         
         # keeps window alive
 

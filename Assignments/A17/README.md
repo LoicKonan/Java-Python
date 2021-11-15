@@ -1,4 +1,4 @@
-## Assignment 17 - 
+## Assignment 17 - LinkedList
 
 ### Loic Konan
 
@@ -6,7 +6,9 @@
 
 ### Files
 
-|   #   | File                                     | Description |
-| :---: | ---------------------------------------- | ----------- |
-|   1   | [LinkList.py](LinkList.py)               | Solution    |
-|   2   | [Adding_LinkList.py](Adding_LinkList.py) | Solution    |
+|   #   | File                           | Description |
+| :---: | ------------------------------ | ----------- |
+|   1   | [LinkList.py](LinkList.py)     | Solution    |
+|   2   | [Assignment.py](Assignment.py) | Solution    |
+|   3   | [message.py](message.py)       | Solution    |
+|   4   | [solution.py](solution.py)     | Solution    |

@@ -235,7 +235,6 @@ def vigenere_cipher_decrypt(**kwargs):
             
 
     with open(output_file,'w') as f:
-      f.write("Name: Arshia Clare\n\n")
       f.write("Key length: " + str(actual_keylen)+'\n')
       f.write("Keyword: " + real_key+'\n')
       f.write("Decrypted Text:\n\n")

@@ -35,8 +35,7 @@ class Vigenere:
         if not output is None:
             self.Output = output
 
-        # self.alphabet = [chr(x + 65) for x in range(26)]
-        ALPHABET = [chr(x+97) for x in range(26)]
+        self.ALPHABET = [chr(x+97) for x in range(26)]
         
         self.Words = "Dictionary_Words.txt"
         self.Plaintext = None
@@ -50,25 +49,8 @@ class Vigenere:
         ## List to keep track of the different keys to test
         self.KeyOrder = []
 
-    
-    def setIn_N_Out(self,**kargs):
-        self.Input = kargs.get("input_file",None)
-        self.Output = kargs.get("output_file",None)
 
-    
-    def setOperation(self, **kargs):
-        if kargs["operation"] == 'Encrypt':
-            self.Encrypt = True
-            print("We are Encrypting")
-            self.vigenere_cipher_encrypt (**kargs)
-        
-        else:
-            self.Decrypt = True
-            print("We are Decrypting")
-            self.vigenere_cipher_decrypt(**kargs)
-
-
-    def vigenere_cipher_encrypt(**kwargs):
+    def vigenere_cipher_encrypt(self, **kwargs):
         input_file = kwargs.get('input',None)
         output_file = kwargs.get('output',None)
         key = kwargs.get('key',None)
@@ -78,12 +60,13 @@ class Vigenere:
             plaintext = f.read()
 
         plaintext = plaintext.lower()
+        print("hello encrypt")
         ciphertext = ''
 
         i = 0
         for letter in plaintext:
-            if letter in ALPHABET:
-
+            if letter in self.ALPHABET:
+            
                 a = ord(letter)-97
                 b = ord(key[i])-97
                 ciphertext += chr(((a+b)%26)+97)
@@ -95,7 +78,7 @@ class Vigenere:
         with open(output_file,'w') as f:
             f.write(ciphertext)
 
-    def vigenere_cipher_decrypt(**kwargs):
+    def vigenere_cipher_decrypt(self, **kwargs):
         input_file = kwargs.get('input',None)
         output_file = kwargs.get('output',None)
         key = kwargs.get('key',None)
@@ -104,11 +87,13 @@ class Vigenere:
         # should test if file exists
         with open(input_file) as f:
             ciphertext = f.read()
+        
+        print("hello world!")
 
         decrypted = ''
         i = 0
         for letter in ciphertext:
-            if letter in ALPHABET:
+            if letter in self.ALPHABET:
                 a = ord(letter)-97
                 b = ord(key[i])-97
                 decrypted += chr(((a-b)%26)+97)
@@ -150,6 +135,7 @@ class Vigenere:
         tuple  (args,kargs)          
                     
 # """
+
 
 def mykwargs(argv):
     args = []

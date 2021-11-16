@@ -42,45 +42,46 @@ class MovingAverage:
         
 
 # Your MovingAverage object will be instantiated and called as such:
-result = []
+# Initializing our queue
+queue  = []
+
+# Insert the size of the window.
 obj = MovingAverage(3)
-param_1 = obj.next(1)
-res = param_1
-result.append(res)
 
-param_1 = obj.next(10)
-res = param_1
-result.append(res)
+# Changing the window size then adding elements to the Empty queue.
+res = obj.next(1)
+queue .append(res)
 
-param_1 = obj.next(3)
-res = param_1
+res = obj.next(10)
+queue .append(res)
 
-result.append(round(res,2))
+res = obj.next(3)
+queue .append(round(res,2))
 
-param_1 = obj.next(5)
-res = param_1
-result.append(res)
-print(result)
+res = obj.next(5)
+queue .append(res)
+print(queue )
 
 
+# Removing elements from the queue
+queue.pop(0)
+queue.pop(0)
+queue.pop(0)
+queue.pop(0)
 
-result2 = []
+
+# Changing the window size then adding elements to the Empty queue.
 obj = MovingAverage(2)
-param_1 = obj.next(1)
-res = param_1
-result2.append(res)
+res = obj.next(1)
+queue .append(res)
 
-param_1 = obj.next(10)
-res = param_1
-result2.append(res)
+res = obj.next(10)
+queue .append(res)
 
-param_1 = obj.next(3)
-res = param_1
-result2.append(res)
+res = obj.next(3)
+queue .append(round(res,2))
 
-param_1 = obj.next(5)
-res = param_1
-result2.append(res)
-print(result2, "\n")
-
+res = obj.next(5)
+queue .append(res)
+print(queue )
 

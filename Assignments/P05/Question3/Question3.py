@@ -43,7 +43,6 @@ class MovingAverage:
 
 # Your MovingAverage object will be instantiated and called as such:
 result = []
-
 obj = MovingAverage(3)
 param_1 = obj.next(1)
 res = param_1

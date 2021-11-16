@@ -7,7 +7,7 @@
 >
 > **1.**
 >
-> - A stack data structure has following functionalities:
+> - A **stack data structure** has following functionalities:
 >   - **empty()**
 >   - **size()**
 >   - **top()**

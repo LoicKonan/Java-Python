@@ -6,16 +6,18 @@
 >
 > - Initialize the stack by min element as infinity
 > - For push operation push(x)
->       - if x < min, then update min := x
->       - push x into stack
+>   - if x < min, then update min := x
+>   - push x into stack
+>
 > - For pop operation pop()
->       - t := top element
->       - delete t from stack
->       - if t is min, then min := top element of the stack
+>   - t := top element
+>   - delete t from stack
+>   - if t is min, then min := top element of the stack
+>
 > - For top operation top()
->       - simply return the top element
->       - for getMin operation getMin()
->       - return the min element
+>   - simply return the top element
+>   - for getMin operation getMin()
+>   - return the min element
 >
 >   <img src="pic.png">
 >

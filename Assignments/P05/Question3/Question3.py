@@ -18,9 +18,6 @@
  # Files:           Question3.py
  # 
  #****************************************************************************/
- 
-# Time Complexity: O(N).
-# Space Complexity: O(N).
 
 class MovingAverage:
     
@@ -83,5 +80,5 @@ queue .append(round(res,2))
 
 res = obj.next(5)
 queue .append(res)
-print(queue )
+print(queue)
 

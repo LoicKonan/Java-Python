@@ -17,6 +17,8 @@
 >       - for getMin operation getMin()
 >       - return the min element
 >
+>   <img src="pic.png">
+>
 >
 ### Files
 

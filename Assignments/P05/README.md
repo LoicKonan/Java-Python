@@ -15,8 +15,8 @@
 >   - **pop()**
 >
 > - _**Note:**_
-> - **You need to implement the stack with a Linkedlist data structure in python**.
-> - **Include all of the stack functionalities and constructor**
+>   - **You need to implement the stack with a Linkedlist data structure in python**.
+>   - **Include all of the stack functionalities and constructor**
 >
 > **2.**
 >

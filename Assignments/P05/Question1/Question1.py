@@ -93,7 +93,7 @@ class Stack:
 				
 				print(iternode.data,"->",end = " ")
 				iternode = iternode.next
-			return
+			# return
 		
 # Driver code
 MyStack = Stack()

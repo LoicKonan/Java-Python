@@ -18,7 +18,7 @@
 >   - simply return the top element
 >   - for getMin operation getMin()
 >   - return the min element
->
+><br>
 >   <img src="pic.png">
 >
 >

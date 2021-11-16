@@ -55,7 +55,8 @@ result.append(res)
 
 param_1 = obj.next(3)
 res = param_1
-result.append(res)
+
+result.append(round(res,2))
 
 param_1 = obj.next(5)
 res = param_1

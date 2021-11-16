@@ -19,8 +19,8 @@
 | [15](./A15) | [A15](./A15) | [Tuples, Regexes.](./A15)                        | :heavy_check_mark: |
 | [16](./A16) | [A16](./A16) | [Python- OOP](./A16)                             | :heavy_check_mark: |
 | [17](./A17) | [A17](./A17) | [Python- Linked List.](./A17)                    | :heavy_check_mark: |
-| [18](./A18) | [A18](./A18) | [Python - Queue.](./A18)                         | :soon: 🔴           |
-| [19](./A19) | [A19](./A19) | [Python- Heap.](./A19)                           | :soon: 🔴           |
+| [18](./A18) | [A18](./A18) | [Python - Stack.](./A18)                         | :soon: 🔴           |
+| [19](./A19) | [A19](./A19) | [Python- Queue.](./A19)                          | :soon: 🔴           |
 | [20](./A20) | [A20](./A20) | [Python- BFS.](./A20)                            | :soon: 🔴           |
 | [21](./A21) | [A21](./A21) | [Python- DFS.](./A21)                            | :soon: 🔴           |
 | [22](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark: |

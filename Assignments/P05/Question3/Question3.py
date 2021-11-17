@@ -33,7 +33,7 @@ class MovingAverage:
         self.numbers.append(val)
         
         if len(self.numbers) > self.size:
-            return sum(self.numbers[-(self.size):]) / self.size 
+            return sum(self.numbers[-(self.size):]) / self.size
                 
         return sum(self.numbers) / len(self.numbers) 
         

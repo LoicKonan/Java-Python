@@ -1,3 +1,9 @@
+# Python
+# @author Loic Konan
+# Semester: Fall 2021
+# Date: 11/15/2021 
+
+
 def isValid(str1):
   stack = []
   for ch in str1:

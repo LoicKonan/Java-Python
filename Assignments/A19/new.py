@@ -25,7 +25,7 @@ class Queue():
 
     def viewtop(self): 
         try:
-            return self.data[0]
+            return self.data[-1]
         except IndexError as e:
             print(e)
 

@@ -3,6 +3,7 @@
 # Semester: Fall 2021
 # Date: 11/15/2021 
 
+
 class MinStack():     
     min = float('inf')
     

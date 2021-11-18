@@ -17,8 +17,7 @@ class Queue():
         if self.isEmpty():
             print("Queue currently empty")
         else:
-            print("popping element successful")
-            return self.data.dequeue()
+            return  self.data.pop(0)
 
     def minimum(self): 
         if self.min is None:
@@ -32,7 +31,7 @@ class Queue():
 
     def viewtop(self): 
         try:
-            return self.data[-1]
+            return self.data[0]
         except IndexError as e:
             print(e)
 
@@ -44,22 +43,14 @@ class Queue():
 
 
 queue = Queue() 
+queue.enqueue(-2)
+queue.enqueue(0)
+queue.enqueue(-3)
 
-queue.enqueue(1)
-queue.enqueue(-50)
-queue.enqueue(500)
-queue.enqueue(12)
-
-print(" THe min value in our queue is : ", queue.Min())
-queue.enqueue(-55)
-
-print("The top of our queue is : ",queue.viewtop())
+print("Get Min : ", queue.Min())
 
 queue.dequeue()
-print (" the top of our queue is now : ",queue.viewtop())
-queue.enqueue(-43)
-queue.dequeue()
-queue.dequeue()
-queue.dequeue()
 
-print(" THe min value in our queue is : ", queue.Min())
+print("Front : ",queue.viewtop())
+
+print("Get Min : ", queue.Min())

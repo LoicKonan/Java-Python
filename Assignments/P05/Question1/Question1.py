@@ -8,10 +8,20 @@
  # Date:            11/22/2021
  # 
  # Description:     
- #                  
- #                  
+ #					You need to implement the stack with Linkedlist data 
+ # 					structure in python. Implement the stack means, all of the 
+ # 					stack functionalities including the construction of stacks should 
+ # 					present on your code.
+ #				    
  # 
- # Solution:
+ # 
+ # 					
+ # 
+ # 
+ # 
+ # 					A stack data structure has following functionalities like empty(), size(), top(),
+ # 					push() and pop(). 
+ #                  
  #                  
  #
  #
@@ -21,7 +31,7 @@
  
 # push() : Insert the element into linked list.
 # pop() : Return top element and move the top pointer to the second node of Stack.
-# peek(): Return the top element.
+# size(): Return the top element.
 # Display(): Print all element of Stack.
 
 class Node:
@@ -72,7 +82,7 @@ class Stack:
 			return poppednode.data
 	
 	# Returns the head node data
-	def peek(self):
+	def size(self):
 		
 		if self.isempty():
 			return None
@@ -107,7 +117,7 @@ MyStack.push(44)
 MyStack.display()
 
 # Print top element of stack
-print("\nTop element is ",MyStack.peek())
+print("\nTop element is ",MyStack.size())
 
 # Delete top elements of stack
 MyStack.pop()
@@ -117,4 +127,4 @@ MyStack.pop()
 MyStack.display()
 
 # Print top element of stack
-print("\nTop element is ", MyStack.peek())
+print("\nTop element is ", MyStack.size())

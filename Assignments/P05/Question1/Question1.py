@@ -17,13 +17,12 @@
  # Solution:				
  # 					My stack data structure has following functionalities: 
  #
- # 						- isempty() => Returns whether the stack is empty 
- # 						- size()    => Returns the size of the stack 
+ # 						- empty()   => Returns whether the stack is empty 
  # 						- top() 	=> Returns a reference to top element 
  # 						- push() 	=> Inserts the element at the top of the stack
  # 						- pop() 	=> Deletes the topmost element of the stack 
  #
- #                  Each of these 5 functions have a Constant complexity O(1) 
+ #                  Each of these functions have a Constant complexity O(1) 
  #                  
  #
  # Files:           Question1.py
@@ -46,7 +45,7 @@ class Stack:
 		self.head = None
 	
 	# Checks if stack is empty
-	def isempty(self):
+	def empty(self):
 		if self.head == None:
 			return True
 		else:
@@ -67,7 +66,7 @@ class Stack:
 	# Remove element that is the current head (start of the stack)
 	def pop(self):
 		
-		if self.isempty():
+		if self.empty():
 			return None
 			
 		else:
@@ -79,9 +78,9 @@ class Stack:
 			return poppednode.data
 	
 	# Returns the head node data
-	def size(self):
+	def top(self):
 		
-		if self.isempty():
+		if self.empty():
 			return None
 			
 		else:
@@ -91,7 +90,7 @@ class Stack:
 	def display(self):
 		
 		iternode = self.head
-		if self.isempty():
+		if self.empty():
 			print("Stack Underflow")
 		
 		else:
@@ -105,17 +104,17 @@ class Stack:
 MyStack = Stack()
 
 # Inserting few elements to the stack: 11, 22, 33, 44
-MyStack.push(11)
-MyStack.push(22)
-MyStack.push(33)
-MyStack.push(44)
+MyStack.push(-125)
+MyStack.push(65)
+MyStack.push(-5)
+MyStack.push(82)
 
 # Display stack elements
 print('\nNow displaying the stack below: ')
 MyStack.display()
 
 # Print top element of stack
-print("\nTop element is ",MyStack.size())
+print("\nTop element is ",MyStack.top())
 
 # Delete top elements of stack
 print("\nDeletes the topmost element of the stack" )
@@ -126,4 +125,4 @@ print('\nNow displaying the new stack: ')
 MyStack.display()
 
 # Print top element of stack
-print("\nThe new Top element is ", MyStack.size())
+print("\nThe new Top element is ", MyStack.top())

@@ -40,7 +40,7 @@ class Node:
 		self.data = data
 		self.next = None
 	
-class Stack:
+class MinStack:
 	
 	# head is default NULL
 	def __init__(self):
@@ -103,7 +103,7 @@ class Stack:
 				iternode = iternode.next
 		
 # Driver code
-MyStack = Stack()
+MyStack = MinStack()
 
 # Inserting few elements to the stack: 11, 22, 33, 44
 MyStack.push(-125)

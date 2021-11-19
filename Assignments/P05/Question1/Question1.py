@@ -30,11 +30,7 @@
  # 
  #****************************************************************************/
  
-# push() : Insert the element into linked list.
-# pop() : Return top element and move the top pointer to the second node of Stack.
-# size(): Return the top element.
-# Display(): Print all element of Stack.
-
+ 
 class Node:
 	
 	# Class to create nodes of linked list
@@ -104,7 +100,6 @@ class Stack:
 				
 				print(iternode.data,"->",end = " ")
 				iternode = iternode.next
-			# return
 		
 # Driver code
 MyStack = Stack()

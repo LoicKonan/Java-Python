@@ -22,7 +22,7 @@
 # push() : Insert the element into linked list.
 # pop() : Return top element and move the top pointer to the second node of Stack.
 # peek(): Return the top element.
-# display(): Print all element of Stack.
+# Display(): Print all element of Stack.
 
 class Node:
 	

@@ -19,8 +19,8 @@
  # 
  #****************************************************************************/
  
-# push() : Insert the element into linked list nothing but which is the top node of Stack.
-# pop() : Return top element from the Stack and move the top pointer to the second node of linked list or Stack.
+# push() : Insert the element into linked list.
+# pop() : Return top element and move the top pointer to the second node of Stack.
 # peek(): Return the top element.
 # display(): Print all element of Stack.
 

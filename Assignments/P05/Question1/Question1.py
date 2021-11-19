@@ -56,7 +56,7 @@ class MinStack(Node):
 	
 	# Method to add data to the stack
 	# adds to the start of the stack
-	def push(self,data):
+	def push(self, data):
 		
 		if self.head == None:
 			self.head = Node(data)
@@ -91,7 +91,6 @@ class MinStack(Node):
 
 
 	def getMin(self):
-		self.minimum = Node(-1)
 		return self.minimum
 
 

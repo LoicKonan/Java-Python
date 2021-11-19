@@ -17,10 +17,12 @@
  # Solution:				
  # 					My stack data structure has following functionalities: 
  #
- # 						- empty()   => Returns whether the stack is empty 
- # 						- top() 	=> Returns a reference to top element 
- # 						- push() 	=> Inserts the element at the top of the stack
- # 						- pop() 	=> Deletes the topmost element of the stack 
+ # 						- empty()   => Returns whether the stack is empty.
+ #						- size() 	=> Returns the size of the stack.
+ # 						- top() 	=> Returns a reference to top element.
+ # 						- push() 	=> Inserts the element at the top of the stack.
+ # 						- pop() 	=> Deletes the topmost element of the stack. 
+ #						- getMin() 	=> Retrieving the minimum element in the stack.
  #
  #                  Each of these functions have a Constant complexity O(1) 
  #                  

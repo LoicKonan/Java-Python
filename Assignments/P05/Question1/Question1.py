@@ -40,11 +40,12 @@ class Node:
 		self.data = data
 		self.next = None
 	
-class MinStack:
+class MinStack(Node):
 	
 	# head is default NULL
 	def __init__(self):
 		self.head = None
+		self.minimum = None
 	
 	# Checks if stack is empty
 	def empty(self):
@@ -58,7 +59,7 @@ class MinStack:
 	def push(self,data):
 		
 		if self.head == None:
-			self.head=Node(data)
+			self.head = Node(data)
 			
 		else:
 			newnode = Node(data)
@@ -87,7 +88,14 @@ class MinStack:
 			
 		else:
 			return self.head.data
-	
+
+
+	def getMin(self):
+		self.minimum = Node(-1)
+		return self.minimum
+
+
+
 	# Prints out the stack	
 	def display(self):
 		
@@ -99,8 +107,9 @@ class MinStack:
 			
 			while(iternode != None):
 				
-				print(iternode.data,"->",end = " ")
+				print(iternode.data,"->", end = " ")
 				iternode = iternode.next
+    
 		
 # Driver code
 MyStack = MinStack()
@@ -121,6 +130,13 @@ print("\nTop element is ",MyStack.top())
 # Delete top elements of stack
 print("\nDeletes the topmost element of the stack" )
 MyStack.pop()
+
+
+print("\nTop element is ",MyStack.top())
+
+
+print("\nMin element is: ")
+MyStack.getMin()
 
 # Display stack elements
 print('\nNow displaying the new stack: ')

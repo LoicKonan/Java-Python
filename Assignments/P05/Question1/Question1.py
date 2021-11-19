@@ -104,23 +104,26 @@ class Stack:
 # Driver code
 MyStack = Stack()
 
+# Inserting few elements to the stack: 11, 22, 33, 44
 MyStack.push(11)
 MyStack.push(22)
 MyStack.push(33)
 MyStack.push(44)
 
 # Display stack elements
+print('\nNow displaying the stack below: ')
 MyStack.display()
 
 # Print top element of stack
 print("\nTop element is ",MyStack.size())
 
 # Delete top elements of stack
-MyStack.pop()
+print("\nDeletes the topmost element of the stack" )
 MyStack.pop()
 
 # Display stack elements
+print('\nNow displaying the new stack: ')
 MyStack.display()
 
 # Print top element of stack
-print("\nTop element is ", MyStack.size())
+print("\nThe new Top element is ", MyStack.size())

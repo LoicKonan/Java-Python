@@ -8,8 +8,10 @@ class StackNode:
 
 class Stack:
 
+    min = float('inf')
     def __init__(self):
         
+        self.min = float('inf')
         self.top = None
 
     # Push and pop operations
@@ -39,13 +41,13 @@ class Stack:
             s = s.next
             
     def getMin(self):
-                if self.head:
+                if self.top:
                         return self.min
                 else:
                         return -1
                 
     def empty(self):
-                if self.head == None:
+                if self.top == None:
                         return True
                 else:
                         return False
@@ -56,6 +58,7 @@ s.push(1)
 s.push(2)
 s.push(3)
 s.push(4)
+print(s.getMin())
 
 s.display()
 print()

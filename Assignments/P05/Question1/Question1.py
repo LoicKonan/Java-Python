@@ -115,10 +115,10 @@ print('''
 ################################### 
 ################################### 
       ''')
-MyStack.push(-125)
+MyStack.push(25)
 print("\tNumber Inserted", MyStack.top())
 
-MyStack.push(65)
+MyStack.push(-65)
 print("\tNumber Inserted", MyStack.top())
 
 MyStack.push(-5)
@@ -201,14 +201,76 @@ print('''
 ################################### 
 ################################### 
       ''')
-MyStack.push(-500)
+MyStack.push(200)
 print("\tNumber Inserted", MyStack.top())
 
 MyStack.push(45)
 print("\tNumber Inserted", MyStack.top())
 
-MyStack.push(55)
-print("\tNumber Inserted", MyStack.top())
 
-MyStack.push(200)
-print("\tNumber Inserted", MyStack.top())
+
+# Display stack elements
+print('''
+################################### 
+################################### 
+##### Displaying the Stack  ####### 
+################################### 
+################################### 
+      ''')
+
+MyStack.display()
+print(' NULL')
+
+# Print top element of stack
+print('''
+################################### 
+################################### 
+########## Top element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t     ", MyStack.top())
+
+# Print Min element of stack
+print('''
+################################### 
+################################### 
+########## Min element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t    ", MyStack.getMin())
+
+# Delete top elements of stack
+print('''
+################################### 
+################################### 
+###### Deleted the topmost  ####### 
+######   Display New Stack  #######
+################################### 
+################################### 
+      ''')
+MyStack.pop()
+MyStack.display()
+print(' NULL')
+
+# Print top element of stack
+print('''
+################################### 
+################################### 
+########## Top element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t     ", MyStack.top())
+
+
+# Print Min element of stack
+print('''
+################################### 
+################################### 
+########## Min element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t    ", MyStack.getMin())

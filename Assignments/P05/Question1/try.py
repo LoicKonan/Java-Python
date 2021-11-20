@@ -12,42 +12,42 @@ class Stack:
     def __init__(self):
         
         self.min = float('inf')
-        self.top = None
+        self.head = None
 
     # Push and pop operations
     def push(self, data):
 
-        if (self.top == None):
-            self.top = StackNode(data)
+        if (self.head == None):
+            self.head = StackNode(data)
             return
         
         s = StackNode(data)
-        s.next = self.top
-        self.top = s
+        s.next = self.head
+        self.head = s
 
     def pop(self):
 
-        s = self.top
-        self.top = self.top.next
+        s = self.head
+        self.head = self.head.next
         return s
 
     # Prints contents of stack
     def display(self):
 
-        s = self.top
+        s = self.head
         
         while (s != None):
             print(s.data, end = ' ')
             s = s.next
             
     def getMin(self):
-                if self.top:
+                if self.head:
                         return self.min
                 else:
                         return -1
                 
     def empty(self):
-                if self.top == None:
+                if self.head == None:
                         return True
                 else:
                         return False
@@ -58,7 +58,6 @@ s.push(1)
 s.push(2)
 s.push(3)
 s.push(4)
-print(s.getMin())
 
 s.display()
 print()

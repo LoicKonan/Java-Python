@@ -33,69 +33,64 @@
  
  
 class Node:
-	
-	# Class to create nodes of linked list
-	# constructor initializes node automatically
-	def __init__(self, data):
-		self.data = data
-		self.next = None
-	
-class MinStack(Node):
+        def __init__(self, value):
+                self.value = value
+                self.next = None
 
-        min = float('inf')
-
-        # Initialized the stack object.
+class MinStack:
         def __init__(self):
-                self.min = float('inf')
                 self.head = None
-                
-                # Empty list.
-                self.stack = []
+                self.min = float('inf')
 
-        # Pushes the element value onto the stack.
-        def push(self, value):
+        # @param x, an integer
+        def push(self, x):
+                if self.head == None:
+                        self.head = Node(x)
+                        self.min = x
+                else:
+                        if x >= self.min:
+                                n = Node(x)
+                                n.next = self.head
+                                self.head = n
+                        else:
+                                v = 2 * x - self.min
+                                n = Node(v)
+                                n.next = self.head
+                                self.head = n
+                                self.min = x
 
-                # if the value that we adding is less than our current
-                # min value, then we add the value to the stack
-                # then assign the value as the new min value.
-                if value <= self.min:
-                        self.stack.append(self.min)
-                        self.min = value
-                        
-                        # otherwise just add the value to the stack.
-                        self.stack.append(value)
-                
-        # Removes the element on the top of the stack.
+        # @return nothing
         def pop(self):
+                if self.head:
+                        if self.head.value < self.min:
+                                self.min = self.min * 2 - self.head.value
+                        self.head = self.head.next
 
-                # Assign the last element to of the stack to a 
-                # temporary variable then recursively call the pop() function itself. 
-                t = self.stack[-1]
-                self.stack.pop()
-                
-                # if the min value is equal to that temporary variable
-                # then set the value to the temporary variable to the min value
-                # and call the pop() function.
-                if self.min == t:
-                        self.min = self.stack[-1]
-                        self.stack.pop()
-                        
-        # Return the last element on the Minstack.   
+        # @return an integer
         def top(self):
-                return self.stack[-1]
+                if self.head:
+                        if self.head.value < self.min:
+                                self.min = self.min * 2 - self.head.value
+                                return self.min
+                        else:
+                                return self.head.value
+                else:
+                        return -1
 
-        # Retrieving the minimum element in the stack.    
+        # @return an integer
         def getMin(self):
-                return self.min
-
-
+                if self.head:
+                        return self.min
+                else:
+                        return -1
+                
         # Checks if stack is empty 
         def empty(self):
                 if self.head == None:
                         return True
                 else:
                         return False
-
+        
         # Prints out the stack	
         def display(self):
                 
@@ -107,11 +102,11 @@ class MinStack(Node):
                         
                         while(iternode != None):
                                 
-                                print(iternode.data,"->", end = " ")
+                                print(iternode.value,"->", end = " ")
                                 iternode = iternode.next
                                 
-
         
+       
 # Driver code
 MyStack = MinStack()
 
@@ -128,20 +123,33 @@ MyStack.display()
 # Print top element of stack
 print("\nTop element is ",MyStack.top())
 
-# # Delete top elements of stack
-# print("\nDeletes the topmost element of the stack" )
-# MyStack.pop()
+# Delete top elements of stack
+print("\nDeletes the topmost element of the stack" )
+MyStack.pop()
 
 
-# print("\nTop element is ",MyStack.top())
+print("\nTop element is ",MyStack.top())
 
 
-print("\nMin element is: ")
-MyStack.getMin()
+print("\nMin element is: ", MyStack.getMin())
 
 # Display stack elements
 print('\nNow displaying the new stack: ')
 MyStack.display()
 
+
+# Delete top elements of stack
+print("\nDeletes the topmost element of the stack" )
+MyStack.pop()
+
+
 # Print top element of stack
 print("\nThe new Top element is ", MyStack.top())
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 

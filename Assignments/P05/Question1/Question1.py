@@ -117,7 +117,7 @@ MyStack.push(-1)
 print("\tNumber Inserted -1")
 
 MyStack.push(-10)
-print("\tNumber Inserted  0")
+print("\tNumber Inserted  10")
 
 MyStack.push(15)
 print("\tNumber Inserted 15")

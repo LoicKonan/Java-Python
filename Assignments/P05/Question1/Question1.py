@@ -70,7 +70,6 @@ class MinStack:
         def top(self):
                 if self.head:
                         if self.head.value < self.min:
-                                self.min = self.min * 2 - self.head.value
                                 return self.min
                         else:
                                 return self.head.value
@@ -89,19 +88,19 @@ class MinStack:
                 else:
                         return False
         
-        # # Prints out the stack	
-        # def display(self):
+        # Prints out the stack	
+        def display(self):
                 
-        #         iternode = self.head
-        #         if self.empty():
-        #                 print("Stack Underflow")
+                iternode = self.head
+                if self.empty():
+                        print("Stack Underflow")
                 
-        #         else:
+                else:
                         
-        #                 while(iternode != None):
+                        while(iternode != None):
                                 
-        #                         print(iternode.value,"->", end = " ")
-        #                         iternode = iternode.next
+                                print(iternode.value,"->", end = " ")
+                                iternode = iternode.next
                                 
 # Driver code
 MyStack = MinStack()
@@ -117,11 +116,11 @@ print('''
 MyStack.push(-1)
 print("\tNumber Inserted -1")
 
-MyStack.push(0)
+MyStack.push(-10)
 print("\tNumber Inserted  0")
 
-MyStack.push(-15)
-print("\tNumber Inserted -15")
+MyStack.push(15)
+print("\tNumber Inserted 15")
 
 # Print Min element of stack
 print('''
@@ -142,7 +141,6 @@ print('''
 ################################### 
       ''')
 print("\t     ", MyStack.top())
-
 
 MyStack.pop()
 

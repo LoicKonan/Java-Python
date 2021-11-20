@@ -70,7 +70,7 @@ class MinStack:
                         else:
                                 return self.head.value
                 else:
-                        return -1
+                        return "The Stack is Freaking Empty"
 
         def getMin(self):
                 if self.head:
@@ -89,7 +89,7 @@ class MinStack:
                 
                 iternode = self.head
                 if self.empty():
-                        print("Stack Underflow")
+                        print("The Stack is Freaking Empty")
                 
                 else:
                         
@@ -108,13 +108,13 @@ print('''
 ################################### 
       ''')
 MyStack.push(-1)
-print("\tNumber Inserted [-1]")
+print("\tNumber Inserted [ -1 ]")
 
 MyStack.push(-10)
-print("\tNumber Inserted [-10]")
+print("\tNumber Inserted [ -10]")
 
 MyStack.push(15)
-print("\tNumber Inserted [15]")
+print("\tNumber Inserted [ 15 ]")
 
 
 # Displaying the Stack elements
@@ -153,6 +153,17 @@ print('''
 print("\t     ", MyStack.top())
 MyStack.pop()
 
+
+# Pop element in the stack
+print('''
+################################### 
+######## Popping element  #########
+################################### 
+      ''')
+print("\t     ", MyStack.top())
+MyStack.pop()
+
+
 # Displaying the Stack elements
 print('''
 ################################### 
@@ -168,22 +179,11 @@ print('''
 ###### Inserting Elements ######### 
 ################################### 
       ''')
-MyStack.push(50)
-print("\tNumber Inserted [50]")
-
 MyStack.push(-20)
-print("\tNumber Inserted [-20]")
-
-MyStack.push(30)
-print("\tNumber Inserted [30]")
-
-
-MyStack.push(-13)
-print("\tNumber Inserted [-13]")
-
+print("\tNumber Inserted [ -20]")
 
 MyStack.push(103)
-print("\tNumber Inserted [103]")
+print("\tNumber Inserted [ 103]")
 
 
 # Displaying the Stack elements

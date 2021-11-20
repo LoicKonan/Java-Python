@@ -1,33 +1,33 @@
  #****************************************************************************
- # Author:              Loic Konan 
- # Email:               loickonan.lk@gmail.com 
- # Label:               Question 1 
- # Title:               Programing Assignment 05 
- # Course:              CMPS 4143 
- # Semester:            Fall 2021 
- # Date:                11/22/2021
+ # Author:         Loic Konan 
+ # Email:          loickonan.lk@gmail.com 
+ # Label:          Question 1 
+ # Title:          Programing Assignment 05 
+ # Course:         CMPS 4143 
+ # Semester:       Fall 2021 
+ # Date:           11/22/2021
  # 
  # Description:     
- #		        You need to implement the stack with Linkedlist data 
- # 			structure in python. Implement the stack means, 
- #                      all of the stack functionalities including the 
- #                      construction of stacks should present on your code.
+ #		   You need to implement the stack with Linkedlist data 
+ # 	           structure in python. Implement the stack means, 
+ #                 all of the stack functionalities including the 
+ #                 construction of stacks should present on your code.
  #				    
  # 
  # Solution:				
- # 			My stack data structure has following functionalities: 
+ # 		   My stack data structure has following functionalities: 
  #
- # 			- empty()       => Returns whether the stack is empty.
- #			- size() 	=> Returns the size of the stack.
- # 			- top() 	=> Returns a reference to top element.
- # 			- push() 	=> Inserts the element at the top of the stack.
- # 			- pop() 	=> Deletes the topmost element of the stack. 
- #			- getMin() 	=> Retrieving the minimum element in the stack.
+ # 		      - empty()       => Returns whether the stack is empty.
+ #		      - size() 	=> Returns the size of the stack.
+ # 		      - top() 	=> Returns a reference to top element.
+ # 		      - push() 	=> Inserts the element at the top of the stack.
+ # 		      - pop() 	=> Deletes the topmost element of the stack. 
+ #		      - getMin() 	=> Retrieving the minimum element in the stack.
  #
- #                      Each of these functions have a Constant complexity O(1) 
+ #                 Each of these functions have a Constant complexity O(1) 
  #                  
  #
- # Files:               Question1.py
+ # Files:          Question1.py
  # 
  #****************************************************************************/
  

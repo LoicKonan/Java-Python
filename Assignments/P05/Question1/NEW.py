@@ -1,9 +1,18 @@
+class Node:
+    	
+	# Class to create nodes of linked list
+	# constructor initializes node automatically
+	def __init__(self,data):
+		self.data = data
+		self.next = None
+
 class MinStack():     
     min = float('inf')
     
     # Initialized the stack object.
     def __init__(self):
-           self.min=float('inf')
+           self.min = float('inf')
+           self.head = None
            
            # Empty list.
            self.stack = []

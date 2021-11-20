@@ -31,19 +31,27 @@
  # 
  #****************************************************************************/
  
+# Class to create nodes of linked list
+# constructor initializes node automatically 
 class Node:
         
         def __init__(self, value):
                 self.value = value
                 self.next = None
-
+# My Stack Class.
 class MinStack:
         
+        # head is default NULL
+        # initializing the min variable to a float
+        # initializing the size to Zero
         def __init__(self):
                 self.head = None
                 self.min = float('inf')
                 self.size = 0
 
+        # Method to add data to the stack
+        # adds to the start of the stack
+        # Also increasing the size of the stack.
         def push(self, value):
                 self.size += 1
                 if self.head == None:
@@ -60,14 +68,17 @@ class MinStack:
                                 self.head = n
                                 self.min = value
 
-
+        # Remove element that is the current head (start of the stack)
+        # also decrease the size of the stack.
         def pop(self):
                 self.size -= 1
                 if self.head:
                         self.head = self.head.next
                 else:
                         raise Exception('the Stack is Empty')
-
+                
+        # Returns a reference to top element.
+        # or display empty.
         def top(self):
                 if self.head:
                         if self.head.value < self.min:
@@ -76,13 +87,15 @@ class MinStack:
                                 return self.head.value
                 else:
                         return "The Stack is Freaking Empty"
-
+                
+        # Retrieving the minimum element in the stack.
         def getMin(self):
                 if self.head:
                         return self.min
                 else:
                         return "The Stack is Freaking Empty"
                 
+        # Checks if stack is empty  
         def isEmpty(self):
                 if self.head == None:
                         return True
@@ -94,7 +107,7 @@ class MinStack:
                 return self.size
 
 
-        # Prints out the stack	
+        # Prints out the stack with a little stylying.	
         def display(self):
                 
                 iternode = self.head

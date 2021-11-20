@@ -149,7 +149,6 @@ print('''
       ''')
 print("\t     ", MyStack.top())
 
-
 # Print Min element of stack
 print('''
 ################################### 
@@ -159,7 +158,6 @@ print('''
 ################################### 
       ''')
 print("\t    ", MyStack.getMin())
-
 
 # Delete top elements of stack
 print('''
@@ -174,6 +172,43 @@ MyStack.pop()
 MyStack.display()
 print(' NULL')
 
- 
- 
- 
+# Print top element of stack
+print('''
+################################### 
+################################### 
+########## Top element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t     ", MyStack.top())
+
+
+# Print Min element of stack
+print('''
+################################### 
+################################### 
+########## Min element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t    ", MyStack.getMin())
+
+# Inserting few elements to the stack
+print('''
+################################### 
+################################### 
+###### Inserting Elements ######### 
+################################### 
+################################### 
+      ''')
+MyStack.push(-500)
+print("\tNumber Inserted", MyStack.top())
+
+MyStack.push(45)
+print("\tNumber Inserted", MyStack.top())
+
+MyStack.push(55)
+print("\tNumber Inserted", MyStack.top())
+
+MyStack.push(200)
+print("\tNumber Inserted", MyStack.top())

@@ -57,30 +57,50 @@ def findDuplicateparenthesis(string):
 	# No duplicates found
 	return False
 
-# Driver Code
-if __name__ == "__main__":
-  
-    # input balanced expression
-	string = "((x+y))+z"
+# Driver code
 
-	if findDuplicateparenthesis(string) == True:
-		print("True")
-	else:
-		print("False")
-  
-    # input balanced expression
-	string1 = "(x+y)"
+print('''
+ #*******************************************#
+ # Author:         Loic Konan                # 
+ # Email:          loickonan.lk@gmail.com    # 
+ # Label:          Question 2                #
+ # Title:          Programing Assignment 05  #
+ # Course:         CMPS 4143                 #
+ # Semester:       Fall 2021                 #
+ # Date:           11/22/2021                #
+ #*******************************************#''')
 
-	if findDuplicateparenthesis(string1) == True:
-		print("True")
-	else:
-		print("False")
+string = "\t((x+y))+z"
+print("\tInput:          ((x+y))+z")
+if findDuplicateparenthesis(string) == True:
+	print("\tOutput:         True\n")
+else:
+	print("\tOutput:         False\n")
+
+string = "\t(x+y)"
+print("\tInput:          (x+y)")
+if findDuplicateparenthesis(string) == True:
+	print("\tOutput:         True\n")
+else:
+	print("\tOutput:         False\n")
 
 
-    # input balanced expression
-	string2 = "((x+y)+((z)))"
+string = "\t((x+y)+((z)))"
+print("\tInput:          ((x+y)+((z)))")
+if findDuplicateparenthesis(string) == True:
+	print("\tOutput:          True\n")
+else:
+	print("\tOutput:          False\n")
 
-	if findDuplicateparenthesis(string2) == True:
-		print("True")
-	else:
-		print("False")
+while(True):
+	try:
+		phrase = str(input("\n Enter your equation"))
+		equations = phrase.replace(" ", "") 
+		print("\tInput:          ", equations)
+		if findDuplicateparenthesis(equations) == True:
+			print("\tOutput: True\n")
+		else:
+			print("\tOutput: False\n")
+	except:
+		raise ValueError('\t\tEnter a valid equation: ')
+

@@ -33,40 +33,39 @@
  
  
 class Node:
+        
         def __init__(self, value):
                 self.value = value
                 self.next = None
 
 class MinStack:
+        
         def __init__(self):
                 self.head = None
                 self.min = float('inf')
 
-        # @param x, an integer
-        def push(self, x):
+        def push(self, value):
                 if self.head == None:
-                        self.head = Node(x)
-                        self.min = x
+                        self.head = Node(value)
+                        self.min = value
                 else:
-                        if x >= self.min:
-                                n = Node(x)
+                        if value >= self.min:
+                                n = Node(value)
                                 n.next = self.head
                                 self.head = n
                         else:
-                                v = 2 * x - self.min
+                                v = 2 * value - self.min
                                 n = Node(v)
                                 n.next = self.head
                                 self.head = n
-                                self.min = x
+                                self.min = value
 
-        # @return nothing
         def pop(self):
                 if self.head:
                         if self.head.value < self.min:
                                 self.min = self.min * 2 - self.head.value
                         self.head = self.head.next
 
-        # @return an integer
         def top(self):
                 if self.head:
                         if self.head.value < self.min:
@@ -77,14 +76,12 @@ class MinStack:
                 else:
                         return -1
 
-        # @return an integer
         def getMin(self):
                 if self.head:
                         return self.min
                 else:
                         return -1
                 
-        # Checks if stack is empty 
         def empty(self):
                 if self.head == None:
                         return True

@@ -152,13 +152,13 @@ print('''
 ################################### 
       ''')
 MyStack.push(50)
-print("\tNumber Inserted 50")
+print("\tNumber Inserted  50")
 
 MyStack.push(-20)
 print("\tNumber Inserted -20")
 
 MyStack.push(30)
-print("\tNumber Inserted 30")
+print("\tNumber Inserted  30")
 
 
 MyStack.push(-13)

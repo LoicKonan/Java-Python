@@ -114,16 +114,16 @@ print('''
 ################################### 
 ################################### 
       ''')
-MyStack.push(-2)
-print("\tNumber Inserted -2")
+MyStack.push(-1)
+print("\tNumber Inserted -1")
 
 MyStack.push(0)
 print("\tNumber Inserted  0")
 
-MyStack.push(-3)
-print("\tNumber Inserted -3")
+MyStack.push(-15)
+print("\tNumber Inserted -15")
 
-# Print top element of stack
+# Print Min element of stack
 print('''
 ################################### 
 ################################### 
@@ -132,6 +132,16 @@ print('''
 ################################### 
       ''')
 print("\t     ", MyStack.getMin())
+
+# Print Top element of stack
+print('''
+################################### 
+################################### 
+########## Top element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t     ", MyStack.top())
 
 
 MyStack.pop()
@@ -156,7 +166,7 @@ print("\tNumber Inserted 13")
 MyStack.pop()
 
 
-# Print top element of stack
+# Print Min element of stack
 print('''
 ################################### 
 ################################### 

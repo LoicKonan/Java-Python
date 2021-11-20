@@ -31,7 +31,6 @@
  # 
  #****************************************************************************/
  
- 
 class Node:
         
         def __init__(self, value):
@@ -158,8 +157,16 @@ print("\tNumber Inserted 50")
 MyStack.push(-20)
 print("\tNumber Inserted -20")
 
-MyStack.push(13)
-print("\tNumber Inserted 13")
+MyStack.push(30)
+print("\tNumber Inserted 30")
+
+
+MyStack.push(-13)
+print("\tNumber Inserted -13")
+
+
+MyStack.push(103)
+print("\tNumber Inserted 103")
 
 MyStack.pop()
 
@@ -173,3 +180,13 @@ print('''
 ################################### 
       ''')
 print("\t     ", MyStack.getMin())
+
+# Print Top element of stack
+print('''
+################################### 
+################################### 
+########## Top element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t     ", MyStack.top())

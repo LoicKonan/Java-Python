@@ -107,46 +107,73 @@ class MinStack:
 # Driver code
 MyStack = MinStack()
 
-# Inserting few elements to the stack: 11, 22, 33, 44
+# Inserting few elements to the stack
+print('''
+################################### 
+################################### 
+###### Inserting Elements ######### 
+################################### 
+################################### 
+      ''')
 MyStack.push(-125)
+print("\tNumber Inserted", MyStack.top())
+
 MyStack.push(65)
+print("\tNumber Inserted", MyStack.top())
+
 MyStack.push(-5)
+print("\tNumber Inserted", MyStack.top())
+
 MyStack.push(82)
+print("\tNumber Inserted", MyStack.top())
 
 # Display stack elements
-print('\nNow displaying the stack below: ')
+print('''
+################################### 
+################################### 
+##### Displaying the Stack  ####### 
+################################### 
+################################### 
+      ''')
+
 MyStack.display()
+print(' NULL')
 
 # Print top element of stack
-print("\nTop element is ",MyStack.top())
+print('''
+################################### 
+################################### 
+########## Top element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t     ", MyStack.top())
+
+
+# Print Min element of stack
+print('''
+################################### 
+################################### 
+########## Min element  ########### 
+################################### 
+################################### 
+      ''')
+print("\t    ", MyStack.getMin())
+
 
 # Delete top elements of stack
-print("\nDeletes the topmost element of the stack" )
+print('''
+################################### 
+################################### 
+###### Deleted the topmost  ####### 
+######   Display New Stack  #######
+################################### 
+################################### 
+      ''')
 MyStack.pop()
-
-
-print("\nTop element is ",MyStack.top())
-
-
-print("\nMin element is: ", MyStack.getMin())
-
-# Display stack elements
-print('\nNow displaying the new stack: ')
 MyStack.display()
+print(' NULL')
 
-
-# Delete top elements of stack
-print("\nDeletes the topmost element of the stack" )
-MyStack.pop()
-
-
-# Print top element of stack
-print("\nThe new Top element is ", MyStack.top())
-
- 
- 
- 
- 
  
  
  

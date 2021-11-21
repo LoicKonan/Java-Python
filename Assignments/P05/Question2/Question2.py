@@ -9,9 +9,9 @@
  # 
  # Description:     
  #				    Given the expression as string str, find the duplicate 
- # 					parenthesis from the expression. Your program will output 
- # 					whether or not finding the duplicates, 
- # 					that is true offalse.
+ # 					parenthesis from the expression. Your program will 
+ # 					output whether or not finding the duplicates, 
+ # 					that is true of false.
  #                  
  # Solution:
  #                  

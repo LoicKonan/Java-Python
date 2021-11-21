@@ -31,9 +31,6 @@ def isValid(str1):
   else:
     return True
 
-t4 = ')]}'
 
-t1 = '[{()}]'
-t2 = '[{()]'
-t3 = '[[{}()]'
-print(isValid(t4))
+t1 = ')('
+print(isValid(t1))

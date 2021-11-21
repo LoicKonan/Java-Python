@@ -91,19 +91,19 @@ else:
 string = "\t((x+y)+((z)))"
 print("\tInput:          ((x+y)+((z)))")
 if findDuplicateparenthesis(string) == True:
-	print("\tOutput:          True\n")
+	print("\tOutput:         True\n")
 else:
-	print("\tOutput:          False\n")
+	print("\tOutput:         False\n")
 
 while(True):
 	try:
-		phrase = str(input("\n Enter your equation"))
+		phrase = str(input("\nEnter your equation:    "))
 		equations = phrase.replace(" ", "") 
-		print("\tInput:          ", equations)
+		print("\tInput:         ", equations)
 		if findDuplicateparenthesis(equations) == True:
-			print("\tOutput: True\n")
+			print("\tOutput:          True\n")
 		else:
-			print("\tOutput: False\n")
+			print("\tOutput:          False\n")
 	except:
 		raise ValueError('\t\tEnter a valid equation: ')
 

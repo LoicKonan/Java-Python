@@ -23,24 +23,29 @@
  #****************************************************************************/
  
  
-# Function to find duplicate parenthesis in an stringression
+# Function to find duplicate parenthesis
 def isduplicate(string):
 
+    # if the input enter is not a string or if the length of the input
+    # is less than 3 then return false
 	if not string or len(string) <= 3:
 		return False
 
-	# take an empty stack of characters
+	# Create an empty list that will take a stack of characters
 	stack = []
 
-	# traverse the input stringression
-	for c in string:
-		# if the current char in the stringression is not a closing parenthesis
-		if c != ')':
-			stack.append(c)
-		# if the current char in the stringression is a closing parenthesis
+	# Iterate through the given expression
+	for character in string:
+     
+		# if the current character in the string is not a closing parenthesis
+        # add add the character to our list.
+		if character != ')':
+			stack.append(character)
+   
+		# else if the current character in the string is a closing parenthesis
 		else:
 			# if the stack's top element is an opening parenthesis,
-			# the substringression of the form ((string)) is found
+			# the substring of the form ((string)) is found
 			if stack[-1] == '(':
 				return True
 
@@ -51,8 +56,7 @@ def isduplicate(string):
 			# pop '('
 			stack.pop()
 
-	# if we reach here, then the stringression does not have any
-	# duplicate parenthesis
+	# Returning False simply mean that string doesn't have duplicate parenthesis
 	return False
 
 

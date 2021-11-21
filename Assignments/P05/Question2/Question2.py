@@ -8,61 +8,66 @@
  # Date:            11/22/2021
  # 
  # Description:     
- #				    Given the expression as string str, find the duplicate 
- # 					parenthesis from the expression. Your program will 
+ #				    Given the stringression as string str, find the duplicate 
+ # 					parenthesis from the stringression. Your program will 
  # 					output whether or not finding the duplicates, 
  # 					that is true of false.
  #                  
  # Solution:	
- #				    
- #                  
+ #				    I used a stack to solve this problem. But firtly I prompt
+ #                  the user to enter something and I first check how long
+ #                  is the string enter and check to see if the length is less   
+ #                  than 3 then I return False, meaning no Duplicate where found
+ #                  basic logic, then I use some for loop to loop through the 
+ #                  the substring to pop or append to our list then display 
+ #                  if any Duplicate were found on the screen.  
  #
  #
  # Files:           Question2.py
  # 
  #****************************************************************************/
-
+ 
+ 
 # Function to find duplicate parenthesis
-# in a balanced expression
-def findDuplicateparenthesis(string):
+def isduplicate(string):
 
-	# create a stack of characters
-	Stack = []
+    # if the input enter is not a string or if the length of the input
+    # is less than 3 then return false
+	if not string or len(string) <= 3:
+		return False
+
+	# Create an empty list that will take a stack of characters
+	stack = []
 
 	# Iterate through the given expression
-	for ch in string:
-	
-		# if current character is
-		# close parenthesis ')'
-		if ch == ')':
-		
-			# pop character from the stack
-			top = Stack.pop()
-
-			# stores the number of characters between
-			# a closing and opening parenthesis
-			# if this count is less than or equal to 1
-			# then the brackets are redundant else not
-			elementsInside = 0
-			while top != '(':
-			
-				elementsInside += 1
-				top = Stack.pop()
-			
-			if elementsInside < 1:
+	for character in string:
+     
+		# if the current character in the string is not a closing parenthesis
+        # add add the character to our list.
+		if character != ')':
+			stack.append(character)
+   
+		# else if the current character in the string is a closing parenthesis
+		else:
+			# if the stack's top element is an opening parenthesis,
+			# the substring of the form ((string)) is found
+			if stack[-1] == '(':
 				return True
 
-		# push open parenthesis '(', operators
-		# and operands to stack
-		else:
-			Stack.append(ch)
-	
-	# No duplicates found
+			# While the last element in the stack is not ')',
+            # pop till '(' is found for current ')'
+			while stack[-1] != '(':
+				stack.pop()
+
+			# pop '('
+			stack.pop()
+
+	# Returning False simply mean that string doesn't have duplicate parenthesis
 	return False
 
+
+
 # Driver code
-
-
 print('''
  #*******************************************#
  # Author:         Loic Konan                # 
@@ -76,14 +81,14 @@ print('''
 
 string = "\t((x+y))+z"
 print("\tInput:          ((x+y))+z")
-if findDuplicateparenthesis(string) == True:
+if isduplicate(string) == True:
 	print("\tOutput:         True\n")
 else:
 	print("\tOutput:         False\n")
 
 string = "\t(x+y)"
 print("\tInput:          (x+y)")
-if findDuplicateparenthesis(string) == True:
+if isduplicate(string) == True:
 	print("\tOutput:         True\n")
 else:
 	print("\tOutput:         False\n")
@@ -91,18 +96,19 @@ else:
 
 string = "\t((x+y)+((z)))"
 print("\tInput:          ((x+y)+((z)))")
-if findDuplicateparenthesis(string) == True:
+if isduplicate(string) == True:
 	print("\tOutput:         True\n")
 else:
 	print("\tOutput:         False\n")
 
-
+# Using this while loop to prompt the user to enter his/her
+# own Equation to test.
 while(True):
 	try:
-		phrase = str(input("\nEnter your equation:    "))
+		phrase = str(input("\n\tEquation:       "))
 		equations = phrase.replace(" ", "") 
 		print("\tInput:         ", equations)
-		if findDuplicateparenthesis(equations) == True:
+		if isduplicate(equations) == True:
 			print("\tOutput:         True\n")
 		else:
 			print("\tOutput:         False\n")

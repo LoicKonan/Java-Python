@@ -14,8 +14,13 @@
  # 					that is true of false.
  #                  
  # Solution:	
- #				    
- #                  
+ #				    I used a stack to solve this problem. But firtly I prompt
+ #                  the user to enter something and I first check how long
+ #                  is the string enter and check to see if the length is less   
+ #                  than 3 then I return False, meaning no Duplicate where found
+ #                  basic logic, then I use some for loop to loop through the 
+ #                  the substring to pop or append to our list then display 
+ #                  if any Duplicate were found on the screen.  
  #
  #
  # Files:           Question2.py
@@ -49,7 +54,8 @@ def isduplicate(string):
 			if stack[-1] == '(':
 				return True
 
-			# pop till '(' is found for current ')'
+			# While the last element in the stack is not ')',
+            # pop till '(' is found for current ')'
 			while stack[-1] != '(':
 				stack.pop()
 
@@ -61,9 +67,7 @@ def isduplicate(string):
 
 
 
-
 # Driver code
-
 print('''
  #*******************************************#
  # Author:         Loic Konan                # 
@@ -97,15 +101,17 @@ if isduplicate(string) == True:
 else:
 	print("\tOutput:         False\n")
 
+# Using this while loop to prompt the user to enter his/her
+# own Equation to test.
 while(True):
 	try:
 		phrase = str(input("\n\tEquation:       "))
 		equations = phrase.replace(" ", "") 
 		print("\tInput:         ", equations)
 		if isduplicate(equations) == True:
-			print("\tOutput:          True\n")
+			print("\tOutput:         True\n")
 		else:
-			print("\tOutput:          False\n")
+			print("\tOutput:         False\n")
 	except:
 		raise ValueError('\t\tEnter a valid equation: ')
 

@@ -8,8 +8,8 @@
  # Date:            11/22/2021
  # 
  # Description:     
- #				    Given the expression as string str, find the duplicate 
- # 					parenthesis from the expression. Your program will 
+ #				    Given the stringression as string str, find the duplicate 
+ # 					parenthesis from the stringression. Your program will 
  # 					output whether or not finding the duplicates, 
  # 					that is true of false.
  #                  
@@ -21,34 +21,40 @@
  # Files:           Question2.py
  # 
  #****************************************************************************/
+ 
+ 
+# Function to find duplicate parenthesis in an stringression
+def isduplicate(string):
 
+	if not string or len(string) <= 3:
+		return False
 
-def isduplicate(str1):
-  stack = []
-  for ch in str1:
-    if ch == ')':
-      if stack and stack[-1] == '(':
-        stack.pop()
-      else:
-        return False
+	# take an empty stack of characters
+	stack = []
 
-    elif ch == '}':
-      if stack and stack[-1] == '{':
-        stack.pop()
-      else:
-        return False
-    elif ch == ']':
-      if stack and stack[-1] == '[':
-        stack.pop()
-      else:
-        return False
-    else:
-      stack.append(ch)
+	# traverse the input stringression
+	for c in string:
+		# if the current char in the stringression is not a closing parenthesis
+		if c != ')':
+			stack.append(c)
+		# if the current char in the stringression is a closing parenthesis
+		else:
+			# if the stack's top element is an opening parenthesis,
+			# the substringression of the form ((string)) is found
+			if stack[-1] == '(':
+				return True
 
-  if len(stack)!=0:
-    return False
-  else:
-    return True
+			# pop till '(' is found for current ')'
+			while stack[-1] != '(':
+				stack.pop()
+
+			# pop '('
+			stack.pop()
+
+	# if we reach here, then the stringression does not have any
+	# duplicate parenthesis
+	return False
+
 
 
 

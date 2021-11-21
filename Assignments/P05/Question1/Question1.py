@@ -79,6 +79,7 @@ class MinStack:
                 
         # Returns a reference to top element.
         # or display empty.
+        # if the stack is empty return that it is.
         def top(self):
                 if self.head:
                         if self.head.value < self.min:
@@ -87,8 +88,10 @@ class MinStack:
                                 return self.head.value
                 else:
                         return "The Stack is Freaking Empty"
+          
                 
         # Retrieving the minimum element in the stack.
+        # if the stack is empty return that it is.
         def getMin(self):
                 if self.head:
                         return self.min
@@ -107,7 +110,8 @@ class MinStack:
                 return self.size
 
 
-        # Prints out the stack with a little stylying.	
+        # Prints out the stack with a little stylying.
+        # if the stack is empty return that it is.	
         def display(self):
                 
                 iternode = self.head

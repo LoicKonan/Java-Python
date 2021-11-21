@@ -95,15 +95,16 @@ if findDuplicateparenthesis(string) == True:
 else:
 	print("\tOutput:         False\n")
 
+
 while(True):
 	try:
 		phrase = str(input("\nEnter your equation:    "))
 		equations = phrase.replace(" ", "") 
 		print("\tInput:         ", equations)
 		if findDuplicateparenthesis(equations) == True:
-			print("\tOutput:          True\n")
+			print("\tOutput:         True\n")
 		else:
-			print("\tOutput:          False\n")
+			print("\tOutput:         False\n")
 	except:
 		raise ValueError('\t\tEnter a valid equation: ')
 

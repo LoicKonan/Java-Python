@@ -53,13 +53,13 @@ print('''
 # Initializing our queue
 queue  = []
 
-# Insert the size of the window.
 
+# Prompt the user to enter the window size
+# then adding elements to the Empty queue.
 WindowSize = int(input("Enter the window size: "))
 
+# Pass the window size to the function MovingAverage
 obj = MovingAverage(WindowSize)
-
-# Changing the window size then adding elements to the Empty queue.
 res = obj.next(1)
 queue .append(res)
 
@@ -67,14 +67,17 @@ res = obj.next(10)
 queue .append(res)
 
 res = obj.next(3)
+
+# Adding the number to the queue then rounded the result to 2 decimal digits.
 queue .append(round(res,2))
 
 res = obj.next(5)
 queue .append(res)
 
-print("\n\tWindow size:  ",WindowSize)
-print("\tStream       : [1, 10, 3, 5]")
-print("\tOutput       : ", queue )
+# Display on the result on the screen in style.
+print("\n\tWindow size  :  ", WindowSize)
+print("\tStream       :  [1, 10, 3, 5]")
+print("\tOutput       : ",queue )
 
 
 # Removing elements from the queue
@@ -84,9 +87,13 @@ queue.pop(0)
 queue.pop(0)
 
 
-# Changing the window size then adding elements to the Empty queue.
+# Prompt the user to enter the window size
+# then adding elements to the Empty queue.
 WindowSize = int(input("\n\nEnter the window size: "))
-obj = MovingAverage(2)
+
+# Pass the window size to the function MovingAverage
+obj = MovingAverage(WindowSize)
+
 res = obj.next(1)
 queue .append(res)
 
@@ -94,12 +101,14 @@ res = obj.next(10)
 queue .append(res)
 
 res = obj.next(3)
+
+# Adding the number to the queue then rounded the result to 2 decimal digits.
 queue .append(round(res,2))
 
 res = obj.next(5)
 queue .append(res)
 
-print("\n\tWindow size: ",WindowSize)
-print("\tStream = [1, 10, 3, 5]")
-print("\tOutput: ", queue )
-
+# Display on the result on the screen in style.
+print("\n\tWindow size  :  ", WindowSize)
+print("\tStream       :  [1, 10, 3, 5]")
+print("\tOutput       : ",queue )

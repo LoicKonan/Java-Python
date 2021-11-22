@@ -1,267 +1,83 @@
 import sys
 import os
-import pprint
+import math
+import collections.abc
 
 alphabet = [chr(x+97) for x in range(26)]
-class Incidence_of_Coincidence:
-  def __init__(self,ct=None):
-    #lower case alphabet
-    #cipher text as is
-    self.cipherText = ct.lower()
-    #cipher text without blanks
-    self.cip = ct.lower()
-    #dictionary 
-    self.lookup = None
-    #summation
-    self.sum_IC = 0.0
-    #length of cipher text
-    self.lenCT = 0.0
-    #IC Value
-    self.ICval = 0
-    #2-16 length key length
-    self.keyLen = None
-    #key length 
-    self.k_length = 0
-    #dictionary the len of the word as KeyboardInterrupt
-    self.KeyDiction = None
-    #the actual key length - clean up later
-    self.theactual_keylength = 0
-    #list of words with actual key length
-    self.listwithsize = []
 
-  #initialize the letter counts to 0
-  def build_let_lookup(self):
-    self.lookup = {}
-    for i in alphabet:
-      self.lookup[i] = 0
-    return self.lookup
-
-  #initialize the keylengths to 0
-  def build_int_key(self):
-    self.keyLen = {}
-    for i in range(1,17):
-      self.keyLen[i] = 0
-    return self.keyLen
-
-  #removes spaces
-  def remove_space(self):
-    blank = ' '
-    cip_text = ''
-    for i in self.cip:
-      if blank != i:
-        cip_text += i
-    self.cip = cip_text
-    return self.cip
-
-  #identifies how many letters are there
-  def measure_length(self):
-    if self.lookup == None:
-      self.lookup = self.build_let_lookup()
-    self.cip = self.remove_space()
-    for i in self.cip:
-      self.lookup[i] += 1
-    return self.lookup
-
-  #the summation
-  def summation_IC(self):
-    if self.lookup == None:
-      self.lookup = self.measure_length()
-    for i in alphabet:
-      if self.lookup[i] > 1:
-        self.sum_IC += (self.lookup[i]*(self.lookup[i]-1))
-    return self.sum_IC
-
-  def lenCipherLetters(self):
-    self.cip = self.remove_space()
-    self.lenCT = len(self.cip)
-    return self.lenCT
-  
-  def cal_IC(self):
-    if(self.sum_IC == 0):
-      self.summation_IC
-    if(self.lenCT == 0):
-      self.lenCipherLetters
-    bottom = ((self.lenCT)*(self.lenCT - 1))
-    self.keyLen[1] = self.sum_IC/(bottom)
-    # print(self.sum_IC, bottom,self.keyLen[1])
-
-  def key_len_IC(self):
-    for i in range(2,17):
-      self.keyLen[i] = self.calculate_keyIC(i) 
-    return self.keyLen
-
-  def calculate_keyIC(self,i):
-    sumIC = 0
-    self.lenCipherLetters()
-    self.remove_space()
-    k = i
-    newcip = ''
-    sum_avg = 0
-    while(k > 0):
-      it = k - 1
-      while (it < self.lenCT):
-        newcip += self.cip[it]
-        it = it + i 
-      # print(newcip)
-      sumIC += self.inCalc(newcip)
-      newcip=''
-      k = k - 1
-    sum_avg = sumIC/i
-    # print()
-    return sum_avg
-
-  def inCalc(self, text):
-    sum_acc = 0
-    IC_seg = 0
-    len_txt = 0
-    alphabet_seg = {}
-    for i in alphabet:
-      alphabet_seg[i] = 0
-    for i in text:
-      alphabet_seg[i] += 1
-    for i in alphabet:
-      if alphabet_seg[i] > 1:
-        # print(i,alphabet_seg[i])
-        sum_acc += (alphabet_seg[i]*(alphabet_seg[i]-1))
-    len_txt = len(text) * (len(text) - 1)
-    IC_seg = sum_acc/(len_txt)
-    # print(sum_acc,len_txt)
-    return IC_seg
+typical_frequency = {
+    "a": 8.167,
+    "b": 1.492,
+    "c": 2.782,
+    "d": 4.253,
+    "e": 12.702,
+    "f": 2.228,
+    "g": 2.015,
+    "h": 6.094,
+    "i": 6.966,
+    "j": 0.153,
+    "k": 0.772,
+    "l": 4.025,
+    "m": 2.406,
+    "n": 6.749,
+    "o": 7.507,
+    "p": 1.929,
+    "q": 0.095,
+    "r": 5.987,
+    "s": 6.327,
+    "t": 9.056,
+    "u": 2.758,
+    "v": 0.978,
+    "w": 2.360,
+    "x": 0.150,
+    "y": 1.974,
+    "z": 0.074
+}
 
 
-  def foundKeyLen(self):
-    found = False
-    for j in self.keyLen:
-      if(found == False and self.keyLen[j] > 0.06):
-        # print(self.keyLen[j])
-        found = True
-        self.theactual_keylength = j
-    return self.theactual_keylength
-  
-  def check(self, text):
-    # print(text)
-    sum = IC = 0.0
-    lookup = {}
-    lookup = self.Check_measure_length(text)
-    sum = self.Check_summation_IC(lookup)
-    len_text = len(text)
-    IC = self.Check_cal_IC(sum,len_text)
-    # print(IC)
-    if (IC > .037 and IC < .039):
-      return True
-    else: 
-      return False
 
+class frequency():
+    def __init__(self):
+        self.text = ""
+        self.freq = {}
+        self.freq_percent = {}
+        self.sort_freq = None
 
-  def Check_measure_length(self,text):
-    lookup = {}
-    for i in text:
-      lookup[i] = 0
-    for i in text:
-      lookup[i] += 1
-    return lookup
-
-  #the summation
-  def Check_summation_IC(self, lookup):
-    sum_IC = 0
-    for i in alphabet:
-      if lookup[i] > 1:
-        sum_IC += (lookup[i]*(lookup[i]-1))
-    return sum_IC
-  
-  def Check_cal_IC(self,sum_IC,lenT):
-    bottom = ((lenT)*(lenT - 1))
-    return(sum_IC/(bottom))
-
-  def findthekeyandsentence(self):
-    with open("words","r") as f:
-      words = f.readlines()
-
-    for i in range(len(words)): 
-      words[i] = words[i].strip()
+        for l in alphabet:
+            self.freq[l] = 0
+            self.freq_percent[l] = 0
     
-    
-    # print(words)
-    return words
+    def typical(self):
+        return typical_frequency
 
-  def findthekeyandsentence2(self,words, theactual_keylength):
-    for word in words:
-      if len(word) == theactual_keylength:
-        self.listwithsize.append(word)
-    return self.listwithsize
+    def clear(self):
+      for l in alphabet:
+        self.freq[l] = 0
+  
+    def count(self,text):
+        for l in text:
+            l = l.lower()
+            if l in alphabet:
+                self.freq[l] += 1
 
-def vigenere_cipher_decrypt(**kwargs):
-    input_file = kwargs.get('input',None)
-    output_file = kwargs.get('output',None)
-
-    # should test if file exists
-    with open(input_file) as f:
-        ciphertext = f.read()
-    print(ciphertext," ")
-    A = Incidence_of_Coincidence(ciphertext)
-    keylen = everything(ciphertext)
-    actual_keylen = len(keylen[0])
-    # print(actual_keylen)
-    # print(keylen)
-    found_theword = False
-    for key in keylen:
-      if(found_theword == False):
-        count = 0
-        print(key)
-        # if(key == "identification"):
-        decrypted = ''
-        i = 0
-        for letter in ciphertext:
-          if letter in alphabet:
-            a = ord(letter)-97
-            b = ord(key[i])-97
-            decrypted += chr(((a-b)%26)+97)
-
-            i = (i + 1) % len(key)
-          else:
-            decrypted += letter
-          
-        found_count = 0
-        for word in decrypted.split():
-          if(word in A.findthekeyandsentence()):
-            found_count += 1
-          count += 1
+        for k in self.freq_percent:
+            self.freq_percent[k] = round(self.freq[k] / len(text),2)
         
-        if(found_count/count > .95):
-          real_key = key
-          print(real_key)
-          found_theword = True
-    # decrypted = "wait"
-            
+        # https://realpython.com/python-lambda/
+        self.sort_freq = sorted(self.freq.items(), key=lambda x: x[1], reverse=True)
 
-    with open(output_file,'w') as f:
-      f.write("Key length: " + str(actual_keylen)+'\n')
-      f.write("Keyword: " + real_key+'\n')
-      f.write("Decrypted Text:\n\n")
-      f.write(decrypted+'\n')
+    def print(self):
+        if self.sort_freq:
+            for f in self.sort_freq:
+                print(f"{f[0]}:{f[1]}")
+        else:
+            print(self.freq)
 
+    def getNth(self,n):
+        if self.sort_freq:
+            return self.sort_freq[n][0]
 
-def everything(text):
-  A = Incidence_of_Coincidence(text)
-  A.build_int_key()
-  A.build_let_lookup()
-  A.remove_space()
-  A.measure_length()
-  A.summation_IC()
-  A.lenCipherLetters()
-  A.cal_IC()
-  A.keyLen
-  # A.alphabet
-  # A.calculate_keyIC()
-  A.key_len_IC()
-  # A.vigenere_cipher_decrypt()
-  print("")
-  print(A.foundKeyLen())
-  print("")
-  # print(A.findthekeyandsentence(A.foundKeyLen()))
-  return A.findthekeyandsentence2(A.findthekeyandsentence(),A.foundKeyLen())
-
-
+        return None
 
 def mykwargs(argv):
     '''
@@ -291,27 +107,149 @@ def mykwargs(argv):
             args.append(arg)
     return args,kargs
 
+def break_vig(**kwargs):
+  input_file = kwargs.get('input',None)
+
+  with open(input_file) as f:
+    ciphertext = f.read()
+
+  #ciphertext = ciphertext.replace(' ','')
+  ciphertext = ciphertext.lower()
+  cleantext = ""
+  for l in ciphertext:
+    if l in alphabet:
+      cleantext += l
+
+  textFreq = frequency()
+
+  keyLength = 0
+  IC = 0
+  indexCoincidence = 0
+  tempText = ""
+
+  # for each key length: N
+  #   find frequency of each letter
+  #   compare that letters frequency to the typical freguency by subtracting then squaring
+  #   average those N value to get the I.C.
+
+
+ #Start of Index of Coincidence Code
+  for i in range(2,16):
+    for j in range(i):
+      #build temporary text
+      for k in range(j, len(cleantext), i):
+        tempText += cleantext[k]
+
+      #count frequency of temp text
+      textFreq.count(tempText)
+
+      sum = 0
+      total = 0
+      for k,f in typical_frequency.items():
+          total += textFreq.freq[k]
+          sum += (f/100 - textFreq.freq[k]/len(tempText))**2
+
+      #for every letter, add percent frequency squared
+      N = len(tempText)
+      for l in alphabet:
+        ni = textFreq.freq[l]
+        IC = IC + (ni*(ni-1))/(N*(N-1))
+            
+      #clear frequency and text for next pass
+      textFreq.clear()
+      tempText = ""
+      
+    #for all passes through the loop, divide to find avg
+    #tempIndex = tempIndex/i
+    IC = IC/i
+    if IC > indexCoincidence:
+      indexCoincidence = IC
+      keyLength = i
+    IC = 0
+  print(keyLength)
+
+  diction = open('dictionary', 'r')
+  lines = diction.readlines()
+  wordList = [""] * 45333
+  words = [" "] * 45333
+  count = 0
+  count2 = 0
+
+  for line in lines:
+    line = line.lower()
+    for l in line:
+      if l in alphabet:
+        wordList[count2] += l
+    if (len(wordList[count2])) == keyLength:
+      words[count] = wordList[count2]
+      #print(words[count])
+      count += 1
+    count2 += 1
+  
+  texts = [" "] * count
+
+  count = 0
+  pos = 0
+  plaintext = ""
+  for entry in words:
+    if entry != " ":
+      for l in cleantext:
+        if pos < 1000:
+          tempLetter = l
+          tempKey = entry[(pos % (len(entry)))]
+          num1 = ord(tempLetter) - 97
+          num2 = ord(tempKey) - 97
+          result = ((num1 - num2) % 26) + 97
+          letter = chr(result)
+          #print(letter)
+          if letter in alphabet:
+            plaintext += letter
+          pos += 1
+      texts[count] = plaintext
+      plaintext = ""
+      count += 1
+      #print(count)
+      pos = 0
+
+  match = 0
+  timer = 0
+  for entry in texts:
+    for line in wordList:
+      if line in entry:
+        match += len(line)
+    if match >= len(entry):
+      print(words[timer])
+      print(entry)
+    timer += 1
+    match = 0
+
+
+
 def usage(message=None):
     if message:
         print(message)
     name = os.path.basename(__file__)
-    print(f"Usage: python {name} [input=string filename] [output=string filename] [op=decrypt]")
-    print(f"Example:\n\t python {name} input=input_file.txt output=output_file.txt op=decrypt\n")
+    print(f"Usage: python {name} [input=input_file_name]")
+    print(f"Example:\n\t python {name} input=input_file.txt \n")
     sys.exit()
 
 if __name__=='__main__':
-  required_params = 2
-  
-  _,params = mykwargs(sys.argv[1:])
+    """
+    Change the required params value below accordingly.
+    """
 
-  if len(params) < required_params:
-    usage()
+    required_params = 1 # adjust accordingly
 
-  operation = params.get('op',None)
-  infile = params.get('input',None)
-  outfile = params.get('output',None)
+    # get processed command line arguments 
+    _,params = mykwargs(sys.argv[1:])
 
-  if not operation and not infile and not outfile:
-    usage()
+    # print usage if not called correctly
+    if len(params) < required_params:
+      usage()
 
-  vigenere_cipher_decrypt(**params)
+    infile = params.get('input',None)
+
+    if not infile: 
+      usage()
+
+    break_vig(**params)

@@ -73,11 +73,13 @@ class Vigenere:
         if params["operation"] == 'Encrypt':
             self.Encrypt = True
             print("We are Encrypting")
+            self.vigenere_cipher_encrypt(**params)
         
         else:
             self.Decrypt = True
             print("We are Decrypting")
             self.Index_Of_Coincidence(**params)
+            self.vigenere_cipher_decrypt(**params)
 
 
 
@@ -202,6 +204,66 @@ class Vigenere:
     def Dictionary_Attack(self, **params):
 
         pass
+
+
+    def vigenere_cipher_encrypt(self, **kwargs):
+        input_file = kwargs.get('input',None)
+        output_file = kwargs.get('output',None)
+        key = kwargs.get('key',None)
+
+        # should test if file exists
+        with open(input_file) as f:
+            plaintext = f.read()
+
+        plaintext = plaintext.lower()
+        print("hello encrypt")
+        ciphertext = ''
+
+        i = 0
+        for letter in plaintext:
+            if letter in self.ALPHABET:
+            
+                a = ord(letter)-97
+                b = ord(key[i])-97
+                ciphertext += chr(((a+b)%26)+97)
+
+                i = (i + 1) % len(key)
+            else:
+                ciphertext += letter
+
+        with open(output_file,'w') as f:
+            f.write(ciphertext)
+        print("Cipher text:", ciphertext)
+            
+
+
+    def vigenere_cipher_decrypt(self, **kwargs):
+        input_file = kwargs.get('input',None)
+        output_file = kwargs.get('output',None)
+        key = kwargs.get('key',None)
+
+
+        # should test if file exists
+        with open(input_file) as f:
+            ciphertext = f.read()
+        
+        print("hello world!")
+
+        decrypted = ''
+        i = 0
+        for letter in ciphertext:
+            if letter in self.ALPHABET:
+                a = ord(letter)-97
+                b = ord(key[i])-97
+                decrypted += chr(((a-b)%26)+97)
+
+                i = (i + 1) % len(key)
+            else:
+                decrypted += letter
+
+        with open(output_file,'w') as f:
+            f.write(decrypted)
+        print("Decrypted text:", decrypted)
 
 
 

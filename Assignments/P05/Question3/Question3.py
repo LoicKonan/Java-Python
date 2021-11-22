@@ -26,6 +26,8 @@
 
 class stack:
     
+    # Constructor to initialize the size of our stack
+    # 
     def __init__(self, size: int):
         self.numbers = []
         self.size = size
@@ -39,7 +41,6 @@ class stack:
                 
         return sum(self.numbers) / len(self.numbers) 
         
-
 
 # Driver code
 print('''
@@ -57,67 +58,47 @@ print('''
 # Initializing our STACK
 STACK  = []
 
-# Prompt the user to enter the window size
-# then adding elements to the Empty STACK.
-WindowSize = int(input("\n\n\tEnter the window size: "))
+# set counter for the iteration
+i = 0;
 
-# Pass the window size to the function stack
-obj = stack(WindowSize)
-result = obj.push(1)
-STACK .append(result)
+# prompt how many times would like to run test cases
+Test = int(input("  How many times would you like to test? : "))
+while i < Test:
 
-result = obj.push(10)
-STACK .append(result)
+    # Prompt the user to enter the window size
+    # then adding elements to the Empty STACK.
+    WindowSize = int(input("\n\n\tEnter the window size: "))
 
-result = obj.push(3)
+    # Pass the window size to the function stack
+    obj = stack(WindowSize)
+    result = obj.push(1)
+    STACK .append(result)
 
-# Adding the number to the STACK then rounded 
-# the resultult to 2 decimal digits.
-STACK .append(round(result,2))
+    result = obj.push(10)
+    STACK .append(result)
 
-result = obj.push(5)
-STACK .append(result)
+    result = obj.push(3)
 
-# Display on the resultult on the screen in style.
-print("####################################################")
-print("\tWindow size  :  ", WindowSize)
-print("\tStream       :  [1, 10, 3, 5]")
-print("\tOutput       : ",STACK )
-print("####################################################")
+    # Adding the number to the STACK then rounded 
+    # the resultult to 2 decimal digits.
+    STACK .append(round(result,2))
 
+    result = obj.push(5)
+    STACK .append(result)
 
-# Removing 4 elements from the STACK
-STACK.pop()
-STACK.pop()
-STACK.pop()
-STACK.pop()
+    # Display on the resultult on the screen in style.
+    print("####################################################")
+    print("\tWindow size  :  ", WindowSize)
+    print("\tStream       :  [1, 10, 3, 5]")
+    print("\tOutput       : ",STACK )
+    print("####################################################")
 
 
-# Prompt the user to enter the window size
-# then adding elements to the Empty STACK.
-WindowSize = int(input("\n\n\t\tEnter the window size: "))
-
-# Pass the window size to the function stack
-obj = stack(WindowSize)
-
-result = obj.push(1)
-STACK .append(result)
-
-result = obj.push(10)
-STACK .append(result)
-
-result = obj.push(3)
-
-# Adding the number to the STACK then rounded 
-# the resultult to 2 decimal digits.
-STACK .append(round(result,2))
-
-result = obj.push(5)
-STACK .append(result)
-
-# Display on the resultult on the screen in style.
-print("####################################################")
-print("\tWindow size  :  ", WindowSize)
-print("\tStream       :  [1, 10, 3, 5]")
-print("\tOutput       : ",STACK )
-print("####################################################")
+    # Removing 4 elements from the STACK
+    STACK.pop()
+    STACK.pop()
+    STACK.pop()
+    STACK.pop()
+    
+    # increment the counter until the end of the testing
+    i += 1

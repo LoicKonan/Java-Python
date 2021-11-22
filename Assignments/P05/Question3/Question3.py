@@ -8,25 +8,30 @@
  # Date:            11/22/2021
  # 
  # Description:     
- #                  
+ #                  Write a python code to find the average from a stream. 
+ #                  The input of this program will receive a stream of numbers
+ #                  and a window size to find the moving average of all the 
+ #                  numbers in the sliding window. Write your code in OOP 
+ #                  style and solve the program with STACK and or stack 
+ #                  data structure.
  #                  
  # 
  # Solution:
- #                  
+ #                   Used
  #
  #
  # Files:           Question3.py
  # 
  #****************************************************************************/
 
-class MovingAverage:
+class stack:
     
     def __init__(self, size: int):
         self.numbers = []
         self.size = size
         
 
-    def next(self, val: int) -> float:
+    def push(self, val: int) -> float:
         self.numbers.append(val)
         
         if len(self.numbers) > self.size:
@@ -46,69 +51,73 @@ print('''
  # Course:         CMPS 4143                 #
  # Semester:       Fall 2021                 #
  # Date:           11/22/2021                #
- #*******************************************#
- ''')
+ #*******************************************#''')
 
-# Your MovingAverage object will be instantiated and called as such:
-# Initializing our queue
-queue  = []
+# Your stack object will be instantiated and called as such:
+# Initializing our STACK
+STACK  = []
+
+# Prompt the user to enter the window size
+# then adding elements to the Empty STACK.
+WindowSize = int(input("\n\n\tEnter the window size: "))
+
+# Pass the window size to the function stack
+obj = stack(WindowSize)
+result = obj.push(1)
+STACK .append(result)
+
+result = obj.push(10)
+STACK .append(result)
+
+result = obj.push(3)
+
+# Adding the number to the STACK then rounded 
+# the resultult to 2 decimal digits.
+STACK .append(round(result,2))
+
+result = obj.push(5)
+STACK .append(result)
+
+# Display on the resultult on the screen in style.
+print("####################################################")
+print("\tWindow size  :  ", WindowSize)
+print("\tStream       :  [1, 10, 3, 5]")
+print("\tOutput       : ",STACK )
+print("####################################################")
+
+
+# Removing 4 elements from the STACK
+STACK.pop()
+STACK.pop()
+STACK.pop()
+STACK.pop()
 
 
 # Prompt the user to enter the window size
-# then adding elements to the Empty queue.
-WindowSize = int(input("Enter the window size: "))
+# then adding elements to the Empty STACK.
+WindowSize = int(input("\n\n\t\tEnter the window size: "))
 
-# Pass the window size to the function MovingAverage
-obj = MovingAverage(WindowSize)
-res = obj.next(1)
-queue .append(res)
+# Pass the window size to the function stack
+obj = stack(WindowSize)
 
-res = obj.next(10)
-queue .append(res)
+result = obj.push(1)
+STACK .append(result)
 
-res = obj.next(3)
+result = obj.push(10)
+STACK .append(result)
 
-# Adding the number to the queue then rounded the result to 2 decimal digits.
-queue .append(round(res,2))
+result = obj.push(3)
 
-res = obj.next(5)
-queue .append(res)
+# Adding the number to the STACK then rounded 
+# the resultult to 2 decimal digits.
+STACK .append(round(result,2))
 
-# Display on the result on the screen in style.
-print("\n\tWindow size  :  ", WindowSize)
+result = obj.push(5)
+STACK .append(result)
+
+# Display on the resultult on the screen in style.
+print("####################################################")
+print("\tWindow size  :  ", WindowSize)
 print("\tStream       :  [1, 10, 3, 5]")
-print("\tOutput       : ",queue )
-
-
-# Removing elements from the queue
-queue.pop(0)
-queue.pop(0)
-queue.pop(0)
-queue.pop(0)
-
-
-# Prompt the user to enter the window size
-# then adding elements to the Empty queue.
-WindowSize = int(input("\n\nEnter the window size: "))
-
-# Pass the window size to the function MovingAverage
-obj = MovingAverage(WindowSize)
-
-res = obj.next(1)
-queue .append(res)
-
-res = obj.next(10)
-queue .append(res)
-
-res = obj.next(3)
-
-# Adding the number to the queue then rounded the result to 2 decimal digits.
-queue .append(round(res,2))
-
-res = obj.next(5)
-queue .append(res)
-
-# Display on the result on the screen in style.
-print("\n\tWindow size  :  ", WindowSize)
-print("\tStream       :  [1, 10, 3, 5]")
-print("\tOutput       : ",queue )
+print("\tOutput       : ",STACK )
+print("####################################################")

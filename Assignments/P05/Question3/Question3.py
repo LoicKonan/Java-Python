@@ -17,7 +17,13 @@
  #                  
  # 
  # Solution:
- #                   Used
+ #                  Prompt the user to enter how many time they want to 
+ #                  test something then ask them to enter the size of 
+ #                  the sliding window then using a stack and a push 
+ #                  function to add numbers in the stack then use if 
+ #                  statement and translate the integers into a floats 
+ #                  value to perform the division then display the 
+ #                  result to the screen.
  #
  #
  # Files:           Question3.py

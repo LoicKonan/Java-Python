@@ -1,3 +1,9 @@
+# Python
+# @author Loic Konan
+# Semester: Fall 2021
+# Date: 11/22/2021 
+
+
 from collections import defaultdict
 
 class Graph:
@@ -50,4 +56,7 @@ g.addEdge(4, 9)
 g.addEdge(5, 10)
 g.addEdge(6, 11)
 g.addEdge(6, 12)
+
+
+g.BFS(1)
 

@@ -24,23 +24,30 @@
  # 
  #****************************************************************************/
 
+# Create a classs called Queue to nstantiat the running for
+# the average from the user input
 class stack:
     
-    # Constructor to initialize the size of our stack
-    # 
+    # Constructor to initialize the size of the and the stack
     def __init__(self, size: int):
         self.numbers = []
         self.size = size
         
-
+    # In this function we passing integers then adding them to our 
+    # stack then doing our division then translating them 
+    # into a float to perform the division then.
     def push(self, val: int) -> float:
+        # Adding the integer to the stack
         self.numbers.append(val)
         
+        # If the length of our stack is less than the size    
+        # then return the sum addition
+        # else just return the division result.
         if len(self.numbers) > self.size:
             return sum(self.numbers[-(self.size):]) / self.size
                 
         return sum(self.numbers) / len(self.numbers) 
-        
+    
 
 # Driver code
 print('''

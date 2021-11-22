@@ -30,6 +30,7 @@ class Graph:
           q.append(i)
           visited[i] = True
 
+
   def dfs(self, visited, node):
     if node not in visited:
       print(node, end=" ")
@@ -56,7 +57,6 @@ g.addEdge(4, 9)
 g.addEdge(5, 10)
 g.addEdge(6, 11)
 g.addEdge(6, 12)
-
 
 g.BFS(1)
 

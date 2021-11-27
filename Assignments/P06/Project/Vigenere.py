@@ -1,11 +1,14 @@
 import sys
 import copy
+import time
 
 """
     ***Examples terminal commands to run the program***
         
         run = "python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none"
         run = "python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial"
+
+        run = "python3 Vigenere.py input_file=VCT1.txt output_file=decrypted.txt operation=Decrypt encryption_key=none"
 
     *** Encryption Example***
 
@@ -16,10 +19,6 @@ import copy
         Repeated Key:      V IXENV IX ENVIX EN VIXENV I XENVIX
         Plaintext Message: a group of crows is called a murder
         Encrypted Message: V OOSJK WC GEKEP MF XIIPRY I JCEYMO
-
-
-    ## Possible code snippet
-    str[0] = (str[0] + int(key[i]) % 26)
 
 
 
@@ -33,25 +32,34 @@ import copy
          \_/    \__| \____$$ | \_______|\__|  \__| \_______|\__|       \_______|
                     $$\   $$ |                                                  
                     \$$$$$$  |                                                  
-                     \______/                                                   
+                     \______/                    
+
 """
 
 class Vigenere:
 
     def __init__(self, input=None, output=None):
-        if not input is None:
-            self.Input = input
-        if not output is None:
-            self.Output = output
 
-        self.Words = "Dictionary_Words.txt"
+        if not input is None:
+
+            self.Input = input
+
+        if not output is None:
+
+            self.output = output
+
         self.Plaintext = None
+        self.EncryptionKey = None
+
         self.CipherText = None
         self.Encrypted = None
         self.Decrypted = None
-        self.EncryptionKey = None
+
         self.Encrypt = False
         self.Decrypt = False
+
+        self.Cracked = False
+        self.highest = None
 
         ## List to keep track of the different keys to test
         self.KeyInfo = []
@@ -60,6 +68,7 @@ class Vigenere:
     
     
     def setIn_N_Out(self,**params):
+
         try:
             self.Input = params.get("input_file",None)
             self.Output = params.get("output_file",None)
@@ -70,20 +79,34 @@ class Vigenere:
     
 
     def setOperation(self, **params):
+
         if params["operation"] == 'Encrypt':
             self.Encrypt = True
             print("We are Encrypting")
-            self.vigenere_cipher_encrypt(**params)
+            self.t1 = time.perf_counter()
         
         else:
             self.Decrypt = True
             print("We are Decrypting")
             self.Index_Of_Coincidence(**params)
-            self.vigenere_cipher_decrypt(**params)
 
+
+
+    """
+    $$$$$$\     $$$$$$\      $$$$$$\  
+    \_$$  _|   $$  __$$\    $$  __$$\ 
+      $$ |     $$ /  $$ |   $$ /  \__|
+      $$ |     $$ |  $$ |   $$ |      
+      $$ |     $$ |  $$ |   $$ |      
+      $$ |     $$ |  $$ |   $$ |  $$\ 
+    $$$$$$\ $$\ $$$$$$  |$$\\$$$$$$  |
+    \______|\__|\______/ \__|\______/ 
+                                                     
+    """
 
 
     def Index_Of_Coincidence(self, **params):
+
         print("IOC Method")
         
         Key_Result = {
@@ -110,7 +133,6 @@ class Vigenere:
             KL = i
             sequences = []
 
-
             Key_Result["Key_Length"] = KL
             print("Key Length is:", KL)
 
@@ -135,19 +157,27 @@ class Vigenere:
 
         self.Dictionary_Attack(**params)
 
-        # print()
-        # print("Sorted Testing Order:")
-        # for key in self.KeyOrder:
 
-        #     print("IOC Score:", key['IOC'], "Key Length:", key['Key_Length'])
-
+    """
+    
+     $$$$$$\                                 $$\               $$\      $$\            $$\     $$\       
+    $$  __$$\                                $$ |              $$$\    $$$ |           $$ |    $$ |      
+    $$ /  \__| $$$$$$\  $$\   $$\  $$$$$$\ $$$$$$\    $$$$$$\  $$$$\  $$$$ | $$$$$$\ $$$$$$\   $$$$$$$\  
+    $$ |      $$  __$$\ $$ |  $$ |$$  __$$\\_$$  _|  $$  __$$\ $$\$$\$$ $$ | \____$$\\_$$  _|  $$  __$$\ 
+    $$ |      $$ |  \__|$$ |  $$ |$$ /  $$ | $$ |    $$ /  $$ |$$ \$$$  $$ | $$$$$$$ | $$ |    $$ |  $$ |
+    $$ |  $$\ $$ |      $$ |  $$ |$$ |  $$ | $$ |$$\ $$ |  $$ |$$ |\$  /$$ |$$  __$$ | $$ |$$\ $$ |  $$ |
+    \$$$$$$  |$$ |      \$$$$$$$ |$$$$$$$  | \$$$$  |\$$$$$$  |$$ | \_/ $$ |\$$$$$$$ | \$$$$  |$$ |  $$ |
+     \______/ \__|       \____$$ |$$  ____/   \____/  \______/ \__|     \__| \_______|  \____/ \__|  \__|
+                        $$\   $$ |$$ |                                                                   
+                        \$$$$$$  |$$ |                                                                   
+                         \______/ \__|                                                                   
+    """
 
 
     def CryptoMath(self, Slices):
     
         print("In CryptoMath")
 
-        Key_IOC = float()
         Temp_IOC = float()
         Final_IOC = float()
         Result = float()
@@ -161,11 +191,8 @@ class Vigenere:
             frequency = [0] * 26
 
             temp = Slices[i]
-            # print(temp)
-            # print()
 
             letters = list(temp)
-            #print(letters)
 
             index = 0
 
@@ -179,8 +206,6 @@ class Vigenere:
 
                 index += 1
 
-
-            #print(frequency)
 
             for num in frequency:
 
@@ -201,69 +226,175 @@ class Vigenere:
 
 
 
+
+    """
+    $$$$$$$\  $$\             $$\     $$\                                                         
+    $$  __$$\ \__|            $$ |    \__|                                                        
+    $$ |  $$ |$$\  $$$$$$$\ $$$$$$\   $$\  $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$\  $$\   $$\       
+    $$ |  $$ |$$ |$$  _____|\_$$  _|  $$ |$$  __$$\ $$  __$$\  \____$$\ $$  __$$\ $$ |  $$ |      
+    $$ |  $$ |$$ |$$ /        $$ |    $$ |$$ /  $$ |$$ |  $$ | $$$$$$$ |$$ |  \__|$$ |  $$ |      
+    $$ |  $$ |$$ |$$ |        $$ |$$\ $$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ |      $$ |  $$ |      
+    $$$$$$$  |$$ |\$$$$$$$\   \$$$$  |$$ |\$$$$$$  |$$ |  $$ |\$$$$$$$ |$$ |      \$$$$$$$ |      
+    \_______/ \__| \_______|   \____/ \__| \______/ \__|  \__| \_______|\__|       \____$$ |      
+                                                                                  $$\   $$ |      
+                                                                                  \$$$$$$  |      
+                                                                                    \______/       
+                             $$$$$$\    $$\     $$\                         $$\                   
+                            $$  __$$\   $$ |    $$ |                        $$ |                  
+                            $$ /  $$ |$$$$$$\ $$$$$$\    $$$$$$\   $$$$$$$\ $$ |  $$\             
+                            $$$$$$$$ |\_$$  _|\_$$  _|   \____$$\ $$  _____|$$ | $$  |            
+                            $$  __$$ |  $$ |    $$ |     $$$$$$$ |$$ /      $$$$$$  /             
+                            $$ |  $$ |  $$ |$$\ $$ |$$\ $$  __$$ |$$ |      $$  _$$<              
+                            $$ |  $$ |  \$$$$  |\$$$$  |\$$$$$$$ |\$$$$$$$\ $$ | \$$\             
+                            \__|  \__|   \____/  \____/  \_______| \_______|\__|  \__|            
+                                                                                                                                                                                                                                                                                            
+    """
+
     def Dictionary_Attack(self, **params):
 
-        pass
-
-
-    def vigenere_cipher_encrypt(self, **kwargs):
-        input_file = kwargs.get('input',None)
-        output_file = kwargs.get('output',None)
-        key = kwargs.get('key',None)
-
-        # should test if file exists
-        with open(input_file) as f:
-            plaintext = f.read()
-
-        plaintext = plaintext.lower()
-        print("hello encrypt")
-        ciphertext = ''
-
-        i = 0
-        for letter in plaintext:
-            if letter in self.ALPHABET:
+        # with open("Dictionary_Words.txt", "r") as Fin:
             
-                a = ord(letter)-97
-                b = ord(key[i])-97
-                ciphertext += chr(((a+b)%26)+97)
+        #     self.Words = Fin.readlines()
 
-                i = (i + 1) % len(key)
-            else:
-                ciphertext += letter
 
-        with open(output_file,'w') as f:
-            f.write(ciphertext)
-        print("Cipher text:", ciphertext)
+        if not self.Cracked:
+
+            for index in self.KeyOrder:
+
+                self.highest = 0.0
+                self.Decrypted = ""
+                self.EncryptionKey = ""
+
+                Narrowed = []
+
+                curr = index["Key_Length"]
+                print("Testing key length", curr)
+
+                with open("Words.txt", "r") as Fin:
             
+                    for word in Fin:
+
+                        if (len(word) - 1) == int(curr):
+
+                            Narrowed.append(copy.deepcopy(word))
+
+                
+                message = str(self.Encrypted)
+
+                for temp in Narrowed:
+
+                    j = 0
+                    result = ""
+
+                    for i in range(len(message)):
+                        
+                        if (j >= len(temp) - 1):
+
+                            j = 0
+
+                        if message[i] == " ":
+
+                            result += " "
+
+                        else:
+
+                            letter = (ord(message[i]) - ord(temp[j])) % 26
+                            letter += ord('A')
+                            result += chr(letter)
+                            j += 1
+
+                    self.Score_Results(result, temp)
+
+                print("Encrypted text of:", self.Encrypted)
+                print()
+                print("Decrypted to:", self.Decrypted)
+                print("Encryption Key:", self.EncryptionKey)
+
+                answer = ""
+
+                try:
+                    print("Was Decryption successful? Y/N")
+                    answer = str(input())
+
+                    if answer == 'Y':
+
+                        print("Encryption successful")
+                        self.Cracked = True
+                        break
+
+                    if answer == 'N':
+
+                        continue
+                        
+                except:
+                    print("Please enter either Y or N")
 
 
-    def vigenere_cipher_decrypt(self, **kwargs):
-        input_file = kwargs.get('input',None)
-        output_file = kwargs.get('output',None)
-        key = kwargs.get('key',None)
+    """
+     $$$$$$\                                                                                
+    $$  __$$\                                                                               
+    $$ /  \__| $$$$$$$\  $$$$$$\   $$$$$$\   $$$$$$\                                        
+    \$$$$$$\  $$  _____|$$  __$$\ $$  __$$\ $$  __$$\                                       
+     \____$$\ $$ /      $$ /  $$ |$$ |  \__|$$$$$$$$ |                                      
+    $$\   $$ |$$ |      $$ |  $$ |$$ |      $$   ____|                                      
+    \$$$$$$  |\$$$$$$$\ \$$$$$$  |$$ |      \$$$$$$$\                                       
+    \______/  \_______| \______/ \__|       \_______|                                      
+                                                                                            
+                                                                                                                                            
+                            $$$$$$$\                                $$\   $$\               
+                            $$  __$$\                               $$ |  $$ |              
+                            $$ |  $$ | $$$$$$\   $$$$$$$\ $$\   $$\ $$ |$$$$$$\    $$$$$$$\ 
+                            $$$$$$$  |$$  __$$\ $$  _____|$$ |  $$ |$$ |\_$$  _|  $$  _____|
+                            $$  __$$< $$$$$$$$ |\$$$$$$\  $$ |  $$ |$$ |  $$ |    \$$$$$$\  
+                            $$ |  $$ |$$   ____| \____$$\ $$ |  $$ |$$ |  $$ |$$\  \____$$\ 
+                            $$ |  $$ |\$$$$$$$\ $$$$$$$  |\$$$$$$  |$$ |  \$$$$  |$$$$$$$  |
+                            \__|  \__| \_______|\_______/  \______/ \__|   \____/ \_______/ 
+                                                                                                                                                                                                                                                                            
+    """
+
+    def Score_Results(self, stuff, potkey):
+
+            alphabet = [chr(x+65) for x in range(26)]
+            Temp_IOC = float()
+            Result = float()
 
 
-        # should test if file exists
-        with open(input_file) as f:
-            ciphertext = f.read()
-        
-        print("hello world!")
+            letters = []
+            frequency = [0] * 26
 
-        decrypted = ''
-        i = 0
-        for letter in ciphertext:
-            if letter in self.ALPHABET:
-                a = ord(letter)-97
-                b = ord(key[i])-97
-                decrypted += chr(((a-b)%26)+97)
 
-                i = (i + 1) % len(key)
-            else:
-                decrypted += letter
+            letters = list(stuff)
 
-        with open(output_file,'w') as f:
-            f.write(decrypted)
-        print("Decrypted text:", decrypted)
+            index = 0
+
+            for char in alphabet:
+
+                for letter in letters:
+
+                    if char == letter:
+
+                        frequency[index] += 1
+
+                index += 1
+
+            for num in frequency:
+
+                Sigma_Big_N = len(stuff)
+                Sigma_Small_n = float(num)
+                Numerator = (Sigma_Small_n * (Sigma_Small_n - 1))
+                Denominator = float()
+                Denominator = (Sigma_Big_N * (Sigma_Big_N - 1))
+
+                Temp_IOC = Numerator / Denominator
+
+                Result += Temp_IOC
+
+            if Result > self.highest:
+
+                print("Pushing new Result", Result)
+                self.highest = Result
+                self.Decrypted = stuff
+                self.EncryptionKey = potkey
 
 
 
@@ -341,19 +472,26 @@ if __name__=='__main__':
 
     args,program_params = mykwargs(argv)
 
-    # V1.setIn_N_Out(**program_params)
-    # V1.setOperation(**program_params)
+    t1 = time.perf_counter()
+    V1.setIn_N_Out(**program_params)
+    V1.setOperation(**program_params)
+    t2 = time.perf_counter()
 
-    try:
+    print(f"Cipher cracked in: {t2-t1:0.4f} seconds")
 
-        V1.setIn_N_Out(**program_params)
-        V1.setOperation(**program_params)
+    # try:
+
+    #     tic = time.perf_counter()
+    #     V1.setIn_N_Out(**program_params)
+    #     V1.setOperation(**program_params)
+    #     toc = time.perf_counter()
+    #     print(f"Finished in {toc-tic:0.4f} seconds")
 
 
-    except:
+    # except:
 
-        print("Looks like you're missing some parameters, here's what you need.\n")
-        print("Example run: python3 filename.py input_file=[inputfile name] output_file=[outputfile name] operation=[Encrypt or Decrypt] encryption_key=[key]\n")
-        print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
-        print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
-        sys.exit()
+    #     print("Looks like you're missing some parameters, here's what you need.\n")
+    #     print("Example run: python3 filename.py input_file=[inputfile name] output_file=[outputfile name] operation=[Encrypt or Decrypt] encryption_key=[key]\n")
+    #     print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
+    #     print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
+    #     sys.exit()

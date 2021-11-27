@@ -154,23 +154,6 @@ class Vigenere:
         ## List to keep track of the different keys to test
         self.KeyOrder = []
 
-    
-    # def setIn_N_Out(self,**params):
-    #     self.Input = params.get("input_file",None)
-    #     self.Output = params.get("output_file",None)
-
-    
-    # def setOperation(self, **params):
-    #     if params["operation"] == 'Encrypt':
-    #         self.Encrypt = True
-    #         print("We are Encrypting")
-    #         self.Encrypt (**params)
-        
-    #     else:
-    #         self.Decrypt = True
-    #         print("We are Decrypting")
-    #         self.Index_Of_Coincidence(**params)
-
 
     def Index_Of_Coincidence(self, **params):
         print("IOC Method")
@@ -224,25 +207,14 @@ class Vigenere:
         Numerator = float()
         Denominator = float()
 
-    # Loic Start implementing the encrypt function
-    # str[0] = (str[0] + int(key[i]) % 26)
-    # The ord() function returns an integer representing the Unicode character.
-    
+   
     def Encrypt(self, **params):
         
         with open(self.Input,'r') as f:
             self.Encrypted = f.read()
             print("Reduced Message\n")
 
-        # cip = []
-        # start = ord('a')                
-        # for l, k in zip(message, key):
-        #     shift = ord(k) - start
-        #     pos = start + (ord(l) - start + shift) % 26
-        #     cip.append(chr(pos))
-        # return ''.join([l for l in cip])
-    
-
+       
     ## Loic start implementing the dictionary attack
     def Dictionary_Attack_IOC(self, **params):
         print()
@@ -324,20 +296,6 @@ class Vigenere:
                     
 # """
 
-# def mykwargs(argv):
-#     args = []
-#     kargs = {}
-
-#     for arg in argv:
-#         if '=' in arg:
-#             key,val = arg.split('=')
-#             kargs[key] = val
-#         else:
-#             args.append(arg)
-#     return args,kargs
-
-
-
 
 """
     $$\      $$\           $$\                 $$$$$$$\  $$\                     $$\       
@@ -384,30 +342,6 @@ btnExit = Button(f1, padx = 16, pady = 8, bd = 16,
 				command = qExit).grid(row = 7, column = 3)
 
 
-
-def main():
-    
-    print("""\t    Welcome to Ethans Bank
-               Pick From My Menu\n\n
-            [1] -- Create Account
-            [2] -- Make Deposit
-            [3] -- Quit Bank Simulation
-    
-            """)
-    keep_going = True
-    while keep_going:
-
-        # prompt the user what they would like to do
-        userInput = str(input(''))
-    
-        if userInput == '1':
-            NameOfCustomer=str(input(""))
-           
-        if userInput == '2':
-            userInput = str(input(''))
-        
-        else:
-            keep_going = False # close out of the program
     
 if __name__=='__main__':
     """

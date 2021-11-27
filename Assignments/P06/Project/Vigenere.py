@@ -2,6 +2,12 @@ import sys
 import copy
 import time
 
+
+from tkinter import *
+
+FONT = ("calbri", 20, "bold")
+
+
 """
     ***Examples terminal commands to run the program***
         
@@ -620,14 +626,10 @@ if __name__=='__main__':
 
     args,program_params = mykwargs(argv)
 
-    # t1 = time.perf_counter()
-    # V1.setIn_N_Out(**program_params)
-    # V1.setOperation(**program_params)
-    # t2 = time.perf_counter()
-
-    # print(f"Cipher cracked in: {t2-t1:0.4f} seconds")
-
-
+   
+   
+    
+    
     """
             This Try and Except block is mainly used so that the user
             can get a feel for how to run the program since it is set
@@ -644,6 +646,8 @@ if __name__=='__main__':
 
         V1.setIn_N_Out(**program_params)
         V1.setOperation(**program_params)
+        
+        
         toc = time.perf_counter()
 
         print(f"Operation Completed in {toc-tic:0.4f} Seconds")

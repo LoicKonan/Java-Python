@@ -6,7 +6,7 @@ import time
     ***Examples terminal commands to run the program***
         
         run = "python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none"
-        run = "python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial"
+        run = "python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=VIXEN"
 
         run = "python3 Vigenere.py input_file=VCT1.txt output_file=decrypted.txt operation=Decrypt encryption_key=none"
 
@@ -38,26 +38,28 @@ import time
 
 class Vigenere:
 
-    def __init__(self, input=None, output=None):
+    def __init__(self, input_file=None, output_file=None):
 
-        if not input is None:
+        if not input_file is None:
 
-            self.Input = input
+            self.Input = input_file
 
-        if not output is None:
+        if not output_file is None:
 
-            self.output = output
+            self.output = output_file
 
+        ## Variables used to keep track of the before and after message/s
         self.Plaintext = None
         self.EncryptionKey = None
-
         self.CipherText = None
         self.Encrypted = None
         self.Decrypted = None
 
+        ## Bool status variables
         self.Encrypt = False
         self.Decrypt = False
 
+        ## Class global variables used in the scoring method
         self.Cracked = False
         self.highest = None
 
@@ -66,7 +68,27 @@ class Vigenere:
         self.KeyOrder = []
 
     
-    
+    """
+    $$$$$$\ $$\   $$\         $$\   $$\          $$$$$$\  $$\   $$\ $$$$$$$$\ 
+    \_$$  _|$$$\  $$ |        $$$\  $$ |        $$  __$$\ $$ |  $$ |\__$$  __|
+      $$ |  $$$$\ $$ |        $$$$\ $$ |        $$ /  $$ |$$ |  $$ |   $$ |   
+      $$ |  $$ $$\$$ |$$$$$$\ $$ $$\$$ |$$$$$$\ $$ |  $$ |$$ |  $$ |   $$ |   
+      $$ |  $$ \$$$$ |\______|$$ \$$$$ |\______|$$ |  $$ |$$ |  $$ |   $$ |   
+      $$ |  $$ |\$$$ |        $$ |\$$$ |        $$ |  $$ |$$ |  $$ |   $$ |   
+    $$$$$$\ $$ | \$$ |        $$ | \$$ |         $$$$$$  |\$$$$$$  |   $$ |   
+    \______|\__|  \__|        \__|  \__|         \______/  \______/    \__|   
+
+
+            This method will receives the **params dictionary object and will
+            strip out the input and output file destinations that are sent at
+            run time and set those values.
+
+            The next method, setOperation is immediately called afterwards and
+            will also receive a copy of **params and will strip out the value
+            operation and determine where to go next depending on if the op is
+            Encrypt or Decrypt.                                                                                                                                               
+    """  
+
     def setIn_N_Out(self,**params):
 
         try:
@@ -82,26 +104,100 @@ class Vigenere:
 
         if params["operation"] == 'Encrypt':
             self.Encrypt = True
-            print("We are Encrypting")
-            self.t1 = time.perf_counter()
+            print("\nWe are Encrypting:\n")
+            self.Encrypt_Message(**params)
+            
         
         else:
             self.Decrypt = True
-            print("We are Decrypting")
+            self.Encrypt = False
+            print("\nWe are Decrypting")
             self.Index_Of_Coincidence(**params)
 
 
 
     """
-    $$$$$$\     $$$$$$\      $$$$$$\  
-    \_$$  _|   $$  __$$\    $$  __$$\ 
-      $$ |     $$ /  $$ |   $$ /  \__|
-      $$ |     $$ |  $$ |   $$ |      
-      $$ |     $$ |  $$ |   $$ |      
-      $$ |     $$ |  $$ |   $$ |  $$\ 
-    $$$$$$\ $$\ $$$$$$  |$$\\$$$$$$  |
-    \______|\__|\______/ \__|\______/ 
-                                                     
+    
+        $$$$$$$$\                                                    $$\     
+        $$  _____|                                                   $$ |    
+        $$ |      $$$$$$$\   $$$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\ $$$$$$\   
+        $$$$$\    $$  __$$\ $$  _____|$$  __$$\ $$ |  $$ |$$  __$$\\_$$  _|  
+        $$  __|   $$ |  $$ |$$ /      $$ |  \__|$$ |  $$ |$$ /  $$ | $$ |    
+        $$ |      $$ |  $$ |$$ |      $$ |      $$ |  $$ |$$ |  $$ | $$ |$$\ 
+        $$$$$$$$\ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$$ |$$$$$$$  | \$$$$  |
+        \________|\__|  \__| \_______|\__|       \____$$ |$$  ____/   \____/ 
+                                                $$\   $$ |$$ |               
+                                                \$$$$$$  |$$ |               
+                                                 \______/ \__|               
+    
+
+            Encrypt will receive a copy of **params and will use that to
+            read in the plaintext message and the encryption key that was
+            passed in and use that to encrypt the message and print the
+            result to the terminal/GUI and update the file destination.
+
+            The encrypt process is the same as the Decrypt process but
+            instead of subtracting the key % 26 we're adding.
+    """
+
+    def Encrypt_Message(self, **params):
+
+        with open(self.Input,'r') as f:
+            self.Plaintext = f.read()
+
+        msg = self.Plaintext
+        msg = msg.upper()
+        crypt_key = params.get("encryption_key", None)
+        print("Plaintext:", msg)
+        print("Encryption Key:", crypt_key)
+        
+        j = 0
+        result = ""
+        for i in range(len(msg)):
+
+            if (j >= len(crypt_key)):
+
+                j = 0
+
+            if msg[i] == " ":
+
+                result += " "
+                continue
+
+            else:
+
+                letter = (ord(msg[i]) + ord(crypt_key[j])) % 26
+                letter += ord('A')
+                result += chr(letter)
+                j += 1
+
+        print()
+        print("New Encrypted Message is:", result, "\n")
+        f.close()
+
+
+
+    """
+                        $$$$$$\     $$$$$$\      $$$$$$\  
+                        \_$$  _|   $$  __$$\    $$  __$$\ 
+                          $$ |     $$ /  $$ |   $$ /  \__|
+                          $$ |     $$ |  $$ |   $$ |      
+                          $$ |     $$ |  $$ |   $$ |      
+                          $$ |     $$ |  $$ |   $$ |  $$\ 
+                        $$$$$$\ $$\ $$$$$$  |$$\\$$$$$$  |
+                        \______|\__|\______/ \__|\______/ 
+
+
+        This method is responsible for testing all of the different possible
+		key lengths of the key that the cipher text was encrypted with. For this
+		program, we are testing a key length of 2 all the way to a potential key
+		length of 16. The testing calculates the I.O.C value of a key length which involves 
+		splitting the cipher text into sequences according to the key length. If a key
+		length is 2, we turn the cipher text into two sequences, alternating every other
+		character and then these are stored in a list and sent to the Cryptomath
+		method. After that method call is complete, the loop iterates, and the next
+		possible key length is tested.
+
     """
 
 
@@ -153,6 +249,8 @@ class Vigenere:
 
             self.KeyInfo.append(copy.deepcopy(Key_Result))
 
+
+        ## Sorting the dictionary of objects by highest IOC value
         self.KeyOrder = sorted(self.KeyInfo, key = lambda i: i['IOC'], reverse=True)
 
         self.Dictionary_Attack(**params)
@@ -171,6 +269,25 @@ class Vigenere:
                         $$\   $$ |$$ |                                                                   
                         \$$$$$$  |$$ |                                                                   
                          \______/ \__|                                                                   
+    
+    
+    
+        Method is directly called from the Index of Coincidence method and receives a
+		slcies list object that has the separate slices of sequences according to the key
+        length that is being tested. The testing process involves counting the instances 
+        of letters occuring more than once in the slices instance tfrom the last method. 
+        This eventually results in an Index of Coincidence value such as: 0.048. Once 
+		completed, the IOC value is stored in a list of dictionary objects that will be
+        sorted later by this value. The highest score indicates the most "English Like"
+        and therefore that is the most likely key length to begin the dictionary attack on.
+
+		For more information on the math involved in calculating the index of coincidence,
+		please see the following references:
+
+			- https://en.wikipedia.org/wiki/Index_of_coincidence
+			- https://www.dcode.fr/index-coincidence
+			- http://practicalcryptography.com/cryptanalysis/text-characterisation/index-coincidence/
+
     """
 
 
@@ -248,6 +365,19 @@ class Vigenere:
                             $$ |  $$ |  \$$$$  |\$$$$  |\$$$$$$$ |\$$$$$$$\ $$ | \$$\             
                             \__|  \__|   \____/  \____/  \_______| \_______|\__|  \__|            
                                                                                                                                                                                                                                                                                             
+    
+    
+            Method is responsible for utilizing the results of the most likely key
+            lengths, and eventually performing a dictionary attack on the cipher.
+            This is of course assuming that the key that was used to encrypt the cipher
+            is a dictionary word. A list of words from the dictionary file are read in 
+            and then a narrowed version is created by appending words that are equal to 
+            the key length we are testing. This helps us eliminate the majority of
+            the dictionary words and limit it to only words that are of the key length.
+
+            Once this is completed, the method will brute force every shift combination
+            of this narrowed list of dictionary words and pass the result to the Score Results
+            method and determine the result. 
     """
 
     def Dictionary_Attack(self, **params):
@@ -279,6 +409,7 @@ class Vigenere:
                             Narrowed.append(copy.deepcopy(word))
 
                 
+                Fin.close()
                 message = str(self.Encrypted)
 
                 for temp in Narrowed:
@@ -316,13 +447,15 @@ class Vigenere:
                     print("Was Decryption successful? Y/N")
                     answer = str(input())
 
-                    if answer == 'Y':
+                    # Capitalize the user input and compare.
+                    if answer.upper() == 'Y':
 
                         print("Encryption successful")
                         self.Cracked = True
                         break
-
-                    if answer == 'N':
+                    
+                    # Capitalize the user input and compare.
+                    if answer.upper() == 'N':
 
                         continue
                         
@@ -350,6 +483,21 @@ class Vigenere:
                             $$ |  $$ |\$$$$$$$\ $$$$$$$  |\$$$$$$  |$$ |  \$$$$  |$$$$$$$  |
                             \__|  \__| \_______|\_______/  \______/ \__|   \____/ \_______/ 
                                                                                                                                                                                                                                                                             
+    
+
+            The score Results method is nearly identical to the Index of Coincidence
+            method and in fact share most of the same code. The only difference is that
+            the I.O.C method is testing key lengths are therefore is splitting the message
+            into sequences and testing each sequence. Since we are testing the whole message
+            and not key lengths, we skip the sequence splitting part and just test the 
+            message using the same math. Whichever result scores the highest is updated and
+            eventually once the process is done, ideally, the highest scoring result should be
+            the correct result and is the most English-like.
+
+            I say ideally because this caveat will be discussed in class as the I.O.C is much
+            more reliable when it has more text to work with. On larger results, this calculation
+            is bulletproof reliable. However, on shorter sample sizes, it is not always 100% and
+            in fact non-English-Like results can score higher than the actual correct result.
     """
 
     def Score_Results(self, stuff, potkey):
@@ -472,26 +620,39 @@ if __name__=='__main__':
 
     args,program_params = mykwargs(argv)
 
-    t1 = time.perf_counter()
-    V1.setIn_N_Out(**program_params)
-    V1.setOperation(**program_params)
-    t2 = time.perf_counter()
+    # t1 = time.perf_counter()
+    # V1.setIn_N_Out(**program_params)
+    # V1.setOperation(**program_params)
+    # t2 = time.perf_counter()
 
-    print(f"Cipher cracked in: {t2-t1:0.4f} seconds")
-
-    # try:
-
-    #     tic = time.perf_counter()
-    #     V1.setIn_N_Out(**program_params)
-    #     V1.setOperation(**program_params)
-    #     toc = time.perf_counter()
-    #     print(f"Finished in {toc-tic:0.4f} seconds")
+    # print(f"Cipher cracked in: {t2-t1:0.4f} seconds")
 
 
-    # except:
+    """
+            This Try and Except block is mainly used so that the user
+            can get a feel for how to run the program since it is set
+            up to have parameters passed in via command line. If this
+            does not occur, and exception is thrown and some helpful
+            text is show so one knows how to properly run the code.
 
-    #     print("Looks like you're missing some parameters, here's what you need.\n")
-    #     print("Example run: python3 filename.py input_file=[inputfile name] output_file=[outputfile name] operation=[Encrypt or Decrypt] encryption_key=[key]\n")
-    #     print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
-    #     print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
-    #     sys.exit()
+            Additionally, there are examples at the top of the code.
+    """
+
+    try:
+
+        tic = time.perf_counter()
+
+        V1.setIn_N_Out(**program_params)
+        V1.setOperation(**program_params)
+        toc = time.perf_counter()
+
+        print(f"Operation Completed in {toc-tic:0.4f} Seconds")
+
+
+    except:
+
+        print("Looks like you're missing some parameters, here's what you need.\n")
+        print("Example run: python3 filename.py input_file=[inputfile name] output_file=[outputfile name] operation=[Encrypt or Decrypt] encryption_key=[key]\n")
+        print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
+        print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
+        sys.exit()

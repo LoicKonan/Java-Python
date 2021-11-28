@@ -34,7 +34,6 @@ import time
                     $$\   $$ |                                                  
                     \$$$$$$  |                                                  
                      \______/                    
-
 """
 
 class Vigenere:

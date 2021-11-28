@@ -2,8 +2,13 @@ import sys
 import copy
 import time
 
+from tkinter import Tk, Label, Button
 
 import tkinter as tk
+from tkinter import ttk
+from tkinter.messagebox import showinfo
+from tkinter import *
+
 
 FONT = ("calbri", 20, "bold")
 
@@ -42,11 +47,11 @@ FONT = ("calbri", 20, "bold")
 
 """
 
-class Vigenere:
+class Vigenere(tk.Tk):
 
-    def __init__(self, master):
-
-
+    def __init__(self):
+        super().__init__()
+        
         ## Variables used to keep track of the before and after message/s
         self.Plaintext = None
         self.EncryptionKey = None
@@ -63,54 +68,53 @@ class Vigenere:
         self.highest = None
 
         ## List to keep track of the different keys to test
-        self.KeyInfo = []
-        self.KeyOrder = []
-
-
+        self.KeyInfo  = []
+        self.KeyOrder = []        
     
-        master.title("Byron Dowling & Loic Konan \n Vigenère Cipher")
-        self.plaintext = tk.StringVar(master, value="")
-        self.ciphertext = tk.StringVar(master, value="")
-
-        # Plaintext controls
-        self.plain_label = tk.Label(master, text="Plaintext", fg="green", font=FONT).grid(row=0, column=0)
-        self.plain_entry = tk.Entry(master,
-                                    textvariable=self.plaintext, width=80, font=FONT)
-        self.plain_entry.grid(row=0, column=1, padx=20)
-        self.encrypt_button = tk.Button(master, text="Encrypt",
-                                        command=lambda: self.encrypt_callback(), font=FONT).grid(row=0, column=2)
-        self.plain_clear = tk.Button(master, text="Clear",
-                                     command=lambda: self.clear('plain'), font=FONT).grid(row=0, column=3)
-
-
-        # Ciphertext controls
-        self.cipher_label = tk.Label(master, text="Ciphertext", fg="red", font=FONT).grid(row=2, column=0)
-        self.cipher_entry = tk.Entry(master,
-                                     textvariable=self.ciphertext, width=80, font=FONT)
-        self.cipher_entry.grid(row=2, column=1, padx=20)
-        self.decrypt_button = tk.Button(master, text="Decrypt",
-                                        command=lambda: self.decrypt_callback(), font=FONT).grid(row=2, column=2)
+      
         
-        self.cipher_clear = tk.Button(master, text="Clear",
-                                      command=lambda: self.clear('cipher'), font=FONT).grid(row=2, column=3)
+    #     ## GUI Configuration.
+    #     master.title("Byron Dowling & Loic Konan \n Vigenère Cipher")
+    #     self.plaintext = tk.StringVar(master, value="")
+    #     self.ciphertext = tk.StringVar(master, value="")
 
-    def clear(self, str_val):
-        if str_val == 'cipher':
-            self.cipher_entry.delete(0, 'end')
-            
-        elif str_val == 'plain':
-            self.plain_entry.delete(0, 'end')
-    
-    
-    def encrypt_callback(self):
-        ciphertext = self.Encrypt_Message(self.plain_entry.get())
-        self.cipher_entry.delete(0, tk.END)
-        self.cipher_entry.insert(0, ciphertext)
+    #     # Plaintext controls
+    #     self.plain_label = tk.Label(master, text="Plaintext", fg="green", font=FONT).grid(row=0, column=0)
+    #     self.plain_entry = tk.Entry(master,
+    #                                 textvariable=self.plaintext, width=80, font=FONT)
+    #     self.plain_entry.grid(row=0, column=1, padx=20)
+    #     self.encrypt_button = tk.Button(master, text="Encrypt",
+    #                                     command=lambda: self.encrypt_callback(), font=FONT).grid(row=0, column=2)
+    #     self.plain_clear = tk.Button(master, text="Clear",
+    #                                  command=lambda: self.clear('plain'), font=FONT).grid(row=0, column=3)
 
-    def decrypt_callback(self):
-        plaintext = self.Index_Of_Coincidence(self.cipher_entry.get())
-        self.plain_entry.delete(0, tk.END)
-        self.plain_entry.insert(0, plaintext)
+    #     # Ciphertext controls
+    #     self.cipher_label = tk.Label(master, text="Ciphertext", fg="red", font=FONT).grid(row=2, column=0)
+    #     self.cipher_entry = tk.Entry(master,
+    #                                  textvariable=self.ciphertext, width=80, font=FONT)
+    #     self.cipher_entry.grid(row=2, column=1, padx=20)
+    #     self.decrypt_button = tk.Button(master, text="Decrypt",
+    #                                     command=lambda: self.decrypt_callback(), font=FONT).grid(row=2, column=2)
+    #     self.cipher_clear = tk.Button(master, text="Clear",
+    #                                   command=lambda: self.clear('cipher'), font=FONT).grid(row=2, column=3)
+
+    # def clear(self, str_val):
+    #     if str_val == 'cipher':
+    #         self.cipher_entry.delete(0, 'end')
+    #     elif str_val == 'plain':
+    #         self.plain_entry.delete(0, 'end')
+    
+    # def encrypt_callback(self):
+    #     ciphertext = self.Encrypt_Message(self.plain_entry.get())
+    #     self.cipher_entry.delete(0, tk.END)
+    #     self.cipher_entry.insert(0, ciphertext)
+
+    # def decrypt_callback(self):
+    #     plaintext = self.Index_Of_Coincidence(self.cipher_entry.get())
+    #     self.plain_entry.delete(0, tk.END)
+    #     self.plain_entry.insert(0, plaintext)
+        
+        
 
     """
     $$$$$$\ $$\   $$\         $$\   $$\          $$$$$$\  $$\   $$\ $$$$$$$$\ 
@@ -145,7 +149,7 @@ class Vigenere:
     
 
     def setOperation(self, **params):
-
+            
         if params["operation"] == 'Encrypt':
             self.Encrypt = True
             print("\nWe are Encrypting:\n")
@@ -159,7 +163,7 @@ class Vigenere:
             self.Index_Of_Coincidence(**params)
 
 
-
+    
     """
     
         $$$$$$$$\                                                    $$\     
@@ -482,7 +486,7 @@ class Vigenere:
                 print()
                 print("Decrypted to:", self.Decrypted)
                 print("Encryption Key:", self.EncryptionKey)
-
+                                
                 answer = ""
 
                 try:
@@ -503,8 +507,8 @@ class Vigenere:
                         
                 except:
                     print("Please enter either Y or N")
-
-
+                   
+                    
     """
      $$$$$$\                                                                                
     $$  __$$\                                                                               
@@ -655,11 +659,10 @@ def mykwargs(argv):
 if __name__=='__main__':
     """
     Main block
-    """
-    root = tk.Tk()
+    """    
+    V1 = Vigenere()    
     
-    V1 = Vigenere(root)
-
+    
     argv = sys.argv[1:]                     # strip file name (main.py) out of args
 
     args,program_params = mykwargs(argv)
@@ -682,10 +685,12 @@ if __name__=='__main__':
             Additionally, there are examples at the top of the code.
     """
 
+
     try:
 
         tic = time.perf_counter()
-
+        
+        
         V1.setIn_N_Out(**program_params)
         V1.setOperation(**program_params)
         toc = time.perf_counter()
@@ -700,5 +705,5 @@ if __name__=='__main__':
         print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
         print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
         sys.exit()
-        
-    root.mainloop()
+    
+    # V1.mainloop()

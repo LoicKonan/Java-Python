@@ -2,13 +2,13 @@ import tkinter as tk
 
 FONT = ("calbri", 20, "bold")
 
-
-class CaesarCipherGUI:
+class Vigenere_GUI:
     def __init__(self, master):
-        master.title("Caesar Cipher GUI")
+        master.title("Byron Dowling & Loic Konan \n Vigenère Cipher")
         self.plaintext = tk.StringVar(master, value="")
         self.ciphertext = tk.StringVar(master, value="")
         self.key = tk.IntVar(master)
+
 
         # Plaintext controls
         self.plain_label = tk.Label(master, text="Plaintext", fg="green", font=FONT).grid(row=0, column=0)
@@ -19,11 +19,6 @@ class CaesarCipherGUI:
                                         command=lambda: self.encrypt_callback(), font=FONT).grid(row=0, column=2)
         self.plain_clear = tk.Button(master, text="Clear",
                                      command=lambda: self.clear('plain'), font=FONT).grid(row=0, column=3)
-
-        # Key controls
-        self.key_label = tk.Label(master, text="Key", font=FONT).grid(row=1, column=0)
-        self.key_entry = tk.Entry(master, textvariable=self.key, width=10, font=FONT).grid(row=1, column=1,
-                                                                                           sticky=tk.W, padx=20)
 
         # Ciphertext controls
         self.cipher_label = tk.Label(master, text="Ciphertext", fg="red", font=FONT).grid(row=2, column=0)
@@ -41,37 +36,57 @@ class CaesarCipherGUI:
         elif str_val == 'plain':
             self.plain_entry.delete(0, 'end')
 
-    def get_key(self):
-        try:
-            key_val = self.key.get()
-            return key_val
-        except tk.TclError:
-            pass
+   
 
     def encrypt_callback(self):
-        key = self.get_key()
         ciphertext = encrypt(self.plain_entry.get(), key)
         self.cipher_entry.delete(0, tk.END)
         self.cipher_entry.insert(0, ciphertext)
 
     def decrypt_callback(self):
-        key = self.get_key()
         plaintext = decrypt(self.cipher_entry.get(), key)
         self.plain_entry.delete(0, tk.END)
         self.plain_entry.insert(0, plaintext)
 
 
-def encrypt(plaintext, key):
-    ciphertext = ""
-    for char in plaintext.upper():
-        if char.isalpha():
-            ciphertext += chr((ord(char) + key - 65) % 26 + 65)
-        else:
-            ciphertext += char
-    return ciphertext
+def Encrypt_Message(self, **params):
+    
+        with open(self.Input,'r') as f:
+            self.Plaintext = f.read()
+
+        msg = self.Plaintext
+        msg = msg.upper()
+        crypt_key = params.get("encryption_key", None)
+        print("Plaintext:", msg)
+        print("Encryption Key:", crypt_key)
+        
+        j = 0
+        result = ""
+        for i in range(len(msg)):
+
+            if (j >= len(crypt_key)):
+
+                j = 0
+
+            if msg[i] == " ":
+
+                result += " "
+                continue
+
+            else:
+
+                letter = (ord(msg[i]) + ord(crypt_key[j])) % 26
+                letter += ord('A')
+                result += chr(letter)
+                j += 1
+
+        print()
+        print("New Encrypted Message is:", result, "\n")
+        f.close()
+        # return ciphertext
 
 
-def decrypt(ciphertext, key):
+def decrypt(ciphertext):
     plaintext = ""
     for char in ciphertext.upper():
         if char.isalpha():
@@ -83,5 +98,5 @@ def decrypt(ciphertext, key):
 
 if __name__ == "__main__":
     root = tk.Tk()
-    caesar = CaesarCipherGUI(root)
+    Vigenere = Vigenere_GUI(root)
     root.mainloop()

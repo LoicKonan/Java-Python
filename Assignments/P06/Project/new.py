@@ -39,7 +39,6 @@ class Vigenere:
   
 
     def setIn_N_Out(self):
-
         try:
             Operation = input("Are we Encrypting or Decrypting?")
 
@@ -343,9 +342,9 @@ class Vigenere:
    
 
 
-        #####################################
-        ###############  GUI  ###############
-        #####################################
+    #####################################
+    ###############  GUI  ###############
+    #####################################
 
 class Vigenere_GUI(Vigenere):
     

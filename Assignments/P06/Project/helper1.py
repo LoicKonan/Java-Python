@@ -13,7 +13,7 @@ root = Tk()
 root.geometry("1200x6000")
 
 # setting up the title of window
-root.title("Message Encryption and Decryption")
+root.title("Byron Dowling & Loic Konan \n Vigenère Cipher")
 
 Tops = Frame(root, width = 1600, relief = SUNKEN)
 Tops.pack(side = TOP)
@@ -53,9 +53,9 @@ def qExit():
 def Reset():
 	rand.set("")
 	Msg.set("")
+	key.set("")
 	mode.set("")
 	Result.set("")
-
 
 # labels
 lblMsg = Label(f1, font = ('arial', 16, 'bold'),
@@ -64,10 +64,21 @@ lblMsg = Label(f1, font = ('arial', 16, 'bold'),
 lblMsg.grid(row = 1, column = 0)
 
 txtMsg = Entry(f1, font = ('arial', 16, 'bold'),
-		textvariable = Msg, bd = 10, insertwidth = 20,
+		textvariable = Msg, bd = 10, insertwidth = 4,
 				bg = "powder blue", justify = 'right')
 				
 txtMsg.grid(row = 1, column = 1)
+
+lblkey = Label(f1, font = ('arial', 16, 'bold'),
+			text = "KEY", bd = 16, anchor = "w")
+			
+lblkey.grid(row = 2, column = 0)
+
+txtkey = Entry(f1, font = ('arial', 16, 'bold'),
+		textvariable = key, bd = 10, insertwidth = 4,
+				bg = "powder blue", justify = 'right')
+				
+txtkey.grid(row = 2, column = 1)
 
 lblmode = Label(f1, font = ('arial', 16, 'bold'),
 		text = "MODE(e for encrypt, d for decrypt)",
@@ -82,7 +93,7 @@ txtmode = Entry(f1, font = ('arial', 16, 'bold'),
 txtmode.grid(row = 3, column = 1)
 
 lblService = Label(f1, font = ('arial', 16, 'bold'),
-			text = "The Result", bd = 16, anchor = "w")
+			text = "The Result-", bd = 16, anchor = "w")
 			
 lblService.grid(row = 2, column = 2)
 
@@ -92,9 +103,9 @@ txtService = Entry(f1, font = ('arial', 16, 'bold'),
 						
 txtService.grid(row = 2, column = 3)
 
-
 # Vigenère cipher
 import base64
+
 # Function to encode
 def encode(key, clear):
 	enc = []
@@ -125,7 +136,6 @@ def decode(key, enc):
 def Ref():
 	print("Message= ", (Msg.get()))
 
-
 	clear = Msg.get()
 	k = key.get()
 	m = mode.get()
@@ -135,12 +145,10 @@ def Ref():
 	else:
 		Result.set(decode(k, clear))
 
-
-
 # Show message button
 btnTotal = Button(f1, padx = 16, pady = 8, bd = 16, fg = "black",
 						font = ('arial', 16, 'bold'), width = 10,
-					text = "Show Message", bg = "powder blue",
+					text = "Show Message", bg = "orange",
 						command = Ref).grid(row = 7, column = 1)
 
 # Reset button

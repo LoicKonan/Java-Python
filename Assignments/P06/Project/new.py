@@ -42,12 +42,13 @@ class vigenereGui:
         elif str_val == 'plain':
             self.plain_entry.delete(0, 'end')
 
-    # def get_key(self):
-    #     try:
-    #         key_val = self.key.get()
-    #         return key_val
-    #     except tk.TclError:
-    #         pass
+
+    def get_key(self):
+        try:
+            key_val = self.key.get()
+            return key_val
+        except tk.TclError:
+            pass
     
 
     def encrypt_callback(self):

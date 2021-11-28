@@ -28,7 +28,7 @@ f1.pack(side = LEFT)
 localtime = time.asctime(time.localtime(time.time()))
 
 lblInfo = Label(Tops, font = ('helvetica', 50, 'bold'),
-		text = "SECRET MESSAGING \n Vigenère cipher",
+		text = "Byron Dowling & Loic Konan \n Vigenère Cipher",
 					fg = "Black", bd = 10, anchor='w')
 					
 lblInfo.grid(row = 0, column = 0)
@@ -53,22 +53,9 @@ def qExit():
 def Reset():
 	rand.set("")
 	Msg.set("")
-	key.set("")
 	mode.set("")
 	Result.set("")
 
-
-# reference
-lblReference = Label(f1, font = ('arial', 16, 'bold'),
-				text = "Name:", bd = 16, anchor = "w")
-				
-lblReference.grid(row = 0, column = 0)
-
-txtReference = Entry(f1, font = ('arial', 16, 'bold'),
-			textvariable = rand, bd = 10, insertwidth = 4,
-						bg = "powder blue", justify = 'right')
-						
-txtReference.grid(row = 0, column = 1)
 
 # labels
 lblMsg = Label(f1, font = ('arial', 16, 'bold'),
@@ -81,17 +68,6 @@ txtMsg = Entry(f1, font = ('arial', 16, 'bold'),
 				bg = "powder blue", justify = 'right')
 				
 txtMsg.grid(row = 1, column = 1)
-
-lblkey = Label(f1, font = ('arial', 16, 'bold'),
-			text = "KEY", bd = 16, anchor = "w")
-			
-lblkey.grid(row = 2, column = 0)
-
-txtkey = Entry(f1, font = ('arial', 16, 'bold'),
-		textvariable = key, bd = 10, insertwidth = 4,
-				bg = "powder blue", justify = 'right')
-				
-txtkey.grid(row = 2, column = 1)
 
 lblmode = Label(f1, font = ('arial', 16, 'bold'),
 		text = "MODE(e for encrypt, d for decrypt)",

@@ -44,7 +44,7 @@ FONT = ("calbri", 20, "bold")
 
 class Vigenere:
 
-    def __init__(self, input_file=None, output_file=None):
+    def __init__(self, input_file = None, output_file = None):
 
         if not input_file is None:
 
@@ -70,7 +70,7 @@ class Vigenere:
         self.highest = None
 
         ## List to keep track of the different keys to test
-        self.KeyInfo = []
+        self.KeyInfo =  []
         self.KeyOrder = []
 
     

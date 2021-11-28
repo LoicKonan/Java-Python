@@ -56,6 +56,7 @@ class Vigenere:
         self.key = tk.IntVar(master)
 
 
+
         # Plaintext controls
         self.plain_label = tk.Label(master, text="Plaintext", fg="green", font=FONT).grid(row=0, column=0)
         self.plain_entry = tk.Entry(master,
@@ -643,7 +644,8 @@ if __name__=='__main__':
     """
     Main block
     """
-    V1 = Vigenere()
+    root = tk.Tk()
+    V1 = Vigenere(root)
 
     argv = sys.argv[1:]                     # strip file name (main.py) out of args
 
@@ -683,3 +685,6 @@ if __name__=='__main__':
         print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
         print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
         sys.exit()
+        
+        
+    root.mainloop()

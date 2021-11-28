@@ -2,61 +2,23 @@ import sys
 import copy
 import time
 
-
 import tkinter as tk
 
 FONT = ("calbri", 20, "bold")
 
-class Vigenere_GUI:
-    def __init__(self, master):
-        master.title("Byron Dowling & Loic Konan \n Vigenère Cipher")
-        self.plaintext = tk.StringVar(master, value="")
-        self.ciphertext = tk.StringVar(master, value="")
-        self.key = tk.IntVar(master)
 
+class Vigenere:
+    def __init__(self, input_file=None, output_file=None):
 
-        # Plaintext controls
-        self.plain_label = tk.Label(master, text="Plaintext", fg="green", font=FONT).grid(row=0, column=0)
-        self.plain_entry = tk.Entry(master,
-                                    textvariable=self.plaintext, width=50, font=FONT)
-        self.plain_entry.grid(row=0, column=1, padx=20)
-        self.encrypt_button = tk.Button(master, text="Encrypt",
-                                        command=lambda: self.encrypt_callback(), font=FONT).grid(row=0, column=2)
-        self.plain_clear = tk.Button(master, text="Clear",
-                                     command=lambda: self.clear('plain'), font=FONT).grid(row=0, column=3)
+        if not input_file is None:
 
-        # Ciphertext controls
-        self.cipher_label = tk.Label(master, text="Ciphertext", fg="red", font=FONT).grid(row=2, column=0)
-        self.cipher_entry = tk.Entry(master,
-                                     textvariable=self.ciphertext, width=50, font=FONT)
-        self.cipher_entry.grid(row=2, column=1, padx=20)
-        self.decrypt_button = tk.Button(master, text="Decrypt",
-                                        command=lambda: self.decrypt_callback(), font=FONT).grid(row=2, column=2)
-        self.cipher_clear = tk.Button(master, text="Clear",
-                                      command=lambda: self.clear('cipher'), font=FONT).grid(row=2, column=3)
+            self.Input = input_file
 
-        self.tme_label = tk.Label(master, text="Time", fg="red", font=FONT).grid(row=2, column=0)
+        if not output_file is None:
 
+            self.output = output_file
 
-    def clear(self, str_val):
-        if str_val == 'cipher':
-            self.cipher_entry.delete(0, 'end')
-        elif str_val == 'plain':
-            self.plain_entry.delete(0, 'end')
-
-
-    def encrypt_callback(self):
-        ciphertext = encrypt(self.plain_entry.get(), key)
-        self.cipher_entry.delete(0, tk.END)
-        self.cipher_entry.insert(0, ciphertext)
-
-    def decrypt_callback(self):
-        plaintext = decrypt(self.cipher_entry.get(), key)
-        self.plain_entry.delete(0, tk.END)
-        self.plain_entry.insert(0, plaintext)
-
-
-     ## Variables used to keep track of the before and after message/s
+        ## Variables used to keep track of the before and after message/s
         self.Plaintext = None
         self.EncryptionKey = None
         self.CipherText = None
@@ -74,7 +36,7 @@ class Vigenere_GUI:
         ## List to keep track of the different keys to test
         self.KeyInfo  = []
         self.KeyOrder = []
-
+  
 
     def setIn_N_Out(self):
 
@@ -118,6 +80,7 @@ class Vigenere_GUI:
         else:
 
             self.Index_Of_Coincidence()
+
 
 
     def Encrypt_Message(self):
@@ -164,6 +127,7 @@ class Vigenere_GUI:
             "SubStrings": []
         }
 
+       
         min_key_length = 2
         max_key_length = 16
 
@@ -255,7 +219,7 @@ class Vigenere_GUI:
         Final_IOC = Result / Stack_Size
         print("Final IOC is:", Final_IOC)
         return Final_IOC
-
+                    
 
     def Dictionary_Attack(self):
 
@@ -331,7 +295,7 @@ class Vigenere_GUI:
                         
                 except:
                     print("Please enter either Y or N")
-
+                    
 
     def Score_Results(self, stuff, potkey):
 
@@ -376,18 +340,88 @@ class Vigenere_GUI:
                 self.highest = Result
                 self.Decrypted = stuff
                 self.EncryptionKey = potkey
+   
+
+
+        #####################################
+        ###############  GUI  ###############
+        #####################################
+
+class Vigenere_GUI(Vigenere):
+    
+    def __init__(self, master):
+        master.title("Byron Dowling & Loic Konan \n Vigenère Cipher")
+        self.plaintext = tk.StringVar(master, value="")
+        self.ciphertext = tk.StringVar(master, value="")
+        self.key = tk.IntVar(master)
+
+        # Plaintext controls
+        self.plain_label = tk.Label(master, text="Plaintext", fg="green", font=FONT).grid(row=0, column=0)
+        self.plain_entry = tk.Entry(master,
+                                    textvariable=self.plaintext, width=50, font=FONT)
+        self.plain_entry.grid(row=0, column=1, padx=20)
+        self.encrypt_button = tk.Button(master, text="Encrypt",
+                                        command=lambda: self.encrypt_callback(), font=FONT).grid(row=0, column=2)
+        self.plain_clear = tk.Button(master, text="Clear",
+                                     command=lambda: self.clear('plain'), font=FONT).grid(row=0, column=3)
+
+        # Key controls
+        self.key_label = tk.Label(master, text="Key", font=FONT).grid(row=1, column=0)
+        self.key_entry = tk.Entry(master, textvariable=self.key, width=10, font=FONT).grid(row=1, column=1,
+                                                                                           sticky=tk.W, padx=20)
+
+        # Ciphertext controls
+        self.cipher_label = tk.Label(master, text="Ciphertext", fg="red", font=FONT).grid(row=2, column=0)
+        self.cipher_entry = tk.Entry(master,
+                                     textvariable=self.ciphertext, width=50, font=FONT)
+        self.cipher_entry.grid(row=2, column=1, padx=20)
+        self.decrypt_button = tk.Button(master, text="Decrypt",
+                                        command=lambda: self.decrypt_callback(), font=FONT).grid(row=2, column=2)
+        self.cipher_clear = tk.Button(master, text="Clear",
+                                      command=lambda: self.clear('cipher'), font=FONT).grid(row=2, column=3)
+
+    def clear(self, str_val):
+        if str_val == 'cipher':
+            self.cipher_entry.delete(0, 'end')
+        elif str_val == 'plain':
+            self.plain_entry.delete(0, 'end')
+
+    def get_key(self):
+        try:
+            key_val = self.key.get()
+            return key_val
+        except tk.TclError:
+            pass
+
+
+    def encrypt_callback(self):
+        key = self.get_key()
+        ciphertext = Vigenere.Encrypt_Message(self.plain_entry.get(), key)
+        self.cipher_entry.delete(0, tk.END)
+        self.cipher_entry.insert(0, ciphertext)
+
+    def decrypt_callback(self):
+        key = self.get_key()
+        plaintext = Vigenere.Index_Of_Coincidence(self.cipher_entry.get(), key)
+        self.plain_entry.delete(0, tk.END)
+        self.plain_entry.insert(0, plaintext)
+
 
 
 if __name__ == "__main__":
+    
+    
     root = tk.Tk()
-    V1 = Vigenere_GUI(root)
+    V1 = Vigenere_GUI(root)    
     
     t1 = time.perf_counter()
 
     V1.setIn_N_Out()
     V1.getPath()
 
+
     t2 = time.perf_counter()
 
     print(f"Cipher cracked in: {t2-t1:0.4f} seconds")
+    
     root.mainloop()

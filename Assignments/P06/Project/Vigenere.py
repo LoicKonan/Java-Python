@@ -2,16 +2,6 @@ import sys
 import copy
 import time
 
-import tkinter as tk
-
-FONT = ("calbri", 20, "bold")
-
-
-from tkinter import *
-
-FONT = ("calbri", 20, "bold")
-
-
 """
     ***Examples terminal commands to run the program***
         
@@ -48,35 +38,15 @@ FONT = ("calbri", 20, "bold")
 
 class Vigenere:
 
-    def __init__(self, master):
+    def __init__(self, input_file=None, output_file=None):
 
-        master.title("Byron Dowling & Loic Konan \n Vigenère Cipher")
-        self.plaintext = tk.StringVar(master, value="")
-        self.ciphertext = tk.StringVar(master, value="")
-        self.key = tk.IntVar(master)
+        if not input_file is None:
 
+            self.Input = input_file
 
+        if not output_file is None:
 
-        # Plaintext controls
-        self.plain_label = tk.Label(master, text="Plaintext", fg="green", font=FONT).grid(row=0, column=0)
-        self.plain_entry = tk.Entry(master,
-                                    textvariable=self.plaintext, width=50, font=FONT)
-        self.plain_entry.grid(row=0, column=1, padx=20)
-        self.encrypt_button = tk.Button(master, text="Encrypt",
-                                        command=lambda: self.encrypt_callback(), font=FONT).grid(row=0, column=2)
-        self.plain_clear = tk.Button(master, text="Clear",
-                                     command=lambda: self.clear('plain'), font=FONT).grid(row=0, column=3)
-
-
-        # Ciphertext controls
-        self.cipher_label = tk.Label(master, text="Ciphertext", fg="red", font=FONT).grid(row=2, column=0)
-        self.cipher_entry = tk.Entry(master,
-                                     textvariable=self.ciphertext, width=50, font=FONT)
-        self.cipher_entry.grid(row=2, column=1, padx=20)
-        self.decrypt_button = tk.Button(master, text="Decrypt",
-                                        command=lambda: self.decrypt_callback(), font=FONT).grid(row=2, column=2)
-        self.cipher_clear = tk.Button(master, text="Clear",
-                                      command=lambda: self.clear('cipher'), font=FONT).grid(row=2, column=3)
+            self.output = output_file
 
         ## Variables used to keep track of the before and after message/s
         self.Plaintext = None
@@ -94,7 +64,7 @@ class Vigenere:
         self.highest = None
 
         ## List to keep track of the different keys to test
-        self.KeyInfo =  []
+        self.KeyInfo = []
         self.KeyOrder = []
 
     
@@ -644,17 +614,20 @@ if __name__=='__main__':
     """
     Main block
     """
-    root = tk.Tk()
-    V1 = Vigenere(root)
+    V1 = Vigenere()
 
     argv = sys.argv[1:]                     # strip file name (main.py) out of args
 
     args,program_params = mykwargs(argv)
 
-   
-   
-    
-    
+    # t1 = time.perf_counter()
+    # V1.setIn_N_Out(**program_params)
+    # V1.setOperation(**program_params)
+    # t2 = time.perf_counter()
+
+    # print(f"Cipher cracked in: {t2-t1:0.4f} seconds")
+
+
     """
             This Try and Except block is mainly used so that the user
             can get a feel for how to run the program since it is set
@@ -671,8 +644,6 @@ if __name__=='__main__':
 
         V1.setIn_N_Out(**program_params)
         V1.setOperation(**program_params)
-        
-        
         toc = time.perf_counter()
 
         print(f"Operation Completed in {toc-tic:0.4f} Seconds")
@@ -685,6 +656,3 @@ if __name__=='__main__':
         print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
         print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
         sys.exit()
-        
-        
-    root.mainloop()

@@ -7,8 +7,6 @@ import tkinter as tk
 FONT = ("calbri", 20, "bold")
 
 
-
-
 """
     ***Examples terminal commands to run the program***
         
@@ -63,11 +61,6 @@ class Vigenere:
         self.plain_clear = tk.Button(master, text="Clear",
                                      command=lambda: self.clear('plain'), font=FONT).grid(row=0, column=3)
 
-        # # Key controls
-        # self.key_label = tk.Label(master, text="Key", font=FONT).grid(row=1, column=0)
-        # self.key_entry = tk.Entry(master, textvariable=self.key, width=10, font=FONT).grid(row=1, column=1,
-        #                                                                                    sticky=tk.W, padx=20)
-
         # Ciphertext controls
         self.cipher_label = tk.Label(master, text="Ciphertext", fg="red", font=FONT).grid(row=2, column=0)
         self.cipher_entry = tk.Entry(master,
@@ -105,23 +98,14 @@ class Vigenere:
             self.plain_entry.delete(0, 'end')
 
 
-    # def get_key(self):
-    #     try:
-    #         key_val = self.key.get()
-    #         return key_val
-    #     except tk.TclError:
-    #         pass
-    
 
-    def encrypt_callback(self):
-        key = self.get_key()
-        ciphertext = encrypt(self.plain_entry.get(), key)
+    def encrypt_callback(self, **params):
+        ciphertext = self.Encrypt_Message(**params)
         self.cipher_entry.delete(0, tk.END)
         self.cipher_entry.insert(0, ciphertext)
 
-    def decrypt_callback(self):
-        key = self.get_key()
-        plaintext = decrypt(self.cipher_entry.get(), key)
+    def decrypt_callback(self, **params):
+        plaintext = self.Index_Of_Coincidence(**params)
         self.plain_entry.delete(0, tk.END)
         self.plain_entry.insert(0, plaintext)
 
@@ -380,7 +364,6 @@ class Vigenere:
                         frequency[index] += 1
 
                 index += 1
-
 
             for num in frequency:
 

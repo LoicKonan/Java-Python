@@ -64,7 +64,7 @@ class Vigenere:
         self.highest = None
 
         ## List to keep track of the different keys to test
-        self.KeyInfo = []
+        self.KeyInfo  = []
         self.KeyOrder = []
 
     
@@ -105,7 +105,6 @@ class Vigenere:
         except:
             print("Invalid input please try again")
 
-
         try:
 
             if self.Encrypt == True:
@@ -121,7 +120,7 @@ class Vigenere:
                 self.Encrypted = CT
 
         except:
-            print("File not Found Error")
+            print("Error")
 
 
         
@@ -171,6 +170,7 @@ class Vigenere:
         crypt_key = self.EncryptionKey
         print("Plaintext:", msg)
         print("Encryption Key:", crypt_key)
+        
         
         j = 0
         result = ""

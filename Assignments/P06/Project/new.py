@@ -122,9 +122,6 @@ class Vigenere_GUI:
 
     def Encrypt_Message(self):
 
-        # with open(self.Input,'r') as f:
-        #     self.Plaintext = f.read()
-
         msg = self.Plaintext
         msg = msg.upper()
         crypt_key = self.EncryptionKey
@@ -166,9 +163,6 @@ class Vigenere_GUI:
             "Key_Length": 0,
             "SubStrings": []
         }
-
-        # with open(self.Input,'r') as f:
-        #     self.Encrypted = f.read()
 
         min_key_length = 2
         max_key_length = 16

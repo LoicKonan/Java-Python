@@ -117,6 +117,7 @@ def encode(key, clear):
 					
 		enc.append(enc_c)
 		
+  
 	return base64.urlsafe_b64encode("".join(enc).encode()).decode()
 
 # Function to decode

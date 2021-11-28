@@ -99,12 +99,12 @@ class Vigenere:
             self.plain_entry.delete(0, 'end')
     
     def encrypt_callback(self):
-        # ciphertext = encrypt(self.plain_entry.get(), key)
+        ciphertext = self.Encrypt_Message(self.plain_entry.get())
         self.cipher_entry.delete(0, tk.END)
         self.cipher_entry.insert(0, ciphertext)
 
     def decrypt_callback(self):
-        # plaintext = decrypt(self.cipher_entry.get(), key)
+        plaintext = self.Index_Of_Coincidence(self.cipher_entry.get())
         self.plain_entry.delete(0, tk.END)
         self.plain_entry.insert(0, plaintext)
 
@@ -382,8 +382,6 @@ class Vigenere:
         return Final_IOC
 
 
-
-
     """
     $$$$$$$\  $$\             $$\     $$\                                                         
     $$  __$$\ \__|            $$ |    \__|                                                        
@@ -654,7 +652,9 @@ if __name__=='__main__':
     """
     Main block
     """
-    V1 = Vigenere()
+    root = tk.Tk()
+    
+    V1 = Vigenere(root)
 
     argv = sys.argv[1:]                     # strip file name (main.py) out of args
 
@@ -696,3 +696,5 @@ if __name__=='__main__':
         print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
         print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
         sys.exit()
+        
+    root.mainloop()

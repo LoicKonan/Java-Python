@@ -16,6 +16,7 @@ import time
         Plaintext Message: a group of crows is called a murder
         Key: Vixen
 
+
         Repeated Key:      V IXENV IX ENVIX EN VIXENV I XENVIX
         Plaintext Message: a group of crows is called a murder
         Encrypted Message: V OOSJK WC GEKEP MF XIIPRY I JCEYMO
@@ -133,7 +134,6 @@ class Vigenere:
         else:
 
             self.Index_Of_Coincidence()
-
 
 
     """

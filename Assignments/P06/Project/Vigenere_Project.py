@@ -2,12 +2,6 @@ import sys
 import copy
 import time
 
-
-from tkinter import *
-
-FONT = ("calbri", 20, "bold")
-
-
 """
     ***Examples terminal commands to run the program***
         
@@ -44,7 +38,7 @@ FONT = ("calbri", 20, "bold")
 
 class Vigenere:
 
-    def __init__(self, input_file = None, output_file = None):
+    def __init__(self, input_file=None, output_file=None):
 
         if not input_file is None:
 
@@ -70,7 +64,7 @@ class Vigenere:
         self.highest = None
 
         ## List to keep track of the different keys to test
-        self.KeyInfo =  []
+        self.KeyInfo = []
         self.KeyOrder = []
 
     
@@ -85,6 +79,8 @@ class Vigenere:
     \______|\__|  \__|        \__|  \__|         \______/  \______/    \__|   
 
 
+                                                    BURGERS
+
             This method will receives the **params dictionary object and will
             strip out the input and output file destinations that are sent at
             run time and set those values.
@@ -95,30 +91,49 @@ class Vigenere:
             Encrypt or Decrypt.                                                                                                                                               
     """  
 
-    def setIn_N_Out(self,**params):
+    def setIn_N_Out(self):
 
         try:
-            self.Input = params.get("input_file",None)
-            self.Output = params.get("output_file",None)
+            Operation = input("Are we Encrypting or Decrypting?")
+
+            if Operation == "Encrypting":
+                self.Encrypt = True
+
+            elif Operation == "Decrypting":
+                self.Decrypt = True
+
+        except:
+            print("Invalid input please try again")
+
+
+        try:
+
+            if self.Encrypt == True:
+
+                PT = input("Enter the plaintext message to be encrypted: ")
+                self.Plaintext = PT
+
+                self.EncryptionKey = input("Enter the encryption key: ")
+                self.EncryptionKey = self.EncryptionKey.upper()
+
+            else:
+                CT = input("Enter the Vigenere message to be decrypted: ")
+                self.Encrypted = CT
 
         except:
             print("File not Found Error")
 
-    
 
-    def setOperation(self, **params):
-
-        if params["operation"] == 'Encrypt':
-            self.Encrypt = True
-            print("\nWe are Encrypting:\n")
-            self.Encrypt_Message(**params)
-            
         
+    def getPath(self):
+
+        if self.Encrypt == True:
+
+            self.Encrypt_Message()
+
         else:
-            self.Decrypt = True
-            self.Encrypt = False
-            print("\nWe are Decrypting")
-            self.Index_Of_Coincidence(**params)
+
+            self.Index_Of_Coincidence()
 
 
 
@@ -146,14 +161,14 @@ class Vigenere:
             instead of subtracting the key % 26 we're adding.
     """
 
-    def Encrypt_Message(self, **params):
+    def Encrypt_Message(self):
 
-        with open(self.Input,'r') as f:
-            self.Plaintext = f.read()
+        # with open(self.Input,'r') as f:
+        #     self.Plaintext = f.read()
 
         msg = self.Plaintext
         msg = msg.upper()
-        crypt_key = params.get("encryption_key", None)
+        crypt_key = self.EncryptionKey
         print("Plaintext:", msg)
         print("Encryption Key:", crypt_key)
         
@@ -179,7 +194,7 @@ class Vigenere:
 
         print()
         print("New Encrypted Message is:", result, "\n")
-        f.close()
+        # f.close()
 
 
 
@@ -207,7 +222,7 @@ class Vigenere:
     """
 
 
-    def Index_Of_Coincidence(self, **params):
+    def Index_Of_Coincidence(self):
 
         print("IOC Method")
         
@@ -217,8 +232,8 @@ class Vigenere:
             "SubStrings": []
         }
 
-        with open(self.Input,'r') as f:
-            self.Encrypted = f.read()
+        # with open(self.Input,'r') as f:
+        #     self.Encrypted = f.read()
 
         min_key_length = 2
         max_key_length = 16
@@ -259,7 +274,7 @@ class Vigenere:
         ## Sorting the dictionary of objects by highest IOC value
         self.KeyOrder = sorted(self.KeyInfo, key = lambda i: i['IOC'], reverse=True)
 
-        self.Dictionary_Attack(**params)
+        self.Dictionary_Attack()
 
 
     """
@@ -386,7 +401,7 @@ class Vigenere:
             method and determine the result. 
     """
 
-    def Dictionary_Attack(self, **params):
+    def Dictionary_Attack(self):
 
         # with open("Dictionary_Words.txt", "r") as Fin:
             
@@ -453,15 +468,13 @@ class Vigenere:
                     print("Was Decryption successful? Y/N")
                     answer = str(input())
 
-                    # Capitalize the user input and compare.
-                    if answer.upper() == 'Y':
+                    if answer == 'Y':
 
                         print("Encryption successful")
                         self.Cracked = True
                         break
-                    
-                    # Capitalize the user input and compare.
-                    if answer.upper() == 'N':
+
+                    if answer == 'N':
 
                         continue
                         
@@ -552,56 +565,6 @@ class Vigenere:
 
 
 
-"""
-
-    $$\                                                             
-    $$ |                                                            
-    $$ |  $$\ $$\  $$\  $$\  $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$\ 
-    $$ | $$  |$$ | $$ | $$ | \____$$\ $$  __$$\ $$  __$$\ $$  _____|
-    $$$$$$  / $$ | $$ | $$ | $$$$$$$ |$$ |  \__|$$ /  $$ |\$$$$$$\  
-    $$  _$$<  $$ | $$ | $$ |$$  __$$ |$$ |      $$ |  $$ | \____$$\ 
-    $$ | \$$\ \$$$$$\$$$$  |\$$$$$$$ |$$ |      \$$$$$$$ |$$$$$$$  |
-    \__|  \__| \_____\____/  \_______|\__|       \____$$ |\_______/ 
-                                                $$\   $$ |          
-                                                \$$$$$$  |          
-                                                \______/      
-
-    Helper Function to strip out key arguments that are passed in 
-    when running the program            
-
-    Processes argv list into plain args (list) and kwargs (dict).
-    Just easier than using a library like argparse for small things.
-    Example:
-        python file.py arg1 arg2 arg3=val1 arg4=val2 -arg5 -arg6 --arg7
-        Would create:
-            args[arg1, arg2, -arg5, -arg6, --arg7]
-            kargs{arg3 : val1, arg4 : val2}
-
-        Params with dashes (flags) can now be processed seperately
-    Shortfalls:
-        spaces between k=v would result in bad params
-        Flags aren't handled at all. Maybe in the future but this function
-            is meant to be simple.
-    Returns:
-        tuple  (args,kargs)          
-                    
-"""
-
-
-def mykwargs(argv):
-    args = []
-    kargs = {}
-
-    for arg in argv:
-        if '=' in arg:
-            key,val = arg.split('=')
-            kargs[key] = val
-        else:
-            args.append(arg)
-    return args,kargs
-
-
-
 
 """
     $$\      $$\           $$\                 $$$$$$$\  $$\                     $$\       
@@ -617,46 +580,15 @@ def mykwargs(argv):
 
 
 if __name__=='__main__':
-    """
-    Main block
-    """
+
     V1 = Vigenere()
 
-    argv = sys.argv[1:]                     # strip file name (main.py) out of args
+    t1 = time.perf_counter()
 
-    args,program_params = mykwargs(argv)
-
-   
-   
-    
-    
-    """
-            This Try and Except block is mainly used so that the user
-            can get a feel for how to run the program since it is set
-            up to have parameters passed in via command line. If this
-            does not occur, and exception is thrown and some helpful
-            text is show so one knows how to properly run the code.
-
-            Additionally, there are examples at the top of the code.
-    """
-
-    try:
-
-        tic = time.perf_counter()
-
-        V1.setIn_N_Out(**program_params)
-        V1.setOperation(**program_params)
-        
-        
-        toc = time.perf_counter()
-
-        print(f"Operation Completed in {toc-tic:0.4f} Seconds")
+    V1.setIn_N_Out()
+    V1.getPath()
 
 
-    except:
+    t2 = time.perf_counter()
 
-        print("Looks like you're missing some parameters, here's what you need.\n")
-        print("Example run: python3 filename.py input_file=[inputfile name] output_file=[outputfile name] operation=[Encrypt or Decrypt] encryption_key=[key]\n")
-        print("Decrypt:","python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none")
-        print("Encrypt:","python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=factorial")
-        sys.exit()
+    print(f"Cipher cracked in: {t2-t1:0.4f} seconds")

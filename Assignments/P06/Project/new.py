@@ -30,6 +30,9 @@ class Vigenere_GUI:
         self.cipher_clear = tk.Button(master, text="Clear",
                                       command=lambda: self.clear('cipher'), font=FONT).grid(row=2, column=3)
 
+        self.tme_label = tk.Label(master, text="Time", fg="red", font=FONT).grid(row=2, column=0)
+
+
     def clear(self, str_val):
         if str_val == 'cipher':
             self.cipher_entry.delete(0, 'end')

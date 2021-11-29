@@ -5,7 +5,9 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [],
+      "args": [
+        ""
+      ],
       "stopAtEntry": false,
       "cwd": "c:/Users/loick/OneDrive/Cont Prog-Java-Python/Java - Python/Assignments/P06/Project",
       "environment": [],

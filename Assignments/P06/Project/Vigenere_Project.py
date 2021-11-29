@@ -121,7 +121,6 @@ class Vigenere:
         except:
             print("Error")
 
-
         
     def getPath(self):
 
@@ -135,7 +134,6 @@ class Vigenere:
 
 
     """
-    
         $$$$$$$$\                                                    $$\     
         $$  _____|                                                   $$ |    
         $$ |      $$$$$$$\   $$$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\ $$$$$$\   
@@ -216,7 +214,6 @@ class Vigenere:
 		character and then these are stored in a list and sent to the Cryptomath
 		method. After that method call is complete, the loop iterates, and the next
 		possible key length is tested.
-
     """
 
 
@@ -276,7 +273,6 @@ class Vigenere:
 
 
     """
-    
      $$$$$$\                                 $$\               $$\      $$\            $$\     $$\       
     $$  __$$\                                $$ |              $$$\    $$$ |           $$ |    $$ |      
     $$ /  \__| $$$$$$\  $$\   $$\  $$$$$$\ $$$$$$\    $$$$$$\  $$$$\  $$$$ | $$$$$$\ $$$$$$\   $$$$$$$\  
@@ -308,7 +304,6 @@ class Vigenere:
 			- http://practicalcryptography.com/cryptanalysis/text-characterisation/index-coincidence/
 
     """
-
 
     def CryptoMath(self, Slices):
     
@@ -466,13 +461,13 @@ class Vigenere:
                     print("Was Decryption successful? Y/N")
                     answer = str(input())
 
-                    if answer == 'Y':
+                    if answer.upper() == 'Y':
 
                         print("Encryption successful")
                         self.Cracked = True
                         break
 
-                    if answer == 'N':
+                    if answer.upper() == 'N':
 
                         continue
                         

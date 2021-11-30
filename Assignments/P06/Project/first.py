@@ -86,13 +86,14 @@ class Vigenere:
             self.Index_Of_Coincidence()
 
 
-    def Encrypt_Message(self):
+    def Encrypt_Message(self, plaintext, key):
 
-        msg = self.Plaintext
+        msg = plaintext
         msg = msg.upper()
-        crypt_key = self.EncryptionKey
+        crypt_key = key
         print("Plaintext:", msg)
         print("Encryption Key:", crypt_key)
+        
         
         
         j = 0
@@ -117,6 +118,7 @@ class Vigenere:
 
         print()
         print("New Encrypted Message is:", result, "\n")
+        self.Encrypted = result
         # f.close()
 
 
@@ -450,9 +452,9 @@ class Vigenere:
 
 
     def Ref(self):
-        print("Message= ", (Msg.get()))
+        print("Message= ", (self.Encrypted.get()))
 
-        clear = Msg.get()
+        clear = self.Encrypted.get()
         k = key.get()
         m = mode.get()
 

@@ -10,6 +10,39 @@ import datetime
 
 
 
+"""
+    ***Examples terminal commands to run the program***
+        
+        run = "python3 Vigenere.py input_file=ciphertext.txt output_file=decrypted.txt operation=Decrypt encryption_key=none"
+        run = "python3 Vigenere.py input_file=plaintext.txt output_file=encrypted.txt operation=Encrypt encryption_key=VIXEN"
+
+        run = "python3 Vigenere.py input_file=VCT1.txt output_file=decrypted.txt operation=Decrypt encryption_key=none"
+
+    *** Encryption Example***
+
+        Operation: Encrypt
+        Plaintext Message: a group of crows is called a murder
+        Key: Vixen
+
+
+        Repeated Key:      V IXENV IX ENVIX EN VIXENV I XENVIX
+        Plaintext Message: a group of crows is called a murder
+        Encrypted Message: V OOSJK WC GEKEP MF XIIPRY I JCEYMO
+
+
+     $$\    $$\ $$\                                                             
+     $$ |   $$ |\__|                                                            
+     $$ |   $$ |$$\  $$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\  
+     \$$\  $$  |$$ |$$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ 
+      \$$\$$  / $$ |$$ /  $$ |$$$$$$$$ |$$ |  $$ |$$$$$$$$ |$$ |  \__|$$$$$$$$ |
+       \$$$  /  $$ |$$ |  $$ |$$   ____|$$ |  $$ |$$   ____|$$ |      $$   ____|
+        \$  /   $$ |\$$$$$$$ |\$$$$$$$\ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$$\ 
+         \_/    \__| \____$$ | \_______|\__|  \__| \_______|\__|       \_______|
+                    $$\   $$ |                                                  
+                    \$$$$$$  |                                                  
+                     \______/                    
+"""
+
 class Vigenere:
 
     def __init__(self, input_file=None, output_file=None):
@@ -41,6 +74,29 @@ class Vigenere:
         self.KeyInfo  = []
         self.KeyOrder = []
 
+    
+    """
+    $$$$$$\ $$\   $$\         $$\   $$\          $$$$$$\  $$\   $$\ $$$$$$$$\ 
+    \_$$  _|$$$\  $$ |        $$$\  $$ |        $$  __$$\ $$ |  $$ |\__$$  __|
+      $$ |  $$$$\ $$ |        $$$$\ $$ |        $$ /  $$ |$$ |  $$ |   $$ |   
+      $$ |  $$ $$\$$ |$$$$$$\ $$ $$\$$ |$$$$$$\ $$ |  $$ |$$ |  $$ |   $$ |   
+      $$ |  $$ \$$$$ |\______|$$ \$$$$ |\______|$$ |  $$ |$$ |  $$ |   $$ |   
+      $$ |  $$ |\$$$ |        $$ |\$$$ |        $$ |  $$ |$$ |  $$ |   $$ |   
+    $$$$$$\ $$ | \$$ |        $$ | \$$ |         $$$$$$  |\$$$$$$  |   $$ |   
+    \______|\__|  \__|        \__|  \__|         \______/  \______/    \__|   
+
+
+                                                    BURGERS
+
+            This method will receives the **params dictionary object and will
+            strip out the input and output file destinations that are sent at
+            run time and set those values.
+
+            The next method, setOperation is immediately called afterwards and
+            will also receive a copy of **params and will strip out the value
+            operation and determine where to go next depending on if the op is
+            Encrypt or Decrypt.                                                                                                                                               
+    """  
 
     def setIn_N_Out(self):
 
@@ -73,7 +129,6 @@ class Vigenere:
         except:
             print("Error")
 
-
         
     def getPath(self):
 
@@ -86,14 +141,39 @@ class Vigenere:
             self.Index_Of_Coincidence()
 
 
-    def Encrypt_Message(self, plaintext, key):
+    """
+        $$$$$$$$\                                                    $$\     
+        $$  _____|                                                   $$ |    
+        $$ |      $$$$$$$\   $$$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\ $$$$$$\   
+        $$$$$\    $$  __$$\ $$  _____|$$  __$$\ $$ |  $$ |$$  __$$\\_$$  _|  
+        $$  __|   $$ |  $$ |$$ /      $$ |  \__|$$ |  $$ |$$ /  $$ | $$ |    
+        $$ |      $$ |  $$ |$$ |      $$ |      $$ |  $$ |$$ |  $$ | $$ |$$\ 
+        $$$$$$$$\ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$$ |$$$$$$$  | \$$$$  |
+        \________|\__|  \__| \_______|\__|       \____$$ |$$  ____/   \____/ 
+                                                $$\   $$ |$$ |               
+                                                \$$$$$$  |$$ |               
+                                                 \______/ \__|               
+    
 
-        msg = plaintext
+            Encrypt will receive a copy of **params and will use that to
+            read in the plaintext message and the encryption key that was
+            passed in and use that to encrypt the message and print the
+            result to the terminal/GUI and update the file destination.
+
+            The encrypt process is the same as the Decrypt process but
+            instead of subtracting the key % 26 we're adding.
+    """
+
+    def Encrypt_Message(self):
+
+        # with open(self.Input,'r') as f:
+        #     self.Plaintext = f.read()
+
+        msg = self.Plaintext
         msg = msg.upper()
-        crypt_key = key
+        crypt_key = self.EncryptionKey
         print("Plaintext:", msg)
         print("Encryption Key:", crypt_key)
-        
         
         
         j = 0
@@ -118,9 +198,31 @@ class Vigenere:
 
         print()
         print("New Encrypted Message is:", result, "\n")
-        self.Encrypted = result
         # f.close()
 
+
+
+    """
+                        $$$$$$\     $$$$$$\      $$$$$$\  
+                        \_$$  _|   $$  __$$\    $$  __$$\ 
+                          $$ |     $$ /  $$ |   $$ /  \__|
+                          $$ |     $$ |  $$ |   $$ |      
+                          $$ |     $$ |  $$ |   $$ |      
+                          $$ |     $$ |  $$ |   $$ |  $$\ 
+                        $$$$$$\ $$\ $$$$$$  |$$\\$$$$$$  |
+                        \______|\__|\______/ \__|\______/ 
+
+
+        This method is responsible for testing all of the different possible
+		key lengths of the key that the cipher text was encrypted with. For this
+		program, we are testing a key length of 2 all the way to a potential key
+		length of 16. The testing calculates the I.O.C value of a key length which involves 
+		splitting the cipher text into sequences according to the key length. If a key
+		length is 2, we turn the cipher text into two sequences, alternating every other
+		character and then these are stored in a list and sent to the Cryptomath
+		method. After that method call is complete, the loop iterates, and the next
+		possible key length is tested.
+    """
 
 
     def Index_Of_Coincidence(self):
@@ -133,7 +235,9 @@ class Vigenere:
             "SubStrings": []
         }
 
-      
+        # with open(self.Input,'r') as f:
+        #     self.Encrypted = f.read()
+
         min_key_length = 2
         max_key_length = 16
 
@@ -175,6 +279,39 @@ class Vigenere:
 
         self.Dictionary_Attack()
 
+
+    """
+     $$$$$$\                                 $$\               $$\      $$\            $$\     $$\       
+    $$  __$$\                                $$ |              $$$\    $$$ |           $$ |    $$ |      
+    $$ /  \__| $$$$$$\  $$\   $$\  $$$$$$\ $$$$$$\    $$$$$$\  $$$$\  $$$$ | $$$$$$\ $$$$$$\   $$$$$$$\  
+    $$ |      $$  __$$\ $$ |  $$ |$$  __$$\\_$$  _|  $$  __$$\ $$\$$\$$ $$ | \____$$\\_$$  _|  $$  __$$\ 
+    $$ |      $$ |  \__|$$ |  $$ |$$ /  $$ | $$ |    $$ /  $$ |$$ \$$$  $$ | $$$$$$$ | $$ |    $$ |  $$ |
+    $$ |  $$\ $$ |      $$ |  $$ |$$ |  $$ | $$ |$$\ $$ |  $$ |$$ |\$  /$$ |$$  __$$ | $$ |$$\ $$ |  $$ |
+    \$$$$$$  |$$ |      \$$$$$$$ |$$$$$$$  | \$$$$  |\$$$$$$  |$$ | \_/ $$ |\$$$$$$$ | \$$$$  |$$ |  $$ |
+     \______/ \__|       \____$$ |$$  ____/   \____/  \______/ \__|     \__| \_______|  \____/ \__|  \__|
+                        $$\   $$ |$$ |                                                                   
+                        \$$$$$$  |$$ |                                                                   
+                         \______/ \__|                                                                   
+    
+    
+    
+        Method is directly called from the Index of Coincidence method and receives a
+		slcies list object that has the separate slices of sequences according to the key
+        length that is being tested. The testing process involves counting the instances 
+        of letters occuring more than once in the slices instance tfrom the last method. 
+        This eventually results in an Index of Coincidence value such as: 0.048. Once 
+		completed, the IOC value is stored in a list of dictionary objects that will be
+        sorted later by this value. The highest score indicates the most "English Like"
+        and therefore that is the most likely key length to begin the dictionary attack on.
+
+		For more information on the math involved in calculating the index of coincidence,
+		please see the following references:
+
+			- https://en.wikipedia.org/wiki/Index_of_coincidence
+			- https://www.dcode.fr/index-coincidence
+			- http://practicalcryptography.com/cryptanalysis/text-characterisation/index-coincidence/
+
+    """
 
     def CryptoMath(self, Slices):
     
@@ -226,6 +363,44 @@ class Vigenere:
         print("Final IOC is:", Final_IOC)
         return Final_IOC
 
+
+
+
+    """
+    $$$$$$$\  $$\             $$\     $$\                                                         
+    $$  __$$\ \__|            $$ |    \__|                                                        
+    $$ |  $$ |$$\  $$$$$$$\ $$$$$$\   $$\  $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$\  $$\   $$\       
+    $$ |  $$ |$$ |$$  _____|\_$$  _|  $$ |$$  __$$\ $$  __$$\  \____$$\ $$  __$$\ $$ |  $$ |      
+    $$ |  $$ |$$ |$$ /        $$ |    $$ |$$ /  $$ |$$ |  $$ | $$$$$$$ |$$ |  \__|$$ |  $$ |      
+    $$ |  $$ |$$ |$$ |        $$ |$$\ $$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ |      $$ |  $$ |      
+    $$$$$$$  |$$ |\$$$$$$$\   \$$$$  |$$ |\$$$$$$  |$$ |  $$ |\$$$$$$$ |$$ |      \$$$$$$$ |      
+    \_______/ \__| \_______|   \____/ \__| \______/ \__|  \__| \_______|\__|       \____$$ |      
+                                                                                  $$\   $$ |      
+                                                                                  \$$$$$$  |      
+                                                                                    \______/       
+                             $$$$$$\    $$\     $$\                         $$\                   
+                            $$  __$$\   $$ |    $$ |                        $$ |                  
+                            $$ /  $$ |$$$$$$\ $$$$$$\    $$$$$$\   $$$$$$$\ $$ |  $$\             
+                            $$$$$$$$ |\_$$  _|\_$$  _|   \____$$\ $$  _____|$$ | $$  |            
+                            $$  __$$ |  $$ |    $$ |     $$$$$$$ |$$ /      $$$$$$  /             
+                            $$ |  $$ |  $$ |$$\ $$ |$$\ $$  __$$ |$$ |      $$  _$$<              
+                            $$ |  $$ |  \$$$$  |\$$$$  |\$$$$$$$ |\$$$$$$$\ $$ | \$$\             
+                            \__|  \__|   \____/  \____/  \_______| \_______|\__|  \__|            
+                                                                                                                                                                                                                                                                                            
+    
+    
+            Method is responsible for utilizing the results of the most likely key
+            lengths, and eventually performing a dictionary attack on the cipher.
+            This is of course assuming that the key that was used to encrypt the cipher
+            is a dictionary word. A list of words from the dictionary file are read in 
+            and then a narrowed version is created by appending words that are equal to 
+            the key length we are testing. This helps us eliminate the majority of
+            the dictionary words and limit it to only words that are of the key length.
+
+            Once this is completed, the method will brute force every shift combination
+            of this narrowed list of dictionary words and pass the result to the Score Results
+            method and determine the result. 
+    """
 
     def Dictionary_Attack(self):
 
@@ -294,19 +469,56 @@ class Vigenere:
                     print("Was Decryption successful? Y/N")
                     answer = str(input())
 
-                    if answer == 'Y':
+                    if answer.upper() == 'Y':
 
                         print("Encryption successful")
                         self.Cracked = True
                         break
 
-                    if answer == 'N':
+                    if answer.upper() == 'N':
 
                         continue
                         
                 except:
                     print("Please enter either Y or N")
 
+
+    """
+     $$$$$$\                                                                                
+    $$  __$$\                                                                               
+    $$ /  \__| $$$$$$$\  $$$$$$\   $$$$$$\   $$$$$$\                                        
+    \$$$$$$\  $$  _____|$$  __$$\ $$  __$$\ $$  __$$\                                       
+     \____$$\ $$ /      $$ /  $$ |$$ |  \__|$$$$$$$$ |                                      
+    $$\   $$ |$$ |      $$ |  $$ |$$ |      $$   ____|                                      
+    \$$$$$$  |\$$$$$$$\ \$$$$$$  |$$ |      \$$$$$$$\                                       
+    \______/  \_______| \______/ \__|       \_______|                                      
+                                                                                            
+                                                                                                                                            
+                            $$$$$$$\                                $$\   $$\               
+                            $$  __$$\                               $$ |  $$ |              
+                            $$ |  $$ | $$$$$$\   $$$$$$$\ $$\   $$\ $$ |$$$$$$\    $$$$$$$\ 
+                            $$$$$$$  |$$  __$$\ $$  _____|$$ |  $$ |$$ |\_$$  _|  $$  _____|
+                            $$  __$$< $$$$$$$$ |\$$$$$$\  $$ |  $$ |$$ |  $$ |    \$$$$$$\  
+                            $$ |  $$ |$$   ____| \____$$\ $$ |  $$ |$$ |  $$ |$$\  \____$$\ 
+                            $$ |  $$ |\$$$$$$$\ $$$$$$$  |\$$$$$$  |$$ |  \$$$$  |$$$$$$$  |
+                            \__|  \__| \_______|\_______/  \______/ \__|   \____/ \_______/ 
+                                                                                                                                                                                                                                                                            
+    
+
+            The score Results method is nearly identical to the Index of Coincidence
+            method and in fact share most of the same code. The only difference is that
+            the I.O.C method is testing key lengths are therefore is splitting the message
+            into sequences and testing each sequence. Since we are testing the whole message
+            and not key lengths, we skip the sequence splitting part and just test the 
+            message using the same math. Whichever result scores the highest is updated and
+            eventually once the process is done, ideally, the highest scoring result should be
+            the correct result and is the most English-like.
+
+            I say ideally because this caveat will be discussed in class as the I.O.C is much
+            more reliable when it has more text to work with. On larger results, this calculation
+            is bulletproof reliable. However, on shorter sample sizes, it is not always 100% and
+            in fact non-English-Like results can score higher than the actual correct result.
+    """
 
     def Score_Results(self, stuff, potkey):
 
@@ -351,8 +563,16 @@ class Vigenere:
                 self.highest = Result
                 self.Decrypted = stuff
                 self.EncryptionKey = potkey
-                        
-            
+        
+        
+        
+        
+     ###############################
+     ###########       #############   
+     ###########  GUI  #############  
+     ###########       #############   
+     ###############################   
+     
     # creating root object
     root = Tk()
 

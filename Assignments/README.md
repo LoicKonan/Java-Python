@@ -22,7 +22,6 @@
 | [18](./A18) | [A18](./A18) | [Python - Stack.](./A18)                         | :heavy_check_mark: |
 | [19](./A19) | [A19](./A19) | [Python- Queue.](./A19)                          | :heavy_check_mark: |
 | [20](./A20) | [A20](./A20) | [Python- BFS.](./A20)                            | :heavy_check_mark: |
-| [21](./A21) | [A21](./A21) | [Python- DFS.](./A21)                            | :heavy_check_mark: |
 | [22](./P01) | [P01](./P01) | [Problem Solving in Java](./P01)                 | :heavy_check_mark: |
 | [23](./P02) | [P02](./P02) | [Problem Solving in Java](./P02)                 | :heavy_check_mark: |
 | [24](./P03) | [P03](./P03) | [Problem Solving in Python.](./P03)              | :heavy_check_mark: |

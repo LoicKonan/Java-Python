@@ -58,5 +58,5 @@ g.addEdge(5, 10)
 g.addEdge(6, 11)
 g.addEdge(6, 12)
 
-g.BFS(1)
+g.BFS(2)
 

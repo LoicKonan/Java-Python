@@ -1,45 +1,42 @@
-# Python
-# @author Loic Konan
-# Semester: Fall 2021
-# Date: 11/22/2021 
-
-
+'''Python program to print DFS traversal for complete graph'''
 from collections import defaultdict
 
+# this class represents a directed graph using adjacency list representation
+
+
 class Graph:
-  def __init__(self):
-    self.graph = defaultdict(list)
-    self.nodes = 12
-    # function to add an edge to graph
-  def addEdge(self,u,v):
-    self.graph[u].append(v)
-    
-  def BFS(self, root):
-    visited = [False] * (self.nodes + 1)
-    # print(len(visited))
-    q = []
-    q.append(root)
-    visited[root] = True
+	# Constructor
+	def __init__(self):
+		# default dictionary to store graph
+		self.graph = defaultdict(list)
 
-    while len(q) != 0:
-      root = q.pop(0)
-      print(root, end = " ")
+	# Function to add an edge to graph
+	def addEdge(self, u, v):
+		self.graph[u].append(v)
+	# A function used by DFS
 
-      for i in self.graph[root]:
-        if visited[i] == False:
-          q.append(i)
-          visited[i] = True
+	def DFSUtil(self, v, visited):
+		# Mark the current node as visited and print it
+		visited.add(v)
+		print(v)
 
+		# recur for all the vertices adjacent to this vertex
+		for neighbour in self.graph[v]:
+			if neighbour not in visited:
+				self.DFSUtil(neighbour, visited)
+		# The function to do DFS traversal. It uses recursive DFSUtil
 
-  def dfs(self, visited, node):
-    if node not in visited:
-      print(node, end = " ")
-      visited.add(node)
-      for neighbor in self.graph[node]:
-        self.dfs(visited, neighbor)
+	def DFS(self):
+		# create a set to store all visited vertices
+		visited = set()
+		# call the recursive helper function to print DFS traversal starting from all
+		# vertices one by one
+		for vertex in self.graph:
+			if vertex not in visited:
+				self.DFSUtil(vertex, visited)
+# Driver code
+# create a graph given in the above diagram
 
-  def printGraph(self):
-    print(self.graph)
 
 g = Graph()
 g.addEdge(0, 1)
@@ -48,7 +45,5 @@ g.addEdge(1, 2)
 g.addEdge(2, 0)
 g.addEdge(2, 3)
 g.addEdge(3, 3)
-
-
-g.BFS(2)
+g.DFS()
 
